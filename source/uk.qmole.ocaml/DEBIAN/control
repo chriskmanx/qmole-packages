@@ -1,0 +1,13 @@
+Package: uk.qmole.ocaml
+Name: OCaml
+Version: 3.12.0
+Architecture: iphoneos-arm
+Description: OCaml port to IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/ocaml 
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: ncurses
+Sponsor: QMole Ltd. 
+Section: Development
+Tag: purpose::console, role::developer

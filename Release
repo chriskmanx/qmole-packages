@@ -1,0 +1,8 @@
+Origin: Qmole Linux
+Label: QMole Linux
+Suite: stable
+Version: 1.0
+Codename: QMole
+Architectures: iphoneos-arm
+Components: main
+Description: Qmole Linux
