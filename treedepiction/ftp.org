@@ -1,0 +1,17 @@
+Username:	ftp@qmole.uk
+Password:	Fl4Kdk0Abq3OYv8
+FTP Server:	ftp.qmole.uk
+FTP Server IP:	94.136.40.103
+
+
+
+http://www.reddit.com/r/ocaml/
+https://news.ycombinator.com/newest
+https://twitter.com/ChrisKohlhepp
+https://groups.google.com/forum/#!forum/comp.lang.functional
+http://www.linkedin.com/groups
+https://www.facebook.com/qmolelinux
+<chriskohlhepp>                                                         [18:01]
+<chriskohlhepp> OCaml port to IOS for IPhone and IPad released on Cydia
+                alternate app store
+
