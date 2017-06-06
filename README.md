@@ -5,7 +5,6 @@ QMole Debian Packages
 
 [QMole Main Github Repository](https://github.com/chriskmanx/qmole)
 
-![System Overview](system-overview.png)
 
 ## Manifest
 
@@ -17,6 +16,21 @@ The hosted repository - what Cydia connects to for installation to iPhone & iPad
 
 Debian package sources used to build the REPO
 
+Package sources have the following structure:
+
+1) APPLICATIONS
+2) DEVELOPMENT
+3) QMOLE
+4) TERMINALS
+5) X11
+6) XORG
+7) XORG2
+8) DESKTOP
+9) EXTRA
+10) SECURITY
+11) WINDOWTOOLKITS
+
+
 ### scripts
 
 Various helper and build scripts to assist with building the REPO
@@ -24,6 +38,8 @@ Various helper and build scripts to assist with building the REPO
 ### Avian tar archive
 
 Archive build of the Avian light weight Java virtual machine for iOS
+
+![System Overview](system-overview.png)
 
 ## Licence Disclaimer
 
