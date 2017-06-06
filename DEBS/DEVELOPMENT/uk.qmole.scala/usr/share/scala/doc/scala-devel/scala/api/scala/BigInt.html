@@ -1,0 +1,1326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class BigInt in scala</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../scala$package.html" target="_self">scala</a>
+        <br></br>
+        <span class="entity">class  BigInt</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/BigInt"><code>scala/BigInt.scala</code></a>]
+      </div><hr></hr>
+      <a name="BigInt"></a><dl>
+      <dt>
+        @<a href="../scala/serializable.html" target="_self">serializable</a><br></br>
+        <code></code>
+        <code>class</code>
+        <em>BigInt</em>(<code>val </code><em>bigInteger</em> : <a href="" target="contentFrame" class="java/math/BigInteger">java.math.BigInteger</a>)
+      </dt>
+      <dd><code> extends </code><a href="" target="contentFrame" class="java/lang/Number">java.lang.Number</a><code> with </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Martin Odersky</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0, 15/07/2003</dd></dl>
+    
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#%25%28BigInt%29" target="_self">%</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Remainder of BigInts</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#%26%28BigInt%29" target="_self">&amp;</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Bitwise and of BigInts</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#%26%7E%28BigInt%29" target="_self">&amp;~</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Bitwise and-not of BigInts. Returns a BigInt whose value is (this & ~that).</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#*%28BigInt%29" target="_self">*</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Multiplication of BigInts</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#%2B%28BigInt%29" target="_self">+</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Addition of BigInts</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#-%28BigInt%29" target="_self">-</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Subtraction of BigInts</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#%2F%28BigInt%29" target="_self">/</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Division of BigInts</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#%2F%25%28BigInt%29" target="_self">/%</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : (<a href="../scala/BigInt.html" target="_self">BigInt</a>, <a href="../scala/BigInt.html" target="_self">BigInt</a>)
+        
+        <div>Returns a pair of two BigInts containing (this / that) and (this % that).</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#%3C%28BigInt%29" target="_self">&lt;</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Less-than of BigInts</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#%3C%3C%28Int%29" target="_self">&lt;&lt;</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Leftshift of BigInt</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#%3C%3D%28BigInt%29" target="_self">&lt;=</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Less-than-or-equals comparison of BigInts</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#%3E%28BigInt%29" target="_self">&gt;</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Greater-than comparison of BigInts</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#%3E%3D%28BigInt%29" target="_self">&gt;=</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Greater-than-or-equals comparison of BigInts</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#%3E%3E%28Int%29" target="_self">&gt;&gt;</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>(Signed) rightshift of BigInt</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#%5E%28BigInt%29" target="_self">^</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Bitwise exclusive-or of BigInts</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#abs" target="_self">abs</a></em>
+         : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Returns the absolute value of this BigInt</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#bitCount" target="_self">bitCount</a></em>
+         : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>Returns the number of bits in the two's complement representation of this BigInt 
+    that differ from its sign bit.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#bitLength" target="_self">bitLength</a></em>
+         : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>Returns the number of bits in the minimal two's-complement representation of this BigInt, 
+    excluding a sign bit.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#byteValue%28%29" target="_self">byteValue</a></em>
+         : <a href="../scala/Byte.html" target="_self">Byte</a>
+        
+        <div>Converts this BigInt to a <tt>byte</tt>. 
+    If the BigInt is too big to fit in a byte, only the low-order 8 bits are returned. 
+    Note that this conversion can lose information about the overall magnitude of the 
+    BigInt value as well as return a result with the opposite sign.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#charValue" target="_self">charValue</a></em>
+         : <a href="../scala/Char.html" target="_self">Char</a>
+        
+        <div>Converts this BigInt to a <tt>char</tt>. 
+    If the BigInt is too big to fit in a char, only the low-order 16 bits are returned. 
+    Note that this conversion can lose information about the overall magnitude of the 
+    BigInt value and that it always returns a positive result.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#clearBit%28Int%29" target="_self">clearBit</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Returns a BigInt whose value is equivalent to this BigInt with the designated bit cleared.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#compare%28BigInt%29" target="_self">compare</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>Compares this BigInt with the specified BigInt</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#doubleValue%28%29" target="_self">doubleValue</a></em>
+         : <a href="../scala/Double.html" target="_self">Double</a>
+        
+        <div>Converts this BigInt to a <tt>double</tt>. 
+    if this BigInt has too great a magnitude to represent as a float, 
+    it will be converted to <code>Float.NEGATIVE_INFINITY</code> or
+    <code>Float.POSITIVE_INFINITY</code> as appropriate.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#equals%28Any%29" target="_self">equals</a></em>
+        (<em>that</em> : <a href="../scala/Any.html" target="_self">Any</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Compares this BigInt with the specified value for equality.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#equals%28BigInt%29" target="_self">equals</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Compares this BigInt with the specified BigInt for equality.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#flipBit%28Int%29" target="_self">flipBit</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Returns a BigInt whose value is equivalent to this BigInt with the designated bit flipped.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#floatValue%28%29" target="_self">floatValue</a></em>
+         : <a href="../scala/Float.html" target="_self">Float</a>
+        
+        <div>Converts this BigInt to a <tt>float</tt>.
+    if this BigInt has too great a magnitude to represent as a float,
+    it will be converted to <code>Float.NEGATIVE_INFINITY</code> or
+    <code>Float.POSITIVE_INFINITY</code> as appropriate.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#gcd%28BigInt%29" target="_self">gcd</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Returns the greatest common divisor of abs(this) and abs(that)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#hashCode%28%29" target="_self">hashCode</a></em>
+         : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>Returns the hash code for this BigInt.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#intValue%28%29" target="_self">intValue</a></em>
+         : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>Converts this BigInt to an <tt>int</tt>. 
+    If the BigInt is too big to fit in a char, only the low-order 32 bits
+    are returned. Note that this conversion can lose information about the
+    overall magnitude of the BigInt value as well as return a result with
+    the opposite sign.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#isProbablePrime%28Int%29" target="_self">isProbablePrime</a></em>
+        (<em>certainty</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Returns true if this BigInt is probably prime, false if it's definitely composite.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#longValue%28%29" target="_self">longValue</a></em>
+         : <a href="../scala/Long.html" target="_self">Long</a>
+        
+        <div>Converts this BigInt to a <tt>long</tt>.
+    If the BigInt is too big to fit in a char, only the low-order 64 bits
+    are returned. Note that this conversion can lose information about the
+    overall magnitude of the BigInt value as well as return a result with
+    the opposite sign.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#lowestSetBit" target="_self">lowestSetBit</a></em>
+         : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>Returns the index of the rightmost (lowest-order) one bit in this BigInt
+   (the number of zero bits to the right of the rightmost one bit).</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#max%28BigInt%29" target="_self">max</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Returns the maximum of this and that</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#min%28BigInt%29" target="_self">min</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Returns the minimum of this and that</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#mod%28BigInt%29" target="_self">mod</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Returns a BigInt whose value is (this mod m).
+    This method differs from `%' in that it always returns a non-negative BigInt.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#modInverse%28BigInt%29" target="_self">modInverse</a></em>
+        (<em>m</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Returns a BigInt whose value is (the inverse of <tt>this</tt> modulo <tt>m</tt>).</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#modPow%28BigInt%2CBigInt%29" target="_self">modPow</a></em>
+        (<em>exp</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>, <em>m</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Returns a BigInt whose value is
+    (<tt>this</tt> raised to the power of <tt>exp</tt> modulo <tt>m</tt>).</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#pow%28Int%29" target="_self">pow</a></em>
+        (<em>exp</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Returns a BigInt whose value is (<tt>this</tt> raised to the power of <tt>exp</tt>).</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#setBit%28Int%29" target="_self">setBit</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Returns a BigInt whose value is equivalent to this BigInt with the designated bit set.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#shortValue%28%29" target="_self">shortValue</a></em>
+         : <a href="../scala/Short.html" target="_self">Short</a>
+        
+        <div>Converts this BigInt to a <tt>short</tt>. 
+    If the BigInt is too big to fit in a byte, only the low-order 16 bits are returned. 
+    Note that this conversion can lose information about the overall magnitude of the 
+    BigInt value as well as return a result with the opposite sign.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#signum" target="_self">signum</a></em>
+         : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>Returns the sign of this BigInt, i.e. 
+     -1 if it is less than 0, 
+     +1 if it is greater than 0
+     0  if it is equal to 0</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#testBit%28Int%29" target="_self">testBit</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Returns true if and only if the designated bit is set.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#toByteArray" target="_self">toByteArray</a></em>
+         : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Byte.html" target="_self">Byte</a>]
+        
+        <div>Returns a byte array containing the two's-complement representation of
+    this BigInt. The byte array will be in big-endian byte-order: the most
+    significant byte is in the zeroth element. The array will contain the
+    minimum number of bytes required to represent this BigInt, including at
+    least one sign bit.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#toString%28%29" target="_self">toString</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Returns the decimal String representation of this BigInt.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#toString%28Int%29" target="_self">toString</a></em>
+        (<em>radix</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Returns the String representation in the specified radix of this BigInt.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#unary_-" target="_self">unary_-</a></em>
+         : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Returns a BigInt whose value is the negation of this BigInt</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#%7C%28BigInt%29" target="_self">|</a></em>
+        (<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Bitwise or of BigInts</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt.html#%7E" target="_self">~</a></em>
+         : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Returns the bitwise complement of this BigNum</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="hashCode%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>hashCode</em> : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the hash code for this BigInt.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="equals%28Any%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>equals</em>(<em>that</em> : <a href="../scala/Any.html" target="_self">Any</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Compares this BigInt with the specified value for equality.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="equals%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>equals</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Compares this BigInt with the specified BigInt for equality.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="compare%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>compare</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Compares this BigInt with the specified BigInt</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%3C%3D%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>&lt;=</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Less-than-or-equals comparison of BigInts</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%3E%3D%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>&gt;=</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Greater-than-or-equals comparison of BigInts</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%3C%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>&lt;</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Less-than of BigInts</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%3E%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>&gt;</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Greater-than comparison of BigInts</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%2B%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>+</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Addition of BigInts</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="-%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>-</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Subtraction of BigInts</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="*%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>*</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Multiplication of BigInts</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%2F%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>/</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Division of BigInts</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%25%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>%</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Remainder of BigInts</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%2F%25%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>/%</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : (<a href="../scala/BigInt.html" target="_self">BigInt</a>, <a href="../scala/BigInt.html" target="_self">BigInt</a>)
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a pair of two BigInts containing (this / that) and (this % that).</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%3C%3C%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>&lt;&lt;</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Leftshift of BigInt</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%3E%3E%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>&gt;&gt;</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>(Signed) rightshift of BigInt</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%26%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>&amp;</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Bitwise and of BigInts</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%7C%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>|</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Bitwise or of BigInts</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%5E%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>^</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Bitwise exclusive-or of BigInts</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%26%7E%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>&amp;~</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Bitwise and-not of BigInts. Returns a BigInt whose value is (this & ~that).</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="gcd%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>gcd</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the greatest common divisor of abs(this) and abs(that)</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="mod%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>mod</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a BigInt whose value is (this mod m).
+    This method differs from `%' in that it always returns a non-negative BigInt.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="min%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>min</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the minimum of this and that</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="max%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>max</em>(<em>that</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the maximum of this and that</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="pow%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>pow</em>(<em>exp</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a BigInt whose value is (<tt>this</tt> raised to the power of <tt>exp</tt>).</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="modPow%28BigInt%2CBigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>modPow</em>(<em>exp</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>, <em>m</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a BigInt whose value is
+    (<tt>this</tt> raised to the power of <tt>exp</tt> modulo <tt>m</tt>).</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="modInverse%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>modInverse</em>(<em>m</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a BigInt whose value is (the inverse of <tt>this</tt> modulo <tt>m</tt>).</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="unary_-"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>unary_-</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a BigInt whose value is the negation of this BigInt</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="abs"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>abs</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the absolute value of this BigInt</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="signum"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>signum</em> : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the sign of this BigInt, i.e. 
+     -1 if it is less than 0, 
+     +1 if it is greater than 0
+     0  if it is equal to 0</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%7E"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>~</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the bitwise complement of this BigNum</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="testBit%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>testBit</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns true if and only if the designated bit is set.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="setBit%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>setBit</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a BigInt whose value is equivalent to this BigInt with the designated bit set.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="clearBit%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>clearBit</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a BigInt whose value is equivalent to this BigInt with the designated bit cleared.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="flipBit%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>flipBit</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a BigInt whose value is equivalent to this BigInt with the designated bit flipped.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="lowestSetBit"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>lowestSetBit</em> : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the index of the rightmost (lowest-order) one bit in this BigInt
+   (the number of zero bits to the right of the rightmost one bit).</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="bitLength"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>bitLength</em> : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the number of bits in the minimal two's-complement representation of this BigInt, 
+    excluding a sign bit.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="bitCount"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>bitCount</em> : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the number of bits in the two's complement representation of this BigInt 
+    that differ from its sign bit.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="isProbablePrime%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>isProbablePrime</em>(<em>certainty</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns true if this BigInt is probably prime, false if it's definitely composite.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>certainty - </code>a measure of the uncertainty that the caller is willing to tolerate:                       if the call returns true the probability that this BigInt is prime 
+                      exceeds (1 - 1/2 ^ certainty). 
+                      The execution time of this method is proportional to the value of 
+                      this parameter.</dd></dl>
+    <hr></hr>
+<a name="byteValue%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>byteValue</em> : <a href="../scala/Byte.html" target="_self">Byte</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Converts this BigInt to a <tt>byte</tt>. 
+    If the BigInt is too big to fit in a byte, only the low-order 8 bits are returned. 
+    Note that this conversion can lose information about the overall magnitude of the 
+    BigInt value as well as return a result with the opposite sign.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="" target="contentFrame" class="java/lang/Number">java.lang.Number</a>.<a href="#byteValue" target="contentFrame" class="java/lang/Number">java.lang.Number.byteValue</a>
+        </dd>
+      </dl><hr></hr>
+<a name="shortValue%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>shortValue</em> : <a href="../scala/Short.html" target="_self">Short</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Converts this BigInt to a <tt>short</tt>. 
+    If the BigInt is too big to fit in a byte, only the low-order 16 bits are returned. 
+    Note that this conversion can lose information about the overall magnitude of the 
+    BigInt value as well as return a result with the opposite sign.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="" target="contentFrame" class="java/lang/Number">java.lang.Number</a>.<a href="#shortValue" target="contentFrame" class="java/lang/Number">java.lang.Number.shortValue</a>
+        </dd>
+      </dl><hr></hr>
+<a name="charValue"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>charValue</em> : <a href="../scala/Char.html" target="_self">Char</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Converts this BigInt to a <tt>char</tt>. 
+    If the BigInt is too big to fit in a char, only the low-order 16 bits are returned. 
+    Note that this conversion can lose information about the overall magnitude of the 
+    BigInt value and that it always returns a positive result.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="intValue%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>intValue</em> : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Converts this BigInt to an <tt>int</tt>. 
+    If the BigInt is too big to fit in a char, only the low-order 32 bits
+    are returned. Note that this conversion can lose information about the
+    overall magnitude of the BigInt value as well as return a result with
+    the opposite sign.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="" target="contentFrame" class="java/lang/Number">java.lang.Number</a>.<a href="#intValue" target="contentFrame" class="java/lang/Number">java.lang.Number.intValue</a>
+        </dd>
+      </dl><hr></hr>
+<a name="longValue%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>longValue</em> : <a href="../scala/Long.html" target="_self">Long</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Converts this BigInt to a <tt>long</tt>.
+    If the BigInt is too big to fit in a char, only the low-order 64 bits
+    are returned. Note that this conversion can lose information about the
+    overall magnitude of the BigInt value as well as return a result with
+    the opposite sign.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="" target="contentFrame" class="java/lang/Number">java.lang.Number</a>.<a href="#longValue" target="contentFrame" class="java/lang/Number">java.lang.Number.longValue</a>
+        </dd>
+      </dl><hr></hr>
+<a name="floatValue%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>floatValue</em> : <a href="../scala/Float.html" target="_self">Float</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Converts this BigInt to a <tt>float</tt>.
+    if this BigInt has too great a magnitude to represent as a float,
+    it will be converted to <code>Float.NEGATIVE_INFINITY</code> or
+    <code>Float.POSITIVE_INFINITY</code> as appropriate.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="" target="contentFrame" class="java/lang/Number">java.lang.Number</a>.<a href="#floatValue" target="contentFrame" class="java/lang/Number">java.lang.Number.floatValue</a>
+        </dd>
+      </dl><hr></hr>
+<a name="doubleValue%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>doubleValue</em> : <a href="../scala/Double.html" target="_self">Double</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Converts this BigInt to a <tt>double</tt>. 
+    if this BigInt has too great a magnitude to represent as a float, 
+    it will be converted to <code>Float.NEGATIVE_INFINITY</code> or
+    <code>Float.POSITIVE_INFINITY</code> as appropriate.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="" target="contentFrame" class="java/lang/Number">java.lang.Number</a>.<a href="#doubleValue" target="contentFrame" class="java/lang/Number">java.lang.Number.doubleValue</a>
+        </dd>
+      </dl><hr></hr>
+<a name="toString%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>toString</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the decimal String representation of this BigInt.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="toString%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>toString</em>(<em>radix</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the String representation in the specified radix of this BigInt.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="toByteArray"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>toByteArray</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Byte.html" target="_self">Byte</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a byte array containing the two's-complement representation of
+    this BigInt. The byte array will be in big-endian byte-order: the most
+    significant byte is in the zeroth element. The array will contain the
+    minimum number of bytes required to represent this BigInt, including at
+    least one sign bit.</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

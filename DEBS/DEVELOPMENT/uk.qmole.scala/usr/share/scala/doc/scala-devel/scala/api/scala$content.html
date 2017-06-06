@@ -1,0 +1,1948 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>case final class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/$colon$colon.html" target="_self">::</a></em>
+        [<em>B</em>](<code>private </code><em>hd</em> : <a href="scala/$colon$colon.html#B" target="_self">B</a>, <code>val </code><em>tl</em> : <a href="scala/List.html" target="_self">List</a>[<a href="scala/$colon$colon.html#B" target="_self">B</a>])<code> extends </code><a href="scala/List.html" target="_self">List</a>[<a href="scala/$colon$colon.html#B" target="_self">B</a>]<code> with </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>A non empty list characterized by a head and a tail.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>sealed abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/All$.html" target="_self">All$</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Dummy class which exist only to satisfy the JVM. It corresponds
+ to <code>scala.All</code>. If such type appears in method
+ signatures, it is erased to this one.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>sealed abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/AllRef$.html" target="_self">AllRef$</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Dummy class which exist only to satisfy the JVM. It corresponds
+ to <code>scala.AllRef</code>. If such type appears in method
+ signatures, it is erased to this one.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Annotation.html" target="_self">Annotation</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+   A base class for annotations. Annotations extending this class directly
+   are not preserved for the Scala type checker and are also not stored
+   as Java annotations in classfiles. To enable either or both of these,
+   one needs to inherit from
+   <a href="StaticAnnotation.html"><code>StaticAnnotation</code></a> or/and
+   <a href="ClassfileAnnotation.html"><code>ClassfileAnnotation</code></a>.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Application.html" target="_self">Application</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    The <code>Application</code> class can be used to quickly turn objects
+    into executable programs. Here is an example:
+  </p><pre>
+  <b>object</b> Main <b>extends</b> Application {
+    Console.println("Hello World!")
+  }
+  </pre>
+  <p>
+    Here, object <code>Main</code> inherits the <code>main</code> method
+    of <code>Application</code>. The body of the <code>Main</code> object
+    defines the main program. This technique does not work if the main
+    program depends on command-line arguments (which are not accessible
+    with the technique presented here).
+  </p>
+  <p>
+    It is possible to time the execution of objects that inherit from class
+    <code>Application</code> by setting the global <code>scala.time</code>
+    property. Here is an example for benchmarking object <code>Main</code>:
+  </p><pre>
+  java -Dscala.time Main
+  </pre></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Array.html" target="_self">Array</a></em>
+        [<em>A</em>](<em>_length</em> : <a href="scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="scala/Array$object.Array0.html" target="_self">Array0</a>[<a href="scala/Array.html#A" target="_self">A</a>]
+        
+        <div>This class represents polymorphic arrays. <code>Array[T]</code> is Scala's representation
+  for Java's <code>T[]</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Attribute.html" target="_self">Attribute</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/BigInt.html" target="_self">BigInt</a></em>
+        (<code>val </code><em>bigInteger</em> : <a href="" target="contentFrame" class="java/math/BigInteger">java.math.BigInteger</a>)<code> extends </code><a href="" target="contentFrame" class="java/lang/Number">java.lang.Number</a><code> with </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/BufferedIterator.html" target="_self">BufferedIterator</a></em>
+        [+<em>A</em>]<code> extends </code><a href="scala/Iterator.html" target="_self">Iterator</a>[<a href="scala/BufferedIterator.html#A" target="_self">A</a>]
+        
+        <div>Buffered iterators are iterators which allow to inspect the next
+  element without discarding it.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/ByNameFunction.html" target="_self">ByNameFunction</a></em>
+        [-<em>A</em>, +<em>B</em>]<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>A partial function of type <code>PartialFunction[A, B]</code> is a
+  unary function where the domain does not include all values of type
+  <code>A</code>. The function <code>isDefinedAt</code> allows to
+  test dynamically, if a value is in the domain of the function.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Cell.html" target="_self">Cell</a></em>
+        [+<em>T</em>](<code>val </code><em>elem</em> : <a href="scala/Cell.html#T" target="_self">T</a>)<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>A <code>Cell</code> is a generic wrapper which completely
+  hides the functionality of the wrapped object. The wrapped
+  object is accessible via the <code>elem</code> accessor method.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/ClassfileAnnotation.html" target="_self">ClassfileAnnotation</a></em>
+        <code> extends </code><a href="scala/Annotation.html" target="_self">Annotation</a>
+        
+        <div><p>
+    A base class for classfile annotations. These are stored as
+    <a href="http://java.sun.com/j2se/1.5.0/docs/guide/language/annotations.html"
+    target="_top">Java annotations</a> in classfiles.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/ClassfileAttribute.html" target="_self">ClassfileAttribute</a></em>
+        <code> extends </code><a href="scala/Attribute.html" target="_self">Attribute</a>
+        
+        <div><p>
+    A base class for classfile attributes. These are stored as
+    <a href="http://java.sun.com/j2se/1.5.0/docs/guide/language/annotations.html"
+    target="_top">Java annotations</a> in classfiles.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Collection.html" target="_self">Collection</a></em>
+        [+<em>A</em>]<code> extends </code><a href="scala/Iterable.html" target="_self">Iterable</a>[<a href="scala/Collection.html#A" target="_self">A</a>]
+        
+        <div>Variant of <code>Iterable</code> used to describe
+  collections with a finite number of elements. 
+  Basically, this trait just adds size and toString to Iterable,
+  as most of the methods in Iterable already assume finite-ness.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/CollectionProxy.html" target="_self">CollectionProxy</a></em>
+        [+<em>A</em>]<code> extends </code><a href="scala/Collection.html" target="_self">Collection</a>[<a href="scala/CollectionProxy.html#A" target="_self">A</a>]<code> with </code><a href="scala/IterableProxy.html" target="_self">IterableProxy</a>[<a href="scala/CollectionProxy.html#A" target="_self">A</a>]
+        
+        <div>This class implements a proxy for iterable objects. It forwards
+  all calls to a different iterable object.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/CountedIterator.html" target="_self">CountedIterator</a></em>
+        [+<em>A</em>]<code> extends </code><a href="scala/Iterator.html" target="_self">Iterator</a>[<a href="scala/CountedIterator.html#A" target="_self">A</a>]
+        
+        <div>Counted iterators keep track of the number of elements seen so far</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Enumeration.html" target="_self">Enumeration</a></em>
+        (<em>initial</em> : <a href="scala/Int.html" target="_self">Int</a>, <em>names</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>*)<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    Defines a finite set of values specific to the enumeration. Typically
+    these values enumerate all possible forms something can take and provide a
+    lightweight alternative to case classes.
+  </p>
+  <p>
+    Each call to a <code>Value</code> method adds a new unique value to the
+    enumeration. To be accessible, these values are usually defined as 
+    <code>val</code> members of the evaluation.
+  </p>
+  <p>
+    All values in an enumeration share a common, unique type defined as the 
+    <code>Value</code> type member of the enumeration (<code>Value</code>
+    selected on the stable identifier path of the enumeration instance).
+  </p>
+  <p>
+    <b>Example use</b>
+  </p><pre>
+  <b>object</b> Main <b>extends</b> Application {
+
+    <b>object</b> WeekDays <b>extends</b> Enumeration {
+      <b>val</b> Mon, Tue, Wed, Thu, Fri, Sat, Sun = Value
+    }
+
+    <b>def</b> isWorkingDay(d: WeekDays.Value) =
+      ! (d == WeekDays.Sat || d == WeekDays.Sun)
+ 
+    WeekDays filter (isWorkingDay) foreach { d =&gt; Console.println(d) }
+  }</pre></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Function0.html" target="_self">Function0</a></em>
+        [+<em>R</em>]<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    Function with 0 parameters.
+  </p>
+  <p>
+      In the following example the definition of
+    <code>currentSeconds</code> is a shorthand for the anonymous class
+    definition <code>anonfun0</code>:
+  </p>
+  <pre>
+  <b>object</b> Main <b>extends</b> Application {
+
+    <b>val</b> currentSeconds = () => System.currentTimeMillis() / 1000L
+
+    <b>val</b> anonfun0 = <b>new</b> Function0[Long] {
+      <b>def</b> apply(): Long = System.currentTimeMillis() / 1000L
+    }
+
+    Console.println(currentSeconds())
+    Console.println(anonfun0())
+  }</pre></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Function1.html" target="_self">Function1</a></em>
+        [-<em>T1</em>, +<em>R</em>]<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    Function with 1 parameters.
+  </p>
+  <p>
+      In the following example the definition of
+    <code>succ</code> is a shorthand for the anonymous class definition
+    <code>anonfun1</code>:
+  </p>
+  <pre>
+  <b>object</b> Main <b>extends</b> Application {
+
+    <b>val</b> succ = (x: Int) => x + 1
+
+    <b>val</b> anonfun1 = <b>new</b> Function1[Int, Int] {
+      <b>def</b> apply(x: Int): Int = x + 1
+    }
+
+    Console.println(succ(0))
+    Console.println(anonfun1(0))
+  }</pre></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Function2.html" target="_self">Function2</a></em>
+        [-<em>T1</em>, -<em>T2</em>, +<em>R</em>]<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    Function with 2 parameters.
+  </p>
+  <p>
+      In the following example the definition of
+    <code>max</code> is a shorthand for the anonymous class definition
+    <code>anonfun2</code>:
+  </p>
+  <pre>
+  <b>object</b> Main <b>extends</b> Application {
+
+    <b>val</b> max = (x: Int, y: Int) => <b>if</b> (x < y) y <b>else</b> x
+
+    <b>val</b> anonfun2 = <b>new</b> Function2[Int, Int, Int] {
+      <b>def</b> apply(x: Int, y: Int): Int = <b>if</b> (x < y) y <b>else</b> x
+    }
+
+    Console.println(max(0, 1))
+    Console.println(anonfun2(0, 1))
+  }</pre></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Function3.html" target="_self">Function3</a></em>
+        [-<em>T1</em>, -<em>T2</em>, -<em>T3</em>, +<em>R</em>]<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    Function with 3 parameters.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Function4.html" target="_self">Function4</a></em>
+        [-<em>T1</em>, -<em>T2</em>, -<em>T3</em>, -<em>T4</em>, +<em>R</em>]<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    Function with 4 parameters.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Function5.html" target="_self">Function5</a></em>
+        [-<em>T1</em>, -<em>T2</em>, -<em>T3</em>, -<em>T4</em>, -<em>T5</em>, +<em>R</em>]<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    Function with 5 parameters.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Function6.html" target="_self">Function6</a></em>
+        [-<em>T1</em>, -<em>T2</em>, -<em>T3</em>, -<em>T4</em>, -<em>T5</em>, -<em>T6</em>, +<em>R</em>]<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    Function with 6 parameters.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Function7.html" target="_self">Function7</a></em>
+        [-<em>T1</em>, -<em>T2</em>, -<em>T3</em>, -<em>T4</em>, -<em>T5</em>, -<em>T6</em>, -<em>T7</em>, +<em>R</em>]<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    Function with 7 parameters.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Function8.html" target="_self">Function8</a></em>
+        [-<em>T1</em>, -<em>T2</em>, -<em>T3</em>, -<em>T4</em>, -<em>T5</em>, -<em>T6</em>, -<em>T7</em>, -<em>T8</em>, +<em>R</em>]<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    Function with 8 parameters.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Function9.html" target="_self">Function9</a></em>
+        [-<em>T0</em>, -<em>T1</em>, -<em>T2</em>, -<em>T3</em>, -<em>T4</em>, -<em>T5</em>, -<em>T6</em>, -<em>T7</em>, -<em>T8</em>, +<em>R</em>]<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Function with 9 parameters</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Iterable.html" target="_self">Iterable</a></em>
+        [+<em>A</em>]<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Collection classes mixing in this class provide a method
+  <code>elements</code> which returns an iterator over all the
+  elements contained in the collection.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/IterableProxy.html" target="_self">IterableProxy</a></em>
+        [+<em>A</em>]<code> extends </code><a href="scala/Iterable.html" target="_self">Iterable</a>[<a href="scala/IterableProxy.html#A" target="_self">A</a>]<code> with </code><a href="scala/Proxy.html" target="_self">Proxy</a>
+        
+        <div>This class implements a proxy for iterable objects. It forwards
+  all calls to a different iterable object.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Iterator.html" target="_self">Iterator</a></em>
+        [+<em>A</em>]<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Iterators are data structures that allow to iterate over a sequence
+  of elements. They have a <code>hasNext</code> method for checking
+  if there is a next element available, and a <code>next</code> method
+  which returns the next element and discards it from the iterator.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>sealed abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/List.html" target="_self">List</a></em>
+        [+<em>A</em>]<code> extends </code><a href="scala/Seq.html" target="_self">Seq</a>[<a href="scala/List.html#A" target="_self">A</a>]
+        
+        <div>A class representing an ordered collection of elements of type
+  <code>a</code>. This class comes with two implementing case
+  classes <code>scala.Nil</code> and <code>scala.::</code> that
+  implement the abstract members <code>isEmpty</code>,
+  <code>head</code> and <code>tail</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/MatchError.html" target="_self">MatchError</a></em>
+        (<em>msg</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="" target="contentFrame" class="java/lang/RuntimeException">java.lang.RuntimeException</a><code> with </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This class implements errors which are thrown whenever an
+  object doesn't match any pattern of a pattern matching
+  expression.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/NotDefinedError.html" target="_self">NotDefinedError</a></em>
+        (<em>msg</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="" target="contentFrame" class="java/lang/Error">java.lang.Error</a><code> with </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/NotNull.html" target="_self">NotNull</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>A marker thread for things that are not allowed to be null</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>sealed abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Option.html" target="_self">Option</a></em>
+        [+<em>A</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>This class represents optional values. Instances of <code>Option</code>
+  are either instances of case class <code>Some</code> or it is case
+  object <code>None</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Ordered.html" target="_self">Ordered</a></em>
+        [<em>A</em>]<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>A class for totally ordered data.
+
+  Note that since version 2006-07-24 this class is no longer covariant in a.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/PartialFunction.html" target="_self">PartialFunction</a></em>
+        [-<em>A</em>, +<em>B</em>]<code> extends </code>(<a href="scala/PartialFunction.html#A" target="_self">A</a>) =&gt; <a href="scala/PartialFunction.html#B" target="_self">B</a>
+        
+        <div>A partial function of type <code>PartialFunction[A, B]</code> is a
+  unary function where the domain does not include all values of type
+  <code>A</code>. The function <code>isDefinedAt</code> allows to
+  test dynamically, if a value is in the domain of the function.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/PartiallyOrdered.html" target="_self">PartiallyOrdered</a></em>
+        [+<em>A</em>]<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>A class for partially ordered data.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product.html" target="_self">Product</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The trait <code>Product</code> defines access functions for instances
+  of products, in particular case classes.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product1.html" target="_self">Product1</a></em>
+        [+<em>T1</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product1 is a cartesian product of 1 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product10.html" target="_self">Product10</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product10 is a cartesian product of 10 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product11.html" target="_self">Product11</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product11 is a cartesian product of 11 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product12.html" target="_self">Product12</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product12 is a cartesian product of 12 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product13.html" target="_self">Product13</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product13 is a cartesian product of 13 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product14.html" target="_self">Product14</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product14 is a cartesian product of 14 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product15.html" target="_self">Product15</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>, +<em>T15</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product15 is a cartesian product of 15 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product16.html" target="_self">Product16</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>, +<em>T15</em>, +<em>T16</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product16 is a cartesian product of 16 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product17.html" target="_self">Product17</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>, +<em>T15</em>, +<em>T16</em>, +<em>T17</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product17 is a cartesian product of 17 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product18.html" target="_self">Product18</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>, +<em>T15</em>, +<em>T16</em>, +<em>T17</em>, +<em>T18</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product18 is a cartesian product of 18 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product19.html" target="_self">Product19</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>, +<em>T15</em>, +<em>T16</em>, +<em>T17</em>, +<em>T18</em>, +<em>T19</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product19 is a cartesian product of 19 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product2.html" target="_self">Product2</a></em>
+        [+<em>T1</em>, +<em>T2</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product2 is a cartesian product of 2 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product20.html" target="_self">Product20</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>, +<em>T15</em>, +<em>T16</em>, +<em>T17</em>, +<em>T18</em>, +<em>T19</em>, +<em>T20</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product20 is a cartesian product of 20 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product21.html" target="_self">Product21</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>, +<em>T15</em>, +<em>T16</em>, +<em>T17</em>, +<em>T18</em>, +<em>T19</em>, +<em>T20</em>, +<em>T21</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product21 is a cartesian product of 21 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product22.html" target="_self">Product22</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>, +<em>T15</em>, +<em>T16</em>, +<em>T17</em>, +<em>T18</em>, +<em>T19</em>, +<em>T20</em>, +<em>T21</em>, +<em>T22</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product22 is a cartesian product of 22 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product3.html" target="_self">Product3</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product3 is a cartesian product of 3 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product4.html" target="_self">Product4</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product4 is a cartesian product of 4 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product5.html" target="_self">Product5</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product5 is a cartesian product of 5 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product6.html" target="_self">Product6</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product6 is a cartesian product of 6 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product7.html" target="_self">Product7</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product7 is a cartesian product of 7 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product8.html" target="_self">Product8</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product8 is a cartesian product of 8 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product9.html" target="_self">Product9</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>]<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>Product9 is a cartesian product of 9 components</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Proxy.html" target="_self">Proxy</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This class implements a simple proxy that forwards all calls to
+  methods of class <code>Any</code> to another object <code>self</code>.
+  Please note that only those methods can be forwarded that are
+  overridable and public.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Random.html" target="_self">Random</a></em>
+        (<code>val </code><em>self</em> : <a href="" target="contentFrame" class="java/util/Random">java.util.Random</a>)<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a></em>
+        [+<em>A</em>]<code> extends </code><a href="scala/Seq.html" target="_self">Seq</a>[<a href="scala/RandomAccessSeq.html#A" target="_self">A</a>]
+        
+        <div>Sequences that support O(1) element access and O(1) length computation.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Range.html" target="_self">Range</a></em>
+        (<code>val </code><em>start</em> : <a href="scala/Int.html" target="_self">Int</a>, <code>val </code><em>end</em> : <a href="scala/Int.html" target="_self">Int</a>, <code>val </code><em>step</em> : <a href="scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="scala/RandomAccessSeq$object.Projection.html" target="_self">Projection</a>[<a href="scala/Int.html" target="_self">Int</a>]
+        
+        <div><p>
+    The <code>Range</code> class represents integer values in range
+    <code>[start;end)</code> with non-zero step value <code>step</code>.
+    Sort of acts like a sequence also (supports length and contains).
+    For example:
+  </p><pre>
+     <b>val</b> r1 = Iterator.range(0, 10)
+     <b>val</b> r2 = Iterator.range(r1.start, r1.end, r1.step + 1)
+     println(r2.length) // = 5
+  </pre></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Responder.html" target="_self">Responder</a></em>
+        [+<em>A</em>]<code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Instances of responder are the building blocks of small programs
+  written in continuation passing style. By using responder classes
+  in for comprehensions, one can embed domain-specific languages in
+  Scala while giving the impression that programs in these DSLs are
+  written in direct style.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/AnyRef.html" target="_self">AnyRef</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Seq.html" target="_self">Seq</a></em>
+        [+<em>A</em>]<code> extends </code><a href="scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="scala/Int.html" target="_self">Int</a>, <a href="scala/Seq.html#A" target="_self">A</a>]<code> with </code><a href="scala/Collection.html" target="_self">Collection</a>[<a href="scala/Seq.html#A" target="_self">A</a>]
+        
+        <div>Class <code>Seq[A]</code> represents finite sequences of elements
+  of type <code>A</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/SeqProxy.html" target="_self">SeqProxy</a></em>
+        [+<em>A</em>]<code> extends </code><a href="scala/Seq.html" target="_self">Seq</a>[<a href="scala/SeqProxy.html#A" target="_self">A</a>]<code> with </code><a href="scala/IterableProxy.html" target="_self">IterableProxy</a>[<a href="scala/SeqProxy.html#A" target="_self">A</a>]
+        
+        <div>This class implements a proxy for sequences. It forwards
+  all calls to a different sequence object.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/SerialVersionUID.html" target="_self">SerialVersionUID</a></em>
+        (<em>uid</em> : <a href="scala/Long.html" target="_self">Long</a>)<code> extends </code><a href="scala/Annotation.html" target="_self">Annotation</a>
+        
+        <div>Annotation for specifying the static SerialVersionUID field
+ of a serializable class</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case final class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Some.html" target="_self">Some</a></em>
+        [+<em>A</em>](<code>val </code><em>x</em> : <a href="scala/Some.html#A" target="_self">A</a>)<code> extends </code><a href="scala/Option.html" target="_self">Option</a>[<a href="scala/Some.html#A" target="_self">A</a>]
+        
+        <div>Class <code>Some[A]</code> represents existing values of type
+  <code>A</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/StaticAnnotation.html" target="_self">StaticAnnotation</a></em>
+        <code> extends </code><a href="scala/Annotation.html" target="_self">Annotation</a>
+        
+        <div><p>
+    A base class for static annotations. These are available
+    to the Scala type checker, even across different compilation units.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/StaticAttribute.html" target="_self">StaticAttribute</a></em>
+        <code> extends </code><a href="scala/Attribute.html" target="_self">Attribute</a>
+        
+        <div><p>
+    A base class for static attributes. These are available
+    to the Scala type checker, even across different compilation units.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Stream.html" target="_self">Stream</a></em>
+        [+<em>A</em>]<code> extends </code><a href="scala/Seq$object.Projection.html" target="_self">Projection</a>[<a href="scala/Stream.html#A" target="_self">A</a>]
+        
+        <div><p>The class <code>Stream</code> implements lazy lists where elements
+ are only evaluated when they are needed. Here is an example:</p>
+ <pre>
+ <b>object</b> Main <b>extends</b> Application {
+
+   <b>def</b> from(n: Int): Stream[Int] =
+     Stream.cons(n, from(n + 1))
+
+   <b>def</b> sieve(s: Stream[Int]): Stream[Int] =
+     Stream.cons(s.head, sieve(s.tail filter { _ % s.head != 0 }))
+
+   <b>def</b> primes = sieve(from(2))
+
+   primes take 10 print
+ }
+ </pre></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case final class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Symbol.html" target="_self">Symbol</a></em>
+        (<code>val </code><em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div><p>
+    Instances of <code>Symbol</code> can be created easily with
+    Scala's built-in quote mechanism.
+  </p>
+  <p>
+    For instance, the <a href="http://scala-lang.org/" target="_top">Scala</a>
+    term <code>'mysym</code> will invoke the constructor of the
+    <code>Symbol</code> class in the following way:
+    <code>new Symbol("mysym")</code>.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple1.html" target="_self">Tuple1</a></em>
+        [+<em>T1</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple1.html#T1" target="_self">T1</a>)<code> extends </code><a href="scala/Product1.html" target="_self">Product1</a>[<a href="scala/Tuple1.html#T1" target="_self">T1</a>]
+        
+        <div>Tuple1 is the canonical representation of a @see Product1</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple10.html" target="_self">Tuple10</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple10.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple10.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple10.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple10.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple10.html#T5" target="_self">T5</a>, <code>val </code><em>_6</em> : <a href="scala/Tuple10.html#T6" target="_self">T6</a>, <code>val </code><em>_7</em> : <a href="scala/Tuple10.html#T7" target="_self">T7</a>, <code>val </code><em>_8</em> : <a href="scala/Tuple10.html#T8" target="_self">T8</a>, <code>val </code><em>_9</em> : <a href="scala/Tuple10.html#T9" target="_self">T9</a>, <code>val </code><em>_10</em> : <a href="scala/Tuple10.html#T10" target="_self">T10</a>)<code> extends </code><a href="scala/Product10.html" target="_self">Product10</a>[<a href="scala/Tuple10.html#T1" target="_self">T1</a>, <a href="scala/Tuple10.html#T2" target="_self">T2</a>, <a href="scala/Tuple10.html#T3" target="_self">T3</a>, <a href="scala/Tuple10.html#T4" target="_self">T4</a>, <a href="scala/Tuple10.html#T5" target="_self">T5</a>, <a href="scala/Tuple10.html#T6" target="_self">T6</a>, <a href="scala/Tuple10.html#T7" target="_self">T7</a>, <a href="scala/Tuple10.html#T8" target="_self">T8</a>, <a href="scala/Tuple10.html#T9" target="_self">T9</a>, <a href="scala/Tuple10.html#T10" target="_self">T10</a>]
+        
+        <div>Tuple10 is the canonical representation of a @see Product10</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple11.html" target="_self">Tuple11</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple11.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple11.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple11.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple11.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple11.html#T5" target="_self">T5</a>, <code>val </code><em>_6</em> : <a href="scala/Tuple11.html#T6" target="_self">T6</a>, <code>val </code><em>_7</em> : <a href="scala/Tuple11.html#T7" target="_self">T7</a>, <code>val </code><em>_8</em> : <a href="scala/Tuple11.html#T8" target="_self">T8</a>, <code>val </code><em>_9</em> : <a href="scala/Tuple11.html#T9" target="_self">T9</a>, <code>val </code><em>_10</em> : <a href="scala/Tuple11.html#T10" target="_self">T10</a>, <code>val </code><em>_11</em> : <a href="scala/Tuple11.html#T11" target="_self">T11</a>)<code> extends </code><a href="scala/Product11.html" target="_self">Product11</a>[<a href="scala/Tuple11.html#T1" target="_self">T1</a>, <a href="scala/Tuple11.html#T2" target="_self">T2</a>, <a href="scala/Tuple11.html#T3" target="_self">T3</a>, <a href="scala/Tuple11.html#T4" target="_self">T4</a>, <a href="scala/Tuple11.html#T5" target="_self">T5</a>, <a href="scala/Tuple11.html#T6" target="_self">T6</a>, <a href="scala/Tuple11.html#T7" target="_self">T7</a>, <a href="scala/Tuple11.html#T8" target="_self">T8</a>, <a href="scala/Tuple11.html#T9" target="_self">T9</a>, <a href="scala/Tuple11.html#T10" target="_self">T10</a>, <a href="scala/Tuple11.html#T11" target="_self">T11</a>]
+        
+        <div>Tuple11 is the canonical representation of a @see Product11</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple12.html" target="_self">Tuple12</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple12.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple12.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple12.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple12.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple12.html#T5" target="_self">T5</a>, <code>val </code><em>_6</em> : <a href="scala/Tuple12.html#T6" target="_self">T6</a>, <code>val </code><em>_7</em> : <a href="scala/Tuple12.html#T7" target="_self">T7</a>, <code>val </code><em>_8</em> : <a href="scala/Tuple12.html#T8" target="_self">T8</a>, <code>val </code><em>_9</em> : <a href="scala/Tuple12.html#T9" target="_self">T9</a>, <code>val </code><em>_10</em> : <a href="scala/Tuple12.html#T10" target="_self">T10</a>, <code>val </code><em>_11</em> : <a href="scala/Tuple12.html#T11" target="_self">T11</a>, <code>val </code><em>_12</em> : <a href="scala/Tuple12.html#T12" target="_self">T12</a>)<code> extends </code><a href="scala/Product12.html" target="_self">Product12</a>[<a href="scala/Tuple12.html#T1" target="_self">T1</a>, <a href="scala/Tuple12.html#T2" target="_self">T2</a>, <a href="scala/Tuple12.html#T3" target="_self">T3</a>, <a href="scala/Tuple12.html#T4" target="_self">T4</a>, <a href="scala/Tuple12.html#T5" target="_self">T5</a>, <a href="scala/Tuple12.html#T6" target="_self">T6</a>, <a href="scala/Tuple12.html#T7" target="_self">T7</a>, <a href="scala/Tuple12.html#T8" target="_self">T8</a>, <a href="scala/Tuple12.html#T9" target="_self">T9</a>, <a href="scala/Tuple12.html#T10" target="_self">T10</a>, <a href="scala/Tuple12.html#T11" target="_self">T11</a>, <a href="scala/Tuple12.html#T12" target="_self">T12</a>]
+        
+        <div>Tuple12 is the canonical representation of a @see Product12</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple13.html" target="_self">Tuple13</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple13.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple13.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple13.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple13.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple13.html#T5" target="_self">T5</a>, <code>val </code><em>_6</em> : <a href="scala/Tuple13.html#T6" target="_self">T6</a>, <code>val </code><em>_7</em> : <a href="scala/Tuple13.html#T7" target="_self">T7</a>, <code>val </code><em>_8</em> : <a href="scala/Tuple13.html#T8" target="_self">T8</a>, <code>val </code><em>_9</em> : <a href="scala/Tuple13.html#T9" target="_self">T9</a>, <code>val </code><em>_10</em> : <a href="scala/Tuple13.html#T10" target="_self">T10</a>, <code>val </code><em>_11</em> : <a href="scala/Tuple13.html#T11" target="_self">T11</a>, <code>val </code><em>_12</em> : <a href="scala/Tuple13.html#T12" target="_self">T12</a>, <code>val </code><em>_13</em> : <a href="scala/Tuple13.html#T13" target="_self">T13</a>)<code> extends </code><a href="scala/Product13.html" target="_self">Product13</a>[<a href="scala/Tuple13.html#T1" target="_self">T1</a>, <a href="scala/Tuple13.html#T2" target="_self">T2</a>, <a href="scala/Tuple13.html#T3" target="_self">T3</a>, <a href="scala/Tuple13.html#T4" target="_self">T4</a>, <a href="scala/Tuple13.html#T5" target="_self">T5</a>, <a href="scala/Tuple13.html#T6" target="_self">T6</a>, <a href="scala/Tuple13.html#T7" target="_self">T7</a>, <a href="scala/Tuple13.html#T8" target="_self">T8</a>, <a href="scala/Tuple13.html#T9" target="_self">T9</a>, <a href="scala/Tuple13.html#T10" target="_self">T10</a>, <a href="scala/Tuple13.html#T11" target="_self">T11</a>, <a href="scala/Tuple13.html#T12" target="_self">T12</a>, <a href="scala/Tuple13.html#T13" target="_self">T13</a>]
+        
+        <div>Tuple13 is the canonical representation of a @see Product13</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple14.html" target="_self">Tuple14</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple14.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple14.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple14.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple14.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple14.html#T5" target="_self">T5</a>, <code>val </code><em>_6</em> : <a href="scala/Tuple14.html#T6" target="_self">T6</a>, <code>val </code><em>_7</em> : <a href="scala/Tuple14.html#T7" target="_self">T7</a>, <code>val </code><em>_8</em> : <a href="scala/Tuple14.html#T8" target="_self">T8</a>, <code>val </code><em>_9</em> : <a href="scala/Tuple14.html#T9" target="_self">T9</a>, <code>val </code><em>_10</em> : <a href="scala/Tuple14.html#T10" target="_self">T10</a>, <code>val </code><em>_11</em> : <a href="scala/Tuple14.html#T11" target="_self">T11</a>, <code>val </code><em>_12</em> : <a href="scala/Tuple14.html#T12" target="_self">T12</a>, <code>val </code><em>_13</em> : <a href="scala/Tuple14.html#T13" target="_self">T13</a>, <code>val </code><em>_14</em> : <a href="scala/Tuple14.html#T14" target="_self">T14</a>)<code> extends </code><a href="scala/Product14.html" target="_self">Product14</a>[<a href="scala/Tuple14.html#T1" target="_self">T1</a>, <a href="scala/Tuple14.html#T2" target="_self">T2</a>, <a href="scala/Tuple14.html#T3" target="_self">T3</a>, <a href="scala/Tuple14.html#T4" target="_self">T4</a>, <a href="scala/Tuple14.html#T5" target="_self">T5</a>, <a href="scala/Tuple14.html#T6" target="_self">T6</a>, <a href="scala/Tuple14.html#T7" target="_self">T7</a>, <a href="scala/Tuple14.html#T8" target="_self">T8</a>, <a href="scala/Tuple14.html#T9" target="_self">T9</a>, <a href="scala/Tuple14.html#T10" target="_self">T10</a>, <a href="scala/Tuple14.html#T11" target="_self">T11</a>, <a href="scala/Tuple14.html#T12" target="_self">T12</a>, <a href="scala/Tuple14.html#T13" target="_self">T13</a>, <a href="scala/Tuple14.html#T14" target="_self">T14</a>]
+        
+        <div>Tuple14 is the canonical representation of a @see Product14</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple15.html" target="_self">Tuple15</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>, +<em>T15</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple15.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple15.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple15.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple15.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple15.html#T5" target="_self">T5</a>, <code>val </code><em>_6</em> : <a href="scala/Tuple15.html#T6" target="_self">T6</a>, <code>val </code><em>_7</em> : <a href="scala/Tuple15.html#T7" target="_self">T7</a>, <code>val </code><em>_8</em> : <a href="scala/Tuple15.html#T8" target="_self">T8</a>, <code>val </code><em>_9</em> : <a href="scala/Tuple15.html#T9" target="_self">T9</a>, <code>val </code><em>_10</em> : <a href="scala/Tuple15.html#T10" target="_self">T10</a>, <code>val </code><em>_11</em> : <a href="scala/Tuple15.html#T11" target="_self">T11</a>, <code>val </code><em>_12</em> : <a href="scala/Tuple15.html#T12" target="_self">T12</a>, <code>val </code><em>_13</em> : <a href="scala/Tuple15.html#T13" target="_self">T13</a>, <code>val </code><em>_14</em> : <a href="scala/Tuple15.html#T14" target="_self">T14</a>, <code>val </code><em>_15</em> : <a href="scala/Tuple15.html#T15" target="_self">T15</a>)<code> extends </code><a href="scala/Product15.html" target="_self">Product15</a>[<a href="scala/Tuple15.html#T1" target="_self">T1</a>, <a href="scala/Tuple15.html#T2" target="_self">T2</a>, <a href="scala/Tuple15.html#T3" target="_self">T3</a>, <a href="scala/Tuple15.html#T4" target="_self">T4</a>, <a href="scala/Tuple15.html#T5" target="_self">T5</a>, <a href="scala/Tuple15.html#T6" target="_self">T6</a>, <a href="scala/Tuple15.html#T7" target="_self">T7</a>, <a href="scala/Tuple15.html#T8" target="_self">T8</a>, <a href="scala/Tuple15.html#T9" target="_self">T9</a>, <a href="scala/Tuple15.html#T10" target="_self">T10</a>, <a href="scala/Tuple15.html#T11" target="_self">T11</a>, <a href="scala/Tuple15.html#T12" target="_self">T12</a>, <a href="scala/Tuple15.html#T13" target="_self">T13</a>, <a href="scala/Tuple15.html#T14" target="_self">T14</a>, <a href="scala/Tuple15.html#T15" target="_self">T15</a>]
+        
+        <div>Tuple15 is the canonical representation of a @see Product15</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple16.html" target="_self">Tuple16</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>, +<em>T15</em>, +<em>T16</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple16.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple16.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple16.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple16.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple16.html#T5" target="_self">T5</a>, <code>val </code><em>_6</em> : <a href="scala/Tuple16.html#T6" target="_self">T6</a>, <code>val </code><em>_7</em> : <a href="scala/Tuple16.html#T7" target="_self">T7</a>, <code>val </code><em>_8</em> : <a href="scala/Tuple16.html#T8" target="_self">T8</a>, <code>val </code><em>_9</em> : <a href="scala/Tuple16.html#T9" target="_self">T9</a>, <code>val </code><em>_10</em> : <a href="scala/Tuple16.html#T10" target="_self">T10</a>, <code>val </code><em>_11</em> : <a href="scala/Tuple16.html#T11" target="_self">T11</a>, <code>val </code><em>_12</em> : <a href="scala/Tuple16.html#T12" target="_self">T12</a>, <code>val </code><em>_13</em> : <a href="scala/Tuple16.html#T13" target="_self">T13</a>, <code>val </code><em>_14</em> : <a href="scala/Tuple16.html#T14" target="_self">T14</a>, <code>val </code><em>_15</em> : <a href="scala/Tuple16.html#T15" target="_self">T15</a>, <code>val </code><em>_16</em> : <a href="scala/Tuple16.html#T16" target="_self">T16</a>)<code> extends </code><a href="scala/Product16.html" target="_self">Product16</a>[<a href="scala/Tuple16.html#T1" target="_self">T1</a>, <a href="scala/Tuple16.html#T2" target="_self">T2</a>, <a href="scala/Tuple16.html#T3" target="_self">T3</a>, <a href="scala/Tuple16.html#T4" target="_self">T4</a>, <a href="scala/Tuple16.html#T5" target="_self">T5</a>, <a href="scala/Tuple16.html#T6" target="_self">T6</a>, <a href="scala/Tuple16.html#T7" target="_self">T7</a>, <a href="scala/Tuple16.html#T8" target="_self">T8</a>, <a href="scala/Tuple16.html#T9" target="_self">T9</a>, <a href="scala/Tuple16.html#T10" target="_self">T10</a>, <a href="scala/Tuple16.html#T11" target="_self">T11</a>, <a href="scala/Tuple16.html#T12" target="_self">T12</a>, <a href="scala/Tuple16.html#T13" target="_self">T13</a>, <a href="scala/Tuple16.html#T14" target="_self">T14</a>, <a href="scala/Tuple16.html#T15" target="_self">T15</a>, <a href="scala/Tuple16.html#T16" target="_self">T16</a>]
+        
+        <div>Tuple16 is the canonical representation of a @see Product16</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple17.html" target="_self">Tuple17</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>, +<em>T15</em>, +<em>T16</em>, +<em>T17</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple17.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple17.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple17.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple17.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple17.html#T5" target="_self">T5</a>, <code>val </code><em>_6</em> : <a href="scala/Tuple17.html#T6" target="_self">T6</a>, <code>val </code><em>_7</em> : <a href="scala/Tuple17.html#T7" target="_self">T7</a>, <code>val </code><em>_8</em> : <a href="scala/Tuple17.html#T8" target="_self">T8</a>, <code>val </code><em>_9</em> : <a href="scala/Tuple17.html#T9" target="_self">T9</a>, <code>val </code><em>_10</em> : <a href="scala/Tuple17.html#T10" target="_self">T10</a>, <code>val </code><em>_11</em> : <a href="scala/Tuple17.html#T11" target="_self">T11</a>, <code>val </code><em>_12</em> : <a href="scala/Tuple17.html#T12" target="_self">T12</a>, <code>val </code><em>_13</em> : <a href="scala/Tuple17.html#T13" target="_self">T13</a>, <code>val </code><em>_14</em> : <a href="scala/Tuple17.html#T14" target="_self">T14</a>, <code>val </code><em>_15</em> : <a href="scala/Tuple17.html#T15" target="_self">T15</a>, <code>val </code><em>_16</em> : <a href="scala/Tuple17.html#T16" target="_self">T16</a>, <code>val </code><em>_17</em> : <a href="scala/Tuple17.html#T17" target="_self">T17</a>)<code> extends </code><a href="scala/Product17.html" target="_self">Product17</a>[<a href="scala/Tuple17.html#T1" target="_self">T1</a>, <a href="scala/Tuple17.html#T2" target="_self">T2</a>, <a href="scala/Tuple17.html#T3" target="_self">T3</a>, <a href="scala/Tuple17.html#T4" target="_self">T4</a>, <a href="scala/Tuple17.html#T5" target="_self">T5</a>, <a href="scala/Tuple17.html#T6" target="_self">T6</a>, <a href="scala/Tuple17.html#T7" target="_self">T7</a>, <a href="scala/Tuple17.html#T8" target="_self">T8</a>, <a href="scala/Tuple17.html#T9" target="_self">T9</a>, <a href="scala/Tuple17.html#T10" target="_self">T10</a>, <a href="scala/Tuple17.html#T11" target="_self">T11</a>, <a href="scala/Tuple17.html#T12" target="_self">T12</a>, <a href="scala/Tuple17.html#T13" target="_self">T13</a>, <a href="scala/Tuple17.html#T14" target="_self">T14</a>, <a href="scala/Tuple17.html#T15" target="_self">T15</a>, <a href="scala/Tuple17.html#T16" target="_self">T16</a>, <a href="scala/Tuple17.html#T17" target="_self">T17</a>]
+        
+        <div>Tuple17 is the canonical representation of a @see Product17</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple18.html" target="_self">Tuple18</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>, +<em>T15</em>, +<em>T16</em>, +<em>T17</em>, +<em>T18</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple18.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple18.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple18.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple18.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple18.html#T5" target="_self">T5</a>, <code>val </code><em>_6</em> : <a href="scala/Tuple18.html#T6" target="_self">T6</a>, <code>val </code><em>_7</em> : <a href="scala/Tuple18.html#T7" target="_self">T7</a>, <code>val </code><em>_8</em> : <a href="scala/Tuple18.html#T8" target="_self">T8</a>, <code>val </code><em>_9</em> : <a href="scala/Tuple18.html#T9" target="_self">T9</a>, <code>val </code><em>_10</em> : <a href="scala/Tuple18.html#T10" target="_self">T10</a>, <code>val </code><em>_11</em> : <a href="scala/Tuple18.html#T11" target="_self">T11</a>, <code>val </code><em>_12</em> : <a href="scala/Tuple18.html#T12" target="_self">T12</a>, <code>val </code><em>_13</em> : <a href="scala/Tuple18.html#T13" target="_self">T13</a>, <code>val </code><em>_14</em> : <a href="scala/Tuple18.html#T14" target="_self">T14</a>, <code>val </code><em>_15</em> : <a href="scala/Tuple18.html#T15" target="_self">T15</a>, <code>val </code><em>_16</em> : <a href="scala/Tuple18.html#T16" target="_self">T16</a>, <code>val </code><em>_17</em> : <a href="scala/Tuple18.html#T17" target="_self">T17</a>, <code>val </code><em>_18</em> : <a href="scala/Tuple18.html#T18" target="_self">T18</a>)<code> extends </code><a href="scala/Product18.html" target="_self">Product18</a>[<a href="scala/Tuple18.html#T1" target="_self">T1</a>, <a href="scala/Tuple18.html#T2" target="_self">T2</a>, <a href="scala/Tuple18.html#T3" target="_self">T3</a>, <a href="scala/Tuple18.html#T4" target="_self">T4</a>, <a href="scala/Tuple18.html#T5" target="_self">T5</a>, <a href="scala/Tuple18.html#T6" target="_self">T6</a>, <a href="scala/Tuple18.html#T7" target="_self">T7</a>, <a href="scala/Tuple18.html#T8" target="_self">T8</a>, <a href="scala/Tuple18.html#T9" target="_self">T9</a>, <a href="scala/Tuple18.html#T10" target="_self">T10</a>, <a href="scala/Tuple18.html#T11" target="_self">T11</a>, <a href="scala/Tuple18.html#T12" target="_self">T12</a>, <a href="scala/Tuple18.html#T13" target="_self">T13</a>, <a href="scala/Tuple18.html#T14" target="_self">T14</a>, <a href="scala/Tuple18.html#T15" target="_self">T15</a>, <a href="scala/Tuple18.html#T16" target="_self">T16</a>, <a href="scala/Tuple18.html#T17" target="_self">T17</a>, <a href="scala/Tuple18.html#T18" target="_self">T18</a>]
+        
+        <div>Tuple18 is the canonical representation of a @see Product18</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple19.html" target="_self">Tuple19</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>, +<em>T15</em>, +<em>T16</em>, +<em>T17</em>, +<em>T18</em>, +<em>T19</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple19.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple19.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple19.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple19.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple19.html#T5" target="_self">T5</a>, <code>val </code><em>_6</em> : <a href="scala/Tuple19.html#T6" target="_self">T6</a>, <code>val </code><em>_7</em> : <a href="scala/Tuple19.html#T7" target="_self">T7</a>, <code>val </code><em>_8</em> : <a href="scala/Tuple19.html#T8" target="_self">T8</a>, <code>val </code><em>_9</em> : <a href="scala/Tuple19.html#T9" target="_self">T9</a>, <code>val </code><em>_10</em> : <a href="scala/Tuple19.html#T10" target="_self">T10</a>, <code>val </code><em>_11</em> : <a href="scala/Tuple19.html#T11" target="_self">T11</a>, <code>val </code><em>_12</em> : <a href="scala/Tuple19.html#T12" target="_self">T12</a>, <code>val </code><em>_13</em> : <a href="scala/Tuple19.html#T13" target="_self">T13</a>, <code>val </code><em>_14</em> : <a href="scala/Tuple19.html#T14" target="_self">T14</a>, <code>val </code><em>_15</em> : <a href="scala/Tuple19.html#T15" target="_self">T15</a>, <code>val </code><em>_16</em> : <a href="scala/Tuple19.html#T16" target="_self">T16</a>, <code>val </code><em>_17</em> : <a href="scala/Tuple19.html#T17" target="_self">T17</a>, <code>val </code><em>_18</em> : <a href="scala/Tuple19.html#T18" target="_self">T18</a>, <code>val </code><em>_19</em> : <a href="scala/Tuple19.html#T19" target="_self">T19</a>)<code> extends </code><a href="scala/Product19.html" target="_self">Product19</a>[<a href="scala/Tuple19.html#T1" target="_self">T1</a>, <a href="scala/Tuple19.html#T2" target="_self">T2</a>, <a href="scala/Tuple19.html#T3" target="_self">T3</a>, <a href="scala/Tuple19.html#T4" target="_self">T4</a>, <a href="scala/Tuple19.html#T5" target="_self">T5</a>, <a href="scala/Tuple19.html#T6" target="_self">T6</a>, <a href="scala/Tuple19.html#T7" target="_self">T7</a>, <a href="scala/Tuple19.html#T8" target="_self">T8</a>, <a href="scala/Tuple19.html#T9" target="_self">T9</a>, <a href="scala/Tuple19.html#T10" target="_self">T10</a>, <a href="scala/Tuple19.html#T11" target="_self">T11</a>, <a href="scala/Tuple19.html#T12" target="_self">T12</a>, <a href="scala/Tuple19.html#T13" target="_self">T13</a>, <a href="scala/Tuple19.html#T14" target="_self">T14</a>, <a href="scala/Tuple19.html#T15" target="_self">T15</a>, <a href="scala/Tuple19.html#T16" target="_self">T16</a>, <a href="scala/Tuple19.html#T17" target="_self">T17</a>, <a href="scala/Tuple19.html#T18" target="_self">T18</a>, <a href="scala/Tuple19.html#T19" target="_self">T19</a>]
+        
+        <div>Tuple19 is the canonical representation of a @see Product19</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple2.html" target="_self">Tuple2</a></em>
+        [+<em>T1</em>, +<em>T2</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple2.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple2.html#T2" target="_self">T2</a>)<code> extends </code><a href="scala/Product2.html" target="_self">Product2</a>[<a href="scala/Tuple2.html#T1" target="_self">T1</a>, <a href="scala/Tuple2.html#T2" target="_self">T2</a>]
+        
+        <div>Tuple2 is the canonical representation of a @see Product2</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple20.html" target="_self">Tuple20</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>, +<em>T15</em>, +<em>T16</em>, +<em>T17</em>, +<em>T18</em>, +<em>T19</em>, +<em>T20</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple20.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple20.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple20.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple20.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple20.html#T5" target="_self">T5</a>, <code>val </code><em>_6</em> : <a href="scala/Tuple20.html#T6" target="_self">T6</a>, <code>val </code><em>_7</em> : <a href="scala/Tuple20.html#T7" target="_self">T7</a>, <code>val </code><em>_8</em> : <a href="scala/Tuple20.html#T8" target="_self">T8</a>, <code>val </code><em>_9</em> : <a href="scala/Tuple20.html#T9" target="_self">T9</a>, <code>val </code><em>_10</em> : <a href="scala/Tuple20.html#T10" target="_self">T10</a>, <code>val </code><em>_11</em> : <a href="scala/Tuple20.html#T11" target="_self">T11</a>, <code>val </code><em>_12</em> : <a href="scala/Tuple20.html#T12" target="_self">T12</a>, <code>val </code><em>_13</em> : <a href="scala/Tuple20.html#T13" target="_self">T13</a>, <code>val </code><em>_14</em> : <a href="scala/Tuple20.html#T14" target="_self">T14</a>, <code>val </code><em>_15</em> : <a href="scala/Tuple20.html#T15" target="_self">T15</a>, <code>val </code><em>_16</em> : <a href="scala/Tuple20.html#T16" target="_self">T16</a>, <code>val </code><em>_17</em> : <a href="scala/Tuple20.html#T17" target="_self">T17</a>, <code>val </code><em>_18</em> : <a href="scala/Tuple20.html#T18" target="_self">T18</a>, <code>val </code><em>_19</em> : <a href="scala/Tuple20.html#T19" target="_self">T19</a>, <code>val </code><em>_20</em> : <a href="scala/Tuple20.html#T20" target="_self">T20</a>)<code> extends </code><a href="scala/Product20.html" target="_self">Product20</a>[<a href="scala/Tuple20.html#T1" target="_self">T1</a>, <a href="scala/Tuple20.html#T2" target="_self">T2</a>, <a href="scala/Tuple20.html#T3" target="_self">T3</a>, <a href="scala/Tuple20.html#T4" target="_self">T4</a>, <a href="scala/Tuple20.html#T5" target="_self">T5</a>, <a href="scala/Tuple20.html#T6" target="_self">T6</a>, <a href="scala/Tuple20.html#T7" target="_self">T7</a>, <a href="scala/Tuple20.html#T8" target="_self">T8</a>, <a href="scala/Tuple20.html#T9" target="_self">T9</a>, <a href="scala/Tuple20.html#T10" target="_self">T10</a>, <a href="scala/Tuple20.html#T11" target="_self">T11</a>, <a href="scala/Tuple20.html#T12" target="_self">T12</a>, <a href="scala/Tuple20.html#T13" target="_self">T13</a>, <a href="scala/Tuple20.html#T14" target="_self">T14</a>, <a href="scala/Tuple20.html#T15" target="_self">T15</a>, <a href="scala/Tuple20.html#T16" target="_self">T16</a>, <a href="scala/Tuple20.html#T17" target="_self">T17</a>, <a href="scala/Tuple20.html#T18" target="_self">T18</a>, <a href="scala/Tuple20.html#T19" target="_self">T19</a>, <a href="scala/Tuple20.html#T20" target="_self">T20</a>]
+        
+        <div>Tuple20 is the canonical representation of a @see Product20</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple21.html" target="_self">Tuple21</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>, +<em>T15</em>, +<em>T16</em>, +<em>T17</em>, +<em>T18</em>, +<em>T19</em>, +<em>T20</em>, +<em>T21</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple21.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple21.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple21.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple21.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple21.html#T5" target="_self">T5</a>, <code>val </code><em>_6</em> : <a href="scala/Tuple21.html#T6" target="_self">T6</a>, <code>val </code><em>_7</em> : <a href="scala/Tuple21.html#T7" target="_self">T7</a>, <code>val </code><em>_8</em> : <a href="scala/Tuple21.html#T8" target="_self">T8</a>, <code>val </code><em>_9</em> : <a href="scala/Tuple21.html#T9" target="_self">T9</a>, <code>val </code><em>_10</em> : <a href="scala/Tuple21.html#T10" target="_self">T10</a>, <code>val </code><em>_11</em> : <a href="scala/Tuple21.html#T11" target="_self">T11</a>, <code>val </code><em>_12</em> : <a href="scala/Tuple21.html#T12" target="_self">T12</a>, <code>val </code><em>_13</em> : <a href="scala/Tuple21.html#T13" target="_self">T13</a>, <code>val </code><em>_14</em> : <a href="scala/Tuple21.html#T14" target="_self">T14</a>, <code>val </code><em>_15</em> : <a href="scala/Tuple21.html#T15" target="_self">T15</a>, <code>val </code><em>_16</em> : <a href="scala/Tuple21.html#T16" target="_self">T16</a>, <code>val </code><em>_17</em> : <a href="scala/Tuple21.html#T17" target="_self">T17</a>, <code>val </code><em>_18</em> : <a href="scala/Tuple21.html#T18" target="_self">T18</a>, <code>val </code><em>_19</em> : <a href="scala/Tuple21.html#T19" target="_self">T19</a>, <code>val </code><em>_20</em> : <a href="scala/Tuple21.html#T20" target="_self">T20</a>, <code>val </code><em>_21</em> : <a href="scala/Tuple21.html#T21" target="_self">T21</a>)<code> extends </code><a href="scala/Product21.html" target="_self">Product21</a>[<a href="scala/Tuple21.html#T1" target="_self">T1</a>, <a href="scala/Tuple21.html#T2" target="_self">T2</a>, <a href="scala/Tuple21.html#T3" target="_self">T3</a>, <a href="scala/Tuple21.html#T4" target="_self">T4</a>, <a href="scala/Tuple21.html#T5" target="_self">T5</a>, <a href="scala/Tuple21.html#T6" target="_self">T6</a>, <a href="scala/Tuple21.html#T7" target="_self">T7</a>, <a href="scala/Tuple21.html#T8" target="_self">T8</a>, <a href="scala/Tuple21.html#T9" target="_self">T9</a>, <a href="scala/Tuple21.html#T10" target="_self">T10</a>, <a href="scala/Tuple21.html#T11" target="_self">T11</a>, <a href="scala/Tuple21.html#T12" target="_self">T12</a>, <a href="scala/Tuple21.html#T13" target="_self">T13</a>, <a href="scala/Tuple21.html#T14" target="_self">T14</a>, <a href="scala/Tuple21.html#T15" target="_self">T15</a>, <a href="scala/Tuple21.html#T16" target="_self">T16</a>, <a href="scala/Tuple21.html#T17" target="_self">T17</a>, <a href="scala/Tuple21.html#T18" target="_self">T18</a>, <a href="scala/Tuple21.html#T19" target="_self">T19</a>, <a href="scala/Tuple21.html#T20" target="_self">T20</a>, <a href="scala/Tuple21.html#T21" target="_self">T21</a>]
+        
+        <div>Tuple21 is the canonical representation of a @see Product21</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple22.html" target="_self">Tuple22</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>, +<em>T10</em>, +<em>T11</em>, +<em>T12</em>, +<em>T13</em>, +<em>T14</em>, +<em>T15</em>, +<em>T16</em>, +<em>T17</em>, +<em>T18</em>, +<em>T19</em>, +<em>T20</em>, +<em>T21</em>, +<em>T22</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple22.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple22.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple22.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple22.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple22.html#T5" target="_self">T5</a>, <code>val </code><em>_6</em> : <a href="scala/Tuple22.html#T6" target="_self">T6</a>, <code>val </code><em>_7</em> : <a href="scala/Tuple22.html#T7" target="_self">T7</a>, <code>val </code><em>_8</em> : <a href="scala/Tuple22.html#T8" target="_self">T8</a>, <code>val </code><em>_9</em> : <a href="scala/Tuple22.html#T9" target="_self">T9</a>, <code>val </code><em>_10</em> : <a href="scala/Tuple22.html#T10" target="_self">T10</a>, <code>val </code><em>_11</em> : <a href="scala/Tuple22.html#T11" target="_self">T11</a>, <code>val </code><em>_12</em> : <a href="scala/Tuple22.html#T12" target="_self">T12</a>, <code>val </code><em>_13</em> : <a href="scala/Tuple22.html#T13" target="_self">T13</a>, <code>val </code><em>_14</em> : <a href="scala/Tuple22.html#T14" target="_self">T14</a>, <code>val </code><em>_15</em> : <a href="scala/Tuple22.html#T15" target="_self">T15</a>, <code>val </code><em>_16</em> : <a href="scala/Tuple22.html#T16" target="_self">T16</a>, <code>val </code><em>_17</em> : <a href="scala/Tuple22.html#T17" target="_self">T17</a>, <code>val </code><em>_18</em> : <a href="scala/Tuple22.html#T18" target="_self">T18</a>, <code>val </code><em>_19</em> : <a href="scala/Tuple22.html#T19" target="_self">T19</a>, <code>val </code><em>_20</em> : <a href="scala/Tuple22.html#T20" target="_self">T20</a>, <code>val </code><em>_21</em> : <a href="scala/Tuple22.html#T21" target="_self">T21</a>, <code>val </code><em>_22</em> : <a href="scala/Tuple22.html#T22" target="_self">T22</a>)<code> extends </code><a href="scala/Product22.html" target="_self">Product22</a>[<a href="scala/Tuple22.html#T1" target="_self">T1</a>, <a href="scala/Tuple22.html#T2" target="_self">T2</a>, <a href="scala/Tuple22.html#T3" target="_self">T3</a>, <a href="scala/Tuple22.html#T4" target="_self">T4</a>, <a href="scala/Tuple22.html#T5" target="_self">T5</a>, <a href="scala/Tuple22.html#T6" target="_self">T6</a>, <a href="scala/Tuple22.html#T7" target="_self">T7</a>, <a href="scala/Tuple22.html#T8" target="_self">T8</a>, <a href="scala/Tuple22.html#T9" target="_self">T9</a>, <a href="scala/Tuple22.html#T10" target="_self">T10</a>, <a href="scala/Tuple22.html#T11" target="_self">T11</a>, <a href="scala/Tuple22.html#T12" target="_self">T12</a>, <a href="scala/Tuple22.html#T13" target="_self">T13</a>, <a href="scala/Tuple22.html#T14" target="_self">T14</a>, <a href="scala/Tuple22.html#T15" target="_self">T15</a>, <a href="scala/Tuple22.html#T16" target="_self">T16</a>, <a href="scala/Tuple22.html#T17" target="_self">T17</a>, <a href="scala/Tuple22.html#T18" target="_self">T18</a>, <a href="scala/Tuple22.html#T19" target="_self">T19</a>, <a href="scala/Tuple22.html#T20" target="_self">T20</a>, <a href="scala/Tuple22.html#T21" target="_self">T21</a>, <a href="scala/Tuple22.html#T22" target="_self">T22</a>]
+        
+        <div>Tuple22 is the canonical representation of a @see Product22</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple3.html" target="_self">Tuple3</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple3.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple3.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple3.html#T3" target="_self">T3</a>)<code> extends </code><a href="scala/Product3.html" target="_self">Product3</a>[<a href="scala/Tuple3.html#T1" target="_self">T1</a>, <a href="scala/Tuple3.html#T2" target="_self">T2</a>, <a href="scala/Tuple3.html#T3" target="_self">T3</a>]
+        
+        <div>Tuple3 is the canonical representation of a @see Product3</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple4.html" target="_self">Tuple4</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple4.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple4.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple4.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple4.html#T4" target="_self">T4</a>)<code> extends </code><a href="scala/Product4.html" target="_self">Product4</a>[<a href="scala/Tuple4.html#T1" target="_self">T1</a>, <a href="scala/Tuple4.html#T2" target="_self">T2</a>, <a href="scala/Tuple4.html#T3" target="_self">T3</a>, <a href="scala/Tuple4.html#T4" target="_self">T4</a>]
+        
+        <div>Tuple4 is the canonical representation of a @see Product4</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple5.html" target="_self">Tuple5</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple5.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple5.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple5.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple5.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple5.html#T5" target="_self">T5</a>)<code> extends </code><a href="scala/Product5.html" target="_self">Product5</a>[<a href="scala/Tuple5.html#T1" target="_self">T1</a>, <a href="scala/Tuple5.html#T2" target="_self">T2</a>, <a href="scala/Tuple5.html#T3" target="_self">T3</a>, <a href="scala/Tuple5.html#T4" target="_self">T4</a>, <a href="scala/Tuple5.html#T5" target="_self">T5</a>]
+        
+        <div>Tuple5 is the canonical representation of a @see Product5</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple6.html" target="_self">Tuple6</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple6.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple6.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple6.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple6.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple6.html#T5" target="_self">T5</a>, <code>val </code><em>_6</em> : <a href="scala/Tuple6.html#T6" target="_self">T6</a>)<code> extends </code><a href="scala/Product6.html" target="_self">Product6</a>[<a href="scala/Tuple6.html#T1" target="_self">T1</a>, <a href="scala/Tuple6.html#T2" target="_self">T2</a>, <a href="scala/Tuple6.html#T3" target="_self">T3</a>, <a href="scala/Tuple6.html#T4" target="_self">T4</a>, <a href="scala/Tuple6.html#T5" target="_self">T5</a>, <a href="scala/Tuple6.html#T6" target="_self">T6</a>]
+        
+        <div>Tuple6 is the canonical representation of a @see Product6</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple7.html" target="_self">Tuple7</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple7.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple7.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple7.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple7.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple7.html#T5" target="_self">T5</a>, <code>val </code><em>_6</em> : <a href="scala/Tuple7.html#T6" target="_self">T6</a>, <code>val </code><em>_7</em> : <a href="scala/Tuple7.html#T7" target="_self">T7</a>)<code> extends </code><a href="scala/Product7.html" target="_self">Product7</a>[<a href="scala/Tuple7.html#T1" target="_self">T1</a>, <a href="scala/Tuple7.html#T2" target="_self">T2</a>, <a href="scala/Tuple7.html#T3" target="_self">T3</a>, <a href="scala/Tuple7.html#T4" target="_self">T4</a>, <a href="scala/Tuple7.html#T5" target="_self">T5</a>, <a href="scala/Tuple7.html#T6" target="_self">T6</a>, <a href="scala/Tuple7.html#T7" target="_self">T7</a>]
+        
+        <div>Tuple7 is the canonical representation of a @see Product7</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple8.html" target="_self">Tuple8</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple8.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple8.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple8.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple8.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple8.html#T5" target="_self">T5</a>, <code>val </code><em>_6</em> : <a href="scala/Tuple8.html#T6" target="_self">T6</a>, <code>val </code><em>_7</em> : <a href="scala/Tuple8.html#T7" target="_self">T7</a>, <code>val </code><em>_8</em> : <a href="scala/Tuple8.html#T8" target="_self">T8</a>)<code> extends </code><a href="scala/Product8.html" target="_self">Product8</a>[<a href="scala/Tuple8.html#T1" target="_self">T1</a>, <a href="scala/Tuple8.html#T2" target="_self">T2</a>, <a href="scala/Tuple8.html#T3" target="_self">T3</a>, <a href="scala/Tuple8.html#T4" target="_self">T4</a>, <a href="scala/Tuple8.html#T5" target="_self">T5</a>, <a href="scala/Tuple8.html#T6" target="_self">T6</a>, <a href="scala/Tuple8.html#T7" target="_self">T7</a>, <a href="scala/Tuple8.html#T8" target="_self">T8</a>]
+        
+        <div>Tuple8 is the canonical representation of a @see Product8</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Tuple9.html" target="_self">Tuple9</a></em>
+        [+<em>T1</em>, +<em>T2</em>, +<em>T3</em>, +<em>T4</em>, +<em>T5</em>, +<em>T6</em>, +<em>T7</em>, +<em>T8</em>, +<em>T9</em>](<code>val </code><em>_1</em> : <a href="scala/Tuple9.html#T1" target="_self">T1</a>, <code>val </code><em>_2</em> : <a href="scala/Tuple9.html#T2" target="_self">T2</a>, <code>val </code><em>_3</em> : <a href="scala/Tuple9.html#T3" target="_self">T3</a>, <code>val </code><em>_4</em> : <a href="scala/Tuple9.html#T4" target="_self">T4</a>, <code>val </code><em>_5</em> : <a href="scala/Tuple9.html#T5" target="_self">T5</a>, <code>val </code><em>_6</em> : <a href="scala/Tuple9.html#T6" target="_self">T6</a>, <code>val </code><em>_7</em> : <a href="scala/Tuple9.html#T7" target="_self">T7</a>, <code>val </code><em>_8</em> : <a href="scala/Tuple9.html#T8" target="_self">T8</a>, <code>val </code><em>_9</em> : <a href="scala/Tuple9.html#T9" target="_self">T9</a>)<code> extends </code><a href="scala/Product9.html" target="_self">Product9</a>[<a href="scala/Tuple9.html#T1" target="_self">T1</a>, <a href="scala/Tuple9.html#T2" target="_self">T2</a>, <a href="scala/Tuple9.html#T3" target="_self">T3</a>, <a href="scala/Tuple9.html#T4" target="_self">T4</a>, <a href="scala/Tuple9.html#T5" target="_self">T5</a>, <a href="scala/Tuple9.html#T6" target="_self">T6</a>, <a href="scala/Tuple9.html#T7" target="_self">T7</a>, <a href="scala/Tuple9.html#T8" target="_self">T8</a>, <a href="scala/Tuple9.html#T9" target="_self">T9</a>]
+        
+        <div>Tuple9 is the canonical representation of a @see Product9</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/TypeConstraint.html" target="_self">TypeConstraint</a></em>
+        <code> extends </code><a href="scala/Annotation.html" target="_self">Annotation</a>
+        
+        <div><p>
+    A marker for annotations that, when applied to a type,
+    should be treated as a constraint on the annotated type.
+    A proper constraint should restrict the type based only
+    on information mentioned within the type.  A Scala compiler
+    can use this assumption to rewrite the contents of the
+    constraint as necessary.  To contrast, a type annotation
+    whose meaning depends on the context where it is written
+    down is not a proper constrained type, and this marker
+    should not be applied.  A Scala compiler will drop such
+    annotations in cases where it would rewrite a type constraint.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/UninitializedError.html" target="_self">UninitializedError</a></em>
+        <code> extends </code><a href="" target="contentFrame" class="java/lang/RuntimeException">java.lang.RuntimeException</a><code> with </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This class represents uninitialized variable/value errors.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/cloneable.html" target="_self">cloneable</a></em>
+        <code> extends </code><a href="scala/Annotation.html" target="_self">Annotation</a>
+        
+        <div>An annotation that designates the class to which it is applied as cloneable</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/deprecated.html" target="_self">deprecated</a></em>
+        <code> extends </code><a href="scala/StaticAnnotation.html" target="_self">StaticAnnotation</a>
+        
+        <div>An annotation that designates the definition to which it is applied as deprecated.
+ Access to the member then generates a deprecated warning.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/inline.html" target="_self">inline</a></em>
+        <code> extends </code><a href="scala/StaticAnnotation.html" target="_self">StaticAnnotation</a>
+        
+        <div>An annotation on methods that requests that the compiler should
+ try especially hard to inline the annotated method.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/native.html" target="_self">native</a></em>
+        <code> extends </code><a href="scala/Annotation.html" target="_self">Annotation</a>
+        
+        <div>Marker for native methods.
+ <p>
+   <code>@native def f(x: Int, y: List[Long]): String = ..</code>
+ </p>
+ <p>
+   Method body is not generated if method is marked with <code>@native</code>,
+   but it is type checked when present.
+ </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/noinline.html" target="_self">noinline</a></em>
+        <code> extends </code><a href="scala/StaticAnnotation.html" target="_self">StaticAnnotation</a>
+        
+        <div>An annotation on methods that forbids the compiler to inline the
+ method, no matter how safe the inlining appears to be.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/remote.html" target="_self">remote</a></em>
+        <code> extends </code><a href="scala/Annotation.html" target="_self">Annotation</a>
+        
+        <div>An annotation that designates the class to which it is applied as remotable.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/serializable.html" target="_self">serializable</a></em>
+        <code> extends </code><a href="scala/Annotation.html" target="_self">Annotation</a>
+        
+        <div>An annotation that designates the class to which it is applied as serializable</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/throws.html" target="_self">throws</a></em>
+        (<em>clazz</em> : <a href="" target="contentFrame" class="java/lang/Class">java.lang.Class</a>)<code> extends </code><a href="scala/Annotation.html" target="_self">Annotation</a>
+        
+        <div><p>
+    Annotation for specifying the exceptions thrown by a method.
+    For example:
+  </p><pre>
+    <b>class</b> Reader(fname: String) {
+      <b>private val</b> in =
+        <b>new</b> BufferedReader(<b>new</b> <a class="java/io/FileReader" href="" target="_top">FileReader</a>(fname))
+      @throws(classOf[<a class="java/io/IOException" href="" target="_top">IOException</a>])
+      <b>def</b> read() = in.read()
+    }</pre></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/transient.html" target="_self">transient</a></em>
+        <code> extends </code><a href="scala/Annotation.html" target="_self">Annotation</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/unchecked.html" target="_self">unchecked</a></em>
+        <code> extends </code><a href="scala/Annotation.html" target="_self">Annotation</a>
+        
+        <div><p>
+    An annotation that gets applied to a selector in a match expression.
+    If it is present, exhaustiveness warnings for that expression will be
+    suppressed.
+  </p>
+  <p>
+    For example, compiling the code:
+  </p><pre>
+    <b>object</b> test <b>extends</b> Application {
+      <b>def</b> f(x: Option[int]) = x <b>match</b> {
+        <b>case</b> Some(y) => y
+      }
+      f(None)
+    }</pre>
+  <p>
+    will display the following warning:
+  </p><pre>
+    test.scala:2: warning: does not cover case {object None}
+      def f(x: Option[int]) = x match {
+                              ^
+    one warning found</pre>
+  <p>
+    The above message may be suppressed by substituting the expression
+    <code>x</code> with <code>(x: @unchecked)</code>. Then the
+    modified code will compile silently, but, in any case, a
+    <a href="MatchError.html"><code>MatchError</code></a>
+    will be raised at runtime.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/unsealed.html" target="_self">unsealed</a></em>
+        <code> extends </code><a href="scala/Annotation.html" target="_self">Annotation</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/volatile.html" target="_self">volatile</a></em>
+        <code> extends </code><a href="scala/Annotation.html" target="_self">Annotation</a>
+        
+        
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Array$object.html" target="_self">Array</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This object contains utility methods operating on arrays.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/BigInt$object.html" target="_self">BigInt</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/BufferedIterator$object.html" target="_self">BufferedIterator</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Console$object.html" target="_self">Console</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The <code>Console</code> object implements functionality for
+  printing Scala values on the terminal. There are also functions
+  for reading specific values. <code>Console</code> also defines
+  constants for marking up text on ANSI terminals.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Function$object.html" target="_self">Function</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>A module defining utility methods for higher-order functional programming.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Iterable$object.html" target="_self">Iterable</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Various utilities for instances of <a href="Iterable.html">Iterable</a>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Iterator$object.html" target="_self">Iterator</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The <code>Iterator</code> object provides various functions for
+  creating specialized iterators.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/List$object.html" target="_self">List</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This object provides methods for creating specialized lists, and for
+  transforming special kinds of lists (e.g. lists of lists).</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Math$object.html" target="_self">Math</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The object <code>Math</code> contains methods for performing basic numeric
+  operations such as the elementary exponential, logarithm, square root, and
+  trigonometric functions.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Nil$object.html" target="_self">Nil</a></em>
+        <code> extends </code><a href="scala/List.html" target="_self">List</a>[<a href="scala/Nothing.html" target="_self">Nothing</a>]<code> with </code><a href="scala/Product.html" target="_self">Product</a>
+        
+        <div>The empty list.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/None$object.html" target="_self">None</a></em>
+        <code> extends </code><a href="scala/Option.html" target="_self">Option</a>[<a href="scala/Nothing.html" target="_self">Nothing</a>]
+        
+        <div>This case object represents non-existent values.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Option$object.html" target="_self">Option</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Predef$object.html" target="_self">Predef</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The <code>Predef</code> object provides definitions that are
+  accessible in all Scala compilation units without explicit
+  qualification.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product1$object.html" target="_self">Product1</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product10$object.html" target="_self">Product10</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product11$object.html" target="_self">Product11</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product12$object.html" target="_self">Product12</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product13$object.html" target="_self">Product13</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product14$object.html" target="_self">Product14</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product15$object.html" target="_self">Product15</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product16$object.html" target="_self">Product16</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product17$object.html" target="_self">Product17</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product18$object.html" target="_self">Product18</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product19$object.html" target="_self">Product19</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product2$object.html" target="_self">Product2</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product20$object.html" target="_self">Product20</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product21$object.html" target="_self">Product21</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product22$object.html" target="_self">Product22</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product3$object.html" target="_self">Product3</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product4$object.html" target="_self">Product4</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product5$object.html" target="_self">Product5</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product6$object.html" target="_self">Product6</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product7$object.html" target="_self">Product7</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product8$object.html" target="_self">Product8</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Product9$object.html" target="_self">Product9</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/RandomAccessSeq$object.html" target="_self">RandomAccessSeq</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Responder$object.html" target="_self">Responder</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This object contains utility methods to build responders.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Seq$object.html" target="_self">Seq</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="scala/Stream$object.html" target="_self">Stream</a></em>
+        <code> extends </code><a href="scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The object <code>Stream</code> provides helper functions
+ to manipulate streams.</div>
+      </td>
+    </tr>        
+        </table></body>
+      </html>

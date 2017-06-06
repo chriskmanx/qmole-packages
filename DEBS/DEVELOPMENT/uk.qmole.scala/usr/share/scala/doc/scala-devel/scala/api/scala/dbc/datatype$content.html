@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.dbc.datatype</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/datatype/ApproximateNumeric.html" target="_self">ApproximateNumeric</a></em>
+        [<em>Type</em>](<code>val override </code><em>nativeTypeId</em> : <a href="../../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../../scala/dbc/datatype/Numeric.html" target="_self">Numeric</a>[<a href="../../scala/dbc/datatype/ApproximateNumeric.html#Type" target="_self">Type</a>]
+        
+        <div>A type category for all SQL types that store varying-precision
+ numbers.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/datatype/Boolean.html" target="_self">Boolean</a></em>
+        <code> extends </code><a href="../../scala/dbc/DataType.html" target="_self">DataType</a>
+        
+        <div>The SQL type for a truth value.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/datatype/Character.html" target="_self">Character</a></em>
+        <code> extends </code><a href="../../scala/dbc/datatype/CharacterString.html" target="_self">CharacterString</a>
+        
+        <div>A SQL type for a string of characters of arbitrary length with
+  arbitrary character set.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/datatype/CharacterLargeObject.html" target="_self">CharacterLargeObject</a></em>
+        <code> extends </code><a href="../../scala/dbc/datatype/CharacterString.html" target="_self">CharacterString</a>
+        
+        <div>A SQL type for an unbounded length string of characters with arbitrary
+  character set.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/datatype/CharacterString.html" target="_self">CharacterString</a></em>
+        <code> extends </code><a href="../../scala/dbc/datatype/String.html" target="_self">String</a>
+        
+        <div>A type category for all SQL types that store strings of characters.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/datatype/CharacterVarying.html" target="_self">CharacterVarying</a></em>
+        <code> extends </code><a href="../../scala/dbc/datatype/CharacterString.html" target="_self">CharacterString</a>
+        
+        <div>A SQL type for a varying length string of characters with arbitrary
+  maximal length and arbitrary character set.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/datatype/ExactNumeric.html" target="_self">ExactNumeric</a></em>
+        [<em>Type</em>](<code>val override </code><em>nativeTypeId</em> : <a href="../../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../../scala/dbc/datatype/Numeric.html" target="_self">Numeric</a>[<a href="../../scala/dbc/datatype/ExactNumeric.html#Type" target="_self">Type</a>]
+        
+        <div>A type category for all SQL types that store constant-precision
+  numbers.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/datatype/Numeric.html" target="_self">Numeric</a></em>
+        [<em>Type</em>](<em>_nativeTypeId</em> : <a href="../../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../../scala/dbc/DataType.html" target="_self">DataType</a>
+        
+        <div>A type category for all SQL types that store numbers.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/datatype/String.html" target="_self">String</a></em>
+        <code> extends </code><a href="../../scala/dbc/DataType.html" target="_self">DataType</a>
+        
+        <div>A type category for all SQL types that store strings of elements.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/datatype/Unknown.html" target="_self">Unknown</a></em>
+        <code> extends </code><a href="../../scala/dbc/DataType.html" target="_self">DataType</a>
+        
+        <div>The SQL type for a truth value.</div>
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/datatype/Factory$object.html" target="_self">Factory</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>        
+        </table></body>
+      </html>

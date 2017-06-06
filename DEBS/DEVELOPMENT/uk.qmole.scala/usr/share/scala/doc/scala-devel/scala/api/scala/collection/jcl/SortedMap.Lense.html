@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class Lense in scala.collection.jcl.SortedMap</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../scala/collection/jcl/SortedMap.html" target="_self">scala.collection.jcl.SortedMap</a>
+        <br></br>
+        <span class="entity">class  Lense</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/collection/jcl/SortedMap"><code>scala/collection/jcl/SortedMap.scala</code></a>]
+      </div><hr></hr>
+      <a name="Lense"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>class</code>
+        <em>Lense</em>[<em>F</em>](<em>f</em> : (<a href="../../../scala/collection/jcl/SortedMap.html#E" target="_self">E</a>) =&gt; <a href="../../../scala/collection/jcl/SortedMap.Lense.html#F" target="_self">F</a>, <em>g</em> : (<a href="../../../scala/collection/jcl/SortedMap.Lense.html#F" target="_self">F</a>) =&gt; <a href="../../../scala/collection/jcl/SortedMap.html#E" target="_self">E</a>)
+      </dt>
+      <dd><code> extends </code><a href="../../../scala/collection/jcl/Map.Lense.html" target="_self">Lense</a>[<a href="../../../scala/collection/jcl/SortedMap.Lense.html#F" target="_self">F</a>]<code> with </code><a href="../../../scala/collection/jcl/SortedMap$object.Projection.html" target="_self">Projection</a>[<a href="../../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>, <a href="../../../scala/collection/jcl/SortedMap.Lense.html#F" target="_self">F</a>]</dd>
+    </dl>
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/SortedMap.Lense.html#compare%28K%2CK%29" target="_self">compare</a></em>
+        (<em>k0</em> : <a href="../../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>, <em>k1</em> : <a href="../../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>) : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        <div>Comparison function that orders keys.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/SortedMap.Lense.html#filterKeys%28%28K%29%3D%3EBoolean%29" target="_self">filterKeys</a></em>
+        (<em>p</em> : (<a href="../../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>) =&gt; <a href="../../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../../../scala/collection/jcl/SortedMap$object.Projection.html" target="_self">Projection</a>[<a href="../../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>, <a href="../../../scala/collection/jcl/SortedMap.Lense.html#F" target="_self">F</a>]
+        
+        <div>non-strict filter based on keys only</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/SortedMap.Lense.html#lense%28%28F%29%3D%3EG%2C%28G%29%3D%3EF%29" target="_self">lense</a></em>
+        [<em>G</em>](<em>f0</em> : (<a href="../../../scala/collection/jcl/SortedMap.Lense.html#F" target="_self">F</a>) =&gt; <a href="../../../scala/collection/jcl/SortedMap.Lense.html#lense%28%28F%29%3D%3EG%2C%28G%29%3D%3EF%29#G" target="_self">G</a>, <em>g0</em> : (<a href="../../../scala/collection/jcl/SortedMap.Lense.html#lense%28%28F%29%3D%3EG%2C%28G%29%3D%3EF%29#G" target="_self">G</a>) =&gt; <a href="../../../scala/collection/jcl/SortedMap.Lense.html#F" target="_self">F</a>) : <a href="../../../scala/collection/jcl/SortedMap$object.Projection.html" target="_self">Projection</a>[<a href="../../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>, <a href="../../../scala/collection/jcl/SortedMap.Lense.html#lense%28%28F%29%3D%3EG%2C%28G%29%3D%3EF%29#G" target="_self">G</a>]
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/SortedMap.Lense.html#rangeImpl%28Option%5BK%5D%2COption%5BK%5D%29" target="_self">rangeImpl</a></em>
+        (<em>from</em> : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>], <em>until</em> : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>]) : <a href="../../../scala/collection/jcl/SortedMap$object.Projection.html" target="_self">Projection</a>[<a href="../../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>, <a href="../../../scala/collection/jcl/SortedMap.Lense.html#F" target="_self">F</a>]
+        
+        <div>Creates a ranged projection of this collection. Any mutations in the
+    ranged projection will update this collection and vice versa.  Keys
+    are garuanteed to be consistent between the collection and its projection.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/jcl/SortedMap$object.Projection.html" target="_self">Projection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/jcl/SortedMap$object.Projection.html#projection" target="_self">projection</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/jcl/SortedMap.html" target="_self">SortedMap</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/jcl/SortedMap.html#firstKey" target="_self">firstKey</a>, <a href="../../../scala/collection/jcl/SortedMap.html#lastKey" target="_self">lastKey</a>, <a href="../../../scala/collection/jcl/SortedMap.html#keySet" target="_self">keySet</a>, <a href="../../../scala/collection/jcl/SortedMap.html#Range%28Option%5BK%5D%2COption%5BK%5D%29" target="_self">Range</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/jcl/Sorted.html" target="_self">Sorted</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/jcl/Sorted.html#to%28K%29" target="_self">to</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/jcl/Ranged.html" target="_self">Ranged</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/jcl/Ranged.html#from%28K%29" target="_self">from</a>, <a href="../../../scala/collection/jcl/Ranged.html#until%28K%29" target="_self">until</a>, <a href="../../../scala/collection/jcl/Ranged.html#range%28K%2CK%29" target="_self">range</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/Sorted.html" target="_self">Sorted</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/Sorted.html#hasAll%28Iterator%5BK%5D%29" target="_self">hasAll</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/jcl/Map.Lense.html" target="_self">Lense</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/jcl/Map.Lense.html#elements" target="_self">elements</a>, <a href="../../../scala/collection/jcl/Map.Lense.html#removeKey%28K%29" target="_self">removeKey</a>, <a href="../../../scala/collection/jcl/Map.Lense.html#put%28K%2CF%29" target="_self">put</a>, <a href="../../../scala/collection/jcl/Map.Lense.html#get%28K%29" target="_self">get</a>, <a href="../../../scala/collection/jcl/Map.Lense.html#size" target="_self">size</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/jcl/Map$object.Projection.html" target="_self">Projection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/jcl/Map$object.Projection.html#map%28%28%28K%2CE%29%29%3D%3EB%29" target="_self">map</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/jcl/Map.html" target="_self">Map</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/jcl/Map.html#clear%28%29" target="_self">clear</a>, <a href="../../../scala/collection/jcl/Map.html#isEmpty" target="_self">isEmpty</a>, <a href="../../../scala/collection/jcl/Map.html#keys" target="_self">keys</a>, <a href="../../../scala/collection/jcl/Map.html#valueSet" target="_self">valueSet</a>, <a href="../../../scala/collection/jcl/Map.html#%2B%2B%3D%28Iterable%5B%28K%2CE%29%5D%29" target="_self">++=</a>, <a href="../../../scala/collection/jcl/Map.html#has%28%28K%2CE%29%29" target="_self">has</a>, <a href="../../../scala/collection/jcl/Map.html#update%28K%2CE%29" target="_self">update</a>, <a href="../../../scala/collection/jcl/Map.html#%2B%28%28K%2CE%29%29" target="_self">+</a>, <a href="../../../scala/collection/jcl/Map.html#%2B%3D%28%28K%2CE%29%29" target="_self">+=</a>, <a href="../../../scala/collection/jcl/Map.html#-%28K%29" target="_self">-</a>, <a href="../../../scala/collection/jcl/Map.html#remove%28%28K%2CE%29%29" target="_self">remove</a>, <a href="../../../scala/collection/jcl/Map.html#-%3D%28K%29" target="_self">-=</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/mutable/Map.html" target="_self">Map</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/mutable/Map.html#%2B%3D%28%28A%2CB%29%2C%28A%2CB%29%2C%28A%2CB%29*%29" target="_self">+=</a>, <a href="../../../scala/collection/mutable/Map.html#%2B%2B%3D%28Iterator%5B%28A%2CB%29%5D%29" target="_self">++=</a>, <a href="../../../scala/collection/mutable/Map.html#%2B%28%28A%2CB%29%2C%28A%2CB%29%2C%28A%2CB%29*%29" target="_self">+</a>, <a href="../../../scala/collection/mutable/Map.html#%2B%2B%28Iterable%5B%28A%2CB%29%5D%29" target="_self">++</a>, <a href="../../../scala/collection/mutable/Map.html#%2B%2B%28Iterator%5B%28A%2CB%29%5D%29" target="_self">++</a>, <a href="../../../scala/collection/mutable/Map.html#-%3D%28A%2CA%2CA*%29" target="_self">-=</a>, <a href="../../../scala/collection/mutable/Map.html#--%3D%28Iterable%5BA%5D%29" target="_self">--=</a>, <a href="../../../scala/collection/mutable/Map.html#--%3D%28Iterator%5BA%5D%29" target="_self">--=</a>, <a href="../../../scala/collection/mutable/Map.html#-%28A%2CA%2CA*%29" target="_self">-</a>, <a href="../../../scala/collection/mutable/Map.html#--%28Iterable%5BA%5D%29" target="_self">--</a>, <a href="../../../scala/collection/mutable/Map.html#--%28Iterator%5BA%5D%29" target="_self">--</a>, <a href="../../../scala/collection/mutable/Map.html#getOrElseUpdate%28A%2C%3D%3EB%29" target="_self">getOrElseUpdate</a>, <a href="../../../scala/collection/mutable/Map.html#transform%28%28A%2CB%29%3D%3EB%29" target="_self">transform</a>, <a href="../../../scala/collection/mutable/Map.html#retain%28%28A%2CB%29%3D%3EBoolean%29" target="_self">retain</a>, <a href="../../../scala/collection/mutable/Map.html#%3C%3C%28scala.collection.mutable.Message%5B%28A%2CB%29%5D%29" target="_self">&lt;&lt;</a>, <a href="../../../scala/collection/mutable/Map.html#clone%28%29" target="_self">clone</a>, <a href="../../../scala/collection/mutable/Map.html#%2B%3D%28A%29" target="_self">+=</a>, <a href="../../../scala/collection/mutable/Map.html#incl%28%28A%2CB%29*%29" target="_self">incl</a>, <a href="../../../scala/collection/mutable/Map.html#excl%28A*%29" target="_self">excl</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/Map.html" target="_self">Map</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/Map.html#getOrElse%28A%2C%3D%3EB2%29" target="_self">getOrElse</a>, <a href="../../../scala/collection/Map.html#apply%28A%29" target="_self">apply</a>, <a href="../../../scala/collection/Map.html#contains%28A%29" target="_self">contains</a>, <a href="../../../scala/collection/Map.html#isDefinedAt%28A%29" target="_self">isDefinedAt</a>, <a href="../../../scala/collection/Map.html#values" target="_self">values</a>, <a href="../../../scala/collection/Map.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../scala/collection/Map.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../scala/collection/Map.html#toString%28%29" target="_self">toString</a>, <a href="../../../scala/collection/Map.html#default%28A%29" target="_self">default</a>, <a href="../../../scala/collection/Map.html#mapElements%28%28B%29%3D%3EC%29" target="_self">mapElements</a>, <a href="../../../scala/collection/Map.html#stringPrefix" target="_self">stringPrefix</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/PartialFunction.html" target="_self">PartialFunction</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/PartialFunction.html#orElse%28PartialFunction%5BA1%2CB1%5D%29" target="_self">orElse</a>, <a href="../../../scala/PartialFunction.html#andThen%28%28B%29%3D%3EC%29" target="_self">andThen</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Function1.html" target="_self">Function1</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Function1.html#compose%28%28A%29%3D%3ET1%29" target="_self">compose</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/jcl/MutableIterable$object.Projection.html" target="_self">Projection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/jcl/MutableIterable$object.Projection.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Iterable$object.Projection.html" target="_self">Projection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Iterable$object.Projection.html#force" target="_self">force</a>, <a href="../../../scala/Iterable$object.Projection.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a>, <a href="../../../scala/Iterable$object.Projection.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a>, <a href="../../../scala/Iterable$object.Projection.html#append%28%3D%3EIterable%5BB%5D%29" target="_self">append</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/jcl/MutableIterable.html" target="_self">MutableIterable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/jcl/MutableIterable.html#removeAll%28Iterable%5BA%5D%29" target="_self">removeAll</a>, <a href="../../../scala/collection/jcl/MutableIterable.html#--%28Iterable%5BA%5D%29" target="_self">--</a>, <a href="../../../scala/collection/jcl/MutableIterable.html#-%28A%29" target="_self">-</a>, <a href="../../../scala/collection/jcl/MutableIterable.html#retainOnly%28%28A%29%3D%3EBoolean%29" target="_self">retainOnly</a>, <a href="../../../scala/collection/jcl/MutableIterable.html#retainAll%28Iterable%5BA%5D%29" target="_self">retainAll</a>, <a href="../../../scala/collection/jcl/MutableIterable.html#size0" target="_self">size0</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Collection.html" target="_self">Collection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Collection.html#toArray" target="_self">toArray</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Iterable.html" target="_self">Iterable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Iterable.html#concat%28Iterable%5BB%5D%29" target="_self">concat</a>, <a href="../../../scala/Iterable.html#%2B%2B%28Iterable%5BB%5D%29" target="_self">++</a>, <a href="../../../scala/Iterable.html#partition%28%28A%29%3D%3EBoolean%29" target="_self">partition</a>, <a href="../../../scala/Iterable.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a>, <a href="../../../scala/Iterable.html#take%28Int%29" target="_self">take</a>, <a href="../../../scala/Iterable.html#drop%28Int%29" target="_self">drop</a>, <a href="../../../scala/Iterable.html#foreach%28%28A%29%3D%3EUnit%29" target="_self">foreach</a>, <a href="../../../scala/Iterable.html#forall%28%28A%29%3D%3EBoolean%29" target="_self">forall</a>, <a href="../../../scala/Iterable.html#exists%28%28A%29%3D%3EBoolean%29" target="_self">exists</a>, <a href="../../../scala/Iterable.html#find%28%28A%29%3D%3EBoolean%29" target="_self">find</a>, <a href="../../../scala/Iterable.html#findIndexOf%28%28A%29%3D%3EBoolean%29" target="_self">findIndexOf</a>, <a href="../../../scala/Iterable.html#indexOf%28B%29" target="_self">indexOf</a>, <a href="../../../scala/Iterable.html#foldLeft%28B%29" target="_self">foldLeft</a>, <a href="../../../scala/Iterable.html#foldRight%28B%29" target="_self">foldRight</a>, <a href="../../../scala/Iterable.html#%2F%3A%28B%29" target="_self">/:</a>, <a href="../../../scala/Iterable.html#%3A%5C%28B%29" target="_self">:\</a>, <a href="../../../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29" target="_self">reduceLeft</a>, <a href="../../../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29" target="_self">reduceRight</a>, <a href="../../../scala/Iterable.html#copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29" target="_self">copyToBuffer</a>, <a href="../../../scala/Iterable.html#sameElements%28Iterable%5BB%5D%29" target="_self">sameElements</a>, <a href="../../../scala/Iterable.html#toList" target="_self">toList</a>, <a href="../../../scala/Iterable.html#toStream" target="_self">toStream</a>, <a href="../../../scala/Iterable.html#mkString%28String%2CString%2CString%29" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#mkString%28String%29" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#mkString" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%2CString%2CString%29" target="_self">addString</a>, <a href="../../../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%29" target="_self">addString</a>, <a href="../../../scala/Iterable.html#copyToArray%28Array%5BB%5D%2CInt%29" target="_self">copyToArray</a>, <a href="../../../scala/Iterable.html#hasDefiniteSize" target="_self">hasDefiniteSize</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="compare%28K%2CK%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>compare</em>(<em>k0</em> : <a href="../../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>, <em>k1</em> : <a href="../../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>) : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Comparison function that orders keys.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="filterKeys%28%28K%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>filterKeys</em>(<em>p</em> : (<a href="../../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>) =&gt; <a href="../../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../../../scala/collection/jcl/SortedMap$object.Projection.html" target="_self">Projection</a>[<a href="../../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>, <a href="../../../scala/collection/jcl/SortedMap.Lense.html#F" target="_self">F</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>non-strict filter based on keys only</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="lense%28%28F%29%3D%3EG%2C%28G%29%3D%3EF%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>lense</em>[<em>G</em>](<em>f0</em> : (<a href="../../../scala/collection/jcl/SortedMap.Lense.html#F" target="_self">F</a>) =&gt; <a href="../../../scala/collection/jcl/SortedMap.Lense.html#lense%28%28F%29%3D%3EG%2C%28G%29%3D%3EF%29#G" target="_self">G</a>, <em>g0</em> : (<a href="../../../scala/collection/jcl/SortedMap.Lense.html#lense%28%28F%29%3D%3EG%2C%28G%29%3D%3EF%29#G" target="_self">G</a>) =&gt; <a href="../../../scala/collection/jcl/SortedMap.Lense.html#F" target="_self">F</a>) : <a href="../../../scala/collection/jcl/SortedMap$object.Projection.html" target="_self">Projection</a>[<a href="../../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>, <a href="../../../scala/collection/jcl/SortedMap.Lense.html#lense%28%28F%29%3D%3EG%2C%28G%29%3D%3EF%29#G" target="_self">G</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/jcl/Map.Lense.html" target="_self">Lense</a>.<a href="../../../scala/collection/jcl/Map.Lense.html#lense%28%28F%29%3D%3EG%2C%28G%29%3D%3EF%29" target="_self">lense</a>
+        </dd>
+      </dl><hr></hr>
+<a name="rangeImpl%28Option%5BK%5D%2COption%5BK%5D%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>rangeImpl</em>(<em>from</em> : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>], <em>until</em> : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>]) : <a href="../../../scala/collection/jcl/SortedMap$object.Projection.html" target="_self">Projection</a>[<a href="../../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>, <a href="../../../scala/collection/jcl/SortedMap.Lense.html#F" target="_self">F</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates a ranged projection of this collection. Any mutations in the
+    ranged projection will update this collection and vice versa.  Keys
+    are garuanteed to be consistent between the collection and its projection.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>from - </code>The lower-bound (inclusive) of the ranged projection.                 <code>None</code> if there is no lower bound.</dd><dd><code>until - </code>The upper-bound (exclusive) of the ranged projection.                 <code>None</code> if there is no upper bound.</dd></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

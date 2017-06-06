@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class Transaction in scala.dbc.statement</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../scala/dbc/statement$package.html" target="_self">scala.dbc.statement</a>
+        <br></br>
+        <span class="entity">class  Transaction</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/dbc/statement/Transaction"><code>scala/dbc/statement/Transaction.scala</code></a>]
+      </div><hr></hr>
+      <a name="Transaction"></a><dl>
+      <dt>
+        
+        <code>case</code>
+        <code>class</code>
+        <em>Transaction</em>[<em>ResultType</em>](<code>val </code><em>transactionBody</em> : (<a href="../../../scala/dbc/Database.html" target="_self">Database</a>) =&gt; <a href="../../../scala/dbc/statement/Transaction.html#ResultType" target="_self">ResultType</a>, <code>val </code><em>accessMode</em> : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/dbc/statement/AccessMode.html" target="_self">AccessMode</a>], <code>val </code><em>isolationLevel</em> : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/dbc/statement/IsolationLevel.html" target="_self">IsolationLevel</a>])
+      </dt>
+      <dd><code> extends </code><a href="../../../scala/dbc/statement/Statement.html" target="_self">Statement</a><code> with </code><a href="../../../scala/Product.html" target="_self">Product</a></dd>
+    </dl>
+      <dl><dd>A statement that changes the status of the database.</dd></dl>
+      <dl></dl>
+    
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/Transaction.html#equals%28Any%29" target="_self">equals</a></em>
+        (<em>arg0</em> : <a href="../../../scala/Any.html" target="_self">Any</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/Transaction.html#execute%28scala.dbc.Database%2CBoolean%29" target="_self">execute</a></em>
+        (<em>database</em> : <a href="../../../scala/dbc/Database.html" target="_self">Database</a>, <em>debug</em> : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../../../scala/dbc/result/Status.html" target="_self">Status</a>[<a href="../../../scala/dbc/statement/Transaction.html#ResultType" target="_self">ResultType</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/Transaction.html#execute%28scala.dbc.Database%29" target="_self">execute</a></em>
+        (<em>database</em> : <a href="../../../scala/dbc/Database.html" target="_self">Database</a>) : <a href="../../../scala/dbc/result/Status.html" target="_self">Status</a>[<a href="../../../scala/dbc/statement/Transaction.html#ResultType" target="_self">ResultType</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/Transaction.html#hashCode%28%29" target="_self">hashCode</a></em>
+         : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/Transaction.html#productArity" target="_self">productArity</a></em>
+         : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        <div>return k for a product <code>A(x_1,...,x_k))</code></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/Transaction.html#productElement%28Int%29" target="_self">productElement</a></em>
+        (<em>arg0</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Any.html" target="_self">Any</a>
+        
+        <div>for a case class <code>A(x_1,...,x_k))</code>, returns <code>x_(i+1)</code>
+    for <code>0 &lt;= i &lt; k</code></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/Transaction.html#productPrefix" target="_self">productPrefix</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>By default the empty string. Implementations may override this
+    method in order to prepend a string prefix to the result of the 
+    toString methods.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/Transaction.html#sqlAbortString" target="_self">sqlAbortString</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/Transaction.html#sqlCommitString" target="_self">sqlCommitString</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/Transaction.html#sqlStartString" target="_self">sqlStartString</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>A SQL-99 compliant string representation of the statement.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/Transaction.html#toString%28%29" target="_self">toString</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Product.html" target="_self">Product</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Product.html#element%28Int%29" target="_self">element</a>, <a href="../../../scala/Product.html#arity" target="_self">arity</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="sqlStartString"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>sqlStartString</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A SQL-99 compliant string representation of the statement.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="sqlCommitString"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>sqlCommitString</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="sqlAbortString"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>sqlAbortString</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="execute%28scala.dbc.Database%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>execute</em>(<em>database</em> : <a href="../../../scala/dbc/Database.html" target="_self">Database</a>) : <a href="../../../scala/dbc/result/Status.html" target="_self">Status</a>[<a href="../../../scala/dbc/statement/Transaction.html#ResultType" target="_self">ResultType</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="execute%28scala.dbc.Database%2CBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>execute</em>(<em>database</em> : <a href="../../../scala/dbc/Database.html" target="_self">Database</a>, <em>debug</em> : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../../../scala/dbc/result/Status.html" target="_self">Status</a>[<a href="../../../scala/dbc/statement/Transaction.html#ResultType" target="_self">ResultType</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="hashCode%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>hashCode</em> : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="toString%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>toString</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="equals%28Any%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>equals</em>(<em>arg0</em> : <a href="../../../scala/Any.html" target="_self">Any</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="productPrefix"></a><dl>
+      <dt>
+        
+        <code>override final</code>
+        <code>def</code>
+        <em>productPrefix</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>By default the empty string. Implementations may override this
+    method in order to prepend a string prefix to the result of the 
+    toString methods.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/Product.html" target="_self">Product</a>.<a href="../../../scala/Product.html#productPrefix" target="_self">productPrefix</a>
+        </dd>
+      </dl><hr></hr>
+<a name="productArity"></a><dl>
+      <dt>
+        
+        <code>override final</code>
+        <code>def</code>
+        <em>productArity</em> : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>return k for a product <code>A(x_1,...,x_k))</code></dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/Product.html" target="_self">Product</a>.<a href="../../../scala/Product.html#productArity" target="_self">productArity</a>
+        </dd>
+      </dl><hr></hr>
+<a name="productElement%28Int%29"></a><dl>
+      <dt>
+        
+        <code>override final</code>
+        <code>def</code>
+        <em>productElement</em>(<em>arg0</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Any.html" target="_self">Any</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>for a case class <code>A(x_1,...,x_k))</code>, returns <code>x_(i+1)</code>
+    for <code>0 &lt;= i &lt; k</code></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the position of the n-th element</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>IndexOutOfBoundsException - </code></dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/Product.html" target="_self">Product</a>.<a href="../../../scala/Product.html#productElement%28Int%29" target="_self">productElement</a>
+        </dd>
+      </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

@@ -1,0 +1,751 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>trait Actor in scala.actors</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../scala/actors$package.html" target="_self">scala.actors</a>
+        <br></br>
+        <span class="entity">trait  Actor</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/actors/Actor"><code>scala/actors/Actor.scala</code></a>]
+      </div><hr></hr>
+      <a name="Actor"></a><dl>
+      <dt>
+        @<a href="../../scala/serializable.html" target="_self">serializable</a><br></br>
+        <code></code>
+        <code>trait</code>
+        <em>Actor</em>
+      </dt>
+      <dd><code> extends </code><a href="../../scala/actors/OutputChannel.html" target="_self">OutputChannel</a>[<a href="../../scala/Any.html" target="_self">Any</a>]</dd>
+    </dl>
+      <dl><dd><p>
+   This class provides an implementation of event-based actors.
+   The main ideas of our approach are explained in the two papers
+ </p>
+ <ul>
+   <li>
+     <a href="http://lampwww.epfl.ch/~odersky/papers/jmlc06.pdf">
+     <span style="font-weight:bold; white-space:nowrap;">Event-Based
+     Programming without Inversion of Control</span></a>,<br/>
+     Philipp Haller and Martin Odersky, <i>Proc. JMLC 2006</i>, and
+   </li>
+   <li>
+     <a href="http://lamp.epfl.ch/~phaller/doc/haller07coord.pdf">
+     <span style="font-weight:bold; white-space:nowrap;">Actors that
+     Unify Threads and Events</span></a>,<br/>
+     Philipp Haller and Martin Odersky, <i>Proc. COORDINATION 2007</i>.
+   </li>
+ </ul></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>0.9.10</dd><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Philipp Haller</dd></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../../scala/actors/remote/Proxy.html" target="_self">Proxy</a></dd>
+      </dl><hr></hr>
+      
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Value Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#trapExit" target="_self">trapExit</a></em>
+         : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#%21%28Any%29" target="_self">!</a></em>
+        (<em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Sends <code>msg</code> to this actor (asynchronous).</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#%21%21%28Any%2CPartialFunction%5BAny%2CA%5D%29" target="_self">!!</a></em>
+        [<em>A</em>](<em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>, <em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/Any.html" target="_self">Any</a>, <a href="../../scala/actors/Actor.html#%21%21%28Any%2CPartialFunction%5BAny%2CA%5D%29#A" target="_self">A</a>]) : <a href="../../scala/actors/Future.html" target="_self">Future</a>[<a href="../../scala/actors/Actor.html#%21%21%28Any%2CPartialFunction%5BAny%2CA%5D%29#A" target="_self">A</a>]
+        
+        <div>Sends <code>msg</code> to this actor and immediately
+   returns a future representing the reply value.
+   The reply is post-processed using the partial function
+   <code>f</code>. This also allows to recover a more
+   precise type for the reply value.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#%21%21%28Any%29" target="_self">!!</a></em>
+        (<em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>) : <a href="../../scala/actors/Future.html" target="_self">Future</a>[<a href="../../scala/Any.html" target="_self">Any</a>]
+        
+        <div>Sends <code>msg</code> to this actor and immediately
+   returns a future representing the reply value.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#%21%3F%28Long%2CAny%29" target="_self">!?</a></em>
+        (<em>msec</em> : <a href="../../scala/Long.html" target="_self">Long</a>, <em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>) : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="../../scala/Any.html" target="_self">Any</a>]
+        
+        <div>Sends <code>msg</code> to this actor and awaits reply
+   (synchronous) within <code>msec</code> milliseconds.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#%21%3F%28Any%29" target="_self">!?</a></em>
+        (<em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>) : <a href="../../scala/Any.html" target="_self">Any</a>
+        
+        <div>Sends <code>msg</code> to this actor and awaits reply
+   (synchronous).</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#%3F" target="_self">?</a></em>
+         : <a href="../../scala/Any.html" target="_self">Any</a>
+        
+        <div>Receives the next message from this actor's mailbox.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#act%28%29" target="_self">act</a></em>
+         : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>The behavior of an actor is specified by implementing this
+   abstract method. Note that the preferred way to create actors
+   is through the <code>actor</code> method
+   defined in object <code>Actor</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#exit%28%29" target="_self">exit</a></em>
+         : <a href="../../scala/Nothing.html" target="_self">Nothing</a>
+        
+        <div>Terminates with exit reason <code>'normal</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#exit%28AnyRef%29" target="_self">exit</a></em>
+        (<em>reason</em> : <a href="../../scala/AnyRef.html" target="_self">AnyRef</a>) : <a href="../../scala/Nothing.html" target="_self">Nothing</a>
+        
+        <div><p>
+     Terminates execution of <code>self</code> with the following
+     effect on linked actors:
+   </p>
+   <p>
+     For each linked actor <code>a</code> with
+     <code>trapExit</code> set to <code>true</code>, send message
+     <code>Exit(self, reason)</code> to <code>a</code>.
+   </p>
+   <p>
+     For each linked actor <code>a</code> with
+     <code>trapExit</code> set to <code>false</code> (default),
+     call <code>a.exit(reason)</code> if
+     <code>reason != 'normal</code>.
+   </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#forward%28Any%29" target="_self">forward</a></em>
+        (<em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Forwards <code>msg</code> to this actor (asynchronous).</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#link%28scala.actors.Actor%29" target="_self">link</a></em>
+        (<em>to</em> : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>) : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>
+        
+        <div>Links <code>self</code> to actor <code>to</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#link%28%3D%3EUnit%29" target="_self">link</a></em>
+        (<em>body</em> : =&gt; <a href="../../scala/Unit.html" target="_self">Unit</a>) : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>
+        
+        <div>Links <code>self</code> to actor defined by <code>body</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#react%28PartialFunction%5BAny%2CUnit%5D%29" target="_self">react</a></em>
+        (<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/Any.html" target="_self">Any</a>, <a href="../../scala/Unit.html" target="_self">Unit</a>]) : <a href="../../scala/Nothing.html" target="_self">Nothing</a>
+        
+        <div>Receives a message from this actor's mailbox.
+   <p>
+   This method never returns. Therefore, the rest of the computation
+   has to be contained in the actions of the partial function.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#reactWithin%28Long%29" target="_self">reactWithin</a></em>
+        (<em>msec</em> : <a href="../../scala/Long.html" target="_self">Long</a>)(<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/Any.html" target="_self">Any</a>, <a href="../../scala/Unit.html" target="_self">Unit</a>]) : <a href="../../scala/Nothing.html" target="_self">Nothing</a>
+        
+        <div>Receives a message from this actor's mailbox within a certain
+   time span.
+   <p>
+   This method never returns. Therefore, the rest of the computation
+   has to be contained in the actions of the partial function.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#receive%28PartialFunction%5BAny%2CR%5D%29" target="_self">receive</a></em>
+        [<em>R</em>](<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/Any.html" target="_self">Any</a>, <a href="../../scala/actors/Actor.html#receive%28PartialFunction%5BAny%2CR%5D%29#R" target="_self">R</a>]) : <a href="../../scala/actors/Actor.html#receive%28PartialFunction%5BAny%2CR%5D%29#R" target="_self">R</a>
+        
+        <div>Receives a message from this actor's mailbox.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#receiveWithin%28Long%29" target="_self">receiveWithin</a></em>
+        [<em>R</em>](<em>msec</em> : <a href="../../scala/Long.html" target="_self">Long</a>)(<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/Any.html" target="_self">Any</a>, <a href="../../scala/actors/Actor.html#receiveWithin%28Long%29#R" target="_self">R</a>]) : <a href="../../scala/actors/Actor.html#receiveWithin%28Long%29#R" target="_self">R</a>
+        
+        <div>Receives a message from this actor's mailbox within a certain
+   time span.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#receiver" target="_self">receiver</a></em>
+         : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>
+        
+        <div>Returns the <code>Actor</code> that is
+   receiving from this <code>OutputChannel</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#reply%28Any%29" target="_self">reply</a></em>
+        (<em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Replies with <code>msg</code> to the sender.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#scheduleActor%28PartialFunction%5BAny%2CUnit%5D%2CAny%29" target="_self">scheduleActor</a></em>
+        (<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/Any.html" target="_self">Any</a>, <a href="../../scala/Unit.html" target="_self">Unit</a>], <em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#send%28Any%2Cscala.actors.OutputChannel%5BAny%5D%29" target="_self">send</a></em>
+        (<em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>, <em>replyTo</em> : <a href="../../scala/actors/OutputChannel.html" target="_self">OutputChannel</a>[<a href="../../scala/Any.html" target="_self">Any</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Sends <code>msg</code> to this actor (asynchronous) supplying
+   explicit reply destination.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#sender" target="_self">sender</a></em>
+         : <a href="../../scala/actors/OutputChannel.html" target="_self">OutputChannel</a>[<a href="../../scala/Any.html" target="_self">Any</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#start%28%29" target="_self">start</a></em>
+         : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>
+        
+        <div>Starts this actor.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Actor.html#unlink%28scala.actors.Actor%29" target="_self">unlink</a></em>
+        (<em>from</em> : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Unlinks <code>self</code> from actor <code>from</code>.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Value Details</td></tr>
+        </table><div><a name="trapExit"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>var</code>
+        <em>trapExit</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="send%28Any%2Cscala.actors.OutputChannel%5BAny%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>send</em>(<em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>, <em>replyTo</em> : <a href="../../scala/actors/OutputChannel.html" target="_self">OutputChannel</a>[<a href="../../scala/Any.html" target="_self">Any</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Sends <code>msg</code> to this actor (asynchronous) supplying
+   explicit reply destination.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>msg - </code>the message to send</dd><dd><code>replyTo - </code>the reply destination</dd></dl>
+    <hr></hr>
+<a name="receive%28PartialFunction%5BAny%2CR%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>receive</em>[<em>R</em>](<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/Any.html" target="_self">Any</a>, <a href="../../scala/actors/Actor.html#receive%28PartialFunction%5BAny%2CR%5D%29#R" target="_self">R</a>]) : <a href="../../scala/actors/Actor.html#receive%28PartialFunction%5BAny%2CR%5D%29#R" target="_self">R</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Receives a message from this actor's mailbox.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>a partial function with message patterns and actions</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>result of processing the received value</dd></dl>
+    <hr></hr>
+<a name="receiveWithin%28Long%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>receiveWithin</em>[<em>R</em>](<em>msec</em> : <a href="../../scala/Long.html" target="_self">Long</a>)(<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/Any.html" target="_self">Any</a>, <a href="../../scala/actors/Actor.html#receiveWithin%28Long%29#R" target="_self">R</a>]) : <a href="../../scala/actors/Actor.html#receiveWithin%28Long%29#R" target="_self">R</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Receives a message from this actor's mailbox within a certain
+   time span.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>msec - </code>the time span before timeout</dd><dd><code>f - </code>a partial function with message patterns and actions</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>result of processing the received value</dd></dl>
+    <hr></hr>
+<a name="react%28PartialFunction%5BAny%2CUnit%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>react</em>(<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/Any.html" target="_self">Any</a>, <a href="../../scala/Unit.html" target="_self">Unit</a>]) : <a href="../../scala/Nothing.html" target="_self">Nothing</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Receives a message from this actor's mailbox.
+   <p>
+   This method never returns. Therefore, the rest of the computation
+   has to be contained in the actions of the partial function.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>a partial function with message patterns and actions</dd></dl>
+    <hr></hr>
+<a name="reactWithin%28Long%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>reactWithin</em>(<em>msec</em> : <a href="../../scala/Long.html" target="_self">Long</a>)(<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/Any.html" target="_self">Any</a>, <a href="../../scala/Unit.html" target="_self">Unit</a>]) : <a href="../../scala/Nothing.html" target="_self">Nothing</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Receives a message from this actor's mailbox within a certain
+   time span.
+   <p>
+   This method never returns. Therefore, the rest of the computation
+   has to be contained in the actions of the partial function.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>msec - </code>the time span before timeout</dd><dd><code>f - </code>a partial function with message patterns and actions</dd></dl>
+    <hr></hr>
+<a name="act%28%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>act</em> : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The behavior of an actor is specified by implementing this
+   abstract method. Note that the preferred way to create actors
+   is through the <code>actor</code> method
+   defined in object <code>Actor</code>.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%21%28Any%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>!</em>(<em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Sends <code>msg</code> to this actor (asynchronous).</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/OutputChannel.html" target="_self">OutputChannel</a>.<a href="../../scala/actors/OutputChannel.html#%21%28Msg%29" target="_self">!</a>
+        </dd>
+      </dl><hr></hr>
+<a name="forward%28Any%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>forward</em>(<em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Forwards <code>msg</code> to this actor (asynchronous).</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/OutputChannel.html" target="_self">OutputChannel</a>.<a href="../../scala/actors/OutputChannel.html#forward%28Msg%29" target="_self">forward</a>
+        </dd>
+      </dl><hr></hr>
+<a name="%21%3F%28Any%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>!?</em>(<em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>) : <a href="../../scala/Any.html" target="_self">Any</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Sends <code>msg</code> to this actor and awaits reply
+   (synchronous).</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>msg - </code>the message to be sent</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the reply</dd></dl>
+    <hr></hr>
+<a name="%21%3F%28Long%2CAny%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>!?</em>(<em>msec</em> : <a href="../../scala/Long.html" target="_self">Long</a>, <em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>) : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="../../scala/Any.html" target="_self">Any</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Sends <code>msg</code> to this actor and awaits reply
+   (synchronous) within <code>msec</code> milliseconds.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>msec - </code>the time span before timeout</dd><dd><code>msg - </code>the message to be sent</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>None</code> in case of timeout, otherwise                <code>Some(x)</code> where <code>x</code> is the reply</dd></dl>
+    <hr></hr>
+<a name="%21%21%28Any%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>!!</em>(<em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>) : <a href="../../scala/actors/Future.html" target="_self">Future</a>[<a href="../../scala/Any.html" target="_self">Any</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Sends <code>msg</code> to this actor and immediately
+   returns a future representing the reply value.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%21%21%28Any%2CPartialFunction%5BAny%2CA%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>!!</em>[<em>A</em>](<em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>, <em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/Any.html" target="_self">Any</a>, <a href="../../scala/actors/Actor.html#%21%21%28Any%2CPartialFunction%5BAny%2CA%5D%29#A" target="_self">A</a>]) : <a href="../../scala/actors/Future.html" target="_self">Future</a>[<a href="../../scala/actors/Actor.html#%21%21%28Any%2CPartialFunction%5BAny%2CA%5D%29#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Sends <code>msg</code> to this actor and immediately
+   returns a future representing the reply value.
+   The reply is post-processed using the partial function
+   <code>f</code>. This also allows to recover a more
+   precise type for the reply value.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="reply%28Any%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>reply</em>(<em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Replies with <code>msg</code> to the sender.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%3F"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>?</em> : <a href="../../scala/Any.html" target="_self">Any</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Receives the next message from this actor's mailbox.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="sender"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>sender</em> : <a href="../../scala/actors/OutputChannel.html" target="_self">OutputChannel</a>[<a href="../../scala/Any.html" target="_self">Any</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="receiver"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>receiver</em> : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the <code>Actor</code> that is
+   receiving from this <code>OutputChannel</code>.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/OutputChannel.html" target="_self">OutputChannel</a>.<a href="../../scala/actors/OutputChannel.html#receiver" target="_self">receiver</a>
+        </dd>
+      </dl><hr></hr>
+<a name="scheduleActor%28PartialFunction%5BAny%2CUnit%5D%2CAny%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>scheduleActor</em>(<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/Any.html" target="_self">Any</a>, <a href="../../scala/Unit.html" target="_self">Unit</a>], <em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="start%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>start</em> : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Starts this actor.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="link%28scala.actors.Actor%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>link</em>(<em>to</em> : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>) : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Links <code>self</code> to actor <code>to</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>to - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="link%28%3D%3EUnit%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>link</em>(<em>body</em> : =&gt; <a href="../../scala/Unit.html" target="_self">Unit</a>) : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Links <code>self</code> to actor defined by <code>body</code>.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="unlink%28scala.actors.Actor%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>unlink</em>(<em>from</em> : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Unlinks <code>self</code> from actor <code>from</code>.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="exit%28AnyRef%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>exit</em>(<em>reason</em> : <a href="../../scala/AnyRef.html" target="_self">AnyRef</a>) : <a href="../../scala/Nothing.html" target="_self">Nothing</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+     Terminates execution of <code>self</code> with the following
+     effect on linked actors:
+   </p>
+   <p>
+     For each linked actor <code>a</code> with
+     <code>trapExit</code> set to <code>true</code>, send message
+     <code>Exit(self, reason)</code> to <code>a</code>.
+   </p>
+   <p>
+     For each linked actor <code>a</code> with
+     <code>trapExit</code> set to <code>false</code> (default),
+     call <code>a.exit(reason)</code> if
+     <code>reason != 'normal</code>.
+   </p></dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="exit%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>exit</em> : <a href="../../scala/Nothing.html" target="_self">Nothing</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Terminates with exit reason <code>'normal</code>.</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

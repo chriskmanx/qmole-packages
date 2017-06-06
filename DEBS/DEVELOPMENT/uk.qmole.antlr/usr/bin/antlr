@@ -1,0 +1,3 @@
+#!/bin/bash
+java -jar /usr/bin/antlr-3.5.2-complete.jar "$@"
+

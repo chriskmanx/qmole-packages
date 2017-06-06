@@ -1,0 +1,767 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>object Utility in scala.xml</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../scala/xml$package.html" target="_self">scala.xml</a>
+        <br></br>
+        <span class="entity">object  Utility</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/xml/Utility"><code>scala/xml/Utility.scala</code></a>]
+      </div><hr></hr>
+      <a name="Utility"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>object</code>
+        <em>Utility</em>
+      </dt>
+      <dd><code> extends </code><a href="../../scala/xml/parsing/TokenTests.html" target="_self">TokenTests</a></dd>
+    </dl>
+      <dl><dd>The <code>Utility</code> object provides utility functions for processing
+ instances of bound and not bound XML classes, as well as escaping text nodes.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Burak Emir</dd></dl>
+    
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#appendEscapedQuoted%28String%2CStringBuilder%29" target="_self">appendEscapedQuoted</a></em>
+        (<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>) : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div>Appends &quot;s&quot; and escapes and &quot; i s with \&quot;</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#appendQuoted%28String%2CStringBuilder%29" target="_self">appendQuoted</a></em>
+        (<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>) : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div>Appends &quot;s&quot; if string <code>s</code> does not contain &quot;,
+   &apos;s&apos; otherwise.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#checkAttributeValue%28String%29" target="_self">checkAttributeValue</a></em>
+        (<em>value</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Returns <code>null</code> if the value is a correct attribute value,
+   error message if it isn't.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#collectNamespaces%28Seq%5Bscala.xml.Node%5D%29" target="_self">collectNamespaces</a></em>
+        (<em>nodes</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>]) : <a href="../../scala/collection/mutable/Set.html" target="_self">Set</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]
+        
+        <div>Returns a set of all namespaces used in a sequence of nodes 
+   and all their descendants, including the empty namespaces.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#collectNamespaces%28scala.xml.Node%2Cscala.collection.mutable.Set%5BString%5D%29" target="_self">collectNamespaces</a></em>
+        (<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>set</em> : <a href="../../scala/collection/mutable/Set.html" target="_self">Set</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Adds all namespaces in node to set.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#escape%28String%29" target="_self">escape</a></em>
+        (<em>text</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Escapes the characters &lt; &gt; &amp; and &quot; from string.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#escape%28String%2CStringBuilder%29" target="_self">escape</a></em>
+        (<em>text</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>s</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>) : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div>Appends escaped string to <code>s</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#getName%28String%2CInt%29" target="_self">getName</a></em>
+        (<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>index</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#hashCode%28String%2CString%2CInt%2CInt%2CSeq%5Bscala.xml.Node%5D%29" target="_self">hashCode</a></em>
+        (<em>pre</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>label</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>attribHashCode</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>scpeHash</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>children</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>]) : <a href="../../scala/Int.html" target="_self">Int</a>
+        
+        <div>Returns a hashcode for the given constituents of a node</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#parseAttributeValue%28String%29" target="_self">parseAttributeValue</a></em>
+        (<em>value</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>]
+        
+        <div>new</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#parseCharRef%28%28%29%3D%3EChar%2C%28%29%3D%3EUnit%2C%28String%29%3D%3EUnit%29" target="_self">parseCharRef</a></em>
+        (<em>ch</em> : () =&gt; <a href="../../scala/Char.html" target="_self">Char</a>, <em>nextch</em> : () =&gt; <a href="../../scala/Unit.html" target="_self">Unit</a>, <em>reportSyntaxError</em> : (<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) =&gt; <a href="../../scala/Unit.html" target="_self">Unit</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div><pre>
+     CharRef ::= "&amp;#" '0'..'9' {'0'..'9'} ";"
+               | "&amp;#x" '0'..'9'|'A'..'F'|'a'..'f' { hexdigit } ";"
+   </pre>
+   <p>
+     see [66]
+   <p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#prefix%28String%29" target="_self">prefix</a></em>
+        (<em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]
+        
+        <div>Returns prefix of qualified name if any.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#publicLiteralToString%28StringBuilder%2CString%29" target="_self">publicLiteralToString</a></em>
+        (<em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>, <em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#publicLiteralToString%28String%29" target="_self">publicLiteralToString</a></em>
+        (<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#sequenceToXML%28Seq%5Bscala.xml.Node%5D%2Cscala.xml.NamespaceBinding%2CStringBuilder%2CBoolean%29" target="_self">sequenceToXML</a></em>
+        (<em>children</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>], <em>pscope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>, <em>stripComment</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#sort%28scala.xml.MetaData%29" target="_self">sort</a></em>
+        (<em>md</em> : <a href="../../scala/xml/MetaData.html" target="_self">MetaData</a>) : <a href="../../scala/xml/MetaData.html" target="_self">MetaData</a>
+        
+        <div>returns a sorted attribute list</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#sort%28scala.xml.Node%29" target="_self">sort</a></em>
+        (<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="../../scala/xml/Node.html" target="_self">Node</a>
+        
+        <div>returns the node with its attribute list sorted alphabetically (prefixes are ignored)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#systemLiteralToString%28StringBuilder%2CString%29" target="_self">systemLiteralToString</a></em>
+        (<em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>, <em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#systemLiteralToString%28String%29" target="_self">systemLiteralToString</a></em>
+        (<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#toXML%28scala.xml.Node%2Cscala.xml.NamespaceBinding%2CStringBuilder%2CBoolean%29" target="_self">toXML</a></em>
+        (<em>x</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>pscope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>, <em>stripComment</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Appends a tree to the given stringbuffer within given namespace scope.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#toXML%28scala.xml.Node%29" target="_self">toXML</a></em>
+        (<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Returs the string representation of an XML node, with comments stripped
+   the comments.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#toXML%28scala.xml.Node%2CBoolean%29" target="_self">toXML</a></em>
+        (<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>stripComment</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Return the string representation of a Node. uses namespace mapping from
+    <code>defaultPrefixes(n)</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#trim%28scala.xml.Node%29" target="_self">trim</a></em>
+        (<em>x</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="../../scala/xml/Node.html" target="_self">Node</a>
+        
+        <div>trims an element - call this method, when you know that it is an
+    element (and not a text node) so you know that it will not be trimmed
+    away. With this assumption, the function can return a <code>Node</code>,
+    rather than a <code>Seq[Node]</code>. If you don't know, call
+    <code>trimProper</code> and account for the fact that you may get back
+    an empty sequence of nodes.
+  
+    precondition: node is not a text node (it might be trimmed)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#trimProper%28scala.xml.Node%29" target="_self">trimProper</a></em>
+        (<em>x</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>]
+        
+        <div>trim a child of an element. Attribute values and Atom nodes that are not Text nodes are unaffected</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#unescape%28String%2CStringBuilder%29" target="_self">unescape</a></em>
+        (<em>ref</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>s</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>) : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div>Appends unescaped string to <code>s</code>, amp becomes &amp;
+   lt becomes &lt; etc..</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Utility$object.html#view%28String%29" target="_self">view</a></em>
+        (<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/xml/Text.html" target="_self">Text</a>
+        
+        <div></div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/xml/parsing/TokenTests.html" target="_self">TokenTests</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/xml/parsing/TokenTests.html#isSpace%28Char%29" target="_self">isSpace</a>, <a href="../../scala/xml/parsing/TokenTests.html#isSpace%28Seq%5BChar%5D%29" target="_self">isSpace</a>, <a href="../../scala/xml/parsing/TokenTests.html#isNameChar%28Char%29" target="_self">isNameChar</a>, <a href="../../scala/xml/parsing/TokenTests.html#isNameStart%28Char%29" target="_self">isNameStart</a>, <a href="../../scala/xml/parsing/TokenTests.html#isName%28String%29" target="_self">isName</a>, <a href="../../scala/xml/parsing/TokenTests.html#isPubIDChar%28Char%29" target="_self">isPubIDChar</a>, <a href="../../scala/xml/parsing/TokenTests.html#isValidIANAEncoding%28Seq%5BChar%5D%29" target="_self">isValidIANAEncoding</a>, <a href="../../scala/xml/parsing/TokenTests.html#checkSysID%28String%29" target="_self">checkSysID</a>, <a href="../../scala/xml/parsing/TokenTests.html#checkPubID%28String%29" target="_self">checkPubID</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="trim%28scala.xml.Node%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>trim</em>(<em>x</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="../../scala/xml/Node.html" target="_self">Node</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>trims an element - call this method, when you know that it is an
+    element (and not a text node) so you know that it will not be trimmed
+    away. With this assumption, the function can return a <code>Node</code>,
+    rather than a <code>Seq[Node]</code>. If you don't know, call
+    <code>trimProper</code> and account for the fact that you may get back
+    an empty sequence of nodes.
+  
+    precondition: node is not a text node (it might be trimmed)</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="trimProper%28scala.xml.Node%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>trimProper</em>(<em>x</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>trim a child of an element. Attribute values and Atom nodes that are not Text nodes are unaffected</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="sort%28scala.xml.MetaData%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>sort</em>(<em>md</em> : <a href="../../scala/xml/MetaData.html" target="_self">MetaData</a>) : <a href="../../scala/xml/MetaData.html" target="_self">MetaData</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>returns a sorted attribute list</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="sort%28scala.xml.Node%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>sort</em>(<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="../../scala/xml/Node.html" target="_self">Node</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>returns the node with its attribute list sorted alphabetically (prefixes are ignored)</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="view%28String%29"></a><dl>
+      <dt>
+        @<a href="../../scala/deprecated.html" target="_self">deprecated</a><br></br>
+        <code></code>
+        <code>def</code>
+        <em>view</em>(<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/xml/Text.html" target="_self">Text</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Deprecated</b></dt><dd>a string might also be Atom(s) - define your own conversion</dd></dl>
+    <hr></hr>
+<a name="escape%28String%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>escape</em>(<em>text</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Escapes the characters &lt; &gt; &amp; and &quot; from string.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>text - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="escape%28String%2CStringBuilder%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>escape</em>(<em>text</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>s</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>) : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends escaped string to <code>s</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>text - </code>...</dd><dd><code>s - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="unescape%28String%2CStringBuilder%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>unescape</em>(<em>ref</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>s</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>) : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends unescaped string to <code>s</code>, amp becomes &amp;
+   lt becomes &lt; etc..</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>ref - </code>...</dd><dd><code>s - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>null</code> if <code>ref</code> was not a predefined              entity.</dd></dl>
+    <hr></hr>
+<a name="collectNamespaces%28Seq%5Bscala.xml.Node%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>collectNamespaces</em>(<em>nodes</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>]) : <a href="../../scala/collection/mutable/Set.html" target="_self">Set</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a set of all namespaces used in a sequence of nodes 
+   and all their descendants, including the empty namespaces.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>nodes - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="collectNamespaces%28scala.xml.Node%2Cscala.collection.mutable.Set%5BString%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>collectNamespaces</em>(<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>set</em> : <a href="../../scala/collection/mutable/Set.html" target="_self">Set</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Adds all namespaces in node to set.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>...</dd><dd><code>set - </code>...</dd></dl>
+    <hr></hr>
+<a name="toXML%28scala.xml.Node%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>toXML</em>(<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returs the string representation of an XML node, with comments stripped
+   the comments.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the XML node</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the string representation of node <code>n</code>.</dd><dt style="margin:10px 0 0 20px;">
+        <b>See Also</b></dt><dd>"toXML(Node, Boolean)"</dd></dl>
+    <hr></hr>
+<a name="toXML%28scala.xml.Node%2CBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>toXML</em>(<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>stripComment</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Return the string representation of a Node. uses namespace mapping from
+    <code>defaultPrefixes(n)</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the XML node</dd><dd><code>stripComment - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Todo</b></dt><dd>define a way to escape literal characters to &amp;xx; references</dd></dl>
+    <hr></hr>
+<a name="toXML%28scala.xml.Node%2Cscala.xml.NamespaceBinding%2CStringBuilder%2CBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>toXML</em>(<em>x</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>pscope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>, <em>stripComment</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends a tree to the given stringbuffer within given namespace scope.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the node</dd><dd><code>pscope - </code>the parent scope</dd><dd><code>sb - </code>stringbuffer to append to</dd><dd><code>stripComment - </code>if true, strip comments</dd></dl>
+    <hr></hr>
+<a name="sequenceToXML%28Seq%5Bscala.xml.Node%5D%2Cscala.xml.NamespaceBinding%2CStringBuilder%2CBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>sequenceToXML</em>(<em>children</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>], <em>pscope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>, <em>stripComment</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>children - </code>...</dd><dd><code>pscope - </code>...</dd><dd><code>sb - </code>...</dd><dd><code>stripComment - </code>...</dd></dl>
+    <hr></hr>
+<a name="prefix%28String%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>prefix</em>(<em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns prefix of qualified name if any.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>name - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="hashCode%28String%2CString%2CInt%2CInt%2CSeq%5Bscala.xml.Node%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>hashCode</em>(<em>pre</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>label</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>attribHashCode</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>scpeHash</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>children</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>]) : <a href="../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a hashcode for the given constituents of a node</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>uri - </code></dd><dd><code>label - </code></dd><dd><code>attribHashCode - </code></dd><dd><code>children - </code></dd></dl>
+    <hr></hr>
+<a name="systemLiteralToString%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>systemLiteralToString</em>(<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>s - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="systemLiteralToString%28StringBuilder%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>systemLiteralToString</em>(<em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>, <em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>sb - </code>...</dd><dd><code>s - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="publicLiteralToString%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>publicLiteralToString</em>(<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>s - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="publicLiteralToString%28StringBuilder%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>publicLiteralToString</em>(<em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>, <em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>sb - </code>...</dd><dd><code>s - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="appendQuoted%28String%2CStringBuilder%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>appendQuoted</em>(<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>) : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends &quot;s&quot; if string <code>s</code> does not contain &quot;,
+   &apos;s&apos; otherwise.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>s - </code>...</dd><dd><code>sb - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="appendEscapedQuoted%28String%2CStringBuilder%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>appendEscapedQuoted</em>(<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>) : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends &quot;s&quot; and escapes and &quot; i s with \&quot;</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>s - </code>...</dd><dd><code>sb - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="getName%28String%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>getName</em>(<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>index</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>s - </code>...</dd><dd><code>index - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="checkAttributeValue%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>checkAttributeValue</em>(<em>value</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns <code>null</code> if the value is a correct attribute value,
+   error message if it isn't.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>value - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="parseAttributeValue%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>parseAttributeValue</em>(<em>value</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>new</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>value - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="parseCharRef%28%28%29%3D%3EChar%2C%28%29%3D%3EUnit%2C%28String%29%3D%3EUnit%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>parseCharRef</em>(<em>ch</em> : () =&gt; <a href="../../scala/Char.html" target="_self">Char</a>, <em>nextch</em> : () =&gt; <a href="../../scala/Unit.html" target="_self">Unit</a>, <em>reportSyntaxError</em> : (<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) =&gt; <a href="../../scala/Unit.html" target="_self">Unit</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><pre>
+     CharRef ::= "&amp;#" '0'..'9' {'0'..'9'} ";"
+               | "&amp;#x" '0'..'9'|'A'..'F'|'a'..'f' { hexdigit } ";"
+   </pre>
+   <p>
+     see [66]
+   <p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>ch - </code>...</dd><dd><code>nextch - </code>...</dd><dd><code>reportSyntaxError - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

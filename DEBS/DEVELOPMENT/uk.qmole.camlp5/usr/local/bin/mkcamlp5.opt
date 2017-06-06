@@ -1,0 +1,30 @@
+#!/bin/sh
+# mkcamlp5.opt.sh.tpl,v
+
+OLIB=`ocamlc -where`
+LIB=/usr/local/lib/ocaml/camlp5
+
+INTERFACES=
+OPTS=
+INCL="-I ."
+while test "" != "$1"; do
+    case $1 in
+    -I) INCL="$INCL -I $2"; shift;;
+    -help)
+        echo "Usage: mkcamlp5.opt [options] [files]"
+        echo "Options:"
+        echo "  -I <dir>   Add directory in search patch for object files"
+        echo
+        echo "All options of ocamlopt are also available"
+        echo
+        echo "Files:"
+        echo "  .cmx file  Load this file in core"
+        echo "  .cmxa file Load this file in core"
+        exit 0;;
+    *) OPTS="$OPTS $1";;
+    esac
+    shift
+done
+
+set -e
+ocamlopt -I $LIB odyl.cmxa camlp5.cmxa $INCL $OPTS odyl.cmx -linkall

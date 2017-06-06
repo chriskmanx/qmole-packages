@@ -1,0 +1,492 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class BitSet in scala.collection</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../scala/collection$package.html" target="_self">scala.collection</a>
+        <br></br>
+        <span class="entity">class  BitSet</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/collection/BitSet"><code>scala/collection/BitSet.scala</code></a>]
+      </div><hr></hr>
+      <a name="BitSet"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>class</code>
+        <em>BitSet</em>
+      </dt>
+      <dd><code> extends </code><a href="../../scala/collection/Set.html" target="_self">Set</a>[<a href="../../scala/Int.html" target="_self">Int</a>]</dd>
+    </dl>
+      <dl><dd><p>
+    The class <code>BitSet</code> provides the interface for a space-efficient
+    implementation of dense integer sets represented as bits in array of
+    integers. Bit indices are between <code>0..(capacity-1)</code> inclusive.
+  </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Burak Emir, Stephane Micheloud, Nikolay Mihaylov</dd><dd>Martin Odersky</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>2.0  01/01/2007</dd></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../../scala/collection/immutable/BitSet.html" target="_self">BitSet</a>, <a href="../../scala/collection/mutable/BitSet.html" target="_self">BitSet</a></dd>
+      </dl><hr></hr>
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/BitSet.html#arr" target="_self">arr</a></em>
+         : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Int.html" target="_self">Int</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/BitSet.html#capacity" target="_self">capacity</a></em>
+         : <a href="../../scala/Int.html" target="_self">Int</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/BitSet.html#contains%28Int%29" target="_self">contains</a></em>
+        (<em>i</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/BitSet.html#elements" target="_self">elements</a></em>
+         : <a href="../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../scala/Int.html" target="_self">Int</a>]
+        
+        <div>returns an iterator over the truth values of all bits</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/BitSet.html#equals%28Any%29" target="_self">equals</a></em>
+        (<em>other</em> : <a href="../../scala/Any.html" target="_self">Any</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Checks if two bitsets are structurally identical.
+    Uses accelerated (32 x faster) check if the other set is a BitSet</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/BitSet.html#hashCode%28%29" target="_self">hashCode</a></em>
+         : <a href="../../scala/Int.html" target="_self">Int</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/BitSet.html#mask%28Int%29" target="_self">mask</a></em>
+        (<em>n</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/Int.html" target="_self">Int</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/BitSet.html#memsize%28Int%29" target="_self">memsize</a></em>
+        (<em>n</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/Int.html" target="_self">Int</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/BitSet.html#nbits%28Int%29" target="_self">nbits</a></em>
+        (<em>n</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/Int.html" target="_self">Int</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/BitSet.html#offset%28Int%29" target="_self">offset</a></em>
+        (<em>n</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/Int.html" target="_self">Int</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/BitSet.html#size" target="_self">size</a></em>
+         : <a href="../../scala/Int.html" target="_self">Int</a>
+        
+        <div>number of bits in this bitset</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/BitSet.html#stringPrefix" target="_self">stringPrefix</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Defines the prefix of this object's <code>toString</code> representation.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/BitSet.html#subsetOf%28scala.collection.Set%5BInt%5D%29" target="_self">subsetOf</a></em>
+        (<em>other</em> : <a href="../../scala/collection/Set.html" target="_self">Set</a>[<a href="../../scala/Int.html" target="_self">Int</a>]) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Checks if this set is a subset of set <code>that</code>.
+    Uses accelerated (32 x faster) check if the other set is a BitSet</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/BitSet.html#underlying" target="_self">underlying</a></em>
+         : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Int.html" target="_self">Int</a>]
+        
+        <div></div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/collection/Set.html" target="_self">Set</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/collection/Set.html#apply%28A%29" target="_self">apply</a>, <a href="../../scala/collection/Set.html#isEmpty" target="_self">isEmpty</a>, <a href="../../scala/collection/Set.html#*%28scala.collection.Set%5BA%5D%29" target="_self">*</a>, <a href="../../scala/collection/Set.html#**%28scala.collection.Set%5BA%5D%29" target="_self">**</a>, <a href="../../scala/collection/Set.html#toArray" target="_self">toArray</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Collection.html" target="_self">Collection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Collection.html#toString%28%29" target="_self">toString</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Iterable.html" target="_self">Iterable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Iterable.html#concat%28Iterable%5BB%5D%29" target="_self">concat</a>, <a href="../../scala/Iterable.html#%2B%2B%28Iterable%5BB%5D%29" target="_self">++</a>, <a href="../../scala/Iterable.html#map%28%28A%29%3D%3EB%29" target="_self">map</a>, <a href="../../scala/Iterable.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a>, <a href="../../scala/Iterable.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a>, <a href="../../scala/Iterable.html#partition%28%28A%29%3D%3EBoolean%29" target="_self">partition</a>, <a href="../../scala/Iterable.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a>, <a href="../../scala/Iterable.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a>, <a href="../../scala/Iterable.html#take%28Int%29" target="_self">take</a>, <a href="../../scala/Iterable.html#drop%28Int%29" target="_self">drop</a>, <a href="../../scala/Iterable.html#foreach%28%28A%29%3D%3EUnit%29" target="_self">foreach</a>, <a href="../../scala/Iterable.html#forall%28%28A%29%3D%3EBoolean%29" target="_self">forall</a>, <a href="../../scala/Iterable.html#exists%28%28A%29%3D%3EBoolean%29" target="_self">exists</a>, <a href="../../scala/Iterable.html#find%28%28A%29%3D%3EBoolean%29" target="_self">find</a>, <a href="../../scala/Iterable.html#findIndexOf%28%28A%29%3D%3EBoolean%29" target="_self">findIndexOf</a>, <a href="../../scala/Iterable.html#indexOf%28B%29" target="_self">indexOf</a>, <a href="../../scala/Iterable.html#foldLeft%28B%29" target="_self">foldLeft</a>, <a href="../../scala/Iterable.html#foldRight%28B%29" target="_self">foldRight</a>, <a href="../../scala/Iterable.html#%2F%3A%28B%29" target="_self">/:</a>, <a href="../../scala/Iterable.html#%3A%5C%28B%29" target="_self">:\</a>, <a href="../../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29" target="_self">reduceLeft</a>, <a href="../../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29" target="_self">reduceRight</a>, <a href="../../scala/Iterable.html#copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29" target="_self">copyToBuffer</a>, <a href="../../scala/Iterable.html#sameElements%28Iterable%5BB%5D%29" target="_self">sameElements</a>, <a href="../../scala/Iterable.html#toList" target="_self">toList</a>, <a href="../../scala/Iterable.html#toStream" target="_self">toStream</a>, <a href="../../scala/Iterable.html#mkString%28String%2CString%2CString%29" target="_self">mkString</a>, <a href="../../scala/Iterable.html#mkString%28String%29" target="_self">mkString</a>, <a href="../../scala/Iterable.html#mkString" target="_self">mkString</a>, <a href="../../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%2CString%2CString%29" target="_self">addString</a>, <a href="../../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%29" target="_self">addString</a>, <a href="../../scala/Iterable.html#copyToArray%28Array%5BB%5D%2CInt%29" target="_self">copyToArray</a>, <a href="../../scala/Iterable.html#projection" target="_self">projection</a>, <a href="../../scala/Iterable.html#hasDefiniteSize" target="_self">hasDefiniteSize</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Function1.html" target="_self">Function1</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Function1.html#compose%28%28A%29%3D%3ET1%29" target="_self">compose</a>, <a href="../../scala/Function1.html#andThen%28%28R%29%3D%3EA%29" target="_self">andThen</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="size"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>size</em> : <a href="../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>number of bits in this bitset</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/collection/Set.html" target="_self">Set</a>.<a href="../../scala/collection/Set.html#size" target="_self">size</a>
+        </dd>
+      </dl><hr></hr>
+<a name="contains%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>contains</em>(<em>i</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>i - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>true</code> if bit <code>i</code> is set.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/collection/Set.html" target="_self">Set</a>.<a href="../../scala/collection/Set.html#contains%28A%29" target="_self">contains</a>
+        </dd>
+      </dl><hr></hr>
+<a name="capacity"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>capacity</em> : <a href="../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="arr"></a><dl>
+      <dt>
+        
+        <code>protected abstract</code>
+        <code>def</code>
+        <em>arr</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Int.html" target="_self">Int</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="elements"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>elements</em> : <a href="../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../scala/Int.html" target="_self">Int</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>returns an iterator over the truth values of all bits</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="equals%28Any%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>equals</em>(<em>other</em> : <a href="../../scala/Any.html" target="_self">Any</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Checks if two bitsets are structurally identical.
+    Uses accelerated (32 x faster) check if the other set is a BitSet</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>other - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>true</code>, iff both bitsets contain the same                 elements.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/collection/Set.html" target="_self">Set</a>.<a href="../../scala/collection/Set.html#equals%28Any%29" target="_self">equals</a>
+        </dd>
+      </dl><hr></hr>
+<a name="hashCode%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>hashCode</em> : <a href="../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl><dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/collection/Set.html" target="_self">Set</a>.<a href="../../scala/collection/Set.html#hashCode%28%29" target="_self">hashCode</a>
+        </dd>
+      </dl><hr></hr>
+<a name="subsetOf%28scala.collection.Set%5BInt%5D%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>subsetOf</em>(<em>other</em> : <a href="../../scala/collection/Set.html" target="_self">Set</a>[<a href="../../scala/Int.html" target="_self">Int</a>]) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Checks if this set is a subset of set <code>that</code>.
+    Uses accelerated (32 x faster) check if the other set is a BitSet</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>other - </code>another set.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>true</code>, iff the other set is a superset of                 this set.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/collection/Set.html" target="_self">Set</a>.<a href="../../scala/collection/Set.html#subsetOf%28scala.collection.Set%5BA%5D%29" target="_self">subsetOf</a>
+        </dd>
+      </dl><hr></hr>
+<a name="memsize%28Int%29"></a><dl>
+      <dt>
+        
+        <code>protected final</code>
+        <code>def</code>
+        <em>memsize</em>(<em>n</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the number of bits to be stored.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the number of <code>Int</code> cells needed to store             <code>n</code> bits.</dd></dl>
+    <hr></hr>
+<a name="nbits%28Int%29"></a><dl>
+      <dt>
+        
+        <code>protected final</code>
+        <code>def</code>
+        <em>nbits</em>(<em>n</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the number of bits represented by <code>n</code> words.</dd></dl>
+    <hr></hr>
+<a name="offset%28Int%29"></a><dl>
+      <dt>
+        
+        <code>protected final</code>
+        <code>def</code>
+        <em>offset</em>(<em>n</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the position in the array where the bit resides.</dd></dl>
+    <hr></hr>
+<a name="mask%28Int%29"></a><dl>
+      <dt>
+        
+        <code>protected final</code>
+        <code>def</code>
+        <em>mask</em>(<em>n</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a mask with 1 at the position of the bit.</dd></dl>
+    <hr></hr>
+<a name="underlying"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>underlying</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Int.html" target="_self">Int</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a copy of the array underlying this bitset</dd></dl>
+    <hr></hr>
+<a name="stringPrefix"></a><dl>
+      <dt>
+        
+        <code>protected override</code>
+        <code>def</code>
+        <em>stringPrefix</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Defines the prefix of this object's <code>toString</code> representation.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/collection/Set.html" target="_self">Set</a>.<a href="../../scala/collection/Set.html#stringPrefix" target="_self">stringPrefix</a>
+        </dd>
+      </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

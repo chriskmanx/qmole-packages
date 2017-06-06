@@ -1,0 +1,487 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>object Source in scala.io</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../scala/io$package.html" target="_self">scala.io</a>
+        <br></br>
+        <span class="entity">object  Source</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/io/Source"><code>scala/io/Source.scala</code></a>]
+      </div><hr></hr>
+      <a name="Source"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>object</code>
+        <em>Source</em>
+      </dt>
+      <dd><code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd>This object provides convenience methods to create an iterable
+  representation of a source file.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Burak Emir</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0, 19/08/2004</dd></dl>
+    
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/io/Source$object.html#fromBytes%28Array%5BByte%5D%2CString%29" target="_self">fromBytes</a></em>
+        (<em>bytes</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Byte.html" target="_self">Byte</a>], <em>enc</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+        
+        <div>Creates Source from array of bytes with given encoding, with
+    empty description.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/io/Source$object.html#fromBytes%28Array%5BByte%5D%29" target="_self">fromBytes</a></em>
+        (<em>bytes</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Byte.html" target="_self">Byte</a>]) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+        
+        <div>Creates a <code>Source</code> instance from the given array of bytes,
+    with empty description.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/io/Source$object.html#fromChar%28Char%29" target="_self">fromChar</a></em>
+        (<em>c</em> : <a href="../../scala/Char.html" target="_self">Char</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+        
+        <div>Creates a <code>Source</code> instance from a single character.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/io/Source$object.html#fromChars%28Array%5BChar%5D%29" target="_self">fromChars</a></em>
+        (<em>chars</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Char.html" target="_self">Char</a>]) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+        
+        <div>creates Source from array of characters, with empty description.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/io/Source$object.html#fromFile%28String%29" target="_self">fromFile</a></em>
+        (<em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+        
+        <div>creates Source from file with given name, setting its description to
+    filename.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/io/Source$object.html#fromFile%28java.io.File%2CString%29" target="_self">fromFile</a></em>
+        (<em>file</em> : <a href="" target="contentFrame" class="java/io/File">java.io.File</a>, <em>enc</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+        
+        <div>Creates Source from file, using given character encoding, setting its
+    description to filename.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/io/Source$object.html#fromFile%28java.io.File%29" target="_self">fromFile</a></em>
+        (<em>file</em> : <a href="" target="contentFrame" class="java/io/File">java.io.File</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+        
+        <div>creates Source from file, using default character encoding, setting its
+    description to filename.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/io/Source$object.html#fromFile%28java.net.URI%29" target="_self">fromFile</a></em>
+        (<em>uri</em> : <a href="" target="contentFrame" class="java/net/URI">java.net.URI</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+        
+        <div>creates Source from file with given file: URI</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/io/Source$object.html#fromFile%28String%2CString%29" target="_self">fromFile</a></em>
+        (<em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>enc</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+        
+        <div>creates Source from file with given name, using given encoding, setting
+    its description to filename.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/io/Source$object.html#fromInputStream%28java.io.InputStream%29" target="_self">fromInputStream</a></em>
+        (<em>is</em> : <a href="" target="contentFrame" class="java/io/InputStream">java.io.InputStream</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+        
+        <div>same as fromInputStream(is, "utf-8", None)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/io/Source$object.html#fromInputStream%28java.io.InputStream%2CString%29" target="_self">fromInputStream</a></em>
+        (<em>is</em> : <a href="" target="contentFrame" class="java/io/InputStream">java.io.InputStream</a>, <em>enc</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+        
+        <div>same as fromInputStream(is, enc, None)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/io/Source$object.html#fromInputStream%28java.io.InputStream%2CString%2COption%5BInt%5D%29" target="_self">fromInputStream</a></em>
+        (<em>istream</em> : <a href="" target="contentFrame" class="java/io/InputStream">java.io.InputStream</a>, <em>enc</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>maxlen</em> : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="../../scala/Int.html" target="_self">Int</a>]) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+        
+        <div>reads data from inputstream into a byte array, and calls fromBytes with given encoding. 
+    If maxlen is given, reads not more bytes than maxlen. if maxlen was not given, or was <= 0, then
+    whole inputstream is read and closed afterwards.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/io/Source$object.html#fromString%28String%29" target="_self">fromString</a></em>
+        (<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+        
+        <div>creates Source from string, with empty description.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/io/Source$object.html#fromURL%28String%29" target="_self">fromURL</a></em>
+        (<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/io/Source$object.html#fromURL%28java.net.URL%29" target="_self">fromURL</a></em>
+        (<em>url</em> : <a href="" target="contentFrame" class="java/net/URL">java.net.URL</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/io/Source$object.html#setFileDescriptor%28java.io.File%2Cscala.io.Source%29" target="_self">setFileDescriptor</a></em>
+        (<em>file</em> : <a href="" target="contentFrame" class="java/io/File">java.io.File</a>, <em>s</em> : <a href="../../scala/io/Source.html" target="_self">Source</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+        
+        <div></div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="fromBytes%28Array%5BByte%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromBytes</em>(<em>bytes</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Byte.html" target="_self">Byte</a>]) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates a <code>Source</code> instance from the given array of bytes,
+    with empty description.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>bytes - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the created <code>Source</code> instance.</dd></dl>
+    <hr></hr>
+<a name="fromBytes%28Array%5BByte%5D%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromBytes</em>(<em>bytes</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Byte.html" target="_self">Byte</a>], <em>enc</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates Source from array of bytes with given encoding, with
+    empty description.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>bytes - </code>...</dd><dd><code>enc - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="fromChar%28Char%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromChar</em>(<em>c</em> : <a href="../../scala/Char.html" target="_self">Char</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates a <code>Source</code> instance from a single character.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>c - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the create <code>Source</code> instance.</dd></dl>
+    <hr></hr>
+<a name="fromChars%28Array%5BChar%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromChars</em>(<em>chars</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Char.html" target="_self">Char</a>]) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>creates Source from array of characters, with empty description.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>chars - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="fromString%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromString</em>(<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>creates Source from string, with empty description.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>s - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="fromFile%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromFile</em>(<em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>creates Source from file with given name, setting its description to
+    filename.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="fromFile%28String%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromFile</em>(<em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>enc</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>creates Source from file with given name, using given encoding, setting
+    its description to filename.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="fromFile%28java.net.URI%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromFile</em>(<em>uri</em> : <a href="" target="contentFrame" class="java/net/URI">java.net.URI</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>creates Source from file with given file: URI</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="fromFile%28java.io.File%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromFile</em>(<em>file</em> : <a href="" target="contentFrame" class="java/io/File">java.io.File</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>creates Source from file, using default character encoding, setting its
+    description to filename.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="fromFile%28java.io.File%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromFile</em>(<em>file</em> : <a href="" target="contentFrame" class="java/io/File">java.io.File</a>, <em>enc</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates Source from file, using given character encoding, setting its
+    description to filename.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>file - </code>...</dd><dd><code>enc - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="setFileDescriptor%28java.io.File%2Cscala.io.Source%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>setFileDescriptor</em>(<em>file</em> : <a href="" target="contentFrame" class="java/io/File">java.io.File</a>, <em>s</em> : <a href="../../scala/io/Source.html" target="_self">Source</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>file - </code>...</dd><dd><code>s - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="fromURL%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromURL</em>(<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>s - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="fromURL%28java.net.URL%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromURL</em>(<em>url</em> : <a href="" target="contentFrame" class="java/net/URL">java.net.URL</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>url - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="fromInputStream%28java.io.InputStream%2CString%2COption%5BInt%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromInputStream</em>(<em>istream</em> : <a href="" target="contentFrame" class="java/io/InputStream">java.io.InputStream</a>, <em>enc</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>maxlen</em> : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="../../scala/Int.html" target="_self">Int</a>]) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>reads data from inputstream into a byte array, and calls fromBytes with given encoding. 
+    If maxlen is given, reads not more bytes than maxlen. if maxlen was not given, or was <= 0, then
+    whole inputstream is read and closed afterwards.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>istream - </code>the input stream from which to read</dd><dd><code>enc - </code>the encoding to apply to the bytes</dd><dd><code>maxlen - </code>optionally, a positive int specifying maximum number of bytes to read</dd></dl>
+    <hr></hr>
+<a name="fromInputStream%28java.io.InputStream%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromInputStream</em>(<em>is</em> : <a href="" target="contentFrame" class="java/io/InputStream">java.io.InputStream</a>, <em>enc</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>same as fromInputStream(is, enc, None)</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="fromInputStream%28java.io.InputStream%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromInputStream</em>(<em>is</em> : <a href="" target="contentFrame" class="java/io/InputStream">java.io.InputStream</a>) : <a href="../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>same as fromInputStream(is, "utf-8", None)</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

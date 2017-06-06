@@ -1,0 +1,13 @@
+Package: uk.qmole.aplus
+Name: A+ APL 
+Version: 4.22
+Architecture: iphoneos-arm
+Description: A+ APL port to IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/aplus 
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: ncurses, readline, x11, xcb
+Sponsor: QMole Ltd. 
+Section: Development
+Tag: purpose::console, role::developer

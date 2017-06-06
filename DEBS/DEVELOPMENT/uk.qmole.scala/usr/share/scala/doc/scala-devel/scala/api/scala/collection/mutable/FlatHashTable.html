@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>trait FlatHashTable in scala.collection.mutable</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../scala/collection/mutable$package.html" target="_self">scala.collection.mutable</a>
+        <br></br>
+        <span class="entity">trait  FlatHashTable</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/collection/mutable/FlatHashTable"><code>scala/collection/mutable/FlatHashTable.scala</code></a>]
+      </div><hr></hr>
+      <a name="FlatHashTable"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>trait</code>
+        <em>FlatHashTable</em>[<em>A</em>]
+      </dt>
+      <dd><code> extends </code><a href="../../../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl><dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../../../scala/collection/immutable/HashSet.html" target="_self">HashSet</a>, <a href="../../../scala/collection/mutable/HashSet.html" target="_self">HashSet</a></dd>
+      </dl><hr></hr>
+      
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Value Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/FlatHashTable.html#table" target="_self">table</a></em>
+         : <a href="../../../scala/Array.html" target="_self">Array</a>[<a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>]
+        
+        <div>The actual hash table.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/FlatHashTable.html#tableSize" target="_self">tableSize</a></em>
+         : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        <div>The number of mappings contained in this hash table.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/FlatHashTable.html#threshold" target="_self">threshold</a></em>
+         : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        <div>The next size value at which to resize (capacity load factor).</div>
+      </td>
+    </tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/FlatHashTable.html#addEntry%28A%29" target="_self">addEntry</a></em>
+        (<em>elem</em> : <a href="../../../scala/collection/mutable/FlatHashTable.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/FlatHashTable.html#clear%28%29" target="_self">clear</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/FlatHashTable.html#containsEntry%28A%29" target="_self">containsEntry</a></em>
+        (<em>elem</em> : <a href="../../../scala/collection/mutable/FlatHashTable.html#A" target="_self">A</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/FlatHashTable.html#elemHashCode%28A%29" target="_self">elemHashCode</a></em>
+        (<em>elem</em> : <a href="../../../scala/collection/mutable/FlatHashTable.html#A" target="_self">A</a>) : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/FlatHashTable.html#elements" target="_self">elements</a></em>
+         : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/collection/mutable/FlatHashTable.html#A" target="_self">A</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/FlatHashTable.html#findEntry%28A%29" target="_self">findEntry</a></em>
+        (<em>elem</em> : <a href="../../../scala/collection/mutable/FlatHashTable.html#A" target="_self">A</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/collection/mutable/FlatHashTable.html#A" target="_self">A</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/FlatHashTable.html#improve%28Int%29" target="_self">improve</a></em>
+        (<em>hcode</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/FlatHashTable.html#index%28Int%29" target="_self">index</a></em>
+        (<em>hcode</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/FlatHashTable.html#initialSize" target="_self">initialSize</a></em>
+         : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        <div>The initial size of the hash table.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/FlatHashTable.html#loadFactor" target="_self">loadFactor</a></em>
+         : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        <div>The load factor for the hash table; must be < 500 (0.5)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/FlatHashTable.html#loadFactorDenum" target="_self">loadFactorDenum</a></em>
+         : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/FlatHashTable.html#removeEntry%28A%29" target="_self">removeEntry</a></em>
+        (<em>elem</em> : <a href="../../../scala/collection/mutable/FlatHashTable.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/FlatHashTable.html#size" target="_self">size</a></em>
+         : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        <div>Returns the number of entires in this hash table.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Value Details</td></tr>
+        </table><div><a name="table"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>var</code>
+        <em>table</em> : <a href="../../../scala/Array.html" target="_self">Array</a>[<a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The actual hash table.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="tableSize"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>var</code>
+        <em>tableSize</em> : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The number of mappings contained in this hash table.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="threshold"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>var</code>
+        <em>threshold</em> : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The next size value at which to resize (capacity load factor).</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="loadFactor"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>loadFactor</em> : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The load factor for the hash table; must be < 500 (0.5)</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="loadFactorDenum"></a><dl>
+      <dt>
+        
+        <code>protected final</code>
+        <code>def</code>
+        <em>loadFactorDenum</em> : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="initialSize"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>initialSize</em> : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The initial size of the hash table.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="size"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>size</em> : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the number of entires in this hash table.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="findEntry%28A%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>findEntry</em>(<em>elem</em> : <a href="../../../scala/collection/mutable/FlatHashTable.html#A" target="_self">A</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/collection/mutable/FlatHashTable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="containsEntry%28A%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>containsEntry</em>(<em>elem</em> : <a href="../../../scala/collection/mutable/FlatHashTable.html#A" target="_self">A</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="addEntry%28A%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>addEntry</em>(<em>elem</em> : <a href="../../../scala/collection/mutable/FlatHashTable.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="removeEntry%28A%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>removeEntry</em>(<em>elem</em> : <a href="../../../scala/collection/mutable/FlatHashTable.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="elements"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>elements</em> : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/collection/mutable/FlatHashTable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="elemHashCode%28A%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>elemHashCode</em>(<em>elem</em> : <a href="../../../scala/collection/mutable/FlatHashTable.html#A" target="_self">A</a>) : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="improve%28Int%29"></a><dl>
+      <dt>
+        
+        <code>protected final</code>
+        <code>def</code>
+        <em>improve</em>(<em>hcode</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="index%28Int%29"></a><dl>
+      <dt>
+        
+        <code>protected final</code>
+        <code>def</code>
+        <em>index</em>(<em>hcode</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="clear%28%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>clear</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

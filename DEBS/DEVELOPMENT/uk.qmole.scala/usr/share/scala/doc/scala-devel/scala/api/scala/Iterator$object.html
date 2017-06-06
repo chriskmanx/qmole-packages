@@ -1,0 +1,463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>object Iterator in scala</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../scala$package.html" target="_self">scala</a>
+        <br></br>
+        <span class="entity">object  Iterator</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/Iterator"><code>scala/Iterator.scala</code></a>]
+      </div><hr></hr>
+      <a name="Iterator"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>object</code>
+        <em>Iterator</em>
+      </dt>
+      <dd><code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd>The <code>Iterator</code> object provides various functions for
+  creating specialized iterators.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Martin Odersky</dd><dd>Matthias Zenger</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.2, 10/02/2007</dd></dl>
+    
+      
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Value Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterator$object.html#empty" target="_self">empty</a></em>
+         : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Nothing.html" target="_self">Nothing</a>]
+        
+        
+      </td>
+    </tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterator$object.html#from%28Int%2C%28Int%29%3D%3EInt%29" target="_self">from</a></em>
+        (<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>step</em> : (<a href="../scala/Int.html" target="_self">Int</a>) =&gt; <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+        
+        <div>Create an iterator with elements
+    <code>e<sub>n+1</sub> = step(e<sub>n</sub>)</code>
+    where <code>e<sub>0</sub> = start</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterator$object.html#from%28Int%29" target="_self">from</a></em>
+        (<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+        
+        <div>Create an iterator with elements
+    <code>e<sub>n+1</sub> = e<sub>n</sub> + 1</code>
+    where <code>e<sub>0</sub> = start</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterator$object.html#from%28Int%2CInt%29" target="_self">from</a></em>
+        (<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>step</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+        
+        <div>Create an iterator with elements
+   <code>e<sub>n+1</sub> = e<sub>n</sub> + step</code>
+    where <code>e<sub>0</sub> = start</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterator$object.html#fromArray%28Array%5Ba%5D%29" target="_self">fromArray</a></em>
+        [<em>a</em>](<em>xs</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Iterator$object.html#fromArray%28Array%5Ba%5D%29#a" target="_self">a</a>]) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Iterator$object.html#fromArray%28Array%5Ba%5D%29#a" target="_self">a</a>]
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterator$object.html#fromArray%28Array%5Ba%5D%2CInt%2CInt%29" target="_self">fromArray</a></em>
+        [<em>a</em>](<em>xs</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Iterator$object.html#fromArray%28Array%5Ba%5D%2CInt%2CInt%29#a" target="_self">a</a>], <em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>length</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Iterator$object.html#fromArray%28Array%5Ba%5D%2CInt%2CInt%29#a" target="_self">a</a>]
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterator$object.html#fromCaseClass%28Product%29" target="_self">fromCaseClass</a></em>
+        (<em>n</em> : <a href="../scala/Product.html" target="_self">Product</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Any.html" target="_self">Any</a>]
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterator$object.html#fromProduct%28Product%29" target="_self">fromProduct</a></em>
+        (<em>n</em> : <a href="../scala/Product.html" target="_self">Product</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Any.html" target="_self">Any</a>]
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterator$object.html#fromString%28String%29" target="_self">fromString</a></em>
+        (<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Char.html" target="_self">Char</a>]
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterator$object.html#fromValues%28a*%29" target="_self">fromValues</a></em>
+        [<em>a</em>](<em>xs</em> : <a href="../scala/Iterator$object.html#fromValues%28a*%29#a" target="_self">a</a>*) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Iterator$object.html#fromValues%28a*%29#a" target="_self">a</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterator$object.html#range%28Int%2CInt%29" target="_self">range</a></em>
+        (<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Range.html" target="_self">Range</a>
+        
+        <div>Create an iterator with elements
+    <code>e<sub>n+1</sub> = e<sub>n</sub> + 1</code>
+    where <code>e<sub>0</sub> = start</code>
+    and <code>e<sub>i</sub> &lt; end</code>. However, 
+    if start > end, then it will return an empty trange.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterator$object.html#range%28Int%2CInt%2C%28Int%29%3D%3EInt%29" target="_self">range</a></em>
+        (<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>step</em> : (<a href="../scala/Int.html" target="_self">Int</a>) =&gt; <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+        
+        <div>Create an iterator with elements
+    <code>e<sub>n+1</sub> = step(e<sub>n</sub>)</code>
+    where <code>e<sub>0</sub> = start</code>
+    and <code>e<sub>i</sub> &lt; end</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterator$object.html#range%28Int%2CInt%2CInt%29" target="_self">range</a></em>
+        (<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>step</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Range.html" target="_self">Range</a>
+        
+        <div>Create an iterator with elements
+    <code>e<sub>n+1</sub> = e<sub>n</sub> + step</code>
+    where <code>e<sub>0</sub> = start</code>
+    and <code>e<sub>i</sub> &lt; end</code>. Will return an empty range
+    for nonsensical range/step arguments.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterator$object.html#single%28a%29" target="_self">single</a></em>
+        [<em>a</em>](<em>x</em> : <a href="../scala/Iterator$object.html#single%28a%29#a" target="_self">a</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Iterator$object.html#single%28a%29#a" target="_self">a</a>]
+        
+        <div></div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Value Details</td></tr>
+        </table><div><a name="empty"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>val</code>
+        <em>empty</em> : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Nothing.html" target="_self">Nothing</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="single%28a%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>single</em>[<em>a</em>](<em>x</em> : <a href="../scala/Iterator$object.html#single%28a%29#a" target="_self">a</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Iterator$object.html#single%28a%29#a" target="_self">a</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>x - </code>the element</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the iterator with one single element</dd></dl>
+    <hr></hr>
+<a name="fromValues%28a*%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromValues</em>[<em>a</em>](<em>xs</em> : <a href="../scala/Iterator$object.html#fromValues%28a*%29#a" target="_self">a</a>*) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Iterator$object.html#fromValues%28a*%29#a" target="_self">a</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="fromArray%28Array%5Ba%5D%29"></a><dl>
+      <dt>
+        @<a href="../scala/deprecated.html" target="_self">deprecated</a><br></br>
+        <code></code>
+        <code>def</code>
+        <em>fromArray</em>[<em>a</em>](<em>xs</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Iterator$object.html#fromArray%28Array%5Ba%5D%29#a" target="_self">a</a>]) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Iterator$object.html#fromArray%28Array%5Ba%5D%29#a" target="_self">a</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>xs - </code>the array of elements</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the iterator on <code>xs</code>.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Deprecated</b></dt><dd>replaced by RandomAccessSeq.elements and slice</dd></dl>
+    <hr></hr>
+<a name="fromArray%28Array%5Ba%5D%2CInt%2CInt%29"></a><dl>
+      <dt>
+        @<a href="../scala/deprecated.html" target="_self">deprecated</a><br></br>
+        <code></code>
+        <code>def</code>
+        <em>fromArray</em>[<em>a</em>](<em>xs</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Iterator$object.html#fromArray%28Array%5Ba%5D%2CInt%2CInt%29#a" target="_self">a</a>], <em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>length</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Iterator$object.html#fromArray%28Array%5Ba%5D%2CInt%2CInt%29#a" target="_self">a</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>xs - </code>the array of elements</dd><dd><code>start - </code>...</dd><dd><code>length - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Deprecated</b></dt><dd>replaced by RandomAccessSeq.elements and slice</dd></dl>
+    <hr></hr>
+<a name="fromString%28String%29"></a><dl>
+      <dt>
+        @<a href="../scala/deprecated.html" target="_self">deprecated</a><br></br>
+        <code></code>
+        <code>def</code>
+        <em>fromString</em>(<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Char.html" target="_self">Char</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>str - </code>the given string</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the iterator on <code>str</code></dd><dt style="margin:10px 0 0 20px;">
+        <b>Deprecated</b></dt><dd>replaced by <code>str.elements</code></dd></dl>
+    <hr></hr>
+<a name="fromProduct%28Product%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromProduct</em>(<em>n</em> : <a href="../scala/Product.html" target="_self">Product</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Any.html" target="_self">Any</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the product arity</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the iterator on <code>Product&lt;n&gt;</code>.</dd></dl>
+    <hr></hr>
+<a name="fromCaseClass%28Product%29"></a><dl>
+      <dt>
+        @<a href="../scala/deprecated.html" target="_self">deprecated</a><br></br>
+        <code></code>
+        <code>def</code>
+        <em>fromCaseClass</em>(<em>n</em> : <a href="../scala/Product.html" target="_self">Product</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Any.html" target="_self">Any</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Deprecated</b></dt><dd>use <code>fromProduct</code> instead.</dd></dl>
+    <hr></hr>
+<a name="range%28Int%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>range</em>(<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Range.html" target="_self">Range</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create an iterator with elements
+    <code>e<sub>n+1</sub> = e<sub>n</sub> + 1</code>
+    where <code>e<sub>0</sub> = start</code>
+    and <code>e<sub>i</sub> &lt; end</code>. However, 
+    if start > end, then it will return an empty trange.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>start - </code>the start value of the iterator</dd><dd><code>end - </code>the end value of the iterator</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the iterator with values in range <code>[start;end)</code>.</dd></dl>
+    <hr></hr>
+<a name="range%28Int%2CInt%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>range</em>(<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>step</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Range.html" target="_self">Range</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create an iterator with elements
+    <code>e<sub>n+1</sub> = e<sub>n</sub> + step</code>
+    where <code>e<sub>0</sub> = start</code>
+    and <code>e<sub>i</sub> &lt; end</code>. Will return an empty range
+    for nonsensical range/step arguments.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>start - </code>the start value of the iterator</dd><dd><code>end - </code>the end value of the iterator</dd><dd><code>step - </code>the increment value of the iterator (must be positive or negative)</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the iterator with values in range <code>[start;end)</code>.</dd></dl>
+    <hr></hr>
+<a name="range%28Int%2CInt%2C%28Int%29%3D%3EInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>range</em>(<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>step</em> : (<a href="../scala/Int.html" target="_self">Int</a>) =&gt; <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create an iterator with elements
+    <code>e<sub>n+1</sub> = step(e<sub>n</sub>)</code>
+    where <code>e<sub>0</sub> = start</code>
+    and <code>e<sub>i</sub> &lt; end</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>start - </code>the start value of the iterator</dd><dd><code>end - </code>the end value of the iterator</dd><dd><code>step - </code>the increment function of the iterator</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the iterator with values in range <code>[start;end)</code>.</dd></dl>
+    <hr></hr>
+<a name="from%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>from</em>(<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create an iterator with elements
+    <code>e<sub>n+1</sub> = e<sub>n</sub> + 1</code>
+    where <code>e<sub>0</sub> = start</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>start - </code>the start value of the iterator</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the iterator starting at value <code>start</code>.</dd></dl>
+    <hr></hr>
+<a name="from%28Int%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>from</em>(<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>step</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create an iterator with elements
+   <code>e<sub>n+1</sub> = e<sub>n</sub> + step</code>
+    where <code>e<sub>0</sub> = start</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>start - </code>the start value of the iterator</dd><dd><code>step - </code>the increment value of the iterator</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the iterator starting at value <code>start</code>.</dd></dl>
+    <hr></hr>
+<a name="from%28Int%2C%28Int%29%3D%3EInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>from</em>(<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>step</em> : (<a href="../scala/Int.html" target="_self">Int</a>) =&gt; <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create an iterator with elements
+    <code>e<sub>n+1</sub> = step(e<sub>n</sub>)</code>
+    where <code>e<sub>0</sub> = start</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>start - </code>the start value of the iterator</dd><dd><code>step - </code>the increment function of the iterator</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the iterator starting at value <code>start</code>.</dd></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

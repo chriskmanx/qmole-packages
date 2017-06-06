@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class StandardTokenParsers in scala.util.parsing.combinator1.syntactical</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../../../scala/util/parsing/combinator1/syntactical$package.html" target="_self">scala.util.parsing.combinator1.syntactical</a>
+        <br></br>
+        <span class="entity">class  StandardTokenParsers</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/util/parsing/combinator1/syntactical/StandardTokenParsers"><code>scala/util/parsing/combinator1/syntactical/StandardTokenParsers.scala</code></a>]
+      </div><hr></hr>
+      <a name="StandardTokenParsers"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>class</code>
+        <em>StandardTokenParsers</em>
+      </dt>
+      <dd><code> extends </code><a href="../../../../../scala/util/parsing/combinator1/syntactical/StdTokenParsers.html" target="_self">StdTokenParsers</a></dd>
+    </dl>
+      <dl><dd>This component provides primitive parsers for the standard tokens defined in `StdTokens'.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Martin Odersky, Adriaan Moors</dd></dl>
+    
+      
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Type Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> type</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../../scala/util/parsing/combinator1/syntactical/StandardTokenParsers.html#Tokens" target="_self">Tokens</a></em>
+        
+        
+        <div>Tokens is the abstract type of the `Token's consumed by the parsers in this component</div>
+      </td>
+    </tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Value Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../../scala/util/parsing/combinator1/syntactical/StandardTokenParsers.html#lexical" target="_self">lexical</a></em>
+         : <a href="../../../../../scala/util/parsing/combinator1/lexical/StdLexical.html" target="_self">StdLexical</a>
+        
+        <div>lexical is the component responsible for consuming some basic kind of
+    input (usually character-based) and turning it into the tokens
+    understood by these parsers.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Values and Variables inherited from <a href="../../../../../scala/util/parsing/combinator1/Parsers.html" target="_self">Parsers</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#lastNoSuccess" target="_self">lastNoSuccess</a>
+        </td></tr>
+      </table>
+<table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../../scala/util/parsing/combinator1/syntactical/StdTokenParsers.html" target="_self">StdTokenParsers</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../../scala/util/parsing/combinator1/syntactical/StdTokenParsers.html#keyword%28String%29" target="_self">keyword</a>, <a href="../../../../../scala/util/parsing/combinator1/syntactical/StdTokenParsers.html#numericLit" target="_self">numericLit</a>, <a href="../../../../../scala/util/parsing/combinator1/syntactical/StdTokenParsers.html#stringLit" target="_self">stringLit</a>, <a href="../../../../../scala/util/parsing/combinator1/syntactical/StdTokenParsers.html#ident" target="_self">ident</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../../scala/util/parsing/combinator1/syntactical/TokenParsers.html" target="_self">TokenParsers</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../../scala/util/parsing/combinator1/syntactical/TokenParsers.html#phrase%28TokenParsers.this.Parser%5Bt%5D%29" target="_self">phrase</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../../scala/util/parsing/combinator1/Parsers.html" target="_self">Parsers</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#commit%28%3D%3EParsers.this.Parser%5BT%5D%29" target="_self">commit</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#elem%28String%2C%28Parsers.this.Elem%29%3D%3EBoolean%29" target="_self">elem</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#elem%28Parsers.this.Elem%29" target="_self">elem</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#accept%28Parsers.this.Elem%29" target="_self">accept</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#accept%28ES%29" target="_self">accept</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#accept%28String%2CPartialFunction%5BParsers.this.Elem%2CU%5D%29" target="_self">accept</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#failure%28String%29" target="_self">failure</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#err%28String%29" target="_self">err</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#success%28T%29" target="_self">success</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#log%28%3D%3EParsers.this.Parser%5BT%5D%29" target="_self">log</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#rep%28%3D%3EParsers.this.Parser%5BT%5D%29" target="_self">rep</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#repsep%28%3D%3EParsers.this.Parser%5BT%5D%2C%3D%3EParsers.this.Parser%5BAny%5D%29" target="_self">repsep</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#rep1%28%3D%3EParsers.this.Parser%5BT%5D%29" target="_self">rep1</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#rep1%28%3D%3EParsers.this.Parser%5BT%5D%2C%3D%3EParsers.this.Parser%5BT%5D%29" target="_self">rep1</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#repN%28Int%2C%3D%3EParsers.this.Parser%5BT%5D%29" target="_self">repN</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#rep1sep%28%3D%3EParsers.this.Parser%5BT%5D%2C%3D%3EParsers.this.Parser%5BAny%5D%29" target="_self">rep1sep</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#chainl1%28%3D%3EParsers.this.Parser%5BT%5D%2C%3D%3EParsers.this.Parser%5B%28T%2CT%29%3D%3ET%5D%29" target="_self">chainl1</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#chainl1%28%3D%3EParsers.this.Parser%5BT%5D%2C%3D%3EParsers.this.Parser%5BU%5D%2C%3D%3EParsers.this.Parser%5B%28T%2CU%29%3D%3ET%5D%29" target="_self">chainl1</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#chainr1%28Parsers.this.Parser%5BT%5D%2CParsers.this.Parser%5B%28T%2CU%29%3D%3EU%5D%2C%28T%2CU%29%3D%3EU%2CU%29" target="_self">chainr1</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#opt%28%3D%3EParsers.this.Parser%5BT%5D%29" target="_self">opt</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#positioned%28%3D%3EParsers.this.Parser%5BT%5D%29" target="_self">positioned</a>, <a href="../../../../../scala/util/parsing/combinator1/Parsers.html#const%28U%29" target="_self">const</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Type Details</td></tr>
+        </table><div><a name="Tokens"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>type</code>
+        <em>Tokens</em>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Tokens is the abstract type of the `Token's consumed by the parsers in this component</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Value Details</td></tr>
+        </table><div><a name="lexical"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>val</code>
+        <em>lexical</em> : <a href="../../../../../scala/util/parsing/combinator1/lexical/StdLexical.html" target="_self">StdLexical</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>lexical is the component responsible for consuming some basic kind of
+    input (usually character-based) and turning it into the tokens
+    understood by these parsers.</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

@@ -1,0 +1,13 @@
+Package: uk.qmole.junit4
+Name: junit4
+Version: 4
+Architecture: iphoneos-arm
+Description: Java Unit Testing frameworkd 
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/junit
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: jamvm
+Sponsor: QMole Ltd. 
+Section: Development
+Tag: purpose::console, role::developer

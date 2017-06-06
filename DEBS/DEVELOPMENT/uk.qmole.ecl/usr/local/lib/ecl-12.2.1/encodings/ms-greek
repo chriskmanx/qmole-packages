@@ -1,0 +1,1 @@
+(defparameter ext::MS-GREEK (ext::make-encoding 'ext::WINDOWS-CP1253))

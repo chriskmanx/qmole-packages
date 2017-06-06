@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class BasicTransformer in scala.xml.transform</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../scala/xml/transform$package.html" target="_self">scala.xml.transform</a>
+        <br></br>
+        <span class="entity">class  BasicTransformer</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/xml/transform/BasicTransformer"><code>scala/xml/transform/BasicTransformer.scala</code></a>]
+      </div><hr></hr>
+      <a name="BasicTransformer"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>class</code>
+        <em>BasicTransformer</em>
+      </dt>
+      <dd><code> extends </code>(<a href="../../../scala/xml/Node.html" target="_self">Node</a>) =&gt; <a href="../../../scala/xml/Node.html" target="_self">Node</a></dd>
+    </dl>
+      <dl><dd>A class for XML transformations.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Burak Emir</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0</dd></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../../../scala/xml/transform/RewriteRule.html" target="_self">RewriteRule</a>, <a href="../../../scala/xml/transform/RuleTransformer.html" target="_self">RuleTransformer</a></dd>
+      </dl><hr></hr>
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/transform/BasicTransformer.html#apply%28scala.xml.Node%29" target="_self">apply</a></em>
+        (<em>n</em> : <a href="../../../scala/xml/Node.html" target="_self">Node</a>) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/transform/BasicTransformer.html#buffer%28Int%2CSeq%5Bscala.xml.Node%5D%29" target="_self">buffer</a></em>
+        (<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>ns</em> : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]) : <a href="../../../scala/xml/NodeBuffer.html" target="_self">NodeBuffer</a>
+        
+        <div>Returns a new node buffer with the first <code>pos</code> elements
+    from <code>ns</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/transform/BasicTransformer.html#freeze%28scala.xml.NodeBuffer%29" target="_self">freeze</a></em>
+        (<em>nb</em> : <a href="../../../scala/xml/NodeBuffer.html" target="_self">NodeBuffer</a>) : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]
+        
+        <div>Turns a nodebuffer into a sequence, so hashcode works.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/transform/BasicTransformer.html#single%28Seq%5Bscala.xml.Node%5D%29" target="_self">single</a></em>
+        (<em>ns</em> : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/transform/BasicTransformer.html#transform%28scala.xml.Node%29" target="_self">transform</a></em>
+        (<em>n</em> : <a href="../../../scala/xml/Node.html" target="_self">Node</a>) : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/transform/BasicTransformer.html#transform%28Seq%5Bscala.xml.Node%5D%29" target="_self">transform</a></em>
+        (<em>ns</em> : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]) : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]
+        
+        <div>Call transform(Node) to each node in ns, yield ns if nothing changes,
+    otherwise a new sequence of concatenated results.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/transform/BasicTransformer.html#transform%28Iterator%5Bscala.xml.Node%5D%2Cscala.xml.NodeBuffer%29" target="_self">transform</a></em>
+        (<em>it</em> : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>], <em>nb</em> : <a href="../../../scala/xml/NodeBuffer.html" target="_self">NodeBuffer</a>) : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]
+        
+        <div>Call transform(Node) for each node in ns, append results
+    to NodeBuffer.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/transform/BasicTransformer.html#unchanged%28scala.xml.Node%2CSeq%5Bscala.xml.Node%5D%29" target="_self">unchanged</a></em>
+        (<em>n</em> : <a href="../../../scala/xml/Node.html" target="_self">Node</a>, <em>ns</em> : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div></div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Function1.html" target="_self">Function1</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Function1.html#toString%28%29" target="_self">toString</a>, <a href="../../../scala/Function1.html#compose%28%28A%29%3D%3ET1%29" target="_self">compose</a>, <a href="../../../scala/Function1.html#andThen%28%28R%29%3D%3EA%29" target="_self">andThen</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Class Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/transform/BasicTransformer.NeedsCopy.html" target="_self">NeedsCopy</a></em>
+        (<code>val </code><em>result</em> : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>])<code> extends </code><a href="" target="contentFrame" class="java/lang/Throwable">java.lang.Throwable</a><code> with </code><a href="../../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+      </table>
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="buffer%28Int%2CSeq%5Bscala.xml.Node%5D%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>buffer</em>(<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>ns</em> : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]) : <a href="../../../scala/xml/NodeBuffer.html" target="_self">NodeBuffer</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a new node buffer with the first <code>pos</code> elements
+    from <code>ns</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>pos - </code>..</dd><dd><code>ns - </code>..</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>..</dd></dl>
+    <hr></hr>
+<a name="freeze%28scala.xml.NodeBuffer%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>freeze</em>(<em>nb</em> : <a href="../../../scala/xml/NodeBuffer.html" target="_self">NodeBuffer</a>) : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Turns a nodebuffer into a sequence, so hashcode works.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>nb - </code>..</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>..</dd></dl>
+    <hr></hr>
+<a name="single%28Seq%5Bscala.xml.Node%5D%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>single</em>(<em>ns</em> : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="unchanged%28scala.xml.Node%2CSeq%5Bscala.xml.Node%5D%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>unchanged</em>(<em>n</em> : <a href="../../../scala/xml/Node.html" target="_self">Node</a>, <em>ns</em> : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>...</dd><dd><code>ns - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="transform%28Iterator%5Bscala.xml.Node%5D%2Cscala.xml.NodeBuffer%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>transform</em>(<em>it</em> : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>], <em>nb</em> : <a href="../../../scala/xml/NodeBuffer.html" target="_self">NodeBuffer</a>) : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Call transform(Node) for each node in ns, append results
+    to NodeBuffer.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="transform%28Seq%5Bscala.xml.Node%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>transform</em>(<em>ns</em> : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]) : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Call transform(Node) to each node in ns, yield ns if nothing changes,
+    otherwise a new sequence of concatenated results.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="transform%28scala.xml.Node%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>transform</em>(<em>n</em> : <a href="../../../scala/xml/Node.html" target="_self">Node</a>) : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="apply%28scala.xml.Node%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>(<em>n</em> : <a href="../../../scala/xml/Node.html" target="_self">Node</a>) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+      </dt>
+      <dd></dd>
+    </dl><dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/Function1.html" target="_self">Function1</a>.<a href="../../../scala/Function1.html#apply%28T1%29" target="_self">apply</a>
+        </dd>
+      </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

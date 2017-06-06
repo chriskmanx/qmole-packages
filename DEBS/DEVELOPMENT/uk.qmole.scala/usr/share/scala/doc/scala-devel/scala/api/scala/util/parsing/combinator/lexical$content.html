@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.util.parsing.combinator.lexical</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/lexical/Lexical.html" target="_self">Lexical</a></em>
+        <code> extends </code><a href="../../../../scala/util/parsing/combinator/lexical/Scanners.html" target="_self">Scanners</a><code> with </code><a href="../../../../scala/util/parsing/syntax/Tokens.html" target="_self">Tokens</a>
+        
+        <div><p>
+    This component complements the <code>Scanners</code> component with
+    common operations for lexical parsers.
+  </p>
+  <p>
+   {@see StdLexical} for a concrete implementation for a simple, Scala-like
+   language.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/lexical/Scanners.html" target="_self">Scanners</a></em>
+        <code> extends </code><a href="../../../../scala/util/parsing/combinator/Parsers.html" target="_self">Parsers</a>
+        
+        <div><p>
+    This component provides core functionality for lexical parsers.
+  </p>
+  <p>
+    See its subclasses {@see Lexical} and -- most interestingly
+    {@see StdLexical}, for more functionality.
+  </p>
+
+  @requires token      a parser that produces a token (from a stream of characters)
+  @requires whitespace a unit-parser for white-space
+  @provides Scanner    essentially a parser that parses a stream of characters
+                       to produce `Token's, which are typically passed to a
+                       syntactical parser (which operates on `Token's, not on
+                       individual characters).</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/lexical/StdLexical.html" target="_self">StdLexical</a></em>
+        <code> extends </code><a href="../../../../scala/util/parsing/combinator/lexical/Lexical.html" target="_self">Lexical</a><code> with </code><a href="../../../../scala/util/parsing/syntax/StdTokens.html" target="_self">StdTokens</a>
+        
+        <div><p>
+    This component provides a standard lexical parser for a simple, Scala-like language. 
+    It parses keywords and identifiers, numeric literals (integers), strings, and delimiters. 
+  </p>
+  <p>
+    To distinguish between identifiers and keywords, it uses a set of reserved identifiers: 
+    every string contained in `reserved' is returned as a keyword token.
+    (Note that "=>" is hard-coded as a keyword.) 
+    Additionally, the kinds of delimiters can be specified by the `delimiters' set.
+  </p>
+  <p>
+    Usually this component is used to break character-based input into bigger tokens,
+    which are then passed to a token-parser {@see TokenParsers}.
+  </p></div>
+      </td>
+    </tr>        
+        </table>
+</body>
+      </html>

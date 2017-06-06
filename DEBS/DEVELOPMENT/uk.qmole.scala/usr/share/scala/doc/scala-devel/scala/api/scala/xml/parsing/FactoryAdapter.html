@@ -1,0 +1,792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class FactoryAdapter in scala.xml.parsing</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../scala/xml/parsing$package.html" target="_self">scala.xml.parsing</a>
+        <br></br>
+        <span class="entity">class  FactoryAdapter</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/xml/parsing/FactoryAdapter"><code>scala/xml/parsing/FactoryAdapter.scala</code></a>]
+      </div><hr></hr>
+      <a name="FactoryAdapter"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>class</code>
+        <em>FactoryAdapter</em>
+      </dt>
+      <dd><code> extends </code><a href="" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler</a><code> with </code><a href="../../../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd>SAX adapter class, for use with Java SAX parser. Keeps track of 
+  namespace bindings, without relying on namespace handling of the 
+  underlying SAX parser.</dd></dl>
+      <dl></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../../../scala/xml/parsing/NoBindingFactoryAdapter.html" target="_self">NoBindingFactoryAdapter</a></dd>
+      </dl><hr></hr>
+      
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Value Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#attribStack" target="_self">attribStack</a></em>
+         : <a href="../../../scala/collection/mutable/Stack.html" target="_self">Stack</a>[<a href="../../../scala/xml/MetaData.html" target="_self">MetaData</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#buffer" target="_self">buffer</a></em>
+         : <a href="../../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#capture" target="_self">capture</a></em>
+         : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#curTag" target="_self">curTag</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#hStack" target="_self">hStack</a></em>
+         : <a href="../../../scala/collection/mutable/Stack.html" target="_self">Stack</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#normalizeWhitespace" target="_self">normalizeWhitespace</a></em>
+         : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#rootElem" target="_self">rootElem</a></em>
+         : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#scopeStack" target="_self">scopeStack</a></em>
+         : <a href="../../../scala/collection/mutable/Stack.html" target="_self">Stack</a>[<a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#tagStack" target="_self">tagStack</a></em>
+         : <a href="../../../scala/collection/mutable/Stack.html" target="_self">Stack</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]
+        
+        
+      </td>
+    </tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#captureText%28%29" target="_self">captureText</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>captures text, possibly normalizing whitespace</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#characters%28Array%5BChar%5D%2CInt%2CInt%29" target="_self">characters</a></em>
+        (<em>ch</em> : <a href="../../../scala/Array.html" target="_self">Array</a>[<a href="../../../scala/Char.html" target="_self">Char</a>], <em>offset</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>length</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Characters.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#createNode%28String%2CString%2Cscala.xml.MetaData%2Cscala.xml.NamespaceBinding%2CList%5Bscala.xml.Node%5D%29" target="_self">createNode</a></em>
+        (<em>pre</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>elemName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>attribs</em> : <a href="../../../scala/xml/MetaData.html" target="_self">MetaData</a>, <em>scope</em> : <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>chIter</em> : <a href="../../../scala/List.html" target="_self">List</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+        
+        <div>creates an new non-text(tree) node.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#createProcInstr%28String%2CString%29" target="_self">createProcInstr</a></em>
+        (<em>target</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>data</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/ProcInstr.html" target="_self">ProcInstr</a>]
+        
+        <div>creates a new processing instruction node.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#createText%28String%29" target="_self">createText</a></em>
+        (<em>text</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/xml/Text.html" target="_self">Text</a>
+        
+        <div>creates a Text node.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#endElement%28String%2CString%2CString%29" target="_self">endElement</a></em>
+        (<em>uri</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>_localName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>qname</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>End element.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#error%28org.xml.sax.SAXParseException%29" target="_self">error</a></em>
+        (<em>ex</em> : <a href="" target="contentFrame" class="org/xml/sax/SAXParseException">org.xml.sax.SAXParseException</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Error.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#fatalError%28org.xml.sax.SAXParseException%29" target="_self">fatalError</a></em>
+        (<em>ex</em> : <a href="" target="contentFrame" class="org/xml/sax/SAXParseException">org.xml.sax.SAXParseException</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Fatal error.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#load%28String%29" target="_self">load</a></em>
+        (<em>sysID</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+        
+        <div>loads XML from given sysID</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#load%28java.io.Reader%29" target="_self">load</a></em>
+        (<em>reader</em> : <a href="" target="contentFrame" class="java/io/Reader">java.io.Reader</a>) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+        
+        <div>loads XML from given Reader</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#load%28java.io.InputStream%29" target="_self">load</a></em>
+        (<em>is</em> : <a href="" target="contentFrame" class="java/io/InputStream">java.io.InputStream</a>) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+        
+        <div>loads XML from given InputStream</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#loadFile%28java.io.FileDescriptor%29" target="_self">loadFile</a></em>
+        (<em>fileDesc</em> : <a href="" target="contentFrame" class="java/io/FileDescriptor">java.io.FileDescriptor</a>) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+        
+        <div>loads XML from given file descriptor</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#loadFile%28java.io.File%29" target="_self">loadFile</a></em>
+        (<em>file</em> : <a href="" target="contentFrame" class="java/io/File">java.io.File</a>) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+        
+        <div>loads XML from given file</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#loadFile%28String%29" target="_self">loadFile</a></em>
+        (<em>fileName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+        
+        <div>loads XML from given file</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#loadXML%28org.xml.sax.InputSource%29" target="_self">loadXML</a></em>
+        (<em>source</em> : <a href="" target="contentFrame" class="org/xml/sax/InputSource">org.xml.sax.InputSource</a>) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+        
+        <div>load XML document</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#nodeContainsText%28String%29" target="_self">nodeContainsText</a></em>
+        (<em>localName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Tests if an XML element contains text.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#printError%28String%2Corg.xml.sax.SAXParseException%29" target="_self">printError</a></em>
+        (<em>errtype</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>ex</em> : <a href="" target="contentFrame" class="org/xml/sax/SAXParseException">org.xml.sax.SAXParseException</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Prints the error message</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#processingInstruction%28String%2CString%29" target="_self">processingInstruction</a></em>
+        (<em>target</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>data</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Processing instruction.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#startElement%28String%2CString%2CString%2Corg.xml.sax.Attributes%29" target="_self">startElement</a></em>
+        (<em>uri</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>_localName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>qname</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>attributes</em> : <a href="" target="contentFrame" class="org/xml/sax/Attributes">org.xml.sax.Attributes</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/FactoryAdapter.html#warning%28org.xml.sax.SAXParseException%29" target="_self">warning</a></em>
+        (<em>ex</em> : <a href="" target="contentFrame" class="org/xml/sax/SAXParseException">org.xml.sax.SAXParseException</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Warning.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="#resolveEntity" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler.resolveEntity</a>, <a href="#notationDecl" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler.notationDecl</a>, <a href="#unparsedEntityDecl" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler.unparsedEntityDecl</a>, <a href="#setDocumentLocator" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler.setDocumentLocator</a>, <a href="#startDocument" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler.startDocument</a>, <a href="#endDocument" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler.endDocument</a>, <a href="#startPrefixMapping" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler.startPrefixMapping</a>, <a href="#endPrefixMapping" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler.endPrefixMapping</a>, <a href="#ignorableWhitespace" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler.ignorableWhitespace</a>, <a href="#skippedEntity" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler.skippedEntity</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Value Details</td></tr>
+        </table><div><a name="buffer"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>val</code>
+        <em>buffer</em> : <a href="../../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="attribStack"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>val</code>
+        <em>attribStack</em> : <a href="../../../scala/collection/mutable/Stack.html" target="_self">Stack</a>[<a href="../../../scala/xml/MetaData.html" target="_self">MetaData</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="hStack"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>val</code>
+        <em>hStack</em> : <a href="../../../scala/collection/mutable/Stack.html" target="_self">Stack</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="tagStack"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>val</code>
+        <em>tagStack</em> : <a href="../../../scala/collection/mutable/Stack.html" target="_self">Stack</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="scopeStack"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>var</code>
+        <em>scopeStack</em> : <a href="../../../scala/collection/mutable/Stack.html" target="_self">Stack</a>[<a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="curTag"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>var</code>
+        <em>curTag</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="capture"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>var</code>
+        <em>capture</em> : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="normalizeWhitespace"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>val</code>
+        <em>normalizeWhitespace</em> : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="rootElem"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>var</code>
+        <em>rootElem</em> : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="nodeContainsText%28String%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>nodeContainsText</em>(<em>localName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Tests if an XML element contains text.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>true if element named <code>localName</code> contains text.</dd></dl>
+    <hr></hr>
+<a name="createNode%28String%2CString%2Cscala.xml.MetaData%2Cscala.xml.NamespaceBinding%2CList%5Bscala.xml.Node%5D%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>createNode</em>(<em>pre</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>elemName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>attribs</em> : <a href="../../../scala/xml/MetaData.html" target="_self">MetaData</a>, <em>scope</em> : <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>chIter</em> : <a href="../../../scala/List.html" target="_self">List</a>[<a href="../../../scala/xml/Node.html" target="_self">Node</a>]) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>creates an new non-text(tree) node.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>elemName - </code></dd><dd><code>attribs - </code></dd><dd><code>chIter - </code></dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a new XML element.</dd></dl>
+    <hr></hr>
+<a name="createText%28String%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>createText</em>(<em>text</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/xml/Text.html" target="_self">Text</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>creates a Text node.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>text - </code></dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a new Text node.</dd></dl>
+    <hr></hr>
+<a name="createProcInstr%28String%2CString%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>createProcInstr</em>(<em>target</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>data</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/xml/ProcInstr.html" target="_self">ProcInstr</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>creates a new processing instruction node.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="characters%28Array%5BChar%5D%2CInt%2CInt%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>characters</em>(<em>ch</em> : <a href="../../../scala/Array.html" target="_self">Array</a>[<a href="../../../scala/Char.html" target="_self">Char</a>], <em>offset</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>length</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Characters.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>ch - </code></dd><dd><code>offset - </code></dd><dd><code>length - </code></dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler</a>.<a href="#characters" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler.characters</a>
+        </dd>
+      </dl><hr></hr>
+<a name="startElement%28String%2CString%2CString%2Corg.xml.sax.Attributes%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>startElement</em>(<em>uri</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>_localName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>qname</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>attributes</em> : <a href="" target="contentFrame" class="org/xml/sax/Attributes">org.xml.sax.Attributes</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler</a>.<a href="#startElement" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler.startElement</a>
+        </dd>
+      </dl><hr></hr>
+<a name="captureText%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>captureText</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>captures text, possibly normalizing whitespace</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="endElement%28String%2CString%2CString%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>endElement</em>(<em>uri</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>_localName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>qname</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>End element.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>uri - </code></dd><dd><code>localName - </code></dd><dd><code>qname - </code></dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>org.xml.sax.SAXException - </code>if ..</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler</a>.<a href="#endElement" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler.endElement</a>
+        </dd>
+      </dl><hr></hr>
+<a name="processingInstruction%28String%2CString%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>processingInstruction</em>(<em>target</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>data</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Processing instruction.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler</a>.<a href="#processingInstruction" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler.processingInstruction</a>
+        </dd>
+      </dl><hr></hr>
+<a name="warning%28org.xml.sax.SAXParseException%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>warning</em>(<em>ex</em> : <a href="" target="contentFrame" class="org/xml/sax/SAXParseException">org.xml.sax.SAXParseException</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Warning.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler</a>.<a href="#warning" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler.warning</a>
+        </dd>
+      </dl><hr></hr>
+<a name="error%28org.xml.sax.SAXParseException%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>error</em>(<em>ex</em> : <a href="" target="contentFrame" class="org/xml/sax/SAXParseException">org.xml.sax.SAXParseException</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Error.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler</a>.<a href="#error" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler.error</a>
+        </dd>
+      </dl><hr></hr>
+<a name="fatalError%28org.xml.sax.SAXParseException%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>fatalError</em>(<em>ex</em> : <a href="" target="contentFrame" class="org/xml/sax/SAXParseException">org.xml.sax.SAXParseException</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Fatal error.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler</a>.<a href="#fatalError" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler.fatalError</a>
+        </dd>
+      </dl><hr></hr>
+<a name="printError%28String%2Corg.xml.sax.SAXParseException%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>printError</em>(<em>errtype</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>ex</em> : <a href="" target="contentFrame" class="org/xml/sax/SAXParseException">org.xml.sax.SAXParseException</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Prints the error message</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="loadXML%28org.xml.sax.InputSource%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>loadXML</em>(<em>source</em> : <a href="" target="contentFrame" class="org/xml/sax/InputSource">org.xml.sax.InputSource</a>) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>load XML document</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>source - </code></dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a new XML document object</dd></dl>
+    <hr></hr>
+<a name="loadFile%28java.io.File%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>loadFile</em>(<em>file</em> : <a href="" target="contentFrame" class="java/io/File">java.io.File</a>) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>loads XML from given file</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="loadFile%28java.io.FileDescriptor%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>loadFile</em>(<em>fileDesc</em> : <a href="" target="contentFrame" class="java/io/FileDescriptor">java.io.FileDescriptor</a>) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>loads XML from given file descriptor</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="loadFile%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>loadFile</em>(<em>fileName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>loads XML from given file</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="load%28java.io.InputStream%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>load</em>(<em>is</em> : <a href="" target="contentFrame" class="java/io/InputStream">java.io.InputStream</a>) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>loads XML from given InputStream</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="load%28java.io.Reader%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>load</em>(<em>reader</em> : <a href="" target="contentFrame" class="java/io/Reader">java.io.Reader</a>) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>loads XML from given Reader</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="load%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>load</em>(<em>sysID</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/xml/Node.html" target="_self">Node</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>loads XML from given sysID</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

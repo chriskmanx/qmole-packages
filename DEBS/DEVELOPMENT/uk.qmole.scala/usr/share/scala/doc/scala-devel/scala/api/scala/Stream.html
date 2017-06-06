@@ -1,0 +1,1027 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>trait Stream in scala</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../scala$package.html" target="_self">scala</a>
+        <br></br>
+        <span class="entity">trait  Stream</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/Stream"><code>scala/Stream.scala</code></a>]
+      </div><hr></hr>
+      <a name="Stream"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>trait</code>
+        <em>Stream</em>[+<em>A</em>]
+      </dt>
+      <dd><code> extends </code><a href="../scala/Seq$object.Projection.html" target="_self">Projection</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]</dd>
+    </dl>
+      <dl><dd><p>The class <code>Stream</code> implements lazy lists where elements
+ are only evaluated when they are needed. Here is an example:</p>
+ <pre>
+ <b>object</b> Main <b>extends</b> Application {
+
+   <b>def</b> from(n: Int): Stream[Int] =
+     Stream.cons(n, from(n + 1))
+
+   <b>def</b> sieve(s: Stream[Int]): Stream[Int] =
+     Stream.cons(s.head, sieve(s.tail filter { _ % s.head != 0 }))
+
+   <b>def</b> primes = sieve(from(2))
+
+   primes take 10 print
+ }
+ </pre></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Martin Odersky, Matthias Zenger</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.1 08/08/03</dd></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../scala/Stream$object.Definite.html" target="_self">Stream.Definite</a></dd>
+      </dl><hr></hr>
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#addDefinedElems%28StringBuilder%2CString%29" target="_self">addDefinedElems</a></em>
+        (<em>buf</em> : <a href="../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>, <em>prefix</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div>Write all elements of this string into given string builder</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#append%28%3D%3EIterable%5BB%5D%29" target="_self">append</a></em>
+        [<em>B</em> &gt;: <a href="../scala/Stream.html#A" target="_self">A</a>](<em>rest</em> : =&gt; <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Stream.html#append%28%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#append%28%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div>The stream resulting from the concatenation of this stream with the argument stream.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#apply%28Int%29" target="_self">apply</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Stream.html#A" target="_self">A</a>
+        
+        <div>Returns the <code>n</code>-th element of this stream. The first element
+    (head of the stream) is at position 0.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#copyToArray%28Array%5BB%5D%2CInt%29" target="_self">copyToArray</a></em>
+        [<em>B</em> &gt;: <a href="../scala/Stream.html#A" target="_self">A</a>](<em>xs</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Stream.html#copyToArray%28Array%5BB%5D%2CInt%29#B" target="_self">B</a>], <em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Fills the given array <code>xs</code> with the elements of
+    this stream starting at position <code>start</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#drop%28Int%29" target="_self">drop</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+        
+        <div>Returns the stream without its <code>n</code> first elements.
+    If the stream has less than <code>n</code> elements, the empty stream is returned.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a></em>
+        (<em>p</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+        
+        <div>Returns the longest suffix of this stream whose first element
+    does not satisfy the predicate <code>p</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#elements" target="_self">elements</a></em>
+         : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+        
+        <div>An iterator returning the elements of this stream one by one.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#exists%28%28A%29%3D%3EBoolean%29" target="_self">exists</a></em>
+        (<em>p</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Tests the existence in this stream of an element that satisfies the
+    predicate <code>p</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a></em>
+        (<em>p</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+        
+        <div>Returns all the elements of this stream that satisfy the
+    predicate <code>p</code>. The order of the elements is preserved.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a></em>
+        [<em>B</em>](<em>f</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Stream.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div>Applies the given function <code>f</code> to each element of
+    this stream, then concatenates the results.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#foldLeft%28B%29" target="_self">foldLeft</a></em>
+        [<em>B</em>](<em>z</em> : <a href="../scala/Stream.html#foldLeft%28B%29#B" target="_self">B</a>)(<em>f</em> : (<a href="../scala/Stream.html#foldLeft%28B%29#B" target="_self">B</a>, <a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Stream.html#foldLeft%28B%29#B" target="_self">B</a>) : <a href="../scala/Stream.html#foldLeft%28B%29#B" target="_self">B</a>
+        
+        <div>Combines the elements of this stream together using the binary
+    function <code>f</code>, from left to right, and starting with
+    the value <code>z</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#foldRight%28B%29" target="_self">foldRight</a></em>
+        [<em>B</em>](<em>z</em> : <a href="../scala/Stream.html#foldRight%28B%29#B" target="_self">B</a>)(<em>f</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>, <a href="../scala/Stream.html#foldRight%28B%29#B" target="_self">B</a>) =&gt; <a href="../scala/Stream.html#foldRight%28B%29#B" target="_self">B</a>) : <a href="../scala/Stream.html#foldRight%28B%29#B" target="_self">B</a>
+        
+        <div>Combines the elements of this stream together using the binary
+    function <code>f</code>, from rigth to left, and starting with
+    the value <code>z</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#forall%28%28A%29%3D%3EBoolean%29" target="_self">forall</a></em>
+        (<em>p</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Tests if the predicate <code>p</code> is satisfied by all elements
+    in this stream.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#force" target="_self">force</a></em>
+         : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+        
+        <div>convert to a copied strict collection</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#foreach%28%28A%29%3D%3EUnit%29" target="_self">foreach</a></em>
+        (<em>f</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Unit.html" target="_self">Unit</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Apply the given function <code>f</code> to each element of this stream
+    (while respecting the order of the elements).</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#hasDefiniteSize" target="_self">hasDefiniteSize</a></em>
+         : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>returns true iff this collection has a bound size. 
+    Many APIs in this trait will not work on collections of 
+    unbound sizes.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#head" target="_self">head</a></em>
+         : <a href="../scala/Stream.html#A" target="_self">A</a>
+        
+        <div>The first element of this stream</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#init" target="_self">init</a></em>
+         : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+        
+        <div>The stream without its last element.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#isEmpty" target="_self">isEmpty</a></em>
+         : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>is this stream empty?</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#last" target="_self">last</a></em>
+         : <a href="../scala/Stream.html#A" target="_self">A</a>
+        
+        <div>Returns the last element of this stream.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#length" target="_self">length</a></em>
+         : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>The length of this stream</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#lengthCompare%28Int%29" target="_self">lengthCompare</a></em>
+        (<em>l</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>returns length - l without calling length</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#map%28%28A%29%3D%3EB%29" target="_self">map</a></em>
+        [<em>B</em>](<em>f</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Stream.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>]
+        
+        <div>Returns the stream resulting from applying the given function <code>f</code> to each
+    element of this stream.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#print%28String%29" target="_self">print</a></em>
+        (<em>sep</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Prints elements of this stream one by one, separated by <code>sep</code></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#print" target="_self">print</a></em>
+         : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Prints elements of this stream one by one, separated by commas</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#reverse" target="_self">reverse</a></em>
+         : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+        
+        <div>A stream consisting of all elements of this stream in reverse order.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#tail" target="_self">tail</a></em>
+         : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+        
+        <div>A stream consisting of the remaining elements of this stream after the first one.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#take%28Int%29" target="_self">take</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+        
+        <div>Returns the <code>n</code> first elements of this stream, or else the whole 
+    stream, if it has less than <code>n</code> elements.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a></em>
+        (<em>p</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+        
+        <div>Returns the longest prefix of this stream whose elements satisfy
+    the predicate <code>p</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#toStream" target="_self">toStream</a></em>
+         : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+        
+        <div>Create a stream which contains all the elements of this iterable object.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#toString%28%29" target="_self">toString</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Converts stream to string</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#zip%28Stream%5BB%5D%29" target="_self">zip</a></em>
+        [<em>B</em>](<em>that</em> : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#zip%28Stream%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Stream.html" target="_self">Stream</a>[(<a href="../scala/Stream.html#A" target="_self">A</a>, <a href="../scala/Stream.html#zip%28Stream%5BB%5D%29#B" target="_self">B</a>)]
+        
+        <div>Returns a stream formed from this stream and the specified stream
+    <code>that</code> by associating each element of the former with
+    the element at the same position in the latter.
+    If one of the two streams is longer than the other, its remaining elements are ignored.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Stream.html#zipWithIndex" target="_self">zipWithIndex</a></em>
+         : <a href="../scala/Stream.html" target="_self">Stream</a>[(<a href="../scala/Stream.html#A" target="_self">A</a>, <a href="../scala/Int.html" target="_self">Int</a>)]
+        
+        <div>Returns a stream that pairs each element of this stream
+    with its index, counting from 0.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Seq$object.Projection.html" target="_self">Projection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Seq$object.Projection.html#projection" target="_self">projection</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Seq.html" target="_self">Seq</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Seq.html#size" target="_self">size</a>, <a href="../scala/Seq.html#concat%28Iterable%5BB%5D%29" target="_self">concat</a>, <a href="../scala/Seq.html#lastOption" target="_self">lastOption</a>, <a href="../scala/Seq.html#headOption" target="_self">headOption</a>, <a href="../scala/Seq.html#%2B%2B%28Iterable%5BB%5D%29" target="_self">++</a>, <a href="../scala/Seq.html#isDefinedAt%28Int%29" target="_self">isDefinedAt</a>, <a href="../scala/Seq.html#lastIndexOf%28B%29" target="_self">lastIndexOf</a>, <a href="../scala/Seq.html#slice%28Int%2CInt%29" target="_self">slice</a>, <a href="../scala/Seq.html#contains%28Any%29" target="_self">contains</a>, <a href="../scala/Seq.html#subseq%28Int%2CInt%29" target="_self">subseq</a>, <a href="../scala/Seq.html#toArray" target="_self">toArray</a>, <a href="../scala/Seq.html#equalsWith%28Seq%5BB%5D%29" target="_self">equalsWith</a>, <a href="../scala/Seq.html#startsWith%28Seq%5BB%5D%29" target="_self">startsWith</a>, <a href="../scala/Seq.html#endsWith%28Seq%5BB%5D%29" target="_self">endsWith</a>, <a href="../scala/Seq.html#indexOf%28Seq%5BB%5D%29" target="_self">indexOf</a>, <a href="../scala/Seq.html#containsSlice%28Seq%5BB%5D%29" target="_self">containsSlice</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Collection.html" target="_self">Collection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Collection.html#stringPrefix" target="_self">stringPrefix</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Iterable.html" target="_self">Iterable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Iterable.html#partition%28%28A%29%3D%3EBoolean%29" target="_self">partition</a>, <a href="../scala/Iterable.html#find%28%28A%29%3D%3EBoolean%29" target="_self">find</a>, <a href="../scala/Iterable.html#findIndexOf%28%28A%29%3D%3EBoolean%29" target="_self">findIndexOf</a>, <a href="../scala/Iterable.html#indexOf%28B%29" target="_self">indexOf</a>, <a href="../scala/Iterable.html#%2F%3A%28B%29" target="_self">/:</a>, <a href="../scala/Iterable.html#%3A%5C%28B%29" target="_self">:\</a>, <a href="../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29" target="_self">reduceLeft</a>, <a href="../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29" target="_self">reduceRight</a>, <a href="../scala/Iterable.html#copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29" target="_self">copyToBuffer</a>, <a href="../scala/Iterable.html#sameElements%28Iterable%5BB%5D%29" target="_self">sameElements</a>, <a href="../scala/Iterable.html#toList" target="_self">toList</a>, <a href="../scala/Iterable.html#mkString%28String%2CString%2CString%29" target="_self">mkString</a>, <a href="../scala/Iterable.html#mkString%28String%29" target="_self">mkString</a>, <a href="../scala/Iterable.html#mkString" target="_self">mkString</a>, <a href="../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%2CString%2CString%29" target="_self">addString</a>, <a href="../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%29" target="_self">addString</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/PartialFunction.html" target="_self">PartialFunction</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/PartialFunction.html#orElse%28PartialFunction%5BA1%2CB1%5D%29" target="_self">orElse</a>, <a href="../scala/PartialFunction.html#andThen%28%28B%29%3D%3EC%29" target="_self">andThen</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Function1.html" target="_self">Function1</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Function1.html#compose%28%28A%29%3D%3ET1%29" target="_self">compose</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="isEmpty"></a><dl>
+      <dt>
+        
+        <code>override abstract</code>
+        <code>def</code>
+        <em>isEmpty</em> : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>is this stream empty?</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="force"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>force</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>convert to a copied strict collection</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq$object.Projection.html" target="_self">Projection</a>.<a href="../scala/Seq$object.Projection.html#force" target="_self">force</a>
+        </dd>
+      </dl><hr></hr>
+<a name="head"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>head</em> : <a href="../scala/Stream.html#A" target="_self">A</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The first element of this stream</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><a href="../scala/Predef$object#NoSuchElementException">Predef.NoSuchElementException</a> - if the stream is empty.</dd></dl>
+    <hr></hr>
+<a name="tail"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>tail</em> : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A stream consisting of the remaining elements of this stream after the first one.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><a href="../scala/Predef$object#UnsupportedOperationException">Predef.UnsupportedOperationException</a> - if the stream is empty.</dd></dl>
+    <hr></hr>
+<a name="length"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>length</em> : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The length of this stream</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="lengthCompare%28Int%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>lengthCompare</em>(<em>l</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>returns length - l without calling length</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="hasDefiniteSize"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>hasDefiniteSize</em> : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>returns true iff this collection has a bound size. 
+    Many APIs in this trait will not work on collections of 
+    unbound sizes.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="append%28%3D%3EIterable%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>append</em>[<em>B</em> &gt;: <a href="../scala/Stream.html#A" target="_self">A</a>](<em>rest</em> : =&gt; <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Stream.html#append%28%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#append%28%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The stream resulting from the concatenation of this stream with the argument stream.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>rest - </code>The stream that gets appended to this stream</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq$object.Projection.html" target="_self">Projection</a>.<a href="../scala/Seq$object.Projection.html#append%28%3D%3EIterable%5BB%5D%29" target="_self">append</a>
+        </dd>
+      </dl><hr></hr>
+<a name="elements"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>elements</em> : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>An iterator returning the elements of this stream one by one.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="init"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>init</em> : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The stream without its last element.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><a href="../scala/Predef$object#UnsupportedOperationException">Predef.UnsupportedOperationException</a> - if the stream is empty.</dd></dl>
+    <hr></hr>
+<a name="last"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>last</em> : <a href="../scala/Stream.html#A" target="_self">A</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the last element of this stream.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the last element of the stream.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><a href="../scala/Predef$object#NoSuchElementException">Predef.NoSuchElementException</a> - if the stream is empty.</dd></dl>
+    <hr></hr>
+<a name="apply%28Int%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>apply</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Stream.html#A" target="_self">A</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the <code>n</code>-th element of this stream. The first element
+    (head of the stream) is at position 0.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>index of the element to return</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the element at position <code>n</code> in this stream.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><a href="../scala/Predef$object#NoSuchElementException">Predef.NoSuchElementException</a> - if the stream is too short.</dd></dl>
+    <hr></hr>
+<a name="take%28Int%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>take</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the <code>n</code> first elements of this stream, or else the whole 
+    stream, if it has less than <code>n</code> elements.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the number of elements to take.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the <code>n</code> first elements of this stream.</dd></dl>
+    <hr></hr>
+<a name="drop%28Int%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>drop</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the stream without its <code>n</code> first elements.
+    If the stream has less than <code>n</code> elements, the empty stream is returned.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the number of elements to drop.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the stream without its <code>n</code> first elements.</dd></dl>
+    <hr></hr>
+<a name="takeWhile%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>takeWhile</em>(<em>p</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the longest prefix of this stream whose elements satisfy
+    the predicate <code>p</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the test predicate.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the longest prefix of this stream whose elements satisfy             the predicate <code>p</code>.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq$object.Projection.html" target="_self">Projection</a>.<a href="../scala/Seq$object.Projection.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a>
+        </dd>
+      </dl><hr></hr>
+<a name="dropWhile%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>dropWhile</em>(<em>p</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the longest suffix of this stream whose first element
+    does not satisfy the predicate <code>p</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the test predicate.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the longest suffix of the stream whose first element             does not satisfy the predicate <code>p</code>.</dd></dl>
+    <hr></hr>
+<a name="map%28%28A%29%3D%3EB%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>map</em>[<em>B</em>](<em>f</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Stream.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the stream resulting from applying the given function <code>f</code> to each
+    element of this stream.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>function to apply to each element.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>[f(a0), ..., f(an)]</code> if this stream is <code>[a0, ..., an]</code>.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq$object.Projection.html" target="_self">Projection</a>.<a href="../scala/Seq$object.Projection.html#map%28%28A%29%3D%3EB%29" target="_self">map</a>
+        </dd>
+      </dl><hr></hr>
+<a name="foreach%28%28A%29%3D%3EUnit%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>foreach</em>(<em>f</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Unit.html" target="_self">Unit</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Apply the given function <code>f</code> to each element of this stream
+    (while respecting the order of the elements).</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>the treatment to apply to each element.</dd></dl>
+    <hr></hr>
+<a name="filter%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>filter</em>(<em>p</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns all the elements of this stream that satisfy the
+    predicate <code>p</code>. The order of the elements is preserved.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the predicate used to filter the stream.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the elements of this stream satisfying <code>p</code>.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq$object.Projection.html" target="_self">Projection</a>.<a href="../scala/Seq$object.Projection.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a>
+        </dd>
+      </dl><hr></hr>
+<a name="forall%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>forall</em>(<em>p</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Tests if the predicate <code>p</code> is satisfied by all elements
+    in this stream.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the test predicate.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>true</code> iff all elements of this stream satisfy the             predicate <code>p</code>.</dd></dl>
+    <hr></hr>
+<a name="exists%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>exists</em>(<em>p</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Tests the existence in this stream of an element that satisfies the
+    predicate <code>p</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the test predicate.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>true</code> iff there exists an element in this stream that             satisfies the predicate <code>p</code>.</dd></dl>
+    <hr></hr>
+<a name="foldLeft%28B%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>foldLeft</em>[<em>B</em>](<em>z</em> : <a href="../scala/Stream.html#foldLeft%28B%29#B" target="_self">B</a>)(<em>f</em> : (<a href="../scala/Stream.html#foldLeft%28B%29#B" target="_self">B</a>, <a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Stream.html#foldLeft%28B%29#B" target="_self">B</a>) : <a href="../scala/Stream.html#foldLeft%28B%29#B" target="_self">B</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Combines the elements of this stream together using the binary
+    function <code>f</code>, from left to right, and starting with
+    the value <code>z</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>f(... (f(f(z, a<sub>0</sub>), a<sub>1</sub>) ...),            a<sub>n</sub>)</code> if the stream is
+            <code>[a<sub>0</sub>, a<sub>1</sub>, ..., a<sub>n</sub>]</code>.</dd></dl>
+    <hr></hr>
+<a name="foldRight%28B%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>foldRight</em>[<em>B</em>](<em>z</em> : <a href="../scala/Stream.html#foldRight%28B%29#B" target="_self">B</a>)(<em>f</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>, <a href="../scala/Stream.html#foldRight%28B%29#B" target="_self">B</a>) =&gt; <a href="../scala/Stream.html#foldRight%28B%29#B" target="_self">B</a>) : <a href="../scala/Stream.html#foldRight%28B%29#B" target="_self">B</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Combines the elements of this stream together using the binary
+    function <code>f</code>, from rigth to left, and starting with
+    the value <code>z</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>f(a<sub>0</sub>, f(a<sub>1</sub>, f(..., f(a<sub>n</sub>, z)...)))</code>            if the stream is <code>[a<sub>0</sub>, a1, ..., a<sub>n</sub>]</code>.</dd></dl>
+    <hr></hr>
+<a name="flatMap%28%28A%29%3D%3EIterable%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>flatMap</em>[<em>B</em>](<em>f</em> : (<a href="../scala/Stream.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Stream.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Applies the given function <code>f</code> to each element of
+    this stream, then concatenates the results.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>the function to apply on each element.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>f(a<sub>0</sub>) ::: ... ::: f(a<sub>n</sub>)</code> if             this stream is <code>[a<sub>0</sub>, ..., a<sub>n</sub>]</code>.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq$object.Projection.html" target="_self">Projection</a>.<a href="../scala/Seq$object.Projection.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a>
+        </dd>
+      </dl><hr></hr>
+<a name="toStream"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>toStream</em> : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create a stream which contains all the elements of this iterable object.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>consider using <code>projection</code> for lazy behavior.</dd></dl>
+    <hr></hr>
+<a name="reverse"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>reverse</em> : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A stream consisting of all elements of this stream in reverse order.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="copyToArray%28Array%5BB%5D%2CInt%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>copyToArray</em>[<em>B</em> &gt;: <a href="../scala/Stream.html#A" target="_self">A</a>](<em>xs</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Stream.html#copyToArray%28Array%5BB%5D%2CInt%29#B" target="_self">B</a>], <em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Fills the given array <code>xs</code> with the elements of
+    this stream starting at position <code>start</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>xs - </code>the array to fill.</dd><dd><code>start - </code>starting index.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Precondition</b></dt><dd>the array must be large enough to hold all elements.</dd></dl>
+    <hr></hr>
+<a name="zip%28Stream%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>zip</em>[<em>B</em>](<em>that</em> : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Stream.html#zip%28Stream%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Stream.html" target="_self">Stream</a>[(<a href="../scala/Stream.html#A" target="_self">A</a>, <a href="../scala/Stream.html#zip%28Stream%5BB%5D%29#B" target="_self">B</a>)]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a stream formed from this stream and the specified stream
+    <code>that</code> by associating each element of the former with
+    the element at the same position in the latter.
+    If one of the two streams is longer than the other, its remaining elements are ignored.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>Stream({a<sub>0</sub>,b<sub>0</sub>}, ...,                {a<sub>min(m,n)</sub>,b<sub>min(m,n)</sub>)}</code> when
+                <code>Stream(a<sub>0</sub>, ..., a<sub>m</sub>)
+                zip Stream(b<sub>0</sub>, ..., b<sub>n</sub>)</code> is invoked.</dd></dl>
+    <hr></hr>
+<a name="zipWithIndex"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>zipWithIndex</em> : <a href="../scala/Stream.html" target="_self">Stream</a>[(<a href="../scala/Stream.html#A" target="_self">A</a>, <a href="../scala/Int.html" target="_self">Int</a>)]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a stream that pairs each element of this stream
+    with its index, counting from 0.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the stream <code>Stream({a<sub>0</sub>,0}, {a<sub>0</sub>,1},...)</code>                 where <code>a<sub>i</sub></code> are the elements of this stream.</dd></dl>
+    <hr></hr>
+<a name="print"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>print</em> : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Prints elements of this stream one by one, separated by commas</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="print%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>print</em>(<em>sep</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Prints elements of this stream one by one, separated by <code>sep</code></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>sep - </code>The separator string printed between consecutive elements.</dd></dl>
+    <hr></hr>
+<a name="toString%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>toString</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Converts stream to string</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="addDefinedElems%28StringBuilder%2CString%29"></a><dl>
+      <dt>
+        
+        <code>protected abstract</code>
+        <code>def</code>
+        <em>addDefinedElems</em>(<em>buf</em> : <a href="../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>, <em>prefix</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Write all elements of this string into given string builder</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

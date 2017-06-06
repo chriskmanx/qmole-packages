@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.xml</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/Atom.html" target="_self">Atom</a></em>
+        [+<em>A</em>](<code>val </code><em>data</em> : <a href="../scala/xml/Atom.html#A" target="_self">A</a>)<code> extends </code><a href="../scala/xml/SpecialNode.html" target="_self">SpecialNode</a>
+        
+        <div>The class <code>Atom</code> provides an XML node for text (PCDATA).
+  It is used in both non-bound and bound XML representations.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/Comment.html" target="_self">Comment</a></em>
+        (<code>val </code><em>commentText</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/xml/SpecialNode.html" target="_self">SpecialNode</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div>The class <code>Comment</code> implements an XML node for comments.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/Document.html" target="_self">Document</a></em>
+        <code> extends </code><a href="../scala/xml/NodeSeq.html" target="_self">NodeSeq</a><code> with </code><a href="../scala/xml/pull/XMLEvent.html" target="_self">XMLEvent</a>
+        
+        <div>A document information item (according to InfoSet spec). The comments
+  are copied from the Infoset spec, only augmented with some information
+  on the Scala types for definitions that might have no value.
+  also plays the role of an <code>XMLEvent</code> for pull parsing</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/Elem.html" target="_self">Elem</a></em>
+        (<code>val override </code><em>prefix</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>label</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val override </code><em>attributes</em> : <a href="../scala/xml/MetaData.html" target="_self">MetaData</a>, <code>val override </code><em>scope</em> : <a href="../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <code>val </code><em>child</em> : <a href="../scala/xml/Node.html" target="_self">Node</a>*)<code> extends </code><a href="../scala/xml/Node.html" target="_self">Node</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/EntityRef.html" target="_self">EntityRef</a></em>
+        (<code>val </code><em>entityName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/xml/SpecialNode.html" target="_self">SpecialNode</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div>The class <code>EntityRef</code> implements an XML node for entity
+  references.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/Group.html" target="_self">Group</a></em>
+        (<code>val </code><em>nodes</em> : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/xml/Node.html" target="_self">Node</a>])<code> extends </code><a href="../scala/xml/Node.html" target="_self">Node</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div>A hack to group XML nodes in one node for output.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/HasKeyValue.html" target="_self">HasKeyValue</a></em>
+        (<em>key</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    Use this class to match on (unprefixed) attribute values
+  <p><pre>
+  <b>val</b> hasName = <b>new</b> HasKeyValue("name")
+  node <b>match</b> {
+    <b>case</b> Node("foo", hasName(x), _*) => x // foo had attribute with key "name" and with value x
+  }</pre></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/MalformedAttributeException.html" target="_self">MalformedAttributeException</a></em>
+        (<code>val </code><em>msg</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="" target="contentFrame" class="java/lang/RuntimeException">java.lang.RuntimeException</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/MetaData.html" target="_self">MetaData</a></em>
+        <code> extends </code><a href="../scala/Collection.html" target="_self">Collection</a>[<a href="../scala/xml/MetaData.html" target="_self">MetaData</a>]
+        
+        <div><p>
+    Attribute information item, and linked list of attribute information items.
+    These are triples consisting of <code>prefix,key,value</code>. To obtain
+    the namespace, <code>getNamespace</code> must be called with the parent.
+    If next is null, this is the last attribute in the MetaData list.
+ </p>
+ <p>
+   Either an UnprefixedAttribute or a PrefixedAttribute
+ </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a></em>
+        (<code>val </code><em>prefix</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>uri</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>parent</em> : <a href="../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>)<code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The class <code>NamespaceBinding</code> represents namespace bindings
+  and scopes. The binding for the default namespace is treated as a null
+  prefix. the absent namespace is represented with the null uri. Neither
+  prefix nor uri may be empty, which is not checked.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/Node.html" target="_self">Node</a></em>
+        <code> extends </code><a href="../scala/xml/NodeSeq.html" target="_self">NodeSeq</a>
+        
+        <div>An abstract class representing XML with nodes of a labelled tree.
+ This class contains an implementation of a subset of XPath for navigation.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/NodeBuffer.html" target="_self">NodeBuffer</a></em>
+        <code> extends </code><a href="../scala/collection/mutable/ArrayBuffer.html" target="_self">ArrayBuffer</a>[<a href="../scala/xml/Node.html" target="_self">Node</a>]
+        
+        <div><p>
+   This class acts as a Buffer for nodes. If it is used as a sequence
+   of nodes <code>Seq[Node]</code>, it must be ensured that no updates
+   occur after that point, because <code>scala.xml.Node</code> is assumed
+   to be immutable.
+ </p>
+ <p>
+   Despite this being a sequence, don't use it as key in a hashtable.
+   Calling the hashcode function will result in a runtime error.
+ </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/NodeSeq.html" target="_self">NodeSeq</a></em>
+        <code> extends </code><a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/xml/Node.html" target="_self">Node</a>]
+        
+        <div>This class implements a wrapper around <code>Seq[Node]</code> that
+  adds XPath and comprehension methods.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/NodeTraverser.html" target="_self">NodeTraverser</a></em>
+        <code> extends </code><a href="../scala/xml/parsing/MarkupHandler.html" target="_self">MarkupHandler</a>
+        
+        <div>This class ...</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/PrefixedAttribute.html" target="_self">PrefixedAttribute</a></em>
+        (<code>val </code><em>pre</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>key</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>value</em> : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/xml/Node.html" target="_self">Node</a>], <code>val </code><em>next</em> : <a href="../scala/xml/MetaData.html" target="_self">MetaData</a>)<code> extends </code><a href="../scala/xml/MetaData.html" target="_self">MetaData</a>
+        
+        <div>prefixed attributes always have a non-null namespace.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/PrettyPrinter.html" target="_self">PrettyPrinter</a></em>
+        (<em>width</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>step</em> : <a href="../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Class for pretty printing. After instantiating, you can use the
+  toPrettyXML methods to convert XML to a formatted string. The class 
+  can be reused to pretty print any number of XML nodes.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/ProcInstr.html" target="_self">ProcInstr</a></em>
+        (<code>val </code><em>target</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>proctext</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/xml/SpecialNode.html" target="_self">SpecialNode</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div>an XML node for processing instructions (PI)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/SpecialNode.html" target="_self">SpecialNode</a></em>
+        <code> extends </code><a href="../scala/xml/Node.html" target="_self">Node</a><code> with </code><a href="../scala/xml/pull/XMLEvent.html" target="_self">XMLEvent</a>
+        
+        <div><p>
+    <code>SpecialNode</code> is a special XML node which
+    represents either text (PCDATA), a comment, a PI, or an entity ref.
+  </p>
+  <p>
+    SpecialNodes also play the role of XMLEvents for pull-parsing.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/Text.html" target="_self">Text</a></em>
+        (<code>val </code><em>_data</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/xml/Atom.html" target="_self">Atom</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]<code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div>The class <code>Text</code> implements an XML node for text (PCDATA).
+  It is used in both non-bound and bound XML representations.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/TextBuffer.html" target="_self">TextBuffer</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The class <code>TextBuffer</code> is for creating text nodes without
+  surplus whitespace. All occurrences of one or more whitespace in strings
+  appended with the <code>append</code> method will be replaced by a single
+  space character, and leading and trailing space will be removed completely.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/TypeSymbol.html" target="_self">TypeSymbol</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/Unparsed.html" target="_self">Unparsed</a></em>
+        (<code>val </code><em>_data</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/xml/Atom.html" target="_self">Atom</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]<code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div>An XML node for unparsed content. It will be output verbatim, all bets
+  are off regarding wellformedness etc.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/UnprefixedAttribute.html" target="_self">UnprefixedAttribute</a></em>
+        (<code>val </code><em>key</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>value</em> : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/xml/Node.html" target="_self">Node</a>], <em>next1</em> : <a href="../scala/xml/MetaData.html" target="_self">MetaData</a>)<code> extends </code><a href="../scala/xml/MetaData.html" target="_self">MetaData</a>
+        
+        <div>Unprefixed attributes have the null namespace, and no prefix field</div>
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/Elem$object.html" target="_self">Elem</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/Node$object.html" target="_self">Node</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This object provides methods ...</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/NodeSeq$object.html" target="_self">NodeSeq</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This object ...</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/Null$object.html" target="_self">Null</a></em>
+        <code> extends </code><a href="../scala/xml/MetaData.html" target="_self">MetaData</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/Parsing$object.html" target="_self">Parsing</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The object <code>Parsing</code> ...</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/QNode$object.html" target="_self">QNode</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This object provides an extractor method to match a qualified node with its namespace URI</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/TextBuffer$object.html" target="_self">TextBuffer</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/TopScope$object.html" target="_self">TopScope</a></em>
+        <code> extends </code><a href="../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div>top level namespace scope. only contains the predefined binding
+  for the &quot;xml&quot; prefix which is bound to 
+  &quot;http://www.w3.org/XML/1998/namespace&quot;</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/Utility$object.html" target="_self">Utility</a></em>
+        <code> extends </code><a href="../scala/xml/parsing/TokenTests.html" target="_self">TokenTests</a>
+        
+        <div>The <code>Utility</code> object provides utility functions for processing
+ instances of bound and not bound XML classes, as well as escaping text nodes.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/xml/XML$object.html" target="_self">XML</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The object <code>XML</code> provides constants, and functions to load
+  and save XML elements. Use this when data binding is not desired, i.e.
+  when XML is handled using <code>Symbol</code> nodes.</div>
+      </td>
+    </tr>        
+        </table></body>
+      </html>

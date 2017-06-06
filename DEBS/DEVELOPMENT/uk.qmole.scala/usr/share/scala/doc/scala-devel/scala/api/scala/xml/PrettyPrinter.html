@@ -1,0 +1,624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class PrettyPrinter in scala.xml</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../scala/xml$package.html" target="_self">scala.xml</a>
+        <br></br>
+        <span class="entity">class  PrettyPrinter</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/xml/PrettyPrinter"><code>scala/xml/PrettyPrinter.scala</code></a>]
+      </div><hr></hr>
+      <a name="PrettyPrinter"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>class</code>
+        <em>PrettyPrinter</em>(<em>width</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>step</em> : <a href="../../scala/Int.html" target="_self">Int</a>)
+      </dt>
+      <dd><code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd>Class for pretty printing. After instantiating, you can use the
+  toPrettyXML methods to convert XML to a formatted string. The class 
+  can be reused to pretty print any number of XML nodes.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Burak Emir</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>width - </code>the width to fit the output into  @step  indentation</dd></dl>
+    
+      
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Value Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#cur" target="_self">cur</a></em>
+         : <a href="../../scala/Int.html" target="_self">Int</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#items" target="_self">items</a></em>
+         : <a href="../../scala/List.html" target="_self">List</a>[<a href="../../scala/xml/PrettyPrinter.Item.html" target="_self">Item</a>]
+        
+        
+      </td>
+    </tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#childrenAreLeaves%28scala.xml.Node%29" target="_self">childrenAreLeaves</a></em>
+        (<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#cut%28String%2CInt%29" target="_self">cut</a></em>
+        (<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>ind</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/List.html" target="_self">List</a>[<a href="../../scala/xml/PrettyPrinter.Item.html" target="_self">Item</a>]
+        
+        <div>Try to cut at whitespace.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#endTag%28scala.xml.Node%29" target="_self">endTag</a></em>
+        (<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#fits%28String%29" target="_self">fits</a></em>
+        (<em>test</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#format%28scala.xml.Node%2Cscala.xml.NamespaceBinding%2CStringBuilder%29" target="_self">format</a></em>
+        (<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>pscope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#format%28scala.xml.Node%29" target="_self">format</a></em>
+        (<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>returns a formatted string containing well-formed XML with 
+    default namespace prefix mapping</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#format%28scala.xml.Node%2Cscala.xml.NamespaceBinding%29" target="_self">format</a></em>
+        (<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>pscope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Returns a formatted string containing well-formed XML with 
+    given namespace to prefix mapping.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#format%28scala.xml.Node%2CStringBuilder%29" target="_self">format</a></em>
+        (<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Appends a formatted string containing well-formed XML with
+    given namespace to prefix mapping to the given string buffer.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#formatNodes%28Seq%5Bscala.xml.Node%5D%2Cscala.xml.NamespaceBinding%29" target="_self">formatNodes</a></em>
+        (<em>nodes</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>], <em>pscope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Returns a formatted string containing well-formed XML.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#formatNodes%28Seq%5Bscala.xml.Node%5D%2Cscala.xml.NamespaceBinding%2CStringBuilder%29" target="_self">formatNodes</a></em>
+        (<em>nodes</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>], <em>pscope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Appends a formatted string containing well-formed XML with
+    the given namespace to prefix mapping to the given stringbuffer.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#formatNodes%28Seq%5Bscala.xml.Node%5D%29" target="_self">formatNodes</a></em>
+        (<em>nodes</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>]) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Returns a formatted string containing well-formed XML nodes with
+    default namespace prefix mapping.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#leafTag%28scala.xml.Node%29" target="_self">leafTag</a></em>
+        (<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#makeBox%28Int%2CString%29" target="_self">makeBox</a></em>
+        (<em>ind</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Try to make indented box, if possible, else para.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#makeBreak%28%29" target="_self">makeBreak</a></em>
+         : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#makePara%28Int%2CString%29" target="_self">makePara</a></em>
+        (<em>ind</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#reset%28%29" target="_self">reset</a></em>
+         : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#startTag%28scala.xml.Node%2Cscala.xml.NamespaceBinding%29" target="_self">startTag</a></em>
+        (<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>pscope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>) : (<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <a href="../../scala/Int.html" target="_self">Int</a>)
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#traverse%28Iterator%5Bscala.xml.Node%5D%2Cscala.xml.NamespaceBinding%2CInt%29" target="_self">traverse</a></em>
+        (<em>it</em> : <a href="../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>], <em>scope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>ind</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.html#traverse%28scala.xml.Node%2Cscala.xml.NamespaceBinding%2CInt%29" target="_self">traverse</a></em>
+        (<em>node</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>pscope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>ind</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div></div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Class Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.Box.html" target="_self">Box</a></em>
+        (<code>val </code><em>col</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <code>val </code><em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../../scala/xml/PrettyPrinter.Item.html" target="_self">Item</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.BrokenException.html" target="_self">BrokenException</a></em>
+        <code> extends </code><a href="" target="contentFrame" class="java/lang/Exception">java.lang.Exception</a><code> with </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.Item.html" target="_self">Item</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.Para.html" target="_self">Para</a></em>
+        (<code>val </code><em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../../scala/xml/PrettyPrinter.Item.html" target="_self">Item</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Object Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/PrettyPrinter.Break$object.html" target="_self">Break</a></em>
+        <code> extends </code><a href="../../scala/xml/PrettyPrinter.Item.html" target="_self">Item</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+      </table>
+      
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Value Details</td></tr>
+        </table><div><a name="items"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>var</code>
+        <em>items</em> : <a href="../../scala/List.html" target="_self">List</a>[<a href="../../scala/xml/PrettyPrinter.Item.html" target="_self">Item</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="cur"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>var</code>
+        <em>cur</em> : <a href="../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="reset%28%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>reset</em> : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="cut%28String%2CInt%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>cut</em>(<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>ind</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/List.html" target="_self">List</a>[<a href="../../scala/xml/PrettyPrinter.Item.html" target="_self">Item</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Try to cut at whitespace.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>s - </code>...</dd><dd><code>ind - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="makeBox%28Int%2CString%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>makeBox</em>(<em>ind</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Try to make indented box, if possible, else para.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>ind - </code>...</dd><dd><code>s - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="makePara%28Int%2CString%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>makePara</em>(<em>ind</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="makeBreak%28%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>makeBreak</em> : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="leafTag%28scala.xml.Node%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>leafTag</em>(<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="startTag%28scala.xml.Node%2Cscala.xml.NamespaceBinding%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>startTag</em>(<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>pscope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>) : (<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <a href="../../scala/Int.html" target="_self">Int</a>)
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="endTag%28scala.xml.Node%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>endTag</em>(<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="childrenAreLeaves%28scala.xml.Node%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>childrenAreLeaves</em>(<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="fits%28String%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>fits</em>(<em>test</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="traverse%28scala.xml.Node%2Cscala.xml.NamespaceBinding%2CInt%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>traverse</em>(<em>node</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>pscope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>ind</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>tail: - </code>what we'd like to sqeeze in</dd></dl>
+    <hr></hr>
+<a name="traverse%28Iterator%5Bscala.xml.Node%5D%2Cscala.xml.NamespaceBinding%2CInt%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>traverse</em>(<em>it</em> : <a href="../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>], <em>scope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>ind</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="format%28scala.xml.Node%2CStringBuilder%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>format</em>(<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends a formatted string containing well-formed XML with
+    given namespace to prefix mapping to the given string buffer.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the node to be serialized</dd><dd><code>pmap - </code>the namespace to prefix mapping</dd><dd><code>sb - </code>the stringbuffer to append to</dd></dl>
+    <hr></hr>
+<a name="format%28scala.xml.Node%2Cscala.xml.NamespaceBinding%2CStringBuilder%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>format</em>(<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>pscope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="format%28scala.xml.Node%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>format</em>(<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>returns a formatted string containing well-formed XML with 
+    default namespace prefix mapping</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the node to be serialized</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="format%28scala.xml.Node%2Cscala.xml.NamespaceBinding%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>format</em>(<em>n</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>pscope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a formatted string containing well-formed XML with 
+    given namespace to prefix mapping.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the node to be serialized</dd><dd><code>pmap - </code>the namespace to prefix mapping</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="formatNodes%28Seq%5Bscala.xml.Node%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>formatNodes</em>(<em>nodes</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>]) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a formatted string containing well-formed XML nodes with
+    default namespace prefix mapping.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>nodes - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="formatNodes%28Seq%5Bscala.xml.Node%5D%2Cscala.xml.NamespaceBinding%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>formatNodes</em>(<em>nodes</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>], <em>pscope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a formatted string containing well-formed XML.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>nodes - </code>the sequence of nodes to be serialized</dd><dd><code>pmap - </code>the namespace to prefix mapping</dd></dl>
+    <hr></hr>
+<a name="formatNodes%28Seq%5Bscala.xml.Node%5D%2Cscala.xml.NamespaceBinding%2CStringBuilder%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>formatNodes</em>(<em>nodes</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/xml/Node.html" target="_self">Node</a>], <em>pscope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>sb</em> : <a href="../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends a formatted string containing well-formed XML with
+    the given namespace to prefix mapping to the given stringbuffer.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the node to be serialized</dd><dd><code>pmap - </code>the namespace to prefix mapping</dd><dd><code>sb - </code>the string buffer to which to append to</dd></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

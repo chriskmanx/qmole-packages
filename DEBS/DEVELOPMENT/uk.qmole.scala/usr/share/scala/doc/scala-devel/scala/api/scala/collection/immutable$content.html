@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.collection.immutable</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/BitSet.html" target="_self">BitSet</a></em>
+        (<code>val </code><em>size</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <code>val </code><em>capacity</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>ba</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Int.html" target="_self">Int</a>], <em>copy</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>)<code> extends </code><a href="../../scala/collection/BitSet.html" target="_self">BitSet</a>
+        
+        <div>The class <code>BitSet</code> provides an immutable bitset view on an
+  int array. Instances can conveniently be created from instances of
+  Bit indices are between <code>0..(capacity-1)</code> inclusive.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/EmptyMap.html" target="_self">EmptyMap</a></em>
+        [<em>A</em>, +<em>B</em>]<code> extends </code><a href="../../scala/collection/immutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/immutable/EmptyMap.html#A" target="_self">A</a>, <a href="../../scala/collection/immutable/EmptyMap.html#B" target="_self">B</a>]
+        
+        <div>This class implements empty immutable maps</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/EmptySet.html" target="_self">EmptySet</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/immutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/immutable/EmptySet.html#A" target="_self">A</a>]
+        
+        <div>This class implements empty immutable sets</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/GBTree.html" target="_self">GBTree</a></em>
+        [<em>A</em>, <em>B</em>](<code>implicit </code><em>view$5</em> : (<a href="../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>])<code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><code>GBTree</code> is an internal class used by
+  <a href="Tree.html" target="contentFrame"><code>Tree</code></a>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/HashMap.html" target="_self">HashMap</a></em>
+        [<em>A</em>, <em>B</em>]<code> extends </code><a href="../../scala/collection/immutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/immutable/HashMap.html#A" target="_self">A</a>, <a href="../../scala/collection/immutable/HashMap.html#B" target="_self">B</a>]<code> with </code><a href="../../scala/collection/mutable/HashTable.html" target="_self">HashTable</a>[<a href="../../scala/collection/immutable/HashMap.html#A" target="_self">A</a>]
+        
+        <div>This class implements immutable maps using a hash table.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/HashSet.html" target="_self">HashSet</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/immutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/immutable/HashSet.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/mutable/FlatHashTable.html" target="_self">FlatHashTable</a>[<a href="../../scala/collection/immutable/HashSet.html#A" target="_self">A</a>]
+        
+        <div>This class implements immutable sets using a hash table.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>sealed abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/ImmutableIterator.html" target="_self">ImmutableIterator</a></em>
+        [+<em>A</em>]<code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>A stateless iterator.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/InsertTree.html" target="_self">InsertTree</a></em>
+        [<em>A</em>, <em>B</em>](<code>implicit </code><em>view$2</em> : (<a href="../../scala/collection/immutable/InsertTree.html#A" target="_self">A</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/collection/immutable/InsertTree.html#A" target="_self">A</a>])<code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/ListMap.html" target="_self">ListMap</a></em>
+        [<em>A</em>, +<em>B</em>]<code> extends </code><a href="../../scala/collection/immutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/immutable/ListMap.html#A" target="_self">A</a>, <a href="../../scala/collection/immutable/ListMap.html#B" target="_self">B</a>]
+        
+        <div>This class implements immutable maps using a list-based data
+  structure. Instances of <code>ListMap</code> represent
+  empty maps; they can be either created by calling the constructor
+  directly, or by applying the function <code>ListMap.empty</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/ListSet.html" target="_self">ListSet</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/immutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/immutable/ListSet.html#A" target="_self">A</a>]
+        
+        <div>This class implements immutable sets using a list-based data
+  structure. Instances of <code>ListSet</code> represent
+  empty sets; they can be either created by calling the constructor
+  directly, or by applying the function <code>ListSet.empty</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/Map.html" target="_self">Map</a></em>
+        [<em>A</em>, +<em>B</em>]<code> extends </code><a href="../../scala/collection/Map.html" target="_self">Map</a>[<a href="../../scala/collection/immutable/Map.html#A" target="_self">A</a>, <a href="../../scala/collection/immutable/Map.html#B" target="_self">B</a>]
+        
+        <div><p>
+    This class defines the interface for immutable maps.  Operations
+    on an immutable map leave the original map unchanged, and return
+    a new map if needed.
+  </p>
+  <p>
+    Concrete map implementations have to provide functionality for
+    the abstract methods in <a href="../Map.html" target="contentFrame">
+    <code>scala.collection.Map</code></a> as well as for 
+    <code>factory</code>, <code>update</code>, and <code>-</code>.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/Map1.html" target="_self">Map1</a></em>
+        [<em>A</em>, +<em>B</em>](<em>key1</em> : <a href="../../scala/collection/immutable/Map1.html#A" target="_self">A</a>, <em>value1</em> : <a href="../../scala/collection/immutable/Map1.html#B" target="_self">B</a>)<code> extends </code><a href="../../scala/collection/immutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/immutable/Map1.html#A" target="_self">A</a>, <a href="../../scala/collection/immutable/Map1.html#B" target="_self">B</a>]
+        
+        <div>This class implements immutable maps with exactly one entry</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/Map2.html" target="_self">Map2</a></em>
+        [<em>A</em>, +<em>B</em>](<em>key1</em> : <a href="../../scala/collection/immutable/Map2.html#A" target="_self">A</a>, <em>value1</em> : <a href="../../scala/collection/immutable/Map2.html#B" target="_self">B</a>, <em>key2</em> : <a href="../../scala/collection/immutable/Map2.html#A" target="_self">A</a>, <em>value2</em> : <a href="../../scala/collection/immutable/Map2.html#B" target="_self">B</a>)<code> extends </code><a href="../../scala/collection/immutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/immutable/Map2.html#A" target="_self">A</a>, <a href="../../scala/collection/immutable/Map2.html#B" target="_self">B</a>]
+        
+        <div>This class implements immutable maps with exactly two entries</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/Map3.html" target="_self">Map3</a></em>
+        [<em>A</em>, +<em>B</em>](<em>key1</em> : <a href="../../scala/collection/immutable/Map3.html#A" target="_self">A</a>, <em>value1</em> : <a href="../../scala/collection/immutable/Map3.html#B" target="_self">B</a>, <em>key2</em> : <a href="../../scala/collection/immutable/Map3.html#A" target="_self">A</a>, <em>value2</em> : <a href="../../scala/collection/immutable/Map3.html#B" target="_self">B</a>, <em>key3</em> : <a href="../../scala/collection/immutable/Map3.html#A" target="_self">A</a>, <em>value3</em> : <a href="../../scala/collection/immutable/Map3.html#B" target="_self">B</a>)<code> extends </code><a href="../../scala/collection/immutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/immutable/Map3.html#A" target="_self">A</a>, <a href="../../scala/collection/immutable/Map3.html#B" target="_self">B</a>]
+        
+        <div>This class implements immutable maps with exactly three entries</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/Map4.html" target="_self">Map4</a></em>
+        [<em>A</em>, +<em>B</em>](<em>key1</em> : <a href="../../scala/collection/immutable/Map4.html#A" target="_self">A</a>, <em>value1</em> : <a href="../../scala/collection/immutable/Map4.html#B" target="_self">B</a>, <em>key2</em> : <a href="../../scala/collection/immutable/Map4.html#A" target="_self">A</a>, <em>value2</em> : <a href="../../scala/collection/immutable/Map4.html#B" target="_self">B</a>, <em>key3</em> : <a href="../../scala/collection/immutable/Map4.html#A" target="_self">A</a>, <em>value3</em> : <a href="../../scala/collection/immutable/Map4.html#B" target="_self">B</a>, <em>key4</em> : <a href="../../scala/collection/immutable/Map4.html#A" target="_self">A</a>, <em>value4</em> : <a href="../../scala/collection/immutable/Map4.html#B" target="_self">B</a>)<code> extends </code><a href="../../scala/collection/immutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/immutable/Map4.html#A" target="_self">A</a>, <a href="../../scala/collection/immutable/Map4.html#B" target="_self">B</a>]
+        
+        <div>This class implements immutable maps with exactly four entries</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/Queue.html" target="_self">Queue</a></em>
+        [+<em>A</em>](<em>elem</em> : <a href="../../scala/collection/immutable/Queue.html#A" target="_self">A</a>*)<code> extends </code><a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/collection/immutable/Queue.html#A" target="_self">A</a>]
+        
+        <div><code>Queue</code> objects implement data structures that allow to
+  insert and retrieve elements in a first-in-first-out (FIFO) manner.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/RedBlack.html" target="_self">RedBlack</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/Set.html" target="_self">Set</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/Set.html" target="_self">Set</a>[<a href="../../scala/collection/immutable/Set.html#A" target="_self">A</a>]
+        
+        <div><p>
+    This class defines the interface for immutable sets.  Operations
+    on an immutable set leave the original set unchanged, and return
+    a new set if needed.
+  </p>
+ 
+  <p>Concrete set implementations
+    just have to provide functionality for the abstract methods in
+    <code>scala.collection.Set</code> as well as for <code>+</code> and
+    <code>-</code>.
+  </p>
+  <p>
+    Note that abstract immutable.Set's are not covariant in their type
+    parameter.  This is because some implementations cannot support the
+    <code>+</code> method for arbitrary types.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/Set1.html" target="_self">Set1</a></em>
+        [<em>A</em>](<em>elem1</em> : <a href="../../scala/collection/immutable/Set1.html#A" target="_self">A</a>)<code> extends </code><a href="../../scala/collection/immutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/immutable/Set1.html#A" target="_self">A</a>]
+        
+        <div>This class implements immutable sets with exactly one element.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/Set2.html" target="_self">Set2</a></em>
+        [<em>A</em>](<em>elem1</em> : <a href="../../scala/collection/immutable/Set2.html#A" target="_self">A</a>, <em>elem2</em> : <a href="../../scala/collection/immutable/Set2.html#A" target="_self">A</a>)<code> extends </code><a href="../../scala/collection/immutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/immutable/Set2.html#A" target="_self">A</a>]
+        
+        <div>This class implements immutable sets with exactly two elements.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/Set3.html" target="_self">Set3</a></em>
+        [<em>A</em>](<em>elem1</em> : <a href="../../scala/collection/immutable/Set3.html#A" target="_self">A</a>, <em>elem2</em> : <a href="../../scala/collection/immutable/Set3.html#A" target="_self">A</a>, <em>elem3</em> : <a href="../../scala/collection/immutable/Set3.html#A" target="_self">A</a>)<code> extends </code><a href="../../scala/collection/immutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/immutable/Set3.html#A" target="_self">A</a>]
+        
+        <div>This class implements immutable sets with exactly three elements.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/Set4.html" target="_self">Set4</a></em>
+        [<em>A</em>](<em>elem1</em> : <a href="../../scala/collection/immutable/Set4.html#A" target="_self">A</a>, <em>elem2</em> : <a href="../../scala/collection/immutable/Set4.html#A" target="_self">A</a>, <em>elem3</em> : <a href="../../scala/collection/immutable/Set4.html#A" target="_self">A</a>, <em>elem4</em> : <a href="../../scala/collection/immutable/Set4.html#A" target="_self">A</a>)<code> extends </code><a href="../../scala/collection/immutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/immutable/Set4.html#A" target="_self">A</a>]
+        
+        <div>This class implements immutable sets with exactly four elements.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/SortedMap.html" target="_self">SortedMap</a></em>
+        [<em>A</em>, +<em>B</em>]<code> extends </code><a href="../../scala/collection/immutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/immutable/SortedMap.html#A" target="_self">A</a>, <a href="../../scala/collection/immutable/SortedMap.html#B" target="_self">B</a>]<code> with </code><a href="../../scala/collection/SortedMap.html" target="_self">SortedMap</a>[<a href="../../scala/collection/immutable/SortedMap.html#A" target="_self">A</a>, <a href="../../scala/collection/immutable/SortedMap.html#B" target="_self">B</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/SortedSet.html" target="_self">SortedSet</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/SortedSet.html" target="_self">SortedSet</a>[<a href="../../scala/collection/immutable/SortedSet.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/immutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/immutable/SortedSet.html#A" target="_self">A</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/Stack.html" target="_self">Stack</a></em>
+        [+<em>A</em>]<code> extends </code><a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/collection/immutable/Stack.html#A" target="_self">A</a>]
+        
+        <div>This class implements immutable stacks using a list-based data
+  structure. Instances of <code>Stack</code> represent
+  empty stacks; they can be either created by calling the constructor
+  directly, or by applying the function <code>Stack.Empty</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/Tree.html" target="_self">Tree</a></em>
+        [<em>A</em>, <em>B</em>](<code>implicit </code><em>view$1</em> : (<a href="../../scala/collection/immutable/Tree.html#A" target="_self">A</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/collection/immutable/Tree.html#A" target="_self">A</a>])<code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    General Balanced Trees - highly efficient functional dictionaries.
+  </p>
+  <p>
+    An efficient implementation of Prof. Arne Andersson's
+    <a href="http://citeseer.ist.psu.edu/andersson99general.html"
+    target="_top">General Balanced Trees</a>. These have no storage overhead
+    compared to plain unbalanced binary trees, and their performance is in
+    general better than AVL trees.
+  </p>
+  <p>
+    This implementation does not balance the trees after deletions.
+    Since deletions don't increase the height of a tree, this should
+    be OK in most applications. A balance method is provided for those
+    cases where rebalancing is needed.
+  </p>
+  <p>
+    The tree consists of entries conatining a key with an order.
+  </p>
+  <p>
+    When instanciating the tree an order for the keys has to be
+    supplied.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/TreeMap.html" target="_self">TreeMap</a></em>
+        [<em>A</em>, +<em>B</em>](<code>val </code><em>size</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>t</em> : <a href="../../scala/collection/immutable/RedBlack.Tree.html" target="_self">Tree</a>[<a href="../../scala/collection/immutable/TreeMap.html#B" target="_self">B</a>], <code>implicit </code><em>view$4</em> : (<a href="../../scala/collection/immutable/TreeMap.html#A" target="_self">A</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/collection/immutable/TreeMap.html#A" target="_self">A</a>])<code> extends </code><a href="../../scala/collection/immutable/RedBlack.html" target="_self">RedBlack</a>[<a href="../../scala/collection/immutable/TreeMap.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/immutable/SortedMap.html" target="_self">SortedMap</a>[<a href="../../scala/collection/immutable/TreeMap.html#A" target="_self">A</a>, <a href="../../scala/collection/immutable/TreeMap.html#B" target="_self">B</a>]
+        
+        <div>This class implements immutable maps using a tree.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/TreeSet.html" target="_self">TreeSet</a></em>
+        [<em>A</em>](<code>val </code><em>size</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>t</em> : <a href="../../scala/collection/immutable/RedBlack.Tree.html" target="_self">Tree</a>[<a href="../../scala/Unit.html" target="_self">Unit</a>], <code>implicit </code><em>view$3</em> : (<a href="../../scala/collection/immutable/TreeSet.html#A" target="_self">A</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/collection/immutable/TreeSet.html#A" target="_self">A</a>])<code> extends </code><a href="../../scala/collection/immutable/RedBlack.html" target="_self">RedBlack</a>[<a href="../../scala/collection/immutable/TreeSet.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/immutable/SortedSet.html" target="_self">SortedSet</a>[<a href="../../scala/collection/immutable/TreeSet.html#A" target="_self">A</a>]
+        
+        <div>This class implements immutable sets using a tree.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/UnbalancedTreeMap.html" target="_self">UnbalancedTreeMap</a></em>
+        [<em>A</em>, +<em>B</em>](<code>implicit </code><em>view$3</em> : (<a href="../../scala/collection/immutable/UnbalancedTreeMap.html#A" target="_self">A</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/collection/immutable/UnbalancedTreeMap.html#A" target="_self">A</a>])<code> extends </code><a href="../../scala/collection/immutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/immutable/UnbalancedTreeMap.html#A" target="_self">A</a>, <a href="../../scala/collection/immutable/UnbalancedTreeMap.html#B" target="_self">B</a>]
+        
+        <div>This class implements immutable maps using a tree.</div>
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/HashMap$object.html" target="_self">HashMap</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The canonical factory methods for <a href="HashMap.html">immutable HashMap's</a>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/HashSet$object.html" target="_self">HashSet</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The canonical factory methods for <a href="HashSet.html">immutable HashSet's<la>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/ImmutableIterator$object.html" target="_self">ImmutableIterator</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>An object for creating immutable iterators.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/ListMap$object.html" target="_self">ListMap</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The canonical factory of <a href="ListMap.html">ListMap</a>'s</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/ListSet$object.html" target="_self">ListSet</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The canonical factory of <a href="ListSet.html">ListSet</a>'s</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/Map$object.html" target="_self">Map</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>An object for creating immutable maps. These are implemented using
+          <a href="HashMap.html">immutable hash maps</a>.
+   </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/Queue$object.html" target="_self">Queue</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/Set$object.html" target="_self">Set</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Canonical factories for immutable sets.  The canonical immutable sets are
+   currently implemented using <a href="HashSet.html">immutable hash sets</a>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/Stack$object.html" target="_self">Stack</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/TreeMap$object.html" target="_self">TreeMap</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The canonical factory of <a href="TreeMap.html">TreeMap</a>'s.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/TreeSet$object.html" target="_self">TreeSet</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The canonical factory of <a href="TreeSet.html">TreeSet</a>'s.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/immutable/UnbalancedTreeMap$object.html" target="_self">UnbalancedTreeMap</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>        
+        </table></body>
+      </html>

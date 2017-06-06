@@ -1,0 +1,1 @@
+(defparameter ext::MS-TURK (ext::make-encoding 'ext::WINDOWS-CP1254))

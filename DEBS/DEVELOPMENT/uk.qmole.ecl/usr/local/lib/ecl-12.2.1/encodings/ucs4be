@@ -1,0 +1,1 @@
+(defparameter ext::UCS4BE (ext::make-encoding 'ext::UCS-4BE))

@@ -1,0 +1,9 @@
+#!/usr/bin/python
+"""Terminal-based IPython entry point.
+"""
+import os
+os.chdir('/var/mobile')
+del os 
+
+from IPython import start_ipython
+start_ipython()

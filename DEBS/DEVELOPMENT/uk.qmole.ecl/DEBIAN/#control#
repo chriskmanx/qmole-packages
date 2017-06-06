@@ -1,0 +1,13 @@
+Package: uk.qmole.ecl
+Name: Embedded Common-Lisp
+Version: 12.2.1
+Architecture: iphoneos-arm
+Description: Embeddable Common-Lisp port to IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/ecl
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: ncurses, readline
+Sponsor: QMole Ltd. 
+Section: Development
+Tag: purpose::console, role::developer

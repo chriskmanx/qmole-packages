@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>trait Benchmark in scala.testing</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../scala/testing$package.html" target="_self">scala.testing</a>
+        <br></br>
+        <span class="entity">trait  Benchmark</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/testing/Benchmark"><code>scala/testing/Benchmark.scala</code></a>]
+      </div><hr></hr>
+      <a name="Benchmark"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>trait</code>
+        <em>Benchmark</em>
+      </dt>
+      <dd><code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd><p>
+    <code>Benchmark</code> can be used to quickly turn an existing
+    class into a benchmark. Here is a short example:
+  </p><pre>
+  <b>object</b> sort1 <b>extends</b> Sorter <b>with</b> Benchmark {
+    <b>def</b> run = sort(List.range(1, 1000))
+  }
+  </pre>
+  <p>
+    The <code>run</code> method has to be defined by the user, who
+    will perform the timed operation there.
+    Run the benchmark as follows:
+  </p>
+  <pre>
+  &gt; scala sort1 5 times.log
+  </pre>
+  <p>
+    This will run the benchmark 5 times and log the execution times in
+    a file called <code>times.log</code>
+  </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Iulian Dragos, Burak Emir</dd></dl>
+    
+      
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Value Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/testing/Benchmark.html#multiplier" target="_self">multiplier</a></em>
+         : <a href="../../scala/Int.html" target="_self">Int</a>
+        
+        
+      </td>
+    </tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/testing/Benchmark.html#main%28Array%5BString%5D%29" target="_self">main</a></em>
+        (<em>args</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>The entry point. It takes two arguments (n), (name) 
+    and an optional argument multiplier (mult).
+    (n) is the number of consecutive runs, (name) the name 
+    of a log file where to append the times.
+    if (mult) is present, the same thing is repeated (mult)
+    times.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/testing/Benchmark.html#prefix" target="_self">prefix</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>a string that is written at the beginning of the output line
+     that contains the timings. By default, this is the class name.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/testing/Benchmark.html#run%28%29" target="_self">run</a></em>
+         : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>this method should be implemented by the concrete benchmark</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/testing/Benchmark.html#runBenchmark%28Int%29" target="_self">runBenchmark</a></em>
+        (<em>noTimes</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/List.html" target="_self">List</a>[<a href="../../scala/Long.html" target="_self">Long</a>]
+        
+        <div>Run the benchmark the specified number of times
+    and return a list with the execution times in milliseconds
+    in reverse order of the execution</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Value Details</td></tr>
+        </table><div><a name="multiplier"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>var</code>
+        <em>multiplier</em> : <a href="../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="run%28%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>run</em> : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>this method should be implemented by the concrete benchmark</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="runBenchmark%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>runBenchmark</em>(<em>noTimes</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/List.html" target="_self">List</a>[<a href="../../scala/Long.html" target="_self">Long</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Run the benchmark the specified number of times
+    and return a list with the execution times in milliseconds
+    in reverse order of the execution</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>noTimes - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="prefix"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>prefix</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>a string that is written at the beginning of the output line
+     that contains the timings. By default, this is the class name.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="main%28Array%5BString%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>main</em>(<em>args</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The entry point. It takes two arguments (n), (name) 
+    and an optional argument multiplier (mult).
+    (n) is the number of consecutive runs, (name) the name 
+    of a log file where to append the times.
+    if (mult) is present, the same thing is repeated (mult)
+    times.</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>trait Mutable in scala.RandomAccessSeq</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../scala/RandomAccessSeq$object.html" target="_self">scala.RandomAccessSeq</a>
+        <br></br>
+        <span class="entity">trait  Mutable</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/RandomAccessSeq"><code>scala/RandomAccessSeq.scala</code></a>]
+      </div><hr></hr>
+      <a name="Mutable"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>trait</code>
+        <em>Mutable</em>[<em>A</em>]
+      </dt>
+      <dd><code> extends </code><a href="../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>[<a href="../scala/RandomAccessSeq$object.Mutable.html#A" target="_self">A</a>]</dd>
+    </dl>
+      <dl><dd>A random access sequence that supports update (e.g., an array)</dd></dl>
+      <dl></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../scala/Array$object.Array0.html" target="_self">Array.Array0</a>, <a href="../scala/RandomAccessSeq$object.MutableProjection.html" target="_self">RandomAccessSeq.MutableProjection</a>, <a href="../scala/collection/jcl/Buffer.html" target="_self">Buffer</a>, <a href="../scala/collection/mutable/ArrayBuffer.html" target="_self">ArrayBuffer</a>, <a href="../scala/runtime/RichStringBuilder.html" target="_self">RichStringBuilder</a></dd>
+      </dl><hr></hr>
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/RandomAccessSeq$object.Mutable.html#drop%28Int%29" target="_self">drop</a></em>
+        (<em>from</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/RandomAccessSeq$object.MutableProjection.html" target="_self">MutableProjection</a>[<a href="../scala/RandomAccessSeq$object.Mutable.html#A" target="_self">A</a>]
+        
+        <div>Returns this sequence without its <code>n</code> first elements
+    If this sequence has less than <code>n</code> elements, the empty
+    sequence is returned. (non-strict)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/RandomAccessSeq$object.Mutable.html#projection" target="_self">projection</a></em>
+         : <a href="../scala/RandomAccessSeq$object.MutableProjection.html" target="_self">MutableProjection</a>[<a href="../scala/RandomAccessSeq$object.Mutable.html#A" target="_self">A</a>]
+        
+        <div>returns a projection that can be used to call non-strict <code>filter</code>,
+   <code>map</code>, and <code>flatMap</code> methods that build projections
+   of the collection.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/RandomAccessSeq$object.Mutable.html#readOnly" target="_self">readOnly</a></em>
+         : <a href="../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>[<a href="../scala/RandomAccessSeq$object.Mutable.html#A" target="_self">A</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/RandomAccessSeq$object.Mutable.html#reverse" target="_self">reverse</a></em>
+         : <a href="../scala/RandomAccessSeq$object.MutableProjection.html" target="_self">MutableProjection</a>[<a href="../scala/RandomAccessSeq$object.Mutable.html#A" target="_self">A</a>]
+        
+        <div>A sequence consisting of all elements of this sequence in reverse order.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/RandomAccessSeq$object.Mutable.html#slice%28Int%2CInt%29" target="_self">slice</a></em>
+        (<em>from0</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>until0</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/RandomAccessSeq$object.MutableProjection.html" target="_self">MutableProjection</a>[<a href="../scala/RandomAccessSeq$object.Mutable.html#A" target="_self">A</a>]
+        
+        <div>A sub-sequence of <code>len</code> elements 
+     starting at index <code>from</code> (non-strict)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/RandomAccessSeq$object.Mutable.html#take%28Int%29" target="_self">take</a></em>
+        (<em>until</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/RandomAccessSeq$object.MutableProjection.html" target="_self">MutableProjection</a>[<a href="../scala/RandomAccessSeq$object.Mutable.html#A" target="_self">A</a>]
+        
+        <div>Returns a sequence consisting only over the first <code>n</code>
+    elements of this sequence, or else the whole sequence, if it has less
+    than <code>n</code> elements. (non-strict)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/RandomAccessSeq$object.Mutable.html#update%28Int%2CA%29" target="_self">update</a></em>
+        (<em>idx</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>what</em> : <a href="../scala/RandomAccessSeq$object.Mutable.html#A" target="_self">A</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div><p>
+        Update the element at given index. 
+      </p>
+      <p>
+        Indices start a <code>0</code>; <code>xs.apply(0)</code> is the first 
+        element of mutable sequence <code>xs</code>.
+      </p>
+      <p>
+        Note the indexing syntax <code>xs(i) = x</code> is a shorthand 
+        for <code>xs.update(i, x)</code>.
+      </p></div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/RandomAccessSeq.html#elements" target="_self">elements</a>, <a href="../scala/RandomAccessSeq.html#patch%28Int%2CRandomAccessSeq%5BB%5D%2CInt%29" target="_self">patch</a>, <a href="../scala/RandomAccessSeq.html#%2B%2B%28Iterable%5BB%5D%29" target="_self">++</a>, <a href="../scala/RandomAccessSeq.html#toStream" target="_self">toStream</a>, <a href="../scala/RandomAccessSeq.html#safeIs%28Int%2CAny%29" target="_self">safeIs</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Seq.html" target="_self">Seq</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Seq.html#length" target="_self">length</a> (abstract), <a href="../scala/Seq.html#lengthCompare%28Int%29" target="_self">lengthCompare</a>, <a href="../scala/Seq.html#size" target="_self">size</a>, <a href="../scala/Seq.html#isEmpty" target="_self">isEmpty</a>, <a href="../scala/Seq.html#concat%28Iterable%5BB%5D%29" target="_self">concat</a>, <a href="../scala/Seq.html#last" target="_self">last</a>, <a href="../scala/Seq.html#lastOption" target="_self">lastOption</a>, <a href="../scala/Seq.html#headOption" target="_self">headOption</a>, <a href="../scala/Seq.html#isDefinedAt%28Int%29" target="_self">isDefinedAt</a>, <a href="../scala/Seq.html#lastIndexOf%28B%29" target="_self">lastIndexOf</a>, <a href="../scala/Seq.html#map%28%28A%29%3D%3EB%29" target="_self">map</a>, <a href="../scala/Seq.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a>, <a href="../scala/Seq.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a>, <a href="../scala/Seq.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a>, <a href="../scala/Seq.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a>, <a href="../scala/Seq.html#contains%28Any%29" target="_self">contains</a>, <a href="../scala/Seq.html#subseq%28Int%2CInt%29" target="_self">subseq</a>, <a href="../scala/Seq.html#toArray" target="_self">toArray</a>, <a href="../scala/Seq.html#equalsWith%28Seq%5BB%5D%29" target="_self">equalsWith</a>, <a href="../scala/Seq.html#startsWith%28Seq%5BB%5D%29" target="_self">startsWith</a>, <a href="../scala/Seq.html#endsWith%28Seq%5BB%5D%29" target="_self">endsWith</a>, <a href="../scala/Seq.html#indexOf%28Seq%5BB%5D%29" target="_self">indexOf</a>, <a href="../scala/Seq.html#containsSlice%28Seq%5BB%5D%29" target="_self">containsSlice</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Collection.html" target="_self">Collection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Collection.html#toString%28%29" target="_self">toString</a>, <a href="../scala/Collection.html#stringPrefix" target="_self">stringPrefix</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Iterable.html" target="_self">Iterable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Iterable.html#partition%28%28A%29%3D%3EBoolean%29" target="_self">partition</a>, <a href="../scala/Iterable.html#foreach%28%28A%29%3D%3EUnit%29" target="_self">foreach</a>, <a href="../scala/Iterable.html#forall%28%28A%29%3D%3EBoolean%29" target="_self">forall</a>, <a href="../scala/Iterable.html#exists%28%28A%29%3D%3EBoolean%29" target="_self">exists</a>, <a href="../scala/Iterable.html#find%28%28A%29%3D%3EBoolean%29" target="_self">find</a>, <a href="../scala/Iterable.html#findIndexOf%28%28A%29%3D%3EBoolean%29" target="_self">findIndexOf</a>, <a href="../scala/Iterable.html#indexOf%28B%29" target="_self">indexOf</a>, <a href="../scala/Iterable.html#foldLeft%28B%29" target="_self">foldLeft</a>, <a href="../scala/Iterable.html#foldRight%28B%29" target="_self">foldRight</a>, <a href="../scala/Iterable.html#%2F%3A%28B%29" target="_self">/:</a>, <a href="../scala/Iterable.html#%3A%5C%28B%29" target="_self">:\</a>, <a href="../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29" target="_self">reduceLeft</a>, <a href="../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29" target="_self">reduceRight</a>, <a href="../scala/Iterable.html#copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29" target="_self">copyToBuffer</a>, <a href="../scala/Iterable.html#sameElements%28Iterable%5BB%5D%29" target="_self">sameElements</a>, <a href="../scala/Iterable.html#toList" target="_self">toList</a>, <a href="../scala/Iterable.html#mkString%28String%2CString%2CString%29" target="_self">mkString</a>, <a href="../scala/Iterable.html#mkString%28String%29" target="_self">mkString</a>, <a href="../scala/Iterable.html#mkString" target="_self">mkString</a>, <a href="../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%2CString%2CString%29" target="_self">addString</a>, <a href="../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%29" target="_self">addString</a>, <a href="../scala/Iterable.html#copyToArray%28Array%5BB%5D%2CInt%29" target="_self">copyToArray</a>, <a href="../scala/Iterable.html#hasDefiniteSize" target="_self">hasDefiniteSize</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/PartialFunction.html" target="_self">PartialFunction</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/PartialFunction.html#orElse%28PartialFunction%5BA1%2CB1%5D%29" target="_self">orElse</a>, <a href="../scala/PartialFunction.html#andThen%28%28B%29%3D%3EC%29" target="_self">andThen</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Function1.html" target="_self">Function1</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Function1.html#apply%28T1%29" target="_self">apply</a> (abstract), <a href="../scala/Function1.html#compose%28%28A%29%3D%3ET1%29" target="_self">compose</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="update%28Int%2CA%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>update</em>(<em>idx</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>what</em> : <a href="../scala/RandomAccessSeq$object.Mutable.html#A" target="_self">A</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+        Update the element at given index. 
+      </p>
+      <p>
+        Indices start a <code>0</code>; <code>xs.apply(0)</code> is the first 
+        element of mutable sequence <code>xs</code>.
+      </p>
+      <p>
+        Note the indexing syntax <code>xs(i) = x</code> is a shorthand 
+        for <code>xs.update(i, x)</code>.
+      </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>i - </code>the index</dd><dd><code>x - </code>the value to be written at index <code>i</code></dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>ArrayIndexOutOfBoundsException - </code>if <code>i < 0</code> or              <code>length <= i</code></dd></dl>
+    <hr></hr>
+<a name="projection"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>projection</em> : <a href="../scala/RandomAccessSeq$object.MutableProjection.html" target="_self">MutableProjection</a>[<a href="../scala/RandomAccessSeq$object.Mutable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>returns a projection that can be used to call non-strict <code>filter</code>,
+   <code>map</code>, and <code>flatMap</code> methods that build projections
+   of the collection.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>.<a href="../scala/RandomAccessSeq.html#projection" target="_self">projection</a>
+        </dd>
+      </dl><hr></hr>
+<a name="readOnly"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>readOnly</em> : <a href="../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>[<a href="../scala/RandomAccessSeq$object.Mutable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="drop%28Int%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>drop</em>(<em>from</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/RandomAccessSeq$object.MutableProjection.html" target="_self">MutableProjection</a>[<a href="../scala/RandomAccessSeq$object.Mutable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns this sequence without its <code>n</code> first elements
+    If this sequence has less than <code>n</code> elements, the empty
+    sequence is returned. (non-strict)</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the number of elements to drop</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the new sequence</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>.<a href="../scala/RandomAccessSeq.html#drop%28Int%29" target="_self">drop</a>
+        </dd>
+      </dl><hr></hr>
+<a name="take%28Int%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>take</em>(<em>until</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/RandomAccessSeq$object.MutableProjection.html" target="_self">MutableProjection</a>[<a href="../scala/RandomAccessSeq$object.Mutable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a sequence consisting only over the first <code>n</code>
+    elements of this sequence, or else the whole sequence, if it has less
+    than <code>n</code> elements. (non-strict)</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the number of elements to take</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a possibly projected sequence</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>.<a href="../scala/RandomAccessSeq.html#take%28Int%29" target="_self">take</a>
+        </dd>
+      </dl><hr></hr>
+<a name="slice%28Int%2CInt%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>slice</em>(<em>from0</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>until0</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/RandomAccessSeq$object.MutableProjection.html" target="_self">MutableProjection</a>[<a href="../scala/RandomAccessSeq$object.Mutable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A sub-sequence of <code>len</code> elements 
+     starting at index <code>from</code> (non-strict)</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>from - </code>The index of the first element of the slice</dd><dd><code>until - </code>The index of the element following the slice</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>IndexOutOfBoundsException - </code>if <code>from &lt; 0</code>             or <code>length &lt; from + len<code></dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>.<a href="../scala/RandomAccessSeq.html#slice%28Int%2CInt%29" target="_self">slice</a>
+        </dd>
+      </dl><hr></hr>
+<a name="reverse"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>reverse</em> : <a href="../scala/RandomAccessSeq$object.MutableProjection.html" target="_self">MutableProjection</a>[<a href="../scala/RandomAccessSeq$object.Mutable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A sequence consisting of all elements of this sequence in reverse order.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>.<a href="../scala/RandomAccessSeq.html#reverse" target="_self">reverse</a>
+        </dd>
+      </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

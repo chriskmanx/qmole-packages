@@ -1,0 +1,13 @@
+Package: uk.qmole.avian
+Name: Avian Java VM
+Version: 1.1.0
+Architecture: iphoneos-arm
+Description: Avian JIT Java VM for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/avian
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: jamvm, uk.qmole.classpath
+Sponsor: QMole Ltd. 
+Section: Development
+Tag: purpose::console, role::developer

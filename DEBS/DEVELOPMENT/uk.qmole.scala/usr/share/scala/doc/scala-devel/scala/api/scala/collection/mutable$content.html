@@ -1,0 +1,830 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.collection.mutable</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/ArrayBuffer.html" target="_self">ArrayBuffer</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/RandomAccessSeq$object.Mutable.html" target="_self">Mutable</a>[<a href="../../scala/collection/mutable/ArrayBuffer.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../../scala/collection/mutable/ArrayBuffer.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/mutable/ResizableArray.html" target="_self">ResizableArray</a>[<a href="../../scala/collection/mutable/ArrayBuffer.html#A" target="_self">A</a>]
+        
+        <div>An implementation of the <code>Buffer</code> class using an array to
+  represent the assembled sequence internally.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/BitSet.html" target="_self">BitSet</a></em>
+        (<em>initSize</em> : <a href="../../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../../scala/collection/BitSet.html" target="_self">BitSet</a><code> with </code><a href="../../scala/collection/mutable/Set.html" target="_self">Set</a>[<a href="../../scala/Int.html" target="_self">Int</a>]
+        
+        <div>The class <code>BitSet</code> implements mutable, resizable Bit sets</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/mutable/Scriptable.html" target="_self">Scriptable</a>[<a href="../../scala/collection/mutable/Message.html" target="_self">Message</a>[(<a href="../../scala/collection/mutable/Location.html" target="_self">Location</a>, <a href="../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>)]]<code> with </code><a href="../../scala/collection/mutable/CloneableCollection.html" target="_self">CloneableCollection</a>
+        
+        <div>Buffers are used to create sequences of elements incrementally by
+  appending, prepending, or inserting new elements. It is also
+  possible to access and modify elements in a random access fashion
+  via the index of the element in the current sequence.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/BufferProxy.html" target="_self">BufferProxy</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../../scala/collection/mutable/BufferProxy.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/Proxy.html" target="_self">Proxy</a>
+        
+        <div>This is a simple proxy class for <a href="Buffer.html"
+  target="contentFrame"><code>scala.collection.mutable.Buffer</code></a>.
+  It is most useful for assembling customized set abstractions
+  dynamically using object composition and forwarding.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/CloneableCollection.html" target="_self">CloneableCollection</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The J2ME version of the library defined this trait with a clone method
+ to substitute for the lack of Object.clone there</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/DefaultEntry.html" target="_self">DefaultEntry</a></em>
+        [<em>A</em>, <em>B</em>](<code>val </code><em>key</em> : <a href="../../scala/collection/mutable/DefaultEntry.html#A" target="_self">A</a>, <code>val </code><em>value</em> : <a href="../../scala/collection/mutable/DefaultEntry.html#B" target="_self">B</a>)<code> extends </code><a href="../../scala/collection/mutable/HashEntry.html" target="_self">HashEntry</a>[<a href="../../scala/collection/mutable/DefaultEntry.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/DefaultEntry.html" target="_self">DefaultEntry</a>[<a href="../../scala/collection/mutable/DefaultEntry.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/DefaultEntry.html#B" target="_self">B</a>]]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/DefaultMapModel.html" target="_self">DefaultMapModel</a></em>
+        [<em>A</em>, <em>B</em>]<code> extends </code><a href="../../scala/collection/mutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/mutable/DefaultMapModel.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/DefaultMapModel.html#B" target="_self">B</a>]
+        
+        <div>This class is used internally. It implements the mutable <code>Map</code>
+  class in terms of three functions: <code>findEntry</code>,
+  <code>addEntry</code>, and <code>entries</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/DoubleLinkedList.html" target="_self">DoubleLinkedList</a></em>
+        [<em>A</em>, <em>This</em> &lt;: <a href="../../scala/collection/mutable/DoubleLinkedList.html" target="_self">DoubleLinkedList</a>[<a href="../../scala/collection/mutable/DoubleLinkedList.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/DoubleLinkedList.html#This" target="_self">This</a>] &gt;: <a href="../../scala/Null.html" target="_self">Null</a>]<code> extends </code><a href="../../scala/collection/mutable/SingleLinkedList.html" target="_self">SingleLinkedList</a>[<a href="../../scala/collection/mutable/DoubleLinkedList.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/DoubleLinkedList.html#This" target="_self">This</a>]
+        
+        <div>This extensible class may be used as a basis for implementing double
+  linked lists. Type variable <code>A</code> refers to the element type
+  of the list, type variable <code>This</code> is used to model self
+  types of linked lists.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/FlatHashTable.html" target="_self">FlatHashTable</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/HashEntry.html" target="_self">HashEntry</a></em>
+        [<em>A</em>, <em>E</em>]<code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/HashMap.html" target="_self">HashMap</a></em>
+        [<em>A</em>, <em>B</em>]<code> extends </code><a href="../../scala/collection/mutable/HashTable.html" target="_self">HashTable</a>[<a href="../../scala/collection/mutable/HashMap.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/mutable/DefaultMapModel.html" target="_self">DefaultMapModel</a>[<a href="../../scala/collection/mutable/HashMap.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/HashMap.html#B" target="_self">B</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/HashSet.html" target="_self">HashSet</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/mutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/mutable/HashSet.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/mutable/FlatHashTable.html" target="_self">FlatHashTable</a>[<a href="../../scala/collection/mutable/HashSet.html#A" target="_self">A</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/HashTable.html" target="_self">HashTable</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This class can be used to construct data structures that are based
+  on hashtables. Class <code>HashTable[A]</code> implements a hashtable
+  that maps keys of type <code>A</code> to values of the fully abstract
+  member type <code>Entry</code>. Classes that make use of <code>HashTable</code>
+  have to provide an implementation for <code>Entry</code> 
+
+  There are mainly two parameters that affect the performance of a hashtable:
+  the <i>initial size</i> and the <i>load factor</i>. The <i>size</i>
+  refers to the number of <i>buckets</i> in the hashtable, and the <i>load
+  factor</i> is a measure of how full the hashtable is allowed to get before
+  its size is automatically doubled. Both parameters may be changed by
+  overriding the corresponding values in class <code>HashTable</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/History.html" target="_self">History</a></em>
+        [<em>A</em>, <em>B</em>]<code> extends </code><a href="../../scala/collection/mutable/Subscriber.html" target="_self">Subscriber</a>[<a href="../../scala/collection/mutable/History.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/History.html#B" target="_self">B</a>]<code> with </code><a href="../../scala/Collection.html" target="_self">Collection</a>[(<a href="../../scala/collection/mutable/History.html#B" target="_self">B</a>, <a href="../../scala/collection/mutable/History.html#A" target="_self">A</a>)]
+        
+        <div><code>History[A, B]</code> objects may subscribe to events of
+  type <code>A</code> published by an object of type <code>B</code>.
+  The history subscriber object records all published events
+  up to maximum number of <code>maxHistory</code> events.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/ImmutableMapAdaptor.html" target="_self">ImmutableMapAdaptor</a></em>
+        [<em>A</em>, <em>B</em>](<code>protected val </code><em>imap</em> : <a href="../../scala/collection/immutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/mutable/ImmutableMapAdaptor.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/ImmutableMapAdaptor.html#B" target="_self">B</a>])<code> extends </code><a href="../../scala/collection/mutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/mutable/ImmutableMapAdaptor.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/ImmutableMapAdaptor.html#B" target="_self">B</a>]
+        
+        <div>This class can be used as an adaptor to create mutable maps from
+  immutable map implementations. Only method <code>empty</code> has
+  to be redefined if the immutable map on which this mutable map is
+  originally based is not empty. <code>empty</code> is supposed to
+  return the representation of an empty map.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/ImmutableSetAdaptor.html" target="_self">ImmutableSetAdaptor</a></em>
+        [<em>A</em>](<code>protected val </code><em>set</em> : <a href="../../scala/collection/immutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/mutable/ImmutableSetAdaptor.html#A" target="_self">A</a>])<code> extends </code><a href="../../scala/collection/mutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/mutable/ImmutableSetAdaptor.html#A" target="_self">A</a>]
+        
+        <div>This class can be used as an adaptor to create mutable sets from
+  immutable set implementations. Only method <code>empty</code> has
+  to be redefined if the immutable set on which this mutable set is
+  originally based is not empty. <code>empty</code> is supposed to
+  return the representation of an empty set.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Include.html" target="_self">Include</a></em>
+        [+<em>I</em>](<code>val </code><em>elem</em> : <a href="../../scala/collection/mutable/Include.html#I" target="_self">I</a>)<code> extends </code><a href="../../scala/collection/mutable/Message.html" target="_self">Message</a>[<a href="../../scala/collection/mutable/Include.html#I" target="_self">I</a>]<code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>This observable update refers to inclusion operations that add new elements
+  to collection classes.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Index.html" target="_self">Index</a></em>
+        (<code>val </code><em>n</em> : <a href="../../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../../scala/collection/mutable/Location.html" target="_self">Location</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/JavaMapAdaptor.html" target="_self">JavaMapAdaptor</a></em>
+        [<em>A</em>, <em>B</em>](<em>jmap</em> : <a href="" target="contentFrame" class="java/util/Map">java.util.Map</a>)<code> extends </code><a href="../../scala/collection/mutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/JavaMapAdaptor.html#B" target="_self">B</a>]
+        
+        <div>This class can be used as an adaptor to create mutable maps from
+  Java classes that implementat the <code>java.util.Map</code> interface.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/JavaSetAdaptor.html" target="_self">JavaSetAdaptor</a></em>
+        [<em>A</em>](<em>jset</em> : <a href="" target="contentFrame" class="java/util/Set">java.util.Set</a>)<code> extends </code><a href="../../scala/collection/mutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/mutable/JavaSetAdaptor.html#A" target="_self">A</a>]
+        
+        <div>This class can be used as an adaptor to create mutable sets from
+  Java classes that implement interface <code>java.util.Set</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/LinkedHashSet.html" target="_self">LinkedHashSet</a></em>
+        [<em>A</em>](<code>private </code><em>set0</em> : <a href="" target="contentFrame" class="java/util/LinkedHashSet">java.util.LinkedHashSet</a>)<code> extends </code><a href="../../scala/collection/mutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/mutable/LinkedHashSet.html#A" target="_self">A</a>]
+        
+        <div>This class...</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/LinkedList.html" target="_self">LinkedList</a></em>
+        [<em>A</em>](<code>val </code><em>elem</em> : <a href="../../scala/collection/mutable/LinkedList.html#A" target="_self">A</a>, <code>val </code><em>next</em> : <a href="../../scala/collection/mutable/LinkedList.html" target="_self">LinkedList</a>[<a href="../../scala/collection/mutable/LinkedList.html#A" target="_self">A</a>])<code> extends </code><a href="../../scala/collection/mutable/SingleLinkedList.html" target="_self">SingleLinkedList</a>[<a href="../../scala/collection/mutable/LinkedList.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/LinkedList.html" target="_self">LinkedList</a>[<a href="../../scala/collection/mutable/LinkedList.html#A" target="_self">A</a>]]
+        
+        <div>This class implements single linked lists where both the head (<code>elem</code>)
+  and the tail (<code>next</code>) are mutable.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/ListBuffer.html" target="_self">ListBuffer</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../../scala/collection/mutable/ListBuffer.html#A" target="_self">A</a>]
+        
+        <div>The class <code>ListBuffer</code> ..</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Location.html" target="_self">Location</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Class <code>Location</code> describes locations in messages implemented
+  by class <code>Message</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Map.html" target="_self">Map</a></em>
+        [<em>A</em>, <em>B</em>]<code> extends </code><a href="../../scala/collection/Map.html" target="_self">Map</a>[<a href="../../scala/collection/mutable/Map.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/Map.html#B" target="_self">B</a>]<code> with </code><a href="../../scala/collection/mutable/Scriptable.html" target="_self">Scriptable</a>[<a href="../../scala/collection/mutable/Message.html" target="_self">Message</a>[(<a href="../../scala/collection/mutable/Map.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/Map.html#B" target="_self">B</a>)]]<code> with </code><a href="../../scala/collection/mutable/CloneableCollection.html" target="_self">CloneableCollection</a>
+        
+        <div>This trait represents mutable maps. Concrete map implementations
+  just have to provide functionality for the abstract methods in
+  <code>scala.collection.Map</code> as well as for <code>update</code>,
+  and <code>-=</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/MapProxy.html" target="_self">MapProxy</a></em>
+        [<em>A</em>, <em>B</em>]<code> extends </code><a href="../../scala/collection/mutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/mutable/MapProxy.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/MapProxy.html#B" target="_self">B</a>]<code> with </code><a href="../../scala/collection/MapProxy.html" target="_self">MapProxy</a>[<a href="../../scala/collection/mutable/MapProxy.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/MapProxy.html#B" target="_self">B</a>]
+        
+        <div><p>
+    This is a simple wrapper class for <a href="Map.html"
+    target="contentFrame"><code>scala.collection.mutable.Map</code></a>.
+  </p>
+  <p>
+    It is most useful for assembling customized map abstractions
+    dynamically using object composition and forwarding.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Message.html" target="_self">Message</a></em>
+        [+<em>A</em>]<code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Class <code>Message</code> represents messages that are issued by observable
+  collection classes whenever a data structure is changed. Class <code>Message</code>
+  has several subclasses for the various kinds of events: <code>Update</code>
+  <code>Remove</code>, <code>Include</code>, <code>Reset</code>, and
+  <code>Script</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/MultiMap.html" target="_self">MultiMap</a></em>
+        [<em>A</em>, <em>B</em>]<code> extends </code><a href="../../scala/collection/mutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/mutable/MultiMap.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/mutable/MultiMap.html#B" target="_self">B</a>]]
+        
+        <div>This class is typically used as a mixin. It turns maps which map <code>A</code>
+  to <code>Set[B]</code> objects into multi maps which map <code>A</code> to
+  <code>B</code> objects.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/MutableList.html" target="_self">MutableList</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/collection/mutable/MutableList.html#A" target="_self">A</a>]
+        
+        <div>This class is used internally to represent mutable lists. It is the
+  basis for the implementation of the classes <code>Buffer</code>,
+  <code>Stack</code>, and <code>Queue</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/ObservableBuffer.html" target="_self">ObservableBuffer</a></em>
+        [<em>A</em>, <em>This</em> &lt;: <a href="../../scala/collection/mutable/ObservableBuffer.html" target="_self">ObservableBuffer</a>[<a href="../../scala/collection/mutable/ObservableBuffer.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/ObservableBuffer.html#This" target="_self">This</a>]]<code> extends </code><a href="../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../../scala/collection/mutable/ObservableBuffer.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/mutable/Publisher.html" target="_self">Publisher</a>[<a href="../../scala/collection/mutable/Message.html" target="_self">Message</a>[(<a href="../../scala/collection/mutable/Location.html" target="_self">Location</a>, <a href="../../scala/collection/mutable/ObservableBuffer.html#A" target="_self">A</a>)]<code> with </code><a href="../../scala/collection/mutable/Undoable.html" target="_self">Undoable</a>, <a href="../../scala/collection/mutable/ObservableBuffer.html#This" target="_self">This</a>]
+        
+        <div>This class is typically used as a mixin. It adds a subscription
+  mechanism to the <code>Buffer</code> class into which this abstract
+  class is mixed in. Class <code>ObservableBuffer</code> publishes
+  events of the type <code>Message</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/ObservableMap.html" target="_self">ObservableMap</a></em>
+        [<em>A</em>, <em>B</em>, <em>This</em> &lt;: <a href="../../scala/collection/mutable/ObservableMap.html" target="_self">ObservableMap</a>[<a href="../../scala/collection/mutable/ObservableMap.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/ObservableMap.html#B" target="_self">B</a>, <a href="../../scala/collection/mutable/ObservableMap.html#This" target="_self">This</a>]]<code> extends </code><a href="../../scala/collection/mutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/mutable/ObservableMap.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/ObservableMap.html#B" target="_self">B</a>]<code> with </code><a href="../../scala/collection/mutable/Publisher.html" target="_self">Publisher</a>[<a href="../../scala/collection/mutable/Message.html" target="_self">Message</a>[(<a href="../../scala/collection/mutable/ObservableMap.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/ObservableMap.html#B" target="_self">B</a>)]<code> with </code><a href="../../scala/collection/mutable/Undoable.html" target="_self">Undoable</a>, <a href="../../scala/collection/mutable/ObservableMap.html#This" target="_self">This</a>]
+        
+        <div>This class is typically used as a mixin. It adds a subscription
+  mechanism to the <code>Map</code> class into which this abstract
+  class is mixed in. Class <code>ObservableMap</code> publishes
+  events of the type <code>Message</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/ObservableSet.html" target="_self">ObservableSet</a></em>
+        [<em>A</em>, <em>This</em> &lt;: <a href="../../scala/collection/mutable/ObservableSet.html" target="_self">ObservableSet</a>[<a href="../../scala/collection/mutable/ObservableSet.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/ObservableSet.html#This" target="_self">This</a>]]<code> extends </code><a href="../../scala/collection/mutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/mutable/ObservableSet.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/mutable/Publisher.html" target="_self">Publisher</a>[<a href="../../scala/collection/mutable/Message.html" target="_self">Message</a>[<a href="../../scala/collection/mutable/ObservableSet.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/mutable/Undoable.html" target="_self">Undoable</a>, <a href="../../scala/collection/mutable/ObservableSet.html#This" target="_self">This</a>]
+        
+        <div>This class is typically used as a mixin. It adds a subscription
+  mechanism to the <code>Set</code> class into which this abstract
+  class is mixed in. Class <code>ObservableSet</code> publishes
+  events of the type <code>Message</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a></em>
+        [<em>A</em>](<code>implicit </code><em>view$1</em> : (<a href="../../scala/collection/mutable/PriorityQueue.html#A" target="_self">A</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/collection/mutable/PriorityQueue.html#A" target="_self">A</a>])<code> extends </code><a href="../../scala/collection/mutable/ResizableArray.html" target="_self">ResizableArray</a>[<a href="../../scala/collection/mutable/PriorityQueue.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/mutable/CloneableCollection.html" target="_self">CloneableCollection</a>
+        
+        <div>This class implements priority queues using a heap. The
+  elements of the queue have to be ordered in terms of the
+  <code>Ordered[T]</code> class.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/PriorityQueueProxy.html" target="_self">PriorityQueueProxy</a></em>
+        [<em>A</em>](<code>implicit </code><em>view$1</em> : (<a href="../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>])<code> extends </code><a href="../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>[<a href="../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/SeqProxy.html" target="_self">SeqProxy</a>[<a href="../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]
+        
+        <div>This class implements priority queues using a heap. The
+  elements of the queue have to be ordered in terms of the
+  <code>Ordered[T]</code> class.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Publisher.html" target="_self">Publisher</a></em>
+        [<em>A</em>, <em>This</em> &lt;: <a href="../../scala/collection/mutable/Publisher.html" target="_self">Publisher</a>[<a href="../../scala/collection/mutable/Publisher.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/Publisher.html#This" target="_self">This</a>]]<code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><code>Publisher[A,This]</code> objects publish events of type <code>A</code>
+  to all registered subscribers. When subscribing, a subscriber may specify
+  a filter which can be used to constrain the number of events sent to the
+  subscriber. Subscribers may suspend their subscription, or reactivate a
+  suspended subscription. Class <code>Publisher</code> is typically used
+  as a mixin. The type variable <code>This</code> models self types.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Queue.html" target="_self">Queue</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/mutable/MutableList.html" target="_self">MutableList</a>[<a href="../../scala/collection/mutable/Queue.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/mutable/CloneableCollection.html" target="_self">CloneableCollection</a>
+        
+        <div><code>Queue</code> objects implement data structures that allow to
+  insert and retrieve elements in a first-in-first-out (FIFO) manner.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/QueueProxy.html" target="_self">QueueProxy</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/mutable/Queue.html" target="_self">Queue</a>[<a href="../../scala/collection/mutable/QueueProxy.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/SeqProxy.html" target="_self">SeqProxy</a>[<a href="../../scala/collection/mutable/QueueProxy.html#A" target="_self">A</a>]
+        
+        <div><code>Queue</code> objects implement data structures that allow to
+  insert and retrieve elements in a first-in-first-out (FIFO) manner.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Remove.html" target="_self">Remove</a></em>
+        [+<em>A</em>](<code>val </code><em>elem</em> : <a href="../../scala/collection/mutable/Remove.html#A" target="_self">A</a>)<code> extends </code><a href="../../scala/collection/mutable/Message.html" target="_self">Message</a>[<a href="../../scala/collection/mutable/Remove.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>This observable update refers to removal operations of elements
+  from collection classes.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Reset.html" target="_self">Reset</a></em>
+        [+<em>A</em>]<code> extends </code><a href="../../scala/collection/mutable/Message.html" target="_self">Message</a>[<a href="../../scala/collection/mutable/Reset.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>This command refers to reset operations.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/ResizableArray.html" target="_self">ResizableArray</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>[<a href="../../scala/collection/mutable/ResizableArray.html#A" target="_self">A</a>]
+        
+        <div>This class is used internally to implement data structures that
+  are based on resizable arrays.
+  //todo enrich with more efficient operations</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/RevertableHistory.html" target="_self">RevertableHistory</a></em>
+        [<em>A</em> &lt;: <a href="../../scala/collection/mutable/Undoable.html" target="_self">Undoable</a>, <em>B</em>]<code> extends </code><a href="../../scala/collection/mutable/History.html" target="_self">History</a>[<a href="../../scala/collection/mutable/RevertableHistory.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/RevertableHistory.html#B" target="_self">B</a>]<code> with </code><a href="../../scala/collection/mutable/Undoable.html" target="_self">Undoable</a>
+        
+        <div>A revertable history is a <code>History</code> object which supports
+  an undo operation. Type variable <code>A</code> refers to the type
+  of the published events, <code>B</code> denotes the publisher type.
+  Type <code>B</code> is typically a subtype of <code>Publisher</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Script.html" target="_self">Script</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/mutable/ArrayBuffer.html" target="_self">ArrayBuffer</a>[<a href="../../scala/collection/mutable/Message.html" target="_self">Message</a>[<a href="../../scala/collection/mutable/Script.html#A" target="_self">A</a>]]<code> with </code><a href="../../scala/collection/mutable/Message.html" target="_self">Message</a>[<a href="../../scala/collection/mutable/Script.html#A" target="_self">A</a>]
+        
+        <div>Objects of this class represent compound messages consisting
+  of a sequence of other messages.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Scriptable.html" target="_self">Scriptable</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Classes that mix in the <code>Scriptable</code> class allow
+  messages to be sent to objects of that class.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Set.html" target="_self">Set</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/Set.html" target="_self">Set</a>[<a href="../../scala/collection/mutable/Set.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/mutable/Scriptable.html" target="_self">Scriptable</a>[<a href="../../scala/collection/mutable/Message.html" target="_self">Message</a>[<a href="../../scala/collection/mutable/Set.html#A" target="_self">A</a>]]<code> with </code><a href="../../scala/collection/mutable/CloneableCollection.html" target="_self">CloneableCollection</a>
+        
+        <div>This class represents mutable sets. Concrete set implementations
+  just have to provide functionality for the abstract methods in
+  <a href="../Set.html" target="contentFrame">
+  <code>scala.collection.Set</code></a> as well as for <code>+=</code>,
+  <code>-= and <code>clear</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/SetProxy.html" target="_self">SetProxy</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/mutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/mutable/SetProxy.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/SetProxy.html" target="_self">SetProxy</a>[<a href="../../scala/collection/mutable/SetProxy.html#A" target="_self">A</a>]
+        
+        <div>This is a simple wrapper class for <a href="Set.html"
+  target="contentFrame"><code>scala.collection.mutable.Set</code></a>.
+  It is most useful for assembling customized set abstractions
+  dynamically using object composition and forwarding.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/SingleLinkedList.html" target="_self">SingleLinkedList</a></em>
+        [<em>A</em>, <em>This</em> &lt;: <a href="../../scala/collection/mutable/SingleLinkedList.html" target="_self">SingleLinkedList</a>[<a href="../../scala/collection/mutable/SingleLinkedList.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/SingleLinkedList.html#This" target="_self">This</a>] &gt;: <a href="../../scala/Null.html" target="_self">Null</a>]<code> extends </code><a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/collection/mutable/SingleLinkedList.html#A" target="_self">A</a>]
+        
+        <div>This extensible class may be used as a basis for implementing linked
+  list. Type variable <code>A</code> refers to the element type of the
+  list, type variable <code>This</code> is used to model self types of
+  linked lists.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Stack.html" target="_self">Stack</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/mutable/MutableList.html" target="_self">MutableList</a>[<a href="../../scala/collection/mutable/Stack.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/mutable/CloneableCollection.html" target="_self">CloneableCollection</a>
+        
+        <div>A stack implements a data structure which allows to store and retrieve
+  objects in a last-in-first-out (LIFO) fashion.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/StackProxy.html" target="_self">StackProxy</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/mutable/Stack.html" target="_self">Stack</a>[<a href="../../scala/collection/mutable/StackProxy.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/SeqProxy.html" target="_self">SeqProxy</a>[<a href="../../scala/collection/mutable/StackProxy.html#A" target="_self">A</a>]
+        
+        <div>A stack implements a data structure which allows to store and retrieve
+  objects in a last-in-first-out (LIFO) fashion.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Subscriber.html" target="_self">Subscriber</a></em>
+        [-<em>A</em>, -<em>B</em>]<code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><code>Subscriber[A, B]</code> objects may subscribe to events of
+  type <code>A</code> published by an object of type <code>B</code>.
+  <code>B</code> is typically a subtype of <a href="Publisher.html"
+  target="contentFrame"><code>Publisher</code></a>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/SynchronizedBuffer.html" target="_self">SynchronizedBuffer</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../../scala/collection/mutable/SynchronizedBuffer.html#A" target="_self">A</a>]
+        
+        <div>This class should be used as a mixin. It synchronizes the <code>Buffer</code>
+  methods of the class into which it is mixed in.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/SynchronizedMap.html" target="_self">SynchronizedMap</a></em>
+        [<em>A</em>, <em>B</em>]<code> extends </code><a href="../../scala/collection/mutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/mutable/SynchronizedMap.html#A" target="_self">A</a>, <a href="../../scala/collection/mutable/SynchronizedMap.html#B" target="_self">B</a>]
+        
+        <div>This class should be used as a mixin. It synchronizes the <code>Map</code>
+  functions of the class into which it is mixed in.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/SynchronizedPriorityQueue.html" target="_self">SynchronizedPriorityQueue</a></em>
+        [<em>A</em>](<code>implicit </code><em>view$1</em> : (<a href="../../scala/collection/mutable/SynchronizedPriorityQueue.html#A" target="_self">A</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/collection/mutable/SynchronizedPriorityQueue.html#A" target="_self">A</a>])<code> extends </code><a href="../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>[<a href="../../scala/collection/mutable/SynchronizedPriorityQueue.html#A" target="_self">A</a>]
+        
+        <div>This class implements synchronized priority queues using a heap.
+  The elements of the queue have to be ordered in terms of the
+  <code>Ordered[T]</code> class.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/SynchronizedQueue.html" target="_self">SynchronizedQueue</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/mutable/Queue.html" target="_self">Queue</a>[<a href="../../scala/collection/mutable/SynchronizedQueue.html#A" target="_self">A</a>]
+        
+        <div>This is a synchronized version of the <code>Queue[T]</code> class. It
+  implements a data structure that allows one to insert and retrieve
+  elements in a first-in-first-out (FIFO) manner.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/SynchronizedSet.html" target="_self">SynchronizedSet</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/mutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/mutable/SynchronizedSet.html#A" target="_self">A</a>]
+        
+        <div>This class should be used as a mixin. It synchronizes the <code>Set</code>
+  functions of the class into which it is mixed in.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/SynchronizedStack.html" target="_self">SynchronizedStack</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/mutable/Stack.html" target="_self">Stack</a>[<a href="../../scala/collection/mutable/SynchronizedStack.html#A" target="_self">A</a>]
+        
+        <div>This is a synchronized version of the <code>Stack[T]</code> class. It
+  implements a data structure which allows to store and retrieve
+  objects in a last-in-first-out (LIFO) fashion.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Undoable.html" target="_self">Undoable</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Classes that mix in the <code>Undoable</code> class provide an operation
+  <code>undo</code> which can be used to undo the last operation.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Update.html" target="_self">Update</a></em>
+        [+<em>A</em>](<code>val </code><em>elem</em> : <a href="../../scala/collection/mutable/Update.html#A" target="_self">A</a>)<code> extends </code><a href="../../scala/collection/mutable/Message.html" target="_self">Message</a>[<a href="../../scala/collection/mutable/Update.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>This observable update refers to destructive modification operations
+  of elements from collection classes.</div>
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/End$object.html" target="_self">End</a></em>
+        <code> extends </code><a href="../../scala/collection/mutable/Location.html" target="_self">Location</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/HashMap$object.html" target="_self">HashMap</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This class implements mutable maps using a hashtable.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/HashSet$object.html" target="_self">HashSet</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This class implements mutable sets using a hashtable.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Map$object.html" target="_self">Map</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The canonical factory methods for <a href="Map.html">mutable maps</a>.
+  These currently return <a href="HashMap.html">HashMap's</a>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/NA$object.html" target="_self">NA</a></em>
+        <code> extends </code><a href="../../scala/collection/mutable/Location.html" target="_self">Location</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Set$object.html" target="_self">Set</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The canonical factory methods for <a href="Set.html">mutable sets</a>.
+  Currently these return <a href="HashSet.html">HashSet's</a>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/mutable/Start$object.html" target="_self">Start</a></em>
+        <code> extends </code><a href="../../scala/collection/mutable/Location.html" target="_self">Location</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>        
+        </table></body>
+      </html>

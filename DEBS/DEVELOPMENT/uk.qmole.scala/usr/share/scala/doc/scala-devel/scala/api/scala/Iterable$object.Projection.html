@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>trait Projection in scala.Iterable</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../scala/Iterable$object.html" target="_self">scala.Iterable</a>
+        <br></br>
+        <span class="entity">trait  Projection</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/Iterable"><code>scala/Iterable.scala</code></a>]
+      </div><hr></hr>
+      <a name="Projection"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>trait</code>
+        <em>Projection</em>[+<em>A</em>]
+      </dt>
+      <dd><code> extends </code><a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>]</dd>
+    </dl>
+      <dl><dd>A non-strict projection of an iterable.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Sean McDirmid</dd></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../scala/Seq$object.Projection.html" target="_self">Seq.Projection</a>, <a href="../scala/collection/Map$object.Projection.html" target="_self">Map.Projection</a>, <a href="../scala/collection/jcl/MutableIterable$object.Projection.html" target="_self">MutableIterable.Projection</a></dd>
+      </dl><hr></hr>
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable$object.Projection.html#append%28%3D%3EIterable%5BB%5D%29" target="_self">append</a></em>
+        [<em>B</em> &gt;: <a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>](<em>rest</em> : =&gt; <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable$object.Projection.html#append%28%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Iterable$object.Projection.html" target="_self">Projection</a>[<a href="../scala/Iterable$object.Projection.html#append%28%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div>The projection resulting from the concatenation of this projection with the <code>rest</code> projection.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable$object.Projection.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a></em>
+        (<em>p</em> : (<a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Iterable$object.Projection.html" target="_self">Projection</a>[<a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>]
+        
+        <div>non-strict</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable$object.Projection.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a></em>
+        [<em>B</em>](<em>f</em> : (<a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable$object.Projection.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Iterable$object.Projection.html" target="_self">Projection</a>[<a href="../scala/Iterable$object.Projection.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div>non-strict</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable$object.Projection.html#force" target="_self">force</a></em>
+         : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>]
+        
+        <div>convert to a copied strict collection</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable$object.Projection.html#map%28%28A%29%3D%3EB%29" target="_self">map</a></em>
+        [<em>B</em>](<em>f</em> : (<a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable$object.Projection.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/Iterable$object.Projection.html" target="_self">Projection</a>[<a href="../scala/Iterable$object.Projection.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>]
+        
+        <div>non-strict</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable$object.Projection.html#projection" target="_self">projection</a></em>
+         : <a href="../scala/Iterable$object.Projection.html" target="_self">Projection</a>[<a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>]
+        
+        <div>returns a projection that can be used to call non-strict <code>filter</code>,
+   <code>map</code>, and <code>flatMap</code> methods that build projections
+   of the collection.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable$object.Projection.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a></em>
+        (<em>p</em> : (<a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Iterable$object.Projection.html" target="_self">Projection</a>[<a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>]
+        
+        <div>non-strict</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Iterable.html" target="_self">Iterable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Iterable.html#elements" target="_self">elements</a> (abstract), <a href="../scala/Iterable.html#concat%28Iterable%5BB%5D%29" target="_self">concat</a>, <a href="../scala/Iterable.html#%2B%2B%28Iterable%5BB%5D%29" target="_self">++</a>, <a href="../scala/Iterable.html#partition%28%28A%29%3D%3EBoolean%29" target="_self">partition</a>, <a href="../scala/Iterable.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a>, <a href="../scala/Iterable.html#take%28Int%29" target="_self">take</a>, <a href="../scala/Iterable.html#drop%28Int%29" target="_self">drop</a>, <a href="../scala/Iterable.html#foreach%28%28A%29%3D%3EUnit%29" target="_self">foreach</a>, <a href="../scala/Iterable.html#forall%28%28A%29%3D%3EBoolean%29" target="_self">forall</a>, <a href="../scala/Iterable.html#exists%28%28A%29%3D%3EBoolean%29" target="_self">exists</a>, <a href="../scala/Iterable.html#find%28%28A%29%3D%3EBoolean%29" target="_self">find</a>, <a href="../scala/Iterable.html#findIndexOf%28%28A%29%3D%3EBoolean%29" target="_self">findIndexOf</a>, <a href="../scala/Iterable.html#indexOf%28B%29" target="_self">indexOf</a>, <a href="../scala/Iterable.html#foldLeft%28B%29" target="_self">foldLeft</a>, <a href="../scala/Iterable.html#foldRight%28B%29" target="_self">foldRight</a>, <a href="../scala/Iterable.html#%2F%3A%28B%29" target="_self">/:</a>, <a href="../scala/Iterable.html#%3A%5C%28B%29" target="_self">:\</a>, <a href="../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29" target="_self">reduceLeft</a>, <a href="../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29" target="_self">reduceRight</a>, <a href="../scala/Iterable.html#copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29" target="_self">copyToBuffer</a>, <a href="../scala/Iterable.html#sameElements%28Iterable%5BB%5D%29" target="_self">sameElements</a>, <a href="../scala/Iterable.html#toList" target="_self">toList</a>, <a href="../scala/Iterable.html#toStream" target="_self">toStream</a>, <a href="../scala/Iterable.html#mkString%28String%2CString%2CString%29" target="_self">mkString</a>, <a href="../scala/Iterable.html#mkString%28String%29" target="_self">mkString</a>, <a href="../scala/Iterable.html#mkString" target="_self">mkString</a>, <a href="../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%2CString%2CString%29" target="_self">addString</a>, <a href="../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%29" target="_self">addString</a>, <a href="../scala/Iterable.html#copyToArray%28Array%5BB%5D%2CInt%29" target="_self">copyToArray</a>, <a href="../scala/Iterable.html#isEmpty" target="_self">isEmpty</a>, <a href="../scala/Iterable.html#hasDefiniteSize" target="_self">hasDefiniteSize</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="projection"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>projection</em> : <a href="../scala/Iterable$object.Projection.html" target="_self">Projection</a>[<a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>returns a projection that can be used to call non-strict <code>filter</code>,
+   <code>map</code>, and <code>flatMap</code> methods that build projections
+   of the collection.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Iterable.html" target="_self">Iterable</a>.<a href="../scala/Iterable.html#projection" target="_self">projection</a>
+        </dd>
+      </dl><hr></hr>
+<a name="force"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>force</em> : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>convert to a copied strict collection</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="filter%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>filter</em>(<em>p</em> : (<a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Iterable$object.Projection.html" target="_self">Projection</a>[<a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>non-strict</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Iterable.html" target="_self">Iterable</a>.<a href="../scala/Iterable.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a>
+        </dd>
+      </dl><hr></hr>
+<a name="map%28%28A%29%3D%3EB%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>map</em>[<em>B</em>](<em>f</em> : (<a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable$object.Projection.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/Iterable$object.Projection.html" target="_self">Projection</a>[<a href="../scala/Iterable$object.Projection.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>non-strict</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Iterable.html" target="_self">Iterable</a>.<a href="../scala/Iterable.html#map%28%28A%29%3D%3EB%29" target="_self">map</a>
+        </dd>
+      </dl><hr></hr>
+<a name="flatMap%28%28A%29%3D%3EIterable%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>flatMap</em>[<em>B</em>](<em>f</em> : (<a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable$object.Projection.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Iterable$object.Projection.html" target="_self">Projection</a>[<a href="../scala/Iterable$object.Projection.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>non-strict</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Iterable.html" target="_self">Iterable</a>.<a href="../scala/Iterable.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a>
+        </dd>
+      </dl><hr></hr>
+<a name="takeWhile%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>takeWhile</em>(<em>p</em> : (<a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Iterable$object.Projection.html" target="_self">Projection</a>[<a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>non-strict</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Iterable.html" target="_self">Iterable</a>.<a href="../scala/Iterable.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a>
+        </dd>
+      </dl><hr></hr>
+<a name="append%28%3D%3EIterable%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>append</em>[<em>B</em> &gt;: <a href="../scala/Iterable$object.Projection.html#A" target="_self">A</a>](<em>rest</em> : =&gt; <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable$object.Projection.html#append%28%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Iterable$object.Projection.html" target="_self">Projection</a>[<a href="../scala/Iterable$object.Projection.html#append%28%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The projection resulting from the concatenation of this projection with the <code>rest</code> projection.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>rest - </code>The projection that gets appended to this projection</dd></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

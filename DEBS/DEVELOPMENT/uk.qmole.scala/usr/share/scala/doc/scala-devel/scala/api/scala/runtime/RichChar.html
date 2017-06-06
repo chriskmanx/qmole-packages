@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class RichChar in scala.runtime</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../scala/runtime$package.html" target="_self">scala.runtime</a>
+        <br></br>
+        <span class="entity">class  RichChar</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/runtime/RichChar"><code>scala/runtime/RichChar.scala</code></a>]
+      </div><hr></hr>
+      <a name="RichChar"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>class</code>
+        <em>RichChar</em>(<em>x</em> : <a href="../../scala/Char.html" target="_self">Char</a>)
+      </dt>
+      <dd><code> extends </code><a href="../../scala/Proxy.html" target="_self">Proxy</a><code> with </code><a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/Char.html" target="_self">Char</a>]</dd>
+    </dl>
+      <dl><dd><p>
+    For example, in the following code
+  </p>
+  <pre>
+    <b>object</b> test <b>extends</b> Application {
+      Console.println(<chr>'\40'</chr>.isWhitespace)
+      Console.println('\011'.isWhitespace)
+      Console.println('1'.asDigit == 1)
+      Console.println('A'.asDigit == 10)
+    }</pre>
+  <p>
+    the implicit conversions are performed using the predefined view
+    <a href="../Predef$object.html#charWrapper(scala.Char)"
+    target="contentFrame"><code>Predef.charWrapper</code></a>.
+  </p></dd></dl>
+      <dl></dl>
+    
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/runtime/RichChar.html#asDigit" target="_self">asDigit</a></em>
+         : <a href="../../scala/Int.html" target="_self">Int</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/runtime/RichChar.html#compare%28Char%29" target="_self">compare</a></em>
+        (<em>y</em> : <a href="../../scala/Char.html" target="_self">Char</a>) : <a href="../../scala/Int.html" target="_self">Int</a>
+        
+        <div>Result of comparing <code>this</code> with operand <code>that</code>.
+    returns <code>x</code> where
+    <code>x &lt; 0</code>    iff    <code>this &lt; that</code>
+    <code>x == 0</code>   iff    <code>this == that</code>
+    <code>x &gt; 0</code>    iff    <code>this &gt; that</code></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/runtime/RichChar.html#isControl" target="_self">isControl</a></em>
+         : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/runtime/RichChar.html#isDigit" target="_self">isDigit</a></em>
+         : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/runtime/RichChar.html#isLetter" target="_self">isLetter</a></em>
+         : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/runtime/RichChar.html#isLetterOrDigit" target="_self">isLetterOrDigit</a></em>
+         : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/runtime/RichChar.html#isLowerCase" target="_self">isLowerCase</a></em>
+         : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/runtime/RichChar.html#isUpperCase" target="_self">isUpperCase</a></em>
+         : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/runtime/RichChar.html#isWhitespace" target="_self">isWhitespace</a></em>
+         : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/runtime/RichChar.html#self" target="_self">self</a></em>
+         : <a href="../../scala/Any.html" target="_self">Any</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/runtime/RichChar.html#to%28Char%29" target="_self">to</a></em>
+        (<em>y</em> : <a href="../../scala/Char.html" target="_self">Char</a>) : <a href="../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../scala/Char.html" target="_self">Char</a>]
+        
+        <div>Create an Iterator[Char] over the characters from 'x' to 'y'</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/runtime/RichChar.html#toLowerCase" target="_self">toLowerCase</a></em>
+         : <a href="../../scala/Char.html" target="_self">Char</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/runtime/RichChar.html#toUpperCase" target="_self">toUpperCase</a></em>
+         : <a href="../../scala/Char.html" target="_self">Char</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/runtime/RichChar.html#until%28Char%29" target="_self">until</a></em>
+        (<em>limit</em> : <a href="../../scala/Char.html" target="_self">Char</a>) : <a href="../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../scala/Char.html" target="_self">Char</a>]
+        
+        <div>Create an Iterator[Char] over the characters from 'x' to 'y' - 1</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Ordered.html" target="_self">Ordered</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Ordered.html#%3C%28A%29" target="_self">&lt;</a>, <a href="../../scala/Ordered.html#%3E%28A%29" target="_self">&gt;</a>, <a href="../../scala/Ordered.html#%3C%3D%28A%29" target="_self">&lt;=</a>, <a href="../../scala/Ordered.html#%3E%3D%28A%29" target="_self">&gt;=</a>, <a href="../../scala/Ordered.html#compareTo%28A%29" target="_self">compareTo</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Proxy.html" target="_self">Proxy</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Proxy.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../scala/Proxy.html#equals%28Any%29" target="_self">equals</a>, <a href="../../scala/Proxy.html#toString%28%29" target="_self">toString</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="self"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>self</em> : <a href="../../scala/Any.html" target="_self">Any</a>
+      </dt>
+      <dd></dd>
+    </dl><dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/Proxy.html" target="_self">Proxy</a>.<a href="../../scala/Proxy.html#self" target="_self">self</a>
+        </dd>
+      </dl><hr></hr>
+<a name="compare%28Char%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>compare</em>(<em>y</em> : <a href="../../scala/Char.html" target="_self">Char</a>) : <a href="../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Result of comparing <code>this</code> with operand <code>that</code>.
+    returns <code>x</code> where
+    <code>x &lt; 0</code>    iff    <code>this &lt; that</code>
+    <code>x == 0</code>   iff    <code>this == that</code>
+    <code>x &gt; 0</code>    iff    <code>this &gt; that</code></dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/Ordered.html" target="_self">Ordered</a>.<a href="../../scala/Ordered.html#compare%28A%29" target="_self">compare</a>
+        </dd>
+      </dl><hr></hr>
+<a name="asDigit"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>asDigit</em> : <a href="../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="isControl"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>isControl</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="isDigit"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>isDigit</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="isLetter"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>isLetter</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="isLetterOrDigit"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>isLetterOrDigit</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="isLowerCase"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>isLowerCase</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="isUpperCase"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>isUpperCase</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="isWhitespace"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>isWhitespace</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="toLowerCase"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>toLowerCase</em> : <a href="../../scala/Char.html" target="_self">Char</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="toUpperCase"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>toUpperCase</em> : <a href="../../scala/Char.html" target="_self">Char</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="until%28Char%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>until</em>(<em>limit</em> : <a href="../../scala/Char.html" target="_self">Char</a>) : <a href="../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../scala/Char.html" target="_self">Char</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create an Iterator[Char] over the characters from 'x' to 'y' - 1</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="to%28Char%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>to</em>(<em>y</em> : <a href="../../scala/Char.html" target="_self">Char</a>) : <a href="../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../scala/Char.html" target="_self">Char</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create an Iterator[Char] over the characters from 'x' to 'y'</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

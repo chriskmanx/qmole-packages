@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.collection.jcl</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/ArrayList.html" target="_self">ArrayList</a></em>
+        [<em>A</em>](<code>val override </code><em>underlying</em> : <a href="" target="contentFrame" class="java/util/ArrayList">java.util.ArrayList</a>)<code> extends </code><a href="../../scala/collection/jcl/BufferWrapper.html" target="_self">BufferWrapper</a>[<a href="../../scala/collection/jcl/ArrayList.html#A" target="_self">A</a>]
+        
+        <div>Creates a buffer backed by a Java array list.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/Buffer.html" target="_self">Buffer</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/RandomAccessSeq$object.Mutable.html" target="_self">Mutable</a>[<a href="../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/jcl/Ranged.html" target="_self">Ranged</a>[<a href="../../scala/Int.html" target="_self">Int</a>, <a href="../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/jcl/MutableSeq.html" target="_self">MutableSeq</a>[<a href="../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/jcl/Collection.html" target="_self">Collection</a>[<a href="../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]
+        
+        <div>A mutable sequence that supports element insertion and update.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/BufferIterator.html" target="_self">BufferIterator</a></em>
+        [<em>K</em>, <em>A</em>]<code> extends </code><a href="../../scala/collection/jcl/SeqIterator.html" target="_self">SeqIterator</a>[<a href="../../scala/collection/jcl/BufferIterator.html#K" target="_self">K</a>, <a href="../../scala/collection/jcl/BufferIterator.html#A" target="_self">A</a>]
+        
+        <div>An iterator for a buffer that supports element update and insertion.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/BufferWrapper.html" target="_self">BufferWrapper</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/jcl/Buffer.html" target="_self">Buffer</a>[<a href="../../scala/collection/jcl/BufferWrapper.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/jcl/CollectionWrapper.html" target="_self">CollectionWrapper</a>[<a href="../../scala/collection/jcl/BufferWrapper.html#A" target="_self">A</a>]
+        
+        <div>Wraps Java lists.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/Collection.html" target="_self">Collection</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/jcl/MutableIterable.html" target="_self">MutableIterable</a>[<a href="../../scala/collection/jcl/Collection.html#A" target="_self">A</a>]
+        
+        <div>Analogous to a Java collection.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/CollectionWrapper.html" target="_self">CollectionWrapper</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/jcl/Collection.html" target="_self">Collection</a>[<a href="../../scala/collection/jcl/CollectionWrapper.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/jcl/IterableWrapper.html" target="_self">IterableWrapper</a>[<a href="../../scala/collection/jcl/CollectionWrapper.html#A" target="_self">A</a>]
+        
+        <div>Used to wrap Java collections in Scala.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/HashMap.html" target="_self">HashMap</a></em>
+        [<em>K</em>, <em>E</em>](<code>val override </code><em>underlying</em> : <a href="" target="contentFrame" class="java/util/HashMap">java.util.HashMap</a>)<code> extends </code><a href="../../scala/collection/jcl/MapWrapper.html" target="_self">MapWrapper</a>[<a href="../../scala/collection/jcl/HashMap.html#K" target="_self">K</a>, <a href="../../scala/collection/jcl/HashMap.html#E" target="_self">E</a>]
+        
+        <div>A map that is backed by a Java hash map.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/HashSet.html" target="_self">HashSet</a></em>
+        [<em>A</em>](<code>val override </code><em>underlying</em> : <a href="" target="contentFrame" class="java/util/HashSet">java.util.HashSet</a>)<code> extends </code><a href="../../scala/collection/jcl/SetWrapper.html" target="_self">SetWrapper</a>[<a href="../../scala/collection/jcl/HashSet.html#A" target="_self">A</a>]
+        
+        <div>A hash set that is backed by a Java hash set.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/IdentityHashMap.html" target="_self">IdentityHashMap</a></em>
+        [<em>K</em>, <em>E</em>](<code>val override </code><em>underlying</em> : <a href="" target="contentFrame" class="java/util/IdentityHashMap">java.util.IdentityHashMap</a>)<code> extends </code><a href="../../scala/collection/jcl/MapWrapper.html" target="_self">MapWrapper</a>[<a href="../../scala/collection/jcl/IdentityHashMap.html#K" target="_self">K</a>, <a href="../../scala/collection/jcl/IdentityHashMap.html#E" target="_self">E</a>]
+        
+        <div>A map that is backed by a Java identity hash map, which compares keys
+  by their reference-based identity as opposed to using equals and hashCode.
+  An identity hash map will often perform better than traditional hash map
+  because it can utilize linear probing.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/IterableWrapper.html" target="_self">IterableWrapper</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/jcl/MutableIterable.html" target="_self">MutableIterable</a>[<a href="../../scala/collection/jcl/IterableWrapper.html#A" target="_self">A</a>]
+        
+        <div>A wrapper around a Java collection that only supports remove mutations.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/LinkedHashMap.html" target="_self">LinkedHashMap</a></em>
+        [<em>K</em>, <em>E</em>](<code>val override </code><em>underlying</em> : <a href="" target="contentFrame" class="java/util/LinkedHashMap">java.util.LinkedHashMap</a>)<code> extends </code><a href="../../scala/collection/jcl/MapWrapper.html" target="_self">MapWrapper</a>[<a href="../../scala/collection/jcl/LinkedHashMap.html#K" target="_self">K</a>, <a href="../../scala/collection/jcl/LinkedHashMap.html#E" target="_self">E</a>]
+        
+        <div>A map that is backed by a Java linked hash map, which fixes iteration
+  order in terms of insertion order.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/LinkedHashSet.html" target="_self">LinkedHashSet</a></em>
+        [<em>A</em>](<code>val override </code><em>underlying</em> : <a href="" target="contentFrame" class="java/util/LinkedHashSet">java.util.LinkedHashSet</a>)<code> extends </code><a href="../../scala/collection/jcl/SetWrapper.html" target="_self">SetWrapper</a>[<a href="../../scala/collection/jcl/LinkedHashSet.html#A" target="_self">A</a>]
+        
+        <div>A set that is backed by a Java linked hash set, which fixes iteration
+  order in terms of insertion order.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/LinkedList.html" target="_self">LinkedList</a></em>
+        [<em>A</em>](<code>val override </code><em>underlying</em> : <a href="" target="contentFrame" class="java/util/LinkedList">java.util.LinkedList</a>)<code> extends </code><a href="../../scala/collection/jcl/BufferWrapper.html" target="_self">BufferWrapper</a>[<a href="../../scala/collection/jcl/LinkedList.html#A" target="_self">A</a>]
+        
+        <div>Creates a buffer backed by a Java linked list. Includes additional
+  peek/poll/removeFirst/removeLast APIs that are useful in implementing
+  queues and stacks.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/Map.html" target="_self">Map</a></em>
+        [<em>K</em>, <em>E</em>]<code> extends </code><a href="../../scala/collection/jcl/MutableIterable.html" target="_self">MutableIterable</a>[(<a href="../../scala/collection/jcl/Map.html#K" target="_self">K</a>, <a href="../../scala/collection/jcl/Map.html#E" target="_self">E</a>)]<code> with </code><a href="../../scala/collection/mutable/Map.html" target="_self">Map</a>[<a href="../../scala/collection/jcl/Map.html#K" target="_self">K</a>, <a href="../../scala/collection/jcl/Map.html#E" target="_self">E</a>]
+        
+        <div>A mutable map that is compatible with Java maps.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/MapWrapper.html" target="_self">MapWrapper</a></em>
+        [<em>K</em>, <em>E</em>]<code> extends </code><a href="../../scala/collection/jcl/Map.html" target="_self">Map</a>[<a href="../../scala/collection/jcl/MapWrapper.html#K" target="_self">K</a>, <a href="../../scala/collection/jcl/MapWrapper.html#E" target="_self">E</a>]
+        
+        <div>A wrapper around a Java map.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/MutableIterable.html" target="_self">MutableIterable</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/Collection.html" target="_self">Collection</a>[<a href="../../scala/collection/jcl/MutableIterable.html#A" target="_self">A</a>]
+        
+        <div>An iterable collection that supports remove operations.
+ Useful for representing projections of mutable collections that where only 
+ the remove operation makes sense.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/MutableIterator.html" target="_self">MutableIterator</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../scala/collection/jcl/MutableIterator.html#A" target="_self">A</a>]
+        
+        <div>An iterator that supports the remove operation.
+  These iterators wrap Java iterators, and so have the same fail fast
+  behavior when dealing with concurrent modifications.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/MutableSeq.html" target="_self">MutableSeq</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/collection/jcl/MutableSeq.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/jcl/MutableIterable.html" target="_self">MutableIterable</a>[<a href="../../scala/collection/jcl/MutableSeq.html#A" target="_self">A</a>]
+        
+        <div>A mutable sequence that supports the remove operation and is ordered.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/Ranged.html" target="_self">Ranged</a></em>
+        [<em>K</em>, <em>A</em>]<code> extends </code><a href="../../scala/collection/Ranged.html" target="_self">Ranged</a>[<a href="../../scala/collection/jcl/Ranged.html#K" target="_self">K</a>, <a href="../../scala/collection/jcl/Ranged.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/jcl/MutableIterable.html" target="_self">MutableIterable</a>[<a href="../../scala/collection/jcl/Ranged.html#A" target="_self">A</a>]
+        
+        <div>Any collection (including maps) whose keys (or elements) are ordered.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/SeqIterator.html" target="_self">SeqIterator</a></em>
+        [<em>K</em>, <em>A</em>]<code> extends </code><a href="../../scala/collection/jcl/MutableIterator.html" target="_self">MutableIterator</a>[<a href="../../scala/collection/jcl/SeqIterator.html#A" target="_self">A</a>]
+        
+        <div>An iterator for a sequence that can move both forwards and backwards.
+  over a set of ordered keys.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/Set.html" target="_self">Set</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/mutable/Set.html" target="_self">Set</a>[<a href="../../scala/collection/jcl/Set.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/jcl/Collection.html" target="_self">Collection</a>[<a href="../../scala/collection/jcl/Set.html#A" target="_self">A</a>]
+        
+        <div>Analogous to a Java set.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/SetWrapper.html" target="_self">SetWrapper</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/jcl/Set.html" target="_self">Set</a>[<a href="../../scala/collection/jcl/SetWrapper.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/jcl/CollectionWrapper.html" target="_self">CollectionWrapper</a>[<a href="../../scala/collection/jcl/SetWrapper.html#A" target="_self">A</a>]
+        
+        <div>Used to wrap Java sets.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/Sorted.html" target="_self">Sorted</a></em>
+        [<em>K</em>, <em>A</em>]<code> extends </code><a href="../../scala/collection/Sorted.html" target="_self">Sorted</a>[<a href="../../scala/collection/jcl/Sorted.html#K" target="_self">K</a>, <a href="../../scala/collection/jcl/Sorted.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/jcl/Ranged.html" target="_self">Ranged</a>[<a href="../../scala/collection/jcl/Sorted.html#K" target="_self">K</a>, <a href="../../scala/collection/jcl/Sorted.html#A" target="_self">A</a>]
+        
+        <div>Any collection (including maps) whose keys (or elements) are ordered.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/SortedMap.html" target="_self">SortedMap</a></em>
+        [<em>K</em>, <em>E</em>]<code> extends </code><a href="../../scala/collection/SortedMap.html" target="_self">SortedMap</a>[<a href="../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>, <a href="../../scala/collection/jcl/SortedMap.html#E" target="_self">E</a>]<code> with </code><a href="../../scala/collection/jcl/Map.html" target="_self">Map</a>[<a href="../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>, <a href="../../scala/collection/jcl/SortedMap.html#E" target="_self">E</a>]<code> with </code><a href="../../scala/collection/jcl/Sorted.html" target="_self">Sorted</a>[<a href="../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>, (<a href="../../scala/collection/jcl/SortedMap.html#K" target="_self">K</a>, <a href="../../scala/collection/jcl/SortedMap.html#E" target="_self">E</a>)]
+        
+        <div>A map whose keys are sorted.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/SortedMapWrapper.html" target="_self">SortedMapWrapper</a></em>
+        [<em>K</em>, <em>E</em>]<code> extends </code><a href="../../scala/collection/jcl/SortedMap.html" target="_self">SortedMap</a>[<a href="../../scala/collection/jcl/SortedMapWrapper.html#K" target="_self">K</a>, <a href="../../scala/collection/jcl/SortedMapWrapper.html#E" target="_self">E</a>]<code> with </code><a href="../../scala/collection/jcl/MapWrapper.html" target="_self">MapWrapper</a>[<a href="../../scala/collection/jcl/SortedMapWrapper.html#K" target="_self">K</a>, <a href="../../scala/collection/jcl/SortedMapWrapper.html#E" target="_self">E</a>]
+        
+        <div>A sorted map that wraps an underlying Java sorted map.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/SortedSet.html" target="_self">SortedSet</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/SortedSet.html" target="_self">SortedSet</a>[<a href="../../scala/collection/jcl/SortedSet.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/jcl/Set.html" target="_self">Set</a>[<a href="../../scala/collection/jcl/SortedSet.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/jcl/Sorted.html" target="_self">Sorted</a>[<a href="../../scala/collection/jcl/SortedSet.html#A" target="_self">A</a>, <a href="../../scala/collection/jcl/SortedSet.html#A" target="_self">A</a>]
+        
+        <div>Analogous to a Java sorted set.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/SortedSetWrapper.html" target="_self">SortedSetWrapper</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/collection/jcl/SortedSet.html" target="_self">SortedSet</a>[<a href="../../scala/collection/jcl/SortedSetWrapper.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/collection/jcl/SetWrapper.html" target="_self">SetWrapper</a>[<a href="../../scala/collection/jcl/SortedSetWrapper.html#A" target="_self">A</a>]
+        
+        <div><p>
+    A wrapper around a Java sorted set.
+  </p>
+  <p>
+    The comparator of the sorted set matches the comparator of this set. 
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/TreeMap.html" target="_self">TreeMap</a></em>
+        [<em>K</em>, <em>E</em>](<code>implicit </code><em>view$1</em> : (<a href="../../scala/collection/jcl/TreeMap.html#K" target="_self">K</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/collection/jcl/TreeMap.html#K" target="_self">K</a>])<code> extends </code><a href="../../scala/collection/jcl/SortedMapWrapper.html" target="_self">SortedMapWrapper</a>[<a href="../../scala/collection/jcl/TreeMap.html#K" target="_self">K</a>, <a href="../../scala/collection/jcl/TreeMap.html#E" target="_self">E</a>]
+        
+        <div>A sorted map that is backed by a Java tree map.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/TreeSet.html" target="_self">TreeSet</a></em>
+        [<em>A</em>](<code>implicit </code><em>view$1</em> : (<a href="../../scala/collection/jcl/TreeSet.html#A" target="_self">A</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/collection/jcl/TreeSet.html#A" target="_self">A</a>])<code> extends </code><a href="../../scala/collection/jcl/SortedSetWrapper.html" target="_self">SortedSetWrapper</a>[<a href="../../scala/collection/jcl/TreeSet.html#A" target="_self">A</a>]
+        
+        <div>Creates a sorted set that is backed by an underlying Java tree set. Elements
+  of the sorted set are ordered with respect to the ordered view bound of A.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/WeakHashMap.html" target="_self">WeakHashMap</a></em>
+        [<em>K</em>, <em>E</em>](<code>val override </code><em>underlying</em> : <a href="" target="contentFrame" class="java/util/WeakHashMap">java.util.WeakHashMap</a>)<code> extends </code><a href="../../scala/collection/jcl/MapWrapper.html" target="_self">MapWrapper</a>[<a href="../../scala/collection/jcl/WeakHashMap.html#K" target="_self">K</a>, <a href="../../scala/collection/jcl/WeakHashMap.html#E" target="_self">E</a>]
+        
+        <div><p>
+    A map that is backed by a Java weak hash map, whose keys are maintained
+    as weak references.
+  </p>
+  <p>
+    Because keys are weak references, the garbage collector can collect
+    them if they are not referred to elsewhere.
+  </p>
+  <p>
+    Useful for implementing caches.
+  </p></div>
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/Buffer$object.html" target="_self">Buffer</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/Collection$object.html" target="_self">Collection</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/Map$object.html" target="_self">Map</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/MutableIterable$object.html" target="_self">MutableIterable</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/MutableIterator$object.html" target="_self">MutableIterator</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/MutableSeq$object.html" target="_self">MutableSeq</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/Set$object.html" target="_self">Set</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/SortedMap$object.html" target="_self">SortedMap</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/collection/jcl/SortedSet$object.html" target="_self">SortedSet</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>        
+        </table></body>
+      </html>

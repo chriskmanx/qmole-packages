@@ -1,0 +1,1 @@
+(defparameter ext::CP950 (ext::make-encoding 'ext::WINDOWS-CP950))

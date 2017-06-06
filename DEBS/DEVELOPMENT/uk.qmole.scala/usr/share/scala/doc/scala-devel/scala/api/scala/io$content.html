@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.io</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/io/Source.html" target="_self">Source</a></em>
+        <code> extends </code><a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Char.html" target="_self">Char</a>]
+        
+        <div>The class <code>Source</code> implements an iterable representation
+  of source files. Calling method <code>reset</code> returns an identical,
+  resetted source.</div>
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/io/BytePickle$object.html" target="_self">BytePickle</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Pickler combinators.
+ Based on a Haskell library by Andrew Kennedy,
+ see <a href="http://research.microsoft.com/~akenn/fun/"
+ target="_top">http://research.microsoft.com/~akenn/fun/</a>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/io/Position$object.html" target="_self">Position</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    The object <code>Position</code> provides convenience methods to encode
+    line and column number in one single integer. The encode line (column)
+    numbers range from 0 to <code>LINE_MASK</code>
+    (<code>COLUMN_MASK</code>), where 0 indicates that the line (column) is
+    the undefined and 1 represents the first line (column). Line (Column)
+    numbers greater than <code>LINE_MASK</code>
+    (<code>COLUMN_MASK</code>) are replaced by <code>LINE_MASK</code>
+    (<code>COLUMN_MASK</code>). Furthermore, if the encoded line number is
+    <code>LINE_MASK</code>, the column number is always set to 0.
+  </p>
+  <p>
+    The following properties hold:
+  </p>
+  <ul>
+    <li>
+      the undefined position is 0: <code>encode(0,0) == 0</code>
+    </li>
+    <li>
+      encodings are non-negative : <code>encode(line,column) >= 0</code>
+    </li>
+    <li>
+      position order is preserved:
+      <code>(line1 &lt; line2) || (line1 == line2 &amp;&amp; column1 &lt; column2)</code>
+      <div>implies</div>
+      <code>encode(line1,column1) &lt;= encode(line2,column2)</code>
+    </li>
+  </ul></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/io/Source$object.html" target="_self">Source</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This object provides convenience methods to create an iterable
+  representation of a source file.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/io/UTF8Codec$object.html" target="_self">UTF8Codec</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div></div>
+      </td>
+    </tr>        
+        </table></body>
+      </html>

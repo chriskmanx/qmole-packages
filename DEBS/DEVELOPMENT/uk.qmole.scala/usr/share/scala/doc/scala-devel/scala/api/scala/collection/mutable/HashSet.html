@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class HashSet in scala.collection.mutable</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../scala/collection/mutable$package.html" target="_self">scala.collection.mutable</a>
+        <br></br>
+        <span class="entity">class  HashSet</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/collection/mutable/HashSet"><code>scala/collection/mutable/HashSet.scala</code></a>]
+      </div><hr></hr>
+      <a name="HashSet"></a><dl>
+      <dt>
+        @<a href="../../../scala/serializable.html" target="_self">serializable</a><br></br>
+        <code></code>
+        <code>class</code>
+        <em>HashSet</em>[<em>A</em>]
+      </dt>
+      <dd><code> extends </code><a href="../../../scala/collection/mutable/Set.html" target="_self">Set</a>[<a href="../../../scala/collection/mutable/HashSet.html#A" target="_self">A</a>]<code> with </code><a href="../../../scala/collection/mutable/FlatHashTable.html" target="_self">FlatHashTable</a>[<a href="../../../scala/collection/mutable/HashSet.html#A" target="_self">A</a>]</dd>
+    </dl>
+      
+
+<table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Values and Variables inherited from <a href="../../../scala/collection/mutable/FlatHashTable.html" target="_self">FlatHashTable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/mutable/FlatHashTable.html#table" target="_self">table</a>, <a href="../../../scala/collection/mutable/FlatHashTable.html#tableSize" target="_self">tableSize</a>, <a href="../../../scala/collection/mutable/FlatHashTable.html#threshold" target="_self">threshold</a>
+        </td></tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/HashSet.html#%2B%3D%28A%29" target="_self">+=</a></em>
+        (<em>elem</em> : <a href="../../../scala/collection/mutable/HashSet.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Add a new element to the set.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/HashSet.html#-%3D%28A%29" target="_self">-=</a></em>
+        (<em>elem</em> : <a href="../../../scala/collection/mutable/HashSet.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Removes a single element from a set.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/HashSet.html#clear%28%29" target="_self">clear</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Removes all elements from the set. After this operation is completed,
+    the set will be empty.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/HashSet.html#clone%28%29" target="_self">clone</a></em>
+         : <a href="../../../scala/collection/mutable/Set.html" target="_self">Set</a>[<a href="../../../scala/collection/mutable/HashSet.html#A" target="_self">A</a>]
+        
+        <div>Return a clone of this set.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/HashSet.html#contains%28A%29" target="_self">contains</a></em>
+        (<em>elem</em> : <a href="../../../scala/collection/mutable/HashSet.html#A" target="_self">A</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Checks if this set contains element <code>elem</code>.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/mutable/FlatHashTable.html" target="_self">FlatHashTable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/mutable/FlatHashTable.html#loadFactor" target="_self">loadFactor</a>, <a href="../../../scala/collection/mutable/FlatHashTable.html#loadFactorDenum" target="_self">loadFactorDenum</a>, <a href="../../../scala/collection/mutable/FlatHashTable.html#initialSize" target="_self">initialSize</a>, <a href="../../../scala/collection/mutable/FlatHashTable.html#size" target="_self">size</a>, <a href="../../../scala/collection/mutable/FlatHashTable.html#findEntry%28A%29" target="_self">findEntry</a>, <a href="../../../scala/collection/mutable/FlatHashTable.html#containsEntry%28A%29" target="_self">containsEntry</a>, <a href="../../../scala/collection/mutable/FlatHashTable.html#addEntry%28A%29" target="_self">addEntry</a>, <a href="../../../scala/collection/mutable/FlatHashTable.html#removeEntry%28A%29" target="_self">removeEntry</a>, <a href="../../../scala/collection/mutable/FlatHashTable.html#elements" target="_self">elements</a>, <a href="../../../scala/collection/mutable/FlatHashTable.html#elemHashCode%28A%29" target="_self">elemHashCode</a>, <a href="../../../scala/collection/mutable/FlatHashTable.html#improve%28Int%29" target="_self">improve</a>, <a href="../../../scala/collection/mutable/FlatHashTable.html#index%28Int%29" target="_self">index</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/mutable/Set.html" target="_self">Set</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/mutable/Set.html#update%28A%2CBoolean%29" target="_self">update</a>, <a href="../../../scala/collection/mutable/Set.html#%2B%3D%28A%2CA%2CA*%29" target="_self">+=</a>, <a href="../../../scala/collection/mutable/Set.html#%2B%2B%3D%28Iterable%5BA%5D%29" target="_self">++=</a>, <a href="../../../scala/collection/mutable/Set.html#%2B%2B%3D%28Iterator%5BA%5D%29" target="_self">++=</a>, <a href="../../../scala/collection/mutable/Set.html#%2B%28A%29" target="_self">+</a>, <a href="../../../scala/collection/mutable/Set.html#%2B%28A%2CA%2CA*%29" target="_self">+</a>, <a href="../../../scala/collection/mutable/Set.html#%2B%2B%28Iterable%5BA%5D%29" target="_self">++</a>, <a href="../../../scala/collection/mutable/Set.html#%2B%2B%28Iterator%5BA%5D%29" target="_self">++</a>, <a href="../../../scala/collection/mutable/Set.html#incl%28A*%29" target="_self">incl</a>, <a href="../../../scala/collection/mutable/Set.html#-%3D%28A%2CA%2CA*%29" target="_self">-=</a>, <a href="../../../scala/collection/mutable/Set.html#--%3D%28Iterable%5BA%5D%29" target="_self">--=</a>, <a href="../../../scala/collection/mutable/Set.html#--%3D%28Iterator%5BA%5D%29" target="_self">--=</a>, <a href="../../../scala/collection/mutable/Set.html#-%28A%29" target="_self">-</a>, <a href="../../../scala/collection/mutable/Set.html#-%28A%2CA%2CA*%29" target="_self">-</a>, <a href="../../../scala/collection/mutable/Set.html#--%28Iterable%5BA%5D%29" target="_self">--</a>, <a href="../../../scala/collection/mutable/Set.html#--%28Iterator%5BA%5D%29" target="_self">--</a>, <a href="../../../scala/collection/mutable/Set.html#excl%28A*%29" target="_self">excl</a>, <a href="../../../scala/collection/mutable/Set.html#intersect%28scala.collection.mutable.Set%5BA%5D%29" target="_self">intersect</a>, <a href="../../../scala/collection/mutable/Set.html#retain%28%28A%29%3D%3EBoolean%29" target="_self">retain</a>, <a href="../../../scala/collection/mutable/Set.html#%3C%3C%28scala.collection.mutable.Message%5BA%5D%29" target="_self">&lt;&lt;</a>, <a href="../../../scala/collection/mutable/Set.html#readOnly" target="_self">readOnly</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/Set.html" target="_self">Set</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/Set.html#apply%28A%29" target="_self">apply</a>, <a href="../../../scala/collection/Set.html#isEmpty" target="_self">isEmpty</a>, <a href="../../../scala/collection/Set.html#subsetOf%28scala.collection.Set%5BA%5D%29" target="_self">subsetOf</a>, <a href="../../../scala/collection/Set.html#*%28scala.collection.Set%5BA%5D%29" target="_self">*</a>, <a href="../../../scala/collection/Set.html#**%28scala.collection.Set%5BA%5D%29" target="_self">**</a>, <a href="../../../scala/collection/Set.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../scala/collection/Set.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../scala/collection/Set.html#toArray" target="_self">toArray</a>, <a href="../../../scala/collection/Set.html#stringPrefix" target="_self">stringPrefix</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Collection.html" target="_self">Collection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Collection.html#toString%28%29" target="_self">toString</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Iterable.html" target="_self">Iterable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Iterable.html#concat%28Iterable%5BB%5D%29" target="_self">concat</a>, <a href="../../../scala/Iterable.html#%2B%2B%28Iterable%5BB%5D%29" target="_self">++</a>, <a href="../../../scala/Iterable.html#map%28%28A%29%3D%3EB%29" target="_self">map</a>, <a href="../../../scala/Iterable.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a>, <a href="../../../scala/Iterable.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a>, <a href="../../../scala/Iterable.html#partition%28%28A%29%3D%3EBoolean%29" target="_self">partition</a>, <a href="../../../scala/Iterable.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a>, <a href="../../../scala/Iterable.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a>, <a href="../../../scala/Iterable.html#take%28Int%29" target="_self">take</a>, <a href="../../../scala/Iterable.html#drop%28Int%29" target="_self">drop</a>, <a href="../../../scala/Iterable.html#foreach%28%28A%29%3D%3EUnit%29" target="_self">foreach</a>, <a href="../../../scala/Iterable.html#forall%28%28A%29%3D%3EBoolean%29" target="_self">forall</a>, <a href="../../../scala/Iterable.html#exists%28%28A%29%3D%3EBoolean%29" target="_self">exists</a>, <a href="../../../scala/Iterable.html#find%28%28A%29%3D%3EBoolean%29" target="_self">find</a>, <a href="../../../scala/Iterable.html#findIndexOf%28%28A%29%3D%3EBoolean%29" target="_self">findIndexOf</a>, <a href="../../../scala/Iterable.html#indexOf%28B%29" target="_self">indexOf</a>, <a href="../../../scala/Iterable.html#foldLeft%28B%29" target="_self">foldLeft</a>, <a href="../../../scala/Iterable.html#foldRight%28B%29" target="_self">foldRight</a>, <a href="../../../scala/Iterable.html#%2F%3A%28B%29" target="_self">/:</a>, <a href="../../../scala/Iterable.html#%3A%5C%28B%29" target="_self">:\</a>, <a href="../../../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29" target="_self">reduceLeft</a>, <a href="../../../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29" target="_self">reduceRight</a>, <a href="../../../scala/Iterable.html#copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29" target="_self">copyToBuffer</a>, <a href="../../../scala/Iterable.html#sameElements%28Iterable%5BB%5D%29" target="_self">sameElements</a>, <a href="../../../scala/Iterable.html#toList" target="_self">toList</a>, <a href="../../../scala/Iterable.html#toStream" target="_self">toStream</a>, <a href="../../../scala/Iterable.html#mkString%28String%2CString%2CString%29" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#mkString%28String%29" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#mkString" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%2CString%2CString%29" target="_self">addString</a>, <a href="../../../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%29" target="_self">addString</a>, <a href="../../../scala/Iterable.html#copyToArray%28Array%5BB%5D%2CInt%29" target="_self">copyToArray</a>, <a href="../../../scala/Iterable.html#projection" target="_self">projection</a>, <a href="../../../scala/Iterable.html#hasDefiniteSize" target="_self">hasDefiniteSize</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Function1.html" target="_self">Function1</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Function1.html#compose%28%28A%29%3D%3ET1%29" target="_self">compose</a>, <a href="../../../scala/Function1.html#andThen%28%28R%29%3D%3EA%29" target="_self">andThen</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="contains%28A%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>contains</em>(<em>elem</em> : <a href="../../../scala/collection/mutable/HashSet.html#A" target="_self">A</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Checks if this set contains element <code>elem</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>elem - </code>the element to check for membership.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>true</code> iff <code>elem</code> is contained in                this set.</dd></dl>
+    <hr></hr>
+<a name="%2B%3D%28A%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>+=</em>(<em>elem</em> : <a href="../../../scala/collection/mutable/HashSet.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Add a new element to the set.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>elem - </code>the element to be added</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/Set.html" target="_self">Set</a>.<a href="../../../scala/collection/mutable/Set.html#%2B%3D%28A%29" target="_self">+=</a>
+        </dd>
+      </dl><hr></hr>
+<a name="-%3D%28A%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>-=</em>(<em>elem</em> : <a href="../../../scala/collection/mutable/HashSet.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Removes a single element from a set.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>elem - </code>The element to be removed.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/Set.html" target="_self">Set</a>.<a href="../../../scala/collection/mutable/Set.html#-%3D%28A%29" target="_self">-=</a>
+        </dd>
+      </dl><hr></hr>
+<a name="clear%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>clear</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Removes all elements from the set. After this operation is completed,
+    the set will be empty.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/Set.html" target="_self">Set</a>.<a href="../../../scala/collection/mutable/Set.html#clear%28%29" target="_self">clear</a>, <a href="../../../scala/collection/mutable/FlatHashTable.html" target="_self">FlatHashTable</a>.<a href="../../../scala/collection/mutable/FlatHashTable.html#clear%28%29" target="_self">clear</a>
+        </dd>
+      </dl><hr></hr>
+<a name="clone%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>clone</em> : <a href="../../../scala/collection/mutable/Set.html" target="_self">Set</a>[<a href="../../../scala/collection/mutable/HashSet.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Return a clone of this set.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a set with the same elements.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/Set.html" target="_self">Set</a>.<a href="../../../scala/collection/mutable/Set.html#clone%28%29" target="_self">clone</a>
+        </dd>
+      </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

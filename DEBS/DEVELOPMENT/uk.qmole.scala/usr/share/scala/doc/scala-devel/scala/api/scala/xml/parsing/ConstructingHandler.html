@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class ConstructingHandler in scala.xml.parsing</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../scala/xml/parsing$package.html" target="_self">scala.xml.parsing</a>
+        <br></br>
+        <span class="entity">class  ConstructingHandler</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/xml/parsing/ConstructingHandler"><code>scala/xml/parsing/ConstructingHandler.scala</code></a>]
+      </div><hr></hr>
+      <a name="ConstructingHandler"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>class</code>
+        <em>ConstructingHandler</em>
+      </dt>
+      <dd><code> extends </code><a href="../../../scala/xml/parsing/MarkupHandler.html" target="_self">MarkupHandler</a></dd>
+    </dl>
+      <dl><dd>Implementation of MarkupHandler that constructs nodes.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Burak Emir</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0</dd></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../../../scala/xml/parsing/ConstructingParser.html" target="_self">ConstructingParser</a></dd>
+      </dl><hr></hr>
+      
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Value Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/ConstructingHandler.html#preserveWS" target="_self">preserveWS</a></em>
+         : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Values and Variables inherited from <a href="../../../scala/xml/parsing/MarkupHandler.html" target="_self">MarkupHandler</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/xml/parsing/MarkupHandler.html#isValidating" target="_self">isValidating</a>, <a href="../../../scala/xml/parsing/MarkupHandler.html#decls" target="_self">decls</a>, <a href="../../../scala/xml/parsing/MarkupHandler.html#ent" target="_self">ent</a>
+        </td></tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/ConstructingHandler.html#comment%28Int%2CString%29" target="_self">comment</a></em>
+        (<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>txt</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/xml/Comment.html" target="_self">Comment</a>
+        
+        <div>callback method invoked by MarkupParser after parsing comment.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/ConstructingHandler.html#elem%28Int%2CString%2CString%2Cscala.xml.MetaData%2Cscala.xml.NamespaceBinding%2Cscala.xml.NodeSeq%29" target="_self">elem</a></em>
+        (<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>pre</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>label</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>attrs</em> : <a href="../../../scala/xml/MetaData.html" target="_self">MetaData</a>, <em>pscope</em> : <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>nodes</em> : <a href="../../../scala/xml/NodeSeq.html" target="_self">NodeSeq</a>) : <a href="../../../scala/xml/NodeSeq.html" target="_self">NodeSeq</a>
+        
+        <div>callback method invoked by MarkupParser after parsing an elementm,
+    between the elemStart and elemEnd callbacks</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/ConstructingHandler.html#entityRef%28Int%2CString%29" target="_self">entityRef</a></em>
+        (<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>n</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/xml/EntityRef.html" target="_self">EntityRef</a>
+        
+        <div>callback method invoked by MarkupParser after parsing entity ref.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/ConstructingHandler.html#procInstr%28Int%2CString%2CString%29" target="_self">procInstr</a></em>
+        (<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>target</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>txt</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/xml/ProcInstr.html" target="_self">ProcInstr</a>
+        
+        <div>callback method invoked by MarkupParser after parsing PI.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/ConstructingHandler.html#text%28Int%2CString%29" target="_self">text</a></em>
+        (<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>txt</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/xml/Text.html" target="_self">Text</a>
+        
+        <div>callback method invoked by MarkupParser after parsing text.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/xml/parsing/MarkupHandler.html" target="_self">MarkupHandler</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/xml/parsing/MarkupHandler.html#reportSyntaxError%28Int%2CString%29" target="_self">reportSyntaxError</a> (abstract), <a href="../../../scala/xml/parsing/MarkupHandler.html#lookupElemDecl%28String%29" target="_self">lookupElemDecl</a>, <a href="../../../scala/xml/parsing/MarkupHandler.html#replacementText%28String%29" target="_self">replacementText</a>, <a href="../../../scala/xml/parsing/MarkupHandler.html#endDTD%28String%29" target="_self">endDTD</a>, <a href="../../../scala/xml/parsing/MarkupHandler.html#elemStart%28Int%2CString%2CString%2Cscala.xml.MetaData%2Cscala.xml.NamespaceBinding%29" target="_self">elemStart</a>, <a href="../../../scala/xml/parsing/MarkupHandler.html#elemEnd%28Int%2CString%2CString%29" target="_self">elemEnd</a>, <a href="../../../scala/xml/parsing/MarkupHandler.html#elemDecl%28String%2CString%29" target="_self">elemDecl</a>, <a href="../../../scala/xml/parsing/MarkupHandler.html#attListDecl%28String%2CList%5Bscala.xml.dtd.AttrDecl%5D%29" target="_self">attListDecl</a>, <a href="../../../scala/xml/parsing/MarkupHandler.html#parameterEntityDecl%28String%2Cscala.xml.dtd.EntityDef%29" target="_self">parameterEntityDecl</a>, <a href="../../../scala/xml/parsing/MarkupHandler.html#parsedEntityDecl%28String%2Cscala.xml.dtd.EntityDef%29" target="_self">parsedEntityDecl</a>, <a href="../../../scala/xml/parsing/MarkupHandler.html#unparsedEntityDecl%28String%2Cscala.xml.dtd.ExternalID%2CString%29" target="_self">unparsedEntityDecl</a>, <a href="../../../scala/xml/parsing/MarkupHandler.html#notationDecl%28String%2Cscala.xml.dtd.ExternalID%29" target="_self">notationDecl</a>, <a href="../../../scala/xml/parsing/MarkupHandler.html#peReference%28String%29" target="_self">peReference</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/util/logging/Logged.html" target="_self">Logged</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/util/logging/Logged.html#log%28String%29" target="_self">log</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Value Details</td></tr>
+        </table><div><a name="preserveWS"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>val</code>
+        <em>preserveWS</em> : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="elem%28Int%2CString%2CString%2Cscala.xml.MetaData%2Cscala.xml.NamespaceBinding%2Cscala.xml.NodeSeq%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>elem</em>(<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>pre</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>label</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>attrs</em> : <a href="../../../scala/xml/MetaData.html" target="_self">MetaData</a>, <em>pscope</em> : <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>nodes</em> : <a href="../../../scala/xml/NodeSeq.html" target="_self">NodeSeq</a>) : <a href="../../../scala/xml/NodeSeq.html" target="_self">NodeSeq</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>callback method invoked by MarkupParser after parsing an elementm,
+    between the elemStart and elemEnd callbacks</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>pos - </code>the position in the source file</dd><dd><code>pre - </code>the prefix</dd><dd><code>label - </code>the local name</dd><dd><code>attrs - </code>the attributes (metadata)</dd><dd><code>args - </code>the children of this element</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/xml/parsing/MarkupHandler.html" target="_self">MarkupHandler</a>.<a href="../../../scala/xml/parsing/MarkupHandler.html#elem%28Int%2CString%2CString%2Cscala.xml.MetaData%2Cscala.xml.NamespaceBinding%2Cscala.xml.NodeSeq%29" target="_self">elem</a>
+        </dd>
+      </dl><hr></hr>
+<a name="procInstr%28Int%2CString%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>procInstr</em>(<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>target</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>txt</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/xml/ProcInstr.html" target="_self">ProcInstr</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>callback method invoked by MarkupParser after parsing PI.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>pos - </code>the position in the source file</dd><dd><code>target - </code>...</dd><dd><code>txt - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/xml/parsing/MarkupHandler.html" target="_self">MarkupHandler</a>.<a href="../../../scala/xml/parsing/MarkupHandler.html#procInstr%28Int%2CString%2CString%29" target="_self">procInstr</a>
+        </dd>
+      </dl><hr></hr>
+<a name="comment%28Int%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>comment</em>(<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>txt</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/xml/Comment.html" target="_self">Comment</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>callback method invoked by MarkupParser after parsing comment.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>pos - </code>the position in the source file</dd><dd><code>comment - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/xml/parsing/MarkupHandler.html" target="_self">MarkupHandler</a>.<a href="../../../scala/xml/parsing/MarkupHandler.html#comment%28Int%2CString%29" target="_self">comment</a>
+        </dd>
+      </dl><hr></hr>
+<a name="entityRef%28Int%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>entityRef</em>(<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>n</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/xml/EntityRef.html" target="_self">EntityRef</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>callback method invoked by MarkupParser after parsing entity ref.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Todo</b></dt><dd>expanding entity references</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/xml/parsing/MarkupHandler.html" target="_self">MarkupHandler</a>.<a href="../../../scala/xml/parsing/MarkupHandler.html#entityRef%28Int%2CString%29" target="_self">entityRef</a>
+        </dd>
+      </dl><hr></hr>
+<a name="text%28Int%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>text</em>(<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>txt</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/xml/Text.html" target="_self">Text</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>callback method invoked by MarkupParser after parsing text.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/xml/parsing/MarkupHandler.html" target="_self">MarkupHandler</a>.<a href="../../../scala/xml/parsing/MarkupHandler.html#text%28Int%2CString%29" target="_self">text</a>
+        </dd>
+      </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

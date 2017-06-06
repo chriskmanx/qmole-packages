@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>object BigInt in scala</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../scala$package.html" target="_self">scala</a>
+        <br></br>
+        <span class="entity">object  BigInt</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/BigInt"><code>scala/BigInt.scala</code></a>]
+      </div><hr></hr>
+      <a name="BigInt"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>object</code>
+        <em>BigInt</em>
+      </dt>
+      <dd><code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Martin Odersky</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0, 15/07/2003</dd></dl>
+    
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt$object.html#apply%28String%2CInt%29" target="_self">apply</a></em>
+        (<em>x</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>radix</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Translates the string representation of a BigInt in the
+    specified <code>radix</code> into a BigInt.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt$object.html#apply%28Int%2CArray%5BByte%5D%29" target="_self">apply</a></em>
+        (<em>signum</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>magnitude</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Byte.html" target="_self">Byte</a>]) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Translates the sign-magnitude representation of a BigInt into a BigInt.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt$object.html#apply%28Int%29" target="_self">apply</a></em>
+        (<em>i</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Constructs a <code>BigInt</code> whose value is equal to that of the
+    specified integer value.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt$object.html#apply%28Int%2CInt%2CRandom%29" target="_self">apply</a></em>
+        (<em>bitlength</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>certaInty</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>rnd</em> : <a href="../scala/Random.html" target="_self">Random</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Constructs a randomly generated positive BigInt that is probably prime, 
+    with the specified bitLength.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt$object.html#apply%28Array%5BByte%5D%29" target="_self">apply</a></em>
+        (<em>x</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Byte.html" target="_self">Byte</a>]) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Translates a byte array containing the two's-complement binary 
+    representation of a BigInt into a BigInt.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt$object.html#apply%28Long%29" target="_self">apply</a></em>
+        (<em>l</em> : <a href="../scala/Long.html" target="_self">Long</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Constructs a <code>BigInt</code> whose value is equal to that of the
+    specified long value.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt$object.html#apply%28String%29" target="_self">apply</a></em>
+        (<em>x</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Translates the decimal String representation of a BigInt into a BigInt.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt$object.html#apply%28Int%2CRandom%29" target="_self">apply</a></em>
+        (<em>numbits</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>rnd</em> : <a href="../scala/Random.html" target="_self">Random</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Constructs a randomly generated BigInt, uniformly distributed over the
+    range 0 to (2 ^ numBits - 1), inclusive.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>implicit def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt$object.html#bigInt2ordered%28BigInt%29" target="_self">bigInt2ordered</a></em>
+        (<em>x</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/Ordered.html" target="_self">Ordered</a>[<a href="../scala/BigInt.html" target="_self">BigInt</a>]
+        
+        <div>Implicit conversion from BigInt to <code>Ordered</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>implicit def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt$object.html#int2bigInt%28Int%29" target="_self">int2bigInt</a></em>
+        (<em>i</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Implicit conversion from <code>int</code> to <code>BigInt</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>implicit def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt$object.html#long2bigInt%28Long%29" target="_self">long2bigInt</a></em>
+        (<em>l</em> : <a href="../scala/Long.html" target="_self">Long</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Implicit copnversion from long to BigInt</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/BigInt$object.html#probablePrime%28Int%2CRandom%29" target="_self">probablePrime</a></em>
+        (<em>bitLength</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>rnd</em> : <a href="../scala/Random.html" target="_self">Random</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+        
+        <div>Returns a positive BigInt that is probably prime, with the specified bitLength.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="apply%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>(<em>i</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Constructs a <code>BigInt</code> whose value is equal to that of the
+    specified integer value.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>i - </code>the specified integer value</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the constructed <code>BigInt</code></dd></dl>
+    <hr></hr>
+<a name="apply%28Long%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>(<em>l</em> : <a href="../scala/Long.html" target="_self">Long</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Constructs a <code>BigInt</code> whose value is equal to that of the
+    specified long value.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>l - </code>the specified long value</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the constructed <code>BigInt</code></dd></dl>
+    <hr></hr>
+<a name="apply%28Array%5BByte%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>(<em>x</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Byte.html" target="_self">Byte</a>]) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Translates a byte array containing the two's-complement binary 
+    representation of a BigInt into a BigInt.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="apply%28Int%2CArray%5BByte%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>(<em>signum</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>magnitude</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Byte.html" target="_self">Byte</a>]) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Translates the sign-magnitude representation of a BigInt into a BigInt.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="apply%28Int%2CInt%2CRandom%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>(<em>bitlength</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>certaInty</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>rnd</em> : <a href="../scala/Random.html" target="_self">Random</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Constructs a randomly generated positive BigInt that is probably prime, 
+    with the specified bitLength.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="apply%28Int%2CRandom%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>(<em>numbits</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>rnd</em> : <a href="../scala/Random.html" target="_self">Random</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Constructs a randomly generated BigInt, uniformly distributed over the
+    range 0 to (2 ^ numBits - 1), inclusive.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>numbits - </code>...</dd><dd><code>rnd - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="apply%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>(<em>x</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Translates the decimal String representation of a BigInt into a BigInt.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="apply%28String%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>(<em>x</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>radix</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Translates the string representation of a BigInt in the
+    specified <code>radix</code> into a BigInt.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>x - </code>...</dd><dd><code>radix - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="probablePrime%28Int%2CRandom%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>probablePrime</em>(<em>bitLength</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>rnd</em> : <a href="../scala/Random.html" target="_self">Random</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a positive BigInt that is probably prime, with the specified bitLength.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="int2bigInt%28Int%29"></a><dl>
+      <dt>
+        
+        <code>implicit</code>
+        <code>def</code>
+        <em>int2bigInt</em>(<em>i</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Implicit conversion from <code>int</code> to <code>BigInt</code>.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="long2bigInt%28Long%29"></a><dl>
+      <dt>
+        
+        <code>implicit</code>
+        <code>def</code>
+        <em>long2bigInt</em>(<em>l</em> : <a href="../scala/Long.html" target="_self">Long</a>) : <a href="../scala/BigInt.html" target="_self">BigInt</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Implicit copnversion from long to BigInt</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="bigInt2ordered%28BigInt%29"></a><dl>
+      <dt>
+        
+        <code>implicit</code>
+        <code>def</code>
+        <em>bigInt2ordered</em>(<em>x</em> : <a href="../scala/BigInt.html" target="_self">BigInt</a>) : <a href="../scala/Ordered.html" target="_self">Ordered</a>[<a href="../scala/BigInt.html" target="_self">BigInt</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Implicit conversion from BigInt to <code>Ordered</code>.</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

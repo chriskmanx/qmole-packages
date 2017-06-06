@@ -1,0 +1,829 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>trait Buffer in scala.collection.mutable</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../scala/collection/mutable$package.html" target="_self">scala.collection.mutable</a>
+        <br></br>
+        <span class="entity">trait  Buffer</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/collection/mutable/Buffer"><code>scala/collection/mutable/Buffer.scala</code></a>]
+      </div><hr></hr>
+      <a name="Buffer"></a><dl>
+      <dt>
+        @<a href="../../../scala/cloneable.html" target="_self">cloneable</a><br></br>
+        <code></code>
+        <code>trait</code>
+        <em>Buffer</em>[<em>A</em>]
+      </dt>
+      <dd><code> extends </code><a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]<code> with </code><a href="../../../scala/collection/mutable/Scriptable.html" target="_self">Scriptable</a>[<a href="../../../scala/collection/mutable/Message.html" target="_self">Message</a>[(<a href="../../../scala/collection/mutable/Location.html" target="_self">Location</a>, <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>)]]<code> with </code><a href="../../../scala/collection/mutable/CloneableCollection.html" target="_self">CloneableCollection</a></dd>
+    </dl>
+      <dl><dd>Buffers are used to create sequences of elements incrementally by
+  appending, prepending, or inserting new elements. It is also
+  possible to access and modify elements in a random access fashion
+  via the index of the element in the current sequence.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Matthias Zenger</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.1, 02/03/2004</dd></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../../../scala/collection/mutable/ArrayBuffer.html" target="_self">ArrayBuffer</a>, <a href="../../../scala/collection/mutable/BufferProxy.html" target="_self">BufferProxy</a>, <a href="../../../scala/collection/mutable/ListBuffer.html" target="_self">ListBuffer</a>, <a href="../../../scala/collection/mutable/ObservableBuffer.html" target="_self">ObservableBuffer</a>, <a href="../../../scala/collection/mutable/SynchronizedBuffer.html" target="_self">SynchronizedBuffer</a>, <a href="../../../scala/runtime/RichStringBuilder.html" target="_self">RichStringBuilder</a></dd>
+      </dl><hr></hr>
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#%2B%28A%29" target="_self">+</a></em>
+        (<em>elem</em> : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]
+        
+        <div>Append a single element to this buffer and return
+    the identity of the buffer.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#%2B%2B%28Iterable%5BB%5D%29" target="_self">++</a></em>
+        [<em>B</em> &gt;: <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>](<em>that</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/mutable/Buffer.html#%2B%2B%28Iterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/collection/mutable/Buffer.html#%2B%2B%28Iterable%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div>Appends two iterable objects.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#%2B%2B%28Iterable%5BA%5D%29" target="_self">++</a></em>
+        (<em>iter</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]
+        
+        <div>Appends a number of elements provided by an iterable object
+    via its <code>elements</code> method. The identity of the
+    buffer is returned.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#%2B%2B%28Iterator%5BA%5D%29" target="_self">++</a></em>
+        (<em>iter</em> : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]
+        
+        <div>Appends a number of elements provided by an iterator
+    via its <code>elements</code> method. The identity of the
+    buffer is returned.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#%2B%2B%3A%28Iterable%5BA%5D%29" target="_self">++:</a></em>
+        (<em>iter</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]
+        
+        <div>Prepends a number of elements provided by an iterable object
+    via its <code>elements</code> method. The identity of the
+    buffer is returned.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#%2B%2B%3D%28Iterator%5BA%5D%29" target="_self">++=</a></em>
+        (<em>iter</em> : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Appends a number of elements provided by an iterator</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#%2B%2B%3D%28Iterable%5BA%5D%29" target="_self">++=</a></em>
+        (<em>iter</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Appends a number of elements provided by an iterable object
+    via its <code>elements</code> method.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#%2B%2B%3D%28Array%5BA%5D%2CInt%2CInt%29" target="_self">++=</a></em>
+        (<em>src</em> : <a href="../../../scala/Array.html" target="_self">Array</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>], <em>start</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>len</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Appends a number of elements in an array</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#%2B%3A%28A%29" target="_self">+:</a></em>
+        (<em>elem</em> : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]
+        
+        <div>Prepend a single element to this buffer and return
+    the identity of the buffer.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#%2B%3D%28A%29" target="_self">+=</a></em>
+        (<em>elem</em> : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Append a single element to this buffer.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#-%3D%28A%29" target="_self">-=</a></em>
+        (<em>x</em> : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Removes a single element from this buffer, at its first occurrence.
+    If the list does not contain that element, it is unchanged</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#%3C%3C%28scala.collection.mutable.Message%5B%28scala.collection.mutable.Location%2CA%29%5D%29" target="_self">&lt;&lt;</a></em>
+        (<em>cmd</em> : <a href="../../../scala/collection/mutable/Message.html" target="_self">Message</a>[(<a href="../../../scala/collection/mutable/Location.html" target="_self">Location</a>, <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>)]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Send a message to this scriptable object.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#append%28A*%29" target="_self">append</a></em>
+        (<em>elems</em> : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>*) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Appends a sequence of elements to this buffer.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#appendAll%28Iterable%5BA%5D%29" target="_self">appendAll</a></em>
+        (<em>iter</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Appends a number of elements provided by an iterable object
+    via its <code>elements</code> method.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#clear%28%29" target="_self">clear</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Clears the buffer contents.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#clone%28%29" target="_self">clone</a></em>
+         : <a href="../../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]
+        
+        <div>Return a clone of this buffer.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#hashCode%28%29" target="_self">hashCode</a></em>
+         : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        <div>The hashCode method always yields an error, since it is not
+    safe to use buffers as keys in hash tables.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#insert%28Int%2CA*%29" target="_self">insert</a></em>
+        (<em>n</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>elems</em> : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>*) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Inserts new elements at the index <code>n</code>. Opposed to method
+    <code>update</code>, this method will not replace an element with a
+    one. Instead, it will insert the new elements at index <code>n</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#insertAll%28Int%2CIterable%5BA%5D%29" target="_self">insertAll</a></em>
+        (<em>n</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>iter</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Inserts new elements at the index <code>n</code>. Opposed to method
+    <code>update</code>, this method will not replace an element with a
+    one. Instead, it will insert a new element at index <code>n</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#prepend%28A*%29" target="_self">prepend</a></em>
+        (<em>elems</em> : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>*) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Prepend an element to this list.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#prependAll%28Iterable%5BA%5D%29" target="_self">prependAll</a></em>
+        (<em>iter</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Prepends a number of elements provided by an iterable object
+    via its <code>elements</code> method. The identity of the
+    buffer is returned.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#readOnly" target="_self">readOnly</a></em>
+         : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]
+        
+        <div>return a read only alias of this buffer</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#remove%28Int%29" target="_self">remove</a></em>
+        (<em>n</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>
+        
+        <div>Removes the element on a given index position.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#stringPrefix" target="_self">stringPrefix</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Defines the prefix of the string representation.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#trimEnd%28Int%29" target="_self">trimEnd</a></em>
+        (<em>n</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Removes the last <code>n</code> elements.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#trimStart%28Int%29" target="_self">trimStart</a></em>
+        (<em>n</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Removes the first <code>n</code> elements.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/Buffer.html#update%28Int%2CA%29" target="_self">update</a></em>
+        (<em>n</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>newelem</em> : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Replace element at index <code>n</code> with the new element
+    <code>newelem</code>.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Seq.html" target="_self">Seq</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Seq.html#length" target="_self">length</a> (abstract), <a href="../../../scala/Seq.html#lengthCompare%28Int%29" target="_self">lengthCompare</a>, <a href="../../../scala/Seq.html#size" target="_self">size</a>, <a href="../../../scala/Seq.html#isEmpty" target="_self">isEmpty</a>, <a href="../../../scala/Seq.html#concat%28Iterable%5BB%5D%29" target="_self">concat</a>, <a href="../../../scala/Seq.html#last" target="_self">last</a>, <a href="../../../scala/Seq.html#lastOption" target="_self">lastOption</a>, <a href="../../../scala/Seq.html#headOption" target="_self">headOption</a>, <a href="../../../scala/Seq.html#isDefinedAt%28Int%29" target="_self">isDefinedAt</a>, <a href="../../../scala/Seq.html#lastIndexOf%28B%29" target="_self">lastIndexOf</a>, <a href="../../../scala/Seq.html#map%28%28A%29%3D%3EB%29" target="_self">map</a>, <a href="../../../scala/Seq.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a>, <a href="../../../scala/Seq.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a>, <a href="../../../scala/Seq.html#take%28Int%29" target="_self">take</a>, <a href="../../../scala/Seq.html#drop%28Int%29" target="_self">drop</a>, <a href="../../../scala/Seq.html#slice%28Int%2CInt%29" target="_self">slice</a>, <a href="../../../scala/Seq.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a>, <a href="../../../scala/Seq.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a>, <a href="../../../scala/Seq.html#reverse" target="_self">reverse</a>, <a href="../../../scala/Seq.html#contains%28Any%29" target="_self">contains</a>, <a href="../../../scala/Seq.html#subseq%28Int%2CInt%29" target="_self">subseq</a>, <a href="../../../scala/Seq.html#toArray" target="_self">toArray</a>, <a href="../../../scala/Seq.html#projection" target="_self">projection</a>, <a href="../../../scala/Seq.html#equalsWith%28Seq%5BB%5D%29" target="_self">equalsWith</a>, <a href="../../../scala/Seq.html#startsWith%28Seq%5BB%5D%29" target="_self">startsWith</a>, <a href="../../../scala/Seq.html#endsWith%28Seq%5BB%5D%29" target="_self">endsWith</a>, <a href="../../../scala/Seq.html#indexOf%28Seq%5BB%5D%29" target="_self">indexOf</a>, <a href="../../../scala/Seq.html#containsSlice%28Seq%5BB%5D%29" target="_self">containsSlice</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Collection.html" target="_self">Collection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Collection.html#toString%28%29" target="_self">toString</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Iterable.html" target="_self">Iterable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Iterable.html#elements" target="_self">elements</a> (abstract), <a href="../../../scala/Iterable.html#partition%28%28A%29%3D%3EBoolean%29" target="_self">partition</a>, <a href="../../../scala/Iterable.html#foreach%28%28A%29%3D%3EUnit%29" target="_self">foreach</a>, <a href="../../../scala/Iterable.html#forall%28%28A%29%3D%3EBoolean%29" target="_self">forall</a>, <a href="../../../scala/Iterable.html#exists%28%28A%29%3D%3EBoolean%29" target="_self">exists</a>, <a href="../../../scala/Iterable.html#find%28%28A%29%3D%3EBoolean%29" target="_self">find</a>, <a href="../../../scala/Iterable.html#findIndexOf%28%28A%29%3D%3EBoolean%29" target="_self">findIndexOf</a>, <a href="../../../scala/Iterable.html#indexOf%28B%29" target="_self">indexOf</a>, <a href="../../../scala/Iterable.html#foldLeft%28B%29" target="_self">foldLeft</a>, <a href="../../../scala/Iterable.html#foldRight%28B%29" target="_self">foldRight</a>, <a href="../../../scala/Iterable.html#%2F%3A%28B%29" target="_self">/:</a>, <a href="../../../scala/Iterable.html#%3A%5C%28B%29" target="_self">:\</a>, <a href="../../../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29" target="_self">reduceLeft</a>, <a href="../../../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29" target="_self">reduceRight</a>, <a href="../../../scala/Iterable.html#copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29" target="_self">copyToBuffer</a>, <a href="../../../scala/Iterable.html#sameElements%28Iterable%5BB%5D%29" target="_self">sameElements</a>, <a href="../../../scala/Iterable.html#toList" target="_self">toList</a>, <a href="../../../scala/Iterable.html#toStream" target="_self">toStream</a>, <a href="../../../scala/Iterable.html#mkString%28String%2CString%2CString%29" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#mkString%28String%29" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#mkString" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%2CString%2CString%29" target="_self">addString</a>, <a href="../../../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%29" target="_self">addString</a>, <a href="../../../scala/Iterable.html#copyToArray%28Array%5BB%5D%2CInt%29" target="_self">copyToArray</a>, <a href="../../../scala/Iterable.html#hasDefiniteSize" target="_self">hasDefiniteSize</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/PartialFunction.html" target="_self">PartialFunction</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/PartialFunction.html#orElse%28PartialFunction%5BA1%2CB1%5D%29" target="_self">orElse</a>, <a href="../../../scala/PartialFunction.html#andThen%28%28B%29%3D%3EC%29" target="_self">andThen</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Function1.html" target="_self">Function1</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Function1.html#apply%28T1%29" target="_self">apply</a> (abstract), <a href="../../../scala/Function1.html#compose%28%28A%29%3D%3ET1%29" target="_self">compose</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="%2B%3D%28A%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>+=</em>(<em>elem</em> : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Append a single element to this buffer.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>elem - </code>the element to append.</dd></dl>
+    <hr></hr>
+<a name="%2B%28A%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>+</em>(<em>elem</em> : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Append a single element to this buffer and return
+    the identity of the buffer.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>elem - </code>the element to append.</dd></dl>
+    <hr></hr>
+<a name="%2B%3A%28A%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>+:</em>(<em>elem</em> : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Prepend a single element to this buffer and return
+    the identity of the buffer.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>elem - </code>the element to append.</dd></dl>
+    <hr></hr>
+<a name="%2B%2B%3D%28Iterator%5BA%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>++=</em>(<em>iter</em> : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends a number of elements provided by an iterator</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>iter - </code>the iterator.</dd></dl>
+    <hr></hr>
+<a name="%2B%2B%3D%28Iterable%5BA%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>++=</em>(<em>iter</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends a number of elements provided by an iterable object
+    via its <code>elements</code> method.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>iter - </code>the iterable object.</dd></dl>
+    <hr></hr>
+<a name="%2B%2B%3D%28Array%5BA%5D%2CInt%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>++=</em>(<em>src</em> : <a href="../../../scala/Array.html" target="_self">Array</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>], <em>start</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>len</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends a number of elements in an array</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>src - </code>the array</dd><dd><code>start - </code>the first element to append</dd><dd><code>len - </code>the number of elements to append</dd></dl>
+    <hr></hr>
+<a name="readOnly"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>readOnly</em> : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>return a read only alias of this buffer</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%2B%2B%28Iterable%5BA%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>++</em>(<em>iter</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends a number of elements provided by an iterable object
+    via its <code>elements</code> method. The identity of the
+    buffer is returned.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>iter - </code>the iterable object.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the updated buffer.</dd></dl>
+    <hr></hr>
+<a name="%2B%2B%28Iterable%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>++</em>[<em>B</em> &gt;: <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>](<em>that</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/mutable/Buffer.html#%2B%2B%28Iterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/collection/mutable/Buffer.html#%2B%2B%28Iterable%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends two iterable objects.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/Seq.html" target="_self">Seq</a>.<a href="../../../scala/Seq.html#%2B%2B%28Iterable%5BB%5D%29" target="_self">++</a>
+        </dd>
+      </dl><hr></hr>
+<a name="%2B%2B%28Iterator%5BA%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>++</em>(<em>iter</em> : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends a number of elements provided by an iterator
+    via its <code>elements</code> method. The identity of the
+    buffer is returned.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>iter - </code>the iterator</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the updated buffer.</dd></dl>
+    <hr></hr>
+<a name="%2B%2B%3A%28Iterable%5BA%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>++:</em>(<em>iter</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Prepends a number of elements provided by an iterable object
+    via its <code>elements</code> method. The identity of the
+    buffer is returned.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>iter - </code>the iterable object.</dd></dl>
+    <hr></hr>
+<a name="-%3D%28A%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>-=</em>(<em>x</em> : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Removes a single element from this buffer, at its first occurrence.
+    If the list does not contain that element, it is unchanged</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>x - </code>the element to remove.</dd></dl>
+    <hr></hr>
+<a name="append%28A*%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>append</em>(<em>elems</em> : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>*) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends a sequence of elements to this buffer.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>elems - </code>the elements to append.</dd></dl>
+    <hr></hr>
+<a name="appendAll%28Iterable%5BA%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>appendAll</em>(<em>iter</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends a number of elements provided by an iterable object
+    via its <code>elements</code> method.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>iter - </code>the iterable object.</dd></dl>
+    <hr></hr>
+<a name="prepend%28A*%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>prepend</em>(<em>elems</em> : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>*) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Prepend an element to this list.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>elem - </code>the element to prepend.</dd></dl>
+    <hr></hr>
+<a name="prependAll%28Iterable%5BA%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>prependAll</em>(<em>iter</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Prepends a number of elements provided by an iterable object
+    via its <code>elements</code> method. The identity of the
+    buffer is returned.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>iter - </code>the iterable object.</dd></dl>
+    <hr></hr>
+<a name="insert%28Int%2CA*%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>insert</em>(<em>n</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>elems</em> : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>*) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Inserts new elements at the index <code>n</code>. Opposed to method
+    <code>update</code>, this method will not replace an element with a
+    one. Instead, it will insert the new elements at index <code>n</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the index where a new element will be inserted.</dd><dd><code>elems - </code>the new elements to insert.</dd></dl>
+    <hr></hr>
+<a name="insertAll%28Int%2CIterable%5BA%5D%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>insertAll</em>(<em>n</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>iter</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Inserts new elements at the index <code>n</code>. Opposed to method
+    <code>update</code>, this method will not replace an element with a
+    one. Instead, it will insert a new element at index <code>n</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the index where a new element will be inserted.</dd><dd><code>iter - </code>the iterable object providing all elements to insert.</dd></dl>
+    <hr></hr>
+<a name="update%28Int%2CA%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>update</em>(<em>n</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>newelem</em> : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Replace element at index <code>n</code> with the new element
+    <code>newelem</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the index of the element to replace.</dd><dd><code>newelem - </code>the new element.</dd></dl>
+    <hr></hr>
+<a name="remove%28Int%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>remove</em>(<em>n</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Removes the element on a given index position.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the index which refers to the element to delete.</dd></dl>
+    <hr></hr>
+<a name="trimStart%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>trimStart</em>(<em>n</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Removes the first <code>n</code> elements.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the number of elements to remove from the beginning              of this buffer.</dd></dl>
+    <hr></hr>
+<a name="trimEnd%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>trimEnd</em>(<em>n</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Removes the last <code>n</code> elements.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the number of elements to remove from the end              of this buffer.</dd></dl>
+    <hr></hr>
+<a name="clear%28%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>clear</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Clears the buffer contents.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="%3C%3C%28scala.collection.mutable.Message%5B%28scala.collection.mutable.Location%2CA%29%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>&lt;&lt;</em>(<em>cmd</em> : <a href="../../../scala/collection/mutable/Message.html" target="_self">Message</a>[(<a href="../../../scala/collection/mutable/Location.html" target="_self">Location</a>, <a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>)]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Send a message to this scriptable object.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>cmd - </code>the message to send.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/Scriptable.html" target="_self">Scriptable</a>.<a href="../../../scala/collection/mutable/Scriptable.html#%3C%3C%28A%29" target="_self">&lt;&lt;</a>
+        </dd>
+      </dl><hr></hr>
+<a name="clone%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>clone</em> : <a href="../../../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../../../scala/collection/mutable/Buffer.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Return a clone of this buffer.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a buffer with the same elements.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/CloneableCollection.html" target="_self">CloneableCollection</a>.<a href="../../../scala/collection/mutable/CloneableCollection.html#clone%28%29" target="_self">clone</a>
+        </dd>
+      </dl><hr></hr>
+<a name="hashCode%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>hashCode</em> : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The hashCode method always yields an error, since it is not
+    safe to use buffers as keys in hash tables.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>never.</dd></dl>
+    <hr></hr>
+<a name="stringPrefix"></a><dl>
+      <dt>
+        
+        <code>protected override</code>
+        <code>def</code>
+        <em>stringPrefix</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Defines the prefix of the string representation.</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

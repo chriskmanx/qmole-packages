@@ -1,0 +1,13 @@
+Package: uk.qmole.npm
+Name: NPM
+Version: 0.3.18
+Architecture: iphoneos-arm
+Description: JavaScript Package manager NPM for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/npm
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author: Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.nodejs
+Sponsor: QMole Ltd. 
+Section: Development
+Tag: purpose::console, role::developer

@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class Channel in scala.actors</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../scala/actors$package.html" target="_self">scala.actors</a>
+        <br></br>
+        <span class="entity">class  Channel</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/actors/Channel"><code>scala/actors/Channel.scala</code></a>]
+      </div><hr></hr>
+      <a name="Channel"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>class</code>
+        <em>Channel</em>[<em>Msg</em>]
+      </dt>
+      <dd><code> extends </code><a href="../../scala/actors/InputChannel.html" target="_self">InputChannel</a>[<a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>]<code> with </code><a href="../../scala/actors/OutputChannel.html" target="_self">OutputChannel</a>[<a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>]</dd>
+    </dl>
+      <dl><dd>This class provides a means for typed communication among
+ actors. Only the actor creating an instance of a
+ <code>Channel</code> may receive from it.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>0.9.9</dd><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Philipp Haller</dd></dl>
+    
+      <table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Additional Constructor Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Channel.html#this%28scala.actors.Actor%29" target="_self">this</a></em>
+        (<em>recv</em> : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>) : <a href="../../scala/actors/Channel.html" target="_self">Channel</a>[<a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>]
+        
+        
+      </td>
+    </tr>
+      </table>
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Channel.html#%21%28Msg%29" target="_self">!</a></em>
+        (<em>msg</em> : <a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Sends a message to this <code>Channel</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Channel.html#%21%3F%28Msg%29" target="_self">!?</a></em>
+        (<em>msg</em> : <a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>) : <a href="../../scala/Any.html" target="_self">Any</a>
+        
+        <div>Sends a message to this <code>Channel</code> and
+   awaits reply.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Channel.html#%21%3F%28Long%2CMsg%29" target="_self">!?</a></em>
+        (<em>msec</em> : <a href="../../scala/Long.html" target="_self">Long</a>, <em>msg</em> : <a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>) : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="../../scala/Any.html" target="_self">Any</a>]
+        
+        <div>Sends a message to this <code>Channel</code> and
+   awaits reply within a certain time span.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Channel.html#%3F" target="_self">?</a></em>
+         : <a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>
+        
+        <div>Receives the next message from this <code>Channel</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Channel.html#forward%28Msg%29" target="_self">forward</a></em>
+        (<em>msg</em> : <a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Forwards <code>msg</code> to <code>this</code> keeping the
+   last sender as sender instead of <code>self</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Channel.html#react%28PartialFunction%5BMsg%2CUnit%5D%29" target="_self">react</a></em>
+        (<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>, <a href="../../scala/Unit.html" target="_self">Unit</a>]) : <a href="../../scala/Nothing.html" target="_self">Nothing</a>
+        
+        <div>Receives a message from this <code>Channel</code>.
+   <p>
+   This method never returns. Therefore, the rest of the computation
+   has to be contained in the actions of the partial function.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Channel.html#reactWithin%28Long%29" target="_self">reactWithin</a></em>
+        (<em>msec</em> : <a href="../../scala/Long.html" target="_self">Long</a>)(<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/Any.html" target="_self">Any</a>, <a href="../../scala/Unit.html" target="_self">Unit</a>]) : <a href="../../scala/Nothing.html" target="_self">Nothing</a>
+        
+        <div>Receives a message from this <code>Channel</code> within a certain
+   time span.
+   <p>
+   This method never returns. Therefore, the rest of the computation
+   has to be contained in the actions of the partial function.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Channel.html#receive%28PartialFunction%5BMsg%2CR%5D%29" target="_self">receive</a></em>
+        [<em>R</em>](<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>, <a href="../../scala/actors/Channel.html#receive%28PartialFunction%5BMsg%2CR%5D%29#R" target="_self">R</a>]) : <a href="../../scala/actors/Channel.html#receive%28PartialFunction%5BMsg%2CR%5D%29#R" target="_self">R</a>
+        
+        <div>Receives a message from this <code>Channel</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Channel.html#receiveWithin%28Long%29" target="_self">receiveWithin</a></em>
+        [<em>R</em>](<em>msec</em> : <a href="../../scala/Long.html" target="_self">Long</a>)(<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/Any.html" target="_self">Any</a>, <a href="../../scala/actors/Channel.html#receiveWithin%28Long%29#R" target="_self">R</a>]) : <a href="../../scala/actors/Channel.html#receiveWithin%28Long%29#R" target="_self">R</a>
+        
+        <div>Receives a message from this <code>Channel</code> within a certain
+   time span.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/Channel.html#receiver" target="_self">receiver</a></em>
+         : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>
+        
+        <div>Returns the <code>Actor</code> that is
+   receiving from this <code>OutputChannel</code>.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      <table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Additional Constructor Details</td></tr>
+        </table><div><a name="this%28scala.actors.Actor%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>this</em>(<em>recv</em> : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>) : <a href="../../scala/actors/Channel.html" target="_self">Channel</a>[<a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="receiver"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>receiver</em> : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the <code>Actor</code> that is
+   receiving from this <code>OutputChannel</code>.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/OutputChannel.html" target="_self">OutputChannel</a>.<a href="../../scala/actors/OutputChannel.html#receiver" target="_self">receiver</a>
+        </dd>
+      </dl><hr></hr>
+<a name="%21%28Msg%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>!</em>(<em>msg</em> : <a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Sends a message to this <code>Channel</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>msg - </code>the message to be sent</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/OutputChannel.html" target="_self">OutputChannel</a>.<a href="../../scala/actors/OutputChannel.html#%21%28Msg%29" target="_self">!</a>
+        </dd>
+      </dl><hr></hr>
+<a name="forward%28Msg%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>forward</em>(<em>msg</em> : <a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Forwards <code>msg</code> to <code>this</code> keeping the
+   last sender as sender instead of <code>self</code>.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/OutputChannel.html" target="_self">OutputChannel</a>.<a href="../../scala/actors/OutputChannel.html#forward%28Msg%29" target="_self">forward</a>
+        </dd>
+      </dl><hr></hr>
+<a name="receive%28PartialFunction%5BMsg%2CR%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>receive</em>[<em>R</em>](<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>, <a href="../../scala/actors/Channel.html#receive%28PartialFunction%5BMsg%2CR%5D%29#R" target="_self">R</a>]) : <a href="../../scala/actors/Channel.html#receive%28PartialFunction%5BMsg%2CR%5D%29#R" target="_self">R</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Receives a message from this <code>Channel</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>a partial function with message patterns and actions</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>result of processing the received value</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/InputChannel.html" target="_self">InputChannel</a>.<a href="../../scala/actors/InputChannel.html#receive%28PartialFunction%5BMsg%2CR%5D%29" target="_self">receive</a>
+        </dd>
+      </dl><hr></hr>
+<a name="%3F"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>?</em> : <a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Receives the next message from this <code>Channel</code>.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/InputChannel.html" target="_self">InputChannel</a>.<a href="../../scala/actors/InputChannel.html#%3F" target="_self">?</a>
+        </dd>
+      </dl><hr></hr>
+<a name="receiveWithin%28Long%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>receiveWithin</em>[<em>R</em>](<em>msec</em> : <a href="../../scala/Long.html" target="_self">Long</a>)(<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/Any.html" target="_self">Any</a>, <a href="../../scala/actors/Channel.html#receiveWithin%28Long%29#R" target="_self">R</a>]) : <a href="../../scala/actors/Channel.html#receiveWithin%28Long%29#R" target="_self">R</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Receives a message from this <code>Channel</code> within a certain
+   time span.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>msec - </code>the time span before timeout</dd><dd><code>f - </code>a partial function with message patterns and actions</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>result of processing the received value</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/InputChannel.html" target="_self">InputChannel</a>.<a href="../../scala/actors/InputChannel.html#receiveWithin%28Long%29" target="_self">receiveWithin</a>
+        </dd>
+      </dl><hr></hr>
+<a name="react%28PartialFunction%5BMsg%2CUnit%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>react</em>(<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>, <a href="../../scala/Unit.html" target="_self">Unit</a>]) : <a href="../../scala/Nothing.html" target="_self">Nothing</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Receives a message from this <code>Channel</code>.
+   <p>
+   This method never returns. Therefore, the rest of the computation
+   has to be contained in the actions of the partial function.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>a partial function with message patterns and actions</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/InputChannel.html" target="_self">InputChannel</a>.<a href="../../scala/actors/InputChannel.html#react%28PartialFunction%5BMsg%2CUnit%5D%29" target="_self">react</a>
+        </dd>
+      </dl><hr></hr>
+<a name="reactWithin%28Long%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>reactWithin</em>(<em>msec</em> : <a href="../../scala/Long.html" target="_self">Long</a>)(<em>f</em> : <a href="../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../scala/Any.html" target="_self">Any</a>, <a href="../../scala/Unit.html" target="_self">Unit</a>]) : <a href="../../scala/Nothing.html" target="_self">Nothing</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Receives a message from this <code>Channel</code> within a certain
+   time span.
+   <p>
+   This method never returns. Therefore, the rest of the computation
+   has to be contained in the actions of the partial function.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>msec - </code>the time span before timeout</dd><dd><code>f - </code>a partial function with message patterns and actions</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/InputChannel.html" target="_self">InputChannel</a>.<a href="../../scala/actors/InputChannel.html#reactWithin%28Long%29" target="_self">reactWithin</a>
+        </dd>
+      </dl><hr></hr>
+<a name="%21%3F%28Msg%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>!?</em>(<em>msg</em> : <a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>) : <a href="../../scala/Any.html" target="_self">Any</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Sends a message to this <code>Channel</code> and
+   awaits reply.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>msg - </code>the message to be sent</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the reply</dd></dl>
+    <hr></hr>
+<a name="%21%3F%28Long%2CMsg%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>!?</em>(<em>msec</em> : <a href="../../scala/Long.html" target="_self">Long</a>, <em>msg</em> : <a href="../../scala/actors/Channel.html#Msg" target="_self">Msg</a>) : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="../../scala/Any.html" target="_self">Any</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Sends a message to this <code>Channel</code> and
+   awaits reply within a certain time span.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>msec - </code>the time span before timeout</dd><dd><code>msg - </code>the message to be sent</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>None</code> in case of timeout, otherwise                <code>Some(x)</code> where <code>x</code> is the reply</dd></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

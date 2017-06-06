@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.util.regexp</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/util/regexp/Base.html" target="_self">Base</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Basic regular expressions.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/util/regexp/PointedHedgeExp.html" target="_self">PointedHedgeExp</a></em>
+        <code> extends </code><a href="../../scala/util/regexp/Base.html" target="_self">Base</a>
+        
+        <div>pointed regular hedge expressions, a useful subclass of
+  regular hedge expressions.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/util/regexp/SyntaxError.html" target="_self">SyntaxError</a></em>
+        (<em>e</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="" target="contentFrame" class="java/lang/RuntimeException">java.lang.RuntimeException</a><code> with </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This runtime exception is thrown if an attempt to instantiate a
+  syntactically incorrect expression is detected.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/util/regexp/WordExp.html" target="_self">WordExp</a></em>
+        <code> extends </code><a href="../../scala/util/regexp/Base.html" target="_self">Base</a>
+        
+        <div><p>
+    The class <code>WordExp</code> provides regular word expressions.
+    Users have to instantiate type member <code>_regexpT &lt;: RegExp</code>
+    (from class <code>Base</code>) and a type member
+    <code>_labelT &lt;: Label</code>. Here is a short example:
+  </p><pre>
+  <b>import</b> scala.util.regexp._
+  <b>import</b> scala.util.automata._
+  <b>object</b> MyLang <b>extends</b> WordExp {
+    <b>type</b> _regexpT = RegExp
+    <b>type</b> _labelT = MyChar
+
+    <b>case class</b> MyChar(c:Char) <b>extends</b> Label
+  }
+  <b>import</b> MyLang._
+  // (a* | b)*
+  <b>val</b> rex = Star(Alt(Star(Letter(MyChar('a'))),Letter(MyChar('b'))))
+  <b>object</b> MyBerriSethi <b>extends</b> WordBerrySethi {
+    <b>override val</b> lang = MyLang
+  }
+  <b>val</b> nfa = MyBerriSethi.automatonFrom(Sequ(rex), 1)
+  </pre></div>
+      </td>
+    </tr>        
+        </table>
+</body>
+      </html>

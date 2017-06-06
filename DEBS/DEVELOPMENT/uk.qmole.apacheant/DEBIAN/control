@@ -1,0 +1,13 @@
+Package: uk.qmole.apacheant
+Name: Apache ANT
+Version: 1.7.1
+Architecture: iphoneos-arm
+Description: Apache ANT Java Build Tool for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/apacheant
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: jamvm, uk.qmole.classpath
+Sponsor: QMole Ltd. 
+Section: Development
+Tag: purpose::console, role::developer

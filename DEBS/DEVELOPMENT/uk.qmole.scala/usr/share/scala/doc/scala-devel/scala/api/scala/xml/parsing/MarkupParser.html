@@ -1,0 +1,1477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>trait MarkupParser in scala.xml.parsing</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../scala/xml/parsing$package.html" target="_self">scala.xml.parsing</a>
+        <br></br>
+        <span class="entity">trait  MarkupParser</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/xml/parsing/MarkupParser"><code>scala/xml/parsing/MarkupParser.scala</code></a>]
+      </div><hr></hr>
+      <a name="MarkupParser"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>trait</code>
+        <em>MarkupParser</em>
+      </dt>
+      <dd><code> extends </code><a href="../../../scala/xml/parsing/TokenTests.html" target="_self">TokenTests</a></dd>
+    </dl>
+      <dl><dd>An XML parser.
+
+ Parses XML 1.0, invokes callback methods of a MarkupHandler
+ and returns whatever the markup handler returns. Use
+ <code>ConstructingParser</code> if you just want to parse XML to
+ construct instances of <code>scala.xml.Node</code>.
+
+ While XML elements are returned, DTD declarations - if handled - are 
+ collected using side-effects.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Burak Emir</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0</dd></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../../../scala/xml/parsing/ConstructingParser.html" target="_self">ConstructingParser</a>, <a href="../../../scala/xml/pull/XMLEventReader.Parser.html" target="_self">XMLEventReader.Parser</a></dd>
+      </dl><hr></hr>
+      
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Value Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#cbuf" target="_self">cbuf</a></em>
+         : <a href="../../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div>character buffer, for names</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#ch" target="_self">ch</a></em>
+         : <a href="../../../scala/Char.html" target="_self">Char</a>
+        
+        <div>holds the next character</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#curInput" target="_self">curInput</a></em>
+         : <a href="../../../scala/io/Source.html" target="_self">Source</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#doc" target="_self">doc</a></em>
+         : <a href="../../../scala/xml/Document.html" target="_self">Document</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#dtd" target="_self">dtd</a></em>
+         : <a href="../../../scala/xml/dtd/DTD.html" target="_self">DTD</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#eof" target="_self">eof</a></em>
+         : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#extIndex" target="_self">extIndex</a></em>
+         : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#inpStack" target="_self">inpStack</a></em>
+         : <a href="../../../scala/List.html" target="_self">List</a>[<a href="../../../scala/io/Source.html" target="_self">Source</a>]
+        
+        <div>stack of inputs</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#input" target="_self">input</a></em>
+         : <a href="../../../scala/io/Source.html" target="_self">Source</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#pos" target="_self">pos</a></em>
+         : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        <div>holds the position in the source file</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#preserveWS" target="_self">preserveWS</a></em>
+         : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>if true, does not remove surplus whitespace</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#tmppos" target="_self">tmppos</a></em>
+         : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        <div>holds temporary values of pos</div>
+      </td>
+    </tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#appendText%28Int%2Cscala.xml.NodeBuffer%2CString%29" target="_self">appendText</a></em>
+        (<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>ts</em> : <a href="../../../scala/xml/NodeBuffer.html" target="_self">NodeBuffer</a>, <em>txt</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#attrDecl%28%29" target="_self">attrDecl</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>&lt;! attlist := ATTLIST</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#content%28scala.xml.NamespaceBinding%29" target="_self">content</a></em>
+        (<em>pscope</em> : <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>) : <a href="../../../scala/xml/NodeSeq.html" target="_self">NodeSeq</a>
+        
+        <div>content1 ::=  '&lt;' content1 | '&amp;' charref ...</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#content1%28scala.xml.NamespaceBinding%2Cscala.xml.NodeBuffer%29" target="_self">content1</a></em>
+        (<em>pscope</em> : <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>ts</em> : <a href="../../../scala/xml/NodeBuffer.html" target="_self">NodeBuffer</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>'&lt;' content1 ::=  ...</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#document%28%29" target="_self">document</a></em>
+         : <a href="../../../scala/xml/Document.html" target="_self">Document</a>
+        
+        <div>[22]        prolog     ::=          XMLDecl? Misc* (doctypedecl Misc*)?
+  [23]        XMLDecl    ::=          '&lt;?xml' VersionInfo EncodingDecl? SDDecl? S? '?>'
+  [24]        VersionInfo        ::=          S 'version' Eq ("'" VersionNum "'" | '"' VersionNum '"')
+  [25]        Eq         ::=          S? '=' S?
+  [26]        VersionNum         ::=          '1.0'
+  [27]        Misc       ::=          Comment | PI | S</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#element%28scala.xml.NamespaceBinding%29" target="_self">element</a></em>
+        (<em>pscope</em> : <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>) : <a href="../../../scala/xml/NodeSeq.html" target="_self">NodeSeq</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#element1%28scala.xml.NamespaceBinding%29" target="_self">element1</a></em>
+        (<em>pscope</em> : <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>) : <a href="../../../scala/xml/NodeSeq.html" target="_self">NodeSeq</a>
+        
+        <div>'&lt;' element ::= xmlTag1 '&gt;'  { xmlExpr | '{' simpleExpr '}' } ETag
+                 | xmlTag1 '/' '&gt;'</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#elementDecl%28%29" target="_self">elementDecl</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>&lt;! element := ELEMENT</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#entityDecl%28%29" target="_self">entityDecl</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>&lt;! element := ELEMENT</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#extSubset%28%29" target="_self">extSubset</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#externalID%28%29" target="_self">externalID</a></em>
+         : <a href="../../../scala/xml/dtd/ExternalID.html" target="_self">ExternalID</a>
+        
+        <div>externalID ::= SYSTEM S syslit
+                   PUBLIC S pubid S syslit</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#externalSource%28String%29" target="_self">externalSource</a></em>
+        (<em>systemLiteral</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/io/Source.html" target="_self">Source</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#intSubset%28%29" target="_self">intSubset</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>"rec-xml/#ExtSubset" pe references may not occur within markup 
+   declarations</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#markupDecl%28%29" target="_self">markupDecl</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#markupDecl1%28%29" target="_self">markupDecl1</a></em>
+         : <a href="../../../scala/Any.html" target="_self">Any</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#nextch" target="_self">nextch</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>this method assign the next character to ch and advances in input</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#normalizeAttributeValue%28String%29" target="_self">normalizeAttributeValue</a></em>
+        (<em>attval</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>for the moment, replace only character references 
+    see spec 3.3.3
+    precond: cbuf empty</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#notationDecl%28%29" target="_self">notationDecl</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>'N' notationDecl ::= "OTATION"</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#parseDTD%28%29" target="_self">parseDTD</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>parses document type declaration and assigns it to instance variable
+    dtd.
+  
+    &lt;! parseDTD ::= DOCTYPE name ... ></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#pop%28%29" target="_self">pop</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#prolog%28%29" target="_self">prolog</a></em>
+         : (<a href="../../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>], <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>], <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/Boolean.html" target="_self">Boolean</a>])
+        
+        <div>&lt;? prolog ::= xml S 
+    // this is a bit more lenient than necessary...</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#pubidLiteral%28%29" target="_self">pubidLiteral</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#push%28String%29" target="_self">push</a></em>
+        (<em>entityName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#pushExternal%28String%29" target="_self">pushExternal</a></em>
+        (<em>systemId</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#putChar%28Char%29" target="_self">putChar</a></em>
+        (<em>c</em> : <a href="../../../scala/Char.html" target="_self">Char</a>) : <a href="../../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div>append Unicode character to name buffer</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#reportSyntaxError%28Int%2CString%29" target="_self">reportSyntaxError</a></em>
+        (<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>report a syntax error</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#reportSyntaxError%28String%29" target="_self">reportSyntaxError</a></em>
+        (<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#reportValidationError%28Int%2CString%29" target="_self">reportValidationError</a></em>
+        (<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>report a syntax error</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#systemLiteral%28%29" target="_self">systemLiteral</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>attribute value, terminated by either ' or ". value may not contain &lt;.
+         AttValue     ::= `'` { _ } `'`
+                        | `"` { _ } `"`</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#textDecl%28%29" target="_self">textDecl</a></em>
+         : (<a href="../../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>], <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>])
+        
+        <div>prolog, but without standalone</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#xAttributeValue%28%29" target="_self">xAttributeValue</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>attribute value, terminated by either ' or ". value may not contain &lt;.
+         AttValue     ::= `'` { _  } `'`
+                        | `"` { _ } `"`</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#xAttributes%28scala.xml.NamespaceBinding%29" target="_self">xAttributes</a></em>
+        (<em>pscope</em> : <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>) : (<a href="../../../scala/xml/MetaData.html" target="_self">MetaData</a>, <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>)
+        
+        <div>parse attribute and create namespace scope, metadata
+    [41] Attributes    ::= { S Name Eq AttValue }</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#xCharData" target="_self">xCharData</a></em>
+         : <a href="../../../scala/xml/NodeSeq.html" target="_self">NodeSeq</a>
+        
+        <div>'&lt;! CharData ::= [CDATA[ ( {char} - {char}"]]&gt;"{char} ) ']]&gt;'
+  
+   see [15]</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#xCharRef%28%28%29%3D%3EChar%2C%28%29%3D%3EUnit%29" target="_self">xCharRef</a></em>
+        (<em>ch</em> : () =&gt; <a href="../../../scala/Char.html" target="_self">Char</a>, <em>nextch</em> : () =&gt; <a href="../../../scala/Unit.html" target="_self">Unit</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>CharRef ::= "&amp;#" '0'..'9' {'0'..'9'} ";"
+              | "&amp;#x" '0'..'9'|'A'..'F'|'a'..'f' { hexdigit } ";"
+  
+   see [66]</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#xComment" target="_self">xComment</a></em>
+         : <a href="../../../scala/xml/NodeSeq.html" target="_self">NodeSeq</a>
+        
+        <div>Comment ::= '&lt;!--' ((Char - '-') | ('-' (Char - '-'))) '--&gt;'
+  
+   see [15]</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#xEQ" target="_self">xEQ</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>scan [S] '=' [S]</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#xEndTag%28String%29" target="_self">xEndTag</a></em>
+        (<em>n</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>[42]  '&lt;' xmlEndTag ::=  '&lt;' '/' Name S? '&gt;'</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#xEntityValue%28%29" target="_self">xEntityValue</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>entity value, terminated by either ' or ". value may not contain &lt;.
+         AttValue     ::= `'` { _  } `'`
+                        | `"` { _ } `"`</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#xName" target="_self">xName</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Name ::= (Letter | '_' | ':') (NameChar)
+  
+    see  [5] of XML 1.0 specification</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#xProcInstr" target="_self">xProcInstr</a></em>
+         : <a href="../../../scala/xml/NodeSeq.html" target="_self">NodeSeq</a>
+        
+        <div>'&lt;?' ProcInstr ::= Name [S ({Char} - ({Char}'&gt;?' {Char})]'?&gt;'
+  
+   see [15]</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#xSpace" target="_self">xSpace</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>scan [3] S ::= (#x20 | #x9 | #xD | #xA)+</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#xSpaceOpt" target="_self">xSpaceOpt</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>skip optional space S?</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#xTag%28scala.xml.NamespaceBinding%29" target="_self">xTag</a></em>
+        (<em>pscope</em> : <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>) : (<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <a href="../../../scala/xml/MetaData.html" target="_self">MetaData</a>, <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>)
+        
+        <div>parse a start or empty tag.
+    [40] STag         ::= '&lt;' Name { S Attribute } [S] 
+    [44] EmptyElemTag ::= '&lt;' Name { S Attribute } [S]</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#xText" target="_self">xText</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>parse character data.
+     precondition: xEmbeddedBlock == false (we are not in a scala block)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#xToken%28Seq%5BChar%5D%29" target="_self">xToken</a></em>
+        (<em>that</em> : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/Char.html" target="_self">Char</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#xToken%28Char%29" target="_self">xToken</a></em>
+        (<em>that</em> : <a href="../../../scala/Char.html" target="_self">Char</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>munch expected XML token, report syntax error for unexpected</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/xml/parsing/MarkupParser.html#xmlProcInstr%28%29" target="_self">xmlProcInstr</a></em>
+         : <a href="../../../scala/xml/MetaData.html" target="_self">MetaData</a>
+        
+        <div>&lt;? prolog ::= xml S ... ?&gt;</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/xml/parsing/TokenTests.html" target="_self">TokenTests</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/xml/parsing/TokenTests.html#isSpace%28Char%29" target="_self">isSpace</a>, <a href="../../../scala/xml/parsing/TokenTests.html#isSpace%28Seq%5BChar%5D%29" target="_self">isSpace</a>, <a href="../../../scala/xml/parsing/TokenTests.html#isNameChar%28Char%29" target="_self">isNameChar</a>, <a href="../../../scala/xml/parsing/TokenTests.html#isNameStart%28Char%29" target="_self">isNameStart</a>, <a href="../../../scala/xml/parsing/TokenTests.html#isName%28String%29" target="_self">isName</a>, <a href="../../../scala/xml/parsing/TokenTests.html#isPubIDChar%28Char%29" target="_self">isPubIDChar</a>, <a href="../../../scala/xml/parsing/TokenTests.html#isValidIANAEncoding%28Seq%5BChar%5D%29" target="_self">isValidIANAEncoding</a>, <a href="../../../scala/xml/parsing/TokenTests.html#checkSysID%28String%29" target="_self">checkSysID</a>, <a href="../../../scala/xml/parsing/TokenTests.html#checkPubID%28String%29" target="_self">checkPubID</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Value Details</td></tr>
+        </table><div><a name="input"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>val</code>
+        <em>input</em> : <a href="../../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="preserveWS"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>val</code>
+        <em>preserveWS</em> : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>if true, does not remove surplus whitespace</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="curInput"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>var</code>
+        <em>curInput</em> : <a href="../../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="inpStack"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>var</code>
+        <em>inpStack</em> : <a href="../../../scala/List.html" target="_self">List</a>[<a href="../../../scala/io/Source.html" target="_self">Source</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>stack of inputs</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="pos"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>var</code>
+        <em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>holds the position in the source file</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="extIndex"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>var</code>
+        <em>extIndex</em> : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="tmppos"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>var</code>
+        <em>tmppos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>holds temporary values of pos</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="ch"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>var</code>
+        <em>ch</em> : <a href="../../../scala/Char.html" target="_self">Char</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>holds the next character</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="cbuf"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>val</code>
+        <em>cbuf</em> : <a href="../../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>character buffer, for names</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="dtd"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>var</code>
+        <em>dtd</em> : <a href="../../../scala/xml/dtd/DTD.html" target="_self">DTD</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="doc"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>var</code>
+        <em>doc</em> : <a href="../../../scala/xml/Document.html" target="_self">Document</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="eof"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>var</code>
+        <em>eof</em> : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="externalSource%28String%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>externalSource</em>(<em>systemLiteral</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/io/Source.html" target="_self">Source</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="xmlProcInstr%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>xmlProcInstr</em> : <a href="../../../scala/xml/MetaData.html" target="_self">MetaData</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>&lt;? prolog ::= xml S ... ?&gt;</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="prolog%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>prolog</em> : (<a href="../../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>], <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>], <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/Boolean.html" target="_self">Boolean</a>])
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>&lt;? prolog ::= xml S 
+    // this is a bit more lenient than necessary...</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="textDecl%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>textDecl</em> : (<a href="../../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>], <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>])
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>prolog, but without standalone</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="document%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>document</em> : <a href="../../../scala/xml/Document.html" target="_self">Document</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>[22]        prolog     ::=          XMLDecl? Misc* (doctypedecl Misc*)?
+  [23]        XMLDecl    ::=          '&lt;?xml' VersionInfo EncodingDecl? SDDecl? S? '?>'
+  [24]        VersionInfo        ::=          S 'version' Eq ("'" VersionNum "'" | '"' VersionNum '"')
+  [25]        Eq         ::=          S? '=' S?
+  [26]        VersionNum         ::=          '1.0'
+  [27]        Misc       ::=          Comment | PI | S</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="putChar%28Char%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>putChar</em>(<em>c</em> : <a href="../../../scala/Char.html" target="_self">Char</a>) : <a href="../../../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>append Unicode character to name buffer</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="nextch"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>nextch</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>this method assign the next character to ch and advances in input</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="xToken%28Char%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>xToken</em>(<em>that</em> : <a href="../../../scala/Char.html" target="_self">Char</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>munch expected XML token, report syntax error for unexpected</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="xToken%28Seq%5BChar%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>xToken</em>(<em>that</em> : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/Char.html" target="_self">Char</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="xAttributes%28scala.xml.NamespaceBinding%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>xAttributes</em>(<em>pscope</em> : <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>) : (<a href="../../../scala/xml/MetaData.html" target="_self">MetaData</a>, <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>)
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>parse attribute and create namespace scope, metadata
+    [41] Attributes    ::= { S Name Eq AttValue }</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="xAttributeValue%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>xAttributeValue</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>attribute value, terminated by either ' or ". value may not contain &lt;.
+         AttValue     ::= `'` { _  } `'`
+                        | `"` { _ } `"`</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="xEntityValue%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>xEntityValue</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>entity value, terminated by either ' or ". value may not contain &lt;.
+         AttValue     ::= `'` { _  } `'`
+                        | `"` { _ } `"`</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="xTag%28scala.xml.NamespaceBinding%29"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>def</code>
+        <em>xTag</em>(<em>pscope</em> : <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>) : (<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <a href="../../../scala/xml/MetaData.html" target="_self">MetaData</a>, <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>)
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>parse a start or empty tag.
+    [40] STag         ::= '&lt;' Name { S Attribute } [S] 
+    [44] EmptyElemTag ::= '&lt;' Name { S Attribute } [S]</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="xEndTag%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>xEndTag</em>(<em>n</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>[42]  '&lt;' xmlEndTag ::=  '&lt;' '/' Name S? '&gt;'</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="xCharData"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>xCharData</em> : <a href="../../../scala/xml/NodeSeq.html" target="_self">NodeSeq</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>'&lt;! CharData ::= [CDATA[ ( {char} - {char}"]]&gt;"{char} ) ']]&gt;'
+  
+   see [15]</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="xCharRef%28%28%29%3D%3EChar%2C%28%29%3D%3EUnit%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>xCharRef</em>(<em>ch</em> : () =&gt; <a href="../../../scala/Char.html" target="_self">Char</a>, <em>nextch</em> : () =&gt; <a href="../../../scala/Unit.html" target="_self">Unit</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>CharRef ::= "&amp;#" '0'..'9' {'0'..'9'} ";"
+              | "&amp;#x" '0'..'9'|'A'..'F'|'a'..'f' { hexdigit } ";"
+  
+   see [66]</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="xComment"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>xComment</em> : <a href="../../../scala/xml/NodeSeq.html" target="_self">NodeSeq</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Comment ::= '&lt;!--' ((Char - '-') | ('-' (Char - '-'))) '--&gt;'
+  
+   see [15]</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="appendText%28Int%2Cscala.xml.NodeBuffer%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>appendText</em>(<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>ts</em> : <a href="../../../scala/xml/NodeBuffer.html" target="_self">NodeBuffer</a>, <em>txt</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="content1%28scala.xml.NamespaceBinding%2Cscala.xml.NodeBuffer%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>content1</em>(<em>pscope</em> : <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>, <em>ts</em> : <a href="../../../scala/xml/NodeBuffer.html" target="_self">NodeBuffer</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>'&lt;' content1 ::=  ...</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="content%28scala.xml.NamespaceBinding%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>content</em>(<em>pscope</em> : <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>) : <a href="../../../scala/xml/NodeSeq.html" target="_self">NodeSeq</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>content1 ::=  '&lt;' content1 | '&amp;' charref ...</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="externalID%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>externalID</em> : <a href="../../../scala/xml/dtd/ExternalID.html" target="_self">ExternalID</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>externalID ::= SYSTEM S syslit
+                   PUBLIC S pubid S syslit</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="parseDTD%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>parseDTD</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>parses document type declaration and assigns it to instance variable
+    dtd.
+  
+    &lt;! parseDTD ::= DOCTYPE name ... ></dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="element%28scala.xml.NamespaceBinding%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>element</em>(<em>pscope</em> : <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>) : <a href="../../../scala/xml/NodeSeq.html" target="_self">NodeSeq</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="element1%28scala.xml.NamespaceBinding%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>element1</em>(<em>pscope</em> : <a href="../../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>) : <a href="../../../scala/xml/NodeSeq.html" target="_self">NodeSeq</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>'&lt;' element ::= xmlTag1 '&gt;'  { xmlExpr | '{' simpleExpr '}' } ETag
+                 | xmlTag1 '/' '&gt;'</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="xName"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>xName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Name ::= (Letter | '_' | ':') (NameChar)
+  
+    see  [5] of XML 1.0 specification</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="xEQ"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>xEQ</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>scan [S] '=' [S]</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="xSpaceOpt"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>xSpaceOpt</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>skip optional space S?</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="xSpace"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>xSpace</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>scan [3] S ::= (#x20 | #x9 | #xD | #xA)+</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="xProcInstr"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>xProcInstr</em> : <a href="../../../scala/xml/NodeSeq.html" target="_self">NodeSeq</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>'&lt;?' ProcInstr ::= Name [S ({Char} - ({Char}'&gt;?' {Char})]'?&gt;'
+  
+   see [15]</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="xText"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>xText</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>parse character data.
+     precondition: xEmbeddedBlock == false (we are not in a scala block)</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="systemLiteral%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>systemLiteral</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>attribute value, terminated by either ' or ". value may not contain &lt;.
+         AttValue     ::= `'` { _ } `'`
+                        | `"` { _ } `"`</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="pubidLiteral%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>pubidLiteral</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="extSubset%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>extSubset</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="markupDecl1%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>markupDecl1</em> : <a href="../../../scala/Any.html" target="_self">Any</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="markupDecl%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>markupDecl</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="intSubset%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>intSubset</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>"rec-xml/#ExtSubset" pe references may not occur within markup 
+   declarations</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="elementDecl%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>elementDecl</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>&lt;! element := ELEMENT</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="attrDecl%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>attrDecl</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>&lt;! attlist := ATTLIST</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="entityDecl%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>entityDecl</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>&lt;! element := ELEMENT</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="notationDecl%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>notationDecl</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>'N' notationDecl ::= "OTATION"</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="reportSyntaxError%28Int%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>reportSyntaxError</em>(<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>report a syntax error</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="reportSyntaxError%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>reportSyntaxError</em>(<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="reportValidationError%28Int%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>reportValidationError</em>(<em>pos</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>report a syntax error</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="push%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>push</em>(<em>entityName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="pushExternal%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>pushExternal</em>(<em>systemId</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="pop%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>pop</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="normalizeAttributeValue%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>normalizeAttributeValue</em>(<em>attval</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>for the moment, replace only character references 
+    see spec 3.3.3
+    precond: cbuf empty</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

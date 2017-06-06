@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.xml.parsing</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/parsing/ConstructingHandler.html" target="_self">ConstructingHandler</a></em>
+        <code> extends </code><a href="../../scala/xml/parsing/MarkupHandler.html" target="_self">MarkupHandler</a>
+        
+        <div>Implementation of MarkupHandler that constructs nodes.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/parsing/ConstructingParser.html" target="_self">ConstructingParser</a></em>
+        (<em>inp</em> : <a href="../../scala/io/Source.html" target="_self">Source</a>, <em>presWS</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>)<code> extends </code><a href="../../scala/xml/parsing/ConstructingHandler.html" target="_self">ConstructingHandler</a><code> with </code><a href="../../scala/xml/parsing/ExternalSources.html" target="_self">ExternalSources</a><code> with </code><a href="../../scala/xml/parsing/MarkupParser.html" target="_self">MarkupParser</a>
+        
+        <div>An xml parser. parses XML and invokes callback methods of a MarkupHandler.
+  Don't forget to call next.ch on a freshly instantiated parser in order to
+  initialize it. If you get the parser from the object method, initialization
+  is already done for you.
+
+<pre>
+object parseFromURL {
+  def main(args:Array[String]): Unit = {
+    val url = args(0);
+    val src = scala.io.Source.fromURL(url);
+    val cpa = scala.xml.parsing.ConstructingParser.fromSource(src, false); // fromSource initializes automatically
+    val doc = cpa.document();
+    // let's see what it is
+    val ppr = new scala.xml.PrettyPrinter(80,5);
+    val ele = doc.docElem;
+    Console.println("finished parsing");
+    val out = ppr.format(ele);
+    Console.println(out);
+  }
+}
+</pre></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/parsing/DefaultMarkupHandler.html" target="_self">DefaultMarkupHandler</a></em>
+        <code> extends </code><a href="../../scala/xml/parsing/MarkupHandler.html" target="_self">MarkupHandler</a>
+        
+        <div>default implemenation of markup handler always returns NodeSeq.Empty</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/parsing/ExternalSources.html" target="_self">ExternalSources</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/parsing/FactoryAdapter.html" target="_self">FactoryAdapter</a></em>
+        <code> extends </code><a href="" target="contentFrame" class="org/xml/sax/helpers/DefaultHandler">org.xml.sax.helpers.DefaultHandler</a><code> with </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>SAX adapter class, for use with Java SAX parser. Keeps track of 
+  namespace bindings, without relying on namespace handling of the 
+  underlying SAX parser.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/parsing/FatalError.html" target="_self">FatalError</a></em>
+        (<code>val </code><em>msg</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="" target="contentFrame" class="java/lang/RuntimeException">java.lang.RuntimeException</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/parsing/MarkupHandler.html" target="_self">MarkupHandler</a></em>
+        <code> extends </code><a href="../../scala/util/logging/Logged.html" target="_self">Logged</a>
+        
+        <div>class that handles markup - provides callback methods to MarkupParser.
+  the default is nonvalidating behaviour</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/parsing/MarkupParser.html" target="_self">MarkupParser</a></em>
+        <code> extends </code><a href="../../scala/xml/parsing/TokenTests.html" target="_self">TokenTests</a>
+        
+        <div>An XML parser.
+
+ Parses XML 1.0, invokes callback methods of a MarkupHandler
+ and returns whatever the markup handler returns. Use
+ <code>ConstructingParser</code> if you just want to parse XML to
+ construct instances of <code>scala.xml.Node</code>.
+
+ While XML elements are returned, DTD declarations - if handled - are 
+ collected using side-effects.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/parsing/NoBindingFactoryAdapter.html" target="_self">NoBindingFactoryAdapter</a></em>
+        <code> extends </code><a href="../../scala/xml/parsing/FactoryAdapter.html" target="_self">FactoryAdapter</a><code> with </code><a href="../../scala/xml/factory/NodeFactory.html" target="_self">NodeFactory</a>[<a href="../../scala/xml/Elem.html" target="_self">Elem</a>]
+        
+        <div>nobinding adaptor providing callbacks to parser to create elements.
+   implements hash-consing</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/parsing/TokenTests.html" target="_self">TokenTests</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Helper functions for parsing XML fragments</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/parsing/ValidatingMarkupHandler.html" target="_self">ValidatingMarkupHandler</a></em>
+        <code> extends </code><a href="../../scala/xml/parsing/MarkupHandler.html" target="_self">MarkupHandler</a>
+        
+        
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/parsing/ConstructingParser$object.html" target="_self">ConstructingParser</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>        
+        </table></body>
+      </html>

@@ -1,0 +1,741 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>trait SeqProxy in scala</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../scala$package.html" target="_self">scala</a>
+        <br></br>
+        <span class="entity">trait  SeqProxy</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/SeqProxy"><code>scala/SeqProxy.scala</code></a>]
+      </div><hr></hr>
+      <a name="SeqProxy"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>trait</code>
+        <em>SeqProxy</em>[+<em>A</em>]
+      </dt>
+      <dd><code> extends </code><a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]<code> with </code><a href="../scala/IterableProxy.html" target="_self">IterableProxy</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]</dd>
+    </dl>
+      <dl><dd>This class implements a proxy for sequences. It forwards
+  all calls to a different sequence object.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Martin Odersky</dd><dd>Matthias Zenger</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>2.0, 31/12/2006</dd></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../scala/collection/mutable/PriorityQueueProxy.html" target="_self">PriorityQueueProxy</a>, <a href="../scala/collection/mutable/QueueProxy.html" target="_self">QueueProxy</a>, <a href="../scala/collection/mutable/StackProxy.html" target="_self">StackProxy</a></dd>
+      </dl><hr></hr>
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#apply%28Int%29" target="_self">apply</a></em>
+        (<em>i</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/SeqProxy.html#A" target="_self">A</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#concat%28Iterable%5BB%5D%29" target="_self">concat</a></em>
+        [<em>B</em> &gt;: <a href="../scala/SeqProxy.html#A" target="_self">A</a>](<em>that</em> : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/SeqProxy.html#concat%28Iterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#concat%28Iterable%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div>Appends two iterable objects.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#contains%28Any%29" target="_self">contains</a></em>
+        (<em>elem</em> : <a href="../scala/Any.html" target="_self">Any</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Tests if the given value <code>elem</code> is a member of this 
+    sequence.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#copyToArray%28Array%5BB%5D%2CInt%29" target="_self">copyToArray</a></em>
+        [<em>B</em> &gt;: <a href="../scala/SeqProxy.html#A" target="_self">A</a>](<em>xs</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/SeqProxy.html#copyToArray%28Array%5BB%5D%2CInt%29#B" target="_self">B</a>], <em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Fills the given array <code>xs</code> with the elements of
+    this sequence starting at position <code>start</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#drop%28Int%29" target="_self">drop</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]
+        
+        <div>Returns this sequence without its <code>n</code> first elements
+    If this sequence has less than <code>n</code> elements, the empty
+    sequence is returned. (non-strict)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a></em>
+        (<em>p</em> : (<a href="../scala/SeqProxy.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]
+        
+        <div>Returns the longest suffix of this sequence whose first element
+    does not satisfy the predicate <code>p</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a></em>
+        (<em>p</em> : (<a href="../scala/SeqProxy.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]
+        
+        <div>Returns all the elements of this sequence that satisfy the
+    predicate <code>p</code>. The order of the elements is preserved.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a></em>
+        [<em>B</em>](<em>f</em> : (<a href="../scala/SeqProxy.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/SeqProxy.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div>Applies the given function <code>f</code> to each element of
+    this sequence, then concatenates the results.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#isDefinedAt%28Int%29" target="_self">isDefinedAt</a></em>
+        (<em>x</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Is this partial function defined for the index <code>x</code>?</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#isEmpty" target="_self">isEmpty</a></em>
+         : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Returns true if length == 0</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#lastIndexOf%28B%29" target="_self">lastIndexOf</a></em>
+        [<em>B</em> &gt;: <a href="../scala/SeqProxy.html#A" target="_self">A</a>](<em>elem</em> : <a href="../scala/SeqProxy.html#lastIndexOf%28B%29#B" target="_self">B</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>Returns the index of the last occurence of the specified element
+    in this sequence, or -1 if the sequence does not contain this element.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#length" target="_self">length</a></em>
+         : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>Returns the length of the sequence.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#map%28%28A%29%3D%3EB%29" target="_self">map</a></em>
+        [<em>B</em>](<em>f</em> : (<a href="../scala/SeqProxy.html#A" target="_self">A</a>) =&gt; <a href="../scala/SeqProxy.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>]
+        
+        <div>Returns the sequence resulting from applying the given function
+    <code>f</code> to each element of this sequence.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#reverse" target="_self">reverse</a></em>
+         : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]
+        
+        <div>A sequence consisting of all elements of this sequence in reverse order.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#self" target="_self">self</a></em>
+         : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#slice%28Int%2CInt%29" target="_self">slice</a></em>
+        (<em>from</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>len</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]
+        
+        <div>A sub-sequence of <code>len</code> elements 
+     starting at index <code>from</code> (non-strict)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#take%28Int%29" target="_self">take</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]
+        
+        <div>Returns a sequence consisting only over the first <code>n</code>
+    elements of this sequence, or else the whole sequence, if it has less
+    than <code>n</code> elements. (non-strict)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a></em>
+        (<em>p</em> : (<a href="../scala/SeqProxy.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]
+        
+        <div>Returns the longest prefix of this sequence whose elements satisfy
+    the predicate <code>p</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/SeqProxy.html#toArray" target="_self">toArray</a></em>
+        [<em>B</em> &gt;: <a href="../scala/SeqProxy.html#A" target="_self">A</a>] : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/SeqProxy.html#toArray#B" target="_self">B</a>]
+        
+        <div>Converts this sequence to a fresh Array with <code>length</code> elements.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/IterableProxy.html" target="_self">IterableProxy</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/IterableProxy.html#elements" target="_self">elements</a>, <a href="../scala/IterableProxy.html#foreach%28%28A%29%3D%3EUnit%29" target="_self">foreach</a>, <a href="../scala/IterableProxy.html#forall%28%28A%29%3D%3EBoolean%29" target="_self">forall</a>, <a href="../scala/IterableProxy.html#exists%28%28A%29%3D%3EBoolean%29" target="_self">exists</a>, <a href="../scala/IterableProxy.html#find%28%28A%29%3D%3EBoolean%29" target="_self">find</a>, <a href="../scala/IterableProxy.html#findIndexOf%28%28A%29%3D%3EBoolean%29" target="_self">findIndexOf</a>, <a href="../scala/IterableProxy.html#indexOf%28B%29" target="_self">indexOf</a>, <a href="../scala/IterableProxy.html#foldLeft%28B%29" target="_self">foldLeft</a>, <a href="../scala/IterableProxy.html#foldRight%28B%29" target="_self">foldRight</a>, <a href="../scala/IterableProxy.html#%2F%3A%28B%29" target="_self">/:</a>, <a href="../scala/IterableProxy.html#%3A%5C%28B%29" target="_self">:\</a>, <a href="../scala/IterableProxy.html#reduceLeft%28%28B%2CB%29%3D%3EB%29" target="_self">reduceLeft</a>, <a href="../scala/IterableProxy.html#reduceRight%28%28B%2CB%29%3D%3EB%29" target="_self">reduceRight</a>, <a href="../scala/IterableProxy.html#sameElements%28Iterable%5BB%5D%29" target="_self">sameElements</a>, <a href="../scala/IterableProxy.html#copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29" target="_self">copyToBuffer</a>, <a href="../scala/IterableProxy.html#toList" target="_self">toList</a>, <a href="../scala/IterableProxy.html#mkString%28String%2CString%2CString%29" target="_self">mkString</a>, <a href="../scala/IterableProxy.html#addString%28scala.compat.StringBuilder%2CString%2CString%2CString%29" target="_self">addString</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Proxy.html" target="_self">Proxy</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Proxy.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../scala/Proxy.html#equals%28Any%29" target="_self">equals</a>, <a href="../scala/Proxy.html#toString%28%29" target="_self">toString</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Seq.html" target="_self">Seq</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Seq.html#lengthCompare%28Int%29" target="_self">lengthCompare</a>, <a href="../scala/Seq.html#size" target="_self">size</a>, <a href="../scala/Seq.html#last" target="_self">last</a>, <a href="../scala/Seq.html#lastOption" target="_self">lastOption</a>, <a href="../scala/Seq.html#headOption" target="_self">headOption</a>, <a href="../scala/Seq.html#%2B%2B%28Iterable%5BB%5D%29" target="_self">++</a>, <a href="../scala/Seq.html#subseq%28Int%2CInt%29" target="_self">subseq</a>, <a href="../scala/Seq.html#projection" target="_self">projection</a>, <a href="../scala/Seq.html#equalsWith%28Seq%5BB%5D%29" target="_self">equalsWith</a>, <a href="../scala/Seq.html#startsWith%28Seq%5BB%5D%29" target="_self">startsWith</a>, <a href="../scala/Seq.html#endsWith%28Seq%5BB%5D%29" target="_self">endsWith</a>, <a href="../scala/Seq.html#indexOf%28Seq%5BB%5D%29" target="_self">indexOf</a>, <a href="../scala/Seq.html#containsSlice%28Seq%5BB%5D%29" target="_self">containsSlice</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Collection.html" target="_self">Collection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Collection.html#stringPrefix" target="_self">stringPrefix</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Iterable.html" target="_self">Iterable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Iterable.html#partition%28%28A%29%3D%3EBoolean%29" target="_self">partition</a>, <a href="../scala/Iterable.html#toStream" target="_self">toStream</a>, <a href="../scala/Iterable.html#mkString%28String%29" target="_self">mkString</a>, <a href="../scala/Iterable.html#mkString" target="_self">mkString</a>, <a href="../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%29" target="_self">addString</a>, <a href="../scala/Iterable.html#hasDefiniteSize" target="_self">hasDefiniteSize</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/PartialFunction.html" target="_self">PartialFunction</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/PartialFunction.html#orElse%28PartialFunction%5BA1%2CB1%5D%29" target="_self">orElse</a>, <a href="../scala/PartialFunction.html#andThen%28%28B%29%3D%3EC%29" target="_self">andThen</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Function1.html" target="_self">Function1</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Function1.html#compose%28%28A%29%3D%3ET1%29" target="_self">compose</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="self"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>self</em> : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl><dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/IterableProxy.html" target="_self">IterableProxy</a>.<a href="../scala/IterableProxy.html#self" target="_self">self</a>
+        </dd>
+      </dl><hr></hr>
+<a name="apply%28Int%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>apply</em>(<em>i</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/SeqProxy.html#A" target="_self">A</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="length"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>length</em> : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the length of the sequence.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the sequence length.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#length" target="_self">length</a>
+        </dd>
+      </dl><hr></hr>
+<a name="isEmpty"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>isEmpty</em> : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns true if length == 0</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#isEmpty" target="_self">isEmpty</a>
+        </dd>
+      </dl><hr></hr>
+<a name="concat%28Iterable%5BB%5D%29"></a><dl>
+      <dt>
+        @<a href="../scala/deprecated.html" target="_self">deprecated</a><br></br>
+        <code>override</code>
+        <code>def</code>
+        <em>concat</em>[<em>B</em> &gt;: <a href="../scala/SeqProxy.html#A" target="_self">A</a>](<em>that</em> : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/SeqProxy.html#concat%28Iterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#concat%28Iterable%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends two iterable objects.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the new iterable object</dd><dt style="margin:10px 0 0 20px;">
+        <b>Deprecated</b></dt><dd>use <code>++</code> instead</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#concat%28Iterable%5BB%5D%29" target="_self">concat</a>, <a href="../scala/IterableProxy.html" target="_self">IterableProxy</a>.<a href="../scala/IterableProxy.html#concat%28Iterable%5BB%5D%29" target="_self">concat</a>
+        </dd>
+      </dl><hr></hr>
+<a name="isDefinedAt%28Int%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>isDefinedAt</em>(<em>x</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Is this partial function defined for the index <code>x</code>?</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>x - </code>..</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>true</code>, iff <code>x</code> is a legal sequence index.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#isDefinedAt%28Int%29" target="_self">isDefinedAt</a>
+        </dd>
+      </dl><hr></hr>
+<a name="lastIndexOf%28B%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>lastIndexOf</em>[<em>B</em> &gt;: <a href="../scala/SeqProxy.html#A" target="_self">A</a>](<em>elem</em> : <a href="../scala/SeqProxy.html#lastIndexOf%28B%29#B" target="_self">B</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the index of the last occurence of the specified element
+    in this sequence, or -1 if the sequence does not contain this element.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>elem - </code>element to search for.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the index in this sequence of the last occurence of the            specified element, or -1 if the sequence does not contain
+            this element.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#lastIndexOf%28B%29" target="_self">lastIndexOf</a>
+        </dd>
+      </dl><hr></hr>
+<a name="map%28%28A%29%3D%3EB%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>map</em>[<em>B</em>](<em>f</em> : (<a href="../scala/SeqProxy.html#A" target="_self">A</a>) =&gt; <a href="../scala/SeqProxy.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the sequence resulting from applying the given function
+    <code>f</code> to each element of this sequence.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>function to apply to each element.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>f(a<sub>0</sub>), ..., f(a<sub>n</sub>)</code> if this             sequence is <code>a<sub>0</sub>, ..., a<sub>n</sub></code>.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#map%28%28A%29%3D%3EB%29" target="_self">map</a>, <a href="../scala/IterableProxy.html" target="_self">IterableProxy</a>.<a href="../scala/IterableProxy.html#map%28%28A%29%3D%3EB%29" target="_self">map</a>
+        </dd>
+      </dl><hr></hr>
+<a name="flatMap%28%28A%29%3D%3EIterable%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>flatMap</em>[<em>B</em>](<em>f</em> : (<a href="../scala/SeqProxy.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/SeqProxy.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Applies the given function <code>f</code> to each element of
+    this sequence, then concatenates the results.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>the function to apply on each element.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>f(a<sub>0</sub>) ::: ... ::: f(a<sub>n</sub>)</code> if             this sequence is <code>a<sub>0</sub>, ..., a<sub>n</sub></code>.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a>, <a href="../scala/IterableProxy.html" target="_self">IterableProxy</a>.<a href="../scala/IterableProxy.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a>
+        </dd>
+      </dl><hr></hr>
+<a name="filter%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>filter</em>(<em>p</em> : (<a href="../scala/SeqProxy.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns all the elements of this sequence that satisfy the
+    predicate <code>p</code>. The order of the elements is preserved.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the predicate used to filter the list.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the elements of this list satisfying <code>p</code>.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a>, <a href="../scala/IterableProxy.html" target="_self">IterableProxy</a>.<a href="../scala/IterableProxy.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a>
+        </dd>
+      </dl><hr></hr>
+<a name="take%28Int%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>take</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a sequence consisting only over the first <code>n</code>
+    elements of this sequence, or else the whole sequence, if it has less
+    than <code>n</code> elements. (non-strict)</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the number of elements to take</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a possibly projected sequence</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#take%28Int%29" target="_self">take</a>, <a href="../scala/IterableProxy.html" target="_self">IterableProxy</a>.<a href="../scala/IterableProxy.html#take%28Int%29" target="_self">take</a>
+        </dd>
+      </dl><hr></hr>
+<a name="drop%28Int%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>drop</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns this sequence without its <code>n</code> first elements
+    If this sequence has less than <code>n</code> elements, the empty
+    sequence is returned. (non-strict)</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the number of elements to drop</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the new sequence</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#drop%28Int%29" target="_self">drop</a>, <a href="../scala/IterableProxy.html" target="_self">IterableProxy</a>.<a href="../scala/IterableProxy.html#drop%28Int%29" target="_self">drop</a>
+        </dd>
+      </dl><hr></hr>
+<a name="takeWhile%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>takeWhile</em>(<em>p</em> : (<a href="../scala/SeqProxy.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the longest prefix of this sequence whose elements satisfy
+    the predicate <code>p</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the test predicate.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the longest prefix of this sequence whose elements satisfy             the predicate <code>p</code>.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a>, <a href="../scala/IterableProxy.html" target="_self">IterableProxy</a>.<a href="../scala/IterableProxy.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a>
+        </dd>
+      </dl><hr></hr>
+<a name="dropWhile%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>dropWhile</em>(<em>p</em> : (<a href="../scala/SeqProxy.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the longest suffix of this sequence whose first element
+    does not satisfy the predicate <code>p</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the test predicate.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the longest suffix of the sequence whose first element             does not satisfy the predicate <code>p</code>.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a>, <a href="../scala/IterableProxy.html" target="_self">IterableProxy</a>.<a href="../scala/IterableProxy.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a>
+        </dd>
+      </dl><hr></hr>
+<a name="reverse"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>reverse</em> : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A sequence consisting of all elements of this sequence in reverse order.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#reverse" target="_self">reverse</a>
+        </dd>
+      </dl><hr></hr>
+<a name="contains%28Any%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>contains</em>(<em>elem</em> : <a href="../scala/Any.html" target="_self">Any</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Tests if the given value <code>elem</code> is a member of this 
+    sequence.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>elem - </code>element whose membership has to be tested.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>true</code> iff there is an element of this sequence                which is equal (w.r.t. <code>==</code>) to <code>elem</code>.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#contains%28Any%29" target="_self">contains</a>
+        </dd>
+      </dl><hr></hr>
+<a name="slice%28Int%2CInt%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>slice</em>(<em>from</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>len</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/SeqProxy.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A sub-sequence of <code>len</code> elements 
+     starting at index <code>from</code> (non-strict)</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>from - </code>The index of the first element of the slice</dd><dd><code>until - </code>The index of the element following the slice</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>IndexOutOfBoundsException - </code>if <code>from &lt; 0</code>             or <code>length &lt; from + len<code></dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#slice%28Int%2CInt%29" target="_self">slice</a>
+        </dd>
+      </dl><hr></hr>
+<a name="toArray"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>toArray</em>[<em>B</em> &gt;: <a href="../scala/SeqProxy.html#A" target="_self">A</a>] : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/SeqProxy.html#toArray#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Converts this sequence to a fresh Array with <code>length</code> elements.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#toArray" target="_self">toArray</a>
+        </dd>
+      </dl><hr></hr>
+<a name="copyToArray%28Array%5BB%5D%2CInt%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>copyToArray</em>[<em>B</em> &gt;: <a href="../scala/SeqProxy.html#A" target="_self">A</a>](<em>xs</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/SeqProxy.html#copyToArray%28Array%5BB%5D%2CInt%29#B" target="_self">B</a>], <em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Fills the given array <code>xs</code> with the elements of
+    this sequence starting at position <code>start</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>xs - </code>the array to fill.</dd><dd><code>start - </code>starting index.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Precondition</b></dt><dd>the array must be large enough to hold all elements.</dd></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

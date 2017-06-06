@@ -1,0 +1,659 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>object List in scala</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../scala$package.html" target="_self">scala</a>
+        <br></br>
+        <span class="entity">object  List</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/List"><code>scala/List.scala</code></a>]
+      </div><hr></hr>
+      <a name="List"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>object</code>
+        <em>List</em>
+      </dt>
+      <dd><code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd>This object provides methods for creating specialized lists, and for
+  transforming special kinds of lists (e.g. lists of lists).</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Martin Odersky and others</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0, 15/07/2003</dd></dl>
+    
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#apply%28A*%29" target="_self">apply</a></em>
+        [<em>A</em>](<em>xs</em> : <a href="../scala/List$object.html#apply%28A*%29#A" target="_self">A</a>*) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#apply%28A*%29#A" target="_self">A</a>]
+        
+        <div>Create a list with given elements.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#concat%28List%5BA%5D*%29" target="_self">concat</a></em>
+        [<em>A</em>](<em>xss</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#concat%28List%5BA%5D*%29#A" target="_self">A</a>]*) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#concat%28List%5BA%5D*%29#A" target="_self">A</a>]
+        
+        <div>Concatenate all the argument lists into a single list.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#exists2%28List%5BA%5D%2CList%5BB%5D%29" target="_self">exists2</a></em>
+        [<em>A</em>, <em>B</em>](<em>xs</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#exists2%28List%5BA%5D%2CList%5BB%5D%29#A" target="_self">A</a>], <em>ys</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#exists2%28List%5BA%5D%2CList%5BB%5D%29#B" target="_self">B</a>])(<em>f</em> : (<a href="../scala/List$object.html#exists2%28List%5BA%5D%2CList%5BB%5D%29#A" target="_self">A</a>, <a href="../scala/List$object.html#exists2%28List%5BA%5D%2CList%5BB%5D%29#B" target="_self">B</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Tests whether the given predicate <code>p</code> holds
+    for some corresponding elements of the argument lists.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#flatten%28List%5BList%5BA%5D%5D%29" target="_self">flatten</a></em>
+        [<em>A</em>](<em>xss</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#flatten%28List%5BList%5BA%5D%5D%29#A" target="_self">A</a>]]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#flatten%28List%5BList%5BA%5D%5D%29#A" target="_self">A</a>]
+        
+        <div>Concatenate all the elements of a given list of lists.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#forall2%28List%5BA%5D%2CList%5BB%5D%29" target="_self">forall2</a></em>
+        [<em>A</em>, <em>B</em>](<em>xs</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#forall2%28List%5BA%5D%2CList%5BB%5D%29#A" target="_self">A</a>], <em>ys</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#forall2%28List%5BA%5D%2CList%5BB%5D%29#B" target="_self">B</a>])(<em>f</em> : (<a href="../scala/List$object.html#forall2%28List%5BA%5D%2CList%5BB%5D%29#A" target="_self">A</a>, <a href="../scala/List$object.html#forall2%28List%5BA%5D%2CList%5BB%5D%29#B" target="_self">B</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Tests whether the given predicate <code>p</code> holds 
+    for all corresponding elements of the argument lists.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#fromArray%28Array%5BA%5D%2CInt%2CInt%29" target="_self">fromArray</a></em>
+        [<em>A</em>](<em>arr</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/List$object.html#fromArray%28Array%5BA%5D%2CInt%2CInt%29#A" target="_self">A</a>], <em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>len</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#fromArray%28Array%5BA%5D%2CInt%2CInt%29#A" target="_self">A</a>]
+        
+        <div>Converts a range of an array into a list.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#fromArray%28Array%5BA%5D%29" target="_self">fromArray</a></em>
+        [<em>A</em>](<em>arr</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/List$object.html#fromArray%28Array%5BA%5D%29#A" target="_self">A</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#fromArray%28Array%5BA%5D%29#A" target="_self">A</a>]
+        
+        <div>Converts an array into a list.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#fromIterator%28Iterator%5BA%5D%29" target="_self">fromIterator</a></em>
+        [<em>A</em>](<em>it</em> : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/List$object.html#fromIterator%28Iterator%5BA%5D%29#A" target="_self">A</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#fromIterator%28Iterator%5BA%5D%29#A" target="_self">A</a>]
+        
+        <div>Converts an iterator to a list.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#fromString%28String%2CChar%29" target="_self">fromString</a></em>
+        (<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>separator</em> : <a href="../scala/Char.html" target="_self">Char</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]
+        
+        <div>Parses a string which contains substrings separated by a
+    separator character and returns a list of all substrings.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#fromString%28String%29" target="_self">fromString</a></em>
+        (<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Char.html" target="_self">Char</a>]
+        
+        <div>Returns the given string as a list of characters.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#make%28Int%2CA%29" target="_self">make</a></em>
+        [<em>A</em>](<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>elem</em> : <a href="../scala/List$object.html#make%28Int%2CA%29#A" target="_self">A</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#make%28Int%2CA%29#A" target="_self">A</a>]
+        
+        <div>Create a list containing several copies of an element.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#map2%28List%5BA%5D%2CList%5BB%5D%29" target="_self">map2</a></em>
+        [<em>A</em>, <em>B</em>, <em>C</em>](<em>xs</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#map2%28List%5BA%5D%2CList%5BB%5D%29#A" target="_self">A</a>], <em>ys</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#map2%28List%5BA%5D%2CList%5BB%5D%29#B" target="_self">B</a>])(<em>f</em> : (<a href="../scala/List$object.html#map2%28List%5BA%5D%2CList%5BB%5D%29#A" target="_self">A</a>, <a href="../scala/List$object.html#map2%28List%5BA%5D%2CList%5BB%5D%29#B" target="_self">B</a>) =&gt; <a href="../scala/List$object.html#map2%28List%5BA%5D%2CList%5BB%5D%29#C" target="_self">C</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#map2%28List%5BA%5D%2CList%5BB%5D%29#C" target="_self">C</a>]
+        
+        <div>Returns the list resulting from applying the given function <code>f</code>
+    to corresponding elements of the argument lists.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29" target="_self">map3</a></em>
+        [<em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>](<em>xs</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29#A" target="_self">A</a>], <em>ys</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29#B" target="_self">B</a>], <em>zs</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29#C" target="_self">C</a>])(<em>f</em> : (<a href="../scala/List$object.html#map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29#A" target="_self">A</a>, <a href="../scala/List$object.html#map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29#B" target="_self">B</a>, <a href="../scala/List$object.html#map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29#C" target="_self">C</a>) =&gt; <a href="../scala/List$object.html#map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29#D" target="_self">D</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29#D" target="_self">D</a>]
+        
+        <div>Returns the list resulting from applying the given function
+    <code>f</code> to corresponding elements of the argument lists.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#mapConserve%28List%5BA%5D%29" target="_self">mapConserve</a></em>
+        [<em>A</em> &lt;: <a href="../scala/AnyRef.html" target="_self">AnyRef</a>](<em>xs</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#mapConserve%28List%5BA%5D%29#A" target="_self">A</a>])(<em>f</em> : (<a href="../scala/List$object.html#mapConserve%28List%5BA%5D%29#A" target="_self">A</a>) =&gt; <a href="../scala/List$object.html#mapConserve%28List%5BA%5D%29#A" target="_self">A</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#mapConserve%28List%5BA%5D%29#A" target="_self">A</a>]
+        
+        <div>Like xs map f, but returns <code>xs</code> unchanged if function
+    <code>f</code> maps all elements to themselves.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#range%28Int%2CInt%2C%28Int%29%3D%3EInt%29" target="_self">range</a></em>
+        (<em>from</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>step</em> : (<a href="../scala/Int.html" target="_self">Int</a>) =&gt; <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+        
+        <div>Create a sorted list of all integers in a range.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#range%28Int%2CInt%2CInt%29" target="_self">range</a></em>
+        (<em>from</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>step</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+        
+        <div>Create a sorted list of all integers in a range.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#range%28Int%2CInt%29" target="_self">range</a></em>
+        (<em>from</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+        
+        <div>Create a sorted list of all integers in a range.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#tabulate%28Int%2C%28Int%29%3D%3EA%29" target="_self">tabulate</a></em>
+        [<em>A</em>](<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>maker</em> : (<a href="../scala/Int.html" target="_self">Int</a>) =&gt; <a href="../scala/List$object.html#tabulate%28Int%2C%28Int%29%3D%3EA%29#A" target="_self">A</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#tabulate%28Int%2C%28Int%29%3D%3EA%29#A" target="_self">A</a>]
+        
+        <div>Create a list by applying a function to successive integers.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#toString%28List%5BChar%5D%29" target="_self">toString</a></em>
+        (<em>xs</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Char.html" target="_self">Char</a>]) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Returns the given list of characters as a string.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#transpose%28List%5BList%5BA%5D%5D%29" target="_self">transpose</a></em>
+        [<em>A</em>](<em>xss</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#transpose%28List%5BList%5BA%5D%5D%29#A" target="_self">A</a>]]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#transpose%28List%5BList%5BA%5D%5D%29#A" target="_self">A</a>]]
+        
+        <div>Transposes a list of lists.
+    pre: All element lists have the same length.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#unapplySeq%28List%5BA%5D%29" target="_self">unapplySeq</a></em>
+        [<em>A</em>](<em>x</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#unapplySeq%28List%5BA%5D%29#A" target="_self">A</a>]) : <a href="../scala/Some.html" target="_self">Some</a>[<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#unapplySeq%28List%5BA%5D%29#A" target="_self">A</a>]]
+        
+        <div>for unapply matching</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List$object.html#unzip%28List%5B%28A%2CB%29%5D%29" target="_self">unzip</a></em>
+        [<em>A</em>, <em>B</em>](<em>xs</em> : <a href="../scala/List.html" target="_self">List</a>[(<a href="../scala/List$object.html#unzip%28List%5B%28A%2CB%29%5D%29#A" target="_self">A</a>, <a href="../scala/List$object.html#unzip%28List%5B%28A%2CB%29%5D%29#B" target="_self">B</a>)]) : (<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#unzip%28List%5B%28A%2CB%29%5D%29#A" target="_self">A</a>], <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#unzip%28List%5B%28A%2CB%29%5D%29#B" target="_self">B</a>])
+        
+        <div>Transforms a list of pair into a pair of lists.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="apply%28A*%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>[<em>A</em>](<em>xs</em> : <a href="../scala/List$object.html#apply%28A*%29#A" target="_self">A</a>*) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#apply%28A*%29#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create a list with given elements.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>xs - </code>the elements to put in the list</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the list containing elements xs.</dd></dl>
+    <hr></hr>
+<a name="unapplySeq%28List%5BA%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>unapplySeq</em>[<em>A</em>](<em>x</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#unapplySeq%28List%5BA%5D%29#A" target="_self">A</a>]) : <a href="../scala/Some.html" target="_self">Some</a>[<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#unapplySeq%28List%5BA%5D%29#A" target="_self">A</a>]]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>for unapply matching</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="range%28Int%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>range</em>(<em>from</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create a sorted list of all integers in a range.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>from - </code>the start value of the list</dd><dd><code>end - </code>the end value of the list</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the sorted list of all integers in range [from;end).</dd></dl>
+    <hr></hr>
+<a name="range%28Int%2CInt%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>range</em>(<em>from</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>step</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create a sorted list of all integers in a range.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>from - </code>the start value of the list</dd><dd><code>end - </code>the end value of the list</dd><dd><code>step - </code>the increment value of the list</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the sorted list of all integers in range [from;end).</dd></dl>
+    <hr></hr>
+<a name="range%28Int%2CInt%2C%28Int%29%3D%3EInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>range</em>(<em>from</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>step</em> : (<a href="../scala/Int.html" target="_self">Int</a>) =&gt; <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create a sorted list of all integers in a range.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>from - </code>the start value of the list</dd><dd><code>end - </code>the end value of the list</dd><dd><code>step - </code>the increment function of the list</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the sorted list of all integers in range [from;end).</dd></dl>
+    <hr></hr>
+<a name="make%28Int%2CA%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>make</em>[<em>A</em>](<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>elem</em> : <a href="../scala/List$object.html#make%28Int%2CA%29#A" target="_self">A</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#make%28Int%2CA%29#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create a list containing several copies of an element.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the length of the resulting list</dd><dd><code>elem - </code>the element composing the resulting list</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a list composed of n elements all equal to elem</dd></dl>
+    <hr></hr>
+<a name="tabulate%28Int%2C%28Int%29%3D%3EA%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>tabulate</em>[<em>A</em>](<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>maker</em> : (<a href="../scala/Int.html" target="_self">Int</a>) =&gt; <a href="../scala/List$object.html#tabulate%28Int%2C%28Int%29%3D%3EA%29#A" target="_self">A</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#tabulate%28Int%2C%28Int%29%3D%3EA%29#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create a list by applying a function to successive integers.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the length of the resulting list</dd><dd><code>maker - </code>the procedure which, given an integer <code>n</code>,                 returns the nth element of the resulting list, where
+                 <code>n</code> is in interval <code>[0;n)</code>.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the list obtained by applying the maker function to                 successive integers from 0 to n (exclusive).</dd></dl>
+    <hr></hr>
+<a name="flatten%28List%5BList%5BA%5D%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>flatten</em>[<em>A</em>](<em>xss</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#flatten%28List%5BList%5BA%5D%5D%29#A" target="_self">A</a>]]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#flatten%28List%5BList%5BA%5D%5D%29#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Concatenate all the elements of a given list of lists.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>xss - </code>the list of lists that are to be concatenated</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the concatenation of all the lists</dd></dl>
+    <hr></hr>
+<a name="concat%28List%5BA%5D*%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>concat</em>[<em>A</em>](<em>xss</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#concat%28List%5BA%5D*%29#A" target="_self">A</a>]*) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#concat%28List%5BA%5D*%29#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Concatenate all the argument lists into a single list.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>xss - </code>the lists that are to be concatenated</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the concatenation of all the lists</dd></dl>
+    <hr></hr>
+<a name="unzip%28List%5B%28A%2CB%29%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>unzip</em>[<em>A</em>, <em>B</em>](<em>xs</em> : <a href="../scala/List.html" target="_self">List</a>[(<a href="../scala/List$object.html#unzip%28List%5B%28A%2CB%29%5D%29#A" target="_self">A</a>, <a href="../scala/List$object.html#unzip%28List%5B%28A%2CB%29%5D%29#B" target="_self">B</a>)]) : (<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#unzip%28List%5B%28A%2CB%29%5D%29#A" target="_self">A</a>], <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#unzip%28List%5B%28A%2CB%29%5D%29#B" target="_self">B</a>])
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Transforms a list of pair into a pair of lists.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>xs - </code>the list of pairs to unzip</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a pair of lists: the first list in the pair contains the list</dd></dl>
+    <hr></hr>
+<a name="fromIterator%28Iterator%5BA%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromIterator</em>[<em>A</em>](<em>it</em> : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/List$object.html#fromIterator%28Iterator%5BA%5D%29#A" target="_self">A</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#fromIterator%28Iterator%5BA%5D%29#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Converts an iterator to a list.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>it - </code>the iterator to convert</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a list that contains the elements returned by successive              calls to <code>it.next</code></dd></dl>
+    <hr></hr>
+<a name="fromArray%28Array%5BA%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromArray</em>[<em>A</em>](<em>arr</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/List$object.html#fromArray%28Array%5BA%5D%29#A" target="_self">A</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#fromArray%28Array%5BA%5D%29#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Converts an array into a list.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>arr - </code>the array to convert</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a list that contains the same elements than <code>arr</code>               in the same order</dd></dl>
+    <hr></hr>
+<a name="fromArray%28Array%5BA%5D%2CInt%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromArray</em>[<em>A</em>](<em>arr</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/List$object.html#fromArray%28Array%5BA%5D%2CInt%2CInt%29#A" target="_self">A</a>], <em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>len</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#fromArray%28Array%5BA%5D%2CInt%2CInt%29#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Converts a range of an array into a list.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>arr - </code>the array to convert</dd><dd><code>start - </code>the first index to consider</dd><dd><code>len - </code>the lenght of the range to convert</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a list that contains the same elements than <code>arr</code>                 in the same order</dd></dl>
+    <hr></hr>
+<a name="fromString%28String%2CChar%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>fromString</em>(<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>separator</em> : <a href="../scala/Char.html" target="_self">Char</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Parses a string which contains substrings separated by a
+    separator character and returns a list of all substrings.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>str - </code>the string to parse</dd><dd><code>separator - </code>the separator character</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the list of substrings</dd></dl>
+    <hr></hr>
+<a name="fromString%28String%29"></a><dl>
+      <dt>
+        @<a href="../scala/deprecated.html" target="_self">deprecated</a><br></br>
+        <code></code>
+        <code>def</code>
+        <em>fromString</em>(<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Char.html" target="_self">Char</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the given string as a list of characters.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>str - </code>the string to convert.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the string as a list of characters.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Deprecated</b></dt><dd>use <code>str.toList</code> instead</dd></dl>
+    <hr></hr>
+<a name="toString%28List%5BChar%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>toString</em>(<em>xs</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Char.html" target="_self">Char</a>]) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the given list of characters as a string.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>xs - </code>the list to convert.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the list in form of a string.</dd></dl>
+    <hr></hr>
+<a name="mapConserve%28List%5BA%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>mapConserve</em>[<em>A</em> &lt;: <a href="../scala/AnyRef.html" target="_self">AnyRef</a>](<em>xs</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#mapConserve%28List%5BA%5D%29#A" target="_self">A</a>])(<em>f</em> : (<a href="../scala/List$object.html#mapConserve%28List%5BA%5D%29#A" target="_self">A</a>) =&gt; <a href="../scala/List$object.html#mapConserve%28List%5BA%5D%29#A" target="_self">A</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#mapConserve%28List%5BA%5D%29#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Like xs map f, but returns <code>xs</code> unchanged if function
+    <code>f</code> maps all elements to themselves.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>xs - </code>...</dd><dd><code>f - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="map2%28List%5BA%5D%2CList%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>map2</em>[<em>A</em>, <em>B</em>, <em>C</em>](<em>xs</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#map2%28List%5BA%5D%2CList%5BB%5D%29#A" target="_self">A</a>], <em>ys</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#map2%28List%5BA%5D%2CList%5BB%5D%29#B" target="_self">B</a>])(<em>f</em> : (<a href="../scala/List$object.html#map2%28List%5BA%5D%2CList%5BB%5D%29#A" target="_self">A</a>, <a href="../scala/List$object.html#map2%28List%5BA%5D%2CList%5BB%5D%29#B" target="_self">B</a>) =&gt; <a href="../scala/List$object.html#map2%28List%5BA%5D%2CList%5BB%5D%29#C" target="_self">C</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#map2%28List%5BA%5D%2CList%5BB%5D%29#C" target="_self">C</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the list resulting from applying the given function <code>f</code>
+    to corresponding elements of the argument lists.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>function to apply to each pair of elements.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>[f(a0,b0), ..., f(an,bn)]</code> if the lists are             <code>[a0, ..., ak]</code>, <code>[b0, ..., bl]</code> and
+            <code>n = min(k,l)</code></dd></dl>
+    <hr></hr>
+<a name="map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>map3</em>[<em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>](<em>xs</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29#A" target="_self">A</a>], <em>ys</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29#B" target="_self">B</a>], <em>zs</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29#C" target="_self">C</a>])(<em>f</em> : (<a href="../scala/List$object.html#map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29#A" target="_self">A</a>, <a href="../scala/List$object.html#map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29#B" target="_self">B</a>, <a href="../scala/List$object.html#map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29#C" target="_self">C</a>) =&gt; <a href="../scala/List$object.html#map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29#D" target="_self">D</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#map3%28List%5BA%5D%2CList%5BB%5D%2CList%5BC%5D%29#D" target="_self">D</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the list resulting from applying the given function
+    <code>f</code> to corresponding elements of the argument lists.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>function to apply to each pair of elements.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>[f(a<sub>0</sub>,b<sub>0</sub>,c<sub>0</sub>),             ..., f(a<sub>n</sub>,b<sub>n</sub>,c<sub>n</sub>)]</code>
+             if the lists are <code>[a<sub>0</sub>, ..., a<sub>k</sub>]</code>,
+             <code>[b<sub>0</sub>, ..., b<sub>l</sub>]</code>,
+             <code>[c<sub>0</sub>, ..., c<sub>m</sub>]</code> and
+             <code>n = min(k,l,m)</code></dd></dl>
+    <hr></hr>
+<a name="forall2%28List%5BA%5D%2CList%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>forall2</em>[<em>A</em>, <em>B</em>](<em>xs</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#forall2%28List%5BA%5D%2CList%5BB%5D%29#A" target="_self">A</a>], <em>ys</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#forall2%28List%5BA%5D%2CList%5BB%5D%29#B" target="_self">B</a>])(<em>f</em> : (<a href="../scala/List$object.html#forall2%28List%5BA%5D%2CList%5BB%5D%29#A" target="_self">A</a>, <a href="../scala/List$object.html#forall2%28List%5BA%5D%2CList%5BB%5D%29#B" target="_self">B</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Tests whether the given predicate <code>p</code> holds 
+    for all corresponding elements of the argument lists.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>function to apply to each pair of elements.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>(p(a<sub>0</sub>,b<sub>0</sub>) &amp;&amp;             ... &amp;&amp; p(a<sub>n</sub>,b<sub>n</sub>))]</code>
+             if the lists are <code>[a<sub>0</sub>, ..., a<sub>k</sub>]</code>;
+             <code>[b<sub>0</sub>, ..., b<sub>l</sub>]</code>
+             and <code>n = min(k,l)</code></dd></dl>
+    <hr></hr>
+<a name="exists2%28List%5BA%5D%2CList%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>exists2</em>[<em>A</em>, <em>B</em>](<em>xs</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#exists2%28List%5BA%5D%2CList%5BB%5D%29#A" target="_self">A</a>], <em>ys</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#exists2%28List%5BA%5D%2CList%5BB%5D%29#B" target="_self">B</a>])(<em>f</em> : (<a href="../scala/List$object.html#exists2%28List%5BA%5D%2CList%5BB%5D%29#A" target="_self">A</a>, <a href="../scala/List$object.html#exists2%28List%5BA%5D%2CList%5BB%5D%29#B" target="_self">B</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Tests whether the given predicate <code>p</code> holds
+    for some corresponding elements of the argument lists.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>function to apply to each pair of elements.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>n != 0 &amp;&amp; (p(a<sub>0</sub>,b<sub>0</sub>) ||             ... || p(a<sub>n</sub>,b<sub>n</sub>))]</code> if the lists are
+             <code>[a<sub>0</sub>, ..., a<sub>k</sub>]</code>,
+             <code>[b<sub>0</sub>, ..., b<sub>l</sub>]</code> and
+             <code>n = min(k,l)</code></dd></dl>
+    <hr></hr>
+<a name="transpose%28List%5BList%5BA%5D%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>transpose</em>[<em>A</em>](<em>xss</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#transpose%28List%5BList%5BA%5D%5D%29#A" target="_self">A</a>]]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List$object.html#transpose%28List%5BList%5BA%5D%5D%29#A" target="_self">A</a>]]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Transposes a list of lists.
+    pre: All element lists have the same length.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>xss - </code>the list of lists</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the transposed list of lists</dd></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

@@ -1,0 +1,12 @@
+#!/bin/sh
+
+#PATH_TO_WISH=/usr/bin/wish		# Fedora's wish (8.6)
+PATH_TO_WISH=/usr/local/bin/wish	# stock Tcl/Tk 8.6 (homebrew)
+#PATH_TO_WISH=/usr/local/bin/ATwish8.6	# ActiveTcl 8.6 installation
+
+VTCL_HOME=/usr/local/vtcl
+
+export PATH_TO_WISH
+export VTCL_HOME
+
+exec ${PATH_TO_WISH} ${VTCL_HOME}/vtcl.tcl $*

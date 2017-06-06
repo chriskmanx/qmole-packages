@@ -1,0 +1,1 @@
+(defparameter ext::MS-ANSI (ext::make-encoding 'ext::WINDOWS-CP1252))

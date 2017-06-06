@@ -1,0 +1,506 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>object Function in scala</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../scala$package.html" target="_self">scala</a>
+        <br></br>
+        <span class="entity">object  Function</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/Function"><code>scala/Function.scala</code></a>]
+      </div><hr></hr>
+      <a name="Function"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>object</code>
+        <em>Function</em>
+      </dt>
+      <dd><code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd>A module defining utility methods for higher-order functional programming.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Martin Odersky</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0, 29/11/2006</dd></dl>
+    
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Function$object.html#chain%28Seq%5B%28a%29%3D%3Ea%5D%29" target="_self">chain</a></em>
+        [<em>a</em>](<em>fs</em> : <a href="../scala/Seq.html" target="_self">Seq</a>[(<a href="../scala/Function$object.html#chain%28Seq%5B%28a%29%3D%3Ea%5D%29#a" target="_self">a</a>) =&gt; <a href="../scala/Function$object.html#chain%28Seq%5B%28a%29%3D%3Ea%5D%29#a" target="_self">a</a>]) : (<a href="../scala/Function$object.html#chain%28Seq%5B%28a%29%3D%3Ea%5D%29#a" target="_self">a</a>) =&gt; <a href="../scala/Function$object.html#chain%28Seq%5B%28a%29%3D%3Ea%5D%29#a" target="_self">a</a>
+        
+        <div>Given a sequence of functions <code>f<sub>1</sub></code>, ...,
+    <code>f<sub>n</sub></code>, return the function <code>f<sub>1</sub>
+    andThen ... andThen f<sub>n</sub></code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29" target="_self">curried</a></em>
+        [<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>a4</em>, <em>a5</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a4" target="_self">a4</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a5" target="_self">a5</a>) =&gt; <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a1" target="_self">a1</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a4" target="_self">a4</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a5" target="_self">a5</a>) =&gt; <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#b" target="_self">b</a>
+        
+        <div>Currying for functions of arity 5.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29" target="_self">curried</a></em>
+        [<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>a4</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a4" target="_self">a4</a>) =&gt; <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a1" target="_self">a1</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a4" target="_self">a4</a>) =&gt; <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#b" target="_self">b</a>
+        
+        <div>Currying for functions of arity 4.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29" target="_self">curried</a></em>
+        [<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a1" target="_self">a1</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#b" target="_self">b</a>
+        
+        <div>Currying for functions of arity 3.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Function$object.html#curried%28%28a1%2Ca2%29%3D%3Eb%29" target="_self">curried</a></em>
+        [<em>a1</em>, <em>a2</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%29%3D%3Eb%29#a1" target="_self">a1</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%29%3D%3Eb%29#b" target="_self">b</a>
+        
+        <div>Currying for functions of arity 2. This transforms a function
+    of arity 2 into a a unary function returning another unary function.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29" target="_self">tupled</a></em>
+        [<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>a4</em>, <em>a5</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a4" target="_self">a4</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a5" target="_self">a5</a>) =&gt; <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#b" target="_self">b</a>) : ((<a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a4" target="_self">a4</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a5" target="_self">a5</a>)) =&gt; <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#b" target="_self">b</a>
+        
+        <div>Tupling for functions of arity 5. This transforms a function
+    of arity 5 into a unary function that takes a 5-tuple of arguments.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%29%3D%3Eb%29" target="_self">tupled</a></em>
+        [<em>a1</em>, <em>a2</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%29%3D%3Eb%29#b" target="_self">b</a>) : ((<a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%29%3D%3Eb%29#a2" target="_self">a2</a>)) =&gt; <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%29%3D%3Eb%29#b" target="_self">b</a>
+        
+        <div>Tupling for functions of arity 2. This transforms a function
+    of arity 2 into a unary function that takes a pair of arguments.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29" target="_self">tupled</a></em>
+        [<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>a4</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a4" target="_self">a4</a>) =&gt; <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#b" target="_self">b</a>) : ((<a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a4" target="_self">a4</a>)) =&gt; <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#b" target="_self">b</a>
+        
+        <div>Tupling for functions of arity 4. This transforms a function
+    of arity 4 into a unary function that takes a 4-tuple of arguments.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29" target="_self">tupled</a></em>
+        [<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#b" target="_self">b</a>) : ((<a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a3" target="_self">a3</a>)) =&gt; <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#b" target="_self">b</a>
+        
+        <div>Tupling for functions of arity 3. This transforms a function
+    of arity 3 into a unary function that takes a triple of arguments.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29" target="_self">uncurried</a></em>
+        [<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29#a1" target="_self">a1</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29#b" target="_self">b</a>
+        
+        <div>Uncurrying for functions of arity 3.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29" target="_self">uncurried</a></em>
+        [<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>a4</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#a1" target="_self">a1</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#a4" target="_self">a4</a>) =&gt; <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#a4" target="_self">a4</a>) =&gt; <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#b" target="_self">b</a>
+        
+        <div>Uncurrying for functions of arity 4.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3Eb%29" target="_self">uncurried</a></em>
+        [<em>a1</em>, <em>a2</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3Eb%29#a1" target="_self">a1</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3Eb%29#b" target="_self">b</a>
+        
+        <div>Uncurrying for functions of arity 2. This transforms a unary function
+    returning another unary function into a function of arity 2.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29" target="_self">uncurried</a></em>
+        [<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>a4</em>, <em>a5</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a1" target="_self">a1</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a4" target="_self">a4</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a5" target="_self">a5</a>) =&gt; <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a4" target="_self">a4</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a5" target="_self">a5</a>) =&gt; <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#b" target="_self">b</a>
+        
+        <div>Uncurrying for functions of arity 5.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29" target="_self">untupled</a></em>
+        [<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>a4</em>, <em>a5</em>, <em>b</em>](<em>f</em> : ((<a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a4" target="_self">a4</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a5" target="_self">a5</a>)) =&gt; <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a4" target="_self">a4</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a5" target="_self">a5</a>) =&gt; <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#b" target="_self">b</a>
+        
+        <div>Un-tupling for functions of arity 5. This transforms a function taking
+    a 5-tuple of arguments into a function of arity 5 which takes each argument separately.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%29%29%3D%3Eb%29" target="_self">untupled</a></em>
+        [<em>a1</em>, <em>a2</em>, <em>b</em>](<em>f</em> : ((<a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%29%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%29%29%3D%3Eb%29#a2" target="_self">a2</a>)) =&gt; <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%29%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%29%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%29%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%29%29%3D%3Eb%29#b" target="_self">b</a>
+        
+        <div>Un-tupling for functions of arity 2. This transforms a function taking
+    a pair of arguments into a binary function which takes each argument separately.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29" target="_self">untupled</a></em>
+        [<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>a4</em>, <em>b</em>](<em>f</em> : ((<a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#a4" target="_self">a4</a>)) =&gt; <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#a4" target="_self">a4</a>) =&gt; <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#b" target="_self">b</a>
+        
+        <div>Un-tupling for functions of arity 4. This transforms a function taking
+    a 4-tuple of arguments into a function of arity 4 which takes each argument separately.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29" target="_self">untupled</a></em>
+        [<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>b</em>](<em>f</em> : ((<a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29#a3" target="_self">a3</a>)) =&gt; <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29#b" target="_self">b</a>
+        
+        <div>Un-tupling for functions of arity 3. This transforms a function taking
+    a triple of arguments into a ternary function which takes each argument separately.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="chain%28Seq%5B%28a%29%3D%3Ea%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>chain</em>[<em>a</em>](<em>fs</em> : <a href="../scala/Seq.html" target="_self">Seq</a>[(<a href="../scala/Function$object.html#chain%28Seq%5B%28a%29%3D%3Ea%5D%29#a" target="_self">a</a>) =&gt; <a href="../scala/Function$object.html#chain%28Seq%5B%28a%29%3D%3Ea%5D%29#a" target="_self">a</a>]) : (<a href="../scala/Function$object.html#chain%28Seq%5B%28a%29%3D%3Ea%5D%29#a" target="_self">a</a>) =&gt; <a href="../scala/Function$object.html#chain%28Seq%5B%28a%29%3D%3Ea%5D%29#a" target="_self">a</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Given a sequence of functions <code>f<sub>1</sub></code>, ...,
+    <code>f<sub>n</sub></code>, return the function <code>f<sub>1</sub>
+    andThen ... andThen f<sub>n</sub></code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>fs - </code>The given sequence of functions</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="curried%28%28a1%2Ca2%29%3D%3Eb%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>curried</em>[<em>a1</em>, <em>a2</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%29%3D%3Eb%29#a1" target="_self">a1</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%29%3D%3Eb%29#b" target="_self">b</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Currying for functions of arity 2. This transforms a function
+    of arity 2 into a a unary function returning another unary function.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>curried</em>[<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a1" target="_self">a1</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#b" target="_self">b</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Currying for functions of arity 3.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>curried</em>[<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>a4</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a4" target="_self">a4</a>) =&gt; <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a1" target="_self">a1</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a4" target="_self">a4</a>) =&gt; <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#b" target="_self">b</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Currying for functions of arity 4.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>curried</em>[<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>a4</em>, <em>a5</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a4" target="_self">a4</a>, <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a5" target="_self">a5</a>) =&gt; <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a1" target="_self">a1</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a4" target="_self">a4</a>) =&gt; (<a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a5" target="_self">a5</a>) =&gt; <a href="../scala/Function$object.html#curried%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#b" target="_self">b</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Currying for functions of arity 5.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="uncurried%28%28a1%29%3D%3E%28a2%29%3D%3Eb%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>uncurried</em>[<em>a1</em>, <em>a2</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3Eb%29#a1" target="_self">a1</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3Eb%29#b" target="_self">b</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Uncurrying for functions of arity 2. This transforms a unary function
+    returning another unary function into a function of arity 2.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>uncurried</em>[<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29#a1" target="_self">a1</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3Eb%29#b" target="_self">b</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Uncurrying for functions of arity 3.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>uncurried</em>[<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>a4</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#a1" target="_self">a1</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#a4" target="_self">a4</a>) =&gt; <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#a4" target="_self">a4</a>) =&gt; <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3Eb%29#b" target="_self">b</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Uncurrying for functions of arity 4.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>uncurried</em>[<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>a4</em>, <em>a5</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a1" target="_self">a1</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a4" target="_self">a4</a>) =&gt; (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a5" target="_self">a5</a>) =&gt; <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a4" target="_self">a4</a>, <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#a5" target="_self">a5</a>) =&gt; <a href="../scala/Function$object.html#uncurried%28%28a1%29%3D%3E%28a2%29%3D%3E%28a3%29%3D%3E%28a4%29%3D%3E%28a5%29%3D%3Eb%29#b" target="_self">b</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Uncurrying for functions of arity 5.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="tupled%28%28a1%2Ca2%29%3D%3Eb%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>tupled</em>[<em>a1</em>, <em>a2</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%29%3D%3Eb%29#b" target="_self">b</a>) : ((<a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%29%3D%3Eb%29#a2" target="_self">a2</a>)) =&gt; <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%29%3D%3Eb%29#b" target="_self">b</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Tupling for functions of arity 2. This transforms a function
+    of arity 2 into a unary function that takes a pair of arguments.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>tupled</em>[<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#b" target="_self">b</a>) : ((<a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#a3" target="_self">a3</a>)) =&gt; <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%29%3D%3Eb%29#b" target="_self">b</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Tupling for functions of arity 3. This transforms a function
+    of arity 3 into a unary function that takes a triple of arguments.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>tupled</em>[<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>a4</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a4" target="_self">a4</a>) =&gt; <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#b" target="_self">b</a>) : ((<a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#a4" target="_self">a4</a>)) =&gt; <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%29%3D%3Eb%29#b" target="_self">b</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Tupling for functions of arity 4. This transforms a function
+    of arity 4 into a unary function that takes a 4-tuple of arguments.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>tupled</em>[<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>a4</em>, <em>a5</em>, <em>b</em>](<em>f</em> : (<a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a4" target="_self">a4</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a5" target="_self">a5</a>) =&gt; <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#b" target="_self">b</a>) : ((<a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a4" target="_self">a4</a>, <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#a5" target="_self">a5</a>)) =&gt; <a href="../scala/Function$object.html#tupled%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%3D%3Eb%29#b" target="_self">b</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Tupling for functions of arity 5. This transforms a function
+    of arity 5 into a unary function that takes a 5-tuple of arguments.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="untupled%28%28%28a1%2Ca2%29%29%3D%3Eb%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>untupled</em>[<em>a1</em>, <em>a2</em>, <em>b</em>](<em>f</em> : ((<a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%29%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%29%29%3D%3Eb%29#a2" target="_self">a2</a>)) =&gt; <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%29%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%29%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%29%29%3D%3Eb%29#a2" target="_self">a2</a>) =&gt; <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%29%29%3D%3Eb%29#b" target="_self">b</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Un-tupling for functions of arity 2. This transforms a function taking
+    a pair of arguments into a binary function which takes each argument separately.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>untupled</em>[<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>b</em>](<em>f</em> : ((<a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29#a3" target="_self">a3</a>)) =&gt; <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29#a3" target="_self">a3</a>) =&gt; <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%29%29%3D%3Eb%29#b" target="_self">b</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Un-tupling for functions of arity 3. This transforms a function taking
+    a triple of arguments into a ternary function which takes each argument separately.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>untupled</em>[<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>a4</em>, <em>b</em>](<em>f</em> : ((<a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#a4" target="_self">a4</a>)) =&gt; <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#a4" target="_self">a4</a>) =&gt; <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%29%29%3D%3Eb%29#b" target="_self">b</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Un-tupling for functions of arity 4. This transforms a function taking
+    a 4-tuple of arguments into a function of arity 4 which takes each argument separately.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>untupled</em>[<em>a1</em>, <em>a2</em>, <em>a3</em>, <em>a4</em>, <em>a5</em>, <em>b</em>](<em>f</em> : ((<a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a4" target="_self">a4</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a5" target="_self">a5</a>)) =&gt; <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#b" target="_self">b</a>) : (<a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a1" target="_self">a1</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a2" target="_self">a2</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a3" target="_self">a3</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a4" target="_self">a4</a>, <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#a5" target="_self">a5</a>) =&gt; <a href="../scala/Function$object.html#untupled%28%28%28a1%2Ca2%2Ca3%2Ca4%2Ca5%29%29%3D%3Eb%29#b" target="_self">b</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Un-tupling for functions of arity 5. This transforms a function taking
+    a 5-tuple of arguments into a function of arity 5 which takes each argument separately.</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

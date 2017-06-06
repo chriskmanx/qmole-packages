@@ -1,0 +1,1 @@
+(defparameter ext::ARABIC (ext::make-encoding 'ext::ISO-8859-6))

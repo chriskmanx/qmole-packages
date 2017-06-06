@@ -1,0 +1,601 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class Parser in scala.util.parsing.combinator.Parsers</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../../scala/util/parsing/combinator/Parsers.html" target="_self">scala.util.parsing.combinator.Parsers</a>
+        <br></br>
+        <span class="entity">class  Parser</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/util/parsing/combinator/Parsers"><code>scala/util/parsing/combinator/Parsers.scala</code></a>]
+      </div><hr></hr>
+      <a name="Parser"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>class</code>
+        <em>Parser</em>[+<em>T</em>]
+      </dt>
+      <dd><code> extends </code>(<a href="../../../../scala/util/parsing/input/Reader.html" target="_self">Reader</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.ParseResult.html" target="_self">ParseResult</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>]</dd>
+    </dl>
+      <dl><dd>The root class of parsers. 
+    Parsers are functions from the Input type to ParseResult</dd></dl>
+      <dl></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../../../../scala/util/parsing/combinator/Parsers.OnceParser.html" target="_self">Parsers.OnceParser</a></dd>
+      </dl><hr></hr>
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#*%28%3D%3EParsers.this.Parser%5B%28U%2CU%29%3D%3EU%5D%29" target="_self">*</a></em>
+        [<em>U</em> &gt;: <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>](<em>sep</em> : =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[(<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#*%28%3D%3EParsers.this.Parser%5B%28U%2CU%29%3D%3EU%5D%29#U" target="_self">U</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#*%28%3D%3EParsers.this.Parser%5B%28U%2CU%29%3D%3EU%5D%29#U" target="_self">U</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#*%28%3D%3EParsers.this.Parser%5B%28U%2CU%29%3D%3EU%5D%29#U" target="_self">U</a>]) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#*%28%3D%3EParsers.this.Parser%5B%28U%2CU%29%3D%3EU%5D%29#U" target="_self">U</a>]
+        
+        <div>Returns a parser that repeatedly parses what this parser parses, interleaved with the `sep' parser.
+     The `sep' parser specifies how the results parsed by this parser should be combined.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#*" target="_self">*</a></em>
+         : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>]]
+        
+        <div>Returns a parser that repeatedly parses what this parser parses</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#*%28%3D%3EQ%29" target="_self">*</a></em>
+        [<em>Q</em>](<em>sep</em> : =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#*%28%3D%3EQ%29#Q" target="_self">Q</a>)(<code>implicit </code><em>view$3</em> : (<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#*%28%3D%3EQ%29#Q" target="_self">Q</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.UnitParser.html" target="_self">UnitParser</a>) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>]]
+        
+        <div>Returns a parser that repeatedly parses what this parser parses, interleaved with the `sep' parser.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%2B" target="_self">+</a></em>
+         : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>]]
+        
+        <div>Returns a parser that repeatedly (at least once) parses what this parser parses.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%3E%3E%28%28T%29%3D%3EParsers.this.Parser%5BU%5D%29" target="_self">&gt;&gt;</a></em>
+        [<em>U</em>](<em>fq</em> : (<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%3E%3E%28%28T%29%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%3E%3E%28%28T%29%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]
+        
+        <div>Returns into(fq)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%3F" target="_self">?</a></em>
+         : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/Option.html" target="_self">Option</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>]]
+        
+        <div>Returns a parser that optionally parses what this parser parses.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%5E%3F%28PartialFunction%5BT%2CU%5D%29" target="_self">^?</a></em>
+        [<em>U</em>](<em>f</em> : <a href="../../../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%5E%3F%28PartialFunction%5BT%2CU%5D%29#U" target="_self">U</a>]) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%5E%3F%28PartialFunction%5BT%2CU%5D%29#U" target="_self">U</a>]
+        
+        <div>A parser combinator for partial function application 
+    
+    <p>`p ^? f' succeeds if `p' succeeds AND `f' is defined at the result of `p'; 
+      in that case, it returns `f' applied to the result of `p'.</p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%5E%3F%28PartialFunction%5BT%2CU%5D%2C%28T%29%3D%3EString%29" target="_self">^?</a></em>
+        [<em>U</em>](<em>f</em> : <a href="../../../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%5E%3F%28PartialFunction%5BT%2CU%5D%2C%28T%29%3D%3EString%29#U" target="_self">U</a>], <em>error</em> : (<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>) =&gt; <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%5E%3F%28PartialFunction%5BT%2CU%5D%2C%28T%29%3D%3EString%29#U" target="_self">U</a>]
+        
+        <div>A parser combinator for partial function application 
+    
+    <p>`p ^? (f, error)' succeeds if `p' succeeds AND `f' is defined at the result of `p'; 
+      in that case, it returns `f' applied to the result of `p'. If `f' is not applicable,
+      error(the result of `p') should explain why.</p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%5E%5E%28%28T%29%3D%3EU%29" target="_self">^^</a></em>
+        [<em>U</em>](<em>f</em> : (<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%5E%5E%28%28T%29%3D%3EU%29#U" target="_self">U</a>) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%5E%5E%28%28T%29%3D%3EU%29#U" target="_self">U</a>]
+        
+        <div>A parser combinator for function application 
+    
+    <p>`p ^^ f' succeeds if `p' succeeds; it returns `f' applied to the result of `p'.</p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#apply%28Parsers.this.Input%29" target="_self">apply</a></em>
+        (<em>in</em> : <a href="../../../../scala/util/parsing/input/Reader.html" target="_self">Reader</a>) : <a href="../../../../scala/util/parsing/combinator/Parsers.ParseResult.html" target="_self">ParseResult</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>]
+        
+        <div>An unspecified method that defines the behaviour of this parser.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#into%28%28T%29%3D%3EParsers.this.Parser%5BU%5D%29" target="_self">into</a></em>
+        [<em>U</em>](<em>fq</em> : (<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#into%28%28T%29%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#into%28%28T%29%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]
+        
+        <div>A parser combinator that parameterises a subsequent parser with the result of this one
+    
+    <p>
+     Use this combinator when a parser depends on the result of a previous parser. `p' should be
+     a function that takes the result from the first parser and returns the second parser.</p>
+    
+    <p> `p into fq' (with `fq' typically `{x => q}') first applies `p', and then, if `p' successfully  
+        returned result `r', applies `fq(r)' to the rest of the input. </p>
+    
+    <p> From: G. Hutton. Higher-order functions for parsing. J. Funct. Program., 2(3):323--343, 1992. </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7C%28%3D%3EParsers.this.Parser%5BU%5D%29" target="_self">|</a></em>
+        [<em>U</em> &gt;: <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>](<em>q</em> : =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7C%28%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7C%28%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]
+        
+        <div>A parser combinator for alternative composition 
+    
+    <p>`p | q' succeeds if `p' succeeds or `q' succeeds
+              Note that `q' is only tried if `p's failure is non-fatal (i.e., back-tracking is
+              allowed).</p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7C%7C%7C%28%3D%3EParsers.this.Parser%5BU%5D%29" target="_self">|||</a></em>
+        [<em>U</em> &gt;: <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>](<em>q</em> : =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7C%7C%7C%28%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7C%7C%7C%28%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]
+        
+        <div>A parser combinator for alternative with longest match composition 
+    
+    <p>`p ||| q' succeeds if `p' succeeds or `q' succeeds
+              If `p' and `q' both succeed, the parser that consumed the most
+              characters accepts.</p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%28%3D%3EParsers.this.Parser%5BU%5D%29" target="_self">~</a></em>
+        [<em>U</em>](<em>q</em> : =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%28%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%28%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]]
+        
+        <div>A parser combinator for sequential composition 
+    
+     <p> `p ~ q' succeeds if `p' succeeds and `q' succeeds on the input
+              left over by `p'.</p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%28%3D%3EQ%29" target="_self">~</a></em>
+        [<em>Q</em>](<em>q</em> : =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%28%3D%3EQ%29#Q" target="_self">Q</a>)(<code>implicit </code><em>view$1</em> : (<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%28%3D%3EQ%29#Q" target="_self">Q</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.UnitParser.html" target="_self">UnitParser</a>) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>]
+        
+        <div>A parser combinator for sequential composition with a unit-parser 
+    
+     <p> `p ~ q' succeeds if `p' succeeds and `q' succeeds on the input
+              left over by `p'.</p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%21%28%3D%3EQ%29" target="_self">~!</a></em>
+        [<em>Q</em>](<em>q</em> : =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%21%28%3D%3EQ%29#Q" target="_self">Q</a>)(<code>implicit </code><em>view$2</em> : (<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%21%28%3D%3EQ%29#Q" target="_self">Q</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.UnitParser.html" target="_self">UnitParser</a>) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>]
+        
+        <div>A parser combinator for non-back-tracking sequential composition with a unit-parser
+    
+    <p>`p ~! q' succeeds if `p' succeeds and `q' succeeds on the input
+              left over by `p'. In case of failure, no back-tracking is performed 
+              (in an earlier parser produced by the | combinator).</p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%21%28%3D%3EParsers.this.Parser%5BU%5D%29" target="_self">~!</a></em>
+        [<em>U</em>](<em>q</em> : =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%21%28%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%21%28%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]]
+        
+        <div>A parser combinator for non-back-tracking sequential composition 
+    
+    <p>`p ~! q' succeeds if `p' succeeds and `q' succeeds on the input
+              left over by `p'. In case of failure, no back-tracking is performed 
+              (in an earlier parser produced by the | combinator).</p></div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/Function1.html" target="_self">Function1</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/Function1.html#toString%28%29" target="_self">toString</a>, <a href="../../../../scala/Function1.html#compose%28%28A%29%3D%3ET1%29" target="_self">compose</a>, <a href="../../../../scala/Function1.html#andThen%28%28R%29%3D%3EA%29" target="_self">andThen</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="apply%28Parsers.this.Input%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>apply</em>(<em>in</em> : <a href="../../../../scala/util/parsing/input/Reader.html" target="_self">Reader</a>) : <a href="../../../../scala/util/parsing/combinator/Parsers.ParseResult.html" target="_self">ParseResult</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>An unspecified method that defines the behaviour of this parser.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../../scala/Function1.html" target="_self">Function1</a>.<a href="../../../../scala/Function1.html#apply%28T1%29" target="_self">apply</a>
+        </dd>
+      </dl><hr></hr>
+<a name="%7E%28%3D%3EParsers.this.Parser%5BU%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>~</em>[<em>U</em>](<em>q</em> : =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%28%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%28%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A parser combinator for sequential composition 
+    
+     <p> `p ~ q' succeeds if `p' succeeds and `q' succeeds on the input
+              left over by `p'.</p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>q - </code>a parser that will be executed after `p' (this parser) succeeds</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a `Parser' that -- on success -- returns a `~' (like a Pair, but easier to pattern match on)              that contains the result of `p' and that of `q'. 
+             The resulting parser fails if either `p' or `q' fails.</dd></dl>
+    <hr></hr>
+<a name="%7E%28%3D%3EQ%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>~</em>[<em>Q</em>](<em>q</em> : =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%28%3D%3EQ%29#Q" target="_self">Q</a>)(<code>implicit </code><em>view$1</em> : (<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%28%3D%3EQ%29#Q" target="_self">Q</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.UnitParser.html" target="_self">UnitParser</a>) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A parser combinator for sequential composition with a unit-parser 
+    
+     <p> `p ~ q' succeeds if `p' succeeds and `q' succeeds on the input
+              left over by `p'.</p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>q - </code>a parser (convertible to a UnitParser) that will be executed after `p' (this parser)              succeeds</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a `Parser' that -- on success -- returns the result of `p'.             The resulting parser fails if either `p' or `q' fails.</dd></dl>
+    <hr></hr>
+<a name="%7E%21%28%3D%3EParsers.this.Parser%5BU%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>~!</em>[<em>U</em>](<em>q</em> : =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%21%28%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%21%28%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A parser combinator for non-back-tracking sequential composition 
+    
+    <p>`p ~! q' succeeds if `p' succeeds and `q' succeeds on the input
+              left over by `p'. In case of failure, no back-tracking is performed 
+              (in an earlier parser produced by the | combinator).</p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>q - </code>a parser that will be executed after `p' (this parser) succeeds</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a `Parser' that -- on success -- returns a `~' (like a Pair, but easier to pattern match on)              that contains the result of `p' and that of `q'. 
+             The resulting parser fails if either `p' or `q' fails, this failure is fatal.</dd></dl>
+    <hr></hr>
+<a name="%7E%21%28%3D%3EQ%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>~!</em>[<em>Q</em>](<em>q</em> : =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%21%28%3D%3EQ%29#Q" target="_self">Q</a>)(<code>implicit </code><em>view$2</em> : (<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7E%21%28%3D%3EQ%29#Q" target="_self">Q</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.UnitParser.html" target="_self">UnitParser</a>) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A parser combinator for non-back-tracking sequential composition with a unit-parser
+    
+    <p>`p ~! q' succeeds if `p' succeeds and `q' succeeds on the input
+              left over by `p'. In case of failure, no back-tracking is performed 
+              (in an earlier parser produced by the | combinator).</p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>q - </code>a parser that will be executed after `p' (this parser) succeeds</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a `Parser' that -- on success -- returns the result of `p'.             The resulting parser fails if either `p' or `q' fails, this failure is fatal.</dd></dl>
+    <hr></hr>
+<a name="%7C%28%3D%3EParsers.this.Parser%5BU%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>|</em>[<em>U</em> &gt;: <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>](<em>q</em> : =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7C%28%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7C%28%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A parser combinator for alternative composition 
+    
+    <p>`p | q' succeeds if `p' succeeds or `q' succeeds
+              Note that `q' is only tried if `p's failure is non-fatal (i.e., back-tracking is
+              allowed).</p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>q - </code>a parser that will be executed if `p' (this parser) fails (and allows back-tracking)</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a `Parser' that returns the result of the first parser to succeed (out of `p' and `q')             The resulting parser succeeds if (and only if) <ul>
+               <li> `p' succeeds, <i>or</i>  </li>
+               <li> if `p' fails allowing back-tracking and `q' succeeds. </li> </ul></dd></dl>
+    <hr></hr>
+<a name="%7C%7C%7C%28%3D%3EParsers.this.Parser%5BU%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>|||</em>[<em>U</em> &gt;: <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>](<em>q</em> : =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7C%7C%7C%28%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%7C%7C%7C%28%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A parser combinator for alternative with longest match composition 
+    
+    <p>`p ||| q' succeeds if `p' succeeds or `q' succeeds
+              If `p' and `q' both succeed, the parser that consumed the most
+              characters accepts.</p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>q - </code>a parser that accepts if p consumes less characters.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a `Parser' that returns the result of the parser consuming the most characteres (out of `p' and `q').</dd></dl>
+    <hr></hr>
+<a name="%5E%5E%28%28T%29%3D%3EU%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>^^</em>[<em>U</em>](<em>f</em> : (<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%5E%5E%28%28T%29%3D%3EU%29#U" target="_self">U</a>) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%5E%5E%28%28T%29%3D%3EU%29#U" target="_self">U</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A parser combinator for function application 
+    
+    <p>`p ^^ f' succeeds if `p' succeeds; it returns `f' applied to the result of `p'.</p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>a function that will be applied to this parser's result (see `map' in `ParseResult').</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a parser that has the same behaviour as the current parser, but whose result is             transformed by `f'.</dd></dl>
+    <hr></hr>
+<a name="%5E%3F%28PartialFunction%5BT%2CU%5D%2C%28T%29%3D%3EString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>^?</em>[<em>U</em>](<em>f</em> : <a href="../../../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%5E%3F%28PartialFunction%5BT%2CU%5D%2C%28T%29%3D%3EString%29#U" target="_self">U</a>], <em>error</em> : (<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>) =&gt; <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%5E%3F%28PartialFunction%5BT%2CU%5D%2C%28T%29%3D%3EString%29#U" target="_self">U</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A parser combinator for partial function application 
+    
+    <p>`p ^? (f, error)' succeeds if `p' succeeds AND `f' is defined at the result of `p'; 
+      in that case, it returns `f' applied to the result of `p'. If `f' is not applicable,
+      error(the result of `p') should explain why.</p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>a partial function that will be applied to this parser's result               (see `mapPartial' in `ParseResult').</dd><dd><code>error - </code>a function that takes the same argument as `f' and produces an error message             to explain why `f' wasn't applicable</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a parser that succeeds if the current parser succeeds <i>and</i> `f' is applicable              to the result. If so, the result will be transformed by `f'.</dd></dl>
+    <hr></hr>
+<a name="%5E%3F%28PartialFunction%5BT%2CU%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>^?</em>[<em>U</em>](<em>f</em> : <a href="../../../../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%5E%3F%28PartialFunction%5BT%2CU%5D%29#U" target="_self">U</a>]) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%5E%3F%28PartialFunction%5BT%2CU%5D%29#U" target="_self">U</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A parser combinator for partial function application 
+    
+    <p>`p ^? f' succeeds if `p' succeeds AND `f' is defined at the result of `p'; 
+      in that case, it returns `f' applied to the result of `p'.</p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>a partial function that will be applied to this parser's result               (see `mapPartial' in `ParseResult').</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a parser that succeeds if the current parser succeeds <i>and</i> `f' is applicable              to the result. If so, the result will be transformed by `f'.</dd></dl>
+    <hr></hr>
+<a name="into%28%28T%29%3D%3EParsers.this.Parser%5BU%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>into</em>[<em>U</em>](<em>fq</em> : (<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#into%28%28T%29%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#into%28%28T%29%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A parser combinator that parameterises a subsequent parser with the result of this one
+    
+    <p>
+     Use this combinator when a parser depends on the result of a previous parser. `p' should be
+     a function that takes the result from the first parser and returns the second parser.</p>
+    
+    <p> `p into fq' (with `fq' typically `{x => q}') first applies `p', and then, if `p' successfully  
+        returned result `r', applies `fq(r)' to the rest of the input. </p>
+    
+    <p> From: G. Hutton. Higher-order functions for parsing. J. Funct. Program., 2(3):323--343, 1992. </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>fq - </code>a function that, given the result from this parser, returns the second parser to be applied</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a parser that succeeds if this parser succeeds (with result `x') and if then `fq(x)' succeeds</dd></dl>
+    <hr></hr>
+<a name="%3E%3E%28%28T%29%3D%3EParsers.this.Parser%5BU%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>&gt;&gt;</em>[<em>U</em>](<em>fq</em> : (<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%3E%3E%28%28T%29%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#%3E%3E%28%28T%29%3D%3EParsers.this.Parser%5BU%5D%29#U" target="_self">U</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns into(fq)</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="*"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>*</em> : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>]]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a parser that repeatedly parses what this parser parses</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>rep(this)</dd></dl>
+    <hr></hr>
+<a name="*%28%3D%3EQ%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>*</em>[<em>Q</em>](<em>sep</em> : =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#*%28%3D%3EQ%29#Q" target="_self">Q</a>)(<code>implicit </code><em>view$3</em> : (<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#*%28%3D%3EQ%29#Q" target="_self">Q</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.UnitParser.html" target="_self">UnitParser</a>) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>]]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a parser that repeatedly parses what this parser parses, interleaved with the `sep' parser.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>repsep(this, sep)</dd></dl>
+    <hr></hr>
+<a name="*%28%3D%3EParsers.this.Parser%5B%28U%2CU%29%3D%3EU%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>*</em>[<em>U</em> &gt;: <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>](<em>sep</em> : =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[(<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#*%28%3D%3EParsers.this.Parser%5B%28U%2CU%29%3D%3EU%5D%29#U" target="_self">U</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#*%28%3D%3EParsers.this.Parser%5B%28U%2CU%29%3D%3EU%5D%29#U" target="_self">U</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#*%28%3D%3EParsers.this.Parser%5B%28U%2CU%29%3D%3EU%5D%29#U" target="_self">U</a>]) : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#*%28%3D%3EParsers.this.Parser%5B%28U%2CU%29%3D%3EU%5D%29#U" target="_self">U</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a parser that repeatedly parses what this parser parses, interleaved with the `sep' parser.
+     The `sep' parser specifies how the results parsed by this parser should be combined.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>chainl1(this, sep)</dd></dl>
+    <hr></hr>
+<a name="%2B"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>+</em> : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>]]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a parser that repeatedly (at least once) parses what this parser parses.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>rep1(this)</dd></dl>
+    <hr></hr>
+<a name="%3F"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>?</em> : <a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html" target="_self">Parser</a>[<a href="../../../../scala/Option.html" target="_self">Option</a>[<a href="../../../../scala/util/parsing/combinator/Parsers.Parser.html#T" target="_self">T</a>]]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a parser that optionally parses what this parser parses.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>opt(this)</dd></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

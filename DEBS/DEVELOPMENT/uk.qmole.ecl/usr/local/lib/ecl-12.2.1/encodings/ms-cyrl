@@ -1,0 +1,1 @@
+(defparameter ext::MS-CYRL (ext::make-encoding 'ext::WINDOWS-CP1251))

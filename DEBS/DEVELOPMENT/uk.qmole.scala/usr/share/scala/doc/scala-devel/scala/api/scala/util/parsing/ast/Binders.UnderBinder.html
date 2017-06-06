@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class UnderBinder in scala.util.parsing.ast.Binders</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../../scala/util/parsing/ast/Binders.html" target="_self">scala.util.parsing.ast.Binders</a>
+        <br></br>
+        <span class="entity">class  UnderBinder</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/util/parsing/ast/Binders"><code>scala/util/parsing/ast/Binders.scala</code></a>]
+      </div><hr></hr>
+      <a name="UnderBinder"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>class</code>
+        <em>UnderBinder</em>[<em>binderType</em> &lt;: <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>, <em>elementT</em>](<code>val </code><em>scope</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html" target="_self">Scope</a>[<a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#binderType" target="_self">binderType</a>], <code>val </code><em>scala$util$parsing$ast$Binders$$element</em> : <a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#elementT" target="_self">elementT</a>, <code>implicit </code><em>view$5</em> : (<a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#elementT" target="_self">elementT</a>) =&gt; <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#elementT" target="_self">elementT</a>])
+      </dt>
+      <dd><code> extends </code><a href="../../../../scala/util/parsing/ast/AbstractSyntax.Element.html" target="_self">Element</a><code> with </code><a href="../../../../scala/util/parsing/ast/Binders.BindingSensitive.html" target="_self">BindingSensitive</a></dd>
+    </dl>
+      <dl><dd>Represents an element with variables that are bound in a certain scope.</dd></dl>
+      <dl></dl>
+    
+      
+
+<table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Values and Variables inherited from <a href="../../../../scala/util/parsing/input/Positional.html" target="_self">Positional</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/util/parsing/input/Positional.html#pos" target="_self">pos</a>
+        </td></tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#cloneElementNoBoundElements" target="_self">cloneElementNoBoundElements</a></em>
+         : <a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#elementT" target="_self">elementT</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#cloneElementWithSubst%28scala.collection.immutable.Map%5BBinders.this.NameElement%2CBinders.this.NameElement%5D%29" target="_self">cloneElementWithSubst</a></em>
+        (<em>subst</em> : <a href="../../../../scala/collection/immutable/Map.html" target="_self">Map</a>[<a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>, <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>]) : <a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#elementT" target="_self">elementT</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#elementToString" target="_self">elementToString</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Get a string representation of element, normally we don't allow direct access to element, but just getting a string representation is ok</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#extract%28scala.collection.immutable.Map%5BBinders.this.NameElement%2CBinders.this.NameElement%5D%29" target="_self">extract</a></em>
+        (<em>subst</em> : <a href="../../../../scala/collection/immutable/Map.html" target="_self">Map</a>[<a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>, <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>]) : <a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#elementT" target="_self">elementT</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#extract" target="_self">extract</a></em>
+         : <a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#elementT" target="_self">elementT</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#toString%28%29" target="_self">toString</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/util/parsing/input/Positional.html" target="_self">Positional</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/util/parsing/input/Positional.html#setPos%28scala.util.parsing.input.Position%29" target="_self">setPos</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="toString%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>toString</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="cloneElementWithSubst%28scala.collection.immutable.Map%5BBinders.this.NameElement%2CBinders.this.NameElement%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>cloneElementWithSubst</em>(<em>subst</em> : <a href="../../../../scala/collection/immutable/Map.html" target="_self">Map</a>[<a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>, <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>]) : <a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#elementT" target="_self">elementT</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="cloneElementNoBoundElements"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>cloneElementNoBoundElements</em> : <a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#elementT" target="_self">elementT</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="extract"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>extract</em> : <a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#elementT" target="_self">elementT</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="extract%28scala.collection.immutable.Map%5BBinders.this.NameElement%2CBinders.this.NameElement%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>extract</em>(<em>subst</em> : <a href="../../../../scala/collection/immutable/Map.html" target="_self">Map</a>[<a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>, <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>]) : <a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#elementT" target="_self">elementT</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="elementToString"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>elementToString</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Get a string representation of element, normally we don't allow direct access to element, but just getting a string representation is ok</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

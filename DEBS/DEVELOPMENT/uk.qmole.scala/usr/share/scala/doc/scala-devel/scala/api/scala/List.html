@@ -1,0 +1,1625 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class List in scala</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../scala$package.html" target="_self">scala</a>
+        <br></br>
+        <span class="entity">class  List</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/List"><code>scala/List.scala</code></a>]
+      </div><hr></hr>
+      <a name="List"></a><dl>
+      <dt>
+        
+        <code>sealed abstract</code>
+        <code>class</code>
+        <em>List</em>[+<em>A</em>]
+      </dt>
+      <dd><code> extends </code><a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/List.html#A" target="_self">A</a>]</dd>
+    </dl>
+      <dl><dd>A class representing an ordered collection of elements of type
+  <code>a</code>. This class comes with two implementing case
+  classes <code>scala.Nil</code> and <code>scala.::</code> that
+  implement the abstract members <code>isEmpty</code>,
+  <code>head</code> and <code>tail</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Martin Odersky and others</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0, 16/07/2003</dd></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../scala/Nil$object.html" target="_self">Nil</a>, <a href="../scala/$colon$colon.html" target="_self">::</a></dd>
+      </dl><hr></hr>
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#%3A%3A%28B%29" target="_self">::</a></em>
+        [<em>B</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>](<em>x</em> : <a href="../scala/List.html#%3A%3A%28B%29#B" target="_self">B</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#%3A%3A%28B%29#B" target="_self">B</a>]
+        
+        <div><p>
+      Add an element <code>x</code> at the beginning of this list.
+    </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#%3A%3A%3A%28List%5BB%5D%29" target="_self">:::</a></em>
+        [<em>B</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>](<em>prefix</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#%3A%3A%3A%28List%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#%3A%3A%3A%28List%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div><p>
+      Returns a list resulting from the concatenation of the given
+      list <code>prefix</code> and this list. 
+    </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#apply%28Int%29" target="_self">apply</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html#A" target="_self">A</a>
+        
+        <div>Returns the <code>n</code>-th element of this list. The first element
+    (head of the list) is at position 0.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#break%28%28A%29%3D%3EBoolean%29" target="_self">break</a></em>
+        (<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : (<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>], <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>])
+        
+        <div>Like <code>span</code> but with the predicate inverted.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#count%28%28A%29%3D%3EBoolean%29" target="_self">count</a></em>
+        (<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>Count the number of elements in the list which satisfy a predicate.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#diff%28List%5BB%5D%29" target="_self">diff</a></em>
+        [<em>B</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>](<em>that</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#diff%28List%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#diff%28List%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div>Computes the difference between this list and the given list
+    <code>that</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#drop%28Int%29" target="_self">drop</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>Returns the list without its <code>n</code> first elements.
+    If this list has less than <code>n</code> elements, the empty list is returned.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#dropRight%28Int%29" target="_self">dropRight</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>Returns the list wihout its rightmost <code>n</code> elements.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a></em>
+        (<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>Returns the longest suffix of this list whose first element
+    does not satisfy the predicate <code>p</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#elements" target="_self">elements</a></em>
+         : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>Returns the elements in the list as an iterator</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#exists%28%28A%29%3D%3EBoolean%29" target="_self">exists</a></em>
+        (<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Tests the existence in this list of an element that satisfies the
+    predicate <code>p</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a></em>
+        (<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>Returns all the elements of this list that satisfy the
+    predicate <code>p</code>. The order of the elements is preserved.
+    It is guarenteed that the receiver list itself is returned iff all its
+    elements satisfy the predicate `p'. Hence the following equality is valid:
+  
+    (xs filter p) eq xs  ==  xs forall p</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#find%28%28A%29%3D%3EBoolean%29" target="_self">find</a></em>
+        (<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Option.html" target="_self">Option</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>Find and return the first element of the list satisfying a
+    predicate, if any.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a></em>
+        [<em>B</em>](<em>f</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/List.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div>Applies the given function <code>f</code> to each element of
+    this list, then concatenates the results.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#flatten%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatten</a></em>
+        [<em>B</em>](<code>implicit </code><em>f</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/List.html#flatten%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#flatten%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#foldLeft%28B%29" target="_self">foldLeft</a></em>
+        [<em>B</em>](<em>z</em> : <a href="../scala/List.html#foldLeft%28B%29#B" target="_self">B</a>)(<em>f</em> : (<a href="../scala/List.html#foldLeft%28B%29#B" target="_self">B</a>, <a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/List.html#foldLeft%28B%29#B" target="_self">B</a>) : <a href="../scala/List.html#foldLeft%28B%29#B" target="_self">B</a>
+        
+        <div>Combines the elements of this list together using the binary
+    function <code>f</code>, from left to right, and starting with
+    the value <code>z</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#foldRight%28B%29" target="_self">foldRight</a></em>
+        [<em>B</em>](<em>z</em> : <a href="../scala/List.html#foldRight%28B%29#B" target="_self">B</a>)(<em>f</em> : (<a href="../scala/List.html#A" target="_self">A</a>, <a href="../scala/List.html#foldRight%28B%29#B" target="_self">B</a>) =&gt; <a href="../scala/List.html#foldRight%28B%29#B" target="_self">B</a>) : <a href="../scala/List.html#foldRight%28B%29#B" target="_self">B</a>
+        
+        <div>Combines the elements of this list together using the binary
+    function <code>f</code>, from right to left, and starting with
+    the value <code>z</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#forall%28%28A%29%3D%3EBoolean%29" target="_self">forall</a></em>
+        (<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Tests if the predicate <code>p</code> is satisfied by all elements
+    in this list.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#foreach%28%28A%29%3D%3EUnit%29" target="_self">foreach</a></em>
+        (<em>f</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Unit.html" target="_self">Unit</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Apply the given function <code>f</code> to each element of this list
+    (while respecting the order of the elements).</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#head" target="_self">head</a></em>
+         : <a href="../scala/List.html#A" target="_self">A</a>
+        
+        <div>Returns this first element of the list.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#indices" target="_self">indices</a></em>
+         : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+        
+        <div>Creates a list with all indices in the list. This is
+    equivalent to a call to <code>List.range(0, xs.length)</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#init" target="_self">init</a></em>
+         : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>Returns the list without its last element.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#intersect%28List%5BB%5D%29" target="_self">intersect</a></em>
+        [<em>B</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>](<em>that</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#intersect%28List%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#intersect%28List%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div>Computes the intersection between this list and the given list
+    <code>that</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#isEmpty" target="_self">isEmpty</a></em>
+         : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Returns true if the list does not contain any elements.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#last" target="_self">last</a></em>
+         : <a href="../scala/List.html#A" target="_self">A</a>
+        
+        <div>Returns the last element of this list.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#length" target="_self">length</a></em>
+         : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>Returns the number of elements in the list.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#lengthCompare%28Int%29" target="_self">lengthCompare</a></em>
+        (<em>l</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>returns length - l, without calling length</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#map%28%28A%29%3D%3EB%29" target="_self">map</a></em>
+        [<em>B</em>](<em>f</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/List.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>]
+        
+        <div>Returns the list resulting from applying the given function <code>f</code> to each
+    element of this list.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#partition%28%28A%29%3D%3EBoolean%29" target="_self">partition</a></em>
+        (<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : (<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>], <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>])
+        
+        <div>Partition the list in two sub-lists according to a predicate.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#projection" target="_self">projection</a></em>
+         : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>returns a projection that can be used to call non-strict <code>filter</code>,
+   <code>map</code>, and <code>flatMap</code> methods that build projections
+   of the collection.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#reduceLeft%28%28B%2CB%29%3D%3EB%29" target="_self">reduceLeft</a></em>
+        [<em>B</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>](<em>f</em> : (<a href="../scala/List.html#reduceLeft%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>, <a href="../scala/List.html#reduceLeft%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>) =&gt; <a href="../scala/List.html#reduceLeft%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/List.html#reduceLeft%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>
+        
+        <div>Combines the elements of this list together using the binary
+    operator <code>op</code>, from left to right</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#reduceRight%28%28B%2CB%29%3D%3EB%29" target="_self">reduceRight</a></em>
+        [<em>B</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>](<em>f</em> : (<a href="../scala/List.html#reduceRight%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>, <a href="../scala/List.html#reduceRight%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>) =&gt; <a href="../scala/List.html#reduceRight%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/List.html#reduceRight%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>
+        
+        <div>Combines the elements of this list together using the binary
+    operator <code>op</code>, from right to left</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#remove%28%28A%29%3D%3EBoolean%29" target="_self">remove</a></em>
+        (<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>Removes all elements of the list which satisfy the predicate
+    <code>p</code>. This is like <code>filter</code> with the
+    predicate inversed.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#removeDuplicates" target="_self">removeDuplicates</a></em>
+         : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>Removes redundant elements from the list. Uses the method <code>==</code>
+    to decide if two elements are identical.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#reverse" target="_self">reverse</a></em>
+         : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>A list consisting of all elements of this list in reverse order.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#reverseMap%28%28A%29%3D%3EB%29" target="_self">reverseMap</a></em>
+        [<em>B</em>](<em>f</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/List.html#reverseMap%28%28A%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#reverseMap%28%28A%29%3D%3EB%29#B" target="_self">B</a>]
+        
+        <div>Apply a function to all the elements of the list, and return the
+    reversed list of results. This is equivalent to a call to <code>map</code>
+    followed by a call to <code>reverse</code>, but more efficient.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#reverse_%3A%3A%3A%28List%5BB%5D%29" target="_self">reverse_:::</a></em>
+        [<em>B</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>](<em>prefix</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#reverse_%3A%3A%3A%28List%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#reverse_%3A%3A%3A%28List%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div>Reverse the given prefix and append the current list to that.
+    This function is equivalent to an application of <code>reverse</code>
+    on the prefix followed by a call to <code>:::</code>, but more
+    efficient (and tail recursive).</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#slice%28Int%2CInt%29" target="_self">slice</a></em>
+        (<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>Returns the list with elements belonging to the given index range.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#sort%28%28A%2CA%29%3D%3EBoolean%29" target="_self">sort</a></em>
+        (<em>lt</em> : (<a href="../scala/List.html#A" target="_self">A</a>, <a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div><p>
+      Sort the list according to the comparison function
+      <code>&lt;(e1: a, e2: a) =&gt; Boolean</code>,
+      which should be true iff <code>e1</code> is smaller than
+      <code>e2</code>. 
+    </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#span%28%28A%29%3D%3EBoolean%29" target="_self">span</a></em>
+        (<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : (<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>], <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>])
+        
+        <div>Returns the longest prefix of the list whose elements all satisfy
+    the given predicate, and the rest of the list.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#splitAt%28Int%29" target="_self">splitAt</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : (<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>], <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>])
+        
+        <div>Split the list at a given point and return the two parts thus
+    created.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#stringPrefix" target="_self">stringPrefix</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Defines the prefix of this object's <code>toString</code> representation.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#tail" target="_self">tail</a></em>
+         : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>Returns this list without its first element.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#take%28Int%29" target="_self">take</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>Returns the <code>n</code> first elements of this list, or else the whole 
+    list, if it has less than <code>n</code> elements.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#takeRight%28Int%29" target="_self">takeRight</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>Returns the rightmost <code>n</code> elements from this list.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a></em>
+        (<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>Returns the longest prefix of this list whose elements satisfy
+    the predicate <code>p</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#toList" target="_self">toList</a></em>
+         : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>Overrides the method in Iterable for efficiency.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#toStream" target="_self">toStream</a></em>
+         : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+        
+        <div>Create a stream which contains all the elements of this iterable object.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#union%28List%5BB%5D%29" target="_self">union</a></em>
+        [<em>B</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>](<em>that</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#union%28List%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#union%28List%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div>Computes the union of this list and the given list
+    <code>that</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#zip%28List%5BB%5D%29" target="_self">zip</a></em>
+        [<em>B</em>](<em>that</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#zip%28List%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/List.html" target="_self">List</a>[(<a href="../scala/List.html#A" target="_self">A</a>, <a href="../scala/List.html#zip%28List%5BB%5D%29#B" target="_self">B</a>)]
+        
+        <div>Returns a list formed from this list and the specified list
+    <code>that</code> by associating each element of the former with
+    the element at the same position in the latter.
+    If one of the two lists is longer than the other, its remaining elements are ignored.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#zipAll%28List%5BB%5D%2CC%2CD%29" target="_self">zipAll</a></em>
+        [<em>B</em>, <em>C</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>, <em>D</em> &gt;: <a href="../scala/List.html#zipAll%28List%5BB%5D%2CC%2CD%29#B" target="_self">B</a>](<em>that</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#zipAll%28List%5BB%5D%2CC%2CD%29#B" target="_self">B</a>], <em>thisElem</em> : <a href="../scala/List.html#zipAll%28List%5BB%5D%2CC%2CD%29#C" target="_self">C</a>, <em>thatElem</em> : <a href="../scala/List.html#zipAll%28List%5BB%5D%2CC%2CD%29#D" target="_self">D</a>) : <a href="../scala/List.html" target="_self">List</a>[(<a href="../scala/List.html#zipAll%28List%5BB%5D%2CC%2CD%29#C" target="_self">C</a>, <a href="../scala/List.html#zipAll%28List%5BB%5D%2CC%2CD%29#D" target="_self">D</a>)]
+        
+        <div>Returns a list formed from this list and the specified list
+    <code>that</code> by associating each element of the former with
+    the element at the same position in the latter.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/List.html#zipWithIndex" target="_self">zipWithIndex</a></em>
+         : <a href="../scala/List.html" target="_self">List</a>[(<a href="../scala/List.html#A" target="_self">A</a>, <a href="../scala/Int.html" target="_self">Int</a>)]
+        
+        <div>Returns a list that pairs each element of this list
+    with its index, counting from 0.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Seq.html" target="_self">Seq</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Seq.html#size" target="_self">size</a>, <a href="../scala/Seq.html#concat%28Iterable%5BB%5D%29" target="_self">concat</a>, <a href="../scala/Seq.html#lastOption" target="_self">lastOption</a>, <a href="../scala/Seq.html#headOption" target="_self">headOption</a>, <a href="../scala/Seq.html#%2B%2B%28Iterable%5BB%5D%29" target="_self">++</a>, <a href="../scala/Seq.html#isDefinedAt%28Int%29" target="_self">isDefinedAt</a>, <a href="../scala/Seq.html#lastIndexOf%28B%29" target="_self">lastIndexOf</a>, <a href="../scala/Seq.html#contains%28Any%29" target="_self">contains</a>, <a href="../scala/Seq.html#subseq%28Int%2CInt%29" target="_self">subseq</a>, <a href="../scala/Seq.html#toArray" target="_self">toArray</a>, <a href="../scala/Seq.html#equalsWith%28Seq%5BB%5D%29" target="_self">equalsWith</a>, <a href="../scala/Seq.html#startsWith%28Seq%5BB%5D%29" target="_self">startsWith</a>, <a href="../scala/Seq.html#endsWith%28Seq%5BB%5D%29" target="_self">endsWith</a>, <a href="../scala/Seq.html#indexOf%28Seq%5BB%5D%29" target="_self">indexOf</a>, <a href="../scala/Seq.html#containsSlice%28Seq%5BB%5D%29" target="_self">containsSlice</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Collection.html" target="_self">Collection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Collection.html#toString%28%29" target="_self">toString</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Iterable.html" target="_self">Iterable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Iterable.html#findIndexOf%28%28A%29%3D%3EBoolean%29" target="_self">findIndexOf</a>, <a href="../scala/Iterable.html#indexOf%28B%29" target="_self">indexOf</a>, <a href="../scala/Iterable.html#%2F%3A%28B%29" target="_self">/:</a>, <a href="../scala/Iterable.html#%3A%5C%28B%29" target="_self">:\</a>, <a href="../scala/Iterable.html#copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29" target="_self">copyToBuffer</a>, <a href="../scala/Iterable.html#sameElements%28Iterable%5BB%5D%29" target="_self">sameElements</a>, <a href="../scala/Iterable.html#mkString%28String%2CString%2CString%29" target="_self">mkString</a>, <a href="../scala/Iterable.html#mkString%28String%29" target="_self">mkString</a>, <a href="../scala/Iterable.html#mkString" target="_self">mkString</a>, <a href="../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%2CString%2CString%29" target="_self">addString</a>, <a href="../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%29" target="_self">addString</a>, <a href="../scala/Iterable.html#copyToArray%28Array%5BB%5D%2CInt%29" target="_self">copyToArray</a>, <a href="../scala/Iterable.html#hasDefiniteSize" target="_self">hasDefiniteSize</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/PartialFunction.html" target="_self">PartialFunction</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/PartialFunction.html#orElse%28PartialFunction%5BA1%2CB1%5D%29" target="_self">orElse</a>, <a href="../scala/PartialFunction.html#andThen%28%28B%29%3D%3EC%29" target="_self">andThen</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Function1.html" target="_self">Function1</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Function1.html#compose%28%28A%29%3D%3ET1%29" target="_self">compose</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="isEmpty"></a><dl>
+      <dt>
+        
+        <code>override abstract</code>
+        <code>def</code>
+        <em>isEmpty</em> : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns true if the list does not contain any elements.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>true</code>, iff the list is empty.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#isEmpty" target="_self">isEmpty</a>
+        </dd>
+      </dl><hr></hr>
+<a name="head"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>head</em> : <a href="../scala/List.html#A" target="_self">A</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns this first element of the list.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the first element of this list.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><a href="../scala/Predef$object#NoSuchElementException">Predef.NoSuchElementException</a> - if the list is empty.</dd></dl>
+    <hr></hr>
+<a name="lengthCompare%28Int%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>lengthCompare</em>(<em>l</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>returns length - l, without calling length</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#lengthCompare%28Int%29" target="_self">lengthCompare</a>
+        </dd>
+      </dl><hr></hr>
+<a name="tail"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>tail</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns this list without its first element.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>this list without its first element.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><a href="../scala/Predef$object#NoSuchElementException">Predef.NoSuchElementException</a> - if the list is empty.</dd></dl>
+    <hr></hr>
+<a name="%3A%3A%28B%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>::</em>[<em>B</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>](<em>x</em> : <a href="../scala/List.html#%3A%3A%28B%29#B" target="_self">B</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#%3A%3A%28B%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Add an element <code>x</code> at the beginning of this list.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>x - </code>the element to append.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the list with <code>x</code> appended at the beginning.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Examples</b></dt><dd><code>1 :: List(2, 3) = List(2, 3).::(1) = List(1, 2, 3)</code></dd></dl>
+    <hr></hr>
+<a name="%3A%3A%3A%28List%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>:::</em>[<em>B</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>](<em>prefix</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#%3A%3A%3A%28List%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#%3A%3A%3A%28List%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Returns a list resulting from the concatenation of the given
+      list <code>prefix</code> and this list. 
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>prefix - </code>the list to concatenate at the beginning of this list.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the concatenation of the two lists.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Examples</b></dt><dd><code>List(1, 2) ::: List(3, 4) = List(3, 4).:::(List(1, 2)) = List(1, 2, 3, 4)</code></dd></dl>
+    <hr></hr>
+<a name="reverse_%3A%3A%3A%28List%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>reverse_:::</em>[<em>B</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>](<em>prefix</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#reverse_%3A%3A%3A%28List%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#reverse_%3A%3A%3A%28List%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Reverse the given prefix and append the current list to that.
+    This function is equivalent to an application of <code>reverse</code>
+    on the prefix followed by a call to <code>:::</code>, but more
+    efficient (and tail recursive).</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>prefix - </code>the prefix to reverse and then prepend</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the concatenation of the reversed prefix and the current list.</dd></dl>
+    <hr></hr>
+<a name="length"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>length</em> : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the number of elements in the list.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the number of elements in the list.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#length" target="_self">length</a>
+        </dd>
+      </dl><hr></hr>
+<a name="indices"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>indices</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates a list with all indices in the list. This is
+    equivalent to a call to <code>List.range(0, xs.length)</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a list of all indices in the list.</dd></dl>
+    <hr></hr>
+<a name="elements"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>elements</em> : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the elements in the list as an iterator</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>an iterator on the list elements.</dd></dl>
+    <hr></hr>
+<a name="toList"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>toList</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Overrides the method in Iterable for efficiency.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the list itself</dd></dl>
+    <hr></hr>
+<a name="init"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>init</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the list without its last element.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the list without its last element.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><a href="../scala/Predef$object#UnsupportedOperationException">Predef.UnsupportedOperationException</a> - if the list is empty.</dd></dl>
+    <hr></hr>
+<a name="last"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>last</em> : <a href="../scala/List.html#A" target="_self">A</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the last element of this list.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the last element of the list.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><a href="../scala/Predef$object#UnsupportedOperationException">Predef.UnsupportedOperationException</a> - if the list is empty.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#last" target="_self">last</a>
+        </dd>
+      </dl><hr></hr>
+<a name="take%28Int%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>take</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the <code>n</code> first elements of this list, or else the whole 
+    list, if it has less than <code>n</code> elements.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the number of elements to take.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the <code>n</code> first elements of this list.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#take%28Int%29" target="_self">take</a>
+        </dd>
+      </dl><hr></hr>
+<a name="slice%28Int%2CInt%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>slice</em>(<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the list with elements belonging to the given index range.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>start - </code>the start position of the list slice.</dd><dd><code>end - </code>the end position (exclusive) of the list slice.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the list with elements belonging to the given index range.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#slice%28Int%2CInt%29" target="_self">slice</a>
+        </dd>
+      </dl><hr></hr>
+<a name="drop%28Int%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>drop</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the list without its <code>n</code> first elements.
+    If this list has less than <code>n</code> elements, the empty list is returned.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the number of elements to drop.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the list without its <code>n</code> first elements.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#drop%28Int%29" target="_self">drop</a>
+        </dd>
+      </dl><hr></hr>
+<a name="takeRight%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>takeRight</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the rightmost <code>n</code> elements from this list.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the number of elements to take</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the suffix of length <code>n</code> of the list</dd></dl>
+    <hr></hr>
+<a name="dropRight%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>dropRight</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the list wihout its rightmost <code>n</code> elements.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the number of elements to take</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the suffix of length <code>n</code> of the list</dd></dl>
+    <hr></hr>
+<a name="splitAt%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>splitAt</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : (<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>], <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>])
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Split the list at a given point and return the two parts thus
+    created.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the position at which to split</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a pair of lists composed of the first <code>n</code>             elements, and the other elements.</dd></dl>
+    <hr></hr>
+<a name="takeWhile%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>takeWhile</em>(<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the longest prefix of this list whose elements satisfy
+    the predicate <code>p</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the test predicate.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the longest prefix of this list whose elements satisfy             the predicate <code>p</code>.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a>
+        </dd>
+      </dl><hr></hr>
+<a name="dropWhile%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>dropWhile</em>(<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the longest suffix of this list whose first element
+    does not satisfy the predicate <code>p</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the test predicate.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the longest suffix of the list whose first element             does not satisfy the predicate <code>p</code>.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a>
+        </dd>
+      </dl><hr></hr>
+<a name="span%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>span</em>(<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : (<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>], <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>])
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the longest prefix of the list whose elements all satisfy
+    the given predicate, and the rest of the list.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the test predicate</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a pair consisting of the longest prefix of the list whose             elements all satisfy <code>p</code>, and the rest of the list.</dd></dl>
+    <hr></hr>
+<a name="break%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>break</em>(<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : (<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>], <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>])
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Like <code>span</code> but with the predicate inverted.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="apply%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/List.html#A" target="_self">A</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the <code>n</code>-th element of this list. The first element
+    (head of the list) is at position 0.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>index of the element to return</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the element at position <code>n</code> in this list.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><a href="../scala/Predef$object#NoSuchElementException">Predef.NoSuchElementException</a> - if the list is too short.</dd></dl>
+    <hr></hr>
+<a name="map%28%28A%29%3D%3EB%29"></a><dl>
+      <dt>
+        
+        <code>override final</code>
+        <code>def</code>
+        <em>map</em>[<em>B</em>](<em>f</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/List.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the list resulting from applying the given function <code>f</code> to each
+    element of this list.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>function to apply to each element.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>[f(a0), ..., f(an)]</code> if this list is <code>[a0, ..., an]</code>.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#map%28%28A%29%3D%3EB%29" target="_self">map</a>
+        </dd>
+      </dl><hr></hr>
+<a name="reverseMap%28%28A%29%3D%3EB%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>reverseMap</em>[<em>B</em>](<em>f</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/List.html#reverseMap%28%28A%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#reverseMap%28%28A%29%3D%3EB%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Apply a function to all the elements of the list, and return the
+    reversed list of results. This is equivalent to a call to <code>map</code>
+    followed by a call to <code>reverse</code>, but more efficient.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>the function to apply to each elements.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the reversed list of results.</dd></dl>
+    <hr></hr>
+<a name="foreach%28%28A%29%3D%3EUnit%29"></a><dl>
+      <dt>
+        
+        <code>override final</code>
+        <code>def</code>
+        <em>foreach</em>(<em>f</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Unit.html" target="_self">Unit</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Apply the given function <code>f</code> to each element of this list
+    (while respecting the order of the elements).</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>the treatment to apply to each element.</dd></dl>
+    <hr></hr>
+<a name="filter%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override final</code>
+        <code>def</code>
+        <em>filter</em>(<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns all the elements of this list that satisfy the
+    predicate <code>p</code>. The order of the elements is preserved.
+    It is guarenteed that the receiver list itself is returned iff all its
+    elements satisfy the predicate `p'. Hence the following equality is valid:
+  
+    (xs filter p) eq xs  ==  xs forall p</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the predicate used to filter the list.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the elements of this list satisfying <code>p</code>.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a>
+        </dd>
+      </dl><hr></hr>
+<a name="remove%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>remove</em>(<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Removes all elements of the list which satisfy the predicate
+    <code>p</code>. This is like <code>filter</code> with the
+    predicate inversed.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the predicate to use to test elements</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the list without all elements which satisfy <code>p</code></dd></dl>
+    <hr></hr>
+<a name="partition%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>partition</em>(<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : (<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>], <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>])
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Partition the list in two sub-lists according to a predicate.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the predicate on which to partition</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a pair of lists: the list of all elements which satisfy             <code>p</code> and the list of all elements which do not.
+             The relative order of the elements in the sub-lists is the
+             same as in the original list.</dd></dl>
+    <hr></hr>
+<a name="sort%28%28A%2CA%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>sort</em>(<em>lt</em> : (<a href="../scala/List.html#A" target="_self">A</a>, <a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Sort the list according to the comparison function
+      <code>&lt;(e1: a, e2: a) =&gt; Boolean</code>,
+      which should be true iff <code>e1</code> is smaller than
+      <code>e2</code>. 
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>lt - </code>the comparison function</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a list sorted according to the comparison function              <code>&lt;(e1: a, e2: a) =&gt; Boolean</code>.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Examples</b></dt><dd><pre>      List("Steve", "Tom", "John", "Bob")
+        .sort((e1, e2) => (e1 compareTo e2) &lt; 0) =
+      List("Bob", "John", "Steve", "Tom")</pre></dd></dl>
+    <hr></hr>
+<a name="count%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>count</em>(<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Count the number of elements in the list which satisfy a predicate.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the predicate for which to count</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the number of elements satisfying the predicate <code>p</code>.</dd></dl>
+    <hr></hr>
+<a name="forall%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>forall</em>(<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Tests if the predicate <code>p</code> is satisfied by all elements
+    in this list.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the test predicate.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>true</code> iff all elements of this list satisfy the             predicate <code>p</code>.</dd></dl>
+    <hr></hr>
+<a name="exists%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>exists</em>(<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Tests the existence in this list of an element that satisfies the
+    predicate <code>p</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the test predicate.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>true</code> iff there exists an element in this list that             satisfies the predicate <code>p</code>.</dd></dl>
+    <hr></hr>
+<a name="find%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>find</em>(<em>p</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Option.html" target="_self">Option</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Find and return the first element of the list satisfying a
+    predicate, if any.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the predicate</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the first element in the list satisfying <code>p</code>,    or <code>None</code> if none exists.</dd></dl>
+    <hr></hr>
+<a name="foldLeft%28B%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>foldLeft</em>[<em>B</em>](<em>z</em> : <a href="../scala/List.html#foldLeft%28B%29#B" target="_self">B</a>)(<em>f</em> : (<a href="../scala/List.html#foldLeft%28B%29#B" target="_self">B</a>, <a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/List.html#foldLeft%28B%29#B" target="_self">B</a>) : <a href="../scala/List.html#foldLeft%28B%29#B" target="_self">B</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Combines the elements of this list together using the binary
+    function <code>f</code>, from left to right, and starting with
+    the value <code>z</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>f(... (f(f(z, a<sub>0</sub>), a<sub>1</sub>) ...),            a<sub>n</sub>)</code> if the list is
+            <code>[a<sub>0</sub>, a<sub>1</sub>, ..., a<sub>n</sub>]</code>.</dd></dl>
+    <hr></hr>
+<a name="foldRight%28B%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>foldRight</em>[<em>B</em>](<em>z</em> : <a href="../scala/List.html#foldRight%28B%29#B" target="_self">B</a>)(<em>f</em> : (<a href="../scala/List.html#A" target="_self">A</a>, <a href="../scala/List.html#foldRight%28B%29#B" target="_self">B</a>) =&gt; <a href="../scala/List.html#foldRight%28B%29#B" target="_self">B</a>) : <a href="../scala/List.html#foldRight%28B%29#B" target="_self">B</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Combines the elements of this list together using the binary
+    function <code>f</code>, from right to left, and starting with
+    the value <code>z</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>f(a<sub>0</sub>, f(a<sub>1</sub>, f(..., f(a<sub>n</sub>, z)...)))</code>            if the list is <code>[a<sub>0</sub>, a1, ..., a<sub>n</sub>]</code>.</dd></dl>
+    <hr></hr>
+<a name="reduceLeft%28%28B%2CB%29%3D%3EB%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>reduceLeft</em>[<em>B</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>](<em>f</em> : (<a href="../scala/List.html#reduceLeft%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>, <a href="../scala/List.html#reduceLeft%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>) =&gt; <a href="../scala/List.html#reduceLeft%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/List.html#reduceLeft%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Combines the elements of this list together using the binary
+    operator <code>op</code>, from left to right</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>op - </code>The operator to apply</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>op(... op(a<sub>0</sub>,a<sub>1</sub>), ..., a<sub>n</sub>)</code>       if the list has elements
+            <code>a<sub>0</sub>, a<sub>1</sub>, ..., a<sub>n</sub></code>.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><a href="../scala/Predef$object#UnsupportedOperationException">Predef.UnsupportedOperationException</a> - if the list is empty.</dd></dl>
+    <hr></hr>
+<a name="reduceRight%28%28B%2CB%29%3D%3EB%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>reduceRight</em>[<em>B</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>](<em>f</em> : (<a href="../scala/List.html#reduceRight%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>, <a href="../scala/List.html#reduceRight%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>) =&gt; <a href="../scala/List.html#reduceRight%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/List.html#reduceRight%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Combines the elements of this list together using the binary
+    operator <code>op</code>, from right to left</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>op - </code>The operator to apply</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>a<sub>0</sub> op (... op (a<sub>n-1</sub> op a<sub>n</sub>)...)</code>            if the list has elements <code>a<sub>0</sub>, a<sub>1</sub>, ...,
+            a<sub>n</sub></code>.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><a href="../scala/Predef$object#UnsupportedOperationException">Predef.UnsupportedOperationException</a> - if the list is empty.</dd></dl>
+    <hr></hr>
+<a name="flatMap%28%28A%29%3D%3EIterable%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code>override final</code>
+        <code>def</code>
+        <em>flatMap</em>[<em>B</em>](<em>f</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/List.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Applies the given function <code>f</code> to each element of
+    this list, then concatenates the results.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>the function to apply on each element.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>f(a<sub>0</sub>) ::: ... ::: f(a<sub>n</sub>)</code> if             this list is <code>[a<sub>0</sub>, ..., a<sub>n</sub>]</code>.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a>
+        </dd>
+      </dl><hr></hr>
+<a name="reverse"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>reverse</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A list consisting of all elements of this list in reverse order.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#reverse" target="_self">reverse</a>
+        </dd>
+      </dl><hr></hr>
+<a name="zip%28List%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>zip</em>[<em>B</em>](<em>that</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#zip%28List%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/List.html" target="_self">List</a>[(<a href="../scala/List.html#A" target="_self">A</a>, <a href="../scala/List.html#zip%28List%5BB%5D%29#B" target="_self">B</a>)]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a list formed from this list and the specified list
+    <code>that</code> by associating each element of the former with
+    the element at the same position in the latter.
+    If one of the two lists is longer than the other, its remaining elements are ignored.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>List((a<sub>0</sub>,b<sub>0</sub>), ...,                (a<sub>min(m,n)</sub>,b<sub>min(m,n)</sub>))</code> when
+                <code>List(a<sub>0</sub>, ..., a<sub>m</sub>)
+                zip List(b<sub>0</sub>, ..., b<sub>n</sub>)</code> is invoked.</dd></dl>
+    <hr></hr>
+<a name="zipWithIndex"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>zipWithIndex</em> : <a href="../scala/List.html" target="_self">List</a>[(<a href="../scala/List.html#A" target="_self">A</a>, <a href="../scala/Int.html" target="_self">Int</a>)]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a list that pairs each element of this list
+    with its index, counting from 0.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the list <code>List((a<sub>0</sub>,0), (a<sub>1</sub>,1), ...)</code>                 where <code>a<sub>i</sub></code> are the elements of this list.</dd></dl>
+    <hr></hr>
+<a name="zipAll%28List%5BB%5D%2CC%2CD%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>zipAll</em>[<em>B</em>, <em>C</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>, <em>D</em> &gt;: <a href="../scala/List.html#zipAll%28List%5BB%5D%2CC%2CD%29#B" target="_self">B</a>](<em>that</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#zipAll%28List%5BB%5D%2CC%2CD%29#B" target="_self">B</a>], <em>thisElem</em> : <a href="../scala/List.html#zipAll%28List%5BB%5D%2CC%2CD%29#C" target="_self">C</a>, <em>thatElem</em> : <a href="../scala/List.html#zipAll%28List%5BB%5D%2CC%2CD%29#D" target="_self">D</a>) : <a href="../scala/List.html" target="_self">List</a>[(<a href="../scala/List.html#zipAll%28List%5BB%5D%2CC%2CD%29#C" target="_self">C</a>, <a href="../scala/List.html#zipAll%28List%5BB%5D%2CC%2CD%29#D" target="_self">D</a>)]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a list formed from this list and the specified list
+    <code>that</code> by associating each element of the former with
+    the element at the same position in the latter.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>that - </code>list <code>that</code> may have a different length                    as the self list.</dd><dd><code>thisElem - </code>element <code>thisElem</code> is used to fill up the                    resulting list if the self list is shorter than
+                    <code>that</code></dd><dd><code>thatElem - </code>element <code>thatElem</code> is used to fill up the                    resulting list if <code>that</code> is shorter than
+                    the self list</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>List((a<sub>0</sub>,b<sub>0</sub>), ...,                    (a<sub>n</sub>,b<sub>n</sub>), (elem,b<sub>n+1</sub>),
+                    ..., {elem,b<sub>m</sub>})</code>
+                    when <code>[a<sub>0</sub>, ..., a<sub>n</sub>] zip
+                    [b<sub>0</sub>, ..., b<sub>m</sub>]</code> is
+                    invoked where <code>m &gt; n</code>.</dd></dl>
+    <hr></hr>
+<a name="union%28List%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>union</em>[<em>B</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>](<em>that</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#union%28List%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#union%28List%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Computes the union of this list and the given list
+    <code>that</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>that - </code>the list of elements to add to the list.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a list without doubles containing the elements of this                list and those of the given list <code>that</code>.</dd></dl>
+    <hr></hr>
+<a name="diff%28List%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>diff</em>[<em>B</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>](<em>that</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#diff%28List%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#diff%28List%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Computes the difference between this list and the given list
+    <code>that</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>that - </code>the list of elements to remove from this list.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>this list without the elements of the given list                <code>that</code>.</dd></dl>
+    <hr></hr>
+<a name="flatten%28%28A%29%3D%3EIterable%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>flatten</em>[<em>B</em>](<code>implicit </code><em>f</em> : (<a href="../scala/List.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/List.html#flatten%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#flatten%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="intersect%28List%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>intersect</em>[<em>B</em> &gt;: <a href="../scala/List.html#A" target="_self">A</a>](<em>that</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#intersect%28List%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#intersect%28List%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Computes the intersection between this list and the given list
+    <code>that</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>that - </code>the list to intersect.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the list of elements contained both in this list and                in the given list <code>that</code>.</dd></dl>
+    <hr></hr>
+<a name="removeDuplicates"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>removeDuplicates</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Removes redundant elements from the list. Uses the method <code>==</code>
+    to decide if two elements are identical.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the list without doubles.</dd></dl>
+    <hr></hr>
+<a name="stringPrefix"></a><dl>
+      <dt>
+        
+        <code>protected override</code>
+        <code>def</code>
+        <em>stringPrefix</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Defines the prefix of this object's <code>toString</code> representation.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="projection"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>projection</em> : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>returns a projection that can be used to call non-strict <code>filter</code>,
+   <code>map</code>, and <code>flatMap</code> methods that build projections
+   of the collection.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Seq.html" target="_self">Seq</a>.<a href="../scala/Seq.html#projection" target="_self">projection</a>
+        </dd>
+      </dl><hr></hr>
+<a name="toStream"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>toStream</em> : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/List.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create a stream which contains all the elements of this iterable object.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>consider using <code>projection</code> for lazy behavior.</dd></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

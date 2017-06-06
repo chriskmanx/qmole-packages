@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>object RemoteActor in scala.actors.remote</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../scala/actors/remote$package.html" target="_self">scala.actors.remote</a>
+        <br></br>
+        <span class="entity">object  RemoteActor</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/actors/remote/RemoteActor"><code>scala/actors/remote/RemoteActor.scala</code></a>]
+      </div><hr></hr>
+      <a name="RemoteActor"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>object</code>
+        <em>RemoteActor</em>
+      </dt>
+      <dd><code> extends </code><a href="../../../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd><p>
+    This object provides methods for creating, registering, and
+    selecting remotely accessible actors.
+  </p>
+  <p>
+    A remote actor is typically created like this:
+  </p><pre>
+  actor {
+    alive(9010)
+    register('myName, self)
+
+    // behavior
+  }
+  </pre>
+  <p>
+    It can be accessed by an actor running on a (possibly)
+    different node by selecting it in the following way:
+  </p><pre>
+  actor {
+    // ...
+    <b>val</b> c = select(Node("127.0.0.1", 9010), 'myName)
+    c ! msg
+    // ...
+  }
+  </pre></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>0.9.10</dd><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Philipp Haller</dd></dl>
+    
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/actors/remote/RemoteActor$object.html#alive%28Int%29" target="_self">alive</a></em>
+        (<em>port</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Makes <code>self</code> remotely accessible on TCP port
+   <code>port</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/actors/remote/RemoteActor$object.html#register%28Symbol%2Cscala.actors.Actor%29" target="_self">register</a></em>
+        (<em>name</em> : <a href="../../../scala/Symbol.html" target="_self">Symbol</a>, <em>a</em> : <a href="../../../scala/actors/Actor.html" target="_self">Actor</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Registers <code>a</code> under <code>name</code> on this
+   node.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/actors/remote/RemoteActor$object.html#select%28scala.actors.remote.Node%2CSymbol%29" target="_self">select</a></em>
+        (<em>node</em> : <a href="../../../scala/actors/remote/Node.html" target="_self">Node</a>, <em>sym</em> : <a href="../../../scala/Symbol.html" target="_self">Symbol</a>) : <a href="../../../scala/actors/Actor.html" target="_self">Actor</a>
+        
+        <div>Returns (a proxy for) the actor registered under
+   <code>name</code> on <code>node</code>.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="alive%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>alive</em>(<em>port</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Makes <code>self</code> remotely accessible on TCP port
+   <code>port</code>.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="register%28Symbol%2Cscala.actors.Actor%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>register</em>(<em>name</em> : <a href="../../../scala/Symbol.html" target="_self">Symbol</a>, <em>a</em> : <a href="../../../scala/actors/Actor.html" target="_self">Actor</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Registers <code>a</code> under <code>name</code> on this
+   node.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="select%28scala.actors.remote.Node%2CSymbol%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>select</em>(<em>node</em> : <a href="../../../scala/actors/remote/Node.html" target="_self">Node</a>, <em>sym</em> : <a href="../../../scala/Symbol.html" target="_self">Symbol</a>) : <a href="../../../scala/actors/Actor.html" target="_self">Actor</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns (a proxy for) the actor registered under
+   <code>name</code> on <code>node</code>.</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

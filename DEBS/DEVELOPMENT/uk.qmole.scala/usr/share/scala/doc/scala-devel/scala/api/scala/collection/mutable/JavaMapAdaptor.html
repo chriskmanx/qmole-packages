@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class JavaMapAdaptor in scala.collection.mutable</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../scala/collection/mutable$package.html" target="_self">scala.collection.mutable</a>
+        <br></br>
+        <span class="entity">class  JavaMapAdaptor</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/collection/mutable/JavaMapAdaptor"><code>scala/collection/mutable/JavaMapAdaptor.scala</code></a>]
+      </div><hr></hr>
+      <a name="JavaMapAdaptor"></a><dl>
+      <dt>
+        @<a href="../../../scala/deprecated.html" target="_self">deprecated</a><br></br>
+        <code></code>
+        <code>class</code>
+        <em>JavaMapAdaptor</em>[<em>A</em>, <em>B</em>](<em>jmap</em> : <a href="" target="contentFrame" class="java/util/Map">java.util.Map</a>)
+      </dt>
+      <dd><code> extends </code><a href="../../../scala/collection/mutable/Map.html" target="_self">Map</a>[<a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>, <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#B" target="_self">B</a>]</dd>
+    </dl>
+      <dl><dd>This class can be used as an adaptor to create mutable maps from
+  Java classes that implementat the <code>java.util.Map</code> interface.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Matthias Zenger</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0, 21/07/2003</dd></dl>
+    
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/JavaMapAdaptor.html#-%3D%28A%29" target="_self">-=</a></em>
+        (<em>key</em> : <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Remove a key from this map, noop if key is not present.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/JavaMapAdaptor.html#apply%28A%29" target="_self">apply</a></em>
+        (<em>key</em> : <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>) : <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#B" target="_self">B</a>
+        
+        <div>Retrieve the value which is associated with the given key. This
+    method throws an exception if there is no mapping from the given
+    key to a value.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/JavaMapAdaptor.html#clear%28%29" target="_self">clear</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Removes all mappings from the map. After this operation is
+    completed, the map is empty.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/JavaMapAdaptor.html#clone%28%29" target="_self">clone</a></em>
+         : <a href="../../../scala/collection/mutable/Map.html" target="_self">Map</a>[<a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>, <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#B" target="_self">B</a>]
+        
+        <div>Return a clone of this map.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/JavaMapAdaptor.html#contains%28A%29" target="_self">contains</a></em>
+        (<em>key</em> : <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Is the given key mapped to a value by this map?</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/JavaMapAdaptor.html#elements" target="_self">elements</a></em>
+         : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[(<a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>, <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#B" target="_self">B</a>)]
+        
+        <div>Creates a new iterator over all elements contained in this
+    object.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/JavaMapAdaptor.html#get%28A%29" target="_self">get</a></em>
+        (<em>key</em> : <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/collection/mutable/JavaMapAdaptor.html#B" target="_self">B</a>]
+        
+        <div>Check if this map maps <code>key</code> to a value and return the
+    value if it exists.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/JavaMapAdaptor.html#isDefinedAt%28A%29" target="_self">isDefinedAt</a></em>
+        (<em>key</em> : <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Does this map contain a mapping from the given key to a value?</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/JavaMapAdaptor.html#isEmpty" target="_self">isEmpty</a></em>
+         : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Is this an empty map?</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/JavaMapAdaptor.html#keys" target="_self">keys</a></em>
+         : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>]
+        
+        <div>Creates an iterator for all keys.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/JavaMapAdaptor.html#size" target="_self">size</a></em>
+         : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        <div>Compute the number of key-to-value mappings.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/JavaMapAdaptor.html#update%28A%2CB%29" target="_self">update</a></em>
+        (<em>key</em> : <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>, <em>value</em> : <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#B" target="_self">B</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>This method allows one to add a new mapping from <code>key</code>
+    to <code>value</code> to the map. If the map already contains a
+    mapping for <code>key</code>, it will be overridden by this
+    function.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/JavaMapAdaptor.html#values" target="_self">values</a></em>
+         : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/collection/mutable/JavaMapAdaptor.html#B" target="_self">B</a>]
+        
+        <div>Creates an iterator for a contained values.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/mutable/Map.html" target="_self">Map</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/mutable/Map.html#%2B%3D%28%28A%2CB%29%29" target="_self">+=</a>, <a href="../../../scala/collection/mutable/Map.html#%2B%3D%28%28A%2CB%29%2C%28A%2CB%29%2C%28A%2CB%29*%29" target="_self">+=</a>, <a href="../../../scala/collection/mutable/Map.html#%2B%2B%3D%28Iterable%5B%28A%2CB%29%5D%29" target="_self">++=</a>, <a href="../../../scala/collection/mutable/Map.html#%2B%2B%3D%28Iterator%5B%28A%2CB%29%5D%29" target="_self">++=</a>, <a href="../../../scala/collection/mutable/Map.html#%2B%28%28A%2CB%29%29" target="_self">+</a>, <a href="../../../scala/collection/mutable/Map.html#%2B%28%28A%2CB%29%2C%28A%2CB%29%2C%28A%2CB%29*%29" target="_self">+</a>, <a href="../../../scala/collection/mutable/Map.html#%2B%2B%28Iterable%5B%28A%2CB%29%5D%29" target="_self">++</a>, <a href="../../../scala/collection/mutable/Map.html#%2B%2B%28Iterator%5B%28A%2CB%29%5D%29" target="_self">++</a>, <a href="../../../scala/collection/mutable/Map.html#-%3D%28A%2CA%2CA*%29" target="_self">-=</a>, <a href="../../../scala/collection/mutable/Map.html#--%3D%28Iterable%5BA%5D%29" target="_self">--=</a>, <a href="../../../scala/collection/mutable/Map.html#--%3D%28Iterator%5BA%5D%29" target="_self">--=</a>, <a href="../../../scala/collection/mutable/Map.html#-%28A%29" target="_self">-</a>, <a href="../../../scala/collection/mutable/Map.html#removeKey%28A%29" target="_self">removeKey</a>, <a href="../../../scala/collection/mutable/Map.html#put%28A%2CB%29" target="_self">put</a>, <a href="../../../scala/collection/mutable/Map.html#-%28A%2CA%2CA*%29" target="_self">-</a>, <a href="../../../scala/collection/mutable/Map.html#--%28Iterable%5BA%5D%29" target="_self">--</a>, <a href="../../../scala/collection/mutable/Map.html#--%28Iterator%5BA%5D%29" target="_self">--</a>, <a href="../../../scala/collection/mutable/Map.html#getOrElseUpdate%28A%2C%3D%3EB%29" target="_self">getOrElseUpdate</a>, <a href="../../../scala/collection/mutable/Map.html#transform%28%28A%2CB%29%3D%3EB%29" target="_self">transform</a>, <a href="../../../scala/collection/mutable/Map.html#retain%28%28A%2CB%29%3D%3EBoolean%29" target="_self">retain</a>, <a href="../../../scala/collection/mutable/Map.html#%3C%3C%28scala.collection.mutable.Message%5B%28A%2CB%29%5D%29" target="_self">&lt;&lt;</a>, <a href="../../../scala/collection/mutable/Map.html#%2B%3D%28A%29" target="_self">+=</a>, <a href="../../../scala/collection/mutable/Map.html#incl%28%28A%2CB%29*%29" target="_self">incl</a>, <a href="../../../scala/collection/mutable/Map.html#excl%28A*%29" target="_self">excl</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/Map.html" target="_self">Map</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/Map.html#getOrElse%28A%2C%3D%3EB2%29" target="_self">getOrElse</a>, <a href="../../../scala/collection/Map.html#keySet" target="_self">keySet</a>, <a href="../../../scala/collection/Map.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../scala/collection/Map.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../scala/collection/Map.html#toString%28%29" target="_self">toString</a>, <a href="../../../scala/collection/Map.html#default%28A%29" target="_self">default</a>, <a href="../../../scala/collection/Map.html#projection" target="_self">projection</a>, <a href="../../../scala/collection/Map.html#filterKeys%28%28A%29%3D%3EBoolean%29" target="_self">filterKeys</a>, <a href="../../../scala/collection/Map.html#mapElements%28%28B%29%3D%3EC%29" target="_self">mapElements</a>, <a href="../../../scala/collection/Map.html#stringPrefix" target="_self">stringPrefix</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Collection.html" target="_self">Collection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Collection.html#toArray" target="_self">toArray</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Iterable.html" target="_self">Iterable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Iterable.html#concat%28Iterable%5BB%5D%29" target="_self">concat</a>, <a href="../../../scala/Iterable.html#%2B%2B%28Iterable%5BB%5D%29" target="_self">++</a>, <a href="../../../scala/Iterable.html#map%28%28A%29%3D%3EB%29" target="_self">map</a>, <a href="../../../scala/Iterable.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a>, <a href="../../../scala/Iterable.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a>, <a href="../../../scala/Iterable.html#partition%28%28A%29%3D%3EBoolean%29" target="_self">partition</a>, <a href="../../../scala/Iterable.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a>, <a href="../../../scala/Iterable.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a>, <a href="../../../scala/Iterable.html#take%28Int%29" target="_self">take</a>, <a href="../../../scala/Iterable.html#drop%28Int%29" target="_self">drop</a>, <a href="../../../scala/Iterable.html#foreach%28%28A%29%3D%3EUnit%29" target="_self">foreach</a>, <a href="../../../scala/Iterable.html#forall%28%28A%29%3D%3EBoolean%29" target="_self">forall</a>, <a href="../../../scala/Iterable.html#exists%28%28A%29%3D%3EBoolean%29" target="_self">exists</a>, <a href="../../../scala/Iterable.html#find%28%28A%29%3D%3EBoolean%29" target="_self">find</a>, <a href="../../../scala/Iterable.html#findIndexOf%28%28A%29%3D%3EBoolean%29" target="_self">findIndexOf</a>, <a href="../../../scala/Iterable.html#indexOf%28B%29" target="_self">indexOf</a>, <a href="../../../scala/Iterable.html#foldLeft%28B%29" target="_self">foldLeft</a>, <a href="../../../scala/Iterable.html#foldRight%28B%29" target="_self">foldRight</a>, <a href="../../../scala/Iterable.html#%2F%3A%28B%29" target="_self">/:</a>, <a href="../../../scala/Iterable.html#%3A%5C%28B%29" target="_self">:\</a>, <a href="../../../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29" target="_self">reduceLeft</a>, <a href="../../../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29" target="_self">reduceRight</a>, <a href="../../../scala/Iterable.html#copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29" target="_self">copyToBuffer</a>, <a href="../../../scala/Iterable.html#sameElements%28Iterable%5BB%5D%29" target="_self">sameElements</a>, <a href="../../../scala/Iterable.html#toList" target="_self">toList</a>, <a href="../../../scala/Iterable.html#toStream" target="_self">toStream</a>, <a href="../../../scala/Iterable.html#mkString%28String%2CString%2CString%29" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#mkString%28String%29" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#mkString" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%2CString%2CString%29" target="_self">addString</a>, <a href="../../../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%29" target="_self">addString</a>, <a href="../../../scala/Iterable.html#copyToArray%28Array%5BB%5D%2CInt%29" target="_self">copyToArray</a>, <a href="../../../scala/Iterable.html#hasDefiniteSize" target="_self">hasDefiniteSize</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/PartialFunction.html" target="_self">PartialFunction</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/PartialFunction.html#orElse%28PartialFunction%5BA1%2CB1%5D%29" target="_self">orElse</a>, <a href="../../../scala/PartialFunction.html#andThen%28%28B%29%3D%3EC%29" target="_self">andThen</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Function1.html" target="_self">Function1</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Function1.html#compose%28%28A%29%3D%3ET1%29" target="_self">compose</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="size"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>size</em> : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Compute the number of key-to-value mappings.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the number of mappings</dd></dl>
+    <hr></hr>
+<a name="get%28A%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>get</em>(<em>key</em> : <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/collection/mutable/JavaMapAdaptor.html#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Check if this map maps <code>key</code> to a value and return the
+    value if it exists.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>key - </code>the key of the mapping of interest</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the value of the mapping, if it exists</dd></dl>
+    <hr></hr>
+<a name="isEmpty"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>isEmpty</em> : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Is this an empty map?</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>true</code> iff the map is empty.</dd></dl>
+    <hr></hr>
+<a name="apply%28A%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>apply</em>(<em>key</em> : <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>) : <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#B" target="_self">B</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Retrieve the value which is associated with the given key. This
+    method throws an exception if there is no mapping from the given
+    key to a value.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>key - </code>the key</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the value associated with the given key.</dd></dl>
+    <hr></hr>
+<a name="contains%28A%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>contains</em>(<em>key</em> : <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Is the given key mapped to a value by this map?</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>key - </code>the key</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>true</code> iff there is a mapping for key in this map</dd></dl>
+    <hr></hr>
+<a name="isDefinedAt%28A%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>isDefinedAt</em>(<em>key</em> : <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Does this map contain a mapping from the given key to a value?</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>key - </code>the key</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>true</code> iff there is a mapping for key in this map</dd></dl>
+    <hr></hr>
+<a name="keys"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>keys</em> : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates an iterator for all keys.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>an iterator over all keys.</dd></dl>
+    <hr></hr>
+<a name="values"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>values</em> : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/collection/mutable/JavaMapAdaptor.html#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates an iterator for a contained values.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>an iterator over all values.</dd></dl>
+    <hr></hr>
+<a name="elements"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>elements</em> : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[(<a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>, <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#B" target="_self">B</a>)]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates a new iterator over all elements contained in this
+    object.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the new iterator</dd></dl>
+    <hr></hr>
+<a name="update%28A%2CB%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>update</em>(<em>key</em> : <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>, <em>value</em> : <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#B" target="_self">B</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>This method allows one to add a new mapping from <code>key</code>
+    to <code>value</code> to the map. If the map already contains a
+    mapping for <code>key</code>, it will be overridden by this
+    function.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>key - </code>The key to update</dd><dd><code>value - </code>The new value</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/Map.html" target="_self">Map</a>.<a href="../../../scala/collection/mutable/Map.html#update%28A%2CB%29" target="_self">update</a>
+        </dd>
+      </dl><hr></hr>
+<a name="-%3D%28A%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>-=</em>(<em>key</em> : <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Remove a key from this map, noop if key is not present.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>key - </code>the key to be removed</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/Map.html" target="_self">Map</a>.<a href="../../../scala/collection/mutable/Map.html#-%3D%28A%29" target="_self">-=</a>
+        </dd>
+      </dl><hr></hr>
+<a name="clear%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>clear</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Removes all mappings from the map. After this operation is
+    completed, the map is empty.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/Map.html" target="_self">Map</a>.<a href="../../../scala/collection/mutable/Map.html#clear%28%29" target="_self">clear</a>
+        </dd>
+      </dl><hr></hr>
+<a name="clone%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>clone</em> : <a href="../../../scala/collection/mutable/Map.html" target="_self">Map</a>[<a href="../../../scala/collection/mutable/JavaMapAdaptor.html#A" target="_self">A</a>, <a href="../../../scala/collection/mutable/JavaMapAdaptor.html#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Return a clone of this map.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a map with the same elements.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/Map.html" target="_self">Map</a>.<a href="../../../scala/collection/mutable/Map.html#clone%28%29" target="_self">clone</a>
+        </dd>
+      </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

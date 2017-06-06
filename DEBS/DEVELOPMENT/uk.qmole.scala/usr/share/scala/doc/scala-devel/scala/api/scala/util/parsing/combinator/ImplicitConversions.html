@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>trait ImplicitConversions in scala.util.parsing.combinator</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../../scala/util/parsing/combinator$package.html" target="_self">scala.util.parsing.combinator</a>
+        <br></br>
+        <span class="entity">trait  ImplicitConversions</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/util/parsing/combinator/ImplicitConversions"><code>scala/util/parsing/combinator/ImplicitConversions.scala</code></a>]
+      </div><hr></hr>
+      <a name="ImplicitConversions"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>trait</code>
+        <em>ImplicitConversions</em>
+      </dt>
+      <dd><code> extends </code><a href="../../../../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd>This object contains implicit conversions that come in handy when using the `^^' combinator 
+ {@see Parsers} to construct an AST from the concrete syntax.
+<p>
+ The reason for this is that the sequential composition combinator (`~') combines its constituents
+ into a ~. When several `~'s are combined, this results in nested `~'s (to the left).
+ The `flatten*' coercions makes it easy to apply an `n'-argument function to a nested ~ of
+ depth (`n-1')</p>
+<p>
+ The `headOptionTailToFunList' converts a function that takes a List[A] to a function that 
+ accepts a ~[A, Option[List[A]]] (this happens when, e.g., parsing something of the following
+ shape: p ~ opt("." ~ repsep(p, ".")) -- where `p' is a parser that yields an A)</p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Martin Odersky, Iulian Dragos, Adriaan Moors</dd></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../../../../scala/util/parsing/json/Lexer.html" target="_self">Lexer</a>, <a href="../../../../scala/util/parsing/json/Parser.html" target="_self">Parser</a></dd>
+      </dl><hr></hr>
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>implicit def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten2%28%28A%2CB%29%3D%3EC%29" target="_self">flatten2</a></em>
+        [<em>A</em>, <em>B</em>, <em>C</em>](<em>f</em> : (<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten2%28%28A%2CB%29%3D%3EC%29#A" target="_self">A</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten2%28%28A%2CB%29%3D%3EC%29#B" target="_self">B</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten2%28%28A%2CB%29%3D%3EC%29#C" target="_self">C</a>) : (<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten2%28%28A%2CB%29%3D%3EC%29#A" target="_self">A</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten2%28%28A%2CB%29%3D%3EC%29#B" target="_self">B</a>]) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten2%28%28A%2CB%29%3D%3EC%29#C" target="_self">C</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>implicit def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29" target="_self">flatten3</a></em>
+        [<em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>](<em>f</em> : (<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29#A" target="_self">A</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29#B" target="_self">B</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29#C" target="_self">C</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29#D" target="_self">D</a>) : (<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29#A" target="_self">A</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29#B" target="_self">B</a>], <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29#C" target="_self">C</a>]) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29#D" target="_self">D</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>implicit def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29" target="_self">flatten4</a></em>
+        [<em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>, <em>E</em>](<em>f</em> : (<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#A" target="_self">A</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#B" target="_self">B</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#C" target="_self">C</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#D" target="_self">D</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#E" target="_self">E</a>) : (<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#A" target="_self">A</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#B" target="_self">B</a>], <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#C" target="_self">C</a>], <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#D" target="_self">D</a>]) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#E" target="_self">E</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>implicit def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29" target="_self">flatten5</a></em>
+        [<em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>, <em>E</em>, <em>F</em>](<em>f</em> : (<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#A" target="_self">A</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#B" target="_self">B</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#C" target="_self">C</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#D" target="_self">D</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#E" target="_self">E</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#F" target="_self">F</a>) : (<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#A" target="_self">A</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#B" target="_self">B</a>], <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#C" target="_self">C</a>], <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#D" target="_self">D</a>], <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#E" target="_self">E</a>]) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#F" target="_self">F</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>implicit def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#headOptionTailToFunList%28%28List%5BA%5D%29%3D%3ET%29" target="_self">headOptionTailToFunList</a></em>
+        [<em>A</em>, <em>T</em>](<em>f</em> : (<a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#headOptionTailToFunList%28%28List%5BA%5D%29%3D%3ET%29#A" target="_self">A</a>]) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#headOptionTailToFunList%28%28List%5BA%5D%29%3D%3ET%29#T" target="_self">T</a>) : (<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#headOptionTailToFunList%28%28List%5BA%5D%29%3D%3ET%29#A" target="_self">A</a>, <a href="../../../../scala/Option.html" target="_self">Option</a>[<a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#headOptionTailToFunList%28%28List%5BA%5D%29%3D%3ET%29#A" target="_self">A</a>]]]) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#headOptionTailToFunList%28%28List%5BA%5D%29%3D%3ET%29#T" target="_self">T</a>
+        
+        
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="flatten2%28%28A%2CB%29%3D%3EC%29"></a><dl>
+      <dt>
+        
+        <code>implicit</code>
+        <code>def</code>
+        <em>flatten2</em>[<em>A</em>, <em>B</em>, <em>C</em>](<em>f</em> : (<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten2%28%28A%2CB%29%3D%3EC%29#A" target="_self">A</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten2%28%28A%2CB%29%3D%3EC%29#B" target="_self">B</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten2%28%28A%2CB%29%3D%3EC%29#C" target="_self">C</a>) : (<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten2%28%28A%2CB%29%3D%3EC%29#A" target="_self">A</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten2%28%28A%2CB%29%3D%3EC%29#B" target="_self">B</a>]) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten2%28%28A%2CB%29%3D%3EC%29#C" target="_self">C</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="flatten3%28%28A%2CB%2CC%29%3D%3ED%29"></a><dl>
+      <dt>
+        
+        <code>implicit</code>
+        <code>def</code>
+        <em>flatten3</em>[<em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>](<em>f</em> : (<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29#A" target="_self">A</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29#B" target="_self">B</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29#C" target="_self">C</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29#D" target="_self">D</a>) : (<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29#A" target="_self">A</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29#B" target="_self">B</a>], <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29#C" target="_self">C</a>]) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29#D" target="_self">D</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29"></a><dl>
+      <dt>
+        
+        <code>implicit</code>
+        <code>def</code>
+        <em>flatten4</em>[<em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>, <em>E</em>](<em>f</em> : (<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#A" target="_self">A</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#B" target="_self">B</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#C" target="_self">C</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#D" target="_self">D</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#E" target="_self">E</a>) : (<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#A" target="_self">A</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#B" target="_self">B</a>], <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#C" target="_self">C</a>], <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#D" target="_self">D</a>]) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29#E" target="_self">E</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29"></a><dl>
+      <dt>
+        
+        <code>implicit</code>
+        <code>def</code>
+        <em>flatten5</em>[<em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>, <em>E</em>, <em>F</em>](<em>f</em> : (<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#A" target="_self">A</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#B" target="_self">B</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#C" target="_self">C</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#D" target="_self">D</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#E" target="_self">E</a>) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#F" target="_self">F</a>) : (<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#A" target="_self">A</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#B" target="_self">B</a>], <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#C" target="_self">C</a>], <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#D" target="_self">D</a>], <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#E" target="_self">E</a>]) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29#F" target="_self">F</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="headOptionTailToFunList%28%28List%5BA%5D%29%3D%3ET%29"></a><dl>
+      <dt>
+        
+        <code>implicit</code>
+        <code>def</code>
+        <em>headOptionTailToFunList</em>[<em>A</em>, <em>T</em>](<em>f</em> : (<a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#headOptionTailToFunList%28%28List%5BA%5D%29%3D%3ET%29#A" target="_self">A</a>]) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#headOptionTailToFunList%28%28List%5BA%5D%29%3D%3ET%29#T" target="_self">T</a>) : (<a href="../../../../scala/util/parsing/combinator/$tilde.html" target="_self">~</a>[<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#headOptionTailToFunList%28%28List%5BA%5D%29%3D%3ET%29#A" target="_self">A</a>, <a href="../../../../scala/Option.html" target="_self">Option</a>[<a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#headOptionTailToFunList%28%28List%5BA%5D%29%3D%3ET%29#A" target="_self">A</a>]]]) =&gt; <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#headOptionTailToFunList%28%28List%5BA%5D%29%3D%3ET%29#T" target="_self">T</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

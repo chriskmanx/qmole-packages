@@ -1,0 +1,681 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class PriorityQueueProxy in scala.collection.mutable</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../scala/collection/mutable$package.html" target="_self">scala.collection.mutable</a>
+        <br></br>
+        <span class="entity">class  PriorityQueueProxy</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/collection/mutable/PriorityQueueProxy"><code>scala/collection/mutable/PriorityQueueProxy.scala</code></a>]
+      </div><hr></hr>
+      <a name="PriorityQueueProxy"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>class</code>
+        <em>PriorityQueueProxy</em>[<em>A</em>](<code>implicit </code><em>view$1</em> : (<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>) =&gt; <a href="../../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>])
+      </dt>
+      <dd><code> extends </code><a href="../../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]<code> with </code><a href="../../../scala/SeqProxy.html" target="_self">SeqProxy</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]</dd>
+    </dl>
+      <dl><dd>This class implements priority queues using a heap. The
+  elements of the queue have to be ordered in terms of the
+  <code>Ordered[T]</code> class.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Matthias Zenger</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0, 03/05/2004</dd></dl>
+    
+      
+
+<table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Values and Variables inherited from <a href="../../../scala/collection/mutable/ResizableArray.html" target="_self">ResizableArray</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/mutable/ResizableArray.html#initialSize" target="_self">initialSize</a>, <a href="../../../scala/collection/mutable/ResizableArray.html#array" target="_self">array</a>
+        </td></tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/PriorityQueueProxy.html#%2B%2B%3D%28Iterable%5BA%5D%29" target="_self">++=</a></em>
+        (<em>iter</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Adds all elements provided by an <code>Iterable</code> object
+    into the priority queue.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/PriorityQueueProxy.html#%2B%2B%3D%28Iterator%5BA%5D%29" target="_self">++=</a></em>
+        (<em>it</em> : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Adds all elements provided by an iterator into the priority queue.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/PriorityQueueProxy.html#%2B%3D%28A%29" target="_self">+=</a></em>
+        (<em>elem</em> : <a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Inserts a single element into the priority queue.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/PriorityQueueProxy.html#clear%28%29" target="_self">clear</a></em>
+         : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Removes all elements from the queue. After this operation is completed,
+    the queue will be empty.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/PriorityQueueProxy.html#clone%28%29" target="_self">clone</a></em>
+         : <a href="../../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]
+        
+        <div>This method clones the priority queue.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/PriorityQueueProxy.html#dequeue%28%29" target="_self">dequeue</a></em>
+         : <a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>
+        
+        <div>Returns the element with the highest priority in the queue,
+    and removes this element from the queue.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/PriorityQueueProxy.html#drop%28Int%29" target="_self">drop</a></em>
+        (<em>from</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]
+        
+        <div>Returns this sequence without its <code>n</code> first elements
+    If this sequence has less than <code>n</code> elements, the empty
+    sequence is returned. (non-strict)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/PriorityQueueProxy.html#elements" target="_self">elements</a></em>
+         : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]
+        
+        <div>Creates a new iterator over all elements contained in this
+    object.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/PriorityQueueProxy.html#enqueue%28A*%29" target="_self">enqueue</a></em>
+        (<em>elems</em> : <a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>*) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Adds all elements to the queue.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/PriorityQueueProxy.html#isEmpty" target="_self">isEmpty</a></em>
+         : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Checks if the queue is empty.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/PriorityQueueProxy.html#length" target="_self">length</a></em>
+         : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        <div>Returns the length of this priority queue.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/PriorityQueueProxy.html#max" target="_self">max</a></em>
+         : <a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>
+        
+        <div>Returns the element with the highest priority in the queue,
+    or throws an error if there is no element contained in the queue.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/PriorityQueueProxy.html#self" target="_self">self</a></em>
+         : <a href="../../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/PriorityQueueProxy.html#slice%28Int%2CInt%29" target="_self">slice</a></em>
+        (<em>from</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>until</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]
+        
+        <div>A sub-sequence of <code>len</code> elements 
+     starting at index <code>from</code> (non-strict)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/PriorityQueueProxy.html#take%28Int%29" target="_self">take</a></em>
+        (<em>until</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]
+        
+        <div>Returns a sequence consisting only over the first <code>n</code>
+    elements of this sequence, or else the whole sequence, if it has less
+    than <code>n</code> elements. (non-strict)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/mutable/PriorityQueueProxy.html#toQueue" target="_self">toQueue</a></em>
+         : <a href="../../../scala/collection/mutable/Queue.html" target="_self">Queue</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]
+        
+        <div>Returns a regular queue containing the same elements.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/SeqProxy.html" target="_self">SeqProxy</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/SeqProxy.html#apply%28Int%29" target="_self">apply</a>, <a href="../../../scala/SeqProxy.html#concat%28Iterable%5BB%5D%29" target="_self">concat</a>, <a href="../../../scala/SeqProxy.html#isDefinedAt%28Int%29" target="_self">isDefinedAt</a>, <a href="../../../scala/SeqProxy.html#lastIndexOf%28B%29" target="_self">lastIndexOf</a>, <a href="../../../scala/SeqProxy.html#map%28%28A%29%3D%3EB%29" target="_self">map</a>, <a href="../../../scala/SeqProxy.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a>, <a href="../../../scala/SeqProxy.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a>, <a href="../../../scala/SeqProxy.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a>, <a href="../../../scala/SeqProxy.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a>, <a href="../../../scala/SeqProxy.html#reverse" target="_self">reverse</a>, <a href="../../../scala/SeqProxy.html#contains%28Any%29" target="_self">contains</a>, <a href="../../../scala/SeqProxy.html#toArray" target="_self">toArray</a>, <a href="../../../scala/SeqProxy.html#copyToArray%28Array%5BB%5D%2CInt%29" target="_self">copyToArray</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/IterableProxy.html" target="_self">IterableProxy</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/IterableProxy.html#foreach%28%28A%29%3D%3EUnit%29" target="_self">foreach</a>, <a href="../../../scala/IterableProxy.html#forall%28%28A%29%3D%3EBoolean%29" target="_self">forall</a>, <a href="../../../scala/IterableProxy.html#exists%28%28A%29%3D%3EBoolean%29" target="_self">exists</a>, <a href="../../../scala/IterableProxy.html#find%28%28A%29%3D%3EBoolean%29" target="_self">find</a>, <a href="../../../scala/IterableProxy.html#findIndexOf%28%28A%29%3D%3EBoolean%29" target="_self">findIndexOf</a>, <a href="../../../scala/IterableProxy.html#indexOf%28B%29" target="_self">indexOf</a>, <a href="../../../scala/IterableProxy.html#foldLeft%28B%29" target="_self">foldLeft</a>, <a href="../../../scala/IterableProxy.html#foldRight%28B%29" target="_self">foldRight</a>, <a href="../../../scala/IterableProxy.html#%2F%3A%28B%29" target="_self">/:</a>, <a href="../../../scala/IterableProxy.html#%3A%5C%28B%29" target="_self">:\</a>, <a href="../../../scala/IterableProxy.html#reduceLeft%28%28B%2CB%29%3D%3EB%29" target="_self">reduceLeft</a>, <a href="../../../scala/IterableProxy.html#reduceRight%28%28B%2CB%29%3D%3EB%29" target="_self">reduceRight</a>, <a href="../../../scala/IterableProxy.html#sameElements%28Iterable%5BB%5D%29" target="_self">sameElements</a>, <a href="../../../scala/IterableProxy.html#copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29" target="_self">copyToBuffer</a>, <a href="../../../scala/IterableProxy.html#toList" target="_self">toList</a>, <a href="../../../scala/IterableProxy.html#mkString%28String%2CString%2CString%29" target="_self">mkString</a>, <a href="../../../scala/IterableProxy.html#addString%28scala.compat.StringBuilder%2CString%2CString%2CString%29" target="_self">addString</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Proxy.html" target="_self">Proxy</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Proxy.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../scala/Proxy.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../scala/Proxy.html#toString%28%29" target="_self">toString</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/mutable/PriorityQueue.html#fixUp%28Array%5BA%5D%2CInt%29" target="_self">fixUp</a>, <a href="../../../scala/collection/mutable/PriorityQueue.html#fixDown%28Array%5BA%5D%2CInt%2CInt%29" target="_self">fixDown</a>, <a href="../../../scala/collection/mutable/PriorityQueue.html#%2B%28A%29" target="_self">+</a>, <a href="../../../scala/collection/mutable/PriorityQueue.html#%2B%3D%28A%2CA%2CA*%29" target="_self">+=</a>, <a href="../../../scala/collection/mutable/PriorityQueue.html#%2B%28A%2CA%2CA*%29" target="_self">+</a>, <a href="../../../scala/collection/mutable/PriorityQueue.html#%2B%2B%28Iterable%5BA%5D%29" target="_self">++</a>, <a href="../../../scala/collection/mutable/PriorityQueue.html#%2B%2B%28Iterator%5BA%5D%29" target="_self">++</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/mutable/ResizableArray.html" target="_self">ResizableArray</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/mutable/ResizableArray.html#size0" target="_self">size0</a>, <a href="../../../scala/collection/mutable/ResizableArray.html#size0_%3D%28Int%29" target="_self">size0_=</a>, <a href="../../../scala/collection/mutable/ResizableArray.html#reduceToSize%28Int%29" target="_self">reduceToSize</a>, <a href="../../../scala/collection/mutable/ResizableArray.html#ensureSize%28Int%29" target="_self">ensureSize</a>, <a href="../../../scala/collection/mutable/ResizableArray.html#swap%28Int%2CInt%29" target="_self">swap</a>, <a href="../../../scala/collection/mutable/ResizableArray.html#copy%28Int%2CInt%2CInt%29" target="_self">copy</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/RandomAccessSeq.html#projection" target="_self">projection</a>, <a href="../../../scala/RandomAccessSeq.html#patch%28Int%2CRandomAccessSeq%5BB%5D%2CInt%29" target="_self">patch</a>, <a href="../../../scala/RandomAccessSeq.html#%2B%2B%28Iterable%5BB%5D%29" target="_self">++</a>, <a href="../../../scala/RandomAccessSeq.html#toStream" target="_self">toStream</a>, <a href="../../../scala/RandomAccessSeq.html#safeIs%28Int%2CAny%29" target="_self">safeIs</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Seq.html" target="_self">Seq</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Seq.html#lengthCompare%28Int%29" target="_self">lengthCompare</a>, <a href="../../../scala/Seq.html#size" target="_self">size</a>, <a href="../../../scala/Seq.html#last" target="_self">last</a>, <a href="../../../scala/Seq.html#lastOption" target="_self">lastOption</a>, <a href="../../../scala/Seq.html#headOption" target="_self">headOption</a>, <a href="../../../scala/Seq.html#subseq%28Int%2CInt%29" target="_self">subseq</a>, <a href="../../../scala/Seq.html#equalsWith%28Seq%5BB%5D%29" target="_self">equalsWith</a>, <a href="../../../scala/Seq.html#startsWith%28Seq%5BB%5D%29" target="_self">startsWith</a>, <a href="../../../scala/Seq.html#endsWith%28Seq%5BB%5D%29" target="_self">endsWith</a>, <a href="../../../scala/Seq.html#indexOf%28Seq%5BB%5D%29" target="_self">indexOf</a>, <a href="../../../scala/Seq.html#containsSlice%28Seq%5BB%5D%29" target="_self">containsSlice</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Collection.html" target="_self">Collection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Collection.html#stringPrefix" target="_self">stringPrefix</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Iterable.html" target="_self">Iterable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Iterable.html#partition%28%28A%29%3D%3EBoolean%29" target="_self">partition</a>, <a href="../../../scala/Iterable.html#mkString%28String%29" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#mkString" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%29" target="_self">addString</a>, <a href="../../../scala/Iterable.html#hasDefiniteSize" target="_self">hasDefiniteSize</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/PartialFunction.html" target="_self">PartialFunction</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/PartialFunction.html#orElse%28PartialFunction%5BA1%2CB1%5D%29" target="_self">orElse</a>, <a href="../../../scala/PartialFunction.html#andThen%28%28B%29%3D%3EC%29" target="_self">andThen</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Function1.html" target="_self">Function1</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Function1.html#compose%28%28A%29%3D%3ET1%29" target="_self">compose</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="self"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>self</em> : <a href="../../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl><dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/SeqProxy.html" target="_self">SeqProxy</a>.<a href="../../../scala/SeqProxy.html#self" target="_self">self</a>
+        </dd>
+      </dl><hr></hr>
+<a name="elements"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>elements</em> : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates a new iterator over all elements contained in this
+    object.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the new iterator</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>.<a href="../../../scala/collection/mutable/PriorityQueue.html#elements" target="_self">elements</a>
+        </dd>
+      </dl><hr></hr>
+<a name="length"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>length</em> : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the length of this priority queue.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/SeqProxy.html" target="_self">SeqProxy</a>.<a href="../../../scala/SeqProxy.html#length" target="_self">length</a>
+        </dd>
+      </dl><hr></hr>
+<a name="isEmpty"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>isEmpty</em> : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Checks if the queue is empty.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>true, iff there is no element in the queue.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>.<a href="../../../scala/collection/mutable/PriorityQueue.html#isEmpty" target="_self">isEmpty</a>, <a href="../../../scala/SeqProxy.html" target="_self">SeqProxy</a>.<a href="../../../scala/SeqProxy.html#isEmpty" target="_self">isEmpty</a>
+        </dd>
+      </dl><hr></hr>
+<a name="%2B%3D%28A%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>+=</em>(<em>elem</em> : <a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Inserts a single element into the priority queue.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>elem - </code>the element to insert</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>.<a href="../../../scala/collection/mutable/PriorityQueue.html#%2B%3D%28A%29" target="_self">+=</a>
+        </dd>
+      </dl><hr></hr>
+<a name="%2B%2B%3D%28Iterable%5BA%5D%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>++=</em>(<em>iter</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Adds all elements provided by an <code>Iterable</code> object
+    into the priority queue.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>iter - </code>an iterable object</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>.<a href="../../../scala/collection/mutable/PriorityQueue.html#%2B%2B%3D%28Iterable%5BA%5D%29" target="_self">++=</a>
+        </dd>
+      </dl><hr></hr>
+<a name="%2B%2B%3D%28Iterator%5BA%5D%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>++=</em>(<em>it</em> : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Adds all elements provided by an iterator into the priority queue.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>it - </code>an iterator</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>.<a href="../../../scala/collection/mutable/PriorityQueue.html#%2B%2B%3D%28Iterator%5BA%5D%29" target="_self">++=</a>
+        </dd>
+      </dl><hr></hr>
+<a name="enqueue%28A*%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>enqueue</em>(<em>elems</em> : <a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>*) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Adds all elements to the queue.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>elems - </code>the elements to add.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>.<a href="../../../scala/collection/mutable/PriorityQueue.html#enqueue%28A*%29" target="_self">enqueue</a>
+        </dd>
+      </dl><hr></hr>
+<a name="dequeue%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>dequeue</em> : <a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the element with the highest priority in the queue,
+    and removes this element from the queue.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the element with the highest priority.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>.<a href="../../../scala/collection/mutable/PriorityQueue.html#dequeue%28%29" target="_self">dequeue</a>
+        </dd>
+      </dl><hr></hr>
+<a name="max"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>max</em> : <a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the element with the highest priority in the queue,
+    or throws an error if there is no element contained in the queue.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the element with the highest priority.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>.<a href="../../../scala/collection/mutable/PriorityQueue.html#max" target="_self">max</a>
+        </dd>
+      </dl><hr></hr>
+<a name="clear%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>clear</em> : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Removes all elements from the queue. After this operation is completed,
+    the queue will be empty.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>.<a href="../../../scala/collection/mutable/PriorityQueue.html#clear%28%29" target="_self">clear</a>
+        </dd>
+      </dl><hr></hr>
+<a name="toQueue"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>toQueue</em> : <a href="../../../scala/collection/mutable/Queue.html" target="_self">Queue</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a regular queue containing the same elements.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>.<a href="../../../scala/collection/mutable/PriorityQueue.html#toQueue" target="_self">toQueue</a>
+        </dd>
+      </dl><hr></hr>
+<a name="take%28Int%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>take</em>(<em>until</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a sequence consisting only over the first <code>n</code>
+    elements of this sequence, or else the whole sequence, if it has less
+    than <code>n</code> elements. (non-strict)</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the number of elements to take</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a possibly projected sequence</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/SeqProxy.html" target="_self">SeqProxy</a>.<a href="../../../scala/SeqProxy.html#take%28Int%29" target="_self">take</a>
+        </dd>
+      </dl><hr></hr>
+<a name="drop%28Int%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>drop</em>(<em>from</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns this sequence without its <code>n</code> first elements
+    If this sequence has less than <code>n</code> elements, the empty
+    sequence is returned. (non-strict)</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the number of elements to drop</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the new sequence</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/SeqProxy.html" target="_self">SeqProxy</a>.<a href="../../../scala/SeqProxy.html#drop%28Int%29" target="_self">drop</a>
+        </dd>
+      </dl><hr></hr>
+<a name="slice%28Int%2CInt%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>slice</em>(<em>from</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>until</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A sub-sequence of <code>len</code> elements 
+     starting at index <code>from</code> (non-strict)</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>from - </code>The index of the first element of the slice</dd><dd><code>until - </code>The index of the element following the slice</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>IndexOutOfBoundsException - </code>if <code>from &lt; 0</code>             or <code>length &lt; from + len<code></dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/SeqProxy.html" target="_self">SeqProxy</a>.<a href="../../../scala/SeqProxy.html#slice%28Int%2CInt%29" target="_self">slice</a>
+        </dd>
+      </dl><hr></hr>
+<a name="clone%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>clone</em> : <a href="../../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>[<a href="../../../scala/collection/mutable/PriorityQueueProxy.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>This method clones the priority queue.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a priority queue with the same elements.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/mutable/PriorityQueue.html" target="_self">PriorityQueue</a>.<a href="../../../scala/collection/mutable/PriorityQueue.html#clone%28%29" target="_self">clone</a>
+        </dd>
+      </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

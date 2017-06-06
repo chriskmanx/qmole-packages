@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.dbc.statement</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/AccessMode.html" target="_self">AccessMode</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/DerivedColumn.html" target="_self">DerivedColumn</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/Expression.html" target="_self">Expression</a></em>
+        <code> extends </code><a href="../../scala/dbc/statement/Relation.html" target="_self">Relation</a>
+        
+        <div>An expression that calculates some value from fields.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/Insert.html" target="_self">Insert</a></em>
+        (<code>val </code><em>insertionTarget</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>insertionData</em> : <a href="../../scala/dbc/statement/InsertionData.html" target="_self">InsertionData</a>)<code> extends </code><a href="../../scala/dbc/statement/Status.html" target="_self">Status</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>An insertion of values into a table.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/InsertionData.html" target="_self">InsertionData</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Data to be inserted into a table in an <code>Insert</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/IsolationLevel.html" target="_self">IsolationLevel</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/JoinType.html" target="_self">JoinType</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>A join behaviour in a <code>Jointure</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/Jointure.html" target="_self">Jointure</a></em>
+        <code> extends </code><a href="../../scala/dbc/statement/Relation.html" target="_self">Relation</a>
+        
+        <div>A jointure between two relations.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/Relation.html" target="_self">Relation</a></em>
+        <code> extends </code><a href="../../scala/dbc/statement/Statement.html" target="_self">Statement</a>
+        
+        <div>A statement that returns a relation.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/Select.html" target="_self">Select</a></em>
+        <code> extends </code><a href="../../scala/dbc/statement/Relation.html" target="_self">Relation</a>
+        
+        <div>A statement that when executed on a database will return a relation.
+ The returned relation will be a subset of a table in the database or
+ a jointure between such subsets.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/SetClause.html" target="_self">SetClause</a></em>
+        (<code>val </code><em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>expr</em> : <a href="../../scala/dbc/statement/Expression.html" target="_self">Expression</a>)<code> extends </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>Data to be inserted into a table in an <code>Insert</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/SetQuantifier.html" target="_self">SetQuantifier</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>A set quantifier that defines the collection type of a relation.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/Statement.html" target="_self">Statement</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>An ISO-9075:2003 (SQL) statement.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/Status.html" target="_self">Status</a></em>
+        <code> extends </code><a href="../../scala/dbc/statement/Statement.html" target="_self">Statement</a>
+        
+        <div>A statement that changes the status of the database.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/Table.html" target="_self">Table</a></em>
+        <code> extends </code><a href="../../scala/dbc/statement/Relation.html" target="_self">Relation</a>
+        
+        <div>A reference to a table in the database.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/Transaction.html" target="_self">Transaction</a></em>
+        [<em>ResultType</em>](<code>val </code><em>transactionBody</em> : (<a href="../../scala/dbc/Database.html" target="_self">Database</a>) =&gt; <a href="../../scala/dbc/statement/Transaction.html#ResultType" target="_self">ResultType</a>, <code>val </code><em>accessMode</em> : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="../../scala/dbc/statement/AccessMode.html" target="_self">AccessMode</a>], <code>val </code><em>isolationLevel</em> : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="../../scala/dbc/statement/IsolationLevel.html" target="_self">IsolationLevel</a>])<code> extends </code><a href="../../scala/dbc/statement/Statement.html" target="_self">Statement</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>A statement that changes the status of the database.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/Update.html" target="_self">Update</a></em>
+        (<code>val </code><em>updateTarget</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>setClauses</em> : <a href="../../scala/List.html" target="_self">List</a>[<a href="../../scala/dbc/statement/SetClause.html" target="_self">SetClause</a>], <code>val </code><em>whereClause</em> : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="../../scala/dbc/statement/Expression.html" target="_self">Expression</a>])<code> extends </code><a href="../../scala/dbc/statement/Status.html" target="_self">Status</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>An update of the state of a table.</div>
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/AccessMode$object.html" target="_self">AccessMode</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/InsertionData$object.html" target="_self">InsertionData</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/IsolationLevel$object.html" target="_self">IsolationLevel</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/JoinType$object.html" target="_self">JoinType</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/dbc/statement/SetQuantifier$object.html" target="_self">SetQuantifier</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>        
+        </table></body>
+      </html>

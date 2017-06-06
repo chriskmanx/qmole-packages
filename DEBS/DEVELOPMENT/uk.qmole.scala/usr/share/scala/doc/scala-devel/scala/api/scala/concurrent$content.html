@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.concurrent</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/concurrent/Channel.html" target="_self">Channel</a></em>
+        [<em>a</em>]<code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This class ...</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/concurrent/LinkedListQueueCreator.html" target="_self">LinkedListQueueCreator</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Efficient queue module creator based on linked lists.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/concurrent/ListQueueCreator.html" target="_self">ListQueueCreator</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Inefficient but simple queue module creator.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/concurrent/Lock.html" target="_self">Lock</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This class ...</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/concurrent/MailBox.html" target="_self">MailBox</a></em>
+        <code> extends </code><a href="../scala/concurrent/ListQueueCreator.html" target="_self">ListQueueCreator</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/concurrent/QueueModule.html" target="_self">QueueModule</a></em>
+        [<em>A</em>]<code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Module for dealing with queues.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/concurrent/SyncChannel.html" target="_self">SyncChannel</a></em>
+        [<em>a</em>]<code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The class <code>SyncChannel</code> ...</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/concurrent/SyncVar.html" target="_self">SyncVar</a></em>
+        [<em>A</em>]<code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The class <code>SyncVar</code> ...</div>
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/concurrent/TIMEOUT$object.html" target="_self">TIMEOUT</a></em>
+        <code> extends </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div>The message sent to a message box when the period specified in
+ <code>receiveWithin</code> expires.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/concurrent/jolib$object.html" target="_self">jolib</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Library for using join-calculus concurrent primitives in Scala.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/concurrent/ops$object.html" target="_self">ops</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The object <code>ops</code> ...</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/concurrent/pilib$object.html" target="_self">pilib</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    Library for using Pi-calculus concurrent primitives in
+    <a href="http://scala-lang.org/" target="_top">Scala</a>. As an
+    example, the definition of a two-place buffer using the <code>pilib</code>
+    library looks like:
+  </p><pre>
+  <b>def</b> Buffer[a](put: Chan[a], get: Chan[a]) {
+    <b>def</b> B0 { choice ( put * { x => B1(x) } ) }
+    <b>def</b> B1(x: a) { choice ( get(x) * B0, put * { y => B2(x, y) } ) }
+    <b>def</b> B2(x: a, y: a) { choice ( get(x) * B1(y) ) }
+    B0
+  }
+  </pre></div>
+      </td>
+    </tr>        
+        </table></body>
+      </html>

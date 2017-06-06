@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.util.parsing.ast</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/ast/AbstractSyntax.html" target="_self">AbstractSyntax</a></em>
+        <code> extends </code><a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This component provides the core abstractions for representing an Abstract Syntax Tree</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/ast/Binders.html" target="_self">Binders</a></em>
+        <code> extends </code><a href="../../../scala/util/parsing/ast/AbstractSyntax.html" target="_self">AbstractSyntax</a><code> with </code><a href="../../../scala/util/parsing/ast/Mappable.html" target="_self">Mappable</a>
+        
+        <div><p>
+    This component provides functionality for enforcing variable binding
+    during parse-time.
+  </p>
+  <p>
+   When parsing simple languages, like Featherweight Scala, these parser
+   combinators will fully enforce the binding discipline. When names are
+   allowed to be left unqualified, these mechanisms would have to be
+   complemented by an extra phase that resolves names that couldn't be
+   resolved using the naive binding rules. (Maybe some machinery to
+   model `implicit' binders (e.g., `this' and imported qualifiers) 
+   and selection on a binder will suffice?)
+ </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/ast/Mappable.html" target="_self">Mappable</a></em>
+        <code> extends </code><a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    This trait provides the core Scrap-Your-Boilerplate abstractions as
+    well as implementations for common datatypes.
+  </p>
+  <p>
+    Based on Ralph Laemmel's <a target="_top"
+    href="http://homepages.cwi.nl/~ralf/publications.html">SYB papers</a>.
+  </p></div>
+      </td>
+    </tr>        
+        </table>
+</body>
+      </html>

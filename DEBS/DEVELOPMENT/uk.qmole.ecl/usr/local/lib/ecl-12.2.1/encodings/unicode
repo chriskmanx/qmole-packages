@@ -1,0 +1,1 @@
+(defparameter ext::UNICODE (ext::make-encoding 'ext::UCS-2))

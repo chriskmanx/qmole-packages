@@ -1,0 +1,1 @@
+(defparameter ext::WINDOWS-932 (ext::make-encoding 'ext::WINDOWS-CP932))

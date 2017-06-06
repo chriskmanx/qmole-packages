@@ -1,0 +1,557 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.reflect</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/AppliedType.html" target="_self">AppliedType</a></em>
+        (<code>val </code><em>tpe</em> : <a href="../scala/reflect/Type.html" target="_self">Type</a>, <code>val </code><em>args</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/reflect/Type.html" target="_self">Type</a>])<code> extends </code><a href="../scala/reflect/Type.html" target="_self">Type</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div><code>tpe[args1, ..., argsn]</code></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Apply.html" target="_self">Apply</a></em>
+        (<code>val </code><em>fun</em> : <a href="../scala/reflect/Tree.html" target="_self">Tree</a>, <code>val </code><em>args</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/reflect/Tree.html" target="_self">Tree</a>])<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Assign.html" target="_self">Assign</a></em>
+        (<code>val </code><em>destination</em> : <a href="../scala/reflect/Tree.html" target="_self">Tree</a>, <code>val </code><em>source</em> : <a href="../scala/reflect/Tree.html" target="_self">Tree</a>)<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/BeanProperty.html" target="_self">BeanProperty</a></em>
+        <code> extends </code><a href="../scala/Annotation.html" target="_self">Annotation</a>
+        
+        <div><p>
+    This attribute adds a setter and a getter method, following the
+    Java Bean convention (first letter of the property is capitalized)
+    used by popular Java web frameworks. For example:
+  </p><pre>
+    @BeanProperty
+    <b>var</b> status = ""</pre>
+  <p>
+    adds the following methods to the <b>generated</b> code
+  </p><pre>
+    <b>def</b> setStatus(s: String) { <b>this</b>.status = s }
+    <b>def</b> getStatus: String = <b>this</b>.status
+  </pre>
+  <p>
+    However, you cannot call <code>setStatus</code> from
+    <a href="http://scala-lang.org/" target="_top">Scala</a>,
+    you should use the normal Scala access and assignment.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Block.html" target="_self">Block</a></em>
+        (<code>val </code><em>stats</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/reflect/Tree.html" target="_self">Tree</a>], <code>val </code><em>expr</em> : <a href="../scala/reflect/Tree.html" target="_self">Tree</a>)<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Class.html" target="_self">Class</a></em>
+        (<code>val override </code><em>fullname</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/reflect/GlobalSymbol.html" target="_self">GlobalSymbol</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/ClassDef.html" target="_self">ClassDef</a></em>
+        (<code>val </code><em>sym</em> : <a href="../scala/reflect/Symbol.html" target="_self">Symbol</a>, <code>val </code><em>tpe</em> : <a href="../scala/reflect/Type.html" target="_self">Type</a>, <code>val </code><em>impl</em> : <a href="../scala/reflect/Template.html" target="_self">Template</a>)<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Code.html" target="_self">Code</a></em>
+        [<em>Type</em>](<code>val </code><em>tree</em> : <a href="../scala/reflect/Tree.html" target="_self">Tree</a>)<code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/DefDef.html" target="_self">DefDef</a></em>
+        (<code>val </code><em>sym</em> : <a href="../scala/reflect/Symbol.html" target="_self">Symbol</a>, <code>val </code><em>vparamss</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/List.html" target="_self">List</a>[<a href="../scala/reflect/Tree.html" target="_self">Tree</a>]], <code>val </code><em>ret</em> : <a href="../scala/reflect/Type.html" target="_self">Type</a>, <code>val </code><em>rhs</em> : <a href="../scala/reflect/Tree.html" target="_self">Tree</a>)<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Field.html" target="_self">Field</a></em>
+        (<code>val override </code><em>fullname</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>tpe</em> : <a href="../scala/reflect/Type.html" target="_self">Type</a>)<code> extends </code><a href="../scala/reflect/GlobalSymbol.html" target="_self">GlobalSymbol</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Function.html" target="_self">Function</a></em>
+        (<code>val </code><em>params</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/reflect/Symbol.html" target="_self">Symbol</a>], <code>val </code><em>body</em> : <a href="../scala/reflect/Tree.html" target="_self">Tree</a>)<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/GlobalSymbol.html" target="_self">GlobalSymbol</a></em>
+        (<code>val </code><em>fullname</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/reflect/Symbol.html" target="_self">Symbol</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Goto.html" target="_self">Goto</a></em>
+        (<code>val </code><em>target</em> : <a href="../scala/reflect/LabelSymbol.html" target="_self">LabelSymbol</a>)<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Ident.html" target="_self">Ident</a></em>
+        (<code>val </code><em>sym</em> : <a href="../scala/reflect/Symbol.html" target="_self">Symbol</a>)<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/If.html" target="_self">If</a></em>
+        (<code>val </code><em>condition</em> : <a href="../scala/reflect/Tree.html" target="_self">Tree</a>, <code>val </code><em>trueCase</em> : <a href="../scala/reflect/Tree.html" target="_self">Tree</a>, <code>val </code><em>falseCase</em> : <a href="../scala/reflect/Tree.html" target="_self">Tree</a>)<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/ImplicitMethodType.html" target="_self">ImplicitMethodType</a></em>
+        (<em>formals</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/reflect/Type.html" target="_self">Type</a>], <em>restpe</em> : <a href="../scala/reflect/Type.html" target="_self">Type</a>)<code> extends </code><a href="../scala/reflect/MethodType.html" target="_self">MethodType</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/LabelSymbol.html" target="_self">LabelSymbol</a></em>
+        (<code>val </code><em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/reflect/Symbol.html" target="_self">Symbol</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Literal.html" target="_self">Literal</a></em>
+        (<code>val </code><em>value</em> : <a href="../scala/Any.html" target="_self">Any</a>)<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/LocalMethod.html" target="_self">LocalMethod</a></em>
+        (<code>val </code><em>owner</em> : <a href="../scala/reflect/Symbol.html" target="_self">Symbol</a>, <code>val </code><em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>tpe</em> : <a href="../scala/reflect/Type.html" target="_self">Type</a>)<code> extends </code><a href="../scala/reflect/LocalSymbol.html" target="_self">LocalSymbol</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/LocalSymbol.html" target="_self">LocalSymbol</a></em>
+        <code> extends </code><a href="../scala/reflect/Symbol.html" target="_self">Symbol</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/LocalValue.html" target="_self">LocalValue</a></em>
+        (<code>val </code><em>owner</em> : <a href="../scala/reflect/Symbol.html" target="_self">Symbol</a>, <code>val </code><em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>tpe</em> : <a href="../scala/reflect/Type.html" target="_self">Type</a>)<code> extends </code><a href="../scala/reflect/LocalSymbol.html" target="_self">LocalSymbol</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Method.html" target="_self">Method</a></em>
+        (<code>val override </code><em>fullname</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>tpe</em> : <a href="../scala/reflect/Type.html" target="_self">Type</a>)<code> extends </code><a href="../scala/reflect/GlobalSymbol.html" target="_self">GlobalSymbol</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/MethodType.html" target="_self">MethodType</a></em>
+        (<code>val </code><em>formals</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/reflect/Type.html" target="_self">Type</a>], <code>val </code><em>restpe</em> : <a href="../scala/reflect/Type.html" target="_self">Type</a>)<code> extends </code><a href="../scala/reflect/Type.html" target="_self">Type</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div><code>(formals1 ... formalsn) restpe</code></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/NamedType.html" target="_self">NamedType</a></em>
+        (<code>val </code><em>fullname</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/reflect/Type.html" target="_self">Type</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div>fullname</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/New.html" target="_self">New</a></em>
+        (<code>val </code><em>sym</em> : <a href="../scala/reflect/Tree.html" target="_self">Tree</a>)<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/PolyType.html" target="_self">PolyType</a></em>
+        (<code>val </code><em>typeParams</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/reflect/Symbol.html" target="_self">Symbol</a>], <code>val </code><em>typeBounds</em> : <a href="../scala/List.html" target="_self">List</a>[(<a href="../scala/reflect/Type.html" target="_self">Type</a>, <a href="../scala/reflect/Type.html" target="_self">Type</a>)], <code>val </code><em>resultType</em> : <a href="../scala/reflect/Type.html" target="_self">Type</a>)<code> extends </code><a href="../scala/reflect/Type.html" target="_self">Type</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/PrefixedType.html" target="_self">PrefixedType</a></em>
+        (<code>val </code><em>pre</em> : <a href="../scala/reflect/Type.html" target="_self">Type</a>, <code>val </code><em>sym</em> : <a href="../scala/reflect/Symbol.html" target="_self">Symbol</a>)<code> extends </code><a href="../scala/reflect/Type.html" target="_self">Type</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div>pre # sym</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Select.html" target="_self">Select</a></em>
+        (<code>val </code><em>qual</em> : <a href="../scala/reflect/Tree.html" target="_self">Tree</a>, <code>val </code><em>sym</em> : <a href="../scala/reflect/Symbol.html" target="_self">Symbol</a>)<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/SingleType.html" target="_self">SingleType</a></em>
+        (<code>val </code><em>pre</em> : <a href="../scala/reflect/Type.html" target="_self">Type</a>, <code>val </code><em>sym</em> : <a href="../scala/reflect/Symbol.html" target="_self">Symbol</a>)<code> extends </code><a href="../scala/reflect/Type.html" target="_self">Type</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div>pre.type # sym == pre.sym</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Super.html" target="_self">Super</a></em>
+        (<code>val </code><em>psym</em> : <a href="../scala/reflect/Symbol.html" target="_self">Symbol</a>)<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Symbol.html" target="_self">Symbol</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Target.html" target="_self">Target</a></em>
+        (<code>val </code><em>sym</em> : <a href="../scala/reflect/LabelSymbol.html" target="_self">LabelSymbol</a>, <code>val </code><em>body</em> : <a href="../scala/reflect/Tree.html" target="_self">Tree</a>)<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Template.html" target="_self">Template</a></em>
+        (<code>val </code><em>parents</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/reflect/Type.html" target="_self">Type</a>], <code>val </code><em>body</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/reflect/Tree.html" target="_self">Tree</a>])<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/This.html" target="_self">This</a></em>
+        (<code>val </code><em>sym</em> : <a href="../scala/reflect/Symbol.html" target="_self">Symbol</a>)<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/ThisType.html" target="_self">ThisType</a></em>
+        (<code>val </code><em>clazz</em> : <a href="../scala/reflect/Symbol.html" target="_self">Symbol</a>)<code> extends </code><a href="../scala/reflect/Type.html" target="_self">Type</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div>clazz.this</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Tree.html" target="_self">Tree</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Type.html" target="_self">Type</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/TypeApply.html" target="_self">TypeApply</a></em>
+        (<code>val </code><em>fun</em> : <a href="../scala/reflect/Tree.html" target="_self">Tree</a>, <code>val </code><em>args</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/reflect/Type.html" target="_self">Type</a>])<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/TypeBounds.html" target="_self">TypeBounds</a></em>
+        (<code>val </code><em>lo</em> : <a href="../scala/reflect/Type.html" target="_self">Type</a>, <code>val </code><em>hi</em> : <a href="../scala/reflect/Type.html" target="_self">Type</a>)<code> extends </code><a href="../scala/reflect/Type.html" target="_self">Type</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div>[a &lt;: lo &gt;: hi]</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/TypeField.html" target="_self">TypeField</a></em>
+        (<code>val override </code><em>fullname</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>tpe</em> : <a href="../scala/reflect/Type.html" target="_self">Type</a>)<code> extends </code><a href="../scala/reflect/GlobalSymbol.html" target="_self">GlobalSymbol</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/TypedCode.html" target="_self">TypedCode</a></em>
+        [<em>T</em>](<code>val </code><em>code</em> : <a href="../scala/Any.html" target="_self">Any</a>)<code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/ValDef.html" target="_self">ValDef</a></em>
+        (<code>val </code><em>sym</em> : <a href="../scala/reflect/Symbol.html" target="_self">Symbol</a>, <code>val </code><em>rhs</em> : <a href="../scala/reflect/Tree.html" target="_self">Tree</a>)<code> extends </code><a href="../scala/reflect/Tree.html" target="_self">Tree</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Code$object.html" target="_self">Code</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/NoPrefix$object.html" target="_self">NoPrefix</a></em>
+        <code> extends </code><a href="../scala/reflect/Type.html" target="_self">Type</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/NoSymbol$object.html" target="_self">NoSymbol</a></em>
+        <code> extends </code><a href="../scala/reflect/Symbol.html" target="_self">Symbol</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/NoType$object.html" target="_self">NoType</a></em>
+        <code> extends </code><a href="../scala/reflect/Type.html" target="_self">Type</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/Print$object.html" target="_self">Print</a></em>
+        <code> extends </code>(<a href="../scala/Any.html" target="_self">Any</a>) =&gt; <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/RootSymbol$object.html" target="_self">RootSymbol</a></em>
+        <code> extends </code><a href="../scala/reflect/Symbol.html" target="_self">Symbol</a><code> with </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>        
+        </table></body>
+      </html>

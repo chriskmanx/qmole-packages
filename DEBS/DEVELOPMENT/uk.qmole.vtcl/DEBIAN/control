@@ -1,0 +1,14 @@
+Package: uk.qmole.vtcl
+Name: VTCL
+Version: 8.6
+Architecture: iphoneos-arm
+Description: Visual TCL TK for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.xserver, ncurses, uk.qmole.herbstluft, uk.qmole.tk
+Sponsor: QMole Ltd. 
+Section: Development
+Tag: purpose::console, role::developer
+

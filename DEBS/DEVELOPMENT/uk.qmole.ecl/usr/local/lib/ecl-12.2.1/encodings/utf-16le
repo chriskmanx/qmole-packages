@@ -1,0 +1,1 @@
+(defparameter ext::UTF-16LE (ext::make-encoding 'ext::UCS-2LE))

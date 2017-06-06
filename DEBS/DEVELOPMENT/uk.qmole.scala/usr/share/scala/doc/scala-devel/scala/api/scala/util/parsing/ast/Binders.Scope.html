@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class Scope in scala.util.parsing.ast.Binders</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../../scala/util/parsing/ast/Binders.html" target="_self">scala.util.parsing.ast.Binders</a>
+        <br></br>
+        <span class="entity">class  Scope</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/util/parsing/ast/Binders"><code>scala/util/parsing/ast/Binders.scala</code></a>]
+      </div><hr></hr>
+      <a name="Scope"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>class</code>
+        <em>Scope</em>[<em>binderType</em> &lt;: <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>]
+      </dt>
+      <dd><code> extends </code><a href="../../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>]</dd>
+    </dl>
+      <dl><dd>A `Scope' keeps track of one or more syntactic elements that represent bound names.
+   The elements it contains share the same scope and must all be distinct (wrt. ==)
+  
+   A `NameElement' `n' in the AST that is conceptually bound by a `Scope' `s', is replaced by a 
+   `BoundElement(n, s)'. (For example, in `val x:Int=x+1', the first `x' is modelled by a
+   Scope `s' that contains `x' and the second `x' is represented by a `BoundElement(`x', s)')
+   The term (`x+1') in scope of the Scope becomes an `UnderBinder(s, `x+1').
+  
+   A `NameElement' `n' is bound by a `Scope' `s' if it is wrapped as a `BoundElement(`n', s)', and 
+   `s' has a binder element that is semantically equal (`equals' or `==') to `n'.
+  
+   A `Scope' is represented textually by its list of binder elements, followed by the scope's `id'.
+   For example: `[x, y]!1' represents the scope with `id' `1' and binder elements `x' and `y'.
+   (`id' is solely used for this textual representation.)</dd></dl>
+      <dl></dl>
+    
+      
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Value Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.Scope.html#id" target="_self">id</a></em>
+         : <a href="../../../../scala/Int.html" target="_self">Int</a>
+        
+        <div>Returns a unique number identifying this Scope (only used for representation purposes).</div>
+      </td>
+    </tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.Scope.html#addBinder%28binderType%29" target="_self">addBinder</a></em>
+        (<em>b</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>) : <a href="../../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Adds a new binder.
+     (e.g. the variable name in a local variable declaration)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.Scope.html#allowForwardRef" target="_self">allowForwardRef</a></em>
+         : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html" target="_self">Scope</a>[<a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>]
+        
+        <div>Return a new inheriting scope that won't check whether binding is respected until the scope is left (so as to support forward references)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.Scope.html#apply%28Int%29" target="_self">apply</a></em>
+        (<em>i</em> : <a href="../../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>
+        
+        <div>Return the `i'th binder in this scope.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.Scope.html#bindersToString" target="_self">bindersToString</a></em>
+         : <a href="../../../../scala/List.html" target="_self">List</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]
+        
+        <div>Returns a list of strings that represent the binder elements, each tagged with this scope's id.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binds%28binderType%29" target="_self">binds</a></em>
+        (<em>b</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>) : <a href="../../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Returns true if this container has a binder equal (==) to `b'</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.Scope.html#canAddBinder%28binderType%29" target="_self">canAddBinder</a></em>
+        (<em>b</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>) : <a href="../../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>`canAddElement' indicates whether `b' may be added to this scope.
+    
+     TODO: strengthen this condition so that no binders may be added after this scope has been 
+           linked to its `UnderBinder' (i.e., while parsing, BoundElements may be added to the Scope
+           associated to the UnderBinder, but after that, no changes are allowed, except for substitution)?</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.Scope.html#elements" target="_self">elements</a></em>
+         : <a href="../../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>]
+        
+        <div>Returns the binders in this scope.
+     For a typical let-binding, this is just the variable name. For an argument list to a method body,
+     there is one binder per formal argument.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.Scope.html#getElementFor%28binderType%29" target="_self">getElementFor</a></em>
+        (<em>b</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>) : <a href="../../../../scala/util/parsing/ast/AbstractSyntax.Element.html" target="_self">Element</a>
+        
+        <div>Returns the current value for the bound occurrences of `b'.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.Scope.html#indexFor%28binderType%29" target="_self">indexFor</a></em>
+        (<em>b</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>) : <a href="../../../../scala/Option.html" target="_self">Option</a>[<a href="../../../../scala/Int.html" target="_self">Int</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.Scope.html#nested" target="_self">nested</a></em>
+         : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html" target="_self">Scope</a>[<a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>]
+        
+        <div>Return a nested scope -- binders entered into it won't be visible in this scope, but if this scope allows forward references, 
+        the binding in the returned scope also does, and thus the check that all variables are bound is deferred until this scope is left</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.Scope.html#onEnter" target="_self">onEnter</a></em>
+         : <a href="../../../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.Scope.html#onLeft" target="_self">onLeft</a></em>
+         : <a href="../../../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.Scope.html#substitute%28binderType%2CBinders.this.Element%29" target="_self">substitute</a></em>
+        (<em>b</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>, <em>value</em> : <a href="../../../../scala/util/parsing/ast/AbstractSyntax.Element.html" target="_self">Element</a>) : <a href="../../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>``Replaces'' the bound occurrences of a contained binder by their new value.
+     The bound occurrences of `b' are not actually replaced; the scope keeps track
+     of a substitution that maps every binder to its current value. Since a `BoundElement' is
+     a proxy for the element it is bound to by its binder, `substitute' may thus be thought of
+     as replacing all the bound occurrences of the given binder `b' by their new value `value'.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.Scope.html#toString%28%29" target="_self">toString</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/Iterable.html" target="_self">Iterable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/Iterable.html#concat%28Iterable%5BB%5D%29" target="_self">concat</a>, <a href="../../../../scala/Iterable.html#%2B%2B%28Iterable%5BB%5D%29" target="_self">++</a>, <a href="../../../../scala/Iterable.html#map%28%28A%29%3D%3EB%29" target="_self">map</a>, <a href="../../../../scala/Iterable.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a>, <a href="../../../../scala/Iterable.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a>, <a href="../../../../scala/Iterable.html#partition%28%28A%29%3D%3EBoolean%29" target="_self">partition</a>, <a href="../../../../scala/Iterable.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a>, <a href="../../../../scala/Iterable.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a>, <a href="../../../../scala/Iterable.html#take%28Int%29" target="_self">take</a>, <a href="../../../../scala/Iterable.html#drop%28Int%29" target="_self">drop</a>, <a href="../../../../scala/Iterable.html#foreach%28%28A%29%3D%3EUnit%29" target="_self">foreach</a>, <a href="../../../../scala/Iterable.html#forall%28%28A%29%3D%3EBoolean%29" target="_self">forall</a>, <a href="../../../../scala/Iterable.html#exists%28%28A%29%3D%3EBoolean%29" target="_self">exists</a>, <a href="../../../../scala/Iterable.html#find%28%28A%29%3D%3EBoolean%29" target="_self">find</a>, <a href="../../../../scala/Iterable.html#findIndexOf%28%28A%29%3D%3EBoolean%29" target="_self">findIndexOf</a>, <a href="../../../../scala/Iterable.html#indexOf%28B%29" target="_self">indexOf</a>, <a href="../../../../scala/Iterable.html#foldLeft%28B%29" target="_self">foldLeft</a>, <a href="../../../../scala/Iterable.html#foldRight%28B%29" target="_self">foldRight</a>, <a href="../../../../scala/Iterable.html#%2F%3A%28B%29" target="_self">/:</a>, <a href="../../../../scala/Iterable.html#%3A%5C%28B%29" target="_self">:\</a>, <a href="../../../../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29" target="_self">reduceLeft</a>, <a href="../../../../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29" target="_self">reduceRight</a>, <a href="../../../../scala/Iterable.html#copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29" target="_self">copyToBuffer</a>, <a href="../../../../scala/Iterable.html#sameElements%28Iterable%5BB%5D%29" target="_self">sameElements</a>, <a href="../../../../scala/Iterable.html#toList" target="_self">toList</a>, <a href="../../../../scala/Iterable.html#toStream" target="_self">toStream</a>, <a href="../../../../scala/Iterable.html#mkString%28String%2CString%2CString%29" target="_self">mkString</a>, <a href="../../../../scala/Iterable.html#mkString%28String%29" target="_self">mkString</a>, <a href="../../../../scala/Iterable.html#mkString" target="_self">mkString</a>, <a href="../../../../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%2CString%2CString%29" target="_self">addString</a>, <a href="../../../../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%29" target="_self">addString</a>, <a href="../../../../scala/Iterable.html#copyToArray%28Array%5BB%5D%2CInt%29" target="_self">copyToArray</a>, <a href="../../../../scala/Iterable.html#isEmpty" target="_self">isEmpty</a>, <a href="../../../../scala/Iterable.html#projection" target="_self">projection</a>, <a href="../../../../scala/Iterable.html#hasDefiniteSize" target="_self">hasDefiniteSize</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Value Details</td></tr>
+        </table><div><a name="id"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>val</code>
+        <em>id</em> : <a href="../../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a unique number identifying this Scope (only used for representation purposes).</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="elements"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>elements</em> : <a href="../../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the binders in this scope.
+     For a typical let-binding, this is just the variable name. For an argument list to a method body,
+     there is one binder per formal argument.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../../scala/Iterable.html" target="_self">Iterable</a>.<a href="../../../../scala/Iterable.html#elements" target="_self">elements</a>
+        </dd>
+      </dl><hr></hr>
+<a name="apply%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>(<em>i</em> : <a href="../../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Return the `i'th binder in this scope.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="binds%28binderType%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>binds</em>(<em>b</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>) : <a href="../../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns true if this container has a binder equal (==) to `b'</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="indexFor%28binderType%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>indexFor</em>(<em>b</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>) : <a href="../../../../scala/Option.html" target="_self">Option</a>[<a href="../../../../scala/Int.html" target="_self">Int</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="addBinder%28binderType%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>addBinder</em>(<em>b</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>) : <a href="../../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Adds a new binder.
+     (e.g. the variable name in a local variable declaration)</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>b - </code>a new binder that is distinct from the existing binders in this scope,                and shares their conceptual scope</dd><dt style="margin:10px 0 0 20px;">
+        <b>Precondition</b></dt><dd>canAddBinder(b)     @post binds(b)
+     @post getElementFor(b) eq b</dd></dl>
+    <hr></hr>
+<a name="canAddBinder%28binderType%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>canAddBinder</em>(<em>b</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>) : <a href="../../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>`canAddElement' indicates whether `b' may be added to this scope.
+    
+     TODO: strengthen this condition so that no binders may be added after this scope has been 
+           linked to its `UnderBinder' (i.e., while parsing, BoundElements may be added to the Scope
+           associated to the UnderBinder, but after that, no changes are allowed, except for substitution)?</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>s true if `b' had not been added yet</dd></dl>
+    <hr></hr>
+<a name="substitute%28binderType%2CBinders.this.Element%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>substitute</em>(<em>b</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>, <em>value</em> : <a href="../../../../scala/util/parsing/ast/AbstractSyntax.Element.html" target="_self">Element</a>) : <a href="../../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>``Replaces'' the bound occurrences of a contained binder by their new value.
+     The bound occurrences of `b' are not actually replaced; the scope keeps track
+     of a substitution that maps every binder to its current value. Since a `BoundElement' is
+     a proxy for the element it is bound to by its binder, `substitute' may thus be thought of
+     as replacing all the bound occurrences of the given binder `b' by their new value `value'.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>b - </code>the binder whose bound occurrences should be given a new value</dd><dd><code>value - </code>the new value for the bound occurrences of `b'</dd><dt style="margin:10px 0 0 20px;">
+        <b>Precondition</b></dt><dd>binds(b)     @post getElementFor(b) eq value</dd></dl>
+    <hr></hr>
+<a name="getElementFor%28binderType%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>getElementFor</em>(<em>b</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>) : <a href="../../../../scala/util/parsing/ast/AbstractSyntax.Element.html" target="_self">Element</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the current value for the bound occurrences of `b'.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>b - </code>the contained binder whose current value should be returned</dd><dt style="margin:10px 0 0 20px;">
+        <b>Precondition</b></dt><dd>binds(b)</dd></dl>
+    <hr></hr>
+<a name="toString%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>toString</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="bindersToString"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>bindersToString</em> : <a href="../../../../scala/List.html" target="_self">List</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a list of strings that represent the binder elements, each tagged with this scope's id.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="allowForwardRef"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>allowForwardRef</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html" target="_self">Scope</a>[<a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Return a new inheriting scope that won't check whether binding is respected until the scope is left (so as to support forward references)</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="nested"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>nested</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html" target="_self">Scope</a>[<a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Return a nested scope -- binders entered into it won't be visible in this scope, but if this scope allows forward references, 
+        the binding in the returned scope also does, and thus the check that all variables are bound is deferred until this scope is left</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="onEnter"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>onEnter</em> : <a href="../../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="onLeft"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>onLeft</em> : <a href="../../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

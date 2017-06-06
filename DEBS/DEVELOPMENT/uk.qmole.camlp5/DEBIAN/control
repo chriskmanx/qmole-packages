@@ -1,0 +1,13 @@
+Package: uk.qmole.camlp5
+Name: Camlp5
+Version: 6.14
+Architecture: iphoneos-arm
+Description: Camlp5 port to IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/ocaml 
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.ocaml
+Sponsor: QMole Ltd. 
+Section: Development
+Tag: purpose::console, role::developer

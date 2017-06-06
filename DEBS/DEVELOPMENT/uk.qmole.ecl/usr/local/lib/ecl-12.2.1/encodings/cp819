@@ -1,0 +1,1 @@
+(defparameter ext::CP819 (ext::make-encoding 'ext::ISO-8859-1))

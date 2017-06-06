@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.xml.pull</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/ElemEnd.html" target="_self">ElemEnd</a></em>
+        (<code>val </code><em>pre</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>label</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../../scala/xml/pull/XMLEvent.html" target="_self">XMLEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/ElemStart.html" target="_self">ElemStart</a></em>
+        (<code>val </code><em>pre</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>label</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>attrs</em> : <a href="../../scala/xml/MetaData.html" target="_self">MetaData</a>, <code>val </code><em>scope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>)<code> extends </code><a href="../../scala/xml/pull/XMLEvent.html" target="_self">XMLEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/XMLEvent.html" target="_self">XMLEvent</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This class represents an XML event for pull parsing.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/XMLEventReader.html" target="_self">XMLEventReader</a></em>
+        <code> extends </code><a href="../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../scala/xml/pull/XMLEvent.html" target="_self">XMLEvent</a>]
+        
+        <div><p>
+   A pull parser that offers to view an XML document as a series of events.
+   Please note that this API might change. Here's how to use this class
+  </p><pre>
+  <b>import</b> scala.xml._
+  <b>import</b> scala.xml.pull._
+  <b>import</b> scala.io.Source
+
+  <b>object</b> reader {
+    <b>val</b> src = Source.fromString("<hello><world/></hello>")
+    <b>val</b> er = new XMLEventReader().initialize(src)
+ 
+    <b>def</b> main(args: Array[String]) {
+      Console.println(er.next)
+      Console.println(er.next)
+    }
+  }
+  </pre></div>
+      </td>
+    </tr>        
+        </table>
+</body>
+      </html>

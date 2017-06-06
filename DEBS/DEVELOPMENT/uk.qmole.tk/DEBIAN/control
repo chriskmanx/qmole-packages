@@ -1,0 +1,14 @@
+Package: uk.qmole.tk
+Name: TK
+Version: 8.5.19
+Architecture: iphoneos-arm
+Description: TCLTK scripting language port to IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.xserver, ncurses, uk.qmole.herbstluft, uk.qmole.tcl
+Sponsor: QMole Ltd. 
+Section: Development
+Tag: purpose::console, role::developer
+

@@ -1,0 +1,1 @@
+(defparameter ext::UTF-32 (ext::make-encoding 'ext::UCS-4))

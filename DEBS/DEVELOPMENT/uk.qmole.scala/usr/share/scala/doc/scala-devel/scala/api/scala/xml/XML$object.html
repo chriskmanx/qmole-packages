@@ -1,0 +1,546 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>object XML in scala.xml</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../scala/xml$package.html" target="_self">scala.xml</a>
+        <br></br>
+        <span class="entity">object  XML</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/xml/XML"><code>scala/xml/XML.scala</code></a>]
+      </div><hr></hr>
+      <a name="XML"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>object</code>
+        <em>XML</em>
+      </dt>
+      <dd><code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd>The object <code>XML</code> provides constants, and functions to load
+  and save XML elements. Use this when data binding is not desired, i.e.
+  when XML is handled using <code>Symbol</code> nodes.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Burak Emir</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0, 25/04/2005</dd></dl>
+    
+      
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Value Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#encoding" target="_self">encoding</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#lang" target="_self">lang</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#namespace" target="_self">namespace</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#preserve" target="_self">preserve</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#space" target="_self">space</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#xml" target="_self">xml</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#xmlns" target="_self">xmlns</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        
+      </td>
+    </tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#load%28org.xml.sax.InputSource%29" target="_self">load</a></em>
+        (<em>source</em> : <a href="" target="contentFrame" class="org/xml/sax/InputSource">org.xml.sax.InputSource</a>) : <a href="../../scala/xml/Elem.html" target="_self">Elem</a>
+        
+        <div>loads XML from a given input source, using XML parser in JDK.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#load%28String%29" target="_self">load</a></em>
+        (<em>sysID</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/xml/Elem.html" target="_self">Elem</a>
+        
+        <div>loads XML from given sysID, using XML parser in JDK.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#load%28java.io.Reader%29" target="_self">load</a></em>
+        (<em>reader</em> : <a href="" target="contentFrame" class="java/io/Reader">java.io.Reader</a>) : <a href="../../scala/xml/Elem.html" target="_self">Elem</a>
+        
+        <div>loads XML from given Reader, using XML parser in JDK.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#load%28java.io.InputStream%29" target="_self">load</a></em>
+        (<em>is</em> : <a href="" target="contentFrame" class="java/io/InputStream">java.io.InputStream</a>) : <a href="../../scala/xml/Elem.html" target="_self">Elem</a>
+        
+        <div>loads XML from given InputStream, using XML parser in JDK.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#loadFile%28String%29" target="_self">loadFile</a></em>
+        (<em>fileName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/xml/Elem.html" target="_self">Elem</a>
+        
+        <div>loads XML from given file, using XML parser in JDK.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#loadFile%28java.io.File%29" target="_self">loadFile</a></em>
+        (<em>file</em> : <a href="" target="contentFrame" class="java/io/File">java.io.File</a>) : <a href="../../scala/xml/Elem.html" target="_self">Elem</a>
+        
+        <div>loads XML from given file, using XML parser in JDK.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#loadFile%28java.io.FileDescriptor%29" target="_self">loadFile</a></em>
+        (<em>fileDesc</em> : <a href="" target="contentFrame" class="java/io/FileDescriptor">java.io.FileDescriptor</a>) : <a href="../../scala/xml/Elem.html" target="_self">Elem</a>
+        
+        <div>loads XML from given file descriptor, using XML parser in JDK.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#loadString%28String%29" target="_self">loadString</a></em>
+        (<em>string</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/xml/Elem.html" target="_self">Elem</a>
+        
+        <div>loads XML from a string, using XML parser in JDK.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#save%28String%2Cscala.xml.Node%2CString%29" target="_self">save</a></em>
+        (<em>filename</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>node</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>enc</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>saves XML to filename with given encoding, without xml-decl without
+    <code>doctype</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#save%28String%2Cscala.xml.Node%29" target="_self">save</a></em>
+        (<em>filename</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>node</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Saves XML to filename with encoding ISO-8859-1 without xml-decl without
+    <code>doctype</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#saveFull%28String%2Cscala.xml.Node%2CBoolean%2Cscala.xml.dtd.DocType%29" target="_self">saveFull</a></em>
+        (<em>filename</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>node</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>xmlDecl</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>, <em>doctype</em> : <a href="../../scala/xml/dtd/DocType.html" target="_self">DocType</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>saves a node to a file with given filename using encoding iso-8859-1
+    optionally with xmldecl and doctype declaration.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#saveFull%28String%2Cscala.xml.Node%2CString%2CBoolean%2Cscala.xml.dtd.DocType%29" target="_self">saveFull</a></em>
+        (<em>filename</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>node</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>enc</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>xmlDecl</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>, <em>doctype</em> : <a href="../../scala/xml/dtd/DocType.html" target="_self">DocType</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Saves a node to a file with given filename using given encoding
+    optionally with xmldecl and doctype declaration.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/XML$object.html#write%28java.io.Writer%2Cscala.xml.Node%2CString%2CBoolean%2Cscala.xml.dtd.DocType%29" target="_self">write</a></em>
+        (<em>w</em> : <a href="" target="contentFrame" class="java/io/Writer">java.io.Writer</a>, <em>node</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>enc</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>xmlDecl</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>, <em>doctype</em> : <a href="../../scala/xml/dtd/DocType.html" target="_self">DocType</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Writes the given node using writer, optionally with xml decl and doctype.
+    It's the caller's responsibility to close the writer.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Value Details</td></tr>
+        </table><div><a name="xml"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>val</code>
+        <em>xml</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="xmlns"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>val</code>
+        <em>xmlns</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="namespace"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>val</code>
+        <em>namespace</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="preserve"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>val</code>
+        <em>preserve</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="space"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>val</code>
+        <em>space</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="lang"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>val</code>
+        <em>lang</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="encoding"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>val</code>
+        <em>encoding</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="loadFile%28java.io.File%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>loadFile</em>(<em>file</em> : <a href="" target="contentFrame" class="java/io/File">java.io.File</a>) : <a href="../../scala/xml/Elem.html" target="_self">Elem</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>loads XML from given file, using XML parser in JDK.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="loadFile%28java.io.FileDescriptor%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>loadFile</em>(<em>fileDesc</em> : <a href="" target="contentFrame" class="java/io/FileDescriptor">java.io.FileDescriptor</a>) : <a href="../../scala/xml/Elem.html" target="_self">Elem</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>loads XML from given file descriptor, using XML parser in JDK.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>fileDesc - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="loadFile%28String%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>loadFile</em>(<em>fileName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/xml/Elem.html" target="_self">Elem</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>loads XML from given file, using XML parser in JDK.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="load%28java.io.InputStream%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>load</em>(<em>is</em> : <a href="" target="contentFrame" class="java/io/InputStream">java.io.InputStream</a>) : <a href="../../scala/xml/Elem.html" target="_self">Elem</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>loads XML from given InputStream, using XML parser in JDK.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="load%28java.io.Reader%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>load</em>(<em>reader</em> : <a href="" target="contentFrame" class="java/io/Reader">java.io.Reader</a>) : <a href="../../scala/xml/Elem.html" target="_self">Elem</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>loads XML from given Reader, using XML parser in JDK.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="load%28String%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>load</em>(<em>sysID</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/xml/Elem.html" target="_self">Elem</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>loads XML from given sysID, using XML parser in JDK.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="load%28org.xml.sax.InputSource%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>load</em>(<em>source</em> : <a href="" target="contentFrame" class="org/xml/sax/InputSource">org.xml.sax.InputSource</a>) : <a href="../../scala/xml/Elem.html" target="_self">Elem</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>loads XML from a given input source, using XML parser in JDK.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>source - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="loadString%28String%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>loadString</em>(<em>string</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/xml/Elem.html" target="_self">Elem</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>loads XML from a string, using XML parser in JDK.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="save%28String%2Cscala.xml.Node%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>save</em>(<em>filename</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>node</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Saves XML to filename with encoding ISO-8859-1 without xml-decl without
+    <code>doctype</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>filename - </code>...</dd><dd><code>node - </code>...</dd></dl>
+    <hr></hr>
+<a name="save%28String%2Cscala.xml.Node%2CString%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>save</em>(<em>filename</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>node</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>enc</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>saves XML to filename with given encoding, without xml-decl without
+    <code>doctype</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>filename - </code>...</dd><dd><code>node - </code>...</dd><dd><code>enc - </code>...</dd></dl>
+    <hr></hr>
+<a name="saveFull%28String%2Cscala.xml.Node%2CBoolean%2Cscala.xml.dtd.DocType%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>saveFull</em>(<em>filename</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>node</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>xmlDecl</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>, <em>doctype</em> : <a href="../../scala/xml/dtd/DocType.html" target="_self">DocType</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>saves a node to a file with given filename using encoding iso-8859-1
+    optionally with xmldecl and doctype declaration.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>filename - </code>the filename</dd><dd><code>node - </code>the xml node we want to write</dd><dd><code>xmlDecl - </code>if true, write xml declaration</dd><dd><code>doctype - </code>if not null, write doctype declaration</dd></dl>
+    <hr></hr>
+<a name="saveFull%28String%2Cscala.xml.Node%2CString%2CBoolean%2Cscala.xml.dtd.DocType%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>saveFull</em>(<em>filename</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>node</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>enc</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>xmlDecl</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>, <em>doctype</em> : <a href="../../scala/xml/dtd/DocType.html" target="_self">DocType</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Saves a node to a file with given filename using given encoding
+    optionally with xmldecl and doctype declaration.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>filename - </code>the filename</dd><dd><code>node - </code>the xml node we want to write</dd><dd><code>enc - </code>encoding to use</dd><dd><code>xmlDecl - </code>if true, write xml declaration</dd><dd><code>doctype - </code>if not null, write doctype declaration</dd></dl>
+    <hr></hr>
+<a name="write%28java.io.Writer%2Cscala.xml.Node%2CString%2CBoolean%2Cscala.xml.dtd.DocType%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>write</em>(<em>w</em> : <a href="" target="contentFrame" class="java/io/Writer">java.io.Writer</a>, <em>node</em> : <a href="../../scala/xml/Node.html" target="_self">Node</a>, <em>enc</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>xmlDecl</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>, <em>doctype</em> : <a href="../../scala/xml/dtd/DocType.html" target="_self">DocType</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Writes the given node using writer, optionally with xml decl and doctype.
+    It's the caller's responsibility to close the writer.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>w - </code>the writer</dd><dd><code>node - </code>the xml node we want to write</dd><dd><code>enc - </code>the string to be used in <code>xmlDecl</code></dd><dd><code>xmlDecl - </code>if true, write xml declaration</dd><dd><code>doctype - </code>if not null, write doctype declaration</dd></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

@@ -1,0 +1,13 @@
+Package: uk.qmole.antlr
+Name: AnTLR Parser
+Version: 3.5.2
+Architecture: iphoneos-arm
+Description: A grammar parser generator for Java
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/antlr
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: jamvm
+Sponsor: QMole Ltd. 
+Section: Development
+Tag: purpose::console, role::developer

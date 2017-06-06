@@ -1,0 +1,744 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class Enumeration in scala</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../scala$package.html" target="_self">scala</a>
+        <br></br>
+        <span class="entity">class  Enumeration</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/Enumeration"><code>scala/Enumeration.scala</code></a>]
+      </div><hr></hr>
+      <a name="Enumeration"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>class</code>
+        <em>Enumeration</em>(<em>initial</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>names</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>*)
+      </dt>
+      <dd><code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd><p>
+    Defines a finite set of values specific to the enumeration. Typically
+    these values enumerate all possible forms something can take and provide a
+    lightweight alternative to case classes.
+  </p>
+  <p>
+    Each call to a <code>Value</code> method adds a new unique value to the
+    enumeration. To be accessible, these values are usually defined as 
+    <code>val</code> members of the evaluation.
+  </p>
+  <p>
+    All values in an enumeration share a common, unique type defined as the 
+    <code>Value</code> type member of the enumeration (<code>Value</code>
+    selected on the stable identifier path of the enumeration instance).
+  </p>
+  <p>
+    <b>Example use</b>
+  </p><pre>
+  <b>object</b> Main <b>extends</b> Application {
+
+    <b>object</b> WeekDays <b>extends</b> Enumeration {
+      <b>val</b> Mon, Tue, Wed, Thu, Fri, Sat, Sun = Value
+    }
+
+    <b>def</b> isWorkingDay(d: WeekDays.Value) =
+      ! (d == WeekDays.Sat || d == WeekDays.Sun)
+ 
+    WeekDays filter (isWorkingDay) foreach { d =&gt; Console.println(d) }
+  }</pre></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>initial - </code>The initial value from which to count the integers that                 identifies values at run-time.</dd><dd><code>names - </code>The sequence of names to give to this enumeration's values.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Matthias Zenger</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0, 10/02/04</dd></dl>
+    
+      <table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Additional Constructor Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#this%28String*%29" target="_self">this</a></em>
+        (<em>names</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>*) : <a href="../scala/Enumeration.html" target="_self">Enumeration</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#this%28%29" target="_self">this</a></em>
+         : <a href="../scala/Enumeration.html" target="_self">Enumeration</a>
+        
+        
+      </td>
+    </tr>
+      </table>
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Value Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#nextId" target="_self">nextId</a></em>
+         : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>The integer to use to identify the next created value.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected var</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#nextName" target="_self">nextName</a></em>
+         : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]
+        
+        <div>The string to use to name the next created value.</div>
+      </td>
+    </tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#Set32" target="_self">Set32</a></em>
+         : <a href="../scala/Enumeration.Set32.html" target="_self">Set32</a>
+        
+        <div>create an empty 32 bit enumeration set</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#Set32%28Int%29" target="_self">Set32</a></em>
+        (<em>underlying</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Enumeration.Set32.html" target="_self">Set32</a>
+        
+        <div>create a bit enumeration set according ot underlying</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#Set64%28Long%29" target="_self">Set64</a></em>
+        (<em>underlying</em> : <a href="../scala/Long.html" target="_self">Long</a>) : <a href="../scala/Enumeration.Set64.html" target="_self">Set64</a>
+        
+        <div>create a bit enumeration set according ot underlying</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#Set64" target="_self">Set64</a></em>
+         : <a href="../scala/Enumeration.Set64.html" target="_self">Set64</a>
+        
+        <div>create an empty 64 bit enumeration set</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#Value%28String%29" target="_self">Value</a></em>
+        (<em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/Enumeration.Value.html" target="_self">Value</a>
+        
+        <div>Creates a fresh value, part of this enumeration, called <code>name</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#Value" target="_self">Value</a></em>
+         : <a href="../scala/Enumeration.Value.html" target="_self">Value</a>
+        
+        <div>Creates a fresh value, part of this enumeration.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#Value%28Int%2CString%29" target="_self">Value</a></em>
+        (<em>i</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/Enumeration.Value.html" target="_self">Value</a>
+        
+        <div>Creates a fresh value, part of this enumeration, called <code>name</code>
+    and identified by the integer <code>i</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#Value%28Int%29" target="_self">Value</a></em>
+        (<em>i</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Enumeration.Value.html" target="_self">Value</a>
+        
+        <div>Creates a fresh value, part of this enumeration, identified by the integer
+    <code>i</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#apply%28Int%29" target="_self">apply</a></em>
+        (<em>x</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Enumeration.Value.html" target="_self">Value</a>
+        
+        <div>The value in this enumeration identified by integer <code>x</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#elements" target="_self">elements</a></em>
+         : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Enumeration.Value.html" target="_self">Value</a>]
+        
+        <div>A new iterator over all values of this enumeration.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#exists%28%28Enumeration.this.Value%29%3D%3EBoolean%29" target="_self">exists</a></em>
+        (<em>p</em> : (<a href="../scala/Enumeration.Value.html" target="_self">Value</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Apply a predicate p to all values of this enumeration and return
+    true, iff there is at least one value for which p yields true.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#filter%28%28Enumeration.this.Value%29%3D%3EBoolean%29" target="_self">filter</a></em>
+        (<em>p</em> : (<a href="../scala/Enumeration.Value.html" target="_self">Value</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Enumeration.Value.html" target="_self">Value</a>]
+        
+        <div>Returns all values of this enumeration that satisfy the predicate p.
+    The order of values is preserved.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#flatMap%28%28Enumeration.this.Value%29%3D%3EIterator%5Bb%5D%29" target="_self">flatMap</a></em>
+        [<em>b</em>](<em>f</em> : (<a href="../scala/Enumeration.Value.html" target="_self">Value</a>) =&gt; <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Enumeration.html#flatMap%28%28Enumeration.this.Value%29%3D%3EIterator%5Bb%5D%29#b" target="_self">b</a>]) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Enumeration.html#flatMap%28%28Enumeration.this.Value%29%3D%3EIterator%5Bb%5D%29#b" target="_self">b</a>]
+        
+        <div>Applies the given function f to each value of this enumeration, then
+    concatenates the results.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#forall%28%28Enumeration.this.Value%29%3D%3EBoolean%29" target="_self">forall</a></em>
+        (<em>p</em> : (<a href="../scala/Enumeration.Value.html" target="_self">Value</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Apply a predicate p to all values of this enumeration and return
+    true, iff the predicate yields true for all values.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#foreach%28%28Enumeration.this.Value%29%3D%3EUnit%29" target="_self">foreach</a></em>
+        (<em>f</em> : (<a href="../scala/Enumeration.Value.html" target="_self">Value</a>) =&gt; <a href="../scala/Unit.html" target="_self">Unit</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Apply a function f to all values of this enumeration.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#map%28%28Enumeration.this.Value%29%3D%3Eb%29" target="_self">map</a></em>
+        [<em>b</em>](<em>f</em> : (<a href="../scala/Enumeration.Value.html" target="_self">Value</a>) =&gt; <a href="../scala/Enumeration.html#map%28%28Enumeration.this.Value%29%3D%3Eb%29#b" target="_self">b</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Enumeration.html#map%28%28Enumeration.this.Value%29%3D%3Eb%29#b" target="_self">b</a>]
+        
+        <div>Returns an iterator resulting from applying the given function f to each
+    value of this enumeration.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#maskToBit%28Long%29" target="_self">maskToBit</a></em>
+        (<em>n</em> : <a href="../scala/Long.html" target="_self">Long</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>used to reverse engineer bit locations from pre-defined bit masks</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#maxId" target="_self">maxId</a></em>
+         : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>The highest integer amongst those used to identify values in this
+    enumeration.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#name" target="_self">name</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>The name of this enumeration.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.html#toString%28%29" target="_self">toString</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Class Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.Set32.html" target="_self">Set32</a></em>
+        (<code>val </code><em>underlying</em> : <a href="../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../scala/Enumeration.SetXX.html" target="_self">SetXX</a>
+        
+        <div>An enumeration bit set that can handle enumeration values with ids up
+    to 31 in an <code>Int</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.Set64.html" target="_self">Set64</a></em>
+        (<code>val </code><em>underlying</em> : <a href="../scala/Long.html" target="_self">Long</a>)<code> extends </code><a href="../scala/Enumeration.SetXX.html" target="_self">SetXX</a>
+        
+        <div>An enumeration bit set that can handle enumeration values with ids up
+    to 63 in a <code>Long</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.SetXX.html" target="_self">SetXX</a></em>
+        <code> extends </code><a href="../scala/collection/immutable/Set.html" target="_self">Set</a>[<a href="../scala/Enumeration.Value.html" target="_self">Value</a>]
+        
+        <div>A set that efficiently stores enumeration values as bits.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.Val.html" target="_self">Val</a></em>
+        (<em>i</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/Enumeration.Value.html" target="_self">Value</a>
+        
+        <div>A class implementing the <a href="Enumeration.Value.html"
+    target="contentFrame"><code>Value</code></a> type. This class can be
+    overriden to change the enumeration's naming and integer identification
+    behaviour.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Enumeration.Value.html" target="_self">Value</a></em>
+        <code> extends </code><a href="../scala/Ordered.html" target="_self">Ordered</a>[<a href="../scala/Enumeration.Value.html" target="_self">Value</a>]
+        
+        <div>The type of the enumerated values.</div>
+      </td>
+    </tr>
+      </table>
+
+      <table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Additional Constructor Details</td></tr>
+        </table><div><a name="this%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>this</em> : <a href="../scala/Enumeration.html" target="_self">Enumeration</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="this%28String*%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>this</em>(<em>names</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>*) : <a href="../scala/Enumeration.html" target="_self">Enumeration</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Value Details</td></tr>
+        </table><div><a name="nextId"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>var</code>
+        <em>nextId</em> : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The integer to use to identify the next created value.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="nextName"></a><dl>
+      <dt>
+        
+        <code>protected</code>
+        <code>var</code>
+        <em>nextName</em> : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The string to use to name the next created value.</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="name"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The name of this enumeration.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="maxId"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>maxId</em> : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The highest integer amongst those used to identify values in this
+    enumeration.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="apply%28Int%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>apply</em>(<em>x</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Enumeration.Value.html" target="_self">Value</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The value in this enumeration identified by integer <code>x</code>.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="elements"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>elements</em> : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Enumeration.Value.html" target="_self">Value</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A new iterator over all values of this enumeration.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="foreach%28%28Enumeration.this.Value%29%3D%3EUnit%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>foreach</em>(<em>f</em> : (<a href="../scala/Enumeration.Value.html" target="_self">Value</a>) =&gt; <a href="../scala/Unit.html" target="_self">Unit</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Apply a function f to all values of this enumeration.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="forall%28%28Enumeration.this.Value%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>forall</em>(<em>p</em> : (<a href="../scala/Enumeration.Value.html" target="_self">Value</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Apply a predicate p to all values of this enumeration and return
+    true, iff the predicate yields true for all values.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="exists%28%28Enumeration.this.Value%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>exists</em>(<em>p</em> : (<a href="../scala/Enumeration.Value.html" target="_self">Value</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Apply a predicate p to all values of this enumeration and return
+    true, iff there is at least one value for which p yields true.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="map%28%28Enumeration.this.Value%29%3D%3Eb%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>map</em>[<em>b</em>](<em>f</em> : (<a href="../scala/Enumeration.Value.html" target="_self">Value</a>) =&gt; <a href="../scala/Enumeration.html#map%28%28Enumeration.this.Value%29%3D%3Eb%29#b" target="_self">b</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Enumeration.html#map%28%28Enumeration.this.Value%29%3D%3Eb%29#b" target="_self">b</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns an iterator resulting from applying the given function f to each
+    value of this enumeration.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="flatMap%28%28Enumeration.this.Value%29%3D%3EIterator%5Bb%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>flatMap</em>[<em>b</em>](<em>f</em> : (<a href="../scala/Enumeration.Value.html" target="_self">Value</a>) =&gt; <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Enumeration.html#flatMap%28%28Enumeration.this.Value%29%3D%3EIterator%5Bb%5D%29#b" target="_self">b</a>]) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Enumeration.html#flatMap%28%28Enumeration.this.Value%29%3D%3EIterator%5Bb%5D%29#b" target="_self">b</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Applies the given function f to each value of this enumeration, then
+    concatenates the results.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="filter%28%28Enumeration.this.Value%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>filter</em>(<em>p</em> : (<a href="../scala/Enumeration.Value.html" target="_self">Value</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Enumeration.Value.html" target="_self">Value</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns all values of this enumeration that satisfy the predicate p.
+    The order of values is preserved.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="toString%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>toString</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="Value"></a><dl>
+      <dt>
+        
+        <code>protected final</code>
+        <code>def</code>
+        <em>Value</em> : <a href="../scala/Enumeration.Value.html" target="_self">Value</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates a fresh value, part of this enumeration.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="Value%28Int%29"></a><dl>
+      <dt>
+        
+        <code>protected final</code>
+        <code>def</code>
+        <em>Value</em>(<em>i</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Enumeration.Value.html" target="_self">Value</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates a fresh value, part of this enumeration, identified by the integer
+    <code>i</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>i - </code>An integer that identifies this value at run-time. It must be             unique amongst all values of the enumeration.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>..</dd></dl>
+    <hr></hr>
+<a name="Value%28String%29"></a><dl>
+      <dt>
+        
+        <code>protected final</code>
+        <code>def</code>
+        <em>Value</em>(<em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/Enumeration.Value.html" target="_self">Value</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates a fresh value, part of this enumeration, called <code>name</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>name - </code>A human-readable name for that value.</dd></dl>
+    <hr></hr>
+<a name="Value%28Int%2CString%29"></a><dl>
+      <dt>
+        
+        <code>protected final</code>
+        <code>def</code>
+        <em>Value</em>(<em>i</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/Enumeration.Value.html" target="_self">Value</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates a fresh value, part of this enumeration, called <code>name</code>
+    and identified by the integer <code>i</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>i - </code>An integer that identifies this value at run-time. It must be               unique amongst all values of the enumeration.</dd><dd><code>name - </code>A human-readable name for that value.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>..</dd></dl>
+    <hr></hr>
+<a name="Set32"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>Set32</em> : <a href="../scala/Enumeration.Set32.html" target="_self">Set32</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>create an empty 32 bit enumeration set</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="Set32%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>Set32</em>(<em>underlying</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Enumeration.Set32.html" target="_self">Set32</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>create a bit enumeration set according ot underlying</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="Set64"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>Set64</em> : <a href="../scala/Enumeration.Set64.html" target="_self">Set64</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>create an empty 64 bit enumeration set</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="Set64%28Long%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>Set64</em>(<em>underlying</em> : <a href="../scala/Long.html" target="_self">Long</a>) : <a href="../scala/Enumeration.Set64.html" target="_self">Set64</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>create a bit enumeration set according ot underlying</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="maskToBit%28Long%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>maskToBit</em>(<em>n</em> : <a href="../scala/Long.html" target="_self">Long</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>used to reverse engineer bit locations from pre-defined bit masks</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

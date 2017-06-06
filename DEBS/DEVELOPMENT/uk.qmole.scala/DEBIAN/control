@@ -1,0 +1,13 @@
+Package: uk.qmole.scala
+Name: Scala
+Version: 2.6.1
+Architecture: iphoneos-arm
+Description: Scala port to IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/scala 
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp
+Depends: ncurses, readline, jamvm
+Sponsor: QMole Ltd. 
+Section: Development
+Tag: purpose::console, role::developer

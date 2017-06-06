@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.actors</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/$bang.html" target="_self">!</a></em>
+        [<em>a</em>](<code>val </code><em>ch</em> : <a href="../scala/actors/Channel.html" target="_self">Channel</a>[<a href="../scala/actors/$bang.html#a" target="_self">a</a>], <code>val </code><em>msg</em> : <a href="../scala/actors/$bang.html#a" target="_self">a</a>)<code> extends </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div><p>
+    This class is used to pattern match on values that were sent
+    to some channel <code>Chan<sub>n</sub></code> by the current
+    actor <code>self</code>.
+  </p>
+  <p>
+    The following example demonstrates its usage:
+  </p><pre>
+  receive {
+    <b>case</b> Chan1 ! msg1 => ...
+    <b>case</b> Chan2 ! msg2 => ...
+  }
+  </pre></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/Actor.html" target="_self">Actor</a></em>
+        <code> extends </code><a href="../scala/actors/OutputChannel.html" target="_self">OutputChannel</a>[<a href="../scala/Any.html" target="_self">Any</a>]
+        
+        <div><p>
+   This class provides an implementation of event-based actors.
+   The main ideas of our approach are explained in the two papers
+ </p>
+ <ul>
+   <li>
+     <a href="http://lampwww.epfl.ch/~odersky/papers/jmlc06.pdf">
+     <span style="font-weight:bold; white-space:nowrap;">Event-Based
+     Programming without Inversion of Control</span></a>,<br/>
+     Philipp Haller and Martin Odersky, <i>Proc. JMLC 2006</i>, and
+   </li>
+   <li>
+     <a href="http://lamp.epfl.ch/~phaller/doc/haller07coord.pdf">
+     <span style="font-weight:bold; white-space:nowrap;">Actors that
+     Unify Threads and Events</span></a>,<br/>
+     Philipp Haller and Martin Odersky, <i>Proc. COORDINATION 2007</i>.
+   </li>
+ </ul></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/Channel.html" target="_self">Channel</a></em>
+        [<em>Msg</em>]<code> extends </code><a href="../scala/actors/InputChannel.html" target="_self">InputChannel</a>[<a href="../scala/actors/Channel.html#Msg" target="_self">Msg</a>]<code> with </code><a href="../scala/actors/OutputChannel.html" target="_self">OutputChannel</a>[<a href="../scala/actors/Channel.html#Msg" target="_self">Msg</a>]
+        
+        <div>This class provides a means for typed communication among
+ actors. Only the actor creating an instance of a
+ <code>Channel</code> may receive from it.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/Debug.html" target="_self">Debug</a></em>
+        (<em>tag</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/Exit.html" target="_self">Exit</a></em>
+        (<code>val </code><em>from</em> : <a href="../scala/actors/Actor.html" target="_self">Actor</a>, <code>val </code><em>reason</em> : <a href="../scala/AnyRef.html" target="_self">AnyRef</a>)<code> extends </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/FJTaskScheduler2.html" target="_self">FJTaskScheduler2</a></em>
+        <code> extends </code><a href="" target="contentFrame" class="java/lang/Thread">java.lang.Thread</a><code> with </code><a href="../scala/actors/IScheduler.html" target="_self">IScheduler</a>
+        
+        <div>FJTaskScheduler2</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/Future.html" target="_self">Future</a></em>
+        [<em>T</em>](<code>val </code><em>ch</em> : <a href="../scala/actors/InputChannel.html" target="_self">InputChannel</a>[<a href="../scala/Any.html" target="_self">Any</a>])<code> extends </code>() =&gt; <a href="../scala/actors/Future.html#T" target="_self">T</a>
+        
+        <div><p>
+   A Future is a function of arity 0 that returns a value of type Any.
+   Applying a future blocks the current actor until its value
+   is available.
+ </p>
+ <p>
+   A future can be queried to find out whether its value
+   is already available.
+ </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/IScheduler.html" target="_self">IScheduler</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This abstract class provides a common interface for all
+ schedulers used to execute actor tasks.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/InputChannel.html" target="_self">InputChannel</a></em>
+        [+<em>Msg</em>]<code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The <code>InputChannel</code> trait provides a common interface
+ for all channels from which values can be received.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/MessageQueue.html" target="_self">MessageQueue</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The class <code>MessageQueue</code> provides an efficient
+ implementation of a message queue specialized for this actor
+ library. Classes in this package are supposed to be the only
+ clients of this class.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/MessageQueueElement.html" target="_self">MessageQueueElement</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This class is used by our efficient message queue
+ implementation.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/OutputChannel.html" target="_self">OutputChannel</a></em>
+        [-<em>Msg</em>]<code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The <code>OutputChannel</code> trait provides a common interface
+ for all channels to which values can be sent.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/Reaction.html" target="_self">Reaction</a></em>
+        (<em>a</em> : <a href="../scala/actors/Actor.html" target="_self">Actor</a>, <em>f</em> : <a href="../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../scala/Any.html" target="_self">Any</a>, <a href="../scala/Unit.html" target="_self">Unit</a>], <em>msg</em> : <a href="../scala/Any.html" target="_self">Any</a>)<code> extends </code><a href="" target="contentFrame" class="java/lang/Runnable">java.lang.Runnable</a><code> with </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/SingleThreadedScheduler.html" target="_self">SingleThreadedScheduler</a></em>
+        <code> extends </code><a href="../scala/actors/IScheduler.html" target="_self">IScheduler</a>
+        
+        <div>This scheduler executes the tasks of an actor on a single
+ thread (the current thread).</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/TickedScheduler.html" target="_self">TickedScheduler</a></em>
+        <code> extends </code><a href="" target="contentFrame" class="java/lang/Thread">java.lang.Thread</a><code> with </code><a href="../scala/actors/IScheduler.html" target="_self">IScheduler</a>
+        
+        <div><p>This scheduler uses a thread pool to execute tasks that are generated
+ by the execution of actors.</p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/WorkerThread.html" target="_self">WorkerThread</a></em>
+        (<em>sched</em> : <a href="../scala/actors/IScheduler.html" target="_self">IScheduler</a>)<code> extends </code><a href="" target="contentFrame" class="java/lang/Thread">java.lang.Thread</a><code> with </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+   The class <code>WorkerThread</code> is used by schedulers to execute
+   actor tasks on multiple threads.
+ </p>
+ <p>
+   !!ACHTUNG: If you change this, make sure you understand the following
+   proof of deadlock-freedom!!
+ </p>
+ <p>
+   We proof that there is no deadlock between the scheduler and
+   any worker thread possible. For this, note that the scheduler
+   only acquires the lock of a worker thread by calling
+   <code>execute</code>.  This method is only called when the worker thread
+   is in the idle queue of the scheduler. On the other hand, a
+   worker thread only acquires the lock of the scheduler when it
+   calls <code>getTask</code>. At the only callsite of <code>getTask</code>,
+   the worker thread holds its own lock.
+ </p>
+ <p>
+   Thus, deadlock can only occur when a worker thread calls
+   <code>getTask</code> while it is in the idle queue of the scheduler,
+   because then the scheduler might call (at any time!) <code>execute</code>
+   which tries to acquire the lock of the worker thread. In such
+   a situation the worker thread would be waiting to acquire the
+   lock of the scheduler and vice versa.
+ </p>
+ <p>
+   Therefore, to prove deadlock-freedom, it suffices to ensure
+   that a worker thread will never call <code>getTask</code> when
+   it is in the idle queue of the scheduler.
+ </p>
+ <p>
+   A worker thread enters the idle queue of the scheduler when
+   <code>getTask</code> returns <code>null</code>. Then it will also stay
+   in the while-loop W (<code>while (task eq null)</code>) until
+   <code>task</code> becomes non-null. The only way this can happen is
+   through a call of <code>execute</code> by the scheduler. Before every
+   call of <code>execute</code> the worker thread is removed from the idle
+   queue of the scheduler. Only then--after executing its task--
+   the worker thread may call <code>getTask</code>. However, the scheduler
+   is unable to call <code>execute</code> as the worker thread is not in
+   the idle queue any more. In fact, the scheduler made sure
+   that this is the case even _before_ calling <code>execute</code> and
+   thus releasing the worker thread from the while-loop W. Thus,
+   the property holds for every possible interleaving of thread
+   execution. QED
+ </p></div>
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/Actor$object.html" target="_self">Actor</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The <code>Actor</code> object provides functions for the definition of
+ actors, as well as actor operations, such as
+ <code>receive</code>, <code>react</code>, <code>reply</code>,
+ etc.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/Debug$object.html" target="_self">Debug</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/Futures$object.html" target="_self">Futures</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The <code>Futures</code> object contains methods that operate on Futures.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/Scheduler$object.html" target="_self">Scheduler</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The <code>Scheduler</code> object is used by
+ <code>Actor</code> to execute tasks of an execution of an actor.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/TIMEOUT$object.html" target="_self">TIMEOUT</a></em>
+        <code> extends </code><a href="../scala/Product.html" target="_self">Product</a>
+        
+        <div><p>
+    This object is used as the timeout pattern in
+    <a href="Actor.html#receiveWithin(Long)" target="contentFrame">
+    <code>receiveWithin</code></a> and
+    <a href="Actor.html#reactWithin(Long)" target="contentFrame">
+    <code>reactWithin</code></a>.
+  </p>
+  <p>
+    The following example demonstrates its usage:
+  </p><pre>
+    receiveWithin(500) {
+      <b>case</b> (x, y) <b>=&gt;</b> ...
+      <b>case</b> TIMEOUT <b>=&gt;</b> ...
+    }</pre></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/actors/TimerThread$object.html" target="_self">TimerThread</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This class allows the (local) sending of a message to an actor after
+ a timeout.  Used by the library to build <code>receiveWithin(time: long)</code>.
+ Note that the library deletes non-received <code>TIMEOUT</code> message if a
+ message is received before the time-out occurs.</div>
+      </td>
+    </tr>        
+        </table></body>
+      </html>

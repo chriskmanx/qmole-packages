@@ -1,0 +1,12 @@
+Package: uk.qmole.classpath
+Name: Java Classpath Library
+Version: 0.99
+Architecture: iphoneos-arm
+Description: GNU Classpath, Essential Libraries for Java for IOS with Swing
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/classpath
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: Development
+Tag: purpose::console, role::developer

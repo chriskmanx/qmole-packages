@@ -1,0 +1,13 @@
+Package: uk.qmole.curl
+Name: Curl
+Version: 7.45
+Architecture: iphoneos-arm
+Description: Curl port to IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/curl 
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: openssl
+Sponsor: QMole Ltd. 
+Section: Development
+Tag: purpose::console, role::developer

@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.actors.remote</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/JavaSerializer.html" target="_self">JavaSerializer</a></em>
+        (<em>serv</em> : <a href="../../scala/actors/remote/Service.html" target="_self">Service</a>)<code> extends </code><a href="../../scala/actors/remote/Serializer.html" target="_self">Serializer</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/NamedSend.html" target="_self">NamedSend</a></em>
+        (<code>val </code><em>senderName</em> : <a href="../../scala/Symbol.html" target="_self">Symbol</a>, <code>val </code><em>receiver</em> : <a href="../../scala/Symbol.html" target="_self">Symbol</a>, <code>val </code><em>data</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Byte.html" target="_self">Byte</a>])<code> extends </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/NetKernel.html" target="_self">NetKernel</a></em>
+        (<em>service</em> : <a href="../../scala/actors/remote/Service.html" target="_self">Service</a>)<code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/Node.html" target="_self">Node</a></em>
+        (<code>val </code><em>address</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>port</em> : <a href="../../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>This class represents a machine node on a TCP network.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/Proxy.html" target="_self">Proxy</a></em>
+        (<em>node</em> : <a href="../../scala/actors/remote/Node.html" target="_self">Node</a>, <em>name</em> : <a href="../../scala/Symbol.html" target="_self">Symbol</a>, <em>kernel</em> : <a href="../../scala/actors/remote/NetKernel.html" target="_self">NetKernel</a>)<code> extends </code><a href="../../scala/actors/Actor.html" target="_self">Actor</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/Reply.html" target="_self">Reply</a></em>
+        (<code>val </code><em>senderName</em> : <a href="../../scala/Symbol.html" target="_self">Symbol</a>, <code>val </code><em>receiver</em> : <a href="../../scala/Symbol.html" target="_self">Symbol</a>, <code>val </code><em>data</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Byte.html" target="_self">Byte</a>])<code> extends </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/ReplyTo.html" target="_self">ReplyTo</a></em>
+        (<code>val </code><em>a</em> : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>, <code>val </code><em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>)<code> extends </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/SendTo.html" target="_self">SendTo</a></em>
+        (<code>val </code><em>a</em> : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>, <code>val </code><em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>)<code> extends </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/Serializer.html" target="_self">Serializer</a></em>
+        (<code>val </code><em>service</em> : <a href="../../scala/actors/remote/Service.html" target="_self">Service</a>)<code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/Service.html" target="_self">Service</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/SyncSend.html" target="_self">SyncSend</a></em>
+        (<code>val </code><em>senderName</em> : <a href="../../scala/Symbol.html" target="_self">Symbol</a>, <code>val </code><em>receiver</em> : <a href="../../scala/Symbol.html" target="_self">Symbol</a>, <code>val </code><em>data</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Byte.html" target="_self">Byte</a>])<code> extends </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/SyncSendTo.html" target="_self">SyncSendTo</a></em>
+        (<code>val </code><em>a</em> : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>, <code>val </code><em>msg</em> : <a href="../../scala/Any.html" target="_self">Any</a>, <code>val </code><em>receiver</em> : <a href="../../scala/Symbol.html" target="_self">Symbol</a>)<code> extends </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/TcpService.html" target="_self">TcpService</a></em>
+        (<em>port</em> : <a href="../../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="" target="contentFrame" class="java/lang/Thread">java.lang.Thread</a><code> with </code><a href="../../scala/actors/remote/Service.html" target="_self">Service</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/TcpServiceWorker.html" target="_self">TcpServiceWorker</a></em>
+        (<em>parent</em> : <a href="../../scala/actors/remote/TcpService.html" target="_self">TcpService</a>, <em>so</em> : <a href="" target="contentFrame" class="java/net/Socket">java.net.Socket</a>)<code> extends </code><a href="" target="contentFrame" class="java/lang/Thread">java.lang.Thread</a><code> with </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/FreshNameCreator$object.html" target="_self">FreshNameCreator</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/RemoteActor$object.html" target="_self">RemoteActor</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    This object provides methods for creating, registering, and
+    selecting remotely accessible actors.
+  </p>
+  <p>
+    A remote actor is typically created like this:
+  </p><pre>
+  actor {
+    alive(9010)
+    register('myName, self)
+
+    // behavior
+  }
+  </pre>
+  <p>
+    It can be accessed by an actor running on a (possibly)
+    different node by selecting it in the following way:
+  </p><pre>
+  actor {
+    // ...
+    <b>val</b> c = select(Node("127.0.0.1", 9010), 'myName)
+    c ! msg
+    // ...
+  }
+  </pre></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/TcpService$object.html" target="_self">TcpService</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/remote/Terminate$object.html" target="_self">Terminate</a></em>
+        <code> extends </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>        
+        </table></body>
+      </html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class GBTree in scala.collection.immutable</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../scala/collection/immutable$package.html" target="_self">scala.collection.immutable</a>
+        <br></br>
+        <span class="entity">class  GBTree</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/collection/immutable/GBTree"><code>scala/collection/immutable/GBTree.scala</code></a>]
+      </div><hr></hr>
+      <a name="GBTree"></a><dl>
+      <dt>
+        @<a href="../../../scala/serializable.html" target="_self">serializable</a><br></br>
+        <code>protected abstract</code>
+        <code>class</code>
+        <em>GBTree</em>[<em>A</em>, <em>B</em>](<code>implicit </code><em>view$5</em> : (<a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>) =&gt; <a href="../../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>])
+      </dt>
+      <dd><code> extends </code><a href="../../../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd><code>GBTree</code> is an internal class used by
+  <a href="Tree.html" target="contentFrame"><code>Tree</code></a>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Erik Stenman</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0, 2005-01-20</dd></dl>
+    
+      
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Type Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> type</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/GBTree.html#aNode" target="_self">aNode</a></em>
+        
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> type</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/GBTree.html#anInsertTree" target="_self">anInsertTree</a></em>
+        
+        
+        
+      </td>
+    </tr>
+      </table>
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/GBTree.html#apply%28A%29" target="_self">apply</a></em>
+        (<em>key</em> : <a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>) : <a href="../../../scala/collection/immutable/GBTree.html#B" target="_self">B</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/GBTree.html#balance%28Int%29" target="_self">balance</a></em>
+        (<em>s</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/collection/immutable/GBTree.html" target="_self">GBTree</a>[<a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>, <a href="../../../scala/collection/immutable/GBTree.html#B" target="_self">B</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/GBTree.html#count" target="_self">count</a></em>
+         : (<a href="../../../scala/Int.html" target="_self">Int</a>, <a href="../../../scala/Int.html" target="_self">Int</a>)
+        
+        <div>Calculates 2^h, and size, where h is the height of the tree
+    and size is the number of nodes in the tree.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/GBTree.html#delete%28A%29" target="_self">delete</a></em>
+        (<em>key</em> : <a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>) : <a href="../../../scala/collection/immutable/GBTree.html" target="_self">GBTree</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/GBTree.html#get%28A%29" target="_self">get</a></em>
+        (<em>key</em> : <a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/collection/immutable/GBTree.html#B" target="_self">B</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/GBTree.html#insert%28A%2CB%2CInt%29" target="_self">insert</a></em>
+        (<em>key</em> : <a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>, <em>value</em> : <a href="../../../scala/collection/immutable/GBTree.html#B" target="_self">B</a>, <em>size</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/collection/immutable/InsertTree.html" target="_self">InsertTree</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/GBTree.html#isDefinedAt%28A%29" target="_self">isDefinedAt</a></em>
+        (<em>Key</em> : <a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/GBTree.html#merge%28GBTree.this.aNode%29" target="_self">merge</a></em>
+        (<em>t</em> : <a href="../../../scala/collection/immutable/GBTree.html" target="_self">GBTree</a>) : <a href="../../../scala/collection/immutable/GBTree.html" target="_self">GBTree</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/GBTree.html#mk_iter%28List%5BGBTree.this.aNode%5D%29" target="_self">mk_iter</a></em>
+        (<em>iter_tail</em> : <a href="../../../scala/List.html" target="_self">List</a>[<a href="../../../scala/collection/immutable/GBTree.html" target="_self">GBTree</a>]) : <a href="../../../scala/List.html" target="_self">List</a>[<a href="../../../scala/collection/immutable/GBTree.html" target="_self">GBTree</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/GBTree.html#takeSmallest" target="_self">takeSmallest</a></em>
+         : (<a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>, <a href="../../../scala/collection/immutable/GBTree.html#B" target="_self">B</a>, <a href="../../../scala/collection/immutable/GBTree.html" target="_self">GBTree</a>)
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/GBTree.html#toList%28List%5B%28A%2CB%29%5D%29" target="_self">toList</a></em>
+        (<em>acc</em> : <a href="../../../scala/List.html" target="_self">List</a>[(<a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>, <a href="../../../scala/collection/immutable/GBTree.html#B" target="_self">B</a>)]) : <a href="../../../scala/List.html" target="_self">List</a>[(<a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>, <a href="../../../scala/collection/immutable/GBTree.html#B" target="_self">B</a>)]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/GBTree.html#update%28A%2CB%29" target="_self">update</a></em>
+        (<em>key</em> : <a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>, <em>value</em> : <a href="../../../scala/collection/immutable/GBTree.html#B" target="_self">B</a>) : <a href="../../../scala/collection/immutable/GBTree.html" target="_self">GBTree</a>
+        
+        
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Type Details</td></tr>
+        </table><div><a name="aNode"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>type</code>
+        <em>aNode</em>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="anInsertTree"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>type</code>
+        <em>anInsertTree</em>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="count"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>count</em> : (<a href="../../../scala/Int.html" target="_self">Int</a>, <a href="../../../scala/Int.html" target="_self">Int</a>)
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Calculates 2^h, and size, where h is the height of the tree
+    and size is the number of nodes in the tree.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="isDefinedAt%28A%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>isDefinedAt</em>(<em>Key</em> : <a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="get%28A%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>get</em>(<em>key</em> : <a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/collection/immutable/GBTree.html#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="apply%28A%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>apply</em>(<em>key</em> : <a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>) : <a href="../../../scala/collection/immutable/GBTree.html#B" target="_self">B</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="update%28A%2CB%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>update</em>(<em>key</em> : <a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>, <em>value</em> : <a href="../../../scala/collection/immutable/GBTree.html#B" target="_self">B</a>) : <a href="../../../scala/collection/immutable/GBTree.html" target="_self">GBTree</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="insert%28A%2CB%2CInt%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>insert</em>(<em>key</em> : <a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>, <em>value</em> : <a href="../../../scala/collection/immutable/GBTree.html#B" target="_self">B</a>, <em>size</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/collection/immutable/InsertTree.html" target="_self">InsertTree</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="toList%28List%5B%28A%2CB%29%5D%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>toList</em>(<em>acc</em> : <a href="../../../scala/List.html" target="_self">List</a>[(<a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>, <a href="../../../scala/collection/immutable/GBTree.html#B" target="_self">B</a>)]) : <a href="../../../scala/List.html" target="_self">List</a>[(<a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>, <a href="../../../scala/collection/immutable/GBTree.html#B" target="_self">B</a>)]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="mk_iter%28List%5BGBTree.this.aNode%5D%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>mk_iter</em>(<em>iter_tail</em> : <a href="../../../scala/List.html" target="_self">List</a>[<a href="../../../scala/collection/immutable/GBTree.html" target="_self">GBTree</a>]) : <a href="../../../scala/List.html" target="_self">List</a>[<a href="../../../scala/collection/immutable/GBTree.html" target="_self">GBTree</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="delete%28A%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>delete</em>(<em>key</em> : <a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>) : <a href="../../../scala/collection/immutable/GBTree.html" target="_self">GBTree</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="merge%28GBTree.this.aNode%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>merge</em>(<em>t</em> : <a href="../../../scala/collection/immutable/GBTree.html" target="_self">GBTree</a>) : <a href="../../../scala/collection/immutable/GBTree.html" target="_self">GBTree</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="takeSmallest"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>takeSmallest</em> : (<a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>, <a href="../../../scala/collection/immutable/GBTree.html#B" target="_self">B</a>, <a href="../../../scala/collection/immutable/GBTree.html" target="_self">GBTree</a>)
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="balance%28Int%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>balance</em>(<em>s</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/collection/immutable/GBTree.html" target="_self">GBTree</a>[<a href="../../../scala/collection/immutable/GBTree.html#A" target="_self">A</a>, <a href="../../../scala/collection/immutable/GBTree.html#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

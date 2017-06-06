@@ -1,0 +1,713 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>trait Buffer in scala.collection.jcl</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../scala/collection/jcl$package.html" target="_self">scala.collection.jcl</a>
+        <br></br>
+        <span class="entity">trait  Buffer</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/collection/jcl/Buffer"><code>scala/collection/jcl/Buffer.scala</code></a>]
+      </div><hr></hr>
+      <a name="Buffer"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>trait</code>
+        <em>Buffer</em>[<em>A</em>]
+      </dt>
+      <dd><code> extends </code><a href="../../../scala/RandomAccessSeq$object.Mutable.html" target="_self">Mutable</a>[<a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]<code> with </code><a href="../../../scala/collection/jcl/Ranged.html" target="_self">Ranged</a>[<a href="../../../scala/Int.html" target="_self">Int</a>, <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]<code> with </code><a href="../../../scala/collection/jcl/MutableSeq.html" target="_self">MutableSeq</a>[<a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]<code> with </code><a href="../../../scala/collection/jcl/Collection.html" target="_self">Collection</a>[<a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]</dd>
+    </dl>
+      <dl><dd>A mutable sequence that supports element insertion and update.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Sean McDirmid</dd></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../../../scala/collection/jcl/Buffer.Range.html" target="_self">Buffer.Range</a>, <a href="../../../scala/collection/jcl/Buffer$object.Projection.html" target="_self">Buffer.Projection</a>, <a href="../../../scala/collection/jcl/BufferWrapper.html" target="_self">BufferWrapper</a></dd>
+      </dl><hr></hr>
+      
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Type Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected final type</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#SortedSelf" target="_self">SortedSelf</a></em>
+        
+        
+        
+      </td>
+    </tr>
+      </table>
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#%2B%28A%29" target="_self">+</a></em>
+        (<em>a</em> : <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/collection/jcl/Buffer.html" target="_self">Buffer</a>[<a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]
+        
+        <div>adds "a" from the collection. Useful for chaining.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#-%3D%28A%29" target="_self">-=</a></em>
+        (<em>a</em> : <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>removes "a" from the collection.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#add%28A%29" target="_self">add</a></em>
+        (<em>a</em> : <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#add%28Int%2CA%29" target="_self">add</a></em>
+        (<em>idx</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>a</em> : <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Inserts "a" into this buffer just before the element at index "idx."</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#addAll%28Int%2CIterable%5BA%5D%29" target="_self">addAll</a></em>
+        (<em>idx</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>that</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Inserts all elements of <code>that</code> into this buffer just before
+    the element at index <code>idx</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#compare%28Int%2CInt%29" target="_self">compare</a></em>
+        (<em>k0</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>k1</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        <div>Indices are compared through subtraction.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#elements" target="_self">elements</a></em>
+         : <a href="../../../scala/collection/jcl/BufferIterator.html" target="_self">BufferIterator</a>[<a href="../../../scala/Int.html" target="_self">Int</a>, <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]
+        
+        <div>The default implementation of a map over mutable iterable collections.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#firstKey" target="_self">firstKey</a></em>
+         : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        <div>The first index of a buffer is 0.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#isEmpty" target="_self">isEmpty</a></em>
+         : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Returns true if length == 0</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#lastKey" target="_self">lastKey</a></em>
+         : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        <div>The last index of a buffer is its size - 1.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#projection" target="_self">projection</a></em>
+         : <a href="../../../scala/collection/jcl/Buffer$object.Projection.html" target="_self">Projection</a>[<a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]
+        
+        <div>returns a projection that can be used to call non-strict <code>filter</code>,
+   <code>map</code>, and <code>flatMap</code> methods that build projections
+   of the collection.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#rangeImpl%28Option%5BInt%5D%2COption%5BInt%5D%29" target="_self">rangeImpl</a></em>
+        (<em>from</em> : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/Int.html" target="_self">Int</a>], <em>until</em> : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/Int.html" target="_self">Int</a>]) : <a href="../../../scala/collection/jcl/Buffer.html" target="_self">Buffer</a>[<a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]
+        
+        <div>Creates a ranged projection of this collection. Any mutations in the
+    ranged projection will update this collection and vice versa.  Note: keys
+    are not garuanteed to be consistent between this collection and the projection.
+    This is the case for buffers where indexing is relative to the projection.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#remove%28Int%29" target="_self">remove</a></em>
+        (<em>idx</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>
+        
+        <div>Removes the element at index <code>idx</code></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#remove%28Int%2CInt%29" target="_self">remove</a></em>
+        (<em>idx</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>length</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Removes N elements from index <code>idx</code></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#replace%28Int%2CInt%2CSeq%5BA%5D%29" target="_self">replace</a></em>
+        (<em>from</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>length</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>added</em> : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>replaces</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#set%28Int%2CA%29" target="_self">set</a></em>
+        (<em>idx</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>a</em> : <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>
+        
+        <div>Replaces the element at index "idx" with "a."</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#transform%28%28A%29%3D%3EA%29" target="_self">transform</a></em>
+        (<em>f</em> : (<a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>) =&gt; <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Transforms each element of the collection in-place according to
+    <code>f</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.html#update%28Int%2CA%29" target="_self">update</a></em>
+        (<em>idx</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>a</em> : <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Equivalent to set except the replaced element is not returned.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/jcl/Collection.html" target="_self">Collection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/jcl/Collection.html#hasAll%28Iterable%5BA%5D%29" target="_self">hasAll</a>, <a href="../../../scala/collection/jcl/Collection.html#addAll%28Iterable%5BA%5D%29" target="_self">addAll</a>, <a href="../../../scala/collection/jcl/Collection.html#%2B%2B%28Iterable%5BA%5D%29" target="_self">++</a>, <a href="../../../scala/collection/jcl/Collection.html#%2B%3D%28A%29" target="_self">+=</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/jcl/MutableSeq.html" target="_self">MutableSeq</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/jcl/MutableSeq.html#apply%28Int%29" target="_self">apply</a>, <a href="../../../scala/collection/jcl/MutableSeq.html#indexOf%28A%29" target="_self">indexOf</a>, <a href="../../../scala/collection/jcl/MutableSeq.html#length" target="_self">length</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/jcl/Ranged.html" target="_self">Ranged</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/jcl/Ranged.html#from%28K%29" target="_self">from</a>, <a href="../../../scala/collection/jcl/Ranged.html#until%28K%29" target="_self">until</a>, <a href="../../../scala/collection/jcl/Ranged.html#range%28K%2CK%29" target="_self">range</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/jcl/MutableIterable.html" target="_self">MutableIterable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/jcl/MutableIterable.html#has%28A%29" target="_self">has</a>, <a href="../../../scala/collection/jcl/MutableIterable.html#remove%28A%29" target="_self">remove</a>, <a href="../../../scala/collection/jcl/MutableIterable.html#removeAll%28Iterable%5BA%5D%29" target="_self">removeAll</a>, <a href="../../../scala/collection/jcl/MutableIterable.html#--%28Iterable%5BA%5D%29" target="_self">--</a>, <a href="../../../scala/collection/jcl/MutableIterable.html#-%28A%29" target="_self">-</a>, <a href="../../../scala/collection/jcl/MutableIterable.html#retainOnly%28%28A%29%3D%3EBoolean%29" target="_self">retainOnly</a>, <a href="../../../scala/collection/jcl/MutableIterable.html#retainAll%28Iterable%5BA%5D%29" target="_self">retainAll</a>, <a href="../../../scala/collection/jcl/MutableIterable.html#size0" target="_self">size0</a>, <a href="../../../scala/collection/jcl/MutableIterable.html#clear%28%29" target="_self">clear</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/RandomAccessSeq$object.Mutable.html" target="_self">Mutable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/RandomAccessSeq$object.Mutable.html#readOnly" target="_self">readOnly</a>, <a href="../../../scala/RandomAccessSeq$object.Mutable.html#drop%28Int%29" target="_self">drop</a>, <a href="../../../scala/RandomAccessSeq$object.Mutable.html#take%28Int%29" target="_self">take</a>, <a href="../../../scala/RandomAccessSeq$object.Mutable.html#slice%28Int%2CInt%29" target="_self">slice</a>, <a href="../../../scala/RandomAccessSeq$object.Mutable.html#reverse" target="_self">reverse</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/RandomAccessSeq.html" target="_self">RandomAccessSeq</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/RandomAccessSeq.html#patch%28Int%2CRandomAccessSeq%5BB%5D%2CInt%29" target="_self">patch</a>, <a href="../../../scala/RandomAccessSeq.html#%2B%2B%28Iterable%5BB%5D%29" target="_self">++</a>, <a href="../../../scala/RandomAccessSeq.html#toStream" target="_self">toStream</a>, <a href="../../../scala/RandomAccessSeq.html#safeIs%28Int%2CAny%29" target="_self">safeIs</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Seq.html" target="_self">Seq</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Seq.html#lengthCompare%28Int%29" target="_self">lengthCompare</a>, <a href="../../../scala/Seq.html#size" target="_self">size</a>, <a href="../../../scala/Seq.html#concat%28Iterable%5BB%5D%29" target="_self">concat</a>, <a href="../../../scala/Seq.html#last" target="_self">last</a>, <a href="../../../scala/Seq.html#lastOption" target="_self">lastOption</a>, <a href="../../../scala/Seq.html#headOption" target="_self">headOption</a>, <a href="../../../scala/Seq.html#isDefinedAt%28Int%29" target="_self">isDefinedAt</a>, <a href="../../../scala/Seq.html#lastIndexOf%28B%29" target="_self">lastIndexOf</a>, <a href="../../../scala/Seq.html#map%28%28A%29%3D%3EB%29" target="_self">map</a>, <a href="../../../scala/Seq.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a>, <a href="../../../scala/Seq.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a>, <a href="../../../scala/Seq.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a>, <a href="../../../scala/Seq.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a>, <a href="../../../scala/Seq.html#contains%28Any%29" target="_self">contains</a>, <a href="../../../scala/Seq.html#subseq%28Int%2CInt%29" target="_self">subseq</a>, <a href="../../../scala/Seq.html#toArray" target="_self">toArray</a>, <a href="../../../scala/Seq.html#equalsWith%28Seq%5BB%5D%29" target="_self">equalsWith</a>, <a href="../../../scala/Seq.html#startsWith%28Seq%5BB%5D%29" target="_self">startsWith</a>, <a href="../../../scala/Seq.html#endsWith%28Seq%5BB%5D%29" target="_self">endsWith</a>, <a href="../../../scala/Seq.html#indexOf%28Seq%5BB%5D%29" target="_self">indexOf</a>, <a href="../../../scala/Seq.html#containsSlice%28Seq%5BB%5D%29" target="_self">containsSlice</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Collection.html" target="_self">Collection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Collection.html#toString%28%29" target="_self">toString</a>, <a href="../../../scala/Collection.html#stringPrefix" target="_self">stringPrefix</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Iterable.html" target="_self">Iterable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Iterable.html#partition%28%28A%29%3D%3EBoolean%29" target="_self">partition</a>, <a href="../../../scala/Iterable.html#foreach%28%28A%29%3D%3EUnit%29" target="_self">foreach</a>, <a href="../../../scala/Iterable.html#forall%28%28A%29%3D%3EBoolean%29" target="_self">forall</a>, <a href="../../../scala/Iterable.html#exists%28%28A%29%3D%3EBoolean%29" target="_self">exists</a>, <a href="../../../scala/Iterable.html#find%28%28A%29%3D%3EBoolean%29" target="_self">find</a>, <a href="../../../scala/Iterable.html#findIndexOf%28%28A%29%3D%3EBoolean%29" target="_self">findIndexOf</a>, <a href="../../../scala/Iterable.html#indexOf%28B%29" target="_self">indexOf</a>, <a href="../../../scala/Iterable.html#foldLeft%28B%29" target="_self">foldLeft</a>, <a href="../../../scala/Iterable.html#foldRight%28B%29" target="_self">foldRight</a>, <a href="../../../scala/Iterable.html#%2F%3A%28B%29" target="_self">/:</a>, <a href="../../../scala/Iterable.html#%3A%5C%28B%29" target="_self">:\</a>, <a href="../../../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29" target="_self">reduceLeft</a>, <a href="../../../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29" target="_self">reduceRight</a>, <a href="../../../scala/Iterable.html#copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29" target="_self">copyToBuffer</a>, <a href="../../../scala/Iterable.html#sameElements%28Iterable%5BB%5D%29" target="_self">sameElements</a>, <a href="../../../scala/Iterable.html#toList" target="_self">toList</a>, <a href="../../../scala/Iterable.html#mkString%28String%2CString%2CString%29" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#mkString%28String%29" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#mkString" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%2CString%2CString%29" target="_self">addString</a>, <a href="../../../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%29" target="_self">addString</a>, <a href="../../../scala/Iterable.html#copyToArray%28Array%5BB%5D%2CInt%29" target="_self">copyToArray</a>, <a href="../../../scala/Iterable.html#hasDefiniteSize" target="_self">hasDefiniteSize</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/PartialFunction.html" target="_self">PartialFunction</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/PartialFunction.html#orElse%28PartialFunction%5BA1%2CB1%5D%29" target="_self">orElse</a>, <a href="../../../scala/PartialFunction.html#andThen%28%28B%29%3D%3EC%29" target="_self">andThen</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Function1.html" target="_self">Function1</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Function1.html#compose%28%28A%29%3D%3ET1%29" target="_self">compose</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Class Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.DefaultBufferIterator.html" target="_self">DefaultBufferIterator</a></em>
+        <code> extends </code><a href="../../../scala/collection/jcl/MutableSeq.DefaultSeqIterator.html" target="_self">DefaultSeqIterator</a><code> with </code><a href="../../../scala/collection/jcl/BufferIterator.html" target="_self">BufferIterator</a>[<a href="../../../scala/Int.html" target="_self">Int</a>, <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/jcl/Buffer.Range.html" target="_self">Range</a></em>
+        (<code>val </code><em>from</em> : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/Int.html" target="_self">Int</a>], <code>val </code><em>until</em> : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/Int.html" target="_self">Int</a>])<code> extends </code><a href="../../../scala/collection/jcl/Buffer.html" target="_self">Buffer</a>[<a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]
+        
+        
+      </td>
+    </tr>
+      </table>
+
+      
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Type Details</td></tr>
+        </table><div><a name="SortedSelf"></a><dl>
+      <dt>
+        
+        <code>protected final</code>
+        <code>type</code>
+        <em>SortedSelf</em>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="projection"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>projection</em> : <a href="../../../scala/collection/jcl/Buffer$object.Projection.html" target="_self">Projection</a>[<a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>returns a projection that can be used to call non-strict <code>filter</code>,
+   <code>map</code>, and <code>flatMap</code> methods that build projections
+   of the collection.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/RandomAccessSeq$object.Mutable.html" target="_self">Mutable</a>.<a href="../../../scala/RandomAccessSeq$object.Mutable.html#projection" target="_self">projection</a>, <a href="../../../scala/collection/jcl/MutableSeq.html" target="_self">MutableSeq</a>.<a href="../../../scala/collection/jcl/MutableSeq.html#projection" target="_self">projection</a>, <a href="../../../scala/collection/jcl/Collection.html" target="_self">Collection</a>.<a href="../../../scala/collection/jcl/Collection.html#projection" target="_self">projection</a>
+        </dd>
+      </dl><hr></hr>
+<a name="elements"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>elements</em> : <a href="../../../scala/collection/jcl/BufferIterator.html" target="_self">BufferIterator</a>[<a href="../../../scala/Int.html" target="_self">Int</a>, <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The default implementation of a map over mutable iterable collections.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/jcl/MutableSeq.html" target="_self">MutableSeq</a>.<a href="../../../scala/collection/jcl/MutableSeq.html#elements" target="_self">elements</a>
+        </dd>
+      </dl><hr></hr>
+<a name="firstKey"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>firstKey</em> : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The first index of a buffer is 0.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="lastKey"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>lastKey</em> : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The last index of a buffer is its size - 1.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="compare%28Int%2CInt%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>compare</em>(<em>k0</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>k1</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Indices are compared through subtraction.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/jcl/Ranged.html" target="_self">Ranged</a>.<a href="../../../scala/collection/jcl/Ranged.html#compare%28K%2CK%29" target="_self">compare</a>
+        </dd>
+      </dl><hr></hr>
+<a name="remove%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>remove</em>(<em>idx</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Removes the element at index <code>idx</code></dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="remove%28Int%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>remove</em>(<em>idx</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>length</em> : <a href="../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Removes N elements from index <code>idx</code></dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="replace%28Int%2CInt%2CSeq%5BA%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>replace</em>(<em>from</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>length</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>added</em> : <a href="../../../scala/Seq.html" target="_self">Seq</a>[<a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>replaces</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="set%28Int%2CA%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>set</em>(<em>idx</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>a</em> : <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Replaces the element at index "idx" with "a."</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>s the element replaced.</dd></dl>
+    <hr></hr>
+<a name="update%28Int%2CA%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>update</em>(<em>idx</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>a</em> : <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Equivalent to set except the replaced element is not returned.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/RandomAccessSeq$object.Mutable.html" target="_self">Mutable</a>.<a href="../../../scala/RandomAccessSeq$object.Mutable.html#update%28Int%2CA%29" target="_self">update</a>
+        </dd>
+      </dl><hr></hr>
+<a name="add%28A%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>add</em>(<em>a</em> : <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>s always true.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/jcl/Collection.html" target="_self">Collection</a>.<a href="../../../scala/collection/jcl/Collection.html#add%28A%29" target="_self">add</a>
+        </dd>
+      </dl><hr></hr>
+<a name="add%28Int%2CA%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>add</em>(<em>idx</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>a</em> : <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Inserts "a" into this buffer just before the element at index "idx."</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="addAll%28Int%2CIterable%5BA%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>addAll</em>(<em>idx</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>that</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Inserts all elements of <code>that</code> into this buffer just before
+    the element at index <code>idx</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>idx - </code>..</dd><dd><code>that - </code>..</dd></dl>
+    <hr></hr>
+<a name="transform%28%28A%29%3D%3EA%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>transform</em>(<em>f</em> : (<a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>) =&gt; <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Transforms each element of the collection in-place according to
+    <code>f</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code></dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>true</code> if the collection is actually updated.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/jcl/Collection.html" target="_self">Collection</a>.<a href="../../../scala/collection/jcl/Collection.html#transform%28%28A%29%3D%3EA%29" target="_self">transform</a>
+        </dd>
+      </dl><hr></hr>
+<a name="%2B%28A%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>+</em>(<em>a</em> : <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/collection/jcl/Buffer.html" target="_self">Buffer</a>[<a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>adds "a" from the collection. Useful for chaining.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/jcl/Collection.html" target="_self">Collection</a>.<a href="../../../scala/collection/jcl/Collection.html#%2B%28A%29" target="_self">+</a>
+        </dd>
+      </dl><hr></hr>
+<a name="-%3D%28A%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>-=</em>(<em>a</em> : <a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>removes "a" from the collection.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/jcl/Collection.html" target="_self">Collection</a>.<a href="../../../scala/collection/jcl/Collection.html#-%3D%28A%29" target="_self">-=</a>
+        </dd>
+      </dl><hr></hr>
+<a name="isEmpty"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>isEmpty</em> : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns true if length == 0</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/jcl/MutableSeq.html" target="_self">MutableSeq</a>.<a href="../../../scala/collection/jcl/MutableSeq.html#isEmpty" target="_self">isEmpty</a>
+        </dd>
+      </dl><hr></hr>
+<a name="rangeImpl%28Option%5BInt%5D%2COption%5BInt%5D%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>rangeImpl</em>(<em>from</em> : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/Int.html" target="_self">Int</a>], <em>until</em> : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/Int.html" target="_self">Int</a>]) : <a href="../../../scala/collection/jcl/Buffer.html" target="_self">Buffer</a>[<a href="../../../scala/collection/jcl/Buffer.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates a ranged projection of this collection. Any mutations in the
+    ranged projection will update this collection and vice versa.  Note: keys
+    are not garuanteed to be consistent between this collection and the projection.
+    This is the case for buffers where indexing is relative to the projection.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>from - </code>The lower-bound (inclusive) of the ranged projection.                 <code>None</code> if there is no lower bound.</dd><dd><code>until - </code>The upper-bound (exclusive) of the ranged projection.                 <code>None</code> if there is no upper bound.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/jcl/Ranged.html" target="_self">Ranged</a>.<a href="../../../scala/collection/jcl/Ranged.html#rangeImpl%28Option%5BK%5D%2COption%5BK%5D%29" target="_self">rangeImpl</a>
+        </dd>
+      </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

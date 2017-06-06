@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>object Sorting in scala.util</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../scala/util$package.html" target="_self">scala.util</a>
+        <br></br>
+        <span class="entity">object  Sorting</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/util/Sorting"><code>scala/util/Sorting.scala</code></a>]
+      </div><hr></hr>
+      <a name="Sorting"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>object</code>
+        <em>Sorting</em>
+      </dt>
+      <dd><code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd><p>
+    The Sorting object provides functions that can sort various kinds of
+    objects. You can provide a comparison function, or you can request a sort
+    of items that are viewable as <code>Ordered</code>. Some sorts that
+    operate directly on a subset of value types are also provided. These
+    implementations are derived from those in the Sun JDK.
+  </p>
+  <p>
+    Note that stability doesn't matter for value types, so use the quickSort
+    variants for those. <code>stableSort</code> is intended to be used with
+    objects when the prior ordering should be preserved, where possible.
+  </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Ross Judson</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0</dd></dl>
+    
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/util/Sorting$object.html#main%28Array%5BString%5D%29" target="_self">main</a></em>
+        (<em>args</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/util/Sorting$object.html#quickSort%28Array%5BDouble%5D%29" target="_self">quickSort</a></em>
+        (<em>a</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Double.html" target="_self">Double</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Quickly sort an array of Doubles.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/util/Sorting$object.html#quickSort%28Array%5BInt%5D%29" target="_self">quickSort</a></em>
+        (<em>a</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Int.html" target="_self">Int</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Quickly sort an array of Ints.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/util/Sorting$object.html#quickSort%28Array%5BFloat%5D%29" target="_self">quickSort</a></em>
+        (<em>a</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Float.html" target="_self">Float</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Quickly sort an array of Floats.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/util/Sorting$object.html#quickSort%28Array%5BK%5D%29" target="_self">quickSort</a></em>
+        [<em>K</em>](<em>a</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/util/Sorting$object.html#quickSort%28Array%5BK%5D%29#K" target="_self">K</a>])(<code>implicit </code><em>view$1</em> : (<a href="../../scala/util/Sorting$object.html#quickSort%28Array%5BK%5D%29#K" target="_self">K</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/util/Sorting$object.html#quickSort%28Array%5BK%5D%29#K" target="_self">K</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Quickly sort an array of items that are viewable as ordered.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>implicit def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/util/Sorting$object.html#seq2RichSort%28Seq%5BK%5D%29" target="_self">seq2RichSort</a></em>
+        [<em>K</em> &lt;: <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/util/Sorting$object.html#seq2RichSort%28Seq%5BK%5D%29#K" target="_self">K</a>]](<em>s</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/util/Sorting$object.html#seq2RichSort%28Seq%5BK%5D%29#K" target="_self">K</a>]) : <a href="../../scala/util/RichSorting.html" target="_self">RichSorting</a>[<a href="../../scala/util/Sorting$object.html#seq2RichSort%28Seq%5BK%5D%29#K" target="_self">K</a>]
+        
+        <div>Provides implicit access to sorting on arbitrary sequences of orderable
+    items. This doesn't quite work the way that I want yet -- K should be
+    bounded as viewable, but the compiler rejects that.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%29" target="_self">stableSort</a></em>
+        [<em>K</em>](<em>a</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%29#K" target="_self">K</a>])(<code>implicit </code><em>view$3</em> : (<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%29#K" target="_self">K</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%29#K" target="_self">K</a>]) : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%29#K" target="_self">K</a>]
+        
+        <div>Sorts an arbitrary sequence of items that are viewable as ordered.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29" target="_self">stableSort</a></em>
+        [<em>K</em>](<em>a</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29#K" target="_self">K</a>], <em>f</em> : (<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29#K" target="_self">K</a>, <a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29#K" target="_self">K</a>) =&gt; <a href="../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29#K" target="_self">K</a>]
+        
+        <div>Sorts an arbitrary sequence into an array, given a comparison function
+    that should return <code>true</code> iff parameter one is strictly less
+    than parameter two.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/util/Sorting$object.html#stableSort%28Array%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29" target="_self">stableSort</a></em>
+        [<em>K</em>](<em>a</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Array%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29#K" target="_self">K</a>], <em>f</em> : (<a href="../../scala/util/Sorting$object.html#stableSort%28Array%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29#K" target="_self">K</a>, <a href="../../scala/util/Sorting$object.html#stableSort%28Array%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29#K" target="_self">K</a>) =&gt; <a href="../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Sorts an array of <code>K</code> given an ordering function
+    <code>f</code>. <code>f</code> should return <code>true</code> iff
+    its first parameter is strictly less than its second parameter.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%29%3D%3EM%29" target="_self">stableSort</a></em>
+        [<em>K</em>, <em>M</em>](<em>a</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%29%3D%3EM%29#K" target="_self">K</a>], <em>f</em> : (<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%29%3D%3EM%29#K" target="_self">K</a>) =&gt; <a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%29%3D%3EM%29#M" target="_self">M</a>)(<code>implicit </code><em>view$4</em> : (<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%29%3D%3EM%29#M" target="_self">M</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%29%3D%3EM%29#M" target="_self">M</a>]) : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%29%3D%3EM%29#K" target="_self">K</a>]
+        
+        <div>Stably sorts a sequence of items given an extraction function that will
+    return an ordered key from an item.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/util/Sorting$object.html#stableSort%28Array%5BK%5D%29" target="_self">stableSort</a></em>
+        [<em>K</em>](<em>a</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Array%5BK%5D%29#K" target="_self">K</a>])(<code>implicit </code><em>view$2</em> : (<a href="../../scala/util/Sorting$object.html#stableSort%28Array%5BK%5D%29#K" target="_self">K</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Array%5BK%5D%29#K" target="_self">K</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Sort an array of K where K is Ordered, preserving the existing order
+      where the values are equal.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="seq2RichSort%28Seq%5BK%5D%29"></a><dl>
+      <dt>
+        
+        <code>implicit</code>
+        <code>def</code>
+        <em>seq2RichSort</em>[<em>K</em> &lt;: <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/util/Sorting$object.html#seq2RichSort%28Seq%5BK%5D%29#K" target="_self">K</a>]](<em>s</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/util/Sorting$object.html#seq2RichSort%28Seq%5BK%5D%29#K" target="_self">K</a>]) : <a href="../../scala/util/RichSorting.html" target="_self">RichSorting</a>[<a href="../../scala/util/Sorting$object.html#seq2RichSort%28Seq%5BK%5D%29#K" target="_self">K</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Provides implicit access to sorting on arbitrary sequences of orderable
+    items. This doesn't quite work the way that I want yet -- K should be
+    bounded as viewable, but the compiler rejects that.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="quickSort%28Array%5BDouble%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>quickSort</em>(<em>a</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Double.html" target="_self">Double</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Quickly sort an array of Doubles.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="quickSort%28Array%5BK%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>quickSort</em>[<em>K</em>](<em>a</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/util/Sorting$object.html#quickSort%28Array%5BK%5D%29#K" target="_self">K</a>])(<code>implicit </code><em>view$1</em> : (<a href="../../scala/util/Sorting$object.html#quickSort%28Array%5BK%5D%29#K" target="_self">K</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/util/Sorting$object.html#quickSort%28Array%5BK%5D%29#K" target="_self">K</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Quickly sort an array of items that are viewable as ordered.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="quickSort%28Array%5BInt%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>quickSort</em>(<em>a</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Int.html" target="_self">Int</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Quickly sort an array of Ints.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="quickSort%28Array%5BFloat%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>quickSort</em>(<em>a</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/Float.html" target="_self">Float</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Quickly sort an array of Floats.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="stableSort%28Array%5BK%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>stableSort</em>[<em>K</em>](<em>a</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Array%5BK%5D%29#K" target="_self">K</a>])(<code>implicit </code><em>view$2</em> : (<a href="../../scala/util/Sorting$object.html#stableSort%28Array%5BK%5D%29#K" target="_self">K</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Array%5BK%5D%29#K" target="_self">K</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Sort an array of K where K is Ordered, preserving the existing order
+      where the values are equal.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="stableSort%28Array%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>stableSort</em>[<em>K</em>](<em>a</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Array%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29#K" target="_self">K</a>], <em>f</em> : (<a href="../../scala/util/Sorting$object.html#stableSort%28Array%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29#K" target="_self">K</a>, <a href="../../scala/util/Sorting$object.html#stableSort%28Array%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29#K" target="_self">K</a>) =&gt; <a href="../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Sorts an array of <code>K</code> given an ordering function
+    <code>f</code>. <code>f</code> should return <code>true</code> iff
+    its first parameter is strictly less than its second parameter.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="stableSort%28Seq%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>stableSort</em>[<em>K</em>](<em>a</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29#K" target="_self">K</a>], <em>f</em> : (<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29#K" target="_self">K</a>, <a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29#K" target="_self">K</a>) =&gt; <a href="../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%2CK%29%3D%3EBoolean%29#K" target="_self">K</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Sorts an arbitrary sequence into an array, given a comparison function
+    that should return <code>true</code> iff parameter one is strictly less
+    than parameter two.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>a - </code>the sequence to be sorted.</dd><dd><code>f - </code>the comparison function.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the sorted sequence of items.</dd></dl>
+    <hr></hr>
+<a name="stableSort%28Seq%5BK%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>stableSort</em>[<em>K</em>](<em>a</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%29#K" target="_self">K</a>])(<code>implicit </code><em>view$3</em> : (<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%29#K" target="_self">K</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%29#K" target="_self">K</a>]) : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%29#K" target="_self">K</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Sorts an arbitrary sequence of items that are viewable as ordered.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="stableSort%28Seq%5BK%5D%2C%28K%29%3D%3EM%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>stableSort</em>[<em>K</em>, <em>M</em>](<em>a</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%29%3D%3EM%29#K" target="_self">K</a>], <em>f</em> : (<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%29%3D%3EM%29#K" target="_self">K</a>) =&gt; <a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%29%3D%3EM%29#M" target="_self">M</a>)(<code>implicit </code><em>view$4</em> : (<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%29%3D%3EM%29#M" target="_self">M</a>) =&gt; <a href="../../scala/Ordered.html" target="_self">Ordered</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%29%3D%3EM%29#M" target="_self">M</a>]) : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="../../scala/util/Sorting$object.html#stableSort%28Seq%5BK%5D%2C%28K%29%3D%3EM%29#K" target="_self">K</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Stably sorts a sequence of items given an extraction function that will
+    return an ordered key from an item.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>a - </code>the sequence to be sorted.</dd><dd><code>f - </code>the comparison function.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the sorted sequence of items.</dd></dl>
+    <hr></hr>
+<a name="main%28Array%5BString%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>main</em>(<em>args</em> : <a href="../../scala/Array.html" target="_self">Array</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

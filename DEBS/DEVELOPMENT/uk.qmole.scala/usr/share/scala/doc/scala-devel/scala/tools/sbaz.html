@@ -1,0 +1,275 @@
+<?xml version="1.1" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>sbaz man page</title>
+<meta http-equiv="Content-Language" content="en"/>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<meta name="Author" content="Stephane Micheloud"/>
+<style type="text/css">
+  <!--
+  blockquote, pre { margin:1em 4em 1em 4em; }
+  dt { margin: 0.6em 0 0 0; }
+  p { margin:0.6em 2em 0.6em 2em; text-align:justify; }
+  //-->
+</style>
+</head>
+
+<body>
+<!-- header -->
+<div style="margin: 0 0 2em 0;">
+<div style="float:left;">
+sbaz(1)
+</div>
+<div style="float:right;">
+sbaz(1)
+</div>
+<div style="text-align:center;">
+USER COMMANDS
+</div>
+</div>
+
+<h3 id="name">NAME</h3>
+<p>
+<code><b>sbaz</b></code> &#8211; Scala package sharing tool for the <a href="http://scala-lang.org/">Scala 2</a> language</p>
+
+<h3 id="synopsis">SYNOPSIS</h3>
+<p>
+<code><b>sbaz</b></code><code>  [ &lt;<i>global_options</i>&gt; ] &lt;<i>command</i>&gt; [ &lt;<i>command_options</i>&gt; ]</code></p>
+
+<h3 id="parameters">PARAMETERS</h3>
+<p>
+<ins><dl>
+<dt>
+<code>&lt;<i>global_options</i>&gt;</code>
+</dt>
+<dd>
+Command line options. See <a href="#options"><b>OPTIONS</b></a> below.</dd>
+<dt>
+<code>&lt;<i>command</i>&gt;</code>
+</dt>
+<dd>
+Internal <code><b>sbaz</b></code> command.</dd>
+<dt>
+<code>&lt;<i>command_options</i>&gt;</code>
+</dt>
+<dd>
+<code><b>sbaz</b></code> command options.</dd>
+</dl></ins>
+</p>
+
+<h3 id="description">DESCRIPTION</h3>
+<p>
+The <code><b>sbaz</b></code> tool is a system used by Scala enthusiasts to share computer files with each other. In particular, it makes it easy to share libraries and applications.</p>
+
+<h3 id="options">OPTIONS</h3>
+<p>
+The <code><b>sbaz</b></code> tool has a set of standard options that are supported on the current development environment and will be supported in future releases.</p>
+
+<h4 id="global_options">Global Options</h4>
+<p>
+<ins><dl>
+<dt>
+<code><b>&#8211;d</b> &lt;<i>dir</i>&gt; </code>
+</dt>
+<dd>
+Operate on dir as the local managed directory.</dd>
+<dt>
+<code><b>&#8211;n</b> </code>| <code><b>&#8211;&#8211;dryrun</b> </code>
+</dt>
+<dd>
+Do not actually do anything.  Only print out what tool would normally do with the following arguments.</dd>
+<dt>
+<code><b>&#8211;v</b> </code>| <code><b>&#8211;&#8211;verbose</b> </code>
+</dt>
+<dd>
+Output messages about what the <code><b>sbaz</b></code> tool is doing</dd>
+<dt>
+<code><b>&#8211;version</b> </code>
+</dt>
+<dd>
+Display the version information</dd>
+<dt>
+<code><b>&#8211;-univ</b> </code>&lt;<i>name</i>&gt;
+</dt>
+<dd>
+Operate on the named remote universe, selected from those in the local managed directory's universe. Affects the <code><b>share</b></code> and <code><b>retract</b></code> commands.</dd>
+<dt>
+<code><b>&#8211;-univ-url</b> </code>&lt;<i>url</i>&gt;
+</dt>
+<dd>
+Operate on the universe at the specified URL.  Affects the <code><b>share</b></code> and <code><b>retract</b></code> commands.</dd>
+</dl></ins>
+</p>
+
+<h4 id="available_commands">Available Commands</h4>
+<p>
+<ins><dl>
+<dt>
+<code><b>available</b></code>
+</dt>
+<dd>
+List the available packages for installation; only display the three most recent versions of each package.</dd>
+<dt>
+<code><b>available</b></code> <code><b>&#8211;a</b> </code>
+</dt>
+<dd>
+List the available packages for installation; display all shared versions of each package.</dd>
+<dt>
+<code><b>compact</b></code>
+</dt>
+<dd>
+Clear the download cache to save space.</dd>
+<dt>
+<code><b>help</b></code>
+</dt>
+<dd>
+Display a help message.</dd>
+<dt>
+<code><b>install</b></code>
+</dt>
+<dd>
+Install a package.</dd>
+<dt>
+<code><b>installed</b></code>
+</dt>
+<dd>
+List the packages that are installed.</dd>
+<dt>
+<code><b>keycreate</b></code>
+</dt>
+<dd>
+Request that a new key be created.</dd>
+<dt>
+<code><b>keyforget</b></code>
+</dt>
+<dd>
+Forget the specified key.</dd>
+<dt>
+<code><b>keyknown</b></code>
+</dt>
+<dd>
+List all known keys.</dd>
+<dt>
+<code><b>keyremember</b></code>
+</dt>
+<dd>
+Remember the specified key for future use.</dd>
+<dt>
+<code><b>keyremoteknown</b></code>
+</dt>
+<dd>
+List all keys known to the bazaar server.</dd>
+<dt>
+<code><b>keyrevoke</b></code>
+</dt>
+<dd>
+Request that a specified key be revoked.</dd>
+<dt>
+<code><b>pack</b></code> &lt;<i>name</i>&gt; &lt;<i>directory</i>&gt; [ &lt;<i>options</i>&gt; ]
+</dt>
+<dd>
+Create an sbaz package and, if a link base is specified, an advertisement file. The package file is named <code>name-version.sbp</code>. The advertisement file is named <code>name-version.advert</code>. The URL is the advertisement file is the URL base with the package filename appended.</dd>
+<dt>
+<code><b>remove</b></code>
+</dt>
+<dd>
+Remove a package.</dd>
+<dt>
+<code><b>retract</b></code>
+</dt>
+<dd>
+Retract a previously shared package.</dd>
+<dt>
+<code><b>setuniverse</b></code>
+</dt>
+<dd>
+Set the universe for a directory.</dd>
+<dt>
+<code><b>setup</b></code>
+</dt>
+<dd>
+Initialize a directory to be managed.</dd>
+<dt>
+<code><b>share</b></code> &lt;<i>filename</i>&gt;
+</dt>
+<dd>
+Share a package advertisement on a bazaar.</dd>
+<dt>
+<code><b>share</b></code> <code><b>&#8211;i</b> &lt;<i>descriptor</i>&gt; </code>
+</dt>
+<dd>
+The package advertisement is usually specified in a file, but it may also be specified on the command line with the <code><b>&#8211;i</b> </code> option.</dd>
+<dt>
+<code><b>share</b></code> <code><b>&#8211;&#8211;template</b> </code>
+</dt>
+<dd>
+If <code><b>&#8211;&#8211;template</b> </code> is specified, then instead of uploading a description, the command prints out a template of a package advertisement.</dd>
+<dt>
+<code><b>show</b></code>
+</dt>
+<dd>
+Show information about one package.</dd>
+<dt>
+<code><b>update</b></code>
+</dt>
+<dd>
+Update the list of available packages.</dd>
+<dt>
+<code><b>upgrade</b></code>
+</dt>
+<dd>
+Upgrade all possible packages.</dd>
+</dl></ins>
+</p>
+
+<h3 id="examples">EXAMPLES</h3>
+<p>
+<ins><dl>
+<dt>
+Update the list of available packages.
+</dt>
+<dd>
+<code><b>sbaz</b></code><code> <code><b>update</b></code></code></dd>
+<dt>
+Upload package description for <code>scala-devel-2.5.1</code> to the universe
+</dt>
+<dd>
+<code><b>sbaz</b></code><code> <code><b>share</b></code> scala-devel-2.5.1.advert</code></dd>
+</dl></ins>
+</p>
+
+<h3 id="exit_status">EXIT STATUS</h3>
+<p>
+<code><b>sbaz</b></code> returns a zero exist status if it succeeds to process the specified input files. Non zero is returned in case of failure.</p>
+
+<h3 id="author">AUTHOR</h3>
+<p>
+Written by Lex Spoon.</p>
+
+<h3 id="reporting_bugs">REPORTING BUGS</h3>
+<p>
+Report bugs to <code>&lt;scala@listes.epfl.ch&gt;</code>.</p>
+
+<h3 id="copyright">COPYRIGHT</h3>
+<p>
+This is open-source software, available to you under a BSD-like license. See accomponying "copyright" or "LICENSE" file for copying conditions. There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p>
+
+<h3 id="see_also">SEE ALSO</h3>
+<p>
+<a href="fsc.html"><b>fsc</b>(1)</a>, <a href="scala.html"><b>scala</b>(1)</a>, <a href="scalac.html"><b>scalac</b>(1)</a>, <a href="scaladoc.html"><b>scaladoc</b>(1)</a>, <a href="scalap.html"><b>scalap</b>(1)</a></p>
+<!-- footer -->
+<div style="margin: 2em 0 0 0;">
+<div style="float:left;">
+version 0.3
+</div>
+<div style="float:right;">
+sbaz(1)
+</div>
+<div style="text-align:center;">
+August 24, 2006
+</div>
+</div>
+</body>
+</html>

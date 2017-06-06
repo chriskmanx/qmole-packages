@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.dbc.statement.expression</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/expression/Aggregate.html" target="_self">Aggregate</a></em>
+        <code> extends </code><a href="../../../scala/dbc/statement/Expression.html" target="_self">Expression</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/expression/BinaryOperator.html" target="_self">BinaryOperator</a></em>
+        <code> extends </code><a href="../../../scala/dbc/statement/Expression.html" target="_self">Expression</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/expression/Constant.html" target="_self">Constant</a></em>
+        <code> extends </code><a href="../../../scala/dbc/statement/Expression.html" target="_self">Expression</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/expression/Field.html" target="_self">Field</a></em>
+        <code> extends </code><a href="../../../scala/dbc/statement/Expression.html" target="_self">Expression</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/expression/FunctionCall.html" target="_self">FunctionCall</a></em>
+        (<code>val </code><em>functionName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>arguments</em> : <a href="../../../scala/List.html" target="_self">List</a>[<a href="../../../scala/dbc/statement/Expression.html" target="_self">Expression</a>])<code> extends </code><a href="../../../scala/dbc/statement/Expression.html" target="_self">Expression</a><code> with </code><a href="../../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/expression/Select.html" target="_self">Select</a></em>
+        <code> extends </code><a href="../../../scala/dbc/statement/Expression.html" target="_self">Expression</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/expression/SetFunction.html" target="_self">SetFunction</a></em>
+        <code> extends </code><a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/expression/TypeCast.html" target="_self">TypeCast</a></em>
+        (<code>val </code><em>expression</em> : <a href="../../../scala/dbc/statement/Expression.html" target="_self">Expression</a>, <code>val </code><em>castType</em> : <a href="../../../scala/dbc/DataType.html" target="_self">DataType</a>)<code> extends </code><a href="../../../scala/dbc/statement/Expression.html" target="_self">Expression</a><code> with </code><a href="../../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/expression/UnaryOperator.html" target="_self">UnaryOperator</a></em>
+        <code> extends </code><a href="../../../scala/dbc/statement/Expression.html" target="_self">Expression</a>
+        
+        
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/expression/Default$object.html" target="_self">Default</a></em>
+        <code> extends </code><a href="../../../scala/dbc/statement/Expression.html" target="_self">Expression</a><code> with </code><a href="../../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/dbc/statement/expression/SetFunction$object.html" target="_self">SetFunction</a></em>
+        <code> extends </code><a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>        
+        </table></body>
+      </html>

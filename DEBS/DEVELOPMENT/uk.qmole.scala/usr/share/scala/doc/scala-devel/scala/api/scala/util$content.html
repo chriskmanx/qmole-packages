@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.util</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/util/DynamicVariable.html" target="_self">DynamicVariable</a></em>
+        [<em>T</em>](<em>init</em> : <a href="../scala/util/DynamicVariable.html#T" target="_self">T</a>)<code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    DynamicVariables provide a binding mechanism where the current
+    value is found through <em>dynamic scope</em>, but where
+    access to the variable itself is resolved through <em>static
+    scope</em>.
+  </p>
+  <p>
+    The current value can be retrieved with the
+    <code>value</code> method.  New values should be
+    pushed using the <code>withValue</code> method.
+    Values pushed via <code>withValue</code> only
+    stay valid while the <code>withValue</code>'s
+    <em>second</em> argument, a parameterless closure,
+    executes.  When the second argument finishes,
+    the variable reverts to the previous value.
+  </p>
+  <p>
+    Usage of <code>withValue</code> looks like this:
+  </p>
+  <blockquote><pre>
+  someDynamicVariable.withValue(newValue) {
+    // ... code called in here that calls value ...
+    // ... will be given back the newValue ...
+  }
+  </pre></blockquote>
+  <p>
+    Each thread gets its own stack of bindings.  When a 
+    new thread is created, the fluid gets a copy of
+    the stack of bindings from the parent thread, and 
+    from then on the bindings for the new thread
+    are independent of those for the original thread.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/util/Fluid.html" target="_self">Fluid</a></em>
+        [<em>T</em>](<em>init</em> : <a href="../scala/util/Fluid.html#T" target="_self">T</a>)<code> extends </code><a href="../scala/util/DynamicVariable.html" target="_self">DynamicVariable</a>[<a href="../scala/util/Fluid.html#T" target="_self">T</a>]
+        
+        <div><p>This is the same as DynamicVariable.  The name "fluid"
+  is confusing, and perhaps not even accurate.</p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/util/RichSorting.html" target="_self">RichSorting</a></em>
+        [<em>K</em> &lt;: <a href="../scala/Ordered.html" target="_self">Ordered</a>[<a href="../scala/util/RichSorting.html#K" target="_self">K</a>]](<em>s</em> : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/util/RichSorting.html#K" target="_self">K</a>])<code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    A <code>RichSorting</code> object is generally created implicitly through
+    the use of the <code>sort</code> function on an arbitrary sequence, where
+    the items are ordered.
+  </p></div>
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/util/Properties$object.html" target="_self">Properties</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>A utility to load the library properties from a Java properties file
+  included in the jar.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/util/Sorting$object.html" target="_self">Sorting</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+    The Sorting object provides functions that can sort various kinds of
+    objects. You can provide a comparison function, or you can request a sort
+    of items that are viewable as <code>Ordered</code>. Some sorts that
+    operate directly on a subset of value types are also provided. These
+    implementations are derived from those in the Sun JDK.
+  </p>
+  <p>
+    Note that stability doesn't matter for value types, so use the quickSort
+    variants for those. <code>stableSort</code> is intended to be used with
+    objects when the prior ordering should be preserved, where possible.
+  </p></div>
+      </td>
+    </tr>        
+        </table></body>
+      </html>

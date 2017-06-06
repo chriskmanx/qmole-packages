@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class TickedScheduler in scala.actors</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../scala/actors$package.html" target="_self">scala.actors</a>
+        <br></br>
+        <span class="entity">class  TickedScheduler</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/actors/TickedScheduler"><code>scala/actors/TickedScheduler.scala</code></a>]
+      </div><hr></hr>
+      <a name="TickedScheduler"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>class</code>
+        <em>TickedScheduler</em>
+      </dt>
+      <dd><code> extends </code><a href="" target="contentFrame" class="java/lang/Thread">java.lang.Thread</a><code> with </code><a href="../../scala/actors/IScheduler.html" target="_self">IScheduler</a></dd>
+    </dl>
+      <dl><dd><p>This scheduler uses a thread pool to execute tasks that are generated
+ by the execution of actors.</p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>0.9.8</dd><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Philipp Haller</dd></dl>
+    
+      
+
+<table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Values and Variables inherited from <a href="../../scala/actors/IScheduler.html" target="_self">IScheduler</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/actors/IScheduler.html#QUIT_TASK" target="_self">QUIT_TASK</a>
+        </td></tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/TickedScheduler.html#execute%28Runnable%29" target="_self">execute</a></em>
+        (<em>item</em> : <a href="" target="contentFrame" class="java/lang/Runnable">java.lang.Runnable</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/TickedScheduler.html#getTask%28scala.actors.WorkerThread%29" target="_self">getTask</a></em>
+        (<em>worker</em> : <a href="../../scala/actors/WorkerThread.html" target="_self">WorkerThread</a>) : <a href="" target="contentFrame" class="java/lang/Runnable">java.lang.Runnable</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/TickedScheduler.html#onLockup%28%28%29%3D%3EUnit%29" target="_self">onLockup</a></em>
+        (<em>handler</em> : () =&gt; <a href="../../scala/Unit.html" target="_self">Unit</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/TickedScheduler.html#onLockup%28Int%29" target="_self">onLockup</a></em>
+        (<em>millis</em> : <a href="../../scala/Int.html" target="_self">Int</a>)(<em>handler</em> : () =&gt; <a href="../../scala/Unit.html" target="_self">Unit</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/TickedScheduler.html#pendReaction" target="_self">pendReaction</a></em>
+         : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/TickedScheduler.html#printActorDump" target="_self">printActorDump</a></em>
+         : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/TickedScheduler.html#run%28%29" target="_self">run</a></em>
+         : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/TickedScheduler.html#shutdown%28%29" target="_self">shutdown</a></em>
+         : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Shuts down all idle worker threads.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/TickedScheduler.html#snapshot%28%29" target="_self">snapshot</a></em>
+         : <a href="" target="contentFrame" class="scala/actors/LinkedQueue">scala.actors.LinkedQueue</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/TickedScheduler.html#start%28Runnable%29" target="_self">start</a></em>
+        (<em>task</em> : <a href="" target="contentFrame" class="java/lang/Runnable">java.lang.Runnable</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/TickedScheduler.html#terminated%28scala.actors.Actor%29" target="_self">terminated</a></em>
+        (<em>a</em> : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/TickedScheduler.html#tick%28scala.actors.Actor%29" target="_self">tick</a></em>
+        (<em>a</em> : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/TickedScheduler.html#unPendReaction" target="_self">unPendReaction</a></em>
+         : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="" target="contentFrame" class="java/lang/Thread">java.lang.Thread</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="#start" target="contentFrame" class="java/lang/Thread">java.lang.Thread.start</a>, <a href="#stop" target="contentFrame" class="java/lang/Thread">java.lang.Thread.stop</a>, <a href="#stop" target="contentFrame" class="java/lang/Thread">java.lang.Thread.stop</a>, <a href="#interrupt" target="contentFrame" class="java/lang/Thread">java.lang.Thread.interrupt</a>, <a href="#isInterrupted" target="contentFrame" class="java/lang/Thread">java.lang.Thread.isInterrupted</a>, <a href="#destroy" target="contentFrame" class="java/lang/Thread">java.lang.Thread.destroy</a>, <a href="#isAlive" target="contentFrame" class="java/lang/Thread">java.lang.Thread.isAlive</a>, <a href="#suspend" target="contentFrame" class="java/lang/Thread">java.lang.Thread.suspend</a>, <a href="#resume" target="contentFrame" class="java/lang/Thread">java.lang.Thread.resume</a>, <a href="#setPriority" target="contentFrame" class="java/lang/Thread">java.lang.Thread.setPriority</a>, <a href="#getPriority" target="contentFrame" class="java/lang/Thread">java.lang.Thread.getPriority</a>, <a href="#setName" target="contentFrame" class="java/lang/Thread">java.lang.Thread.setName</a>, <a href="#getName" target="contentFrame" class="java/lang/Thread">java.lang.Thread.getName</a>, <a href="#getThreadGroup" target="contentFrame" class="java/lang/Thread">java.lang.Thread.getThreadGroup</a>, <a href="#countStackFrames" target="contentFrame" class="java/lang/Thread">java.lang.Thread.countStackFrames</a>, <a href="#join" target="contentFrame" class="java/lang/Thread">java.lang.Thread.join</a>, <a href="#join" target="contentFrame" class="java/lang/Thread">java.lang.Thread.join</a>, <a href="#join" target="contentFrame" class="java/lang/Thread">java.lang.Thread.join</a>, <a href="#setDaemon" target="contentFrame" class="java/lang/Thread">java.lang.Thread.setDaemon</a>, <a href="#isDaemon" target="contentFrame" class="java/lang/Thread">java.lang.Thread.isDaemon</a>, <a href="#checkAccess" target="contentFrame" class="java/lang/Thread">java.lang.Thread.checkAccess</a>, <a href="#toString" target="contentFrame" class="java/lang/Thread">java.lang.Thread.toString</a>, <a href="#getContextClassLoader" target="contentFrame" class="java/lang/Thread">java.lang.Thread.getContextClassLoader</a>, <a href="#setContextClassLoader" target="contentFrame" class="java/lang/Thread">java.lang.Thread.setContextClassLoader</a>, <a href="#getStackTrace" target="contentFrame" class="java/lang/Thread">java.lang.Thread.getStackTrace</a>, <a href="#getId" target="contentFrame" class="java/lang/Thread">java.lang.Thread.getId</a>, <a href="#getState" target="contentFrame" class="java/lang/Thread">java.lang.Thread.getState</a>, <a href="#getUncaughtExceptionHandler" target="contentFrame" class="java/lang/Thread">java.lang.Thread.getUncaughtExceptionHandler</a>, <a href="#setUncaughtExceptionHandler" target="contentFrame" class="java/lang/Thread">java.lang.Thread.setUncaughtExceptionHandler</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="pendReaction"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>pendReaction</em> : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/IScheduler.html" target="_self">IScheduler</a>.<a href="../../scala/actors/IScheduler.html#pendReaction" target="_self">pendReaction</a>
+        </dd>
+      </dl><hr></hr>
+<a name="unPendReaction"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>unPendReaction</em> : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/IScheduler.html" target="_self">IScheduler</a>.<a href="../../scala/actors/IScheduler.html#unPendReaction" target="_self">unPendReaction</a>
+        </dd>
+      </dl><hr></hr>
+<a name="printActorDump"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>printActorDump</em> : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/IScheduler.html" target="_self">IScheduler</a>.<a href="../../scala/actors/IScheduler.html#printActorDump" target="_self">printActorDump</a>
+        </dd>
+      </dl><hr></hr>
+<a name="start%28Runnable%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>start</em>(<em>task</em> : <a href="" target="contentFrame" class="java/lang/Runnable">java.lang.Runnable</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/IScheduler.html" target="_self">IScheduler</a>.<a href="../../scala/actors/IScheduler.html#start%28java.lang.Runnable%29" target="_self">start</a>
+        </dd>
+      </dl><hr></hr>
+<a name="terminated%28scala.actors.Actor%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>terminated</em>(<em>a</em> : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/IScheduler.html" target="_self">IScheduler</a>.<a href="../../scala/actors/IScheduler.html#terminated%28scala.actors.Actor%29" target="_self">terminated</a>
+        </dd>
+      </dl><hr></hr>
+<a name="onLockup%28%28%29%3D%3EUnit%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>onLockup</em>(<em>handler</em> : () =&gt; <a href="../../scala/Unit.html" target="_self">Unit</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/IScheduler.html" target="_self">IScheduler</a>.<a href="../../scala/actors/IScheduler.html#onLockup%28%28%29%3D%3EUnit%29" target="_self">onLockup</a>
+        </dd>
+      </dl><hr></hr>
+<a name="onLockup%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>onLockup</em>(<em>millis</em> : <a href="../../scala/Int.html" target="_self">Int</a>)(<em>handler</em> : () =&gt; <a href="../../scala/Unit.html" target="_self">Unit</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/IScheduler.html" target="_self">IScheduler</a>.<a href="../../scala/actors/IScheduler.html#onLockup%28Int%29" target="_self">onLockup</a>
+        </dd>
+      </dl><hr></hr>
+<a name="run%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>run</em> : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="" target="contentFrame" class="java/lang/Thread">java.lang.Thread</a>.<a href="#run" target="contentFrame" class="java/lang/Thread">java.lang.Thread.run</a>
+        </dd>
+      </dl><hr></hr>
+<a name="execute%28Runnable%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>execute</em>(<em>item</em> : <a href="" target="contentFrame" class="java/lang/Runnable">java.lang.Runnable</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>item - </code>the task to be executed.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/IScheduler.html" target="_self">IScheduler</a>.<a href="../../scala/actors/IScheduler.html#execute%28java.lang.Runnable%29" target="_self">execute</a>
+        </dd>
+      </dl><hr></hr>
+<a name="snapshot%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>snapshot</em> : <a href="" target="contentFrame" class="scala/actors/LinkedQueue">scala.actors.LinkedQueue</a>
+      </dt>
+      <dd></dd>
+    </dl><dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/IScheduler.html" target="_self">IScheduler</a>.<a href="../../scala/actors/IScheduler.html#snapshot%28%29" target="_self">snapshot</a>
+        </dd>
+      </dl><hr></hr>
+<a name="getTask%28scala.actors.WorkerThread%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>getTask</em>(<em>worker</em> : <a href="../../scala/actors/WorkerThread.html" target="_self">WorkerThread</a>) : <a href="" target="contentFrame" class="java/lang/Runnable">java.lang.Runnable</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>worker - </code>the worker thread executing tasks</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the executed task</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/IScheduler.html" target="_self">IScheduler</a>.<a href="../../scala/actors/IScheduler.html#getTask%28scala.actors.WorkerThread%29" target="_self">getTask</a>
+        </dd>
+      </dl><hr></hr>
+<a name="tick%28scala.actors.Actor%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>tick</em>(<em>a</em> : <a href="../../scala/actors/Actor.html" target="_self">Actor</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>a - </code>the actor</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/IScheduler.html" target="_self">IScheduler</a>.<a href="../../scala/actors/IScheduler.html#tick%28scala.actors.Actor%29" target="_self">tick</a>
+        </dd>
+      </dl><hr></hr>
+<a name="shutdown%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>shutdown</em> : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Shuts down all idle worker threads.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../scala/actors/IScheduler.html" target="_self">IScheduler</a>.<a href="../../scala/actors/IScheduler.html#shutdown%28%29" target="_self">shutdown</a>
+        </dd>
+      </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

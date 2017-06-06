@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>trait Binders in scala.util.parsing.ast</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../../scala/util/parsing/ast$package.html" target="_self">scala.util.parsing.ast</a>
+        <br></br>
+        <span class="entity">trait  Binders</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/util/parsing/ast/Binders"><code>scala/util/parsing/ast/Binders.scala</code></a>]
+      </div><hr></hr>
+      <a name="Binders"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>trait</code>
+        <em>Binders</em>
+      </dt>
+      <dd><code> extends </code><a href="../../../../scala/util/parsing/ast/AbstractSyntax.html" target="_self">AbstractSyntax</a><code> with </code><a href="../../../../scala/util/parsing/ast/Mappable.html" target="_self">Mappable</a></dd>
+    </dl>
+      <dl><dd><p>
+    This component provides functionality for enforcing variable binding
+    during parse-time.
+  </p>
+  <p>
+   When parsing simple languages, like Featherweight Scala, these parser
+   combinators will fully enforce the binding discipline. When names are
+   allowed to be left unqualified, these mechanisms would have to be
+   complemented by an extra phase that resolves names that couldn't be
+   resolved using the naive binding rules. (Maybe some machinery to
+   model `implicit' binders (e.g., `this' and imported qualifiers) 
+   and selection on a binder will suffice?)
+ </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Adriaan Moors</dd></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../../../../scala/util/parsing/combinator/syntactical/BindingParsers.html" target="_self">BindingParsers</a></dd>
+      </dl><hr></hr>
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>implicit def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.html#NameElementIsMappable%28Binders.this.NameElement%29" target="_self">NameElementIsMappable</a></em>
+        (<em>self</em> : <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>) : <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>implicit def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.html#ScopeIsMappable%28Binders.this.Scope%5Bbt%5D%29" target="_self">ScopeIsMappable</a></em>
+        [<em>bt</em> &lt;: <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>](<em>scope</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html" target="_self">Scope</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#ScopeIsMappable%28Binders.this.Scope%5Bbt%5D%29#bt" target="_self">bt</a>])(<code>implicit </code><em>view$10</em> : (<a href="../../../../scala/util/parsing/ast/Binders.html#ScopeIsMappable%28Binders.this.Scope%5Bbt%5D%29#bt" target="_self">bt</a>) =&gt; <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#ScopeIsMappable%28Binders.this.Scope%5Bbt%5D%29#bt" target="_self">bt</a>]) : <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.Scope.html" target="_self">Scope</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#ScopeIsMappable%28Binders.this.Scope%5Bbt%5D%29#bt" target="_self">bt</a>]]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>implicit def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.html#UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29" target="_self">UnderBinderIsMappable</a></em>
+        [<em>bt</em> &lt;: <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>, <em>st</em>](<em>ub</em> : <a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html" target="_self">UnderBinder</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29#bt" target="_self">bt</a>, <a href="../../../../scala/util/parsing/ast/Binders.html#UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29#st" target="_self">st</a>])(<code>implicit </code><em>view$8</em> : (<a href="../../../../scala/util/parsing/ast/Binders.html#UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29#bt" target="_self">bt</a>) =&gt; <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29#bt" target="_self">bt</a>], <code>implicit </code><em>view$9</em> : (<a href="../../../../scala/util/parsing/ast/Binders.html#UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29#st" target="_self">st</a>) =&gt; <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29#st" target="_self">st</a>]) : <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html" target="_self">UnderBinder</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29#bt" target="_self">bt</a>, <a href="../../../../scala/util/parsing/ast/Binders.html#UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29#st" target="_self">st</a>]]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.html#UserNameElementIsMappable%28t%29" target="_self">UserNameElementIsMappable</a></em>
+        [<em>t</em> &lt;: <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>](<em>self</em> : <a href="../../../../scala/util/parsing/ast/Binders.html#UserNameElementIsMappable%28t%29#t" target="_self">t</a>) : <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#UserNameElementIsMappable%28t%29#t" target="_self">t</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.html#return_%28T%29" target="_self">return_</a></em>
+        [<em>T</em>](<em>result</em> : <a href="../../../../scala/util/parsing/ast/Binders.html#return_%28T%29#T" target="_self">T</a>) : <a href="../../../../scala/util/parsing/ast/Binders.ReturnAndDo.html" target="_self">ReturnAndDo</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#return_%28T%29#T" target="_self">T</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.html#sequence%28List%5BBinders.this.UnderBinder%5Bbt%2Cst%5D%5D%29" target="_self">sequence</a></em>
+        [<em>bt</em> &lt;: <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>, <em>st</em>](<em>orig</em> : <a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html" target="_self">UnderBinder</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#sequence%28List%5BBinders.this.UnderBinder%5Bbt%2Cst%5D%5D%29#bt" target="_self">bt</a>, <a href="../../../../scala/util/parsing/ast/Binders.html#sequence%28List%5BBinders.this.UnderBinder%5Bbt%2Cst%5D%5D%29#st" target="_self">st</a>]])(<code>implicit </code><em>view$13</em> : (<a href="../../../../scala/util/parsing/ast/Binders.html#sequence%28List%5BBinders.this.UnderBinder%5Bbt%2Cst%5D%5D%29#st" target="_self">st</a>) =&gt; <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#sequence%28List%5BBinders.this.UnderBinder%5Bbt%2Cst%5D%5D%29#st" target="_self">st</a>]) : <a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html" target="_self">UnderBinder</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#sequence%28List%5BBinders.this.UnderBinder%5Bbt%2Cst%5D%5D%29#bt" target="_self">bt</a>, <a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#sequence%28List%5BBinders.this.UnderBinder%5Bbt%2Cst%5D%5D%29#st" target="_self">st</a>]]
+        
+        <div>If a list of `UnderBinder's all have the same scope, they can be turned in to an UnderBinder 
+   containing a list of the elements in the original `UnderBinder'.
+  
+   The name `sequence' comes from the fact that this method's type is equal to the type of monadic sequence.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.html#unsequence%28Binders.this.UnderBinder%5Bbt%2CList%5Bst%5D%5D%29" target="_self">unsequence</a></em>
+        [<em>bt</em> &lt;: <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>, <em>st</em>](<em>orig</em> : <a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html" target="_self">UnderBinder</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#unsequence%28Binders.this.UnderBinder%5Bbt%2CList%5Bst%5D%5D%29#bt" target="_self">bt</a>, <a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#unsequence%28Binders.this.UnderBinder%5Bbt%2CList%5Bst%5D%5D%29#st" target="_self">st</a>]])(<code>implicit </code><em>view$14</em> : (<a href="../../../../scala/util/parsing/ast/Binders.html#unsequence%28Binders.this.UnderBinder%5Bbt%2CList%5Bst%5D%5D%29#st" target="_self">st</a>) =&gt; <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#unsequence%28Binders.this.UnderBinder%5Bbt%2CList%5Bst%5D%5D%29#st" target="_self">st</a>]) : <a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html" target="_self">UnderBinder</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#unsequence%28Binders.this.UnderBinder%5Bbt%2CList%5Bst%5D%5D%29#bt" target="_self">bt</a>, <a href="../../../../scala/util/parsing/ast/Binders.html#unsequence%28Binders.this.UnderBinder%5Bbt%2CList%5Bst%5D%5D%29#st" target="_self">st</a>]]
+        
+        
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/util/parsing/ast/Mappable.html" target="_self">Mappable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/util/parsing/ast/Mappable.html#StringIsMappable%28String%29" target="_self">StringIsMappable</a>, <a href="../../../../scala/util/parsing/ast/Mappable.html#ListIsMappable%28List%5Bt%5D%29" target="_self">ListIsMappable</a>, <a href="../../../../scala/util/parsing/ast/Mappable.html#OptionIsMappable%28Option%5Bt%5D%29" target="_self">OptionIsMappable</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Class Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.BinderEnv.html" target="_self">BinderEnv</a></em>
+        <code> extends </code><a href="../../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>An environment that maps a `NameElement' to the scope in which it is bound.
+   This can be used to model scoping during parsing.
+  
+   (This class is similar to Burak's ECOOP paper on pattern matching, except that we use `=='
+    instead of `eq', thus types can't be unified in general)
+  
+   TODO: more documentation</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.BindingSensitive.html" target="_self">BindingSensitive</a></em>
+        <code> extends </code><a href="../../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.BoundElement.html" target="_self">BoundElement</a></em>
+        [<em>boundElement</em> &lt;: <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>](<code>val </code><em>el</em> : <a href="../../../../scala/util/parsing/ast/Binders.BoundElement.html#boundElement" target="_self">boundElement</a>, <code>val </code><em>scope</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html" target="_self">Scope</a>[<a href="../../../../scala/util/parsing/ast/Binders.BoundElement.html#boundElement" target="_self">boundElement</a>])<code> extends </code><a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a><code> with </code><a href="../../../../scala/Proxy.html" target="_self">Proxy</a><code> with </code><a href="../../../../scala/util/parsing/ast/Binders.BindingSensitive.html" target="_self">BindingSensitive</a><code> with </code><a href="../../../../scala/Product.html" target="_self">Product</a>
+        
+        <div>A `BoundElement' is bound in a certain scope `scope', which keeps track of the actual element that 
+   `el' stands for.                                                               
+  
+   A `BoundElement' is represented textually by its bound element, followed by its scope's `id'.
+   For example: `x@1' represents the variable `x' that is bound in the scope with `id' `1'.
+  
+   @invar scope.binds(el)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.ReturnAndDo.html" target="_self">ReturnAndDo</a></em>
+        [<em>T</em>]<code> extends </code><a href="../../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Returns a given result, but executes the supplied closure before returning.
+   (The effect of this closure does not influence the returned value.)
+  
+   TODO: move this to some utility object higher in the scala hierarchy?</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.Scope.html" target="_self">Scope</a></em>
+        [<em>binderType</em> &lt;: <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>]<code> extends </code><a href="../../../../scala/Iterable.html" target="_self">Iterable</a>[<a href="../../../../scala/util/parsing/ast/Binders.Scope.html#binderType" target="_self">binderType</a>]
+        
+        <div>A `Scope' keeps track of one or more syntactic elements that represent bound names.
+   The elements it contains share the same scope and must all be distinct (wrt. ==)
+  
+   A `NameElement' `n' in the AST that is conceptually bound by a `Scope' `s', is replaced by a 
+   `BoundElement(n, s)'. (For example, in `val x:Int=x+1', the first `x' is modelled by a
+   Scope `s' that contains `x' and the second `x' is represented by a `BoundElement(`x', s)')
+   The term (`x+1') in scope of the Scope becomes an `UnderBinder(s, `x+1').
+  
+   A `NameElement' `n' is bound by a `Scope' `s' if it is wrapped as a `BoundElement(`n', s)', and 
+   `s' has a binder element that is semantically equal (`equals' or `==') to `n'.
+  
+   A `Scope' is represented textually by its list of binder elements, followed by the scope's `id'.
+   For example: `[x, y]!1' represents the scope with `id' `1' and binder elements `x' and `y'.
+   (`id' is solely used for this textual representation.)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.UnboundElement.html" target="_self">UnboundElement</a></em>
+        [<em>n</em> &lt;: <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>](<code>private </code><em>el</em> : <a href="../../../../scala/util/parsing/ast/Binders.UnboundElement.html#n" target="_self">n</a>)<code> extends </code><a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>
+        
+        <div>A variable that escaped its scope (i.e., a free variable) -- we don't deal very well with these yet</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html" target="_self">UnderBinder</a></em>
+        [<em>binderType</em> &lt;: <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>, <em>elementT</em>](<code>val </code><em>scope</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html" target="_self">Scope</a>[<a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#binderType" target="_self">binderType</a>], <code>val </code><em>scala$util$parsing$ast$Binders$$element</em> : <a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#elementT" target="_self">elementT</a>, <code>implicit </code><em>view$5</em> : (<a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#elementT" target="_self">elementT</a>) =&gt; <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html#elementT" target="_self">elementT</a>])<code> extends </code><a href="../../../../scala/util/parsing/ast/AbstractSyntax.Element.html" target="_self">Element</a><code> with </code><a href="../../../../scala/util/parsing/ast/Binders.BindingSensitive.html" target="_self">BindingSensitive</a>
+        
+        <div>Represents an element with variables that are bound in a certain scope.</div>
+      </td>
+    </tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Object Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.EmptyBinderEnv$object.html" target="_self">EmptyBinderEnv</a></em>
+        <code> extends </code><a href="../../../../scala/util/parsing/ast/Binders.BinderEnv.html" target="_self">BinderEnv</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/ast/Binders.UnderBinder$object.html" target="_self">UnderBinder</a></em>
+        <code> extends </code><a href="../../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+      </table>
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29"></a><dl>
+      <dt>
+        
+        <code>implicit</code>
+        <code>def</code>
+        <em>UnderBinderIsMappable</em>[<em>bt</em> &lt;: <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>, <em>st</em>](<em>ub</em> : <a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html" target="_self">UnderBinder</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29#bt" target="_self">bt</a>, <a href="../../../../scala/util/parsing/ast/Binders.html#UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29#st" target="_self">st</a>])(<code>implicit </code><em>view$8</em> : (<a href="../../../../scala/util/parsing/ast/Binders.html#UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29#bt" target="_self">bt</a>) =&gt; <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29#bt" target="_self">bt</a>], <code>implicit </code><em>view$9</em> : (<a href="../../../../scala/util/parsing/ast/Binders.html#UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29#st" target="_self">st</a>) =&gt; <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29#st" target="_self">st</a>]) : <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html" target="_self">UnderBinder</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29#bt" target="_self">bt</a>, <a href="../../../../scala/util/parsing/ast/Binders.html#UnderBinderIsMappable%28Binders.this.UnderBinder%5Bbt%2Cst%5D%29#st" target="_self">st</a>]]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="ScopeIsMappable%28Binders.this.Scope%5Bbt%5D%29"></a><dl>
+      <dt>
+        
+        <code>implicit</code>
+        <code>def</code>
+        <em>ScopeIsMappable</em>[<em>bt</em> &lt;: <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>](<em>scope</em> : <a href="../../../../scala/util/parsing/ast/Binders.Scope.html" target="_self">Scope</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#ScopeIsMappable%28Binders.this.Scope%5Bbt%5D%29#bt" target="_self">bt</a>])(<code>implicit </code><em>view$10</em> : (<a href="../../../../scala/util/parsing/ast/Binders.html#ScopeIsMappable%28Binders.this.Scope%5Bbt%5D%29#bt" target="_self">bt</a>) =&gt; <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#ScopeIsMappable%28Binders.this.Scope%5Bbt%5D%29#bt" target="_self">bt</a>]) : <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.Scope.html" target="_self">Scope</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#ScopeIsMappable%28Binders.this.Scope%5Bbt%5D%29#bt" target="_self">bt</a>]]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="NameElementIsMappable%28Binders.this.NameElement%29"></a><dl>
+      <dt>
+        
+        <code>implicit</code>
+        <code>def</code>
+        <em>NameElementIsMappable</em>(<em>self</em> : <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>) : <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="UserNameElementIsMappable%28t%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>UserNameElementIsMappable</em>[<em>t</em> &lt;: <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>](<em>self</em> : <a href="../../../../scala/util/parsing/ast/Binders.html#UserNameElementIsMappable%28t%29#t" target="_self">t</a>) : <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#UserNameElementIsMappable%28t%29#t" target="_self">t</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="sequence%28List%5BBinders.this.UnderBinder%5Bbt%2Cst%5D%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>sequence</em>[<em>bt</em> &lt;: <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>, <em>st</em>](<em>orig</em> : <a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html" target="_self">UnderBinder</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#sequence%28List%5BBinders.this.UnderBinder%5Bbt%2Cst%5D%5D%29#bt" target="_self">bt</a>, <a href="../../../../scala/util/parsing/ast/Binders.html#sequence%28List%5BBinders.this.UnderBinder%5Bbt%2Cst%5D%5D%29#st" target="_self">st</a>]])(<code>implicit </code><em>view$13</em> : (<a href="../../../../scala/util/parsing/ast/Binders.html#sequence%28List%5BBinders.this.UnderBinder%5Bbt%2Cst%5D%5D%29#st" target="_self">st</a>) =&gt; <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#sequence%28List%5BBinders.this.UnderBinder%5Bbt%2Cst%5D%5D%29#st" target="_self">st</a>]) : <a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html" target="_self">UnderBinder</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#sequence%28List%5BBinders.this.UnderBinder%5Bbt%2Cst%5D%5D%29#bt" target="_self">bt</a>, <a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#sequence%28List%5BBinders.this.UnderBinder%5Bbt%2Cst%5D%5D%29#st" target="_self">st</a>]]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>If a list of `UnderBinder's all have the same scope, they can be turned in to an UnderBinder 
+   containing a list of the elements in the original `UnderBinder'.
+  
+   The name `sequence' comes from the fact that this method's type is equal to the type of monadic sequence.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Precondition</b></dt><dd>!orig.isEmpty implies orig.forall(ub => ub.scope eq orig(0).scope)</dd></dl>
+    <hr></hr>
+<a name="unsequence%28Binders.this.UnderBinder%5Bbt%2CList%5Bst%5D%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>unsequence</em>[<em>bt</em> &lt;: <a href="../../../../scala/util/parsing/ast/AbstractSyntax.NameElement.html" target="_self">NameElement</a>, <em>st</em>](<em>orig</em> : <a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html" target="_self">UnderBinder</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#unsequence%28Binders.this.UnderBinder%5Bbt%2CList%5Bst%5D%5D%29#bt" target="_self">bt</a>, <a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#unsequence%28Binders.this.UnderBinder%5Bbt%2CList%5Bst%5D%5D%29#st" target="_self">st</a>]])(<code>implicit </code><em>view$14</em> : (<a href="../../../../scala/util/parsing/ast/Binders.html#unsequence%28Binders.this.UnderBinder%5Bbt%2CList%5Bst%5D%5D%29#st" target="_self">st</a>) =&gt; <a href="../../../../scala/util/parsing/ast/Mappable.Mappable.html" target="_self">Mappable</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#unsequence%28Binders.this.UnderBinder%5Bbt%2CList%5Bst%5D%5D%29#st" target="_self">st</a>]) : <a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/util/parsing/ast/Binders.UnderBinder.html" target="_self">UnderBinder</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#unsequence%28Binders.this.UnderBinder%5Bbt%2CList%5Bst%5D%5D%29#bt" target="_self">bt</a>, <a href="../../../../scala/util/parsing/ast/Binders.html#unsequence%28Binders.this.UnderBinder%5Bbt%2CList%5Bst%5D%5D%29#st" target="_self">st</a>]]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="return_%28T%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>return_</em>[<em>T</em>](<em>result</em> : <a href="../../../../scala/util/parsing/ast/Binders.html#return_%28T%29#T" target="_self">T</a>) : <a href="../../../../scala/util/parsing/ast/Binders.ReturnAndDo.html" target="_self">ReturnAndDo</a>[<a href="../../../../scala/util/parsing/ast/Binders.html#return_%28T%29#T" target="_self">T</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

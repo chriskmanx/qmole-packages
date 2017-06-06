@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class Code in scala.mobile</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../scala/mobile$package.html" target="_self">scala.mobile</a>
+        <br></br>
+        <span class="entity">class  Code</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/mobile/Code"><code>scala/mobile/Code.scala</code></a>]
+      </div><hr></hr>
+      <a name="Code"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>class</code>
+        <em>Code</em>(<em>clazz</em> : <a href="" target="contentFrame" class="java/lang/Class">java.lang.Class</a>)
+      </dt>
+      <dd><code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd>The class <code>Code</code> provides <code>apply</code> methods
+  with different arities (actually up to 9 parameters) to invoke
+  a function simply by specifying its name and argument types.<p/>
+
+  Example:<pre>
+    <b>val</b> url = <b>new</b> URL("http://scala-lang.org/classes/examples.jar");
+    <b>val</b> obj = <b>new</b> Location(url) create "examples.sort";
+    <b>val</b> ar = Array(6, 2, 8, 5, 1);
+    obj[Array[Int], Unit]("println")(ar);
+    obj[Array[Int], Unit]("sort")(ar);
+    obj[Array[Int], Unit]("println")(ar);</pre></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>See Also</b></dt><dd><a href="Location.html">Location</a></dd><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Stephane Micheloud</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0, 04/05/2004</dd></dl>
+    
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/mobile/Code.html#apply%28String%29" target="_self">apply</a></em>
+        [<em>A0</em>, <em>A1</em>, <em>A2</em>, <em>A3</em>, <em>A4</em>, <em>A5</em>, <em>A6</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A1" target="_self">A1</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A2" target="_self">A2</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A3" target="_self">A3</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A4" target="_self">A4</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A5" target="_self">A5</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A6" target="_self">A6</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/mobile/Code.html#apply%28String%29" target="_self">apply</a></em>
+        [<em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : () =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/mobile/Code.html#apply%28String%29" target="_self">apply</a></em>
+        [<em>A0</em>, <em>A1</em>, <em>A2</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A1" target="_self">A1</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A2" target="_self">A2</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/mobile/Code.html#apply%28String%29" target="_self">apply</a></em>
+        [<em>A0</em>, <em>A1</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A1" target="_self">A1</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/mobile/Code.html#apply%28String%29" target="_self">apply</a></em>
+        [<em>A0</em>, <em>A1</em>, <em>A2</em>, <em>A3</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A1" target="_self">A1</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A2" target="_self">A2</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A3" target="_self">A3</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/mobile/Code.html#apply%28String%29" target="_self">apply</a></em>
+        [<em>A0</em>, <em>A1</em>, <em>A2</em>, <em>A3</em>, <em>A4</em>, <em>A5</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A1" target="_self">A1</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A2" target="_self">A2</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A3" target="_self">A3</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A4" target="_self">A4</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A5" target="_self">A5</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/mobile/Code.html#apply%28String%29" target="_self">apply</a></em>
+        [<em>A0</em>, <em>A1</em>, <em>A2</em>, <em>A3</em>, <em>A4</em>, <em>A5</em>, <em>A6</em>, <em>A7</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A1" target="_self">A1</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A2" target="_self">A2</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A3" target="_self">A3</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A4" target="_self">A4</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A5" target="_self">A5</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A6" target="_self">A6</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A7" target="_self">A7</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/mobile/Code.html#apply%28String%29" target="_self">apply</a></em>
+        [<em>A0</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/mobile/Code.html#apply%28String%29" target="_self">apply</a></em>
+        [<em>A0</em>, <em>A1</em>, <em>A2</em>, <em>A3</em>, <em>A4</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A1" target="_self">A1</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A2" target="_self">A2</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A3" target="_self">A3</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A4" target="_self">A4</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/mobile/Code.html#apply%28String%29" target="_self">apply</a></em>
+        [<em>A0</em>, <em>A1</em>, <em>A2</em>, <em>A3</em>, <em>A4</em>, <em>A5</em>, <em>A6</em>, <em>A7</em>, <em>A8</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A1" target="_self">A1</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A2" target="_self">A2</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A3" target="_self">A3</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A4" target="_self">A4</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A5" target="_self">A5</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A6" target="_self">A6</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A7" target="_self">A7</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A8" target="_self">A8</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+        
+        
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="apply%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>[<em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : () =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="apply%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>[<em>A0</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="apply%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>[<em>A0</em>, <em>A1</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A1" target="_self">A1</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="apply%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>[<em>A0</em>, <em>A1</em>, <em>A2</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A1" target="_self">A1</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A2" target="_self">A2</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="apply%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>[<em>A0</em>, <em>A1</em>, <em>A2</em>, <em>A3</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A1" target="_self">A1</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A2" target="_self">A2</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A3" target="_self">A3</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="apply%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>[<em>A0</em>, <em>A1</em>, <em>A2</em>, <em>A3</em>, <em>A4</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A1" target="_self">A1</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A2" target="_self">A2</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A3" target="_self">A3</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A4" target="_self">A4</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="apply%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>[<em>A0</em>, <em>A1</em>, <em>A2</em>, <em>A3</em>, <em>A4</em>, <em>A5</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A1" target="_self">A1</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A2" target="_self">A2</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A3" target="_self">A3</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A4" target="_self">A4</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A5" target="_self">A5</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="apply%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>[<em>A0</em>, <em>A1</em>, <em>A2</em>, <em>A3</em>, <em>A4</em>, <em>A5</em>, <em>A6</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A1" target="_self">A1</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A2" target="_self">A2</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A3" target="_self">A3</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A4" target="_self">A4</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A5" target="_self">A5</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A6" target="_self">A6</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="apply%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>[<em>A0</em>, <em>A1</em>, <em>A2</em>, <em>A3</em>, <em>A4</em>, <em>A5</em>, <em>A6</em>, <em>A7</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A1" target="_self">A1</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A2" target="_self">A2</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A3" target="_self">A3</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A4" target="_self">A4</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A5" target="_self">A5</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A6" target="_self">A6</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A7" target="_self">A7</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="apply%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>[<em>A0</em>, <em>A1</em>, <em>A2</em>, <em>A3</em>, <em>A4</em>, <em>A5</em>, <em>A6</em>, <em>A7</em>, <em>A8</em>, <em>R</em>](<em>funName</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : (<a href="../../scala/mobile/Code.html#apply%28String%29#A0" target="_self">A0</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A1" target="_self">A1</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A2" target="_self">A2</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A3" target="_self">A3</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A4" target="_self">A4</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A5" target="_self">A5</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A6" target="_self">A6</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A7" target="_self">A7</a>, <a href="../../scala/mobile/Code.html#apply%28String%29#A8" target="_self">A8</a>) =&gt; <a href="../../scala/mobile/Code.html#apply%28String%29#R" target="_self">R</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

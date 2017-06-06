@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.collection</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/BitSet.html" target="_self">BitSet</a></em>
+        <code> extends </code><a href="../scala/collection/Set.html" target="_self">Set</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+        
+        <div><p>
+    The class <code>BitSet</code> provides the interface for a space-efficient
+    implementation of dense integer sets represented as bits in array of
+    integers. Bit indices are between <code>0..(capacity-1)</code> inclusive.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/Map.html" target="_self">Map</a></em>
+        [<em>A</em>, +<em>B</em>]<code> extends </code><a href="../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../scala/collection/Map.html#A" target="_self">A</a>, <a href="../scala/collection/Map.html#B" target="_self">B</a>]<code> with </code><a href="../scala/Collection.html" target="_self">Collection</a>[(<a href="../scala/collection/Map.html#A" target="_self">A</a>, <a href="../scala/collection/Map.html#B" target="_self">B</a>)]
+        
+        <div><p>
+     A map is a collection that maps each key to one or zero values.
+  </p>
+  <p>
+    This trait provides a limited interface, only allowing reading of elements.
+    There are two extensions of this trait, in packages
+    <code><a href="mutable$content.html" target="contentFrame">
+    scala.collection.mutable</a></code>
+    and <code><a href="immutable$content.html" target="contentFrame">
+    scala.collection.immutable</a></code>, which provide functionality for
+    adding new key/value mappings to a map. The trait in the first package is
+    for maps that are modified destructively, whereas the trait in
+    the second package is for immutable maps which create a new map
+    when something is added or removed from them.
+  </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/MapProxy.html" target="_self">MapProxy</a></em>
+        [<em>A</em>, +<em>B</em>]<code> extends </code><a href="../scala/collection/Map.html" target="_self">Map</a>[<a href="../scala/collection/MapProxy.html#A" target="_self">A</a>, <a href="../scala/collection/MapProxy.html#B" target="_self">B</a>]<code> with </code><a href="../scala/IterableProxy.html" target="_self">IterableProxy</a>[(<a href="../scala/collection/MapProxy.html#A" target="_self">A</a>, <a href="../scala/collection/MapProxy.html#B" target="_self">B</a>)]
+        
+        <div>This is a simple wrapper class for <a href="Map.html"
+  target="contentFrame"><code>scala.collection.Map</code></a>.
+  It is most useful for assembling customized map abstractions
+  dynamically using object composition and forwarding.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/Ranged.html" target="_self">Ranged</a></em>
+        [<em>K</em>, +<em>A</em>]<code> extends </code><a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/collection/Ranged.html#A" target="_self">A</a>]
+        
+        <div>Any collection (including maps) whose keys (or elements) are ordered.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/RollbackIterator.html" target="_self">RollbackIterator</a></em>
+        [+<em>A</em>](<em>underlying</em> : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/collection/RollbackIterator.html#A" target="_self">A</a>])<code> extends </code><a href="../scala/BufferedIterator$object.Default.html" target="_self">Default</a>[<a href="../scala/collection/RollbackIterator.html#A" target="_self">A</a>]
+        
+        <div>Rollback iterators are buffered iterators which allow for unbounded rollbacks</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/Set.html" target="_self">Set</a></em>
+        [<em>A</em>]<code> extends </code>(<a href="../scala/collection/Set.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a><code> with </code><a href="../scala/Collection.html" target="_self">Collection</a>[<a href="../scala/collection/Set.html#A" target="_self">A</a>]
+        
+        <div><p>
+    A set is a collection that includes at most one of any object.
+  </p>
+  <p>
+    This trait provides a limited interface, only allowing reading of elements.
+    There are two extensions of this trait, in packages
+    <code><a href="mutable$content.html" target="contentFrame">
+    scala.collection.mutable</a></code>
+    and <code><a href="immutable$content.html" target="contentFrame">
+    scala.collection.immutable</a></code>, which provide functionality for
+    adding and removing objects from the set. The trait in the first package is
+    for sets that are modified destructively, whereas the trait in
+    the second package is for immutable sets which create a new set
+    when something is added or removed to them.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/SetProxy.html" target="_self">SetProxy</a></em>
+        [<em>A</em>]<code> extends </code><a href="../scala/collection/Set.html" target="_self">Set</a>[<a href="../scala/collection/SetProxy.html#A" target="_self">A</a>]<code> with </code><a href="../scala/IterableProxy.html" target="_self">IterableProxy</a>[<a href="../scala/collection/SetProxy.html#A" target="_self">A</a>]
+        
+        <div>This is a simple wrapper class for <a href="Set.html"
+  target="contentFrame"><code>scala.collection.Set</code></a>.
+  It is most useful for assembling customized set abstractions
+  dynamically using object composition and forwarding.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/Sorted.html" target="_self">Sorted</a></em>
+        [<em>K</em>, +<em>A</em>]<code> extends </code><a href="../scala/collection/Ranged.html" target="_self">Ranged</a>[<a href="../scala/collection/Sorted.html#K" target="_self">K</a>, <a href="../scala/collection/Sorted.html#A" target="_self">A</a>]
+        
+        <div>Any collection (including maps) whose keys (or elements) are ordered.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/SortedMap.html" target="_self">SortedMap</a></em>
+        [<em>K</em>, +<em>E</em>]<code> extends </code><a href="../scala/collection/Map.html" target="_self">Map</a>[<a href="../scala/collection/SortedMap.html#K" target="_self">K</a>, <a href="../scala/collection/SortedMap.html#E" target="_self">E</a>]<code> with </code><a href="../scala/collection/Sorted.html" target="_self">Sorted</a>[<a href="../scala/collection/SortedMap.html#K" target="_self">K</a>, (<a href="../scala/collection/SortedMap.html#K" target="_self">K</a>, <a href="../scala/collection/SortedMap.html#E" target="_self">E</a>)]
+        
+        <div>A map whose keys are sorted.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/SortedSet.html" target="_self">SortedSet</a></em>
+        [<em>A</em>]<code> extends </code><a href="../scala/collection/Set.html" target="_self">Set</a>[<a href="../scala/collection/SortedSet.html#A" target="_self">A</a>]<code> with </code><a href="../scala/collection/Sorted.html" target="_self">Sorted</a>[<a href="../scala/collection/SortedSet.html#A" target="_self">A</a>, <a href="../scala/collection/SortedSet.html#A" target="_self">A</a>]
+        
+        <div>Analogous to a Java sorted set.</div>
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/Map$object.html" target="_self">Map</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>        
+        </table></body>
+      </html>

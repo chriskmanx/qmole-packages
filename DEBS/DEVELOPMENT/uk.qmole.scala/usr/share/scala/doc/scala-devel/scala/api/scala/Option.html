@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class Option in scala</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../scala$package.html" target="_self">scala</a>
+        <br></br>
+        <span class="entity">class  Option</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/Option"><code>scala/Option.scala</code></a>]
+      </div><hr></hr>
+      <a name="Option"></a><dl>
+      <dt>
+        
+        <code>sealed abstract</code>
+        <code>class</code>
+        <em>Option</em>[+<em>A</em>]
+      </dt>
+      <dd><code> extends </code><a href="../scala/Product.html" target="_self">Product</a></dd>
+    </dl>
+      <dl><dd>This class represents optional values. Instances of <code>Option</code>
+  are either instances of case class <code>Some</code> or it is case
+  object <code>None</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Martin Odersky</dd><dd>Matthias Zenger</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.1, 16/01/2007</dd></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../scala/Some.html" target="_self">Some</a>, <a href="../scala/None$object.html" target="_self">None</a></dd>
+      </dl><hr></hr>
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Option.html#elements" target="_self">elements</a></em>
+         : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Option.html#A" target="_self">A</a>]
+        
+        <div>An singleton iterator returning the option's value if it is nonempty
+    or the empty iterator if the option is empty.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Option.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a></em>
+        (<em>p</em> : (<a href="../scala/Option.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Option.html" target="_self">Option</a>[<a href="../scala/Option.html#A" target="_self">A</a>]
+        
+        <div>If the option is nonempty and the given predicate <code>p</code>
+    yields <code>false</code> on its value, return <code>None</code>.
+    Otherwise return the option value itself.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Option.html#flatMap%28%28A%29%3D%3EOption%5BB%5D%29" target="_self">flatMap</a></em>
+        [<em>B</em>](<em>f</em> : (<a href="../scala/Option.html#A" target="_self">A</a>) =&gt; <a href="../scala/Option.html" target="_self">Option</a>[<a href="../scala/Option.html#flatMap%28%28A%29%3D%3EOption%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Option.html" target="_self">Option</a>[<a href="../scala/Option.html#flatMap%28%28A%29%3D%3EOption%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div>If the option is nonempty, return a function applied to its value.
+    Otherwise return None.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Option.html#foreach%28%28A%29%3D%3EUnit%29" target="_self">foreach</a></em>
+        (<em>f</em> : (<a href="../scala/Option.html#A" target="_self">A</a>) =&gt; <a href="../scala/Unit.html" target="_self">Unit</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Apply the given procedure <code>f</code> to the option's value,
+    if it is nonempty. Do nothing if it is empty.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Option.html#get" target="_self">get</a></em>
+         : <a href="../scala/Option.html#A" target="_self">A</a>
+        
+        <div>get the value of this option.
+    @requires that the option is nonEmpty.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Option.html#get%28B%29" target="_self">get</a></em>
+        [<em>B</em> &gt;: <a href="../scala/Option.html#A" target="_self">A</a>](<em>default</em> : <a href="../scala/Option.html#get%28B%29#B" target="_self">B</a>) : <a href="../scala/Option.html#get%28B%29#B" target="_self">B</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Option.html#getOrElse%28%3D%3EB%29" target="_self">getOrElse</a></em>
+        [<em>B</em> &gt;: <a href="../scala/Option.html#A" target="_self">A</a>](<em>default</em> : =&gt; <a href="../scala/Option.html#getOrElse%28%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/Option.html#getOrElse%28%3D%3EB%29#B" target="_self">B</a>
+        
+        <div>If the option is nonempty return its value,
+    otherwise return the result of evaluating a default expression.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Option.html#isDefined" target="_self">isDefined</a></em>
+         : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>True if the option is a <code>Some</code>(...) false otherwise.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Option.html#isEmpty" target="_self">isEmpty</a></em>
+         : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>True if the option is the <code>None</code> value, false otherwise.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Option.html#map%28%28A%29%3D%3EB%29" target="_self">map</a></em>
+        [<em>B</em>](<em>f</em> : (<a href="../scala/Option.html#A" target="_self">A</a>) =&gt; <a href="../scala/Option.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/Option.html" target="_self">Option</a>[<a href="../scala/Option.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>]
+        
+        <div>If the option is nonempty, return a function applied to its value,
+    wrapped in a Some i.e. <code>Some(f(this.get))</code>.
+    Otherwise return <code>None</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Option.html#orElse%28%3D%3EOption%5BB%5D%29" target="_self">orElse</a></em>
+        [<em>B</em> &gt;: <a href="../scala/Option.html#A" target="_self">A</a>](<em>alternative</em> : =&gt; <a href="../scala/Option.html" target="_self">Option</a>[<a href="../scala/Option.html#orElse%28%3D%3EOption%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Option.html" target="_self">Option</a>[<a href="../scala/Option.html#orElse%28%3D%3EOption%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div>If the option is nonempty return it,
+    otherwise return the result of evaluating an alternative expression.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Option.html#toList" target="_self">toList</a></em>
+         : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Option.html#A" target="_self">A</a>]
+        
+        <div>A singleton list containing the option's value if it is nonempty
+    or the empty list if the option is empty.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Product.html" target="_self">Product</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Product.html#productElement%28Int%29" target="_self">productElement</a> (abstract), <a href="../scala/Product.html#productArity" target="_self">productArity</a> (abstract), <a href="../scala/Product.html#element%28Int%29" target="_self">element</a>, <a href="../scala/Product.html#arity" target="_self">arity</a>, <a href="../scala/Product.html#productPrefix" target="_self">productPrefix</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="isEmpty"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>isEmpty</em> : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>True if the option is the <code>None</code> value, false otherwise.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="isDefined"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>isDefined</em> : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>True if the option is a <code>Some</code>(...) false otherwise.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="get"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>get</em> : <a href="../scala/Option.html#A" target="_self">A</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>get the value of this option.
+    @requires that the option is nonEmpty.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><a href="../scala/Predef$object#NoSuchElementException">Predef.NoSuchElementException</a> - if the option is empty.</dd></dl>
+    <hr></hr>
+<a name="get%28B%29"></a><dl>
+      <dt>
+        @<a href="../scala/deprecated.html" target="_self">deprecated</a><br></br>
+        <code></code>
+        <code>def</code>
+        <em>get</em>[<em>B</em> &gt;: <a href="../scala/Option.html#A" target="_self">A</a>](<em>default</em> : <a href="../scala/Option.html#get%28B%29#B" target="_self">B</a>) : <a href="../scala/Option.html#get%28B%29#B" target="_self">B</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Deprecated</b></dt><dd>; use <code>getOrElse</code> instead</dd></dl>
+    <hr></hr>
+<a name="getOrElse%28%3D%3EB%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>getOrElse</em>[<em>B</em> &gt;: <a href="../scala/Option.html#A" target="_self">A</a>](<em>default</em> : =&gt; <a href="../scala/Option.html#getOrElse%28%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/Option.html#getOrElse%28%3D%3EB%29#B" target="_self">B</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>If the option is nonempty return its value,
+    otherwise return the result of evaluating a default expression.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>default - </code>the default expression.</dd></dl>
+    <hr></hr>
+<a name="map%28%28A%29%3D%3EB%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>map</em>[<em>B</em>](<em>f</em> : (<a href="../scala/Option.html#A" target="_self">A</a>) =&gt; <a href="../scala/Option.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/Option.html" target="_self">Option</a>[<a href="../scala/Option.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>If the option is nonempty, return a function applied to its value,
+    wrapped in a Some i.e. <code>Some(f(this.get))</code>.
+    Otherwise return <code>None</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>the function to apply</dd></dl>
+    <hr></hr>
+<a name="flatMap%28%28A%29%3D%3EOption%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>flatMap</em>[<em>B</em>](<em>f</em> : (<a href="../scala/Option.html#A" target="_self">A</a>) =&gt; <a href="../scala/Option.html" target="_self">Option</a>[<a href="../scala/Option.html#flatMap%28%28A%29%3D%3EOption%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Option.html" target="_self">Option</a>[<a href="../scala/Option.html#flatMap%28%28A%29%3D%3EOption%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>If the option is nonempty, return a function applied to its value.
+    Otherwise return None.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>the function to apply</dd></dl>
+    <hr></hr>
+<a name="filter%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>filter</em>(<em>p</em> : (<a href="../scala/Option.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Option.html" target="_self">Option</a>[<a href="../scala/Option.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>If the option is nonempty and the given predicate <code>p</code>
+    yields <code>false</code> on its value, return <code>None</code>.
+    Otherwise return the option value itself.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the predicate used for testing.</dd></dl>
+    <hr></hr>
+<a name="foreach%28%28A%29%3D%3EUnit%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>foreach</em>(<em>f</em> : (<a href="../scala/Option.html#A" target="_self">A</a>) =&gt; <a href="../scala/Unit.html" target="_self">Unit</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Apply the given procedure <code>f</code> to the option's value,
+    if it is nonempty. Do nothing if it is empty.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>the procedure to apply.</dd></dl>
+    <hr></hr>
+<a name="orElse%28%3D%3EOption%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>orElse</em>[<em>B</em> &gt;: <a href="../scala/Option.html#A" target="_self">A</a>](<em>alternative</em> : =&gt; <a href="../scala/Option.html" target="_self">Option</a>[<a href="../scala/Option.html#orElse%28%3D%3EOption%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Option.html" target="_self">Option</a>[<a href="../scala/Option.html#orElse%28%3D%3EOption%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>If the option is nonempty return it,
+    otherwise return the result of evaluating an alternative expression.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>alternative - </code>the alternative expression.</dd></dl>
+    <hr></hr>
+<a name="elements"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>elements</em> : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Option.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>An singleton iterator returning the option's value if it is nonempty
+    or the empty iterator if the option is empty.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="toList"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>toList</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Option.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A singleton list containing the option's value if it is nonempty
+    or the empty list if the option is empty.</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

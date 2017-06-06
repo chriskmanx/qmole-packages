@@ -1,0 +1,13 @@
+Package: uk.qmole.lua
+Name: Lua & LuaJIT
+Version: 5.3.0
+Architecture: iphoneos-arm
+Description: Lua & LuaJIT port to IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/lua
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: ncurses, readline
+Sponsor: QMole Ltd. 
+Section: Development
+Tag: purpose::console, role::developer

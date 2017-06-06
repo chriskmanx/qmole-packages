@@ -1,0 +1,13 @@
+Package: uk.qmole.nodejs
+Name: Nodejs
+Version: 0.4.8
+Architecture: iphoneos-arm
+Description: Nodejs Java Script 
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/nodejs 
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp
+Depends: ncurses, readline
+Sponsor: QMole Ltd. 
+Section: Development
+Tag: purpose::console, role::developer

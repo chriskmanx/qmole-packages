@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>object Parsing in scala.xml</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../scala/xml$package.html" target="_self">scala.xml</a>
+        <br></br>
+        <span class="entity">object  Parsing</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/xml/Parsing"><code>scala/xml/Parsing.scala</code></a>]
+      </div><hr></hr>
+      <a name="Parsing"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>object</code>
+        <em>Parsing</em>
+      </dt>
+      <dd><code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd>The object <code>Parsing</code> ...</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Burak Emir</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0</dd><dt style="margin:10px 0 0 20px;">
+        <b>Deprecated</b></dt><dd>use either <code>parsing.TokenTests</code> or              <code>Utilty</code> (helper functions for parsing XML fragments).</dd></dl>
+    
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Parsing$object.html#checkPubID%28String%29" target="_self">checkPubID</a></em>
+        (<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Parsing$object.html#checkSysID%28String%29" target="_self">checkSysID</a></em>
+        (<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Parsing$object.html#isName%28String%29" target="_self">isName</a></em>
+        (<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div><pre>Name ::= ( Letter | '_' ) (NameChar)</pre>
+  
+    see  [5] of XML 1.0 specification</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Parsing$object.html#isNameChar%28Char%29" target="_self">isNameChar</a></em>
+        (<em>ch</em> : <a href="../../scala/Char.html" target="_self">Char</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div><pre>NameChar ::= Letter | Digit | '.' | '-' | '_' | ':' 
+               | CombiningChar | Extender</pre>
+  
+   see [4] and Appendix B of XML 1.0 specification</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Parsing$object.html#isNameStart%28Char%29" target="_self">isNameStart</a></em>
+        (<em>ch</em> : <a href="../../scala/Char.html" target="_self">Char</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div><pre>NameStart ::= ( Letter | '_' )</pre>
+    where Letter means in one of the Unicode general 
+    categories { Ll, Lu, Lo, Lt, Nl }
+  
+    We do not allow a name to start with ':'.
+    see [3] and Appendix B of XML 1.0 specification</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Parsing$object.html#isPubIDChar%28Char%29" target="_self">isPubIDChar</a></em>
+        (<em>c</em> : <a href="../../scala/Char.html" target="_self">Char</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Parsing$object.html#isSpace%28Char%29" target="_self">isSpace</a></em>
+        (<em>ch</em> : <a href="../../scala/Char.html" target="_self">Char</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div><pre>(#x20 | #x9 | #xD | #xA)</pre></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/Parsing$object.html#isSpace%28Seq%5BChar%5D%29" target="_self">isSpace</a></em>
+        (<em>cs</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/Char.html" target="_self">Char</a>]) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div><pre>(#x20 | #x9 | #xD | #xA)+</pre></div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="isSpace%28Char%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>isSpace</em>(<em>ch</em> : <a href="../../scala/Char.html" target="_self">Char</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><pre>(#x20 | #x9 | #xD | #xA)</pre></dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="isSpace%28Seq%5BChar%5D%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>isSpace</em>(<em>cs</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/Char.html" target="_self">Char</a>]) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><pre>(#x20 | #x9 | #xD | #xA)+</pre></dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="isNameChar%28Char%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>isNameChar</em>(<em>ch</em> : <a href="../../scala/Char.html" target="_self">Char</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><pre>NameChar ::= Letter | Digit | '.' | '-' | '_' | ':' 
+               | CombiningChar | Extender</pre>
+  
+   see [4] and Appendix B of XML 1.0 specification</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="isNameStart%28Char%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>isNameStart</em>(<em>ch</em> : <a href="../../scala/Char.html" target="_self">Char</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><pre>NameStart ::= ( Letter | '_' )</pre>
+    where Letter means in one of the Unicode general 
+    categories { Ll, Lu, Lo, Lt, Nl }
+  
+    We do not allow a name to start with ':'.
+    see [3] and Appendix B of XML 1.0 specification</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="isName%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>isName</em>(<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><pre>Name ::= ( Letter | '_' ) (NameChar)</pre>
+  
+    see  [5] of XML 1.0 specification</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="isPubIDChar%28Char%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>isPubIDChar</em>(<em>c</em> : <a href="../../scala/Char.html" target="_self">Char</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="checkSysID%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>checkSysID</em>(<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="checkPubID%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>checkPubID</em>(<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

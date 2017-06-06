@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.xml.include</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/include/CircularIncludeException.html" target="_self">CircularIncludeException</a></em>
+        (<em>message</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../../scala/xml/include/XIncludeException.html" target="_self">XIncludeException</a>
+        
+        <div><p>
+ A <code>CircularIncludeException</code> is thrown when
+ an included document attempts to include itself or 
+ one of its ancestor documents.
+ </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/include/UnavailableResourceException.html" target="_self">UnavailableResourceException</a></em>
+        (<em>message</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../../scala/xml/include/XIncludeException.html" target="_self">XIncludeException</a>
+        
+        <div><p>
+ An <code>UnavailableResourceException</code> is thrown when
+ an included document cannot be found or loaded.
+ </p></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/include/XIncludeException.html" target="_self">XIncludeException</a></em>
+        (<em>message</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="" target="contentFrame" class="java/lang/Exception">java.lang.Exception</a><code> with </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div><p>
+ <code>XIncludeException</code> is the generic superclass
+ for all checked exceptions that may be thrown as a result
+ of a violation of XInclude's rules.
+ </p>
+ <p>
+ Constructs an <code>XIncludeException</code> with the specified detail
+ message. The error message string <code>message</code> can later be
+ retrieved by the <code>{@link java.lang.Throwable#getMessage}</code>
+ method of class <code>java.lang.Throwable</code>.
+ </p></div>
+      </td>
+    </tr>        
+        </table>
+</body>
+      </html>

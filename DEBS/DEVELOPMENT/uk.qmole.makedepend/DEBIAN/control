@@ -1,0 +1,12 @@
+Package: uk.qmole.makedepend
+Name: Makedepend
+Version: 1.0.1
+Architecture: iphoneos-arm
+Description: Makedepend port to iOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/makedepend
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: Development
+Tag: purpose::console, role::developer

@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.xml.dtd</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.6.1-final<br></br>API Specification</div></div><p><div>This document is the API specification for Scala Library Documentation</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/AttListDecl.html" target="_self">AttListDecl</a></em>
+        (<code>val </code><em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>attrs</em> : <a href="../../scala/List.html" target="_self">List</a>[<a href="../../scala/xml/dtd/AttrDecl.html" target="_self">AttrDecl</a>])<code> extends </code><a href="../../scala/xml/dtd/MarkupDecl.html" target="_self">MarkupDecl</a><code> with </code><a href="../../scala/xml/dtd/DtdTypeSymbol.html" target="_self">DtdTypeSymbol</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/AttrDecl.html" target="_self">AttrDecl</a></em>
+        (<code>val </code><em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>tpe</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>default</em> : <a href="../../scala/xml/dtd/DefaultDecl.html" target="_self">DefaultDecl</a>)<code> extends </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>an attribute declaration. at this point, the tpe is a string. Future
+  versions might provide a way to access the attribute types more
+  directly.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>sealed abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/ContentModel.html" target="_self">ContentModel</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/DEFAULT.html" target="_self">DEFAULT</a></em>
+        (<code>val </code><em>fixed</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>, <code>val </code><em>attValue</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../../scala/xml/dtd/DefaultDecl.html" target="_self">DefaultDecl</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>sealed abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/DFAContentModel.html" target="_self">DFAContentModel</a></em>
+        <code> extends </code><a href="../../scala/xml/dtd/ContentModel.html" target="_self">ContentModel</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/DTD.html" target="_self">DTD</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>A document type declaration.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/Decl.html" target="_self">Decl</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/DefaultDecl.html" target="_self">DefaultDecl</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/DocType.html" target="_self">DocType</a></em>
+        (<code>val </code><em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>extID</em> : <a href="../../scala/xml/dtd/ExternalID.html" target="_self">ExternalID</a>, <code>val </code><em>intSubset</em> : <a href="../../scala/Seq.html" target="_self">Seq</a>[<a href="../../scala/xml/dtd/Decl.html" target="_self">Decl</a>])<code> extends </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>An XML node for document type declaration.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/DtdTypeSymbol.html" target="_self">DtdTypeSymbol</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/ELEMENTS.html" target="_self">ELEMENTS</a></em>
+        (<code>val </code><em>r</em> : <a href="../../scala/util/regexp/Base.RegExp.html" target="_self">RegExp</a>)<code> extends </code><a href="../../scala/xml/dtd/DFAContentModel.html" target="_self">DFAContentModel</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/ElemDecl.html" target="_self">ElemDecl</a></em>
+        (<code>val </code><em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>contentModel</em> : <a href="../../scala/xml/dtd/ContentModel.html" target="_self">ContentModel</a>)<code> extends </code><a href="../../scala/xml/dtd/MarkupDecl.html" target="_self">MarkupDecl</a><code> with </code><a href="../../scala/xml/dtd/DtdTypeSymbol.html" target="_self">DtdTypeSymbol</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>an element declaration</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/ElementValidator.html" target="_self">ElementValidator</a></em>
+        <code> extends </code>(<a href="../../scala/xml/Node.html" target="_self">Node</a>) =&gt; <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>validate children and/or attributes of an element
+  exceptions are created but not thrown.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/EntityDecl.html" target="_self">EntityDecl</a></em>
+        <code> extends </code><a href="../../scala/xml/dtd/MarkupDecl.html" target="_self">MarkupDecl</a>
+        
+        <div>an entity declaration</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/EntityDef.html" target="_self">EntityDef</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/ExtDef.html" target="_self">ExtDef</a></em>
+        (<code>val </code><em>extID</em> : <a href="../../scala/xml/dtd/ExternalID.html" target="_self">ExternalID</a>)<code> extends </code><a href="../../scala/xml/dtd/EntityDef.html" target="_self">EntityDef</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/ExternalID.html" target="_self">ExternalID</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>an ExternalIDs - either PublicID or SystemID</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/IntDef.html" target="_self">IntDef</a></em>
+        (<code>val </code><em>value</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../../scala/xml/dtd/EntityDef.html" target="_self">EntityDef</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/MIXED.html" target="_self">MIXED</a></em>
+        (<code>val </code><em>r</em> : <a href="../../scala/util/regexp/Base.RegExp.html" target="_self">RegExp</a>)<code> extends </code><a href="../../scala/xml/dtd/DFAContentModel.html" target="_self">DFAContentModel</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/MarkupDecl.html" target="_self">MarkupDecl</a></em>
+        <code> extends </code><a href="../../scala/xml/dtd/Decl.html" target="_self">Decl</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/NotationDecl.html" target="_self">NotationDecl</a></em>
+        (<code>val </code><em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>extID</em> : <a href="../../scala/xml/dtd/ExternalID.html" target="_self">ExternalID</a>)<code> extends </code><a href="../../scala/xml/dtd/MarkupDecl.html" target="_self">MarkupDecl</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>a notation declaration</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/PEReference.html" target="_self">PEReference</a></em>
+        (<code>val </code><em>ent</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../../scala/xml/dtd/MarkupDecl.html" target="_self">MarkupDecl</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>a parsed entity reference</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/ParameterEntityDecl.html" target="_self">ParameterEntityDecl</a></em>
+        (<code>val </code><em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>entdef</em> : <a href="../../scala/xml/dtd/EntityDef.html" target="_self">EntityDef</a>)<code> extends </code><a href="../../scala/xml/dtd/EntityDecl.html" target="_self">EntityDecl</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>a parameter entity declaration</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/ParsedEntityDecl.html" target="_self">ParsedEntityDecl</a></em>
+        (<code>val </code><em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>entdef</em> : <a href="../../scala/xml/dtd/EntityDef.html" target="_self">EntityDef</a>)<code> extends </code><a href="../../scala/xml/dtd/EntityDecl.html" target="_self">EntityDecl</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>a parsed general entity declaration</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/PublicID.html" target="_self">PublicID</a></em>
+        (<code>val </code><em>publicId</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>systemId</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../../scala/xml/dtd/ExternalID.html" target="_self">ExternalID</a><code> with </code><a href="../../scala/xml/parsing/TokenTests.html" target="_self">TokenTests</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>a public identifier</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/Scanner.html" target="_self">Scanner</a></em>
+        <code> extends </code><a href="../../scala/xml/dtd/Tokens.html" target="_self">Tokens</a><code> with </code><a href="../../scala/xml/parsing/TokenTests.html" target="_self">TokenTests</a>
+        
+        <div>Scanner for regexps (content models in DTD element declarations) 
+  todo: cleanup</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/SystemID.html" target="_self">SystemID</a></em>
+        (<code>val </code><em>systemId</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../../scala/xml/dtd/ExternalID.html" target="_self">ExternalID</a><code> with </code><a href="../../scala/xml/parsing/TokenTests.html" target="_self">TokenTests</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>a system identifier</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/Tokens.html" target="_self">Tokens</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/UnparsedEntityDecl.html" target="_self">UnparsedEntityDecl</a></em>
+        (<code>val </code><em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>extID</em> : <a href="../../scala/xml/dtd/ExternalID.html" target="_self">ExternalID</a>, <code>val </code><em>notation</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../../scala/xml/dtd/EntityDecl.html" target="_self">EntityDecl</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>an unparsed entity declaration</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/ValidationException.html" target="_self">ValidationException</a></em>
+        (<code>val </code><em>e</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="" target="contentFrame" class="java/lang/Exception">java.lang.Exception</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/ANY$object.html" target="_self">ANY</a></em>
+        <code> extends </code><a href="../../scala/xml/dtd/ContentModel.html" target="_self">ContentModel</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/ContentModel$object.html" target="_self">ContentModel</a></em>
+        <code> extends </code><a href="../../scala/util/regexp/WordExp.html" target="_self">WordExp</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/ContentModelParser$object.html" target="_self">ContentModelParser</a></em>
+        <code> extends </code><a href="../../scala/xml/dtd/Scanner.html" target="_self">Scanner</a>
+        
+        <div>Parser for regexps (content models in DTD element declarations)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/EMPTY$object.html" target="_self">EMPTY</a></em>
+        <code> extends </code><a href="../../scala/xml/dtd/ContentModel.html" target="_self">ContentModel</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/IMPLIED$object.html" target="_self">IMPLIED</a></em>
+        <code> extends </code><a href="../../scala/xml/dtd/DefaultDecl.html" target="_self">DefaultDecl</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/MakeValidationException$object.html" target="_self">MakeValidationException</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/PCDATA$object.html" target="_self">PCDATA</a></em>
+        <code> extends </code><a href="../../scala/xml/dtd/ContentModel.html" target="_self">ContentModel</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/dtd/REQUIRED$object.html" target="_self">REQUIRED</a></em>
+        <code> extends </code><a href="../../scala/xml/dtd/DefaultDecl.html" target="_self">DefaultDecl</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>        
+        </table></body>
+      </html>

@@ -1,0 +1,1076 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>trait Iterable in scala</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></meta><meta content="scaladoc (version 2.6.1-final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../scala$package.html" target="_self">scala</a>
+        <br></br>
+        <span class="entity">trait  Iterable</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/Iterable"><code>scala/Iterable.scala</code></a>]
+      </div><hr></hr>
+      <a name="Iterable"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>trait</code>
+        <em>Iterable</em>[+<em>A</em>]
+      </dt>
+      <dd><code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd>Collection classes mixing in this class provide a method
+  <code>elements</code> which returns an iterator over all the
+  elements contained in the collection.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>If a collection has a known <code>size</code>, it should also sub-type <code>Collection</code>.         Only potentially unbounded collections should directly sub-class <code>Iterable</code>.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Matthias Zenger</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.1, 04/02/2004</dd></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../scala/dbc/result/Relation.html" target="_self">Relation</a>, <a href="../scala/Collection.html" target="_self">Collection</a>, <a href="../scala/Iterable$object.Projection.html" target="_self">Iterable.Projection</a>, <a href="../scala/IterableProxy.html" target="_self">IterableProxy</a>, <a href="../scala/collection/Ranged.html" target="_self">Ranged</a>, <a href="../scala/util/parsing/ast/Binders.Scope.html" target="_self">Binders.Scope</a></dd>
+      </dl><hr></hr>
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#%2B%2B%28Iterable%5BB%5D%29" target="_self">++</a></em>
+        [<em>B</em> &gt;: <a href="../scala/Iterable.html#A" target="_self">A</a>](<em>that</em> : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#%2B%2B%28Iterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Collection.html" target="_self">Collection</a>[<a href="../scala/Iterable.html#%2B%2B%28Iterable%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div>Appends two iterable objects.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#%2F%3A%28B%29" target="_self">/:</a></em>
+        [<em>B</em>](<em>z</em> : <a href="../scala/Iterable.html#%2F%3A%28B%29#B" target="_self">B</a>)(<em>op</em> : (<a href="../scala/Iterable.html#%2F%3A%28B%29#B" target="_self">B</a>, <a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html#%2F%3A%28B%29#B" target="_self">B</a>) : <a href="../scala/Iterable.html#%2F%3A%28B%29#B" target="_self">B</a>
+        
+        <div>Similar to <code>foldLeft</code> but can be used as
+    an operator with the order of list and zero arguments reversed.
+    That is, <code>z /: xs</code> is the same as <code>xs foldLeft z</code></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#%3A%5C%28B%29" target="_self">:\</a></em>
+        [<em>B</em>](<em>z</em> : <a href="../scala/Iterable.html#%3A%5C%28B%29#B" target="_self">B</a>)(<em>op</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>, <a href="../scala/Iterable.html#%3A%5C%28B%29#B" target="_self">B</a>) =&gt; <a href="../scala/Iterable.html#%3A%5C%28B%29#B" target="_self">B</a>) : <a href="../scala/Iterable.html#%3A%5C%28B%29#B" target="_self">B</a>
+        
+        <div>An alias for <code>foldRight</code>.
+    That is, <code>xs :\ z</code> is the same as <code>xs foldRight z</code></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%29" target="_self">addString</a></em>
+        (<em>buf</em> : <a href="../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>, <em>sep</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#addString%28scala.compat.StringBuilder%2CString%2CString%2CString%29" target="_self">addString</a></em>
+        (<em>buf</em> : <a href="../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>, <em>start</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>sep</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>end</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div>Write all elements of this string into given string builder.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#concat%28Iterable%5BB%5D%29" target="_self">concat</a></em>
+        [<em>B</em> &gt;: <a href="../scala/Iterable.html#A" target="_self">A</a>](<em>that</em> : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#concat%28Iterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Collection.html" target="_self">Collection</a>[<a href="../scala/Iterable.html#concat%28Iterable%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div>Appends two iterable objects.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#copyToArray%28Array%5BB%5D%2CInt%29" target="_self">copyToArray</a></em>
+        [<em>B</em> &gt;: <a href="../scala/Iterable.html#A" target="_self">A</a>](<em>xs</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Iterable.html#copyToArray%28Array%5BB%5D%2CInt%29#B" target="_self">B</a>], <em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Fills the given array <code>xs</code> with the elements of
+    this sequence starting at position <code>start</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29" target="_self">copyToBuffer</a></em>
+        [<em>B</em> &gt;: <a href="../scala/Iterable.html#A" target="_self">A</a>](<em>dest</em> : <a href="../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../scala/Iterable.html#copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Copy all elements to a given buffer</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#drop%28Int%29" target="_self">drop</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Collection.html" target="_self">Collection</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+        
+        <div>Returns this iterable without its <code>n</code> first elements
+    If this iterable has less than <code>n</code> elements, the empty
+    iterable is returned.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a></em>
+        (<em>p</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Collection.html" target="_self">Collection</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+        
+        <div>Returns the longest suffix of this iterable whose first element
+    does not satisfy the predicate <code>p</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#elements" target="_self">elements</a></em>
+         : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+        
+        <div>Creates a new iterator over all elements contained in this
+    object.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#exists%28%28A%29%3D%3EBoolean%29" target="_self">exists</a></em>
+        (<em>p</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Apply a predicate <code>p</code> to all elements of this
+    iterable object and return true, iff there is at least one
+    element for which <code>p</code> yields true.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#filter%28%28A%29%3D%3EBoolean%29" target="_self">filter</a></em>
+        (<em>p</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+        
+        <div>Returns all the elements of this iterable that satisfy the
+    predicate <code>p</code>. The order of the elements is preserved.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#find%28%28A%29%3D%3EBoolean%29" target="_self">find</a></em>
+        (<em>p</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Option.html" target="_self">Option</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+        
+        <div>Find and return the first element of the iterable object satisfying a
+    predicate, if any.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#findIndexOf%28%28A%29%3D%3EBoolean%29" target="_self">findIndexOf</a></em>
+        (<em>p</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>Returns index of the first element satisying a predicate, or -1.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a></em>
+        [<em>B</em>](<em>f</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]
+        
+        <div>Applies the given function <code>f</code> to each element of
+    this iterable, then concatenates the results.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#foldLeft%28B%29" target="_self">foldLeft</a></em>
+        [<em>B</em>](<em>z</em> : <a href="../scala/Iterable.html#foldLeft%28B%29#B" target="_self">B</a>)(<em>op</em> : (<a href="../scala/Iterable.html#foldLeft%28B%29#B" target="_self">B</a>, <a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html#foldLeft%28B%29#B" target="_self">B</a>) : <a href="../scala/Iterable.html#foldLeft%28B%29#B" target="_self">B</a>
+        
+        <div>Combines the elements of this iterable object together using the binary
+    function <code>f</code>, from left to right, and starting with
+    the value <code>z</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#foldRight%28B%29" target="_self">foldRight</a></em>
+        [<em>B</em>](<em>z</em> : <a href="../scala/Iterable.html#foldRight%28B%29#B" target="_self">B</a>)(<em>op</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>, <a href="../scala/Iterable.html#foldRight%28B%29#B" target="_self">B</a>) =&gt; <a href="../scala/Iterable.html#foldRight%28B%29#B" target="_self">B</a>) : <a href="../scala/Iterable.html#foldRight%28B%29#B" target="_self">B</a>
+        
+        <div>Combines the elements of this list together using the binary
+    function <code>f</code>, from right to left, and starting with
+    the value <code>z</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#forall%28%28A%29%3D%3EBoolean%29" target="_self">forall</a></em>
+        (<em>p</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Apply a predicate <code>p</code> to all elements of this
+    iterable object and return true, iff the predicate yields
+    true for all elements.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#foreach%28%28A%29%3D%3EUnit%29" target="_self">foreach</a></em>
+        (<em>f</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Unit.html" target="_self">Unit</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Apply a function <code>f</code> to all elements of this
+    iterable object.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#hasDefiniteSize" target="_self">hasDefiniteSize</a></em>
+         : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>returns true iff this collection has a bound size. 
+    Many APIs in this trait will not work on collections of 
+    unbound sizes.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#indexOf%28B%29" target="_self">indexOf</a></em>
+        [<em>B</em> &gt;: <a href="../scala/Iterable.html#A" target="_self">A</a>](<em>elem</em> : <a href="../scala/Iterable.html#indexOf%28B%29#B" target="_self">B</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>Returns the index of the first occurence of the specified
+    object in this iterable object.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#isEmpty" target="_self">isEmpty</a></em>
+         : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Is this collection empty?</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#map%28%28A%29%3D%3EB%29" target="_self">map</a></em>
+        [<em>B</em>](<em>f</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>]
+        
+        <div>Returns the iterable resulting from applying the given function
+    <code>f</code> to each element of this iterable.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#mkString" target="_self">mkString</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Converts a collection into a flat <code>String</code> by each element's toString method.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#mkString%28String%2CString%2CString%29" target="_self">mkString</a></em>
+        (<em>start</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>sep</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>end</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Returns a string representation of this iterable object. The resulting string
+    begins with the string <code>start</code> and is finished by the string
+    <code>end</code>. Inside, the string representations of elements (w.r.t.
+    the method <code>toString()</code>) are separated by the string
+    <code>sep</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#mkString%28String%29" target="_self">mkString</a></em>
+        (<em>sep</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Returns a string representation of this iterable object. The string
+    representations of elements (w.r.t. the method <code>toString()</code>)
+    are separated by the string <code>sep</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#partition%28%28A%29%3D%3EBoolean%29" target="_self">partition</a></em>
+        (<em>p</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : (<a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>], <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>])
+        
+        <div>Partitions this iterable in two iterables according to a predicate.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#projection" target="_self">projection</a></em>
+         : <a href="../scala/Iterable$object.Projection.html" target="_self">Projection</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+        
+        <div>returns a projection that can be used to call non-strict <code>filter</code>,
+   <code>map</code>, and <code>flatMap</code> methods that build projections
+   of the collection.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29" target="_self">reduceLeft</a></em>
+        [<em>B</em> &gt;: <a href="../scala/Iterable.html#A" target="_self">A</a>](<em>op</em> : (<a href="../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>, <a href="../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>) =&gt; <a href="../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>
+        
+        <div>Combines the elements of this iterable object together using the binary
+    operator <code>op</code>, from left to right</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29" target="_self">reduceRight</a></em>
+        [<em>B</em> &gt;: <a href="../scala/Iterable.html#A" target="_self">A</a>](<em>op</em> : (<a href="../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>, <a href="../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>) =&gt; <a href="../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>
+        
+        <div>Combines the elements of this iterable object together using the binary
+    operator <code>op</code>, from right to left</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#sameElements%28Iterable%5BB%5D%29" target="_self">sameElements</a></em>
+        [<em>B</em> &gt;: <a href="../scala/Iterable.html#A" target="_self">A</a>](<em>that</em> : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#sameElements%28Iterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Checks if the other iterable object contains the same elements.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#take%28Int%29" target="_self">take</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Collection.html" target="_self">Collection</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+        
+        <div>Returns an iterable consisting only over the first <code>n</code>
+    elements of this iterable, or else the whole iterable, if it has less
+    than <code>n</code> elements.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a></em>
+        (<em>p</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+        
+        <div>Returns the longest prefix of this iterable whose elements satisfy
+    the predicate <code>p</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#toList" target="_self">toList</a></em>
+         : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+        
+        <div>Create a fresh list with all the elements of this iterable object.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/Iterable.html#toStream" target="_self">toStream</a></em>
+         : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+        
+        <div>Create a stream which contains all the elements of this iterable object.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="elements"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>elements</em> : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates a new iterator over all elements contained in this
+    object.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the new iterator</dd></dl>
+    <hr></hr>
+<a name="concat%28Iterable%5BB%5D%29"></a><dl>
+      <dt>
+        @<a href="../scala/deprecated.html" target="_self">deprecated</a><br></br>
+        <code></code>
+        <code>def</code>
+        <em>concat</em>[<em>B</em> &gt;: <a href="../scala/Iterable.html#A" target="_self">A</a>](<em>that</em> : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#concat%28Iterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Collection.html" target="_self">Collection</a>[<a href="../scala/Iterable.html#concat%28Iterable%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends two iterable objects.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the new iterable object</dd><dt style="margin:10px 0 0 20px;">
+        <b>Deprecated</b></dt><dd>use <code>++</code> instead</dd><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd></dl>
+    <hr></hr>
+<a name="%2B%2B%28Iterable%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>++</em>[<em>B</em> &gt;: <a href="../scala/Iterable.html#A" target="_self">A</a>](<em>that</em> : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#%2B%2B%28Iterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Collection.html" target="_self">Collection</a>[<a href="../scala/Iterable.html#%2B%2B%28Iterable%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends two iterable objects.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the new iterable object</dd><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd></dl>
+    <hr></hr>
+<a name="map%28%28A%29%3D%3EB%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>map</em>[<em>B</em>](<em>f</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#map%28%28A%29%3D%3EB%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the iterable resulting from applying the given function
+    <code>f</code> to each element of this iterable.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>function to apply to each element.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>f(a<sub>0</sub>), ..., f(a<sub>n</sub>)</code>            if this iterable is <code>a<sub>0</sub>, ..., an</code>.</dd></dl>
+    <hr></hr>
+<a name="flatMap%28%28A%29%3D%3EIterable%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>flatMap</em>[<em>B</em>](<em>f</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29#B" target="_self">B</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Applies the given function <code>f</code> to each element of
+    this iterable, then concatenates the results.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>the function to apply on each element.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>f(a<sub>0</sub>) ::: ... ::: f(a<sub>n</sub>)</code> if             this iterable is <code>a<sub>0</sub>, ..., a<sub>n</sub></code>.</dd></dl>
+    <hr></hr>
+<a name="filter%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>filter</em>(<em>p</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns all the elements of this iterable that satisfy the
+    predicate <code>p</code>. The order of the elements is preserved.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the predicate used to filter the list.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the elements of this list satisfying <code>p</code>.</dd></dl>
+    <hr></hr>
+<a name="partition%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>partition</em>(<em>p</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : (<a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>], <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>])
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Partitions this iterable in two iterables according to a predicate.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the predicate on which to partition</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a pair of iterables: the iterable that satisfy the predicate             <code>p</code> and the iterable that do not.
+             The relative order of the elements in the resulting iterables
+             is the same as in the original iterable.</dd></dl>
+    <hr></hr>
+<a name="takeWhile%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>takeWhile</em>(<em>p</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the longest prefix of this iterable whose elements satisfy
+    the predicate <code>p</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>May not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the test predicate.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the longest prefix of this iterable whose elements satisfy             the predicate <code>p</code>.</dd></dl>
+    <hr></hr>
+<a name="dropWhile%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>dropWhile</em>(<em>p</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Collection.html" target="_self">Collection</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the longest suffix of this iterable whose first element
+    does not satisfy the predicate <code>p</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>May not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the test predicate.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the longest suffix of the iterable whose first element             does not satisfy the predicate <code>p</code>.</dd></dl>
+    <hr></hr>
+<a name="take%28Int%29"></a><dl>
+      <dt>
+        @<a href="../scala/deprecated.html" target="_self">deprecated</a><br></br>
+        <code></code>
+        <code>def</code>
+        <em>take</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Collection.html" target="_self">Collection</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns an iterable consisting only over the first <code>n</code>
+    elements of this iterable, or else the whole iterable, if it has less
+    than <code>n</code> elements.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Deprecated</b></dt><dd>API does not make sense for non-ordered collections</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the number of elements to take</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the new iterable</dd></dl>
+    <hr></hr>
+<a name="drop%28Int%29"></a><dl>
+      <dt>
+        @<a href="../scala/deprecated.html" target="_self">deprecated</a><br></br>
+        <code></code>
+        <code>def</code>
+        <em>drop</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Collection.html" target="_self">Collection</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns this iterable without its <code>n</code> first elements
+    If this iterable has less than <code>n</code> elements, the empty
+    iterable is returned.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Deprecated</b></dt><dd>API does not make sense for non-ordered collections</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the number of elements to drop</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the new iterable</dd></dl>
+    <hr></hr>
+<a name="foreach%28%28A%29%3D%3EUnit%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>foreach</em>(<em>f</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Unit.html" target="_self">Unit</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Apply a function <code>f</code> to all elements of this
+    iterable object.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>a function that is applied to every element.</dd></dl>
+    <hr></hr>
+<a name="forall%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>forall</em>(<em>p</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Apply a predicate <code>p</code> to all elements of this
+    iterable object and return true, iff the predicate yields
+    true for all elements.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>May not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the predicate</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>true, iff the predicate yields true for all elements.</dd></dl>
+    <hr></hr>
+<a name="exists%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>exists</em>(<em>p</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Apply a predicate <code>p</code> to all elements of this
+    iterable object and return true, iff there is at least one
+    element for which <code>p</code> yields true.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>May not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the predicate</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>true, iff the predicate yields true for at least one element.</dd></dl>
+    <hr></hr>
+<a name="find%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>find</em>(<em>p</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Option.html" target="_self">Option</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Find and return the first element of the iterable object satisfying a
+    predicate, if any.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>may not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the predicate</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the first element in the iterable object satisfying <code>p</code>,    or <code>None</code> if none exists.</dd></dl>
+    <hr></hr>
+<a name="findIndexOf%28%28A%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>findIndexOf</em>(<em>p</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns index of the first element satisying a predicate, or -1.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>may not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>the predicate</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the index of the first element satisfying <code>p</code>,              or -1 if such an element does not exist</dd></dl>
+    <hr></hr>
+<a name="indexOf%28B%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>indexOf</em>[<em>B</em> &gt;: <a href="../scala/Iterable.html#A" target="_self">A</a>](<em>elem</em> : <a href="../scala/Iterable.html#indexOf%28B%29#B" target="_self">B</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the index of the first occurence of the specified
+    object in this iterable object.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>may not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>elem - </code>element to search for.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the index in this sequence of the first occurence of the            specified element, or -1 if the sequence does not contain
+            this element.</dd></dl>
+    <hr></hr>
+<a name="foldLeft%28B%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>foldLeft</em>[<em>B</em>](<em>z</em> : <a href="../scala/Iterable.html#foldLeft%28B%29#B" target="_self">B</a>)(<em>op</em> : (<a href="../scala/Iterable.html#foldLeft%28B%29#B" target="_self">B</a>, <a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html#foldLeft%28B%29#B" target="_self">B</a>) : <a href="../scala/Iterable.html#foldLeft%28B%29#B" target="_self">B</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Combines the elements of this iterable object together using the binary
+    function <code>f</code>, from left to right, and starting with
+    the value <code>z</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>f(... (f(f(z, a<sub>0</sub>), a<sub>1</sub>) ...),            a<sub>n</sub>)</code> if the list is
+            <code>[a<sub>0</sub>, a<sub>1</sub>, ..., a<sub>n</sub>]</code>.</dd></dl>
+    <hr></hr>
+<a name="foldRight%28B%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>foldRight</em>[<em>B</em>](<em>z</em> : <a href="../scala/Iterable.html#foldRight%28B%29#B" target="_self">B</a>)(<em>op</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>, <a href="../scala/Iterable.html#foldRight%28B%29#B" target="_self">B</a>) =&gt; <a href="../scala/Iterable.html#foldRight%28B%29#B" target="_self">B</a>) : <a href="../scala/Iterable.html#foldRight%28B%29#B" target="_self">B</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Combines the elements of this list together using the binary
+    function <code>f</code>, from right to left, and starting with
+    the value <code>z</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>f(a<sub>0</sub>, f(a<sub>1</sub>, f(..., f(a<sub>n</sub>, z)...)))</code>            if the list is <code>[a<sub>0</sub>, a1, ..., a<sub>n</sub>]</code>.</dd></dl>
+    <hr></hr>
+<a name="%2F%3A%28B%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>/:</em>[<em>B</em>](<em>z</em> : <a href="../scala/Iterable.html#%2F%3A%28B%29#B" target="_self">B</a>)(<em>op</em> : (<a href="../scala/Iterable.html#%2F%3A%28B%29#B" target="_self">B</a>, <a href="../scala/Iterable.html#A" target="_self">A</a>) =&gt; <a href="../scala/Iterable.html#%2F%3A%28B%29#B" target="_self">B</a>) : <a href="../scala/Iterable.html#%2F%3A%28B%29#B" target="_self">B</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Similar to <code>foldLeft</code> but can be used as
+    an operator with the order of list and zero arguments reversed.
+    That is, <code>z /: xs</code> is the same as <code>xs foldLeft z</code></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd></dl>
+    <hr></hr>
+<a name="%3A%5C%28B%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>:\</em>[<em>B</em>](<em>z</em> : <a href="../scala/Iterable.html#%3A%5C%28B%29#B" target="_self">B</a>)(<em>op</em> : (<a href="../scala/Iterable.html#A" target="_self">A</a>, <a href="../scala/Iterable.html#%3A%5C%28B%29#B" target="_self">B</a>) =&gt; <a href="../scala/Iterable.html#%3A%5C%28B%29#B" target="_self">B</a>) : <a href="../scala/Iterable.html#%3A%5C%28B%29#B" target="_self">B</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>An alias for <code>foldRight</code>.
+    That is, <code>xs :\ z</code> is the same as <code>xs foldRight z</code></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd></dl>
+    <hr></hr>
+<a name="reduceLeft%28%28B%2CB%29%3D%3EB%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>reduceLeft</em>[<em>B</em> &gt;: <a href="../scala/Iterable.html#A" target="_self">A</a>](<em>op</em> : (<a href="../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>, <a href="../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>) =&gt; <a href="../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/Iterable.html#reduceLeft%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Combines the elements of this iterable object together using the binary
+    operator <code>op</code>, from left to right</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>op - </code>The operator to apply</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>op(... op(a<sub>0</sub>,a<sub>1</sub>), ..., a<sub>n</sub>)</code>       if the iterable object has elements
+            <code>a<sub>0</sub>, a<sub>1</sub>, ..., a<sub>n</sub></code>.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><a href="../scala/Predef$object#UnsupportedOperationException">Predef.UnsupportedOperationException</a> - if the iterable object is empty.</dd></dl>
+    <hr></hr>
+<a name="reduceRight%28%28B%2CB%29%3D%3EB%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>reduceRight</em>[<em>B</em> &gt;: <a href="../scala/Iterable.html#A" target="_self">A</a>](<em>op</em> : (<a href="../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>, <a href="../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>) =&gt; <a href="../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>) : <a href="../scala/Iterable.html#reduceRight%28%28B%2CB%29%3D%3EB%29#B" target="_self">B</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Combines the elements of this iterable object together using the binary
+    operator <code>op</code>, from right to left</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>op - </code>The operator to apply</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>a<sub>0</sub> op (... op (a<sub>n-1</sub> op a<sub>n</sub>)...)</code>            if the iterable object has elements <code>a<sub>0</sub>, a<sub>1</sub>, ...,
+            a<sub>n</sub></code>.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><a href="../scala/Predef$object#UnsupportedOperationException">Predef.UnsupportedOperationException</a> - if the iterator is empty.</dd></dl>
+    <hr></hr>
+<a name="copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>copyToBuffer</em>[<em>B</em> &gt;: <a href="../scala/Iterable.html#A" target="_self">A</a>](<em>dest</em> : <a href="../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../scala/Iterable.html#copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Copy all elements to a given buffer</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd><dd>Will not terminate if not finite.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>dest - </code>The buffer to which elements are copied</dd></dl>
+    <hr></hr>
+<a name="sameElements%28Iterable%5BB%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>sameElements</em>[<em>B</em> &gt;: <a href="../scala/Iterable.html#A" target="_self">A</a>](<em>that</em> : <a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/Iterable.html#sameElements%28Iterable%5BB%5D%29#B" target="_self">B</a>]) : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Checks if the other iterable object contains the same elements.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>will not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>that - </code>the other iterable object</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>true, iff both iterable objects contain the same elements.</dd></dl>
+    <hr></hr>
+<a name="toList"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>toList</em> : <a href="../scala/List.html" target="_self">List</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create a fresh list with all the elements of this iterable object.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd></dl>
+    <hr></hr>
+<a name="toStream"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>toStream</em> : <a href="../scala/Stream.html" target="_self">Stream</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Create a stream which contains all the elements of this iterable object.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>consider using <code>projection</code> for lazy behavior.</dd></dl>
+    <hr></hr>
+<a name="mkString%28String%2CString%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>mkString</em>(<em>start</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>sep</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>end</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a string representation of this iterable object. The resulting string
+    begins with the string <code>start</code> and is finished by the string
+    <code>end</code>. Inside, the string representations of elements (w.r.t.
+    the method <code>toString()</code>) are separated by the string
+    <code>sep</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Examples</b></dt><dd><code>List(1, 2, 3).mkString("(", "; ", ")") = "(1; 2; 3)"</code></dd><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>start - </code>starting string.</dd><dd><code>sep - </code>separator string.</dd><dd><code>end - </code>ending string.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a string representation of this iterable object.</dd></dl>
+    <hr></hr>
+<a name="mkString%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>mkString</em>(<em>sep</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a string representation of this iterable object. The string
+    representations of elements (w.r.t. the method <code>toString()</code>)
+    are separated by the string <code>sep</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>sep - </code>separator string.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a string representation of this iterable object.</dd></dl>
+    <hr></hr>
+<a name="mkString"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>mkString</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Converts a collection into a flat <code>String</code> by each element's toString method.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd></dl>
+    <hr></hr>
+<a name="addString%28scala.compat.StringBuilder%2CString%2CString%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>addString</em>(<em>buf</em> : <a href="../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>, <em>start</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>sep</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>end</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Write all elements of this string into given string builder.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>buf - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>...</dd></dl>
+    <hr></hr>
+<a name="addString%28scala.compat.StringBuilder%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>addString</em>(<em>buf</em> : <a href="../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>, <em>sep</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/compat/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="copyToArray%28Array%5BB%5D%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>copyToArray</em>[<em>B</em> &gt;: <a href="../scala/Iterable.html#A" target="_self">A</a>](<em>xs</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Iterable.html#copyToArray%28Array%5BB%5D%2CInt%29#B" target="_self">B</a>], <em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Fills the given array <code>xs</code> with the elements of
+    this sequence starting at position <code>start</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>xs - </code>the array to fill.</dd><dd><code>start - </code>starting index.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Precondition</b></dt><dd>the array must be large enough to hold all elements.</dd></dl>
+    <hr></hr>
+<a name="isEmpty"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>isEmpty</em> : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Is this collection empty?</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="projection"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>projection</em> : <a href="../scala/Iterable$object.Projection.html" target="_self">Projection</a>[<a href="../scala/Iterable.html#A" target="_self">A</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>returns a projection that can be used to call non-strict <code>filter</code>,
+   <code>map</code>, and <code>flatMap</code> methods that build projections
+   of the collection.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="hasDefiniteSize"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>hasDefiniteSize</em> : <a href="../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>returns true iff this collection has a bound size. 
+    Many APIs in this trait will not work on collections of 
+    unbound sizes.</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library Documentation</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>
