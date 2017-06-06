@@ -1,0 +1,11 @@
+Package: uk.qmole.vte
+Name: Gnome libvte
+Version: 0.29.1
+Architecture: iphoneos-arm
+Description: GTK+ terminal library for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: Terminals

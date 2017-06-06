@@ -1,0 +1,11 @@
+Package: uk.qmole.ivte
+Name: Ivte Terminal Emulator
+Version: 0.5.1
+Architecture: iphoneos-arm
+Description: VTE based terminal emulator for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: Terminals

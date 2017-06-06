@@ -1,0 +1,12 @@
+Package: uk.qmole.xserver
+Name: QMole Embedded X Daemon
+Version: 4.1.3
+Architecture: iphoneos-arm
+Description: QMole Embedded X Daemon for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.usrlocal, uk.qmole.x11r6, uk.qmole.xset, uk.qmole.bdftopcf, uk.qmole.encodings, uk.qmole.fontconfig, uk.qmole.fontutil, uk.qmole.freetype, uk.qmole.giflib, uk.qmole.libxaw, uk.qmole.libxfont, uk.qmole.libxft, uk.qmole.libxpm, uk.qmole.libxrender, uk.qmole.mkfontdir, uk.qmole.mkfontscale, uk.qmole.pixman, uk.qmole.renderproto, uk.qmole.showfont, uk.qmole.utilmacros, uk.qmole.x11fonts, uk.qmole.xproto, uk.qmole.libx11, uk.qmole.libxdamage, uk.qmole.libxfixes, uk.qmole.libxfontcache, uk.qmole.libxrandr, uk.qmole.libxi, uk.qmole.eterm
+Sponsor: QMole Ltd. 
+Section: Core_System

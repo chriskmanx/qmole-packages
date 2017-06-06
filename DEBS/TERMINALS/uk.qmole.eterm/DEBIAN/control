@@ -1,0 +1,12 @@
+Package: uk.qmole.eterm
+Name: Eterm.org  Terminal emulator 
+Version: 0.9.6
+Architecture: iphoneos-arm
+Description: Eterm.org color terminal emulator  for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.libast, uk.qmole.imlib2
+Sponsor: QMole Ltd. 
+Section: Terminals

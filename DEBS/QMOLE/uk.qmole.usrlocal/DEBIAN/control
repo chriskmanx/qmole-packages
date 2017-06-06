@@ -1,0 +1,12 @@
+Package: uk.qmole.usrlocal
+Name: QMole Usr Local Switch
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Move usr local to private partition
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: adv-cmds, basic-cmds, berkeleydb, bzip2, coreutils, csu, developer-cmds, diffutils, diskdev-cmds, file-cmds, findutils, flex, bison, gawk, gettext, glib, grep, gzip, inetutils, less, libffi, jpeg, libxml2, lsof, make, pcre, png, readline, rsync, sed, shell-cmds, sudo, system-cmds, tar, tiff, top, unrar, unzip, wget, whois, xml2, xmu, zip
+Sponsor: QMole Ltd. 
+Section: Core_System

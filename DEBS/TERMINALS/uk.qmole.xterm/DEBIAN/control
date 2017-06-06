@@ -1,0 +1,11 @@
+Package: uk.qmole.xterm
+Name: xterm terminal emulator
+Version: 279
+Architecture: iphoneos-arm
+Description: The venerable Linux xterm for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: Terminals

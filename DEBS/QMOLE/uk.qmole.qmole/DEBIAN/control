@@ -1,0 +1,12 @@
+Package: uk.qmole.qmole
+Name: QMole Desktop
+Version: 0.7
+Architecture: iphoneos-arm
+Description: The QMole Master Package
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: firmware (< 9.0), uk.qmole.usrlocal, uk.qmole.xserver, uk.qmole.deviceid, uk.qmole.xset, uk.qmole.herbstluft, uk.qmole.gtk3, uk.qmole.gtk2, uk.qmole.xauth, uk.qmole.xrdb, uk.qmole.xsetroot, uk.qmole.roxfiler, uk.qmole.ivte, uk.qmole.fox, uk.qmole.dzen, uk.qmole.bmpanel2, uk.qmole.cairo, uk.qmole.clawsmail, uk.qmole.eterm, uk.qmole.leafpad, uk.qmole.poppler, uk.qmole.xournal, uk.qmole.xwininfo, uk.qmole.xhost 
+Sponsor: QMole Ltd. 
+Section: Core_System

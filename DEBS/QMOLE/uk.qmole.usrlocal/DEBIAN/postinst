@@ -1,0 +1,58 @@
+#!/bin/bash
+export PREFIX=/
+export SOURCE=usr/local
+export TARGET=private/var/local
+export COPYTARGET=private/var
+
+
+# Make sure target directory exists
+# Create if necessary
+
+echo `date`  >> /tmp/usrlocalswitch.log 2>&1
+
+if [ -d $PREFIX$TARGET ]; then
+   echo $PREFIX$TARGET already exists >> /tmp/usrlocalswitch.log 2>&1
+else
+   echo creating empty $PREFIX$TARGET >> /tmp/usrlocalswitch.log 2>&1
+   mkdir -p $PREFIX$TARGET
+
+   # Check again
+   if [ -d $PREFIX$TARGET ]; then
+      echo $PREFIX$TARGET now exists, ok >> /tmp/usrlocalswitch.log 2>&1
+   else
+      echo failed to create $PREFIX$TARGET >> /tmp/usrlocalswitch.log 2>&1
+      echo exit >> /tmp/usrlocalswitch.log 2>&1      
+      exit 1
+   fi
+fi
+
+# Now /private/var/local is known to exist as a directory
+
+# Is /usr/local a link and is it readable?
+if [ -h $PREFIX$SOURCE ] && [ -e $PREFIX$SOURCE ]; then
+   echo $PREFIX$TARGET already linked, done >> /tmp/usrlocalswitch.log 2>&1
+   echo exit >> /tmp/usrlocalswitch.log 2>&1
+   exit 0
+fi
+
+# Do we have /usr/local as a directory at all?
+if [ -d $PREFIX$SOURCE ]; then
+   # Back it up to the location we know to exist
+   echo back up $PREFIX$SOURCE >> /tmp/usrlocalswitch.log 2>&1
+   cp -a $PREFIX$SOURCE $PREFIX$COPYTARGET
+   # Then remove it
+   echo remove $PREFIX$SOURCE >> /tmp/usrlocalswitch.log 2>&1
+   rm  -f -R  $PREFIX$SOURCE
+fi
+
+# Now link /usr/local to /private/var/local
+echo link $PREFIX$SOURCE to $PREFIX$TARGET >> /tmp/usrlocalswitch.log 2>&1
+ln -s $PREFIX$TARGET $PREFIX$SOURCE
+
+# Signal completion
+echo exit >> /tmp/usrlocalswitch.log 2>&1
+exit 0
+
+
+
+
