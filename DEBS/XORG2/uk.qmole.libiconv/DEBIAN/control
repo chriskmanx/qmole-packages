@@ -1,0 +1,11 @@
+Package: uk.qmole.libiconv
+Name: XORG libiconv
+Version: 1.14
+Architecture: iphoneos-arm
+Description: XORG libiconv for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: X_Window

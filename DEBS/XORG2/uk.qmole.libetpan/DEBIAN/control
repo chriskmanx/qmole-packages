@@ -1,0 +1,12 @@
+Package: uk.qmole.libetpan
+Name: XORG libetpan
+Version: 0.57
+Architecture: iphoneos-arm
+Description: XORG libetpan for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Depends: curl
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: X_Window

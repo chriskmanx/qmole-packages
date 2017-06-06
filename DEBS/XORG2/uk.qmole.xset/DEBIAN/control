@@ -1,0 +1,13 @@
+Package: uk.qmole.xset
+Name: XORG xset
+Version: 1.0.4
+Architecture: iphoneos-arm
+Description: XORG xset for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.x11r6
+Depends: uk.qmole.libx11, uk.qmole.xserver, uk.qmole.libxi
+Sponsor: QMole Ltd. 
+Section: X_Window

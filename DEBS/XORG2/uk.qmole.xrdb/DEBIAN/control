@@ -1,0 +1,12 @@
+Package: uk.qmole.xrdb
+Name: XORG xrdb
+Version: 1.0.5
+Architecture: iphoneos-arm
+Description: XORG xrdb for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.libx11, uk.qmole.xserver, uk.qmole.libxi
+Sponsor: QMole Ltd. 
+Section: X_Window

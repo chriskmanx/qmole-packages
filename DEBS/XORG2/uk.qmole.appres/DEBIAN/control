@@ -1,0 +1,11 @@
+Package: uk.qmole.appres
+Name: XORG appres
+Version: 1.0.1
+Architecture: iphoneos-arm
+Description: XORG appres for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: X_Window

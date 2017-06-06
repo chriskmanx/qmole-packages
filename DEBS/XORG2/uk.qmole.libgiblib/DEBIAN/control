@@ -1,0 +1,11 @@
+Package: uk.qmole.libgiblib
+Name: XORG libgiblib
+Version: 1.2.4
+Architecture: iphoneos-arm
+Description: XORG libgiblib for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: X_Window

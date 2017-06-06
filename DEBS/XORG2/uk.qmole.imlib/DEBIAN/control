@@ -1,0 +1,12 @@
+Package: uk.qmole.imlib2
+Name: XORG imlib2
+Version: 1.4.4
+Architecture: iphoneos-arm
+Description: XORG libimlib2 for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.libast
+Sponsor: QMole Ltd. 
+Section: X_Window
