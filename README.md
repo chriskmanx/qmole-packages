@@ -11,15 +11,15 @@ QMole Debian Packages
 
 ### REPO
 
-The hosted repository - what Cydia connects to for installation to iPhone & iPad via dedicated Cydia source.
+The hosted repository - what Cydia connects to for installation to iPhone & iPad via dedicated Cydia source
 
 ### DEBS
 
-Debian package sources used to build the REPO. 
+Debian package sources used to build the REPO
 
 ### scripts
 
-Various helper and build scripts to assist with building the REPO.
+Various helper and build scripts to assist with building the REPO
 
 ### Avian tar archive
 
