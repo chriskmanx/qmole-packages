@@ -1,0 +1,98 @@
+# 
+# 
+# patch "itemwindow.tcl"
+#  from [89bc116c1d796c4166072cd0e4e4e4b692df3d75]
+#    to [4401ec814d4c2d6848ee66c3381e9cd64c857aed]
+# 
+# patch "notelist.tcl"
+#  from [92192e34d6ff2bc99ee544394d9817c7d31b14d2]
+#    to [facb4324545db3c237663b034adf421746daf632]
+# 
+# patch "pref.tcl"
+#  from [89fdc5aff4f944c20f19a8f2e895d5b94f07c601]
+#    to [f5d4e9e12ed4db3495b455e2c13c7313cb5f1b99]
+# 
+============================================================
+--- itemwindow.tcl	89bc116c1d796c4166072cd0e4e4e4b692df3d75
++++ itemwindow.tcl	4401ec814d4c2d6848ee66c3381e9cd64c857aed
+@@ -130,7 +130,12 @@ method ItemWindow read {} {
+ 	set slot(link) right_arrow
+     }
+ 
+-    $slot(canvas) itemconfigure text.$self -text [$slot(item) text]
++    if [ $slot(item) contains $slot(date) ] {
++        $slot(canvas) itemconfigure text.$self -text [$slot(item) text]
++    } else {
++        set tmp_diff [ expr [ $slot(item) next [ expr $slot(date) - 1 ] ] - $slot(date) ]
++        $slot(canvas) itemconfigure text.$self -text "[$slot(item) text] ($tmp_diff day[ expr { $tmp_diff eq 1 ? "" : "s" } ])"
++    }
+     $self place
+ }
+ 
+============================================================
+--- notelist.tcl	92192e34d6ff2bc99ee544394d9817c7d31b14d2
++++ notelist.tcl	facb4324545db3c237663b034adf421746daf632
+@@ -28,6 +28,10 @@ class NoteList {name view} {
+ 	set slot(font) [pref itemFont]
+     }
+ 
++    set slot(earlyfont) [option get $name.c earlyitemFont Font]
++    if ![string compare $slot(earlyfont) ""] {
++        set slot(earlyfont) [pref earlyitemFont]
++    }
+     # Get font dimensions.  The text string "00:00AM" is used so that
+     # we hit the cache entry created by "ApptList".
+     set slot(font_height) [text_height $slot(font) "00:00AM" [pref itemPad]]
+@@ -194,7 +198,7 @@ method NoteList rescan {args} {
+     }
+ 
+     set list {}
+-    cal query $slot(date) $slot(date) item d {
++    cal listing $slot(date) $slot(date) item d {
+         if [$item is note] {
+             lappend list $item
+             $self make_window $item
+@@ -238,10 +242,17 @@ method NoteList make_window {item} {
+ }
+ 
+ method NoteList make_window {item} {
+-    set slot(window.$item) [ItemWindow\
+-				$slot(window).c\
+-				$slot(font)\
+-				$item $slot(date)]
++    if [ $item contains $slot(date) ] {
++        set slot(window.$item) [ItemWindow\
++            $slot(window).c\
++            $slot(font)\
++            $item $slot(date)]
++    } else {
++        set slot(window.$item) [ItemWindow\
++            $slot(window).c\
++            $slot(earlyfont)\
++            $item $slot(date)]
++    }
+ }
+ 
+ method NoteList canvas_resize {w h} {
+============================================================
+--- pref.tcl	89fdc5aff4f944c20f19a8f2e895d5b94f07c601
++++ pref.tcl	f5d4e9e12ed4db3495b455e2c13c7313cb5f1b99
+@@ -183,6 +183,7 @@ proc pref_fixfonts {} {
+     option add *interestFont		$bold140 startupFile
+     option add *weekendInterestFont	$blit140 startupFile
+     option add *itemFont		$norm140 startupFile
++    option add *earlyitemFont		$ital140 startupFile
+ 
+     option add *normFont		$norm140 startupFile
+     option add *boldFont		$bold140 startupFile
+@@ -276,6 +277,10 @@ proc pref_itemFont {} {
+     return [pref_cf [option get . itemFont Font]]
+ }
+ 
++proc pref_earlyitemFont {} {
++    return [pref_cf [option get . earlyitemFont Font]]
++}
++
+ proc pref_normFont {} {return [pref_cf [option get . normFont Font]]}
+ proc pref_boldFont {} {return [pref_cf [option get . boldFont Font]]}
+ proc pref_italFont {} {return [pref_cf [option get . italFont Font]]}

@@ -1,0 +1,37 @@
+--- ical-2.2/configure.in.no-locincpth	2002-04-27 08:11:15.000000000 -0400
++++ ical-2.2/configure.in	2002-04-27 08:13:27.000000000 -0400
+@@ -227,8 +227,11 @@
+ AC_MSG_RESULT($is_good_tk_version)
+ if test "$is_good_tk_version" = "no"; then exit 1; fi
+ 
+-TCL_INCDIR="$tclhdir"
+-TK_INCDIR="$tkhdir"
++for dir in $tclhdir $tkhdir; do
++  if [[ "x$dir" != "x/usr/include" -a "x$dir" != "x$dir/usr/local/include" ]]; then
++    TCLTK_CPPFLAGS="$TCLTK_CPPFLAGS -I$dir"
++  fi
++done
+ 
+ #### Export variables discovered during Tcl/Tk configuration
+ 
+@@ -241,8 +244,7 @@
+ AC_SUBST(TK_PREFIX)
+ AC_SUBST(TK_EXEC_PREFIX)
+ AC_SUBST(TK_XINCLUDES)
+-AC_SUBST(TCL_INCDIR)
+-AC_SUBST(TK_INCDIR)
++AC_SUBST(TCLTK_CPPFLAGS)
+ 
+ #### Find names of script files for use in stand-alone installation
+ 
+--- ical-2.2/Makefile.in.no-locincpth	1997-06-04 12:09:59.000000000 -0400
++++ ical-2.2/Makefile.in	2002-04-27 08:13:39.000000000 -0400
+@@ -64,7 +64,7 @@
+    CXXFLAGS = $(OPTF)
+     CXXINCS = -I. -I$(srcdir) -I$(srcdir)/calendar \
+               -I$(srcdir)/types -I$(srcdir)/time \
+-              $(X_CFLAGS) -I@TCL_INCDIR@ -I@TK_INCDIR@
++              $(X_CFLAGS) @TCLTK_CPPFLAGS@
+ 
+      CFLAGS = $(OPTF) -I. -I$(srcdir) $(X_CFLAGS)
+ 

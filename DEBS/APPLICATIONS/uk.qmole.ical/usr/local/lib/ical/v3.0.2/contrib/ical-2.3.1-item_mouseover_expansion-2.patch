@@ -1,0 +1,35 @@
+# 
+# old_revision [332348801fe163dc61a89d39214ce37d16ea6633]
+# 
+# patch "itemwindow.tcl"
+#  from [38951047fb699f5ca08f150179faafe8ce94be79]
+#    to [89bc116c1d796c4166072cd0e4e4e4b692df3d75]
+# 
+============================================================
+--- itemwindow.tcl	38951047fb699f5ca08f150179faafe8ce94be79
++++ itemwindow.tcl	89bc116c1d796c4166072cd0e4e4e4b692df3d75
+@@ -399,7 +399,7 @@
+     $canvas bind $self <B2-Motion>	 	[list $self move_continue %y]
+     $canvas bind $self <ButtonRelease-2>	[list $self move_finish %y]
+ 
+-    $canvas bind $self <Enter>	[list $self toggle_overflow on]
++    $canvas bind $self <Enter>	[list after 250 $self toggle_overflow on]
+     $canvas bind $self <Leave>	[list $self toggle_overflow off]
+ }
+ 
+@@ -629,6 +629,15 @@
+     set y2 [expr $y1 + $slot(height)]
+ 
+     if {$state eq "on"} {
++        set cx [$slot(canvas) canvasx [expr {[winfo pointerx $slot(canvas)]\
++                                             - [winfo rootx $slot(canvas)]}]]
++        set cy [$slot(canvas) canvasy [expr {[winfo pointery $slot(canvas)]\
++                                             - [winfo rooty $slot(canvas)]}]]
++        set closest [$slot(canvas) find closest $cx $cy]
++        if {$cx < $x1 || $cx > $x2 || $cy < $y1 || $cy > $y2\
++            || $closest != $slot(text)} {
++            return
++        }
+         $self raise
+         $slot(canvas) itemconfigure text.$self -text [$slot(item) text]
+        	set bbox [$slot(canvas) bbox text.$self]

@@ -1,0 +1,12 @@
+Package: uk.qmole.imagemagick
+Name: imagemagick
+Version: 4.2.9
+Architecture: iphoneos-arm
+Description: imagemagick for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.libcroco, uk.qmole.curl, uk.qmole.herbstluft
+Sponsor: QMole Ltd. 
+Section: Applications

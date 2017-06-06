@@ -1,0 +1,637 @@
+[Mon Mar 22 08:28:03 PST 2004]
+
+This patch makes ical work on Fedora Core 1 with tcl-8.3.5/tk-8.3.5.
+
+I haven't verified that the changes make sense, they were all
+const/!const type error messages and I suspect that tcl changed the
+args in the release but I don't know.  It does seem to work for me,
+we're happily back on ical!  If you make further changes please send
+them to lm+ical@bitmover.com.  Thanks.
+
+--lm
+
+
+diff -ur ical-2.3.1/cal_tcl.C ical-2.3.1.fedora/cal_tcl.C
+--- ical-2.3.1/cal_tcl.C	2004-03-11 03:26:55.000000000 -0800
++++ ical-2.3.1.fedora/cal_tcl.C	2004-03-22 01:27:55.000000000 -0800
+@@ -281,7 +281,7 @@
+ 
+     if ((argc >= 2) && (strcmp(argv[0], "-items") == 0)) {
+ 	int count;
+-	const char** list;
++	char** list;
+ 	if (Tcl_SplitList(tcl, argv[1], &count, &list) != TCL_OK) {
+ 	    TCL_Error(tcl, "invalid item list");
+ 	}
+@@ -383,8 +383,8 @@
+ static int cal_forincs(ClientData c, Tcl_Interp* tcl, int argc, const char* argv[]){
+     Calendar_Tcl* cal = (Calendar_Tcl*) c;
+ 
+-    const char* var = argv[0];
+-    const char* body = argv[1];
++    char* var = (char*)argv[0];
++    char* body = (char*)argv[1];
+     for (int i = 0; i < cal->includes->size(); i++) {
+ 	if (Tcl_SetVar(tcl, var, (char*) (cal->includes->slot(i)->GetName()),
+ 		       0) == NULL) {
+@@ -603,19 +603,19 @@
+ static int item_loop(Tcl_Interp* tcl, Occurrences const& list,
+ 		     const char* ivar, const char* dvar, const char* body) {
+     for (int i = 0; i < list.size(); i++) {
+-	if (Tcl_SetVar(tcl, ivar, (char*) list[i].item->handle(), 0) == NULL) {
++	if (Tcl_SetVar(tcl, (char*)ivar, (char*)list[i].item->handle(), 0) == NULL) {
+ 	    TCL_Error(tcl, "could not set loop variable");
+ 	}
+ 
+ 	if (dvar != 0) {
+ 	    char buffer[20];
+ 	    sprintf(buffer, "%d", list[i].date.EpochDays());
+-	    if (Tcl_SetVar(tcl, dvar, buffer, 0) == NULL) {
++	    if (Tcl_SetVar(tcl, (char*)dvar, buffer, 0) == NULL) {
+ 		TCL_Error(tcl, "could not set loop variable");
+ 	    }
+ 	}
+ 
+-	int result = Tcl_Eval(tcl, body);
++	int result = Tcl_Eval(tcl, (char*)body);
+ 	if (result == TCL_BREAK) break;
+ 	if ((result == TCL_OK) || (result == TCL_CONTINUE)) continue;
+ 	return result;
+@@ -632,13 +632,13 @@
+     if (argc > 5) TCL_Error(tcl, "too many arguments");
+ 
+     int startDays;
+-    if (Tcl_GetInt(tcl, argv[0], &startDays) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[0], &startDays) != TCL_OK) {
+ 	TCL_Error(tcl, "illegal start date");
+     }
+     Date start(startDays);
+ 
+     int finishDays;
+-    if (Tcl_GetInt(tcl, argv[1], &finishDays) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[1], &finishDays) != TCL_OK) {
+ 	TCL_Error(tcl, "illegal finish date");
+     }
+     Date finish(finishDays);
+@@ -669,7 +669,7 @@
+     }
+ 
+     int startDays;
+-    if (Tcl_GetInt(tcl, argv[1], &startDays) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[1], &startDays) != TCL_OK) {
+ 	TCL_Error(tcl, "illegal start date");
+     }
+     Date start(startDays);
+@@ -736,7 +736,7 @@
+     }
+ 
+     int startDays;
+-    if (Tcl_GetInt(tcl, argv[1], &startDays) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[1], &startDays) != TCL_OK) {
+ 	TCL_Error(tcl, "illegal start date");
+     }
+     Date start(startDays);
+@@ -793,13 +793,13 @@
+     if (argc > 5) TCL_Error(tcl, "too many arguments");
+ 
+     int startDays;
+-    if (Tcl_GetInt(tcl, argv[0], &startDays) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[0], &startDays) != TCL_OK) {
+ 	TCL_Error(tcl, "illegal start date");
+     }
+     Date start(startDays);
+ 
+     int finishDays;
+-    if (Tcl_GetInt(tcl, argv[1], &finishDays) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[1], &finishDays) != TCL_OK) {
+ 	TCL_Error(tcl, "illegal finish date");
+     }
+     Date finish(finishDays);
+diff -ur ical-2.3.1/dateeditor.C ical-2.3.1.fedora/dateeditor.C
+--- ical-2.3.1/dateeditor.C	2004-03-11 03:26:56.000000000 -0800
++++ ical-2.3.1.fedora/dateeditor.C	2004-03-22 01:46:25.000000000 -0800
+@@ -47,7 +47,7 @@
+  *		item (under the assumption that the month  named by <date>
+  *		is being displayed).
+  */
+-int Cmd_MonthDays(ClientData, Tcl_Interp* tcl, int argc, const char* argv[]) {
++int Cmd_MonthDays(ClientData, Tcl_Interp* tcl, int argc, char* argv[]) {
+     if (argc != 4) {
+ 	TCL_Error(tcl, "illegal number of arguments");
+     }
+@@ -56,7 +56,7 @@
+     if (cal == 0) {TCL_Error(tcl, "illegal calendar");}
+ 
+     int dateDays;
+-    if (Tcl_GetInt(tcl, argv[3], &dateDays) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[3], &dateDays) != TCL_OK) {
+ 	return TCL_ERROR;
+     }
+     Date date(dateDays);
+@@ -93,7 +93,7 @@
+  *		"<hlist>", the string "always" is used instead of actual
+  *		hilite style.
+  */
+-int Cmd_HiliteLoop(ClientData, Tcl_Interp* tcl, int argc, const char* argv[]) {
++int Cmd_HiliteLoop(ClientData, Tcl_Interp* tcl, int argc, char* argv[]) {
+     int i;
+ 
+     if (argc != 8) {
+@@ -104,16 +104,16 @@
+     if (cal == 0) {TCL_Error(tcl, "illegal calendar");}
+ 
+     int startDays;
+-    if (Tcl_GetInt(tcl, argv[3], &startDays) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[3], &startDays) != TCL_OK) {
+ 	return TCL_ERROR;
+     }
+     int finishDays;
+-    if (Tcl_GetInt(tcl, argv[4], &finishDays) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[4], &finishDays) != TCL_OK) {
+ 	return TCL_ERROR;
+     }
+ 
+     int count;
+-    const char** strlist;
++    char** strlist;
+     if (Tcl_SplitList(tcl, argv[2], &count, &strlist) != TCL_OK) {
+ 	return TCL_ERROR;
+     }
+@@ -147,18 +147,18 @@
+ 
+ 	char buffer[20];
+ 	sprintf(buffer, "%d", list[i].date.EpochDays());
+-	if (Tcl_SetVar(tcl, dvar, buffer, 0) == NULL) {
++	if (Tcl_SetVar(tcl, (char*)dvar, buffer, 0) == NULL) {
+ 	    free((char*) strlist);
+ 	    TCL_Error(tcl, "could not set loop variable");
+ 	}
+ 
+-	if (Tcl_SetVar(tcl, hvar, (char*)hilite, 0) == NULL) {
++	if (Tcl_SetVar(tcl, (char*)hvar, (char*)hilite, 0) == NULL) {
+ 	    free((char*) strlist);
+ 	    TCL_Error(tcl, "could not set loop variable");
+ 	}
+ 
+ 
+-	int result = Tcl_Eval(tcl, body);
++	int result = Tcl_Eval(tcl, (char*)body);
+ 
+ 	if (result == TCL_OK) continue;
+ 	if (result == TCL_CONTINUE) continue;
+diff -ur ical-2.3.1/dispatch.h ical-2.3.1.fedora/dispatch.h
+--- ical-2.3.1/dispatch.h	2004-03-11 03:26:56.000000000 -0800
++++ ical-2.3.1.fedora/dispatch.h	2004-03-22 01:13:50.000000000 -0800
+@@ -15,6 +15,8 @@
+  *
+  * The dispatch is based on <subcommand>.
+  */
++typedef int (Tcl_CmdProc_ical) _ANSI_ARGS_((ClientData clientData,
++        Tcl_Interp *interp, int argc, const char *argv[]));
+ 
+ struct Dispatch_Entry {
+     char const* command;	/* Sub-command to dispatch on */
+@@ -30,7 +32,7 @@
+      * The handler procedure.  <command> and <subcommand> are stripped
+      * away from argc/argv and then the handler is called.
+      */
+-    Tcl_CmdProc* handler;
++    Tcl_CmdProc_ical* handler;
+ };
+ 
+ /*
+diff -ur ical-2.3.1/ical.h ical-2.3.1.fedora/ical.h
+--- ical-2.3.1/ical.h	2004-03-11 03:26:56.000000000 -0800
++++ ical-2.3.1.fedora/ical.h	2004-03-22 01:43:29.000000000 -0800
+@@ -38,18 +38,18 @@
+ 
+ // Prototype for Tcl commands.
+ 
+-extern int Cmd_CreateCalendar	(ClientData, Tcl_Interp*, int, const char*[]);
+-extern int Cmd_CreateNotice	(ClientData, Tcl_Interp*, int, const char*[]);
+-extern int Cmd_CreateAppt	(ClientData, Tcl_Interp*, int, const char*[]);
++extern int Cmd_CreateCalendar	(ClientData, Tcl_Interp*, int, char*[]);
++extern int Cmd_CreateNotice	(ClientData, Tcl_Interp*, int, char*[]);
++extern int Cmd_CreateAppt	(ClientData, Tcl_Interp*, int, char*[]);
+ 
+-extern int Cmd_Date		(ClientData, Tcl_Interp*, int, const char*[]);
+-extern int Cmd_Time		(ClientData, Tcl_Interp*, int, const char*[]);
++extern int Cmd_Date		(ClientData, Tcl_Interp*, int, char*[]);
++extern int Cmd_Time		(ClientData, Tcl_Interp*, int, char*[]);
+ 
+ /* Speedup routines. */
+-extern int Cmd_MonthDays	(ClientData, Tcl_Interp*, int, const char*[]);
+-extern int Cmd_HiliteLoop	(ClientData, Tcl_Interp*, int, const char*[]);
++extern int Cmd_MonthDays	(ClientData, Tcl_Interp*, int, char*[]);
++extern int Cmd_HiliteLoop	(ClientData, Tcl_Interp*, int, char*[]);
+ 
+ /* Convenience routines */
+-extern int Cmd_ExpandFileName	(ClientData, Tcl_Interp*, int, const char*[]);
++extern int Cmd_ExpandFileName	(ClientData, Tcl_Interp*, int, char*[]);
+ 
+ #endif /* _ICAL_H */
+diff -ur ical-2.3.1/ical_tcl.C ical-2.3.1.fedora/ical_tcl.C
+--- ical-2.3.1/ical_tcl.C	2004-03-11 03:26:56.000000000 -0800
++++ ical-2.3.1.fedora/ical_tcl.C	2004-03-22 01:44:50.000000000 -0800
+@@ -10,7 +10,7 @@
+  *	notice <name>
+  */
+ 
+-int Cmd_CreateNotice(ClientData, Tcl_Interp* tcl, int argc, const char* argv[]) {
++int Cmd_CreateNotice(ClientData, Tcl_Interp* tcl, int argc, char* argv[]) {
+     if (argc != 1) {
+ 	TCL_Error(tcl, "invalid arguments to notice");
+     }
+@@ -25,7 +25,7 @@
+  *	appointment <name>	-- Returns <name>
+  */
+ 
+-int Cmd_CreateAppt(ClientData, Tcl_Interp* tcl, int argc, const char* argv[]) {
++int Cmd_CreateAppt(ClientData, Tcl_Interp* tcl, int argc, char* argv[]) {
+     if (argc != 1) {
+ 	TCL_Error(tcl, "invalid arguments to appointment");
+     }
+@@ -40,7 +40,7 @@
+  *	calendar <name> <filename>	-- Returns <name>
+  */
+ 
+-int Cmd_CreateCalendar(ClientData, Tcl_Interp* tcl, int argc, const char* argv[]) {
++int Cmd_CreateCalendar(ClientData, Tcl_Interp* tcl, int argc, char* argv[]) {
+     if (argc != 3) {
+ 	TCL_Error(tcl, "invalid arguments to calendar");
+     }
+@@ -62,13 +62,13 @@
+  *		of the translation fails, this routine returns an
+  *		error.  Otherwise it returns the translated file name.
+  */
+-int Cmd_ExpandFileName(ClientData, Tcl_Interp* tcl, int argc, const char* argv[]) {
++int Cmd_ExpandFileName(ClientData, Tcl_Interp* tcl, int argc, char* argv[]) {
+     if (argc != 2) {
+ 	TCL_Error(tcl, "invalid arguments to expand_file_name");
+     }
+ 
+     Tcl_DString buf;
+-    char* result = Tcl_TranslateFileName(tcl, argv[1], &buf);
++    char* result = Tcl_TranslateFileName(tcl, (char*)argv[1], &buf);
+     if (result != NULL) {
+ 	Tcl_SetResult(tcl, result, TCL_VOLATILE);
+ 	Tcl_DStringFree(&buf);
+diff -ur ical-2.3.1/item_tcl.C ical-2.3.1.fedora/item_tcl.C
+--- ical-2.3.1/item_tcl.C	2004-03-11 03:26:56.000000000 -0800
++++ ical-2.3.1.fedora/item_tcl.C	2004-03-22 01:36:11.000000000 -0800
+@@ -177,7 +177,7 @@
+ 	}
+ 
+ 	int length;
+-	if ((Tcl_GetInt(tcl, argv[0], &length) != TCL_OK) ||
++	if ((Tcl_GetInt(tcl, (char*)argv[0], &length) != TCL_OK) ||
+ 	    (length < 1) ||
+ 	    (length > 24*60)) {
+ 	    TCL_Error(tcl, "invalid appointment length");
+@@ -209,7 +209,7 @@
+     }
+ 
+     int start;
+-    if ((Tcl_GetInt(tcl, argv[0], &start) != TCL_OK) ||
++    if ((Tcl_GetInt(tcl, (char*)argv[0], &start) != TCL_OK) ||
+ 	(start < 0) ||
+ 	(start >= (24*60))) {
+ 	TCL_Error(tcl, "invalid appointment start");
+@@ -303,7 +303,7 @@
+     }
+ 
+     int warn;
+-    if (Tcl_GetInt(tcl, argv[0], &warn) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[0], &warn) != TCL_OK) {
+ 	TCL_Error(tcl, "invalid early warning option");
+     }
+     if (! check_permission(tcl, item)) return TCL_ERROR;
+@@ -364,7 +364,7 @@
+     }
+ 
+     int todo;
+-    if (Tcl_GetBoolean(tcl, argv[0], &todo) != TCL_OK) {
++    if (Tcl_GetBoolean(tcl, (char*)argv[0], &todo) != TCL_OK) {
+ 	TCL_Error(tcl, "invalid value for todo flag");
+     }
+     if (! check_permission(tcl, item)) return TCL_ERROR;
+@@ -384,7 +384,7 @@
+     if (! check_permission(tcl, item)) return TCL_ERROR;
+ 
+     int done;
+-    if (Tcl_GetBoolean(tcl, argv[0], &done) != TCL_OK) {
++    if (Tcl_GetBoolean(tcl, (char*)argv[0], &done) != TCL_OK) {
+ 	TCL_Error(tcl, "invalid value for done flag");
+     }
+ 
+@@ -431,7 +431,7 @@
+     }
+ 
+     int count;
+-    const char** list;
++    char** list;
+     if (Tcl_SplitList(tcl, argv[0], &count, &list) != TCL_OK) {
+ 	TCL_Error(tcl, "invalid alarm list");
+     }
+@@ -572,7 +572,7 @@
+ static int item_cont(ClientData c, Tcl_Interp* tcl, int argc, const char* argv[]) {
+     Item_Tcl* item = (Item_Tcl*) c;
+     int dateDays;
+-    if (Tcl_GetInt(tcl, argv[0], &dateDays) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[0], &dateDays) != TCL_OK) {
+ 	TCL_Error(tcl, "invalid date");
+     }
+     Date date(dateDays);
+@@ -582,7 +582,7 @@
+ static int item_next(ClientData c, Tcl_Interp* tcl, int argc, const char* argv[]) {
+     Item_Tcl* item = (Item_Tcl*) c;
+     int dateDays;
+-    if (Tcl_GetInt(tcl, argv[0], &dateDays) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[0], &dateDays) != TCL_OK) {
+ 	TCL_Error(tcl, "invalid date");
+     }
+     Date date(dateDays);
+@@ -604,10 +604,10 @@
+     if (item->value()->range(s, f)) {
+ 	char buffer[100];
+ 	sprintf(buffer, "%d", s.EpochDays());
+-	if (Tcl_SetVar(tcl, argv[0], buffer, 0) == NULL)
++	if (Tcl_SetVar(tcl, (char*)argv[0], buffer, 0) == NULL)
+ 	    TCL_Error(tcl, "could not set range start variable");
+ 	sprintf(buffer, "%d", f.EpochDays());
+-	if (Tcl_SetVar(tcl, argv[1], buffer, 0) == NULL)
++	if (Tcl_SetVar(tcl, (char*)argv[1], buffer, 0) == NULL)
+ 	    TCL_Error(tcl, "could not set range finish variable");
+ 	TCL_Return(tcl, "1");
+     }
+@@ -619,7 +619,7 @@
+ static int item_date(ClientData c, Tcl_Interp* tcl, int argc, const char* argv[]) {
+     Item_Tcl* item = (Item_Tcl*) c;
+     int dateDays;
+-    if (Tcl_GetInt(tcl, argv[0], &dateDays) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[0], &dateDays) != TCL_OK) {
+ 	TCL_Error(tcl, "invalid date");
+     }
+     Date date(dateDays);
+@@ -633,7 +633,7 @@
+ static int item_start(ClientData c, Tcl_Interp* tcl, int argc, const char* argv[]) {
+     Item_Tcl* item = (Item_Tcl*) c;
+     int dateDays;
+-    if (Tcl_GetInt(tcl, argv[0], &dateDays) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[0], &dateDays) != TCL_OK) {
+ 	TCL_Error(tcl, "invalid date");
+     }
+     Date date(dateDays);
+@@ -647,7 +647,7 @@
+ static int item_finish(ClientData c, Tcl_Interp* tcl, int argc, const char* argv[]) {
+     Item_Tcl* item = (Item_Tcl*) c;
+     int dateDays;
+-    if (Tcl_GetInt(tcl, argv[0], &dateDays) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[0], &dateDays) != TCL_OK) {
+ 	TCL_Error(tcl, "invalid date");
+     }
+     Date date(dateDays);
+@@ -661,7 +661,7 @@
+ static int item_ondel(ClientData c, Tcl_Interp* tcl, int argc, const char* argv[]) {
+     Item_Tcl* item = (Item_Tcl*) c;
+     int dateDays;
+-    if (Tcl_GetInt(tcl, argv[0], &dateDays) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[0], &dateDays) != TCL_OK) {
+ 	TCL_Error(tcl, "invalid date");
+     }
+     Date date(dateDays);
+@@ -676,12 +676,12 @@
+     Item_Tcl* item = (Item_Tcl*) c;
+ 
+     int interval;
+-    if ((Tcl_GetInt(tcl, argv[0], &interval) != TCL_OK) || (interval < 1)) {
++    if ((Tcl_GetInt(tcl, (char*)argv[0], &interval) != TCL_OK) || (interval < 1)) {
+ 	TCL_Error(tcl, "invalid interval");
+     }
+ 
+     int anchorDays;
+-    if (Tcl_GetInt(tcl, argv[1], &anchorDays) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[1], &anchorDays) != TCL_OK) {
+ 	TCL_Error(tcl, "invalid anchor date");
+     }
+     Date anchor(anchorDays);
+@@ -697,12 +697,12 @@
+     Item_Tcl* item = (Item_Tcl*) c;
+ 
+     int interval;
+-    if ((Tcl_GetInt(tcl, argv[0], &interval) != TCL_OK) || (interval < 1)) {
++    if ((Tcl_GetInt(tcl, (char*)argv[0], &interval) != TCL_OK) || (interval < 1)) {
+ 	TCL_Error(tcl, "invalid interval");
+     }
+ 
+     int anchorDays;
+-    if (Tcl_GetInt(tcl, argv[1], &anchorDays) != TCL_OK) {
++    if (Tcl_GetInt(tcl, (char*)argv[1], &anchorDays) != TCL_OK) {
+ 	TCL_Error(tcl, "invalid anchor date");
+     }
+     Date anchor(anchorDays);
+@@ -724,7 +724,7 @@
+ 			    int& n, Date& anchor, int& interval)
+ {
+     if ((argc != 1) && (argc != 3)) TCL_Error(tcl,"wrong number of arguments");
+-    if ((Tcl_GetInt(tcl, argv[0], &n) != TCL_OK) || (n < 1))
++    if ((Tcl_GetInt(tcl, (char*)argv[0], &n) != TCL_OK) || (n < 1))
+ 	TCL_Error(tcl, "invalid count");
+ 
+     // Get anchor and interval
+@@ -734,11 +734,11 @@
+     }
+     else {
+ 	int anchorDays;
+-	if (Tcl_GetInt(tcl, argv[1], &anchorDays) != TCL_OK)
++	if (Tcl_GetInt(tcl, (char*)argv[1], &anchorDays) != TCL_OK)
+ 	    TCL_Error(tcl, "invalid anchor date");
+ 	anchor = Date(anchorDays);
+ 
+-	if ((Tcl_GetInt(tcl, argv[2], &interval) != TCL_OK) || (interval < 1))
++	if ((Tcl_GetInt(tcl, (char*)argv[2], &interval) != TCL_OK) || (interval < 1))
+ 	    TCL_Error(tcl, "invalid interval");
+     }
+ 
+@@ -812,7 +812,7 @@
+     Item_Tcl* item = (Item_Tcl*) c;
+ 
+     int wday;
+-    if ((Tcl_GetInt(tcl,argv[0],&wday) != TCL_OK) || (wday < 1) || (wday > 7))
++    if ((Tcl_GetInt(tcl,(char*)argv[0],&wday) != TCL_OK) || (wday < 1) || (wday > 7))
+ 	TCL_Error(tcl, "invalid weekday");
+     WeekDay w = WeekDay::First() + (wday - 1);
+ 
+@@ -833,7 +833,7 @@
+     Item_Tcl* item = (Item_Tcl*) c;
+ 
+     int wday;
+-    if ((Tcl_GetInt(tcl,argv[0],&wday) != TCL_OK) || (wday < 1) || (wday > 7))
++    if ((Tcl_GetInt(tcl,(char*)argv[0],&wday) != TCL_OK) || (wday < 1) || (wday > 7))
+ 	TCL_Error(tcl, "invalid weekday");
+     WeekDay w = WeekDay::First() + (wday - 1);
+ 
+@@ -858,7 +858,7 @@
+     set.Clear();
+     for (i = 0; i < argc; i++) {
+ 	int weekday;
+-	if ((Tcl_GetInt(tcl, argv[i], &weekday) != TCL_OK) ||
++	if ((Tcl_GetInt(tcl, (char*)argv[i], &weekday) != TCL_OK) ||
+ 	    (weekday < 1) ||
+ 	    (weekday > 7)) {
+ 	    TCL_Error(tcl, "invalid weekday");
+diff -ur ical-2.3.1/object.C ical-2.3.1.fedora/object.C
+--- ical-2.3.1/object.C	2004-03-11 03:26:56.000000000 -0800
++++ ical-2.3.1.fedora/object.C	2004-03-22 01:39:12.000000000 -0800
+@@ -8,7 +8,7 @@
+ #include "ical.h"
+ #include "object.h"
+ 
+-static int obj_handle(ClientData, Tcl_Interp*, int, const char*[]);
++static int obj_handle(ClientData, Tcl_Interp*, int, char*[]);
+ 
+ Object::Object(Tcl_Interp* t, char const* type) {
+     /* Generate handle */
+@@ -56,9 +56,9 @@
+     TCL_Error(interp, "Object has no methods");
+ }
+ 
+-int obj_handle(ClientData c, Tcl_Interp* tcl, int argc, const char* argv[]) {
++int obj_handle(ClientData c, Tcl_Interp* tcl, int argc, char* argv[]) {
+     Object* object = (Object*) c;
+ 
+     assert(object->tcl() == tcl);
+-    return object->method(argc, argv);
++    return object->method(argc, (const char**)argv);
+ }
+diff -ur ical-2.3.1/time_tcl.C ical-2.3.1.fedora/time_tcl.C
+--- ical-2.3.1/time_tcl.C	2004-03-11 03:26:56.000000000 -0800
++++ ical-2.3.1.fedora/time_tcl.C	2004-03-22 01:45:53.000000000 -0800
+@@ -32,7 +32,7 @@
+  */
+ 
+ /* Date command */
+-int Cmd_Date(ClientData, Tcl_Interp* tcl, int argc, const char* argv[]) {
++int Cmd_Date(ClientData, Tcl_Interp* tcl, int argc, char* argv[]) {
+     const char* cmd = argv[1];
+     char buffer[100];
+     int days;
+@@ -58,7 +58,7 @@
+ 	break;
+       case 3:
+ 	/* Argv[2] is date. */
+-	if (Tcl_GetInt(tcl, argv[2], &days) != TCL_OK) {
++	if (Tcl_GetInt(tcl, (char*)argv[2], &days) != TCL_OK) {
+ 	    return TCL_ERROR;
+ 	}
+ 	d = Date(days);
+@@ -107,13 +107,13 @@
+ 	if ((cmd[0] == 'm') && (strcmp(cmd, "make") == 0)) {
+ 	    int month, year;
+ 
+-	    if ((Tcl_GetInt(tcl, argv[2], &days) != TCL_OK) ||
++	    if ((Tcl_GetInt(tcl, (char*)argv[2], &days) != TCL_OK) ||
+ 		(days < 1) ||
+ 		(days > 31) ||
+-		(Tcl_GetInt(tcl, argv[3], &month) != TCL_OK) ||
++		(Tcl_GetInt(tcl, (char*)argv[3], &month) != TCL_OK) ||
+ 		(month < 1) ||
+ 		(month > 12) ||
+-		(Tcl_GetInt(tcl, argv[4], &year) != TCL_OK) ||
++		(Tcl_GetInt(tcl, (char*)argv[4], &year) != TCL_OK) ||
+ 		(year < Year::First()) ||
+ 		(year > Year::Last())) {
+ 		TCL_Error(tcl, "illegal date specification");
+@@ -136,19 +136,19 @@
+ 
+ 	    // Set variables
+ 	    sprintf(buffer, "%d", result.EpochDays());
+-	    if (Tcl_SetVar(tcl, argv[3], buffer, 0) == NULL)
++	    if (Tcl_SetVar(tcl, (char*)argv[3], buffer, 0) == NULL)
+ 		TCL_Error(tcl, "could not set <date> result");
+ 
+ 	    char* pre = new char[start+1];
+ 	    strncpy(pre, argv[2], start);
+ 	    pre[start] = '\0';
+-	    if (Tcl_SetVar(tcl, argv[4], pre, 0) == NULL) {
++	    if (Tcl_SetVar(tcl, (char*)argv[4], pre, 0) == NULL) {
+ 		delete [] pre;
+ 		TCL_Error(tcl, "could not set <pre> result");
+ 	    }
+ 	    delete [] pre;
+ 
+-	    if (Tcl_SetVar(tcl, argv[5], argv[2]+start+length, 0) == NULL)
++	    if (Tcl_SetVar(tcl, (char*)argv[5], (char*)argv[2]+start+length, 0) == NULL)
+ 		TCL_Error(tcl, "could not set <post> result");
+ 
+ 	    TCL_Return(tcl, "1");
+@@ -162,7 +162,7 @@
+ }
+ 
+ /* Time command */
+-int Cmd_Time(ClientData, Tcl_Interp* tcl, int argc, const char* argv[]) {
++int Cmd_Time(ClientData, Tcl_Interp* tcl, int argc, char* argv[]) {
+     const char* cmd = argv[1];
+     char buffer[100];
+     double secs;
+@@ -179,7 +179,7 @@
+ 	break;
+       case 3:
+ 	/* Argv[2] is time */
+-	if (Tcl_GetDouble(tcl, argv[2], &secs) != TCL_OK) {
++	if (Tcl_GetDouble(tcl, (char*)argv[2], &secs) != TCL_OK) {
+ 	    return TCL_ERROR;
+ 	}
+ 	t = Time(secs);
+@@ -238,19 +238,19 @@
+ 
+ 	    // Set variables
+ 	    sprintf(buffer, "%d", result);
+-	    if (Tcl_SetVar(tcl, argv[3], buffer, 0) == NULL)
++	    if (Tcl_SetVar(tcl, (char*)argv[3], buffer, 0) == NULL)
+ 		TCL_Error(tcl, "could not set <time of day> result");
+ 
+ 	    char* pre = new char[start+1];
+ 	    strncpy(pre, argv[2], start);
+ 	    pre[start] = '\0';
+-	    if (Tcl_SetVar(tcl, argv[4], pre, 0) == NULL) {
++	    if (Tcl_SetVar(tcl, (char*)argv[4], pre, 0) == NULL) {
+ 		delete [] pre;
+ 		TCL_Error(tcl, "could not set <pre> result");
+ 	    }
+ 	    delete [] pre;
+ 
+-	    if (Tcl_SetVar(tcl, argv[5], argv[2]+start+length, 0) == NULL)
++	    if (Tcl_SetVar(tcl, (char*)argv[5], (char*)argv[2]+start+length, 0) == NULL)
+ 		TCL_Error(tcl, "could not set <post> result");
+ 
+ 	    TCL_Return(tcl, "1");
+@@ -268,24 +268,24 @@
+ 
+ 	    // Set variables
+ 	    sprintf(buffer, "%d", r1);
+-	    if (Tcl_SetVar(tcl, argv[3], buffer, 0) == NULL)
++	    if (Tcl_SetVar(tcl, (char*)argv[3], buffer, 0) == NULL)
+ 		TCL_Error(tcl, "could not set <start time> result");
+ 
+ 	    // Set variables
+ 	    sprintf(buffer, "%d", r2);
+-	    if (Tcl_SetVar(tcl, argv[4], buffer, 0) == NULL)
++	    if (Tcl_SetVar(tcl, (char*)argv[4], buffer, 0) == NULL)
+ 		TCL_Error(tcl, "could not set <finish time> result");
+ 
+ 	    char* pre = new char[start+1];
+ 	    strncpy(pre, argv[2], start);
+ 	    pre[start] = '\0';
+-	    if (Tcl_SetVar(tcl, argv[5], pre, 0) == NULL) {
++	    if (Tcl_SetVar(tcl, (char*)argv[5], pre, 0) == NULL) {
+ 		delete [] pre;
+ 		TCL_Error(tcl, "could not set <pre> result");
+ 	    }
+ 	    delete [] pre;
+ 
+-	    if (Tcl_SetVar(tcl, argv[6], argv[2]+start+length, 0) == NULL)
++	    if (Tcl_SetVar(tcl, (char*)argv[6], (char*)argv[2]+start+length, 0) == NULL)
+ 		TCL_Error(tcl, "could not set <post> result");
+ 
+ 	    TCL_Return(tcl, "1");

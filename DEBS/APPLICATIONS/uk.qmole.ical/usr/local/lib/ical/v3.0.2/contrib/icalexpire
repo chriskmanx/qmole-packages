@@ -1,0 +1,103 @@
+#!/bin/sh
+#\
+exec ical -f $0 -nodisplay ${1+"$@"}
+
+############################################################################
+# Copyright (c) 1994 by Sanjay Ghemawat
+############################################################################
+#
+# Move old calendar entries into another calendar.  This can be used
+# for archiving old entries without having them take space in your
+# day-to-day calendar.
+#
+# Example:
+#
+# The folllowing command will move expired entries from the user's
+# calendar into the file "calendar-archive".
+#
+#	icalexpire calendar-archive
+#
+# Usage:
+#	icalexpire [-calendar <input>] <output> [<expiration days>]
+#
+#	All items in the <input> calendar that have no occurrence after
+#	(<today>-<expiration days>) are moved to the calendar stored in the
+#	file named by <output>.
+#
+#	The default value for <expiration days> is 31.  The default value
+#	for <input> is the user's normal calendar.  Threfore, if you just
+#	specify an archival calendar, then all items that do not occur
+#	in the past month and do not occur in the future will be moved to
+#	the archival calendar.
+
+# Tcl code starts here.
+
+# Parse arguments
+proc usage {} {
+    puts stderr {Usage: icalexpire [-calendar <input>] <output> [<days>]}
+    exit 1
+}
+
+set days 31
+
+switch [llength $argv] {
+    1 {set output [lindex $argv 0]}
+    2 {set output [lindex $argv 0];set days [lindex $argv 1]}
+    default {usage}
+}
+
+if ![regexp {[0-9]+} $days] {usage}
+if {$days < 1} {usage}
+
+# Generate terse description of item
+proc item2short_string {i} {
+    global month_name weekday_name
+
+    set type [$i type]
+    if {$type == ""} {
+	set d [$i first]
+	set str [format {%-3s %-3s %2d, %4d}\
+		     [string range $weekday_name([date weekday $d]) 0 2]\
+		     [string range $month_name([date month $d]) 0 2]\
+		     [date monthday $d]\
+		     [date year $d]\
+		     ]
+    } else {
+	set str $type
+    }
+
+    set txt [$i text]
+    regsub -all \n $txt " " txt
+    set txt [string range $txt 0 50]
+    return [format "%-16s %s" $str $txt]
+}
+
+# Move expired items from the main calendar in "in" to "out".
+proc move_items {in out days} {
+    if [$in  readonly] {error "$in: permission denied"}
+    if [$out readonly] {error "$output: permission denied"}
+
+    set threshold [expr [date today] - $days]
+
+    # Copy expired items into output
+    cal incalendar [$in main] item {
+	if ![catch {$item next $threshold}] continue
+
+	# No occurrence after $threshold
+	puts stdout "Expire: [item2short_string $item]"
+	$out add [$item clone]
+	$in  remove $item
+    }
+
+    # Now save the destination first to avoid losing data
+    $out save
+    $in  save
+}
+
+calendar cal $ical(calendar)
+calendar out $output
+if [catch {move_items cal out $days} msg] {
+    puts stderr "Error: $msg"
+    exit 1
+}
+exit 0

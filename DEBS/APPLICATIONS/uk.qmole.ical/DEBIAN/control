@@ -1,0 +1,12 @@
+Package: uk.qmole.ical
+Name: Ical
+Version: 3.0.2
+Architecture: iphoneos-arm
+Description: Ical Calendar for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.tk, uk.qmole.herbstluft
+Sponsor: QMole Ltd. 
+Section: Applications

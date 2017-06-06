@@ -1,0 +1,59 @@
+This directory contains various pieces of contributed software.
+
+ical.xbm		An icon bitmap for ical.  Thanks to
+			"defert@gnuisance.cern.ch".  Put the following
+			code in your ~/.tk/ical/user.tcl file if you
+			want to use it --
+
+			append-hook dayview-startup {view} {
+			    wm iconbitmap [$view window] @<dir>/ical.xbm
+			}
+
+ical.xpm		An color icon for ical.  Thanks to
+			Craig Silverstein.  Look at your window
+			manager documentation to associate the pixmap
+			with ical.
+
+ical2calendar		Generate an old-style calendar(1) file
+			from an ical calendar.  You might want
+			to use this to get mailed reminders 
+			every day.  You can also use the script
+			as a template for writing other converters.
+
+ical2html		CGI script for sending calendar data to
+			web browsers.  You will need to edit some
+			paths near the beginning of the script to
+			get it to work.
+			From Mic Bowman <mic@transarc.com>
+
+ical2zsh		Convert ical output to zsh sched commands
+				eval `ical2zsh [-calendar <file>]`
+			From Rob Hooft <Rob.Hooft@EMBL-Heidelberg.de>
+
+icaladd			Read an item from the standard input and add
+			it to the calendar.  The date and times for
+			the new item are extracted from the standard
+			input if possible.
+
+icaladdlines		Read one item per line from the standard input
+			and add it to the calendar.  The date and times
+			for the new items are extracted from the input
+			if possible.  This script is a good way of
+			converting an old style calendar(1) file to
+			ical.  It is not perfect though.
+
+icalexpire		Move expired items from the user's calendar
+			into an archival calendar.  You may want
+			to use this utility if ical starts using
+			a lot of memory because your calendar
+			contains a lot of expired items.
+
+icalweekly		Print one-week-per-page organizer listings
+			on appropriate stock.  Submitted by Jay Sekora. 
+
+timeofday.tcl		Indicate the current time with an arrow in the
+			appointment view.  Source this file in
+			~/.tk/ical/user.tcl
+
+weeknumber.tcl		Displays ISO week numbers along side the date
+			selector.  Source this file in ~/.tk/ical/user.tcl

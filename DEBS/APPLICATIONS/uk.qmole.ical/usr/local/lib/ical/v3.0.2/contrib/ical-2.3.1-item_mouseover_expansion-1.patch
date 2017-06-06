@@ -1,0 +1,94 @@
+# 
+# old_revision [49ea10cb8d65cac6b3357b7a5c425f11024a699d]
+# 
+# patch "apptlist.tcl"
+#  from [fca48f27536e4f90f4b69e73e7dc0bf1abbf0b7c]
+#    to [206067ebf4a72d1f939055a08e657e2645f48d8c]
+# 
+# patch "itemwindow.tcl"
+#  from [fd6d4fc49e1076f2c15de3d525cd1281e07e64ee]
+#    to [b45b1c2d799d0e4fa053e48424984fc4d54474a3]
+# 
+============================================================
+--- apptlist.tcl	fca48f27536e4f90f4b69e73e7dc0bf1abbf0b7c
++++ apptlist.tcl	206067ebf4a72d1f939055a08e657e2645f48d8c
+@@ -378,7 +378,8 @@
+ 				$slot(font)\
+ 				$item $slot(date)\
+ 				[list $self move]\
+-				[list $self resize]]
++				[list $self resize]\
++				$self]
+ }
+ 
+ # effects - Place window for item
+============================================================
+--- itemwindow.tcl	fd6d4fc49e1076f2c15de3d525cd1281e07e64ee
++++ itemwindow.tcl	b45b1c2d799d0e4fa053e48424984fc4d54474a3
+@@ -357,7 +357,7 @@
+ #		is called.
+ 
+ # effects - Create ApptItemWindow in canvas.
+-subclass ApptItemWindow ItemWindow {canvas font item date m r} {
++subclass ApptItemWindow ItemWindow {canvas font item date m r parent} {
+     # Create resize handles
+     foreach v {t b} {
+ 	foreach s {l m r} {
+@@ -385,6 +385,7 @@
+     set slot(moving) 0
+     set slot(resizing) 0
+     set slot(minheight) 0
++    set slot(parent) $parent
+ 
+     $canvas bind thand.$self <ButtonPress-1>	[list $self size_top %y]
+     $canvas bind thand.$self <B1-Motion>	[list $self size_continue %y]
+@@ -396,6 +397,9 @@
+     $canvas bind $self <ButtonPress-2>		[list $self move_start %y]
+     $canvas bind $self <B2-Motion>	 	[list $self move_continue %y]
+     $canvas bind $self <ButtonRelease-2>	[list $self move_finish %y]
++
++    $canvas bind $self <Enter>	[list $self toggle_overflow on]
++    $canvas bind $self <Leave>	[list $self toggle_overflow off]
+ }
+ 
+ method ApptItemWindow save {} {
+@@ -612,6 +616,39 @@
+     eval $slot(resize_callback) $slot(item) done done
+ }
+ 
++method ApptItemWindow toggle_overflow {state} {
++    if {![catch {ical_find_selection}]} {
++        # We don't want to mess with rendering if there is a selected item
++        return
++    }
++
++    set x1 $slot(x)
++    set y1 $slot(y)
++    set x2 [expr $x1 + $slot(width)]
++    set y2 [expr $y1 + $slot(height)]
++
++    if {$state eq "on"} {
++        $self raise
++        $slot(canvas) itemconfigure text.$self -text [$slot(item) text]
++       	set bbox [$slot(canvas) bbox text.$self]
++	set yt [lindex $bbox 3]
++	if {$yt > $y2} {set y2 $yt}
++        $slot(canvas) itemconfigure back.$self -fill [pref itemBg]
++    } else {
++        set text [$slot(item) text]
++        set i [$slot(canvas) index text.$self @0,$y2]
++        set text2 [string range $text 0 [expr $i-1]]
++        if [string compare $text $text2] {
++            set text2 [string range $text 0 [expr $i-4]]...
++            $slot(canvas) itemconfigure text.$self -text $text2
++        }
++        $slot(canvas) itemconfigure back.$self -fill [pref itemOverflowColor]
++        $slot(parent) layout
++    }
++
++    $slot(canvas) coords back.$self $x1 $y1 $x2 $y2
++}
++
+ #### Selection support ####
+ 
+ set last_sel {}

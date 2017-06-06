@@ -1,0 +1,12 @@
+Package: uk.qmole.tkdiff
+Name: Tkdiff
+Version: 4.2
+Architecture: iphoneos-arm
+Description: Tkdiff for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.tk, uk.qmole.herbstluft
+Sponsor: QMole Ltd. 
+Section: Applications

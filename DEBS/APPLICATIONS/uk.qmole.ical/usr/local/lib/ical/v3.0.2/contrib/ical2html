@@ -1,0 +1,317 @@
+#!/bin/sh
+# -------------------------  *-*-tcl-*-*  -------------------------
+# BLACK MAGIC to restart with ical (keep the backslash!)	\
+exec /dfs/dept/trg/sb/mic/install/bin/ical -f "$0" -nodisplay
+
+# -----------------------------------------------------------------
+# ID: $Id: ical2html,v 1.1 2004/03/11 10:14:16 rich Exp $
+#
+# showcal -- 
+#    CGI script to list appointments stored in an ical
+#    calendar file. The following CGI parameters are 
+#    recognized:
+#		days : the number of days to show
+#		user : the account name of the user
+#		file : the calendar file to use (XXX currently disabled
+#		       for security)
+#
+# Jul  9 1997 -- Created by Mic Bowman (mic+@transarc.com)
+#
+# EXPORTED FUNCTIONS --
+#     NONE
+# -----------------------------------------------------------------
+
+# -----------------------------------------------------------------
+# HISTORY
+# $TALog: ical2html,v $
+# Revision 1.1  1997/07/09  18:47:23  mic
+# Initial revision
+#
+# -----------------------------------------------------------------
+
+# Default path to user's calendar
+set defaultpath {/dfs/home/$user/.calendar}
+
+# Colors for display
+set bgcolor(appt)  {"#c0d9d9"}
+set bgcolor(note)  {"#eaadea"}
+set bgcolor(day)   {"#e9c2a6"}
+set bgcolor(month) {navy}
+
+# Set-up arrays for pretty-printing dates
+set wday(1)	Sunday
+set wday(2)	Monday
+set wday(3)	Tuesday
+set wday(4)	Wednesday
+set wday(5)	Thursday
+set wday(6)	Friday
+set wday(7)	Saturday
+
+set mon(1)	January
+set mon(2)	February
+set mon(3)	March
+set mon(4)	April
+set mon(5)	May
+set mon(6)	June
+set mon(7)	July
+set mon(8)	August
+set mon(9)	September
+set mon(10)	October
+set mon(11)	November
+set mon(12)	December
+
+# -----------------------------------------------------------------
+# Procedure: HTTPHeader
+#	Send HTTP header information
+# Parameters:
+#	none
+# Returns:
+#	none
+# -----------------------------------------------------------------
+proc HTTPHeader {} {
+    puts "Content-type: text/html"
+    puts ""
+}
+
+# -----------------------------------------------------------------
+# Procedure: StartDocument
+#	Display material that appears before the calendar table.
+# Parameters:
+#	days
+# Returns:
+#	none
+# -----------------------------------------------------------------
+proc StartDocument {user days} {
+    global env
+
+    set acctname $user
+    set realname $user
+    catch {
+	set realname [exec grep ^$acctname: /etc/passwd | awk -F: {{print $5}}]
+    }
+
+    puts "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML//EN\">"
+    puts "<html><head><title>$days Day Calendar for $realname</title></head>"
+    puts "<body TEXT=black LINK=navy VLINK=\"#215e21\">"
+    puts "<center><font size=+6>$days Day Calendar for $realname</font></center>"
+    puts "<P><P>"
+}
+
+# -----------------------------------------------------------------
+# Procedure: ShowCalendar
+#	Display the table of appointments from the ical calendar.
+# Parameters:
+#       file -- calendar file
+#	days -- number of days to show
+# Returns:
+#	none
+# -----------------------------------------------------------------
+proc ShowCalendar {file days} {
+    global bgcolor wday mon ical
+
+    set monthday -1
+    set month -1
+    set maccum {}
+    set daccum {}
+
+    puts "<center>\n<table border=3 bgcolor=$bgcolor(day)>"
+
+
+    # Generate listing
+    calendar cal $file
+
+    cal listing [date today] [expr [date today]+$days-1] i d {
+	if {[date monthday $d] != $monthday} {
+	    set dlen [llength $daccum]
+	    if {$dlen > 0} {
+		set ditem1 "<td valign=top rowspan=$dlen>$monthday</td>"
+		set ditem2 "<td valign=top rowspan=$dlen>$weekday</td>"
+		set first 1
+		foreach itext $daccum {
+		    if {$first} {
+			lappend maccum "$ditem1 $ditem2 $itext"
+			set first 0
+		    } else {
+			lappend maccum $itext
+		    }
+		}
+	    }
+
+	    set daccum {}
+	    set monthday [date monthday $d]
+	    set weekday $wday([date weekday $d])
+	}
+
+	if {[date month $d] != $month} {
+	    if {[llength $maccum] > 0} {
+		puts "<tr><td colspan=4 align=center bgcolor=$bgcolor(month)>"
+		puts "<font size=+4 color=white>$mon($month)</font>"
+		puts "</td></tr>"
+
+		foreach itext $maccum {
+		    puts "<tr>$itext</tr>"
+		}
+	    }
+
+	    set maccum {}
+	    set month [date month $d]
+	}
+
+	set spantime "<font color=$bgcolor(note)>*</font>"
+	set itemcolor "bgcolor=$bgcolor(note)"
+	set itemtext [$i text]
+	if {[$i is appt]} {
+	    set itemcolor "bgcolor=$bgcolor(appt)"
+	    set stime [$i starttime]
+	    set etime [expr $stime + [$i length]]
+	    set spantime [format "%02d:%02d to %02d:%02d"	\
+		    [expr $stime/60] [expr $stime%60]		\
+		    [expr $etime/60] [expr $etime%60]]
+	}
+
+	set text "<td $itemcolor>$spantime</td><td $itemcolor>$itemtext</td>"
+	lappend daccum $text
+    }
+
+    # Clean out daily accumulator
+    set dlen [llength $daccum]
+    if {$dlen > 0} {
+	set ditem1 "<td valign=top rowspan=$dlen>$monthday</td>"
+	set ditem2 "<td valign=top rowspan=$dlen>$weekday</td>"
+	set first 1
+	foreach itext $daccum {
+	    if {$first} {
+		lappend maccum "$ditem1 $ditem2 $itext"
+		set first 0
+	    } else {
+		lappend maccum $itext
+	    }
+	}
+    }
+
+    # Clean out monthly accumulator
+    if {[llength $maccum] > 0} {
+	puts "<tr><td colspan=4 align=center bgcolor=navy>"
+	puts "<font size=+3 color=white>$mon($month)</font>"
+	puts "</td></tr>"
+
+	foreach itext $maccum {
+	    puts "<tr>$itext</tr>"
+	}
+    }
+
+    puts "</table></center>"
+}
+
+# -----------------------------------------------------------------
+# Procedure: EndDocument
+#	Display material that appears after the calendar display.
+# Parameters:
+#	none
+# Returns:
+#	none
+# -----------------------------------------------------------------
+proc EndDocument {} {
+    puts "</body></html>"
+}
+
+
+# -----------------------------------------------------------------
+# Procedure: HexToChar
+#	Convert hex string to a character
+# Parameters:
+#	hex string
+# Returns:
+#	char
+# -----------------------------------------------------------------
+proc HexToChar {hex} {
+    scan $hex "%x" val
+    return [format "%c" $val]
+}
+
+# -----------------------------------------------------------------
+# Procedure: CGIParse
+#	
+# Parameters:
+#	
+# Returns:
+#	
+# -----------------------------------------------------------------
+proc CGIParse {Cgiparms} {
+    upvar $Cgiparms cgiparms
+    global env
+    
+    # Get the encode query string
+    if {$env(REQUEST_METHOD) == "GET"} {
+	set instring $env(QUERY_STRING)
+    } else {
+	set instring [read stdin $env(CONTENT_LENGTH)]
+    }
+
+    foreach parm [split $instring &] {
+	# Convert plus's to spaces
+	regsub -all {\+} $parm { } parm
+
+	# Convert %XX form to alphanumeric
+	regsub -all {\[} $parm {\[} parm
+	regsub -all {%([a-eA-E0-9][a-eA-E0-9])} $parm {[HexToChar \1]} parm
+	set parm [subst -novariables $parm]
+
+	# Break into key and value
+	set eqind [string first = $parm]
+	if {$eqind <= 0} {
+	    puts stderr "Invalid query encoding"
+	    exit 1
+	}
+
+	set key [string range $parm 0 [expr $eqind - 1]]
+	set val [string range $parm [expr $eqind + 1] end]
+	set cgiparms($key) $val
+    }
+}
+
+# -----------------------------------------------------------------
+# Main
+# -----------------------------------------------------------------
+
+# ---------- Process the query string ----------
+CGIParse cgiparms
+
+# ---------- Get the user's identity ----------
+if {[array names cgiparms user] != ""} {
+    set user $cgiparms(user)
+} elseif {[array names env REMOTE_USER] != ""} {
+    set user $env(REMOTE_USER)
+} else {
+    set user unknown
+}
+
+# ---------- Get the calendar file ----------
+set file [subst -nobackslashes -nocommands $defaultpath]
+if 0 {
+    # XXX Disabled for security reasons
+    if {[array names cgiparms file] != ""} {
+	set file $cgiparms(file)
+    }
+}
+
+if {! [file exists $file]} {
+    puts "Unable to locate calendar file"
+    exit 1
+}
+
+# ---------- Get the span of days ----------
+set days 10
+if {[array names cgiparms days] != ""} {
+    set days $cgiparms(days)
+}
+
+# ---------- Create the calendar display ----------
+HTTPHeader
+StartDocument $user $days
+ShowCalendar $file $days
+EndDocument
+
+# Finish up
+exit 0
+

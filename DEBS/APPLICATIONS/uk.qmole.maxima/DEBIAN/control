@@ -1,0 +1,12 @@
+Package: uk.qmole.maxima
+Name: Maxima
+Version: 5.29.1
+Architecture: iphoneos-arm
+Description: Maxima Symbolic Computation Programm  for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.tk, uk.qmole.herbstluft, uk.qmole.ecl
+Sponsor: QMole Ltd. 
+Section: Applications

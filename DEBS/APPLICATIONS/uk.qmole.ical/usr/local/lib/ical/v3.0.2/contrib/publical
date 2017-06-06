@@ -1,0 +1,50 @@
+#!/usr/bin/env ical-script
+# Copyright (C) 2005 Ethan Blanton <elb@elitists.net>
+# Version 1.0
+
+if {[string length $argv]} {
+    set pcalfile $argv
+} else {
+    set pcalfile $env(HOME)/publical.cal
+}
+
+calendar pcal $pcalfile.tmp
+
+pcal option Generated [clock format [clock seconds]]
+
+calendar cal $ical(calendar)
+
+set files [list [cal main]]
+
+cal forincludes file {
+    lappend files $file
+}
+
+foreach file $files {
+    set public 0
+    catch {set public [cal option -calendar $file Public]}
+
+    cal incalendar $file item {
+        set itempublic 0
+        catch {set itempublic [$item option Public]}
+        if {$public || $itempublic} {
+            pcal add $item
+        } else {
+            set item [$item clone]
+            # Un-public notes are useless
+            if {[$item is note]} {
+                continue
+            }
+            # Make this un-irritating for others
+            if {[$item is appt]} {
+                $item alarms {}
+            }
+            $item text "Unavailable"
+            $item owner "user"
+            pcal add $item
+        }
+    }
+}
+
+pcal save
+file rename -force $pcalfile.tmp $pcalfile

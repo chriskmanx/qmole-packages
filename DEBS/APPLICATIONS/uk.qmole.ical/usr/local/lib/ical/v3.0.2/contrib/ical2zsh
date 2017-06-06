@@ -1,0 +1,80 @@
+#!/bin/sh
+#
+# From: Rob Hooft <Rob.Hooft@EMBL-Heidelberg.de>
+# ...
+# It has not been thoroughly tested. Just to put it in "formal writing":
+# do with this whatever you like.
+# ...
+# Convert ical output to zsh sched commands
+#	eval `ical2zsh [-calendar <file>]`
+#
+# Initial code has been ripped mercilessly from ical2calendar
+#
+# The "kludge" hackery below is based on a posting to comp.lang.tcl by
+# Paul Mackerras (paulus@anu.edu.au).
+#
+# Distribute freely.
+#
+# -Rob Hooft (rob.hooft@embl-heidelberg.de)
+
+set kludge { ${1+"$@"}
+shift
+shift
+exec ical -f $0 -nodisplay ${1+"$@"}
+}
+
+# Tcl code starts here.
+
+# Parse arguments
+proc usage {} {
+    puts stderr {Usage: eval $(ical2zsh [-calendar <file>])}
+    exit 1
+}
+if {[llength $argv] > 0} {usage}
+
+# A routine to make a 5-char time string from a minute-count.
+proc tims {tm} {
+    set hr [expr {$tm/60}]
+    set min [expr {$tm-60*$hr}]
+    if {$min<10} {set min 0$min}
+    if {$hr<0} {incr hr 24}
+    set result "$hr:$min"
+}
+
+# convert item i into a set of "sched" strings, but only if it is after curtim
+# today or before curtim tomorrow
+proc handle {i curtim} {
+    if {[$i is appt]} {
+	if [catch {set alarms [$i alarms]}] {
+	    set alarms [cal option DefaultAlarms]
+	}
+	set st [$i starttime]
+	set stim [tims $st]
+	foreach al $alarms {
+	    set ti [expr {$st - $al}]
+	    if {$ti>$curtim&&$ti<$curtim+24*60} {
+		puts stdout "sched [tims $ti] echo 'At $stim - [$i text]';"
+	    }
+	}
+    }
+}
+
+# Open file
+calendar cal $ical(calendar)
+
+# print alarms for the appointments still coming today
+set curtim [expr {60*[ical_time hour [ical_time now]]+[ical_time minute [ical_time now]]}]
+set day [date today]
+cal query $day $day i d {handle $i $curtim}
+
+# print alarms for the appointments coming within 24 hours, but tomorrow
+incr day
+incr curtim [expr {-24*60}]
+cal query $day $day i d {handle $i $curtim}
+
+# Schedule a new run of ical2zsh in 24 hours....
+puts stdout "sched +24:00 'eval \$(ical2zsh -calendar $ical(calendar))'"
+
+exit 0
+
+

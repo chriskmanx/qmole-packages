@@ -1,0 +1,12 @@
+--- ical-2.3.3/ical.C	2004-03-11 02:14:15.000000000 -0800
++++ ical-2.3.3/ical.C.new	2008-10-22 16:42:36.000000000 -0700
+@@ -140,7 +140,7 @@
+     buffer.append('\0');
+ 
+     if (Tcl_Eval(tcl, buffer.as_pointer()) == TCL_ERROR)
+-	fprintf(stderr, "ical: trigger error: %s\n", tcl->result);
++	fprintf(stderr, "ical: trigger error: %s\n", Tcl_GetStringResult(tcl));
+ 
+     buffer.clear();
+ }
+

@@ -1,0 +1,18 @@
+# 
+# 
+# patch "tcllib/filesel.tcl"
+#  from [c6eab6e766390fa9a286e8615e443a0bcee66475]
+#    to [8be404c368a81b88f810f795eeff710535e9190d]
+# 
+============================================================
+--- tcllib/filesel.tcl	c6eab6e766390fa9a286e8615e443a0bcee66475
++++ tcllib/filesel.tcl	8be404c368a81b88f810f795eeff710535e9190d
+@@ -240,7 +240,7 @@ proc _fs_complete_slash {n} {
+ }
+ 
+ proc _fs_complete_slash {n} {
+-    tkEntryInsert $n.entry /
++    ::tk::EntryInsert $n.entry /
+     fs_goto $n [$n.entry get]
+     return -code break
+ }

@@ -1,0 +1,158 @@
+4.2             (2011):
+     * Works with Subversion 1.7
+     * Make opening file dialog know where it started from, and start in the
+       same directory as the first file when looking for the second one.
+     * You can now specify a preference for filetypes for the file open/save
+       dialogs.
+     * Detect PVCS by environment variable (patch 1839361 by nafmo)
+     * Update BitKeeper support (patch 3053551 by wscott)
+     * Mercurial support (patch 1867700 by damonmc)
+     * Rudimentary Git support (patch 1836293 by cecilh3)
+     * add help menu items to report versions of wish and diff
+     * Fix location of temp files on MacOS X
+     * Gave it a debug (-d) option
+
+4.1.4           (11/15/2007):
+     * Ignore -u option from svn for usage "svn diff --diff-cmd=tkdiff"
+     * Perforce support for P4CONFIG environment variable
+     * Remove an old font work-around for Mac, but add a new one for tk8.5
+        on Windows
+     * Fix duplicate keyboard accelerator for Preferences
+
+4.1.3		(2/20/2006):
+     * Fixed incompatibility with older versions of Tcl/Tk
+       ("-state disabled").
+     * Applied Warren Jones' subversion patch, which prevents the
+       svn error that occurs when you omit a revision number.
+
+4.1.2           (2/1/2006):
+     * Can now do "tkdiff OLD-URL[@OLDREV] NEW-URL[@NEWREV]" in Subversion
+
+4.1.1           (12/20/2005):
+     * Security patch for temp files (CVE-2005-4434)
+
+4.1             (7/4/2005):
+
+     * Clearcase support
+     * Better Subversion support
+     * -L command line option allows you to control the labels above the
+       diff file panes.
+     * tkdiff --help or -h print a usage message for command line without
+       invoking the GUI.
+     * The New Diff Dialog is expanded so you can specify all the options.
+     * The two panes can be resized relative to each other using a sash
+       widget.  Tk8.4 is recommended, since the implemetation is much better.
+
+4.0.2 changes (11/08/2004):
+     * Made sure all the prefs are saved (Bug# 878340)
+     * Put all the Aqua stuff in one place
+
+4.0.1 changes (4/27/2004):
+     * Fix detection of a ,v file in the current directory for RCS
+
+4.0 changes (3/10/2004):
+
+     * Inline diff highlighting
+     * Current line comparison window
+     * Support for Subversion
+     * better tolerance of Windows filenames
+     * CDE, Windows, and MacOSX aware
+
+3.09 changes (5/24/2001):
+
+    * Removed use of the user name in temp file path. This removed a problem
+      on Windows when the user name had a space in it.
+    * Made diff "edge detection" smarter by using the new smarter overlap code
+      for cases where diff decided to treat whitespace slightly different
+      on missing-EOL files when doing 3-way diffs.
+    * Added the "..." back to the Save options in the merge result window
+      when appropriate.
+
+3.08 changes (1/15/2001):
+
+    * Made overlap detection smarter
+
+3.07 changes (12/17/2000):
+
+    * Highlight overlaps in bright yellow during 3-way merge
+    * Added "Exit" and "Save & Exit" buttons to merge preview window
+    * Removed error that popped up when doing a merge that was
+      not necessary.
+
+3.06 changes (unreleased):
+
+    * Minor changes for AccuRev integration
+
+3.05 changes (11/30/1999):
+
+    * Added Jean-Francois' 3-way diff/merge feature
+    * Added Bryan Oakley's tabstop feature
+    * Added full support for Accurev
+
+3.04 changes (8/5/1999):
+
+    * Basic support for AccuRev. Graphical equivalent of
+      'accurev diff foo.c'
+    * Fixes as a result of running Scriptics' error
+      checker (see archives for details)
+    * 'q' is quit
+
+3.03m changes:
+
+    * Added -o <output file> to set the name of the merge
+      output file
+ 
+3.03 changes:
+
+    * includes the new line-by-line comparison window
+    * bug fix for line numbers not being sync'd initially
+    * slight modification for how change bars are colored
+    * bug fix for up/down arrow keys (they were moving by
+      two lines instead of one)
+    * bug fix for Alt-V not opening the View menu (ditto
+      for a few other alt- combinations)
+    * fixed a couple of -underline options for menus
+    * new preferences for enabling the display of the 
+      line comparison window, and for configuring how 
+      individual characters are highlighted in that window
+    * added "<file> vs. <file>" to the window title 
+      (eg: foo-old.txt vs. foo.txt - TkDiff 3.03) -- this 
+      more closely aligns with Windows standards, and is
+      equally useful on other platforms, I suppose
+    * online help has been updated to reflect these changes
+
+        + As of 3.00: (11/06/1998)
+                A new GUI.
+                No more reliance on perl...  It's 100% Tcl/Tk now.
+                Built-in editor.
+                A "find" facility.
+                Lots more...  And all of this thanks to Bryan Oakley!
+
+        + GPL'ed (as of 2.03).
+
+        + RCS, CVS and SCCS support (auto-detected)...  Even more SCM
+          systems are supported in 3.00.
+
+        + Highlighted difference regions, randomly accessible, with a
+          quick overview/navigation bar.
+
+        + Side-by-side viewing and linked (synchronized) scrolling of files.
+
+        + On-line help and extensive customization (also much-improved in
+          3.00).
+
+        + File-merge and change-summary facilities.
+
+        + Line-number toggling (for easier cut & paste), with extra goodies
+          as of 3.00.
+
+        + Windows NT support.
+
+...and more stuff I can't even remember, probably.
+
+Much work has been done by Bryan Oakley for this release (in fact, 99%
+of it). :-)  Thanks, Bryan!  Keep an eye on the tkdiff home page at
+http://www.ipass.net/~klassa/tkdiff for developments...  I don't think
+there'll be many, at this point -- Bryan has turned this thing into just
+about all you could ask for!  If you have problems, though, please send
+bug reports (better yet, patches :-)) against 3.00 to klassa@ipass.net.

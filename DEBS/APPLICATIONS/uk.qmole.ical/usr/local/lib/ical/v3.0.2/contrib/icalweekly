@@ -1,0 +1,376 @@
+#!/bin/sh
+##### icalweekly (from Jay Sekora) #####
+# Hi.  The enclosed shar archive contains a script "icalweekly" to print
+# one-week-per-page organizer listings on appropriate stock (e.g. Avery
+# form 41357).  You use the script thusly:
+# 
+#   icalweekly [start-date [end-date]] | lpr
+# 
+# The start-date and end-date parameters default to the current date.
+# The start-date is adjusted so it falls on a Monday (today or before), 
+# and the end-date is adjusted so it falls on a Sunday (today or after), 
+# so full weeks are printed (one week per organiser sheet).
+# 
+# There's currently no provision for double-sided printing, printing 
+# on other forms, making sure the text fits the box, starting weeks 
+# with Sunday rather than Monday, etc., etc., but I thought it might 
+# be useful anyway.  I do hope to make it more user-friendly (and perhaps 
+# turn it into an ical menu command) in the future.
+##### BASED ON ical2calendar #####
+#
+# Convert ical output to an old-style calendar(1) file.
+#	ical2calendar [-calendar <file>] [<no. of days>] > calendar
+#
+# This script is based on a /bin/sh and awk combination sent to me
+# by Nancy Mintz (nlm@usl.com).  I rewrote it to use ical's tcl
+# interface because it is simpler this way.
+#
+# The "kludge" hackery below is based on a posting to comp.lang.tcl by
+# Paul Mackerras (paulus@anu.edu.au).
+#
+# -Sanjay Ghemawat
+###################################
+
+set kludge { ${1+"$@"}
+shift
+shift
+exec ical -f $0 -nodisplay ${1+"$@"}
+}
+
+# Tcl code starts here.
+
+# Set-up arrays for pretty-printing dates
+set wday(1)	Sunday
+set wday(2)	Monday
+set wday(3)	Tuesday
+set wday(4)	Wednesday
+set wday(5)	Thursday
+set wday(6)	Friday
+set wday(7)	Saturday
+
+set mon(1)	January
+set mon(2)	February
+set mon(3)	March
+set mon(4)	April
+set mon(5)	May
+set mon(6)	June
+set mon(7)	July
+set mon(8)	August
+set mon(9)	September
+set mon(10)	October
+set mon(11)	November
+set mon(12)	December
+
+# Parse arguments
+proc usage {} {
+    puts stderr {Usage: icalweekly [-calendar <file>] [<from> [<to>]]}
+    exit 1
+}
+
+if {[llength $argv] > 2} {usage}
+set pre ""
+set post ""
+if {[llength $argv] > 0} {
+  set argfrom [lindex $argv 0]
+  if ![date extract $argfrom from pre post] {
+    puts stderr "Unable to parse date from \"$argfrom\"."
+    exit 1
+  }
+  if {"x$pre" != "x" || "x$post" != "x"} {
+    puts stderr "Extraneous text in \"$argfrom\"."
+    exit 1
+  }
+} else {
+  set from [date today]
+}
+
+if {[llength $argv] > 1} {
+  set argto [lindex $argv 1]
+  if ![date extract $argto to pre post] {
+    puts stderr "Unable to parse date to \"$argto\"."
+    exit 1
+  }
+  if {"x$pre" != "x" || "x$post" != "x"} {
+    puts stderr "Extraneous text in \"$argto\"."
+    exit 1
+  }
+} else {
+  set to $from
+}
+
+
+# Generate listing
+calendar cal $ical(calendar)
+
+######################################################################
+puts -nonewline stderr \
+  "Told to start at $mon([date month $from]) [date monthday $from], "
+puts stderr "which is a $wday([date weekday $from]),"
+######################################################################
+
+# make sure we're starting on a Monday:
+set weekday [date weekday $from]
+if {$weekday >= 2} {
+  set from [expr $from - [date weekday $from] + 2]
+} else {
+  set from [expr $from - [date weekday $from] - 7 + 2]
+}
+
+######################################################################
+puts -nonewline stderr \
+  "   but we'll start from $mon([date month $from]) [date monthday $from], "
+puts stderr "which is a $wday([date weekday $from])"
+######################################################################
+
+######################################################################
+puts -nonewline stderr \
+  "Told to end with $mon([date month $to]) [date monthday $to], "
+puts stderr "which is a $wday([date weekday $to]),"
+######################################################################
+
+# make sure we're ending on a Sunday:
+set weekday [date weekday $to]
+if {$weekday != 1} {
+  set to [expr $to + 8 - [date weekday $to]]
+}
+
+######################################################################
+puts -nonewline stderr \
+  "   but we'll end with $mon([date month $to]) [date monthday $to], "
+puts stderr "which is a $wday([date weekday $to])"
+######################################################################
+
+######################################################################
+# Header postscript
+######################################################################
+set psheader {%!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PostScript prologue for address printing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+/inches {72 mul} def
+
+/TM 8 inches def	% top margin
+/BM 0.75 inches def	% bottom margin
+/LM 0.75 inches def	% left margin
+/RM 5.0 inches def	% right margin
+
+/currentcolumn 0 def	% 0 = left-hand; 1 = right-hand
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+/itemfont	/Helvetica		def
+/datefont	/Helvetica-Bold		def
+
+/fontsize       8			def
+/linespacing    8			def
+/addlspacing    4			def	% additional space
+
+
+systemdict /ISOLatin1Encoding known {
+  % The reencodeISO procedure is from the a2ps prologue, 
+  %% Copyright (c) 1992, 1993, Miguel Santana, santana@imag.fr
+  %% a2ps 4.2
+  % Set up ISO Latin 1 character encoding
+  /reencodeISO {
+          dup dup findfont dup length dict begin
+          { 1 index /FID ne { def }{ pop pop } ifelse
+          } forall
+          /Encoding ISOLatin1Encoding def
+          currentdict end definefont
+  } def
+  [
+    itemfont
+    datefont
+  ] {
+    reencodeISO def
+  } forall
+} if
+
+/usefont {findfont fontsize scalefont setfont} def
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+/startprinting {
+  0 inches 11 inches translate
+  -90 rotate
+  gsave
+  topofpage
+} def
+
+/topofpage {
+  grestore
+  LM TM moveto
+  gsave
+} def
+
+/newpage {
+  showpage
+  /currentcolumn 0 def
+  topofpage
+} def
+
+/secondcolumn {
+  5.5 inches 0 inches translate
+  LM TM moveto
+} def
+
+/finishprinting {
+  showpage
+  grestore
+} def
+
+/newcolumn {
+  currentcolumn 0 eq {
+    /currentcolumn 1 def
+    secondcolumn
+  } {
+    newpage
+  } ifelse
+} def
+
+/newline {
+  currentpoint		% stack: x y
+  linespacing sub	% stack: x y'
+  exch pop		% stack: y'
+  LM			% stack: y' LM
+  exch			% stack: LM y'
+  moveto
+} def
+
+/maybebreak {
+  currentpoint		% stack: x y
+  BM lt {
+    newcolumn
+  } if
+  pop
+} def
+
+/morespace {
+  currentpoint		% stack: x y
+  addlspacing sub	% stack: x y'
+  exch pop		% stack: y'
+  LM			% stack: y' LM
+  exch			% stack: LM y'
+  moveto
+} def
+
+/justify {
+  dup			% stack: string string
+  currentpoint exch	% stack: string string y x
+  pop RM		% stack: string string y RM
+  3 -1 roll		% stack: string y RM string
+  stringwidth		% stack: string y RM wx wy
+  pop			% stack: string y RM wx
+  sub			% stack: string y x'
+  exch			% stack: string x' qy
+  moveto show
+  currentpoint exch pop	% stack: y
+  LM exch		% stack: LM y
+  moveto
+} def
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% % stack:
+% %  email
+% %  address
+% %  phone
+% %  note
+% %  birthdate
+% %  name
+% 
+% /showperson {
+%   namefont usefont show
+%   
+%   birthdatefont usefont show
+%     
+%   notefont usefont ( ) show show
+%   
+%   phonefont usefont justify
+%   
+%   newline
+%   
+%   addressfont usefont show
+%   
+%   emailfont usefont justify
+%   
+%   newline morespace maybebreak
+% } def
+
+% stack:
+%   offset ( 0 - 6 )
+
+/startday {
+  inches		% stack: (offset * 72)
+  TM exch		% stack: TM (offset)
+  sub			% stack: y
+  /y exch def
+  gsave
+  LM 2 sub y moveto
+  RM 2 add y lineto
+  RM 2 add y 1 inches sub lineto
+  LM 2 sub y 1 inches sub lineto
+  closepath 0 setlinewidth 0 setgray stroke
+  grestore
+  LM y linespacing sub moveto
+} def
+
+/dateline {
+  datefont usefont
+  justify
+} def
+
+/itemline {
+  itemfont usefont
+  show
+  newline
+} def
+
+/newweek {
+  newcolumn
+} def
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+}
+
+######################################################################
+# psstring - escape a PS string
+######################################################################
+
+proc psstring { string } {
+  regsub -all -- {[(\)]} $string {\\\0} string
+  return "($string)"
+}
+
+puts stdout $psheader
+puts stdout "startprinting"
+for {set date $from} {$date <= $to} {incr date} {
+  set offset [expr [date weekday $date] - 2]
+  if {$offset < 0} {set offset 6}
+  
+  puts stdout "\n$offset startday"
+  puts -nonewline "($wday([date weekday $date]), "
+  puts -nonewline "[date monthday $date] "
+  puts -nonewline "$mon([date month $date]) "
+  puts -nonewline "[date year $date]) dateline\n"
+  
+  cal query $date $date i d {
+    set item [item2text $d $i "" "" 75]
+    foreach line [split $item "\n"] {
+      if [string length $line] {
+        puts stdout "[psstring $line] itemline"
+      } else {					;# blank line
+        puts stdout "morespace"
+      }
+    }
+  }
+  if {[date weekday $date] == 1} {		;# Sunday - end of column
+    puts "\nnewweek"
+  }
+}
+puts stdout "\nfinishprinting"
+
+
+exit 0

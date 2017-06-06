@@ -1,0 +1,13 @@
+Package: uk.qmole.ipythonnotebook
+Name: iPython Notebook
+Version: 1.1.1
+Architecture: iphoneos-arm
+Description: iPython Notebook Server for iOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/ipython
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: python, readline, uk.qmole.zmq, uk.qmole.qmole, uk.qmole.xserver, uk.qmole.herbstluft, uk.qmole.ipython
+Sponsor: QMole Ltd. 
+Section: Applications
+Tag: purpose::console, role::developer

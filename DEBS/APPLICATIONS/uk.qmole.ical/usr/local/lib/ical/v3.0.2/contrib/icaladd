@@ -1,0 +1,48 @@
+#!/bin/sh
+############################################################################
+# Copyright (c) 1994 by Sanjay Ghemawat
+############################################################################
+#
+# Command-line interface for adding ical items.
+#
+# You can use the "Import Selection" entry in the calendar menu to
+# achieve the same effect on an X display.
+#
+# Usage:
+#	icaladd [-calendar <calendar>]
+#
+#	An item is created and added to <calendar>.  The item description
+#	is read from standard input.
+#
+#	The date and times are extracted from the standard input if
+#	possible.  If a date cannot be extracted, it defaults to
+#	today.
+#
+#	If time information cannot be extracted, the item is made a
+#	notice instead of an appointment.  If a time range can be
+#	extracted, then the item is made an appointment that spans
+#	that time range.  If only a single time occurrence can be
+#	extracted, then the item is made an appointment that starts at
+#	that time and lasts for an hour.
+
+set kludge { ${1+"$@"}
+shift
+shift
+exec ical -f $0 -nodisplay ${1+"$@"}
+}
+
+calendar cal $ical(calendar)
+
+set text {}
+while {[gets stdin line] >= 0} {
+    lappend text $line
+}
+set text [join $text "\n"]
+
+set item [item_parse $text]
+cal add $item
+cal save
+puts stderr =====
+puts stderr [date2text [$item first]]
+puts -nonewline stderr [item2text $item]
+puts stderr =====

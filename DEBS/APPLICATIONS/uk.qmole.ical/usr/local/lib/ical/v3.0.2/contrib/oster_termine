@@ -1,0 +1,78 @@
+#!/bin/sh
+#
+# add german holidays for a year range
+#
+# Copyright (c) 2008 by Sergei Golubchik
+#
+
+
+set kludge { ${1+"$@"}
+shift
+shift
+exec ical -f $0 -nodisplay ${1+"$@"}
+}
+
+set calfile $env(HOME)/.calendar/Holidays
+
+switch [llength $argv] {
+    1 {
+        set from_y [lindex $argv 0]
+        set to_y $from_y
+    }
+    2 {
+        set from_y [lindex $argv 0]
+        set to_y  [lindex $argv 1]
+    }
+    default {
+        puts "Usage: $argv0 start_year \[ end_year \]"
+        exit 1
+    }
+}
+
+calendar cal $ical(calendar)
+
+proc add_item {d t} {
+    global calfile
+    set item [notice]
+    $item date $d
+    $item text "Feiertag: $t"
+    $item earlywarning 0
+    $item hilite holiday
+
+    puts -nonewline \
+        [format "%30s %-s" [date2text [$item first]] [item2text $d $item]]
+
+    cal add $item $calfile
+}
+
+for {set y $from_y} {$y <= $to_y} {incr y} {
+    # see http://en.wikipedia.org/wiki/Computus#Anonymous_algorithm
+    set a [expr $y % 19]
+    set b [expr $y / 100]
+    set c [expr $y % 100]
+    set d [expr $b / 4]
+    set e [expr $b % 4]
+    set f [expr ($b + 8) / 25]
+    set g [expr ($b - $f + 1)/3]
+    set h [expr (19 * $a + $b - $d - $g + 15) % 30]
+    set i [expr $c / 4]
+    set k [expr $c % 4]
+    set L [expr (32 + 2 * $e + 2 * $i - $h - $k) % 7]
+    set m [expr ($a + 11 * $h + 22 * $L) / 451]
+    set n [expr $h + $L - 7 * $m + 114]
+    set month [expr  $n / 31]
+    set day [expr 1 + $n % 31]
+
+    set date [date make $day $month $y]
+    # see http://de.wikipedia.org/wiki/Feiertage_in_Deutschland
+    add_item [expr $date-48] Rosenmontag
+    add_item [expr $date-47] "(1/2) Faschingsdienstags"
+    add_item [expr $date-2 ] Karfreitag
+    add_item       $date     Ostersonntag
+    add_item [expr $date+1 ] Ostermontag
+    add_item [expr $date+39] "Christi Himmelfahrt"
+    add_item [expr $date+49] Pfingstsonntag
+    add_item [expr $date+50] Pfingstmontag
+    add_item [expr $date+60] Fronleichnam
+}
+cal save $calfile

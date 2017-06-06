@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>uk.qmole.ipython</string>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>Program</key>
+	<string>/usr/bin/ipython</string>
+	<key>ProgramArguments</key>
+	<array>
+          <string>/usr/bin/ipython</string>
+          <string>notebook</string>
+	</array>
+	<key>SessionCreate</key>
+	<true/>
+	<key>KeepAlive</key>
+	<true/>
+	<key>EnablePressuredExit</key>
+	<false/>
+	<key>RunAtLoad</key>
+	<true/>
+</dict>
+</plist>

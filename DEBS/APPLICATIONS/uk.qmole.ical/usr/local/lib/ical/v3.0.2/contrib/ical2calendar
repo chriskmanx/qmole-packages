@@ -1,0 +1,66 @@
+#!/bin/sh
+#
+# Convert ical output to an old-style calendar(1) file.
+#	ical2calendar [-calendar <file>] [<no. of days>] > calendar
+#
+# This script is based on a /bin/sh and awk combination sent to me
+# by Nancy Mintz (nlm@usl.com).  I rewrote it to use ical's tcl
+# interface because it is simpler this way.
+#
+# The "kludge" hackery below is based on a posting to comp.lang.tcl by
+# Paul Mackerras (paulus@anu.edu.au).
+#
+# -Sanjay Ghemawat
+
+set kludge { ${1+"$@"}
+shift
+shift
+exec ical -f $0 -nodisplay ${1+"$@"}
+}
+
+# Tcl code starts here.
+
+# Parse arguments
+proc usage {} {
+    puts stderr {Usage: ical2calendar [-calendar <file>] [<no. of days>]}
+    exit 1
+}
+set days 365
+if {[llength $argv] > 1} {usage}
+if {[llength $argv] == 1} {set days [lindex $argv 0]}
+if ![regexp {^[0-9]+$} $days] {usage}
+
+# Set-up arrays for pretty-printing dates
+set wday(1)	sun
+set wday(2)	mon
+set wday(3)	tue
+set wday(4)	wed
+set wday(5)	thu
+set wday(6)	fri
+set wday(7)	sat
+
+set mon(1)	jan
+set mon(2)	feb
+set mon(3)	mar
+set mon(4)	apr
+set mon(5)	may
+set mon(6)	jun
+set mon(7)	jul
+set mon(8)	aug
+set mon(9)	sep
+set mon(10)	oct
+set mon(11)	nov
+set mon(12)	dec
+
+# Generate listing
+calendar cal $ical(calendar)
+
+cal listing [date today] [expr [date today]+$days-1] i d {
+    set dt [format {%-3s  %2d %-5s }\
+	    $mon([date month $d])\
+	    [date monthday $d]\
+	    $wday([date weekday $d])\
+	   ]
+    puts -nonewline stdout [item2text $i "$dt - " "$dt   " 50]
+}
+exit 0
