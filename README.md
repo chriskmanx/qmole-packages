@@ -7,6 +7,24 @@ QMole Debian Packages
 
 ![System Overview](system-overview.png)
 
+## Manifest
+
+### REPO
+
+The hosted repository - what Cydia connects to for installation to iPhone & iPad via dedicated Cydia source.
+
+### DEBS
+
+Debian package sources used to build the REPO. 
+
+### scripts
+
+Various helper and build scripts to assist with building the REPO.
+
+### Avian tar archive
+
+Archive build of the Avian light weight Java virtual machine for iOS
+
 ## Licence Disclaimer
 
 QMole is hereby released open-source under the GPL. Previous releases were licensed closed-source (this continues to apply to the existing binaries up to and including beta version 0.7). The reason for the closed-source release is that QMole has dependencies on screen viewer libraries which themselves are closed-source and licensed content. Adopters have 3 main choices:
