@@ -1,4 +1,0 @@
-if( ()½autilsDirûsys.readenv{"AUTILS_DIR"} ) {
-  scriptsDirû"/usr/local/aplus-fsf-4.22/autils";
-}
-
