@@ -1,0 +1,11 @@
+Package: uk.qmole.gtk2
+Name: GTK2+ GIMP Toolkit
+Version: 2.24.17
+Architecture: iphoneos-arm
+Description: GTK2+ GIMP Toolkit for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: Window_Toolkits

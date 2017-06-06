@@ -1,0 +1,11 @@
+Package: uk.qmole.atk
+Name: GTK Accessibility Toolkit
+Version: 2.2.0
+Architecture: iphoneos-arm
+Description: GTK Accessibility Toolkit for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: Window_Toolkits

@@ -1,0 +1,12 @@
+Package: uk.qmole.snort
+Name: snort
+Version: 2.9.7.6
+Architecture: iphoneos-arm
+Description: Snort Network Intrusion Prevention System
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: firmware (>= 7.0), uk.qmole.libpcap, uk.qmole.libdaq, uk.qmole.nmap, uk.qmole.qmole, uk.qmole.libdnet, uk.qmole.herbstluft
+Sponsor: QMole Ltd. 
+Section: Security

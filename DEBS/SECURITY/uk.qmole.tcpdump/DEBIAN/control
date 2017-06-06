@@ -1,0 +1,12 @@
+Package: uk.qmole.tcpdump
+Name: tcpdump
+Version: 4.7.4
+Architecture: iphoneos-arm
+Description: Tcpdump network sniffer for iOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: firmware (>= 7.0), uk.qmole.libpcap, uk.qmole.qmole, uk.qmole.libdnet, uk.qmole.herbstluft
+Sponsor: QMole Ltd. 
+Section: Security

@@ -1,0 +1,8 @@
+style "wide-scrollbar-style"
+{
+  GtkScrollbar::slider_width = 40
+}
+widget_class "*Scrollbar" style "wide-scrollbar-style"
+
+
+

@@ -1,0 +1,12 @@
+Package: uk.qmole.nmap
+Name: nmap
+Version: 4.76
+Architecture: iphoneos-arm
+Description: Nmap (Network Mapper) Security Scanner 
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: firmware (>= 7.0), uk.qmole.libpcap, uk.qmole.qmole, uk.qmole.libdnet, uk.qmole.herbstluft
+Sponsor: QMole Ltd. 
+Section: Security

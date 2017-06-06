@@ -1,0 +1,11 @@
+Package: uk.qmole.libgnomecanvas
+Name: Gnome Canvas Library
+Version: 2.30.3
+Architecture: iphoneos-arm
+Description: libgnomecanvas Gnome Canvas Library for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: Window_Toolkits

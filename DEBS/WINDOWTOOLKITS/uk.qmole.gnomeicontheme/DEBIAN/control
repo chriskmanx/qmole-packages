@@ -1,0 +1,11 @@
+Package: uk.qmole.gnomeicontheme
+Name: Gnome Icon Themes
+Version: 2.17.4
+Architecture: iphoneos-arm
+Description: Gnome Icon Themes for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: Window_Toolkits
