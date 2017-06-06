@@ -1,0 +1,13 @@
+Package: uk.qmole.libsm
+Name: XORG libSM
+Version: 1.0.1
+Architecture: iphoneos-arm
+Description: XORG Session Management for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.libice
+Sponsor: QMole Ltd. 
+Section: X_Window
+Tag: purpose::library, role::developer

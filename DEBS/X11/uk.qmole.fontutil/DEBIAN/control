@@ -1,0 +1,13 @@
+Package: uk.qmole.fontutil
+Name: X11 Font Utils
+Version: 1.2.0
+Architecture: iphoneos-arm
+Description: X11 font utils for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/x11
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.bdftopcf, uk.qmole.mkfontdir, uk.qmole.libxfont
+Sponsor: QMole Ltd. 
+Section: X_Window
+Tag: purpose::library, role::developer

@@ -1,0 +1,13 @@
+Package: uk.qmole.mkfontdir
+Name: X11 Makefontdir
+Version: 1.0.6
+Architecture: iphoneos-arm
+Description: X11 makefontdir for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/x11
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.fontconfig, uk.qmole.libxfont, uk.qmole.libxpm, uk.qmole.libxrender
+Sponsor: QMole Ltd. 
+Section: X_Window
+Tag: purpose::library, role::developer

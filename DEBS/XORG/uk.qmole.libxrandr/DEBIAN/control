@@ -1,0 +1,13 @@
+Package: uk.qmole.libxrandr
+Name: XORG libXrandr
+Version: 1.2.3
+Architecture: iphoneos-arm
+Description: XORG libXrandr for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.libx11, uk.qmole.libxext, uk.qmole.libxrender
+Sponsor: QMole Ltd. 
+Section: X_Window
+Tag: purpose::library, role::developer

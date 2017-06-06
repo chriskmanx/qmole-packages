@@ -1,0 +1,13 @@
+Package: uk.qmole.x11fonts
+Name: X11 and TrueType Fonts
+Version: 1.0
+Architecture: iphoneos-arm
+Description: X11 and TrueType Fonts for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/x11
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.freetype, uk.qmole.x11fontsTTF, uk.qmole.x11fonts75dpi
+Sponsor: QMole Ltd. 
+Section: X_Window
+Tag: purpose::library, role::developer

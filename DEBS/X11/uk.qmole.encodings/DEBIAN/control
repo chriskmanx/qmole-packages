@@ -1,0 +1,13 @@
+Package: uk.qmole.encodings
+Name: X11 encodings
+Version: 1.0.4
+Architecture: iphoneos-arm
+Description: X11 encodings for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/x11
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.mkfontdir
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: X_Window
+Tag: purpose::library, role::developer

@@ -1,0 +1,13 @@
+Package: uk.qmole.fontconfig
+Name: X11 fontconfig
+Version: 2.8.0
+Architecture: iphoneos-arm
+Description: X11 fontconfig for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/x11
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.freetype
+Sponsor: QMole Ltd. 
+Section: X_Window
+Tag: purpose::library, role::developer

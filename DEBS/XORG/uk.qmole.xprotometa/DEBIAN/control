@@ -1,0 +1,12 @@
+Package: uk.qmole.xprotometa
+Name: XORG XProto Meta Package
+Version: 1.0
+Architecture: iphoneos-arm
+Description: XORG X11 protocol collection for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: X_Window
+Tag: purpose::library, role::developer

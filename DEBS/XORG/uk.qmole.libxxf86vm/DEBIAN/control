@@ -1,0 +1,13 @@
+Package: uk.qmole.libxxf86vm
+Name: XORG libXxf86vm
+Version: 1.0.2
+Architecture: iphoneos-arm
+Description: XORG libXxf86vm for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.libx11, uk.qmole.libxext
+Sponsor: QMole Ltd. 
+Section: X_Window
+Tag: purpose::library, role::developer

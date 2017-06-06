@@ -1,0 +1,12 @@
+Package: uk.qmole.pixman
+Name: X11 pixman
+Version: 0.22.2
+Architecture: iphoneos-arm
+Description: X11 pixman for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/x11
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: X_Window
+Tag: purpose::library, role::developer

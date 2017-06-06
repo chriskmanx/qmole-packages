@@ -1,0 +1,13 @@
+Package: uk.qmole.bdftopcf
+Name: X11 bdftopcf
+Version: 1.0.3
+Architecture: iphoneos-arm
+Description: X server font compiler for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/x11
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.libxfont
+Sponsor: QMole Ltd. 
+Section: X_Window
+Tag: purpose::library, role::developer

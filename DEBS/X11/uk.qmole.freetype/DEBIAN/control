@@ -1,0 +1,12 @@
+Package: uk.qmole.freetype
+Name: X11 Freetype
+Version: 2.4.7
+Architecture: iphoneos-arm
+Description: X11 Freetype for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/x11
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: X_Window
+Tag: purpose::library, role::developer

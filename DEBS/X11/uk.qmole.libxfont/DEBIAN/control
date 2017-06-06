@@ -1,0 +1,13 @@
+Package: uk.qmole.libxfont
+Name: X11 libXfont
+Version: 1.4.2
+Architecture: iphoneos-arm
+Description: X11 libXfont for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/x11
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.libfontenc, uk.qmole.freetype
+Sponsor: QMole Ltd. 
+Section: X_Window
+Tag: purpose::library, role::developer

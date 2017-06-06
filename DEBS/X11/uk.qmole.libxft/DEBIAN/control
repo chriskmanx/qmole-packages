@@ -1,0 +1,13 @@
+Package: uk.qmole.libxft
+Name: X11 libxft
+Version: 2.1.13
+Architecture: iphoneos-arm
+Description: X11 libxft for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/x11
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.fontconfig, uk.qmole.freetype, uk.qmole.libxrender
+Sponsor: QMole Ltd. 
+Section: X_Window
+Tag: purpose::library, role::developer
