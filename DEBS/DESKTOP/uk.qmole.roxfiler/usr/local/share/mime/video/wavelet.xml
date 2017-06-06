@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="video/wavelet">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Wavelet video</comment>
+  <comment xml:lang="az">Wavelet video faylı</comment>
+  <comment xml:lang="cs">Video Wavelet</comment>
+  <comment xml:lang="cy">Fideo Wavelet</comment>
+  <comment xml:lang="de">Wavelet-Video</comment>
+  <comment xml:lang="el">Βίντεο Wavelet</comment>
+  <comment xml:lang="fi">Wavelet-video</comment>
+  <comment xml:lang="fr">vidéo Wavelet</comment>
+  <comment xml:lang="hu">Wavelet-video</comment>
+  <comment xml:lang="ko">Wavelet 비디오</comment>
+  <comment xml:lang="nl">Wavelet video</comment>
+  <comment xml:lang="nn">Wavelet video</comment>
+  <comment xml:lang="no">Wavelet-film</comment>
+  <comment xml:lang="sr">Wavelet видео</comment>
+  <comment xml:lang="sv">Wavelet-video</comment>
+</mime-type>

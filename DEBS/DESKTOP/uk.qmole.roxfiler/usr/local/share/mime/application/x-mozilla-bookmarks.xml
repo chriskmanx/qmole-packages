@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-mozilla-bookmarks">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Mozilla bookmarks</comment>
+  <comment xml:lang="de">Mozilla-Lesezeichen</comment>
+  <comment xml:lang="el">Σελιδοδείκτες Mozilla</comment>
+  <comment xml:lang="fi">Mozilla-kirjanmerkit</comment>
+  <comment xml:lang="no">Mozilla-bokmerker</comment>
+</mime-type>

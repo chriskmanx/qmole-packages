@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.rn-realmedia">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>RealAudio/Video document</comment>
+  <comment xml:lang="az">RealAudio/Video sənədi</comment>
+  <comment xml:lang="cs">Dokument RealAudio/Video</comment>
+  <comment xml:lang="cy">Dogfen RealAudio neu RealVideo</comment>
+  <comment xml:lang="de">RealAudio/Video-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο RealAudio/Video</comment>
+  <comment xml:lang="fi">RealAudio/Video-asiakirja</comment>
+  <comment xml:lang="fr">document RealAudio/Video</comment>
+  <comment xml:lang="hu">RealAudio/Video-dokumentum</comment>
+  <comment xml:lang="ko">리얼오디오/비디오 문서</comment>
+  <comment xml:lang="nl">RealAudio/Video document</comment>
+  <comment xml:lang="nn">RealAudio/Video-dokument</comment>
+  <comment xml:lang="no">RealAudio/Video-dokument</comment>
+  <comment xml:lang="sr">RealAudio/Video документ</comment>
+  <comment xml:lang="sv">RealAudio/Video-dokument</comment>
+</mime-type>

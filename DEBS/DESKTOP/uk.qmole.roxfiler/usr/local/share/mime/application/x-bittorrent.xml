@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-bittorrent">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>BitTorrent seed file</comment>
+  <comment xml:lang="az">BitTorrent seed faylı</comment>
+  <comment xml:lang="cs">Soubor BitTorrent</comment>
+  <comment xml:lang="cy">Ffeil hadu BitTorrent</comment>
+  <comment xml:lang="de">BitTorrent-Seed-Datei</comment>
+  <comment xml:lang="el">Αρχείο BitTorrent seed</comment>
+  <comment xml:lang="fi">BitTorrent-siementiedosto</comment>
+  <comment xml:lang="fr">fichier racine BitTorrent</comment>
+  <comment xml:lang="hu">BitTorrent-magfájl</comment>
+  <comment xml:lang="ko">BitTorrent 시드 파일</comment>
+  <comment xml:lang="nl">BitTorrent zaad-bestand</comment>
+  <comment xml:lang="nn">Nedlastingsfil for BitTorrent</comment>
+  <comment xml:lang="no">Fil med utgangsverdi for BitTorrent</comment>
+  <comment xml:lang="sr">Датотека са БитТорентовим полазиштима</comment>
+  <comment xml:lang="sv">BitTorrent-fröfil</comment>
+</mime-type>

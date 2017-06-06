@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-tex-pk">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>packed font file</comment>
+  <comment xml:lang="de">gepackte Schriftdatei</comment>
+  <comment xml:lang="fi">pakattu kirjasintiedosto</comment>
+  <comment xml:lang="no">pakket skriftfil</comment>
+</mime-type>

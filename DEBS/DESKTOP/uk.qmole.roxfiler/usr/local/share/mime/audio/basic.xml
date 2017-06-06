@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/basic">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>ULAW (Sun) audio</comment>
+  <comment xml:lang="az">ULAW (Sun) audio faylı</comment>
+  <comment xml:lang="cs">Zvuk ULAW (Sun)</comment>
+  <comment xml:lang="cy">Sain ULAW (Sun)</comment>
+  <comment xml:lang="de">ULAW (Sun)-Audio</comment>
+  <comment xml:lang="fi">ULAW (Sun) -ääni</comment>
+  <comment xml:lang="fr">ULAW (Sun) audio</comment>
+  <comment xml:lang="hu">ULAW (Sun) hangfájl</comment>
+  <comment xml:lang="ko">ULAW (Sun) 오디오</comment>
+  <comment xml:lang="nl">ULAW (Sun) geluidsbestand</comment>
+  <comment xml:lang="nn">ULAW (Sun)-lyd</comment>
+  <comment xml:lang="no">ULAW-lyd (Sun)</comment>
+  <comment xml:lang="sr">ULAW (Sun) звучни запис</comment>
+  <comment xml:lang="sv">ULAW-ljud (Sun)</comment>
+</mime-type>

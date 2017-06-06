@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-dtd">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>document type definition</comment>
+  <comment xml:lang="az">sənəd növü tə'yini</comment>
+  <comment xml:lang="cs">Definice typu dokumentu</comment>
+  <comment xml:lang="cy">Diffiniad math dogfen</comment>
+  <comment xml:lang="de">Dokumenttypenbeschreibung (DTD)</comment>
+  <comment xml:lang="fi">asiakirjatyypin määritelmä</comment>
+  <comment xml:lang="fr">définition des types de document</comment>
+  <comment xml:lang="hu">dokumentumtípus definíciója</comment>
+  <comment xml:lang="ko">문서 형식 정의</comment>
+  <comment xml:lang="nl">documentsoort definitie</comment>
+  <comment xml:lang="nn">dokumenttypedefinisjon</comment>
+  <comment xml:lang="no">dokumenttypdefinisjon</comment>
+  <comment xml:lang="sr">дефиниција типа датотеке</comment>
+  <comment xml:lang="sv">dokumenttypdefinition</comment>
+</mime-type>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-font-vfont">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>V font</comment>
+  <comment xml:lang="az">V yazı növü</comment>
+  <comment xml:lang="cs">Písmo V</comment>
+  <comment xml:lang="cy">Ffont V</comment>
+  <comment xml:lang="de">V-Schrift</comment>
+  <comment xml:lang="el">Γραμματοσειρά V</comment>
+  <comment xml:lang="fi">V-kirjasin</comment>
+  <comment xml:lang="fr">fonte V</comment>
+  <comment xml:lang="hu">V-betűkészlet</comment>
+  <comment xml:lang="ko">V 글꼴</comment>
+  <comment xml:lang="nl">V lettertype</comment>
+  <comment xml:lang="nn">V-skrifttype</comment>
+  <comment xml:lang="no">V-skrift</comment>
+  <comment xml:lang="sr">V фонт</comment>
+  <comment xml:lang="sv">V-typsnitt</comment>
+</mime-type>

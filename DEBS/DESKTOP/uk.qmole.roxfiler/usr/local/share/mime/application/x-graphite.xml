@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-graphite">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Graphite scientific graph</comment>
+  <comment xml:lang="de">wissenschaftlicher Graphite-Graph</comment>
+  <comment xml:lang="fi">Graphite-graafi</comment>
+</mime-type>

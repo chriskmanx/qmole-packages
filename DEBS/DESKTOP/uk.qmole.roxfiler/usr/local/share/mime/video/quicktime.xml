@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="video/quicktime">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>QuickTime video</comment>
+  <comment xml:lang="de">QuickTime-Video</comment>
+  <comment xml:lang="el">Βίντεο QuickTime</comment>
+  <comment xml:lang="fi">QuickTime-video</comment>
+  <comment xml:lang="no">Quicktime-film</comment>
+</mime-type>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/midi">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <alias type="audio/x-midi"/>
+  <comment>MIDI audio</comment>
+  <comment xml:lang="az">MIDI audio faylı</comment>
+  <comment xml:lang="cs">Zvuk MIDI</comment>
+  <comment xml:lang="cy">Sain MIDI</comment>
+  <comment xml:lang="de">MIDI-Audio</comment>
+  <comment xml:lang="el">Ήχος MIDI</comment>
+  <comment xml:lang="fi">MIDI-ääni</comment>
+  <comment xml:lang="fr">audio MIDI</comment>
+  <comment xml:lang="hu">MIDI-hang</comment>
+  <comment xml:lang="ko">미디 오디오</comment>
+  <comment xml:lang="nl">MIDI geluidsbestand</comment>
+  <comment xml:lang="nn">MIDI-lyd</comment>
+  <comment xml:lang="no">MIDI-lyd</comment>
+  <comment xml:lang="sr">MIDI звучни запис</comment>
+  <comment xml:lang="sv">MIDI-ljud</comment>
+</mime-type>

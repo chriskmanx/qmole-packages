@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/pgp-signature">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>detached OpenPGP signature</comment>
+  <comment xml:lang="de">isolierte OpenPGP-Signatur</comment>
+  <comment xml:lang="fi">erillinen OpenPGP-allekirjoitus</comment>
+  <comment xml:lang="no">frakoblet OpenPGP-signatur</comment>
+</mime-type>

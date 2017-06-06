@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/x-mpegurl">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>MP3 audio (streamed)</comment>
+  <comment xml:lang="de">MP3-Audio (Stream)</comment>
+  <comment xml:lang="fi">MP3-ääni (virtaava)</comment>
+  <comment xml:lang="no">MP3-lyd (streaming)</comment>
+</mime-type>

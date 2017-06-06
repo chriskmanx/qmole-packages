@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-tgif">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>TGIF document</comment>
+  <comment xml:lang="de">TGIF-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο TGIF</comment>
+  <comment xml:lang="fi">TGIF-asiakirja</comment>
+  <comment xml:lang="no">TGIF-dokument</comment>
+  <comment xml:lang="sv">TGIF-dokument</comment>
+</mime-type>

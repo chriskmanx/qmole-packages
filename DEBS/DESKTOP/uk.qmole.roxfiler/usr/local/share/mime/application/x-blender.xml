@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-blender">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Blender scene</comment>
+  <comment xml:lang="de">Blender-Szene</comment>
+  <comment xml:lang="fi">Blender-tiedosto</comment>
+  <comment xml:lang="no">Blender-scene</comment>
+</mime-type>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-font-dos">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>DOS font</comment>
+  <comment xml:lang="az">DOS yazı növü</comment>
+  <comment xml:lang="cs">Písmo pro DOS</comment>
+  <comment xml:lang="cy">Ffont DOS</comment>
+  <comment xml:lang="de">DOS-Schrift</comment>
+  <comment xml:lang="el">Γραμματοσειρά DOS</comment>
+  <comment xml:lang="fi">DOS-kirjasin</comment>
+  <comment xml:lang="fr">fonte DOS</comment>
+  <comment xml:lang="hu">DOS-betűkészlet</comment>
+  <comment xml:lang="ko">도스 글꼴</comment>
+  <comment xml:lang="nl">DOS lettertype</comment>
+  <comment xml:lang="nn">DOS-skrifttype</comment>
+  <comment xml:lang="no">DOS-skrifttype</comment>
+  <comment xml:lang="sr">DOS фонт</comment>
+  <comment xml:lang="sv">DOS-typsnitt</comment>
+</mime-type>

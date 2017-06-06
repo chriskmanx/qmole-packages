@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/vnd.dwg">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>AutoCAD image</comment>
+  <comment xml:lang="az">AutoCAD rəsmi</comment>
+  <comment xml:lang="cs">Obrázek AutoCAD</comment>
+  <comment xml:lang="cy">Delwedd AutoCAD</comment>
+  <comment xml:lang="de">AutoCAD-Bild</comment>
+  <comment xml:lang="el">Εικόνα AutoCAD</comment>
+  <comment xml:lang="fi">AutoCAD-kuva</comment>
+  <comment xml:lang="fr">image AutoCAD</comment>
+  <comment xml:lang="hu">AutoCAD-kép</comment>
+  <comment xml:lang="ko">AutoCAD 이미지</comment>
+  <comment xml:lang="nl">AutoCAD afbeelding</comment>
+  <comment xml:lang="nn">AutoCAD-bilete</comment>
+  <comment xml:lang="no">AutoCAD-bilde</comment>
+  <comment xml:lang="sr">AutoCAD слика</comment>
+  <comment xml:lang="sv">AutoCAD-bild</comment>
+</mime-type>

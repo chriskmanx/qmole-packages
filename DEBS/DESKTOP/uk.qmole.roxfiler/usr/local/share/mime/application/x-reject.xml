@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-reject">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>rejected patch</comment>
+  <comment xml:lang="de">abgelehnter Patch</comment>
+  <comment xml:lang="fi">hylättyjen muutosten tiedosto</comment>
+  <comment xml:lang="no">avvist patchfil</comment>
+</mime-type>

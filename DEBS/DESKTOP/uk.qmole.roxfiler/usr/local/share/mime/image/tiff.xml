@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/tiff">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>TIFF image</comment>
+  <comment xml:lang="de">TIFF-Bild</comment>
+  <comment xml:lang="el">Εικόνα TIFF</comment>
+  <comment xml:lang="fi">TIFF-kuva</comment>
+  <comment xml:lang="no">TIFF-bilde</comment>
+  <comment xml:lang="sv">TIFF-bild</comment>
+</mime-type>

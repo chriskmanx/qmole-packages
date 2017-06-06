@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/x-stm">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Scream Tracker audio</comment>
+  <comment xml:lang="az">Scream Tracker audio faylı</comment>
+  <comment xml:lang="cs">Skladba Scream Tracker</comment>
+  <comment xml:lang="cy">Sain Scream Tracker</comment>
+  <comment xml:lang="de">Scream Tracker-Audio</comment>
+  <comment xml:lang="el">Ήχος Scream Tracker</comment>
+  <comment xml:lang="fi">Scream Tracker -ääni</comment>
+  <comment xml:lang="fr">audio Scream Tracker</comment>
+  <comment xml:lang="hu">Scream Tracker-hang</comment>
+  <comment xml:lang="ko">Scream Tracker 오디오</comment>
+  <comment xml:lang="nl">Scream Tracker geluidsbestand</comment>
+  <comment xml:lang="nn">Scream Tracker lyd</comment>
+  <comment xml:lang="no">Scream Tracker-lyd</comment>
+  <comment xml:lang="sr">Scream Tracker звучни запис</comment>
+  <comment xml:lang="sv">Scream Tracker-ljud</comment>
+</mime-type>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-applix-word">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Applix Words document</comment>
+  <comment xml:lang="az">Applix Words sənədi</comment>
+  <comment xml:lang="cs">Dokument Applix Words</comment>
+  <comment xml:lang="cy">Dogfen Applix Words</comment>
+  <comment xml:lang="de">Applix Words-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο Applix Words</comment>
+  <comment xml:lang="fi">Applix Words -asiakirja</comment>
+  <comment xml:lang="fr">document Applix Words</comment>
+  <comment xml:lang="hu">Applix Words-dokumentum</comment>
+  <comment xml:lang="ko">Applix Word 문서</comment>
+  <comment xml:lang="nl">Applix Words document</comment>
+  <comment xml:lang="nn">Applix Words dokument</comment>
+  <comment xml:lang="no">Applix Words-dokument</comment>
+  <comment xml:lang="sr">Applix Words документ</comment>
+  <comment xml:lang="sv">Applix Words-dokument</comment>
+</mime-type>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-fpx">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>FlashPix image</comment>
+  <comment xml:lang="de">FlashPix-Bild</comment>
+  <comment xml:lang="el">Εικόνα FlashPix</comment>
+  <comment xml:lang="fi">FlashPix-kuva</comment>
+  <comment xml:lang="no">FlashPix-bilde</comment>
+</mime-type>

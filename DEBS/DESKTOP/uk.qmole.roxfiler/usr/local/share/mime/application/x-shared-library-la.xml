@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-shared-library-la">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>shared library (la)</comment>
+  <comment xml:lang="de">gemeinsame Bibliothek (la)</comment>
+  <comment xml:lang="fi">jaettu kirjasto (la)</comment>
+  <comment xml:lang="no">delt bibliotek (la)</comment>
+</mime-type>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-stuffit">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Macintosh StuffIt archive</comment>
+  <comment xml:lang="az">Macintosh StuffIt arxivi</comment>
+  <comment xml:lang="cs">Archiv Macintosh StuffIt</comment>
+  <comment xml:lang="cy">Archif Macintosh StuffIt</comment>
+  <comment xml:lang="de">Macintosh StuffIt-Archiv</comment>
+  <comment xml:lang="fi">Macintosh StuffIt -arkisto</comment>
+  <comment xml:lang="fr">archive Macintosh StuffIt</comment>
+  <comment xml:lang="hu">Macintosh StuffIt-archívum</comment>
+  <comment xml:lang="ko">맥킨토시 StuffIt 아카이브</comment>
+  <comment xml:lang="nl">Macintosh StuffIt archief</comment>
+  <comment xml:lang="nn">Macintosh StuffIt arkiv</comment>
+  <comment xml:lang="no">Macintosh StuffIt arkiv</comment>
+  <comment xml:lang="sr">Мекинтош StuffIt архива</comment>
+  <comment xml:lang="sv">Macintosh StuffIt-arkiv </comment>
+</mime-type>

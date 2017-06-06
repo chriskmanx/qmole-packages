@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-ms-dos-executable">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>DOS/Windows executable</comment>
+  <comment xml:lang="de">DOS/Windows-Programm</comment>
+  <comment xml:lang="el">Εκτελέσιμο DOS/Windows</comment>
+  <comment xml:lang="fi">DOS/Windows suoritettava ohjema</comment>
+  <comment xml:lang="no">Kjørbar fil for DOS/Windows</comment>
+</mime-type>

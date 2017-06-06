@@ -1,0 +1,4 @@
+#! /bin/sh
+/usr/bin/herbstclient use Edit
+emacs "$@" &
+/usr/local/bin/xpause 1

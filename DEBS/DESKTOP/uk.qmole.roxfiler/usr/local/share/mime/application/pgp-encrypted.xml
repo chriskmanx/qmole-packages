@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/pgp-encrypted">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>PGP/MIME-encrypted message header</comment>
+  <comment xml:lang="de">PGP/MIME-verschlüsselter Nachrichtenkopf</comment>
+  <comment xml:lang="fi">PGP/MIME-salattu viestiotsikko</comment>
+  <comment xml:lang="no">PGP/MIME-kryptert meldingshode</comment>
+</mime-type>

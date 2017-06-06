@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-dc-rom">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Dreamcast ROM</comment>
+  <comment xml:lang="de">Dreamcast-ROM</comment>
+  <comment xml:lang="el">Dreamcast ROM</comment>
+  <comment xml:lang="fi">Dreamcast-ROM</comment>
+  <comment xml:lang="no">Dreamcast-ROM</comment>
+</mime-type>

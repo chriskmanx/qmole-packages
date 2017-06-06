@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-x509-ca-cert">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>DER/PEM/Netscape-encoded X.509 certificate</comment>
+  <comment xml:lang="de">DER/PEM/Netscape-kodiertes X.509-Zertifikat</comment>
+  <comment xml:lang="fi">DER-, PEM- tai Netscape-koodattu X.509-varmenne</comment>
+  <comment xml:lang="no">DER/PEM/Netscape-kodet X.509-sertifikat</comment>
+</mime-type>

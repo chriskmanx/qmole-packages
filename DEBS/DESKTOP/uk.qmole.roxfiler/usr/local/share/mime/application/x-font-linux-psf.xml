@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-font-linux-psf">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Linux PSF console font</comment>
+  <comment xml:lang="az">Linux PSF konsol yazı növü</comment>
+  <comment xml:lang="cs">Písmo PSF pro konzolu Linuxu</comment>
+  <comment xml:lang="cy">Ffont Linux PSF</comment>
+  <comment xml:lang="de">Linux-PSF-Konsolenschrift</comment>
+  <comment xml:lang="el">Γραμματοσειρά κονσόλας PSF Linux</comment>
+  <comment xml:lang="fi">Linux PSF -konsolikirjasin</comment>
+  <comment xml:lang="fr">fonte console Linux PSF</comment>
+  <comment xml:lang="hu">Linux PSF konzolos betűkészlet</comment>
+  <comment xml:lang="ko">리눅스 PSF 콘솔 글꼴</comment>
+  <comment xml:lang="nl">Linux PSF console lettertype</comment>
+  <comment xml:lang="nn">Linux PSF konsoll-skrifttype</comment>
+  <comment xml:lang="no">Linux PSF konsollskrifttype</comment>
+  <comment xml:lang="sr">Линукс PSF конзолни фонт</comment>
+  <comment xml:lang="sv">Linux PSF-konsolltypsnitt</comment>
+</mime-type>

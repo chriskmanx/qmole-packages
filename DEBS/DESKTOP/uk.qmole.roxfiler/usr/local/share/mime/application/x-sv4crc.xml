@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-sv4crc">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>SV4 CPIP archive (with CRC)</comment>
+  <comment xml:lang="az">SV4 CPIP arxivi (CRC ilə)</comment>
+  <comment xml:lang="cs">Archiv SV4 CPIP (s CRC)</comment>
+  <comment xml:lang="cy">Archif CPIP SV4 (efo CRC)</comment>
+  <comment xml:lang="de">SV4-CPIP-Archiv (mit CRC)</comment>
+  <comment xml:lang="fi">SV4 CPIP -arkisto (CRC:llä)</comment>
+  <comment xml:lang="fr">archive SV4 CPIP (avec CRC)</comment>
+  <comment xml:lang="hu">SV4 CPIP-archívum (CRC-vel)</comment>
+  <comment xml:lang="ko">(CRC를 가지는) SV4 CPIP 아카이브</comment>
+  <comment xml:lang="nl">SV4 CPIP archief (met CRC)</comment>
+  <comment xml:lang="nn">SV4 CPIP arkiv (med SRS)</comment>
+  <comment xml:lang="no">SV4 CPIO-arkiv (med CRC)</comment>
+  <comment xml:lang="sr">SV4 CPIP архива (са CRC-ом)</comment>
+  <comment xml:lang="sv">SV4 CPIO-arkiv (med CRC)</comment>
+</mime-type>

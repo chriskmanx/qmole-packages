@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-xcf">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>GIMP image</comment>
+  <comment xml:lang="de">GIMP-Bild</comment>
+  <comment xml:lang="el">Εικόνα GIMP</comment>
+  <comment xml:lang="fi">GIF-kuva</comment>
+  <comment xml:lang="no">GIMP-bilde</comment>
+  <comment xml:lang="sv">GIMP-bild</comment>
+</mime-type>

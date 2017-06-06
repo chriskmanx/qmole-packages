@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/ogg">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Ogg Vorbis audio</comment>
+  <comment xml:lang="az">Ogg Vorbis audio faylı</comment>
+  <comment xml:lang="cs">Zvuk Ogg Vorbis</comment>
+  <comment xml:lang="cy">Sain Ogg Vorbis</comment>
+  <comment xml:lang="de">Ogg Vorbis-Audio</comment>
+  <comment xml:lang="el">Ήχος Ogg Vobris</comment>
+  <comment xml:lang="fi">Ogg Vorbis -ääni</comment>
+  <comment xml:lang="fr">audio Ogg Vorbis</comment>
+  <comment xml:lang="hu">Ogg Vorbis-hangfájl</comment>
+  <comment xml:lang="ko">Ogg Vorbis 오디오</comment>
+  <comment xml:lang="nl">Ogg Vorbis geluidsbestand</comment>
+  <comment xml:lang="nn">Ogg Vorbis-lyd</comment>
+  <comment xml:lang="no">Ogg Vorbis-lyd</comment>
+  <comment xml:lang="sr">Ог-ворбис звучни запис</comment>
+  <comment xml:lang="sv">Ogg Vorbis-ljud</comment>
+</mime-type>

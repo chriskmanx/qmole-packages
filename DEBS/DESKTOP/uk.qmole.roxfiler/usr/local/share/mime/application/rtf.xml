@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/rtf">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>Rich Text Format</comment>
+  <comment xml:lang="az">Zəngin Mətn Formatı</comment>
+  <comment xml:lang="cs">Rich Text Format</comment>
+  <comment xml:lang="cy">Dogfen Testun Gyfoethog</comment>
+  <comment xml:lang="de">Richt-Text-Format</comment>
+  <comment xml:lang="fi">RTF-asiakirja</comment>
+  <comment xml:lang="fr">Rich Text Format</comment>
+  <comment xml:lang="hu">RTF-fájl</comment>
+  <comment xml:lang="ko">Rich Text 형식</comment>
+  <comment xml:lang="nl">Rijke Tekst Formaat</comment>
+  <comment xml:lang="nn">Rik tekst-dokument</comment>
+  <comment xml:lang="no">Rik tekst-format</comment>
+  <comment xml:lang="sr">Обогаћени текстуални запис (RTF)</comment>
+  <comment xml:lang="sv">Rikt textdokument</comment>
+</mime-type>

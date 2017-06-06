@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-kpovmodeler">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>KPovModeler scene</comment>
+  <comment xml:lang="de">KPovModeler-Szene</comment>
+  <comment xml:lang="fi">KPovModeler-tiedosto</comment>
+</mime-type>

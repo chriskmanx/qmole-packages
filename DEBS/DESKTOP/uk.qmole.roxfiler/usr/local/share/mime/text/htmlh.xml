@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/htmlh">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>help page</comment>
+  <comment xml:lang="az">yardım səhifəsi</comment>
+  <comment xml:lang="cs">Stránka nápovědy</comment>
+  <comment xml:lang="cy">tudalen gymorth</comment>
+  <comment xml:lang="de">Hilfeseite</comment>
+  <comment xml:lang="el">σελίδα βοήθειας</comment>
+  <comment xml:lang="fi">ohjesivu</comment>
+  <comment xml:lang="fr">page d'aide</comment>
+  <comment xml:lang="hu">súgóoldal</comment>
+  <comment xml:lang="ko">도움말 페이지</comment>
+  <comment xml:lang="nl">hulppagina</comment>
+  <comment xml:lang="nn">hjelpeside</comment>
+  <comment xml:lang="no">hjelpside</comment>
+  <comment xml:lang="sr">страна помоћи</comment>
+  <comment xml:lang="sv">hjälpsida</comment>
+</mime-type>

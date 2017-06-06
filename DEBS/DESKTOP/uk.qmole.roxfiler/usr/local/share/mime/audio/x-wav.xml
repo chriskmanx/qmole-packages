@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/x-wav">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>WAV audio</comment>
+  <comment xml:lang="az">WAV audio faylı</comment>
+  <comment xml:lang="cs">Zvuk WAV</comment>
+  <comment xml:lang="cy">Sain WAV</comment>
+  <comment xml:lang="de">WAV-Audio</comment>
+  <comment xml:lang="el">Ήχος WAV</comment>
+  <comment xml:lang="fi">WAV-ääni</comment>
+  <comment xml:lang="fr">audio WAV</comment>
+  <comment xml:lang="hu">WAV-hang</comment>
+  <comment xml:lang="ko">WAV 오디오</comment>
+  <comment xml:lang="nl">WAV geluidsbestand</comment>
+  <comment xml:lang="nn">WAV-lyd</comment>
+  <comment xml:lang="no">WAV-lyd</comment>
+  <comment xml:lang="sr">WAV звучни запис</comment>
+  <comment xml:lang="sv">WAV-ljud</comment>
+</mime-type>

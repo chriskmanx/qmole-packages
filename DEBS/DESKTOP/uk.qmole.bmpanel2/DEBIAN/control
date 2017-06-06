@@ -1,0 +1,11 @@
+Package: uk.qmole.bmpanel2
+Name: Bmpanel2 Taskbar
+Version: 2-2.1pre1
+Architecture: iphoneos-arm
+Description: Bmpanel2 taskbar for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: Desktop

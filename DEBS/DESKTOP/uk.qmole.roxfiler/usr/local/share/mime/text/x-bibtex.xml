@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-bibtex">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Bibtex bibliographic data</comment>
+  <comment xml:lang="de">bibliographische Bibitex-Daten</comment>
+  <comment xml:lang="fi">kirjallisuusviittaustiedot (bibtex)</comment>
+  <comment xml:lang="no">Bibtex bibliografiske data</comment>
+</mime-type>

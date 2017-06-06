@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-designer">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Qt Designer file</comment>
+  <comment xml:lang="de">QT Designer-Datei</comment>
+  <comment xml:lang="el">Αρχείο Qt Designer</comment>
+  <comment xml:lang="fi">Qt Designer -tiedosto</comment>
+  <comment xml:lang="no">Qt Designer-fil</comment>
+  <comment xml:lang="sv">Qt Designer-fil</comment>
+</mime-type>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.sun.xml.writer.template">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>OpenOffice.org Writer document template</comment>
+  <comment xml:lang="de">OpenOffice.org·Writer-Dokumentenvorlage</comment>
+  <comment xml:lang="el">Πρότυπο έγγραφο OpenOffice.org Writer</comment>
+  <comment xml:lang="fi">OpenOffice.org Writer -asiakirjamalli</comment>
+  <comment xml:lang="no">OpenOffice.org Writer-dokumentmal</comment>
+</mime-type>

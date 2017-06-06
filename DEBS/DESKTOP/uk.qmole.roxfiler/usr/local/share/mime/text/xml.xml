@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/xml">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>eXtensible Markup Language document</comment>
+  <comment xml:lang="az">eXtensible Markup Language sənədi</comment>
+  <comment xml:lang="cs">Dokument eXtensible Markup Language</comment>
+  <comment xml:lang="cy">Dogfen XML (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language) (eXtensible Markup Language)</comment>
+  <comment xml:lang="de">XML-Dokument</comment>
+  <comment xml:lang="fi">laajennettava merkintäkielinen asiakirja (XML)</comment>
+  <comment xml:lang="fr">document XML « eXtensible Markup Language »</comment>
+  <comment xml:lang="hu">XML-dokumentum</comment>
+  <comment xml:lang="ko">확장 마크업 언어 문서</comment>
+  <comment xml:lang="nl">Uitbreidbare opmaaktaal document (XML)</comment>
+  <comment xml:lang="nn">eXtensible Markup Language-dokument</comment>
+  <comment xml:lang="sr">документ проширивог језика за означавање (XML)</comment>
+  <comment xml:lang="sv">XML-dokument</comment>
+</mime-type>

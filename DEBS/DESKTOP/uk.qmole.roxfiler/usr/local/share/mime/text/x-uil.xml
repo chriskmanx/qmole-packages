@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-uil">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>X-Motif UIL table</comment>
+  <comment xml:lang="de">X-Motif-UIL-Tabelle</comment>
+  <comment xml:lang="fi">X-Motif UIL -taulukko</comment>
+</mime-type>

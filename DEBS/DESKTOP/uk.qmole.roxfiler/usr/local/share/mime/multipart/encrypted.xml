@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="multipart/encrypted">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>encrypted message</comment>
+  <comment xml:lang="az">şifrələnmiş ismarış</comment>
+  <comment xml:lang="cs">Zašifrovaná zpráva</comment>
+  <comment xml:lang="cy">Neges wedi ei hamgryptio</comment>
+  <comment xml:lang="de">verschlüsselte Nachricht</comment>
+  <comment xml:lang="el">κρυπτογραφημένο μήνυμα</comment>
+  <comment xml:lang="fi">salattu viesti</comment>
+  <comment xml:lang="fr">message encrypté</comment>
+  <comment xml:lang="hu">titkosított üzenet</comment>
+  <comment xml:lang="ko">암호화된 메세지</comment>
+  <comment xml:lang="nl">gecodeerd bericht</comment>
+  <comment xml:lang="nn">kryptert melding</comment>
+  <comment xml:lang="no">kryptert melding</comment>
+  <comment xml:lang="sr">шифрована порука</comment>
+  <comment xml:lang="sv">krypterat meddelande</comment>
+</mime-type>

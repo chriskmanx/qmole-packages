@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-mswrite">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Microsoft Write document</comment>
+  <comment xml:lang="az">Microsoft Write sənədi</comment>
+  <comment xml:lang="cs">Dokument Microsoft Write</comment>
+  <comment xml:lang="cy">Dogfen Microsoft Write</comment>
+  <comment xml:lang="de">Microsoft Write-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο Microsoft Write</comment>
+  <comment xml:lang="fi">Microsoft Write -asiakirja</comment>
+  <comment xml:lang="fr">document Microsoft Write</comment>
+  <comment xml:lang="hu">Microsoft Write-dokumentum</comment>
+  <comment xml:lang="ko">마이크로소프트 워드패드 문서</comment>
+  <comment xml:lang="nl">Microsoft Write document</comment>
+  <comment xml:lang="nn">Microsoft Write -dokument</comment>
+  <comment xml:lang="no">Microsoft Write-dokument</comment>
+  <comment xml:lang="sr">Микрософт документ Писанке</comment>
+  <comment xml:lang="sv">Microsoft Write-dokument</comment>
+</mime-type>

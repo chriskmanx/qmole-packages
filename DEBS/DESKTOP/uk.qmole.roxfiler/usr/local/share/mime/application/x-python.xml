@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-python">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>Python script</comment>
+  <comment xml:lang="de">Python-Skript</comment>
+  <comment xml:lang="el">Πρόγραμμα εντολών Python</comment>
+  <comment xml:lang="fi">Python-skripti</comment>
+  <comment xml:lang="no">Python-skript</comment>
+  <comment xml:lang="sv">Pythonskript</comment>
+</mime-type>

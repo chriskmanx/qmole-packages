@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/sgml">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>SGML document</comment>
+  <comment xml:lang="cy">Dogfen SGML</comment>
+  <comment xml:lang="de">SGML-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο SGML</comment>
+  <comment xml:lang="fi">SGML-asiakirja</comment>
+  <comment xml:lang="nn">SGML-dokument</comment>
+  <comment xml:lang="no">SGML-dokument</comment>
+  <comment xml:lang="sr">SGML документ</comment>
+  <comment xml:lang="sv">SGML-dokument</comment>
+</mime-type>

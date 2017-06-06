@@ -1,0 +1,4 @@
+#! /bin/sh
+/usr/bin/herbstclient use Desk
+gnome-paint  "$@" &
+/usr/local/bin/xpause 1

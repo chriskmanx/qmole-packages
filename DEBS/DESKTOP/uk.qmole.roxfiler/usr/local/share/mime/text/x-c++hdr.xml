@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-c++hdr">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>C++ source code header</comment>
+  <comment xml:lang="de">C++-Quelltext-Header</comment>
+  <comment xml:lang="no">C++-kildekodeheader</comment>
+</mime-type>

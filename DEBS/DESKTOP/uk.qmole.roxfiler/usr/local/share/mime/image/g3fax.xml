@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/g3fax">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>G3 fax image</comment>
+  <comment xml:lang="az">G3 faks rəsmi</comment>
+  <comment xml:lang="cs">Obrázek G3 fax</comment>
+  <comment xml:lang="cy">Delwedd Ffacs G3</comment>
+  <comment xml:lang="de">G3-Faxbild</comment>
+  <comment xml:lang="el">Εικόνα φαξ G3</comment>
+  <comment xml:lang="fi">G3-faksikuva</comment>
+  <comment xml:lang="fr">image de télécopie G3 « fax »</comment>
+  <comment xml:lang="hu">G3-faxkép</comment>
+  <comment xml:lang="ko">G3 팩스 이미지</comment>
+  <comment xml:lang="nl">G3 fax afbeelding</comment>
+  <comment xml:lang="nn">G3 faksbilete</comment>
+  <comment xml:lang="no">G3-faksbilde</comment>
+  <comment xml:lang="sr">G3 факс слика</comment>
+  <comment xml:lang="sv">G3-faxbild</comment>
+</mime-type>

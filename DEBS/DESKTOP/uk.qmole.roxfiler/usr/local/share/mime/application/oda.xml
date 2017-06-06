@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/oda">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>ODA document</comment>
+  <comment xml:lang="az">ODA sənədi</comment>
+  <comment xml:lang="cs">Dokument ODA</comment>
+  <comment xml:lang="cy">Dogfen ODA</comment>
+  <comment xml:lang="de">ODA-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο ODA</comment>
+  <comment xml:lang="fi">ODA-asiakirja</comment>
+  <comment xml:lang="fr">document ODA</comment>
+  <comment xml:lang="hu">ODA-dokumentum</comment>
+  <comment xml:lang="ko">ODA 문서</comment>
+  <comment xml:lang="nl">ODA document</comment>
+  <comment xml:lang="nn">ODA-dokument</comment>
+  <comment xml:lang="no">ODA-dokument</comment>
+  <comment xml:lang="sr">ODA документ</comment>
+  <comment xml:lang="sv">ODA-dokument</comment>
+</mime-type>

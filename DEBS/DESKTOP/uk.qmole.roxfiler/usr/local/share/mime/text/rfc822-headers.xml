@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/rfc822-headers">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>email headers</comment>
+  <comment xml:lang="az">epoçt başlıqları</comment>
+  <comment xml:lang="cs">Hlavičky E-mailu</comment>
+  <comment xml:lang="cy">penawdau e-bost</comment>
+  <comment xml:lang="de">E-Mail-Kopfzeilen</comment>
+  <comment xml:lang="fi">sähköpostiotsakkeet</comment>
+  <comment xml:lang="fr">en-tête de courriel</comment>
+  <comment xml:lang="hu">levélfejléc</comment>
+  <comment xml:lang="ko">이메일 헤더</comment>
+  <comment xml:lang="nl">e-mail koppen</comment>
+  <comment xml:lang="nn">e-post-hovud</comment>
+  <comment xml:lang="no">e-posthode</comment>
+  <comment xml:lang="sr">заглавља е-порука</comment>
+  <comment xml:lang="sv">e-posthuvuden</comment>
+</mime-type>

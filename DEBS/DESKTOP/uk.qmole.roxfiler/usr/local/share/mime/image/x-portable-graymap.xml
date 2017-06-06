@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-portable-graymap">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Portable Graymap File Format</comment>
+  <comment xml:lang="az">Portable Graymap Fayl Formatı</comment>
+  <comment xml:lang="cs">Formát souborů Portable Graymap</comment>
+  <comment xml:lang="cy">Ffeiliau Fformat Llwydfap Cludadwy</comment>
+  <comment xml:lang="de">Portables Greymap-Dateiformat</comment>
+  <comment xml:lang="fi">siirrettävä harmaasävytiedostomuoto</comment>
+  <comment xml:lang="fr">format de fichier Portable Graymap</comment>
+  <comment xml:lang="ko">이식 가능한 그레이맵 파일 형식</comment>
+  <comment xml:lang="nl">Portable Graymap bestandsformaat</comment>
+  <comment xml:lang="nn">Portable Graymap File-format</comment>
+  <comment xml:lang="sr">Портабилни запис слика у сивим нијансама</comment>
+  <comment xml:lang="sv">Portabelt gråskale-filformat</comment>
+</mime-type>

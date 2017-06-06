@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/ief">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>IEF image</comment>
+  <comment xml:lang="az">IEF rəsmi</comment>
+  <comment xml:lang="cs">Obrázek IEF</comment>
+  <comment xml:lang="cy">Delwedd IEF</comment>
+  <comment xml:lang="de">IEF-Bild</comment>
+  <comment xml:lang="el">Εικόνα IEF</comment>
+  <comment xml:lang="fi">IEF-kuva</comment>
+  <comment xml:lang="fr">image IEF</comment>
+  <comment xml:lang="hu">IEF-kép</comment>
+  <comment xml:lang="ko">IEF 이미지</comment>
+  <comment xml:lang="nl">IEF afbeelding</comment>
+  <comment xml:lang="nn">IEF-bilete</comment>
+  <comment xml:lang="no">IEF-bilde</comment>
+  <comment xml:lang="sr">IEF слика</comment>
+  <comment xml:lang="sv">IEF-bild</comment>
+</mime-type>

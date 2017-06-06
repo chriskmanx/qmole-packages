@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-deb">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Debian package</comment>
+  <comment xml:lang="az">Debian paketi</comment>
+  <comment xml:lang="cs">Balíček Debianu</comment>
+  <comment xml:lang="cy">Pecyn Debian</comment>
+  <comment xml:lang="de">Debian-Paket</comment>
+  <comment xml:lang="el">Πακέτο Debian</comment>
+  <comment xml:lang="fi">Debian-paketti</comment>
+  <comment xml:lang="fr">package Debian</comment>
+  <comment xml:lang="hu">Debian-csomag</comment>
+  <comment xml:lang="ko">데비안 꾸러미</comment>
+  <comment xml:lang="nl">Debian pakket</comment>
+  <comment xml:lang="nn">Debian pakke</comment>
+  <comment xml:lang="no">Debian pakke</comment>
+  <comment xml:lang="sr">Debian пакет</comment>
+  <comment xml:lang="sv">Debianpaket</comment>
+</mime-type>

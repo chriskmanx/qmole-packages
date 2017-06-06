@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-jar">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Java archive</comment>
+  <comment xml:lang="de">Java-Archiv</comment>
+  <comment xml:lang="fi">Java-arkisto</comment>
+  <comment xml:lang="no">Java-arkiv</comment>
+  <comment xml:lang="sv">Java-arkiv</comment>
+</mime-type>

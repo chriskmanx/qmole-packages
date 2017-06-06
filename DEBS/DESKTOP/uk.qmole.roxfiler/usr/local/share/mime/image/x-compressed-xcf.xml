@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-compressed-xcf">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>GIMP image (compressed)</comment>
+  <comment xml:lang="de">GIMP-Bild (komprimiert)</comment>
+  <comment xml:lang="el">Εικόνα GIMP (Συμπιεσμένη)</comment>
+  <comment xml:lang="fi">GIMP-kuva (pakattu)</comment>
+  <comment xml:lang="no">GIMP-bilde (komprimert)</comment>
+</mime-type>

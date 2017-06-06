@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/css">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Cascading Style Sheet</comment>
+  <comment xml:lang="az">Stil Layları (CSS)</comment>
+  <comment xml:lang="cs">Cascading Style Sheet</comment>
+  <comment xml:lang="cy">Taflen Arddull Rhaeadrol</comment>
+  <comment xml:lang="de">CSS-Stylesheet</comment>
+  <comment xml:lang="fi">CSS-tyylisäännöstö</comment>
+  <comment xml:lang="fr">Cascading Style Sheet</comment>
+  <comment xml:lang="hu">CSS-stíluslap</comment>
+  <comment xml:lang="ko">다단 스타일시트</comment>
+  <comment xml:lang="nl">Cascading Style Sheet</comment>
+  <comment xml:lang="nn">Overlappande stilark (CSS)</comment>
+  <comment xml:lang="no">Cascading style sheet</comment>
+  <comment xml:lang="sr">Каскадна стилска страна (CSS)</comment>
+  <comment xml:lang="sv">Kaskadstilmall</comment>
+</mime-type>

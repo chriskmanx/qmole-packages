@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-gmc-link">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>GMC link</comment>
+  <comment xml:lang="az">GMC körpüsü</comment>
+  <comment xml:lang="cs">Odkaz GMC</comment>
+  <comment xml:lang="cy">Cyswllt GMC</comment>
+  <comment xml:lang="de">GMC-Link</comment>
+  <comment xml:lang="el">Σύνδεσμος GMC</comment>
+  <comment xml:lang="fi">GMC-linkki</comment>
+  <comment xml:lang="fr">lien GMC</comment>
+  <comment xml:lang="hu">GMC-link</comment>
+  <comment xml:lang="ko">GMC 링크</comment>
+  <comment xml:lang="nl">GMC koppeling</comment>
+  <comment xml:lang="nn">GMC-lenkje</comment>
+  <comment xml:lang="no">GMC-lenke</comment>
+  <comment xml:lang="sr">GMC веза</comment>
+  <comment xml:lang="sv">GMC-länk</comment>
+</mime-type>

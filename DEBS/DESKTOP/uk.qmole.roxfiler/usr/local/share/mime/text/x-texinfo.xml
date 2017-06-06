@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-texinfo">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>TeXInfo document</comment>
+  <comment xml:lang="az">TeXInfo sənədi</comment>
+  <comment xml:lang="cs">Dokument TeXInfo</comment>
+  <comment xml:lang="cy">Dogfen TeXInfo</comment>
+  <comment xml:lang="de">TeXInfo-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο TeXInfo</comment>
+  <comment xml:lang="fi">TeXInfo-asiakirja</comment>
+  <comment xml:lang="fr">document TeXInfo</comment>
+  <comment xml:lang="hu">TeXInfo-dokumentum</comment>
+  <comment xml:lang="ko">TeXInfo 문서</comment>
+  <comment xml:lang="nl">TeXInfo document</comment>
+  <comment xml:lang="nn">TeXInfo-dokument</comment>
+  <comment xml:lang="no">TeXInfo-dokument</comment>
+  <comment xml:lang="sr">ТеХинфо документ</comment>
+  <comment xml:lang="sv">TeXInfo-dokument</comment>
+</mime-type>

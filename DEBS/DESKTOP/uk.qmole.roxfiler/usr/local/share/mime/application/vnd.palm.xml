@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.palm">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Palmpilot database/document</comment>
+  <comment xml:lang="de">Palmpilot-Datenbank/-Dokument</comment>
+  <comment xml:lang="fi">Palmpilot-tietokanta tai -asiakirja</comment>
+</mime-type>

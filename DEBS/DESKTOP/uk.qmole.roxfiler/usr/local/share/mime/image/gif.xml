@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/gif">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>GIF image</comment>
+  <comment xml:lang="az">GIF rəsmi</comment>
+  <comment xml:lang="cs">Obrázek GIF</comment>
+  <comment xml:lang="cy">Delwedd GIF</comment>
+  <comment xml:lang="de">GIF-Bild</comment>
+  <comment xml:lang="el">Εικόνα GIF</comment>
+  <comment xml:lang="fi">GIF-kuva</comment>
+  <comment xml:lang="fr">image GIF</comment>
+  <comment xml:lang="hu">GIF-kép</comment>
+  <comment xml:lang="ko">GIF 이미지</comment>
+  <comment xml:lang="nl">GIF afbeelding</comment>
+  <comment xml:lang="nn">GIF-bilete</comment>
+  <comment xml:lang="no">GIF-bilde</comment>
+  <comment xml:lang="sr">GIF слика</comment>
+  <comment xml:lang="sv">GIF-bild</comment>
+</mime-type>

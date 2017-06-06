@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.stardivision.writer">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>StarWriter document</comment>
+  <comment xml:lang="az">StarWriter sənədi</comment>
+  <comment xml:lang="cs">Dokument StarWriter</comment>
+  <comment xml:lang="cy">Dogfen StarWriter</comment>
+  <comment xml:lang="de">StarWriter-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο StarWriter</comment>
+  <comment xml:lang="fi">StarWriter-asiakirja</comment>
+  <comment xml:lang="fr">document StarWriter</comment>
+  <comment xml:lang="hu">StarWriter-dokumentum</comment>
+  <comment xml:lang="ko">StarWriter 문서</comment>
+  <comment xml:lang="nl">StarWriter document</comment>
+  <comment xml:lang="nn">StarWriter document</comment>
+  <comment xml:lang="no">StarWriter-dokument</comment>
+  <comment xml:lang="sr">StarWriter документ</comment>
+  <comment xml:lang="sv">StarWriter-dokument</comment>
+</mime-type>

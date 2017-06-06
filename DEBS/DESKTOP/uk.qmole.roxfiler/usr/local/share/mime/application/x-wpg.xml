@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-wpg">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>WordPerfect/Drawperfect image</comment>
+  <comment xml:lang="de">WordPerfect/DrawPerfect-Bild</comment>
+  <comment xml:lang="el">Εικόνα WordPerfect/Drawperfect</comment>
+  <comment xml:lang="fi">WordPerfect- tai DrawPerfect -kuva</comment>
+</mime-type>

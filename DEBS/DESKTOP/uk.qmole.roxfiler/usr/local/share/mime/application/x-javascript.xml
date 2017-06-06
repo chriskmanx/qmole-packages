@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-javascript">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>Javascript program</comment>
+  <comment xml:lang="de">Javascript-Programm</comment>
+  <comment xml:lang="el">Πρόγραμμα Javascript</comment>
+</mime-type>

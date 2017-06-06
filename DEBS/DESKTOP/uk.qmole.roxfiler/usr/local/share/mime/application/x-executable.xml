@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-executable">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>executable</comment>
+  <comment xml:lang="de">Programm</comment>
+  <comment xml:lang="el">Εκτελέσιμο</comment>
+  <comment xml:lang="fi">suoritettava ohjelma</comment>
+  <comment xml:lang="no">kjørbar</comment>
+  <comment xml:lang="sv">körbar</comment>
+</mime-type>

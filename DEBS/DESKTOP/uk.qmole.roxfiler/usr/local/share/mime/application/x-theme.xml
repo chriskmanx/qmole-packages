@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-theme">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>theme</comment>
+  <comment xml:lang="az">örtük</comment>
+  <comment xml:lang="cs">Téma</comment>
+  <comment xml:lang="cy">thema</comment>
+  <comment xml:lang="de">Thema</comment>
+  <comment xml:lang="el">θέμα</comment>
+  <comment xml:lang="fi">teema</comment>
+  <comment xml:lang="fr">thème</comment>
+  <comment xml:lang="hu">téma</comment>
+  <comment xml:lang="ko">테마</comment>
+  <comment xml:lang="nl">thema</comment>
+  <comment xml:lang="nn">drakt</comment>
+  <comment xml:lang="no">tema</comment>
+  <comment xml:lang="sr">тема</comment>
+  <comment xml:lang="sv">tema</comment>
+</mime-type>

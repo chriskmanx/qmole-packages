@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-sv4cpio">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>SV4 CPIO archive</comment>
+  <comment xml:lang="az">SV4 CPIO arxivi</comment>
+  <comment xml:lang="cs">Archiv SV4 CPIO</comment>
+  <comment xml:lang="cy">Archif CPIO SV4</comment>
+  <comment xml:lang="de">SV4-CPIO-Archiv</comment>
+  <comment xml:lang="fi">SV4 CPIO -arkisto</comment>
+  <comment xml:lang="fr">archive SV4 CPIO</comment>
+  <comment xml:lang="hu">SV4 CPIO-archívum</comment>
+  <comment xml:lang="ko">SV4 CPIO 아카이브</comment>
+  <comment xml:lang="nl">SV4 CPIO archief</comment>
+  <comment xml:lang="nn">SV4 CPIO-arkiv</comment>
+  <comment xml:lang="no">SV4 CPIO-arkiv</comment>
+  <comment xml:lang="sr">SV4 CPIO архива</comment>
+  <comment xml:lang="sv">SV4 CPIO-arkiv</comment>
+</mime-type>

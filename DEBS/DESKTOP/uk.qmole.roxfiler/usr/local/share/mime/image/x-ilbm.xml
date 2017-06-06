@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-ilbm">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>ILBM image</comment>
+  <comment xml:lang="az">ILBM rəsmi</comment>
+  <comment xml:lang="cs">Obrázek ILMB</comment>
+  <comment xml:lang="cy">Delwedd ILBM</comment>
+  <comment xml:lang="de">ILBM-Bild</comment>
+  <comment xml:lang="el">Εικόνα ILBM</comment>
+  <comment xml:lang="fi">ILBM-kuva</comment>
+  <comment xml:lang="fr">image ILBM</comment>
+  <comment xml:lang="hu">ILBM-kép</comment>
+  <comment xml:lang="ko">ILBM 이미지</comment>
+  <comment xml:lang="nl">ILBM afbeelding</comment>
+  <comment xml:lang="nn">ILMB-bilete</comment>
+  <comment xml:lang="no">ILBM-bilde</comment>
+  <comment xml:lang="sr">ILBM слика</comment>
+  <comment xml:lang="sv">ILBM-bild</comment>
+</mime-type>

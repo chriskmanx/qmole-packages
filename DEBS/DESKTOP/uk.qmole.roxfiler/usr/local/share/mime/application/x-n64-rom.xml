@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-n64-rom">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Nintendo64 ROM</comment>
+  <comment xml:lang="de">Nintendo64-ROM</comment>
+  <comment xml:lang="el">Nintendo64 ROM</comment>
+  <comment xml:lang="fi">Nintendo64-ROM</comment>
+  <comment xml:lang="no">Nintendo64-ROM</comment>
+</mime-type>

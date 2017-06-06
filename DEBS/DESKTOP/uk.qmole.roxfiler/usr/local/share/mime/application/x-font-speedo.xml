@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-font-speedo">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Speedo font</comment>
+  <comment xml:lang="az">Speedo yazı növü</comment>
+  <comment xml:lang="cs">Písmo Speedo</comment>
+  <comment xml:lang="cy">Ffont Speedo</comment>
+  <comment xml:lang="de">Speedo-Schrift</comment>
+  <comment xml:lang="el">Γραμματοσειρά Speedo</comment>
+  <comment xml:lang="fi">Speedo-kirjasin</comment>
+  <comment xml:lang="fr">fonte Speedo</comment>
+  <comment xml:lang="hu">Speedo-betűkészlet</comment>
+  <comment xml:lang="ko">Speedo 글꼴</comment>
+  <comment xml:lang="nl">Speedo lettertype</comment>
+  <comment xml:lang="nn">Speedo-skrifttype</comment>
+  <comment xml:lang="no">Speedo-skrifttype</comment>
+  <comment xml:lang="sr">Speedo фонт</comment>
+  <comment xml:lang="sv">Speedo-typsnitt</comment>
+</mime-type>

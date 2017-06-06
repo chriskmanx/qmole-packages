@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-gtktalog">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>GTKtalog catalog</comment>
+  <comment xml:lang="de">GTKtalog-Katalog</comment>
+  <comment xml:lang="fi">GTKtalog-katalogi</comment>
+  <comment xml:lang="no">GTKtalog-katalog</comment>
+</mime-type>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-linguist">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>message catalog</comment>
+  <comment xml:lang="de">Nachrichtenkatalog</comment>
+  <comment xml:lang="fi">viestiluettelo</comment>
+  <comment xml:lang="no">meldingskatalog</comment>
+</mime-type>

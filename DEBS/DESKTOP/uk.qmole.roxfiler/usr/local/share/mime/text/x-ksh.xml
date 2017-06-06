@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-ksh">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Korn shell script</comment>
+  <comment xml:lang="az">Korn qabıq skripti</comment>
+  <comment xml:lang="cs">Skript Korn shellu</comment>
+  <comment xml:lang="cy">Sgript plisgyn Korn</comment>
+  <comment xml:lang="de">Korn-Shell-Skript</comment>
+  <comment xml:lang="el">Πρόγραμμα εντολών φλοιού Korn</comment>
+  <comment xml:lang="fi">Ksh-komentotiedosto</comment>
+  <comment xml:lang="fr">script Korn shell</comment>
+  <comment xml:lang="hu">Korn shell-parancsfájl</comment>
+  <comment xml:lang="ko">콘쉘 스크립트</comment>
+  <comment xml:lang="nl">Korn shell script</comment>
+  <comment xml:lang="nn">Korn skalskript</comment>
+  <comment xml:lang="no">Korn-skall skript</comment>
+  <comment xml:lang="sr">Korn скрипта окружења</comment>
+  <comment xml:lang="sv">Korn-skalskript</comment>
+</mime-type>

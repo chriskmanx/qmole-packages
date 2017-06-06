@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/andrew-inset">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Andrew Toolkit inset</comment>
+  <comment xml:lang="az">Andrew Toolkit sənədi</comment>
+  <comment xml:lang="cs">Andrew Toolkit inset</comment>
+  <comment xml:lang="cy">Mewnosodiad Andrew Toolkit</comment>
+  <comment xml:lang="de">Andrew Toolkit-Inset</comment>
+  <comment xml:lang="fi">Andrew Toolkit -osio</comment>
+  <comment xml:lang="fr">ajout Andrew Toolkit</comment>
+  <comment xml:lang="hu">Andrew Toolkit inset</comment>
+  <comment xml:lang="ko">Andrew 툴킷 inset</comment>
+  <comment xml:lang="nn">Andrew Toolkit innsats</comment>
+  <comment xml:lang="no">Andrew verktøysett insett</comment>
+  <comment xml:lang="sr">Andrew додатаг групе алата</comment>
+  <comment xml:lang="sv">Andrew-verktygssamling insatt</comment>
+</mime-type>

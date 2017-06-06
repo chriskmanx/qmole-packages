@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-compressed-tar">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>tar archive (gzip-compressed)</comment>
+  <comment xml:lang="de">tar-Archiv (gzip-komprimiert)</comment>
+  <comment xml:lang="fi">tar-arkisto (gzip-pakattu)</comment>
+  <comment xml:lang="no">tar-arkiv (gzip-komprimert)</comment>
+</mime-type>

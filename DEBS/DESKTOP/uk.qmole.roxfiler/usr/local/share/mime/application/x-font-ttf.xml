@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-font-ttf">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>TrueType font</comment>
+  <comment xml:lang="de">TrueType-Schrift</comment>
+  <comment xml:lang="el">Γραμματοσειρά TrueType</comment>
+  <comment xml:lang="fi">Truetype-kirjasin</comment>
+  <comment xml:lang="no">TrueType-skrift</comment>
+</mime-type>

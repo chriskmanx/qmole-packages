@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="inode/directory">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>folder</comment>
+  <comment xml:lang="de">Ordner</comment>
+  <comment xml:lang="el">φάκελος</comment>
+  <comment xml:lang="fi">kansio</comment>
+  <comment xml:lang="no">mappe</comment>
+  <comment xml:lang="sv">mapp</comment>
+</mime-type>

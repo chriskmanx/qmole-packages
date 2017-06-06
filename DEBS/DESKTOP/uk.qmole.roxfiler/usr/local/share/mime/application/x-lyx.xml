@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-lyx">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>LyX document</comment>
+  <comment xml:lang="de">LyX-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο LyX </comment>
+  <comment xml:lang="fi">LyX-asiakirja</comment>
+  <comment xml:lang="no">LyX-dokument</comment>
+  <comment xml:lang="sv">LyX-dokument</comment>
+</mime-type>

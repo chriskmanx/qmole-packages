@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.stardivision.chart">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>StarChart chart</comment>
+  <comment xml:lang="az">StarChart cədvəli</comment>
+  <comment xml:lang="cs">Graf StarChart</comment>
+  <comment xml:lang="cy">Siart StarChart</comment>
+  <comment xml:lang="de">StarChart-Diagramm</comment>
+  <comment xml:lang="el">Γράφημα StarChart</comment>
+  <comment xml:lang="fi">StarChart-kaavio</comment>
+  <comment xml:lang="fr">graphique StarChart</comment>
+  <comment xml:lang="hu">StarChart-grafikon</comment>
+  <comment xml:lang="ko">StarCalc 표</comment>
+  <comment xml:lang="nl">StarChart grafiek</comment>
+  <comment xml:lang="nn">StarChart-graf</comment>
+  <comment xml:lang="no">StarChart graf</comment>
+  <comment xml:lang="sr">StarChart графикон</comment>
+  <comment xml:lang="sv">StarChart-diagram</comment>
+</mime-type>

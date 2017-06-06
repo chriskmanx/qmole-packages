@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-icb">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Truevision Targa image</comment>
+  <comment xml:lang="az">Truevision Targa rəsmi</comment>
+  <comment xml:lang="cs">Obrázek Truevision Targa</comment>
+  <comment xml:lang="cy">Delwedd Targa Truevision</comment>
+  <comment xml:lang="de">Truevision-Targa-Bild</comment>
+  <comment xml:lang="el">Εικόνα Truevision Targa</comment>
+  <comment xml:lang="fi">Truevision Targa -kuva</comment>
+  <comment xml:lang="fr">image Truevision Targa</comment>
+  <comment xml:lang="hu">Truevision Targa-kép</comment>
+  <comment xml:lang="ko">Truevision Targa 이미지</comment>
+  <comment xml:lang="nl">Truevision Targa afbeelding</comment>
+  <comment xml:lang="nn">Truevision Targa-bilete</comment>
+  <comment xml:lang="no">Truevision Targa-bilde</comment>
+  <comment xml:lang="sr">Truevision Targa слика</comment>
+  <comment xml:lang="sv">Truevision Targa-bild</comment>
+</mime-type>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-tzo">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>tar archive (LZO-compressed)</comment>
+  <comment xml:lang="de">tar-Archiv (LZO-komprimiert)</comment>
+  <comment xml:lang="fi">tar-arkisto (LZO-pakattu)</comment>
+  <comment xml:lang="no">tar-arkiv (LZO-komprimert)</comment>
+</mime-type>

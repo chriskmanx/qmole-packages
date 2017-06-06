@@ -1,0 +1,6 @@
+#!/bin/bash
+_PS=`ps ax | awk '{print $5}' | grep -v grep | grep Filer | grep ROX | wc -l`
+if [ $_PS -eq 0 ] ; then
+  cd /var/mobile
+  /usr/local/roxfiler/ROX-Filer/AppRun &
+fi

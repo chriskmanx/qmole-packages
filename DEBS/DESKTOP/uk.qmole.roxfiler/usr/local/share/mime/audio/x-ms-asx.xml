@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/x-ms-asx">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Playlist</comment>
+  <comment xml:lang="az">Çalğı siyahısı</comment>
+  <comment xml:lang="cs">Seznam skladeb</comment>
+  <comment xml:lang="cy">Rhestr Chwarae</comment>
+  <comment xml:lang="de">Wiedergabeliste</comment>
+  <comment xml:lang="el">Λίστα τραγουδιών</comment>
+  <comment xml:lang="fi">soittolista</comment>
+  <comment xml:lang="fr">Playlist</comment>
+  <comment xml:lang="hu">Lejátszható felvételek listája</comment>
+  <comment xml:lang="ko">연주목록</comment>
+  <comment xml:lang="nl">Afspeellijst</comment>
+  <comment xml:lang="nn">Speleliste</comment>
+  <comment xml:lang="no">Spilleliste</comment>
+  <comment xml:lang="sr">Листа нумера</comment>
+  <comment xml:lang="sv">Spellista</comment>
+</mime-type>

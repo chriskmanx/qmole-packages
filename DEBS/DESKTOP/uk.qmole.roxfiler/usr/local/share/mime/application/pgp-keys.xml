@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/pgp-keys">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>PGP keys</comment>
+  <comment xml:lang="az">PGP açarları</comment>
+  <comment xml:lang="cs">Klíče PGP</comment>
+  <comment xml:lang="cy">Allweddi PGP</comment>
+  <comment xml:lang="de">PGP-Schlüssel</comment>
+  <comment xml:lang="el">Κλειδιά PGP</comment>
+  <comment xml:lang="fi">PGP-avainrengas</comment>
+  <comment xml:lang="fr">clés PGP</comment>
+  <comment xml:lang="hu">PGP-kulcs</comment>
+  <comment xml:lang="ko">PGP 키</comment>
+  <comment xml:lang="nl">PGP sleutels</comment>
+  <comment xml:lang="nn">PGP-nøkler</comment>
+  <comment xml:lang="no">PGP-nøkler</comment>
+  <comment xml:lang="sr">PGP кључ</comment>
+  <comment xml:lang="sv">PGP-nycklar</comment>
+</mime-type>

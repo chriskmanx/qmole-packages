@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="model/vrml">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>VRML document</comment>
+  <comment xml:lang="az">VRML sənədi</comment>
+  <comment xml:lang="cs">Dokument VRML</comment>
+  <comment xml:lang="cy">Dogfen VRML</comment>
+  <comment xml:lang="de">VRML-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο VRML</comment>
+  <comment xml:lang="fi">VRML-asiakirja</comment>
+  <comment xml:lang="fr">document VRML</comment>
+  <comment xml:lang="hu">VRML-dokumentum</comment>
+  <comment xml:lang="ko">VRML 문서</comment>
+  <comment xml:lang="nl">VRML document</comment>
+  <comment xml:lang="nn">VRML-dokument</comment>
+  <comment xml:lang="no">VRML-dokument</comment>
+  <comment xml:lang="sr">VRML документ</comment>
+  <comment xml:lang="sv">VRML-dokument</comment>
+</mime-type>

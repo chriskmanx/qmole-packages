@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-ruby">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>Ruby script</comment>
+  <comment xml:lang="de">Ruby-Skript</comment>
+  <comment xml:lang="el">Πρόγραμμα εντολών Ruby</comment>
+  <comment xml:lang="fi">Ruby-skripti</comment>
+  <comment xml:lang="no">Ruby-skript</comment>
+</mime-type>

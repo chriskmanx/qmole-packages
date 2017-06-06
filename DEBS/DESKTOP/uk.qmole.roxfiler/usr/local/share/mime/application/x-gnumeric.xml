@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-gnumeric">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Gnumeric spreadsheet</comment>
+  <comment xml:lang="de">Gnumeric-Tabellendokument</comment>
+  <comment xml:lang="el">Λογιστικό φύλλο Gnumeric</comment>
+  <comment xml:lang="fi">Gnumeric-taulukko</comment>
+  <comment xml:lang="no">Gnumeric-regneark</comment>
+  <comment xml:lang="sv">Gnumeric-kalkylblad</comment>
+</mime-type>

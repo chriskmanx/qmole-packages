@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.wordperfect">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <alias type="application/x-wordperfect"/>
+  <alias type="application/wordperfect"/>
+  <comment>WordPerfect document</comment>
+  <comment xml:lang="az">WordPerfect sənədi</comment>
+  <comment xml:lang="cs">Dokument WordPerfect</comment>
+  <comment xml:lang="cy">Dogfen WordPerfect</comment>
+  <comment xml:lang="de">WordPerfect-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο WordPerfect</comment>
+  <comment xml:lang="fi">WordPerfect-asiakirja</comment>
+  <comment xml:lang="fr">document WordPerfect</comment>
+  <comment xml:lang="hu">WordPerfect-dokumentum</comment>
+  <comment xml:lang="ko">워드퍼펙트 문서</comment>
+  <comment xml:lang="nl">WordPerfect document</comment>
+  <comment xml:lang="nn">WordPerfect-dokument</comment>
+  <comment xml:lang="no">WordPerfect-dokument</comment>
+  <comment xml:lang="sr">WordPerfect документ</comment>
+  <comment xml:lang="sv">WordPerfect-dokument</comment>
+</mime-type>

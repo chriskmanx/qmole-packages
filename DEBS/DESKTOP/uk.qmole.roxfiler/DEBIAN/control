@@ -1,0 +1,11 @@
+Package: uk.qmole.roxfiler
+Name: ROX-Filer File Manager
+Version: 2.11.2
+Architecture: iphoneos-arm
+Description: ROX-Filer file manager for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: Desktop

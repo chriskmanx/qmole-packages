@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="multipart/digest">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>message digest</comment>
+  <comment xml:lang="az">ismarış daycesti</comment>
+  <comment xml:lang="cs">Digest zpráv</comment>
+  <comment xml:lang="cy">crynodeb negeseuon</comment>
+  <comment xml:lang="de">Nachrichtensammlung</comment>
+  <comment xml:lang="fi">viestikokoelma</comment>
+  <comment xml:lang="fr">digesteur de messages</comment>
+  <comment xml:lang="hu">ömlesztett üzenet</comment>
+  <comment xml:lang="ko">메세지 묶음</comment>
+  <comment xml:lang="nl">berichtsamenvatting</comment>
+  <comment xml:lang="nn">meldingsamandrag</comment>
+  <comment xml:lang="no">medldingssamling</comment>
+  <comment xml:lang="sr">гомила порука</comment>
+  <comment xml:lang="sv">meddelandesamling</comment>
+</mime-type>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-asp">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>active server page</comment>
+  <comment xml:lang="az">active server page sənədi</comment>
+  <comment xml:lang="cs">Active server page</comment>
+  <comment xml:lang="cy">tudalen ASP</comment>
+  <comment xml:lang="de">Active-Server-Page-Seite</comment>
+  <comment xml:lang="fi">aktiivinen palvelinsivu</comment>
+  <comment xml:lang="fr">page active du serveur</comment>
+  <comment xml:lang="hu">ASP (active server page)</comment>
+  <comment xml:lang="ko">액티브 서버 페이지</comment>
+  <comment xml:lang="nl">actieve server pagina</comment>
+  <comment xml:lang="nn">active server page</comment>
+  <comment xml:lang="no">active server page</comment>
+  <comment xml:lang="sr">Активна серверска страна</comment>
+  <comment xml:lang="sv">aktiv serversida</comment>
+</mime-type>

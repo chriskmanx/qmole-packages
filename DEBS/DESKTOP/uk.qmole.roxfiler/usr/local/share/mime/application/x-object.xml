@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-object">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>object code</comment>
+  <comment xml:lang="de">Objekt-Code</comment>
+  <comment xml:lang="fi">objektikoodi</comment>
+  <comment xml:lang="no">objektkode</comment>
+</mime-type>

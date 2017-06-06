@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-xslfo">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>XSL Formating Object file</comment>
+  <comment xml:lang="az">XSL Formatlama Cismi faylı</comment>
+  <comment xml:lang="cs">Soubor objektu formátování XSL</comment>
+  <comment xml:lang="cy">Ffeil gwrthrych ffurfwedd XSL</comment>
+  <comment xml:lang="de">XSL-Formatierungsobjektdatei</comment>
+  <comment xml:lang="fi">XSL-muotoiluobjektitiedosto</comment>
+  <comment xml:lang="fr">fichier objet XSL Formating</comment>
+  <comment xml:lang="hu">XSF:FO-fájl</comment>
+  <comment xml:lang="ko">XSL 포매팅 개체 파일</comment>
+  <comment xml:lang="nl">XSL formatterend object bestand</comment>
+  <comment xml:lang="nn">XSL formatteringsobjektfil</comment>
+  <comment xml:lang="sr">Датотека XSL објеката форматирања</comment>
+  <comment xml:lang="sv">XSL-formateringsobjektfil</comment>
+</mime-type>

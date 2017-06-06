@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-siag">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Siag spreadsheet</comment>
+  <comment xml:lang="de">Slag-Tabellendokument</comment>
+  <comment xml:lang="el">Λογιστικό φύλλο Siag</comment>
+  <comment xml:lang="fi">Siag-taulukko</comment>
+  <comment xml:lang="no">Siag-regneark</comment>
+  <comment xml:lang="sv">Siag-kalkylblad</comment>
+</mime-type>

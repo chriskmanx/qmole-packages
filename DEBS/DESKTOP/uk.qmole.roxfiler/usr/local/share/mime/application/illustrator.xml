@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/illustrator">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Adobe Illustrator document</comment>
+  <comment xml:lang="de">Adobe Illustrator-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο Adobe Illustrator</comment>
+  <comment xml:lang="fi">Adobe Illustrator -asiakirja</comment>
+  <comment xml:lang="no">Adobe Illustrator-dokument</comment>
+  <comment xml:lang="sv">Adobe Illustrator-dokument</comment>
+</mime-type>

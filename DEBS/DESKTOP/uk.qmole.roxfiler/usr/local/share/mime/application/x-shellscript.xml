@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-shellscript">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>shell script</comment>
+  <comment xml:lang="az">qabıq skripti</comment>
+  <comment xml:lang="cs">Skript shellu</comment>
+  <comment xml:lang="cy">sgript plisgyn</comment>
+  <comment xml:lang="de">Shell-Skript</comment>
+  <comment xml:lang="fi">komentojono</comment>
+  <comment xml:lang="fr">script shell</comment>
+  <comment xml:lang="hu">parancsfájl</comment>
+  <comment xml:lang="ko">쉘 스크립트</comment>
+  <comment xml:lang="nl">shell script</comment>
+  <comment xml:lang="nn">skalskript</comment>
+  <comment xml:lang="no">skallskript</comment>
+  <comment xml:lang="sr">скрипта љуске</comment>
+  <comment xml:lang="sv">skalskript</comment>
+</mime-type>

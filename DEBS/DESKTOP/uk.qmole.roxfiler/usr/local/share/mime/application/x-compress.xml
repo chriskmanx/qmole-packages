@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-compress">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>UNIX-compressed file</comment>
+  <comment xml:lang="de">UNIX-komprimierte Datei</comment>
+  <comment xml:lang="fi">UNIX-pakattu tiedosto</comment>
+  <comment xml:lang="no">UNIX-komprimert fil</comment>
+</mime-type>

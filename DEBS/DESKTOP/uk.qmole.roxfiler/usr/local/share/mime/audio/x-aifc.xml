@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/x-aifc">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>AIFC audio</comment>
+  <comment xml:lang="az">AIFC audio faylı</comment>
+  <comment xml:lang="cs">Zvuk AIFC</comment>
+  <comment xml:lang="cy">Sain AIFC</comment>
+  <comment xml:lang="de">AIFC-Audio</comment>
+  <comment xml:lang="el">Ήχος AIFC</comment>
+  <comment xml:lang="fi">AIFC-ääni</comment>
+  <comment xml:lang="fr">audio AIFC</comment>
+  <comment xml:lang="hu">AIFC-hang</comment>
+  <comment xml:lang="ko">AIFC 오디오</comment>
+  <comment xml:lang="nl">AIFC geluidsbestand</comment>
+  <comment xml:lang="nn">AIFC-lyd</comment>
+  <comment xml:lang="no">AIFC-lyd</comment>
+  <comment xml:lang="sr">AIFC звучни запис</comment>
+  <comment xml:lang="sv">AIFC-ljud</comment>
+</mime-type>

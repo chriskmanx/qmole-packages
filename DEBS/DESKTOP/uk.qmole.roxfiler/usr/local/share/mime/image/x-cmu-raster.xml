@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-cmu-raster">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>CMU raster image</comment>
+  <comment xml:lang="az">CMU raster rəsmi</comment>
+  <comment xml:lang="cs">Rastrový obrázek CMU</comment>
+  <comment xml:lang="cy">Delwedd raster CMU</comment>
+  <comment xml:lang="de">CMU-Rasterbild</comment>
+  <comment xml:lang="fi">CMU-rasterikuva</comment>
+  <comment xml:lang="fr">image raster CMU</comment>
+  <comment xml:lang="hu">CMU-raszterkép</comment>
+  <comment xml:lang="ko">CMU 래스터 이미지</comment>
+  <comment xml:lang="nl">CMU raster afbeelding</comment>
+  <comment xml:lang="nn">CMU raster-bilete</comment>
+  <comment xml:lang="no">CMU-rasterbilde</comment>
+  <comment xml:lang="sr">CMU растерска слика</comment>
+  <comment xml:lang="sv">CMU-rasterbild</comment>
+</mime-type>

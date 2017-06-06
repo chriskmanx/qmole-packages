@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-install">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>software installation instructions</comment>
+  <comment xml:lang="az">proqram tə'minatını qurma tə'limatları</comment>
+  <comment xml:lang="cs">Návod k instalaci software</comment>
+  <comment xml:lang="cy">cyfarwyddiadau gosod meddalwedd</comment>
+  <comment xml:lang="de">Software-Installationsanleitung</comment>
+  <comment xml:lang="fi">ohjelmiston asennusohjeet</comment>
+  <comment xml:lang="fr">instructions d'installation du logiciel</comment>
+  <comment xml:lang="hu">szoftvertelepítési leírás</comment>
+  <comment xml:lang="ko">소프트웨어 설치 방법</comment>
+  <comment xml:lang="nl">software installatie instructies</comment>
+  <comment xml:lang="nn">rettleiing i installering av programvare</comment>
+  <comment xml:lang="no">installationsinstruksjoner for programvare</comment>
+  <comment xml:lang="sr">упутство за инсталацију програма</comment>
+  <comment xml:lang="sv">programinstallationsinstruktioner</comment>
+</mime-type>

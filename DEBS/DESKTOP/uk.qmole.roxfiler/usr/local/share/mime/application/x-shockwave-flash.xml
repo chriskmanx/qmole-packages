@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-shockwave-flash">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Shockwave Flash file</comment>
+  <comment xml:lang="de">Shockwave Flash-Datei</comment>
+  <comment xml:lang="el">Αρχείο Shockwave Flash</comment>
+  <comment xml:lang="fi">Shockwave Flash -media</comment>
+  <comment xml:lang="no">Shockwave Flash-fil</comment>
+</mime-type>

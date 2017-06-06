@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/plain">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>plain text document</comment>
+  <comment xml:lang="de">einfaches Textdokument</comment>
+  <comment xml:lang="el">έγγραφο απλού κειμένου</comment>
+  <comment xml:lang="fi">tekstitiedosto</comment>
+  <comment xml:lang="no">vanlig tekstdokument</comment>
+</mime-type>

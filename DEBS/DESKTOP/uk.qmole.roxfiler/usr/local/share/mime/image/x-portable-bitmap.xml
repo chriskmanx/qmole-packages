@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-portable-bitmap">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Portable Bitmap File Format</comment>
+  <comment xml:lang="az">Portable Bitmap Fayl Formatı</comment>
+  <comment xml:lang="cs">Formát souborů Portable Bitmap</comment>
+  <comment xml:lang="cy">Ffeiliau Fformat Pixfap Cludadwy</comment>
+  <comment xml:lang="de">Portables Bitmap-Dateiformat</comment>
+  <comment xml:lang="fi">siirrettävä bittikarttatiedostomuoto</comment>
+  <comment xml:lang="fr">format de fichier Portable Bitmap</comment>
+  <comment xml:lang="ko">이식 가능한 비트맵 파일 형식</comment>
+  <comment xml:lang="nl">Portable Bitmap bestandsformaat</comment>
+  <comment xml:lang="nn">Portable Bitmap File-format</comment>
+  <comment xml:lang="sr">Портабилни запис битмапираних датотека</comment>
+  <comment xml:lang="sv">Portabelt bitmapp-filformat</comment>
+</mime-type>

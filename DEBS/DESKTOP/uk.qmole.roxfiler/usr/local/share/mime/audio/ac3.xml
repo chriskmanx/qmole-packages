@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/ac3">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Dolby Digital audio</comment>
+  <comment xml:lang="az">Dolby Digital audio</comment>
+  <comment xml:lang="cs">Zvuk Dolby Digital</comment>
+  <comment xml:lang="cy">Sain Dolby Digital</comment>
+  <comment xml:lang="de">Dolby Digital-Audio</comment>
+  <comment xml:lang="el">Ψηφιακός Ήχος Dolby</comment>
+  <comment xml:lang="fi">Dolby Digital -ääni</comment>
+  <comment xml:lang="fr">audio Dolby Digital audio</comment>
+  <comment xml:lang="hu">Dolby Digital hang</comment>
+  <comment xml:lang="ko">돌비 디지털 오디오</comment>
+  <comment xml:lang="nl">Dolby Digital geluidsbestand</comment>
+  <comment xml:lang="nn">Dolby Digital lyd</comment>
+  <comment xml:lang="no">Dolby digital lyd</comment>
+  <comment xml:lang="sr">Дигитални Dolby звучни запис</comment>
+  <comment xml:lang="sv">Dolby Digital-ljud</comment>
+</mime-type>

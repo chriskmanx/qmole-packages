@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-xfig">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>XFig image</comment>
+  <comment xml:lang="de">XFig-Bild</comment>
+  <comment xml:lang="el">Εικόνα XFig</comment>
+  <comment xml:lang="fi">XFig-tiedosto</comment>
+  <comment xml:lang="no">XFig-bilde</comment>
+</mime-type>

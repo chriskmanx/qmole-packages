@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-quattropro">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Quattro Pro spreadsheet</comment>
+  <comment xml:lang="de">Quattro Pro-Tabellendokument</comment>
+  <comment xml:lang="el">Λογιστικό φύλλο Quattro Pro</comment>
+  <comment xml:lang="fi">Quattro Pro -taulukko</comment>
+  <comment xml:lang="no">Quattro Pro-regneark</comment>
+</mime-type>

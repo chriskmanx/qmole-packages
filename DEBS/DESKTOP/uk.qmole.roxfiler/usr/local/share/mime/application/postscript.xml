@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/postscript">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>PostScript document</comment>
+  <comment xml:lang="de">PostScript-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο PostScript</comment>
+  <comment xml:lang="fi">PostScript-asiakirja</comment>
+  <comment xml:lang="no">PostScript-dokument</comment>
+  <comment xml:lang="sv">PostScript-dokument</comment>
+</mime-type>

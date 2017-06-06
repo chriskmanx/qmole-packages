@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-trash">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>backup file</comment>
+  <comment xml:lang="de">Sicherungsdatei</comment>
+  <comment xml:lang="fi">varmuuskopio</comment>
+  <comment xml:lang="no">sikkerhetskopi</comment>
+</mime-type>

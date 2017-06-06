@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-kugar">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Kugar document</comment>
+  <comment xml:lang="de">Kugar-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο Kugar</comment>
+  <comment xml:lang="fi">Kugar-asiakirja</comment>
+  <comment xml:lang="no">Kugar-dokument</comment>
+</mime-type>

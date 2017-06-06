@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.sun.xml.math">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>OpenOffice.org Math formula</comment>
+  <comment xml:lang="de">OpenOffice.org·Math-Formel</comment>
+  <comment xml:lang="fi">OpenOffice.org Math-asiakirja</comment>
+  <comment xml:lang="no">OpenOffice.org Math-dokument</comment>
+</mime-type>

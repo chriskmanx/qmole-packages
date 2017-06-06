@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-cgi">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>CGI script</comment>
+  <comment xml:lang="de">CGI-Skript</comment>
+  <comment xml:lang="fi">CGI-skripti</comment>
+  <comment xml:lang="no">CGI-skript</comment>
+</mime-type>

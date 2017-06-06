@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/enriched">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>enriched text document</comment>
+  <comment xml:lang="az">zəngin mətn sənədi</comment>
+  <comment xml:lang="cs">Rozšířený textový dokument</comment>
+  <comment xml:lang="cy">Dogfen testun wedi ei gyfoethogi</comment>
+  <comment xml:lang="de">angereichertes Textdokument</comment>
+  <comment xml:lang="fi">rikastettu tekstiasiakirja</comment>
+  <comment xml:lang="fr">document  « enriched text »</comment>
+  <comment xml:lang="hu">enriched text dokumentum</comment>
+  <comment xml:lang="ko">enriched text 문서</comment>
+  <comment xml:lang="nl">verrijkt tekstdocument</comment>
+  <comment xml:lang="nn">rik tekst tekstdokument</comment>
+  <comment xml:lang="no">riktekst-dokument</comment>
+  <comment xml:lang="sr">обогаћени текстуални документ</comment>
+  <comment xml:lang="sv">berikat textdokument</comment>
+</mime-type>

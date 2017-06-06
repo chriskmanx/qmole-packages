@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-awk">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>AWK script</comment>
+  <comment xml:lang="az">AWK skripti</comment>
+  <comment xml:lang="cs">Skript AWK</comment>
+  <comment xml:lang="cy">Sgript AWK</comment>
+  <comment xml:lang="de">AWK-Skript</comment>
+  <comment xml:lang="fi">AWK-skripti</comment>
+  <comment xml:lang="fr">script AWK</comment>
+  <comment xml:lang="hu">AWK-szkript</comment>
+  <comment xml:lang="ko">AWK 스크립트</comment>
+  <comment xml:lang="nl">AWK script</comment>
+  <comment xml:lang="nn">WAK-skript</comment>
+  <comment xml:lang="no">AWK-skript</comment>
+  <comment xml:lang="sr">AWK скрипта</comment>
+  <comment xml:lang="sv">AWK-skript</comment>
+</mime-type>

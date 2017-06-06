@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-iff">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>IFF image</comment>
+  <comment xml:lang="az">IFF rəsmi</comment>
+  <comment xml:lang="cs">Obrázek IFF</comment>
+  <comment xml:lang="cy">Delwedd IFF</comment>
+  <comment xml:lang="de">IFF-Bild</comment>
+  <comment xml:lang="el">Εικόνα IFF</comment>
+  <comment xml:lang="fi">IFF-kuva</comment>
+  <comment xml:lang="fr">image IFF</comment>
+  <comment xml:lang="hu">IFF-kép</comment>
+  <comment xml:lang="ko">IFF 이미지</comment>
+  <comment xml:lang="nl">IFF afbeelding</comment>
+  <comment xml:lang="nn">IFF-bilete</comment>
+  <comment xml:lang="no">IFF-bilde</comment>
+  <comment xml:lang="sr">IFF слика</comment>
+  <comment xml:lang="sv">IFF-bild</comment>
+</mime-type>

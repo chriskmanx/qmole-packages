@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-troff">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>Troff document</comment>
+  <comment xml:lang="az">Troff sənədi</comment>
+  <comment xml:lang="cs">Dokument troff</comment>
+  <comment xml:lang="cy">Dogfen troff</comment>
+  <comment xml:lang="de">Troff-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο Troff</comment>
+  <comment xml:lang="fi">Troff-asiakirja</comment>
+  <comment xml:lang="fr">document Troff</comment>
+  <comment xml:lang="hu">Troff-dokumentum</comment>
+  <comment xml:lang="ko">Troff 문서</comment>
+  <comment xml:lang="nl">Troff document</comment>
+  <comment xml:lang="nn">Troff-dokument</comment>
+  <comment xml:lang="no">Troff-dokument</comment>
+  <comment xml:lang="sr">Troff документ</comment>
+  <comment xml:lang="sv">Troff-dokument</comment>
+</mime-type>

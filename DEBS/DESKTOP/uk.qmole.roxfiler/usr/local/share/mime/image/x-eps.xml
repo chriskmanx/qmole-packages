@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-eps">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Encapsulated PostScript image</comment>
+  <comment xml:lang="az">Encapsulated PostScript rəsmi</comment>
+  <comment xml:lang="cs">Obrázek v zapouzdřeném Postscriptu</comment>
+  <comment xml:lang="cy">Delwedd PostScript wedi ei chrisialu</comment>
+  <comment xml:lang="de">EPS-Bild</comment>
+  <comment xml:lang="el">Εικόνα Encapsulated PostScript</comment>
+  <comment xml:lang="fi">kapsuloitu PostScript-kuva</comment>
+  <comment xml:lang="fr">image encapsulé PostScript</comment>
+  <comment xml:lang="hu">Encapsulated PostScript-kép</comment>
+  <comment xml:lang="ko">캡슐화된 포스트스크립트 이미지</comment>
+  <comment xml:lang="nl">Ingekapselde Postscript afbeelding</comment>
+  <comment xml:lang="nn">Encapsulated PostScript-bilete</comment>
+  <comment xml:lang="sr">Угњеждена ПостСкрипт слика (EPS)</comment>
+  <comment xml:lang="sv">Inkapslad PostScript-bild</comment>
+</mime-type>

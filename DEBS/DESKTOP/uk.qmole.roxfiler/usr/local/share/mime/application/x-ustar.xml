@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-ustar">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>ustar archive</comment>
+  <comment xml:lang="az">ustar arxivi</comment>
+  <comment xml:lang="cs">Archiv ustar</comment>
+  <comment xml:lang="cy">archif ustar</comment>
+  <comment xml:lang="de">ustar-Archiv</comment>
+  <comment xml:lang="fi">ustar-arkisto</comment>
+  <comment xml:lang="fr">archive ustar</comment>
+  <comment xml:lang="hu">ustar-archívum</comment>
+  <comment xml:lang="ko">Ustar 아카이브</comment>
+  <comment xml:lang="nl">ustar archief</comment>
+  <comment xml:lang="nn">ustar-arkiv</comment>
+  <comment xml:lang="no">ustar-arkiv</comment>
+  <comment xml:lang="sr">ustar архива</comment>
+  <comment xml:lang="sv">ustar-arkiv</comment>
+</mime-type>

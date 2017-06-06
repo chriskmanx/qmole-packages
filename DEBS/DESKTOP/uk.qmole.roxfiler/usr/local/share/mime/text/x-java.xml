@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-java">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Java source code</comment>
+  <comment xml:lang="de">Java-Quelltext</comment>
+  <comment xml:lang="el">Πηγαίος κώδικας Java</comment>
+  <comment xml:lang="fi">Java-lähdekoodi</comment>
+  <comment xml:lang="no">Java-kildekode</comment>
+</mime-type>

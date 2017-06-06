@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="video/vivo">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Vivo video</comment>
+  <comment xml:lang="az">Vivo video faylı</comment>
+  <comment xml:lang="cs">Video Vivo</comment>
+  <comment xml:lang="cy">Fideo Vivo</comment>
+  <comment xml:lang="de">Vivo-Video</comment>
+  <comment xml:lang="el">Βίντεο Vivo</comment>
+  <comment xml:lang="fi">Vivo-video</comment>
+  <comment xml:lang="fr">vidéo Vivo</comment>
+  <comment xml:lang="hu">Vivo-video</comment>
+  <comment xml:lang="ko">Vivo 비디오</comment>
+  <comment xml:lang="nl">Vivo video</comment>
+  <comment xml:lang="nn">Vivo-film</comment>
+  <comment xml:lang="no">Vivo-film</comment>
+  <comment xml:lang="sr">Vivo видео</comment>
+  <comment xml:lang="sv">Vivo-video</comment>
+</mime-type>

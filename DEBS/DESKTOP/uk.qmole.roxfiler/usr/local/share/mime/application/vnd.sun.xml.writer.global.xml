@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.sun.xml.writer.global">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>OpenOffice.org Writer global document</comment>
+  <comment xml:lang="de">OpenOffice.org·Writer-Globaldokument</comment>
+  <comment xml:lang="fi">yleinen OpenOffice.org Write -asiakirja</comment>
+  <comment xml:lang="no">Globalt OpenOffice.org Writer-dokument</comment>
+  <comment xml:lang="sv">OpenOffice.org Writer-globaldokument</comment>
+</mime-type>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-palm-database">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Palm OS database</comment>
+  <comment xml:lang="az">Palm OS mə'lumat bazası</comment>
+  <comment xml:lang="cs">Databáze Palm OS</comment>
+  <comment xml:lang="cy">Cronfa Ddata Palm OS</comment>
+  <comment xml:lang="de">Palm OS-Datenbank</comment>
+  <comment xml:lang="el">Βάση δεδομένων Palm OS</comment>
+  <comment xml:lang="fi">Palm OS -tietokanta</comment>
+  <comment xml:lang="fr">base de données Palm OS</comment>
+  <comment xml:lang="hu">Palm OS-adatbázis</comment>
+  <comment xml:lang="ko">팜OS 데이터베이스</comment>
+  <comment xml:lang="nl">Palm OS gegevensbank</comment>
+  <comment xml:lang="nn">Palm OS-database</comment>
+  <comment xml:lang="no">Palm OS-database</comment>
+  <comment xml:lang="sr">Palm OS база података</comment>
+  <comment xml:lang="sv">Palm OS-databas</comment>
+</mime-type>

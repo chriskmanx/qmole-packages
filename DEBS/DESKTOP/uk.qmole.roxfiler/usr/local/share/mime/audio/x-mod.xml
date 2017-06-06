@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/x-mod">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Amiga SoundTracker audio</comment>
+  <comment xml:lang="de">Amiga SoundTracker-Audio</comment>
+  <comment xml:lang="fi">Amiga SoundTracker -ääni</comment>
+  <comment xml:lang="no">Amiga SoundTracker-lyd</comment>
+</mime-type>

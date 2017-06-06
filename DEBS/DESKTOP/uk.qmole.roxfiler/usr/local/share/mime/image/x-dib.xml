@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-dib">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Device Independant Bitmap</comment>
+  <comment xml:lang="az">Avadanlıqdan Müstəqil Bitmap</comment>
+  <comment xml:lang="cs">Bitmapa nezávislá na zařízení</comment>
+  <comment xml:lang="cy">Didfap Dyfais-Annibynol</comment>
+  <comment xml:lang="de">Geräteunabhängige Bitmap</comment>
+  <comment xml:lang="fi">laiteriippumaton bittikartta</comment>
+  <comment xml:lang="fr">bitmap indépendant du périphérique</comment>
+  <comment xml:lang="hu">Eszközfüggetlen bitkép</comment>
+  <comment xml:lang="ko">장치 독립 비트맵</comment>
+  <comment xml:lang="nl">Apparaat onafhankelijke bitmap</comment>
+  <comment xml:lang="nn">Einingsuavhengig bitkart</comment>
+  <comment xml:lang="no">Enhetsuavhengig bitkart</comment>
+  <comment xml:lang="sr">Битмапа независна од уређаја</comment>
+  <comment xml:lang="sv">Enhetsoberoende bitmapp</comment>
+</mime-type>

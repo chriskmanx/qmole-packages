@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-makefile">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Makefile</comment>
+  <comment xml:lang="az">İnşa faylı</comment>
+  <comment xml:lang="cs">Makefile</comment>
+  <comment xml:lang="cy">Ffeil "make"</comment>
+  <comment xml:lang="de">Makefile</comment>
+  <comment xml:lang="el">Makefile</comment>
+  <comment xml:lang="fi">Makefile</comment>
+  <comment xml:lang="fr">makefile</comment>
+  <comment xml:lang="hu">Makefile</comment>
+  <comment xml:lang="ko">Makefile</comment>
+  <comment xml:lang="nl">Makefile</comment>
+  <comment xml:lang="nn">Makefile</comment>
+  <comment xml:lang="no">Makefile</comment>
+  <comment xml:lang="sr">Производна датотека</comment>
+  <comment xml:lang="sv">Makefil</comment>
+</mime-type>

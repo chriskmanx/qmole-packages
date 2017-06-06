@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-e-theme">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Enlightenment theme</comment>
+  <comment xml:lang="az">Enlightenment örtüyü</comment>
+  <comment xml:lang="cs">Téma pro Enlightenment</comment>
+  <comment xml:lang="cy">Thema Enlightenment</comment>
+  <comment xml:lang="de">Enlightenment-Thema</comment>
+  <comment xml:lang="el">Θέμα Enlightenment</comment>
+  <comment xml:lang="fi">Enlightenment-teema</comment>
+  <comment xml:lang="fr">thème « Enlightenment »</comment>
+  <comment xml:lang="hu">Enlightenment-téma</comment>
+  <comment xml:lang="ko">인라이트먼트 테마</comment>
+  <comment xml:lang="nl">Enlightenment thema</comment>
+  <comment xml:lang="nn">Enlightenment-tema</comment>
+  <comment xml:lang="no">Enlightenment tema</comment>
+  <comment xml:lang="sr">Enlightenment тема</comment>
+  <comment xml:lang="sv">Enlightenment-tema</comment>
+</mime-type>

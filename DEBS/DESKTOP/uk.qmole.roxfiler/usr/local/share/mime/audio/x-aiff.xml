@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/x-aiff">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>AIFF/Amiga/Mac audio</comment>
+  <comment xml:lang="az">AIFF/Amiga/Mac audio faylı</comment>
+  <comment xml:lang="cs">Zvuk AIFF/Amiga/Mac</comment>
+  <comment xml:lang="cy">Sain AIFF/Amiga/Mac</comment>
+  <comment xml:lang="de">AIFF/Amiga/Mac-Audio</comment>
+  <comment xml:lang="fi">AIFF/Amiga/Mac-ääni</comment>
+  <comment xml:lang="fr">audio AIFF/Amiga/Mac</comment>
+  <comment xml:lang="hu">AIFF/Amiga/Mac-hang</comment>
+  <comment xml:lang="ko">AIFF/Amiga/Mac 오디오</comment>
+  <comment xml:lang="nl">AIFF/Amiga/Mac geluidsbestand</comment>
+  <comment xml:lang="nn">AIFF/Amiga/Mac-lyd</comment>
+  <comment xml:lang="no">AIFF/Amiga/Mac-lyd</comment>
+  <comment xml:lang="sr">AIFF/Амига/Мекинтош звучни запис</comment>
+  <comment xml:lang="sv">AIFF/Amiga/Mac-ljud</comment>
+</mime-type>

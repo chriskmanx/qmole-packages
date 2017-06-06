@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-dcm">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Digital Imaging and Communications in Medicine image</comment>
+  <comment xml:lang="az">Dijital Rəsm və Tibbdə Rabitə rəsmi</comment>
+  <comment xml:lang="cs">Obrázek Digital Imaging and Communications in Medicine</comment>
+  <comment xml:lang="cy">Delwedd DCIM (Digital Imaging and Communications in Medicine)</comment>
+  <comment xml:lang="de">DICOM-Bild</comment>
+  <comment xml:lang="fi">Digital Imaging and Communications in Medicine -kuva</comment>
+  <comment xml:lang="fr">image « Digital Imaging and Communications in Medicine »</comment>
+  <comment xml:lang="hu">Digital Imaging and Communications in Medicine-kép</comment>
+  <comment xml:lang="ko">의료 사진용 디지털 이미지 및 통신</comment>
+  <comment xml:lang="nn">Digital Imaging and Communications in Medicine-bilete</comment>
+  <comment xml:lang="no">Digital Imaging and Communications in Medicine-bilde</comment>
+  <comment xml:lang="sr">Слика за дигиталну фотографију и комуникацију у медицини</comment>
+  <comment xml:lang="sv">Bildformat för digital bildbehandling och medicinsk kommunikation</comment>
+</mime-type>

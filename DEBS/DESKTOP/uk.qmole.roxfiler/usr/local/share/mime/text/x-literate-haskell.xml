@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-literate-haskell">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Literate haskell source code</comment>
+  <comment xml:lang="az">Literate haskell mənbə kodu</comment>
+  <comment xml:lang="cs">Zdrojový kód Literate haskell</comment>
+  <comment xml:lang="cy">Ffynhonnell Haskell llenyddol</comment>
+  <comment xml:lang="de">Literate Haskell-Quelltext</comment>
+  <comment xml:lang="el">Πηγαίος κώδικας Literate haskell</comment>
+  <comment xml:lang="fi">Literate haskell -lähdekoodi</comment>
+  <comment xml:lang="fr">code source Literate haskell</comment>
+  <comment xml:lang="hu">Literális haskell-forráskód</comment>
+  <comment xml:lang="ko">Literate haskell 소스 코드</comment>
+  <comment xml:lang="nn">Literate haskell-kjeldekode</comment>
+  <comment xml:lang="no">Literate haskell-kildekode</comment>
+  <comment xml:lang="sr">Literate haskell изворни кôд</comment>
+  <comment xml:lang="sv">Literate Haskell-källkod</comment>
+</mime-type>

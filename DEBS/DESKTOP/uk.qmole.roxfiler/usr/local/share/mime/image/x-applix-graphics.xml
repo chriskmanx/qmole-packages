@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-applix-graphics">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Applix Graphics image</comment>
+  <comment xml:lang="de">Applix Graphics-Bild</comment>
+  <comment xml:lang="el">Εικόνα  Applix Graphics</comment>
+  <comment xml:lang="fi">Applix Graphics -kuva</comment>
+  <comment xml:lang="no">Applix Graphics-dokument</comment>
+</mime-type>

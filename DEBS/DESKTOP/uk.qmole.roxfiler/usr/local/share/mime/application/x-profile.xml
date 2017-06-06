@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-profile">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>profiler results</comment>
+  <comment xml:lang="az">profiler nəticələri</comment>
+  <comment xml:lang="cs">Výsledky profileru</comment>
+  <comment xml:lang="cy">canlyniadau proffeilio</comment>
+  <comment xml:lang="de">Profiler-Ergebnisse</comment>
+  <comment xml:lang="fi">profilointitulokset</comment>
+  <comment xml:lang="fr">résultat du profileur</comment>
+  <comment xml:lang="hu">profiler-eredmények</comment>
+  <comment xml:lang="ko">프로파일러 결과</comment>
+  <comment xml:lang="nl">profileerder resultaten</comment>
+  <comment xml:lang="nn">profileringsresultat</comment>
+  <comment xml:lang="no">profileingsresultat</comment>
+  <comment xml:lang="sr">резултати профилатора</comment>
+  <comment xml:lang="sv">profilerarresultat</comment>
+</mime-type>

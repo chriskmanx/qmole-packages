@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-sql">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>SQL code</comment>
+  <comment xml:lang="az">SQL kodu</comment>
+  <comment xml:lang="cs">Kód SQL</comment>
+  <comment xml:lang="cy">Côd SQL</comment>
+  <comment xml:lang="de">SQL-Befehle</comment>
+  <comment xml:lang="el">Κώδικας SQL</comment>
+  <comment xml:lang="fi">SQL-koodi</comment>
+  <comment xml:lang="fr">code SQL</comment>
+  <comment xml:lang="hu">SQL-kód</comment>
+  <comment xml:lang="ko">SQL 코드</comment>
+  <comment xml:lang="nl">SQL code</comment>
+  <comment xml:lang="nn">SQL-kode</comment>
+  <comment xml:lang="no">SQL-kildekode</comment>
+  <comment xml:lang="sr">SQL кôд</comment>
+  <comment xml:lang="sv">SQL-kod</comment>
+</mime-type>

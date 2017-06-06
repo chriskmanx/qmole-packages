@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-font-otf">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>OpenType font</comment>
+  <comment xml:lang="az">OpenType yazı növü</comment>
+  <comment xml:lang="cs">Písmo OpenType</comment>
+  <comment xml:lang="cy">Ffont OpenType</comment>
+  <comment xml:lang="de">OpenType-Schrift</comment>
+  <comment xml:lang="el">Γραμματοσειρά OpenType </comment>
+  <comment xml:lang="fi">OpenType-kirjasin</comment>
+  <comment xml:lang="fr">fonte OpenType</comment>
+  <comment xml:lang="hu">OpenType-betűkészlet</comment>
+  <comment xml:lang="ko">트루타입 글꼴</comment>
+  <comment xml:lang="nl">OpenType lettertype</comment>
+  <comment xml:lang="nn">OpenType-skrifttype</comment>
+  <comment xml:lang="no">OpenType-skrifttype</comment>
+  <comment xml:lang="sr">OpenType фонт</comment>
+  <comment xml:lang="sv">OpenType-typsnitt</comment>
+</mime-type>

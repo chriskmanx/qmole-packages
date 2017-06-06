@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-perl">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>Perl script</comment>
+  <comment xml:lang="cy">Sgript Perl</comment>
+  <comment xml:lang="de">Perl-Skript</comment>
+  <comment xml:lang="el">Πρόγραμμα εντολών Perl</comment>
+  <comment xml:lang="fi">Perl-skripti</comment>
+  <comment xml:lang="nn">Perl skript</comment>
+  <comment xml:lang="no">Perl skript</comment>
+  <comment xml:lang="sr">Perl скрипта</comment>
+  <comment xml:lang="sv">Perlskript</comment>
+</mime-type>

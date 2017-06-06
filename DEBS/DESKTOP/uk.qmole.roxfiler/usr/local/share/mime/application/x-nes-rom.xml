@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-nes-rom">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>NES ROM</comment>
+  <comment xml:lang="cy">ROM NES</comment>
+  <comment xml:lang="de">NES-ROM</comment>
+  <comment xml:lang="el">NES ROM</comment>
+  <comment xml:lang="fi">NES-ROM</comment>
+  <comment xml:lang="nn">NES-ROM</comment>
+  <comment xml:lang="no">NES ROM</comment>
+  <comment xml:lang="sr">NES ром</comment>
+  <comment xml:lang="sv">NES-rom</comment>
+</mime-type>

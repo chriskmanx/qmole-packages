@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/directory">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>directory information file</comment>
+  <comment xml:lang="az">cərgə mə'lumat faylı</comment>
+  <comment xml:lang="cs">Soubor informací o adresáři</comment>
+  <comment xml:lang="cy">Ffeil gwybodaeth cyfeiriadur</comment>
+  <comment xml:lang="de">Verzeichnisinformationsdatei</comment>
+  <comment xml:lang="fi">hakemistoinfotiedosto</comment>
+  <comment xml:lang="fr">fichier d'information répertoire</comment>
+  <comment xml:lang="hu">könyvtár-információs fájl</comment>
+  <comment xml:lang="ko">디렉토리 정보 파일</comment>
+  <comment xml:lang="nl">mapinformatie bestand</comment>
+  <comment xml:lang="nn">katalog-informasjonsfil</comment>
+  <comment xml:lang="no">kataloginformasjonsfil</comment>
+  <comment xml:lang="sr">датотека са подацима о директоријуму</comment>
+  <comment xml:lang="sv">kataloginformationsfil</comment>
+</mime-type>

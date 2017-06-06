@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-bcpio">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>BCPIO document</comment>
+  <comment xml:lang="az">BCPIO sənədi</comment>
+  <comment xml:lang="cs">Dokument BCPIO</comment>
+  <comment xml:lang="cy">Dogfen BCPIO</comment>
+  <comment xml:lang="de">BCPIO-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο BCPIO</comment>
+  <comment xml:lang="fi">BCPIO-asiakirja</comment>
+  <comment xml:lang="fr">document BCPIO</comment>
+  <comment xml:lang="hu">BCPIO-dokumentum</comment>
+  <comment xml:lang="ko">BCPIO 문서</comment>
+  <comment xml:lang="nl">BCPIO document</comment>
+  <comment xml:lang="nn">BCPIO-dokument</comment>
+  <comment xml:lang="no">BCPIO-dokument</comment>
+  <comment xml:lang="sr">BCPIO документ</comment>
+  <comment xml:lang="sv">BCPIO-dokument</comment>
+</mime-type>

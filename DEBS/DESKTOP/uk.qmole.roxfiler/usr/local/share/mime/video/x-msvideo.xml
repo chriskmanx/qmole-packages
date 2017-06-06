@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="video/x-msvideo">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Microsoft AVI video</comment>
+  <comment xml:lang="de">Microsoft-AVI-Video</comment>
+  <comment xml:lang="el">Βίντεο Microsoft AVI</comment>
+  <comment xml:lang="fi">Microsoft AVI -video</comment>
+  <comment xml:lang="no">Microsoft AVI-film</comment>
+  <comment xml:lang="sv">Microsoft AVI-video</comment>
+</mime-type>

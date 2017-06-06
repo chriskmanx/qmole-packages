@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="inode/mount-point">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="inode/directory"/>
+  <comment>mount point</comment>
+  <comment xml:lang="de">Einbindepunkt</comment>
+  <comment xml:lang="el">σημείο προσάρτησης</comment>
+  <comment xml:lang="fi">liitospiste</comment>
+  <comment xml:lang="no">monteringspunkt</comment>
+</mime-type>

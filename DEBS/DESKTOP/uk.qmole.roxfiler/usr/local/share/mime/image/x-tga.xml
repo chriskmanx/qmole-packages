@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-tga">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>TarGA image</comment>
+  <comment xml:lang="az">TarGA rəsmi</comment>
+  <comment xml:lang="cs">Obrázek TarGA</comment>
+  <comment xml:lang="cy">Delwedd TarGA</comment>
+  <comment xml:lang="de">TarGA-Bild</comment>
+  <comment xml:lang="el">Εικόνα TarGA</comment>
+  <comment xml:lang="fi">TarGA-kuva</comment>
+  <comment xml:lang="fr">image TarGA</comment>
+  <comment xml:lang="hu">TarGA-kép</comment>
+  <comment xml:lang="ko">TarGA 이미지</comment>
+  <comment xml:lang="nl">TarGA afbeelding</comment>
+  <comment xml:lang="nn">TarGA-bilete</comment>
+  <comment xml:lang="no">TarGA-bilde</comment>
+  <comment xml:lang="sr">TarGA слика</comment>
+  <comment xml:lang="sv">TarGA-bild</comment>
+</mime-type>

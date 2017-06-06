@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="video/x-sgi-movie">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>SGI video</comment>
+  <comment xml:lang="az">SGI video faylı</comment>
+  <comment xml:lang="cs">Video SGI</comment>
+  <comment xml:lang="cy">Video SGI</comment>
+  <comment xml:lang="de">SGI-Video</comment>
+  <comment xml:lang="el">Βίντεο SGI</comment>
+  <comment xml:lang="fi">SGI-video</comment>
+  <comment xml:lang="fr">vidéo SGI</comment>
+  <comment xml:lang="hu">SGI-video</comment>
+  <comment xml:lang="ko">SGI 비디오</comment>
+  <comment xml:lang="nl">SGI video</comment>
+  <comment xml:lang="nn">SGI-video</comment>
+  <comment xml:lang="no">SGI-film</comment>
+  <comment xml:lang="sr">SGI видео</comment>
+  <comment xml:lang="sv">SGI-video</comment>
+</mime-type>

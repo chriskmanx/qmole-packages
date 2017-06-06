@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-cpio-compressed">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>CPIO archive (gzip-compressed)</comment>
+  <comment xml:lang="az">CPIO arxivi (gzip ilə sıxışdırılmış)</comment>
+  <comment xml:lang="cs">Archiv CPIO (komprimovaný gzip)</comment>
+  <comment xml:lang="cy">Archif CPIO (gywasgwyd drwy gzip)</comment>
+  <comment xml:lang="de">CPIO-Archiv (gzip-komprimiert)</comment>
+  <comment xml:lang="fi">CPIO-arkisto (gzip-pakattu)</comment>
+  <comment xml:lang="fr">archive CPIO (compressé gzip)</comment>
+  <comment xml:lang="hu">CPIO-archívum (Gzip-pel tömörítve)</comment>
+  <comment xml:lang="ko">CPIO 아카이브 (gzip압축)</comment>
+  <comment xml:lang="nl">CPIO archief (gzip-ingepakt)</comment>
+  <comment xml:lang="nn">CPIO-arkiv (gzip-pakka)</comment>
+  <comment xml:lang="no">CPIO-arkiv (gzip-komprimert)</comment>
+  <comment xml:lang="sr">CPIO архива (компресована gzip-ом)</comment>
+  <comment xml:lang="sv">CPIO-arkiv (gzip-komprimerat)</comment>
+</mime-type>

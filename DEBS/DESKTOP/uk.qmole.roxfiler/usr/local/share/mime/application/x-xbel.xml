@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-xbel">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>XBEL bookmarks</comment>
+  <comment xml:lang="de">XBEL-Lesezeichen</comment>
+  <comment xml:lang="el">Σελιδοδείκτες XBEL</comment>
+  <comment xml:lang="fi">XBEL-kirjanmerkit</comment>
+  <comment xml:lang="no">XBEL-bokmerker</comment>
+</mime-type>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="multipart/related">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>compound document</comment>
+  <comment xml:lang="az">birləşik sənəd</comment>
+  <comment xml:lang="cs">Složený dokument</comment>
+  <comment xml:lang="cy">dogfen gyfansawdd</comment>
+  <comment xml:lang="de">Verbunddokument</comment>
+  <comment xml:lang="fi">yhdisteasiakirja</comment>
+  <comment xml:lang="fr">document lié « compound »</comment>
+  <comment xml:lang="hu">összetett dokumentum</comment>
+  <comment xml:lang="ko">복합 문서</comment>
+  <comment xml:lang="nl">samengesteld document</comment>
+  <comment xml:lang="nn">samansett dokument</comment>
+  <comment xml:lang="no">sammensatt dokument</comment>
+  <comment xml:lang="sr">сједињени документ</comment>
+  <comment xml:lang="sv">sammansatt dokument</comment>
+</mime-type>

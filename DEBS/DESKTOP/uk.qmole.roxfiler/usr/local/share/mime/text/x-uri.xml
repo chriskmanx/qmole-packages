@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-uri">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>resource location</comment>
+  <comment xml:lang="de">Ressourcenort</comment>
+  <comment xml:lang="no">ressurslokasjon</comment>
+</mime-type>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/cgm">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Computer Graphics Metafile</comment>
+  <comment xml:lang="az">Kompüter Qrafikası Meta Faylı</comment>
+  <comment xml:lang="cs">Computer Graphics Metafile</comment>
+  <comment xml:lang="cy">Delwedd ffurf CGM</comment>
+  <comment xml:lang="de">CGM-Datei</comment>
+  <comment xml:lang="fi">Computer Graphics -metatiedosto</comment>
+  <comment xml:lang="fr">métafichier Computer Graphics</comment>
+  <comment xml:lang="hu">Computer Graphics-metafájl</comment>
+  <comment xml:lang="ko">컴퓨터 그래픽스 메타파일</comment>
+  <comment xml:lang="nl">Computer Graphics Metabestand</comment>
+  <comment xml:lang="nn">Computer Graphics Metafile</comment>
+  <comment xml:lang="no">Computer Graphics Metafile</comment>
+  <comment xml:lang="sr">Метадатотека са рачунарском графиком (CGM)</comment>
+  <comment xml:lang="sv">Computer Graphics Metafil</comment>
+</mime-type>

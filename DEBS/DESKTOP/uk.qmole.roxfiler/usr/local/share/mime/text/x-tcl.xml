@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-tcl">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Tcl script</comment>
+  <comment xml:lang="de">Tcl-Skript</comment>
+  <comment xml:lang="el">Πρόγραμμα εντολών Tcl</comment>
+  <comment xml:lang="fi">Tcl-skripti</comment>
+  <comment xml:lang="no">Tcl-skript</comment>
+  <comment xml:lang="sv">Tcl-skript</comment>
+</mime-type>

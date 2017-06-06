@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-bzip-compressed-tar">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>tar archive (bzip-compressed)</comment>
+  <comment xml:lang="de">tar-Archiv (bzip-komprimiert)</comment>
+  <comment xml:lang="fi">tar-arkisto (bzip-pakattu)</comment>
+  <comment xml:lang="no">tar-arkiv (bzip-komprimert)</comment>
+</mime-type>

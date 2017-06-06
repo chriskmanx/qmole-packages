@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/x-pn-realaudio">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>RealAudio broadcast</comment>
+  <comment xml:lang="az">RealAudio yayımı</comment>
+  <comment xml:lang="cs">Vysílání RealAudio</comment>
+  <comment xml:lang="cy">Darllediad RealAudio</comment>
+  <comment xml:lang="de">RealAudio-Broadcast</comment>
+  <comment xml:lang="fi">RealAudio-yleislähetys</comment>
+  <comment xml:lang="fr">diffusion RealAudio</comment>
+  <comment xml:lang="hu">RealAudio-sugárzás</comment>
+  <comment xml:lang="ko">리얼오디오 방송</comment>
+  <comment xml:lang="nl">RealAudio uitzending</comment>
+  <comment xml:lang="nn">RealAudio-kringkasting</comment>
+  <comment xml:lang="no">RealAudio-sending</comment>
+  <comment xml:lang="sr">RealAudio емитовање</comment>
+  <comment xml:lang="sv">RealAudio-utsändning</comment>
+  <alias type="audio/vnd.rn-realaudio"/>
+</mime-type>

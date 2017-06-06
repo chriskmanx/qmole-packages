@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/mathml">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>MathML document</comment>
+  <comment xml:lang="az">MathML sənədi</comment>
+  <comment xml:lang="cs">Dokument MathML</comment>
+  <comment xml:lang="cy">Dogfen MathML</comment>
+  <comment xml:lang="de">MathML-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο MathML</comment>
+  <comment xml:lang="fi">MathML-asiakirja</comment>
+  <comment xml:lang="fr">document MathML</comment>
+  <comment xml:lang="hu">MathML-dokumentum</comment>
+  <comment xml:lang="ko">MathML 문서</comment>
+  <comment xml:lang="nl">MathML document</comment>
+  <comment xml:lang="nn">MathML-dokument</comment>
+  <comment xml:lang="no">MathML-dokument</comment>
+  <comment xml:lang="sr">MathML документ</comment>
+  <comment xml:lang="sv">MathML-dokument</comment>
+</mime-type>

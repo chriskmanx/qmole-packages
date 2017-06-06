@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="video/x-ms-asf">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Microsoft ASF video</comment>
+  <comment xml:lang="de">Microsoft-ASF-Video</comment>
+  <comment xml:lang="el">Βίντεο Microsoft ASF</comment>
+  <comment xml:lang="fi">Microsoft ASF -video</comment>
+  <comment xml:lang="no">Microsoft ASF-film</comment>
+</mime-type>

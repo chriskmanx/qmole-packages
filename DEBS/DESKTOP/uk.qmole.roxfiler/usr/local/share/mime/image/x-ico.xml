@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-ico">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Microsoft Windows icon</comment>
+  <comment xml:lang="de">Microsoft Windows-Symbol</comment>
+  <comment xml:lang="el">Εικονίδιο Microsoft Windows</comment>
+  <comment xml:lang="fi">Microsoft Windows -kuvake</comment>
+  <comment xml:lang="no">Microsoft Windows-ikon</comment>
+</mime-type>

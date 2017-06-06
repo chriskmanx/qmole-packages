@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-magicpoint">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>MagicPoint presentation</comment>
+  <comment xml:lang="cy">Cyflwyniad MagicPoint</comment>
+  <comment xml:lang="de">MagicPoint-Präsentation</comment>
+  <comment xml:lang="el">Παρουσίαση MagicPoint</comment>
+  <comment xml:lang="fi">MagicPoint-esitys</comment>
+  <comment xml:lang="nn">MagicPoint-presentasjon</comment>
+  <comment xml:lang="no">MagicPoint-presentasjon</comment>
+  <comment xml:lang="sr">MagicPoint презентација</comment>
+  <comment xml:lang="sv">MagicPoint-presentation</comment>
+</mime-type>

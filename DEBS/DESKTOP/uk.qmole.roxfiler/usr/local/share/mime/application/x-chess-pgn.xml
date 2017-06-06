@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-chess-pgn">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>PGN chess game</comment>
+  <comment xml:lang="az">PGN şahmat oyunu</comment>
+  <comment xml:lang="cs">Šachová hra PGN</comment>
+  <comment xml:lang="cy">Gêm wyddbwyll PGN</comment>
+  <comment xml:lang="de">PGN-Schachspiel</comment>
+  <comment xml:lang="el">Παρτίδα σκακιού PGN</comment>
+  <comment xml:lang="fi">PGN-šakkipeli</comment>
+  <comment xml:lang="fr">jeu d'échec PGN</comment>
+  <comment xml:lang="hu">PGN-sakkjátszma</comment>
+  <comment xml:lang="ko">PGN 체스게임</comment>
+  <comment xml:lang="nl">PGN schaakspel</comment>
+  <comment xml:lang="nn">PGN-sjakkspel</comment>
+  <comment xml:lang="no">PGN skakspil</comment>
+  <comment xml:lang="sr">PGN шаховска игра</comment>
+  <comment xml:lang="sv">PGN-schackparti</comment>
+</mime-type>

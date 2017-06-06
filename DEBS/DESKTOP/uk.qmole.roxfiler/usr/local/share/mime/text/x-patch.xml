@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-patch">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>differences between files</comment>
+  <comment xml:lang="de">Unterschied zwischen Dateien</comment>
+  <comment xml:lang="fi">tiedostojen väliset erot</comment>
+  <comment xml:lang="no">forskjeller mellom filer</comment>
+</mime-type>

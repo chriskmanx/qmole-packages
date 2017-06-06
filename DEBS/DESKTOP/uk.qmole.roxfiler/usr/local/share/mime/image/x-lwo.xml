@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-lwo">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>LightWave object</comment>
+  <comment xml:lang="az">LightWave cismi</comment>
+  <comment xml:lang="cs">Objekt LightWave</comment>
+  <comment xml:lang="cy">Gwrthrych LightWave</comment>
+  <comment xml:lang="de">LightWave-Objekt</comment>
+  <comment xml:lang="el">Αντικείμενο LightWave</comment>
+  <comment xml:lang="fi">LightWave-esine</comment>
+  <comment xml:lang="fr">objet LightWave</comment>
+  <comment xml:lang="hu">LightWave-objektum</comment>
+  <comment xml:lang="ko">LightWave 개체</comment>
+  <comment xml:lang="nl">LightWave object</comment>
+  <comment xml:lang="nn">LightWave-objekt</comment>
+  <comment xml:lang="no">LightWave-objekt</comment>
+  <comment xml:lang="sr">LightWave објекат</comment>
+  <comment xml:lang="sv">LightWave-objekt</comment>
+</mime-type>

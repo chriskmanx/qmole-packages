@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="message/rfc822">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>email message</comment>
+  <comment xml:lang="de">E-Mail-Nachricht</comment>
+  <comment xml:lang="el">μήνυμα email</comment>
+  <comment xml:lang="fi">sähköpostiviesti</comment>
+  <comment xml:lang="no">e-postmelding</comment>
+  <comment xml:lang="sv">e-postmeddelande</comment>
+</mime-type>

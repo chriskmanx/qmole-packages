@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-xpixmap">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>X PixMap image</comment>
+  <comment xml:lang="az">X PixMap rəsmi</comment>
+  <comment xml:lang="cs">Obrázek X PixMap</comment>
+  <comment xml:lang="cy">Delwedd picsfap X</comment>
+  <comment xml:lang="de">X-PixMap-Bild</comment>
+  <comment xml:lang="fi">X PixMap -kuva</comment>
+  <comment xml:lang="fr">image X PixMap</comment>
+  <comment xml:lang="hu">X PixMap kép</comment>
+  <comment xml:lang="ko">X 픽스맵 이미지</comment>
+  <comment xml:lang="nl">X PixMap afbeelding</comment>
+  <comment xml:lang="nn">Bilete i X Bitmap-format</comment>
+  <comment xml:lang="no">X-pixmapbilde</comment>
+  <comment xml:lang="sr">X пискмапа</comment>
+  <comment xml:lang="sv">X-pixmapbild</comment>
+</mime-type>

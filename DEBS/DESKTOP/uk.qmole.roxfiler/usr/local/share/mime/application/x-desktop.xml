@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-desktop">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>desktop configuration file</comment>
+  <comment xml:lang="de">Desktop-Konfigurationsdatei</comment>
+  <comment xml:lang="fi">työpöydän asetustiedosto</comment>
+  <comment xml:lang="no">konfigurasjonsfil for skrivebordet</comment>
+  <alias type="application/x-gnome-app-info"/>
+</mime-type>

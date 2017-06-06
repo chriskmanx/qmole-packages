@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.stardivision.mail">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>StarMail email</comment>
+  <comment xml:lang="de">StarMail-E-Mail</comment>
+  <comment xml:lang="fi">StarMail-tiedosto</comment>
+  <comment xml:lang="no">StarMail-melding</comment>
+</mime-type>

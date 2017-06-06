@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.ms-powerpoint">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Microsoft PowerPoint presentation</comment>
+  <comment xml:lang="de">Microsoft PowerPoint-Präsentation</comment>
+  <comment xml:lang="el">Παρουσίαση Microsoft PowerPoint</comment>
+  <comment xml:lang="fi">Microsoft PowerPoint -esitys</comment>
+  <comment xml:lang="no">Microsoft PowerPoint-presentasjon</comment>
+</mime-type>

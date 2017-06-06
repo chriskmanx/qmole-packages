@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/tab-separated-values">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>text document (with tab-separated values)</comment>
+  <comment xml:lang="de">Textdokument·(Werte·durch·Tabulatorzeichen·unterteilt)</comment>
+  <comment xml:lang="fi">sarkaimella eroteltuja arvoja tekstitiedostossa</comment>
+  <comment xml:lang="no">tekstdokument (med tabulatorseparerte verdier)</comment>
+</mime-type>

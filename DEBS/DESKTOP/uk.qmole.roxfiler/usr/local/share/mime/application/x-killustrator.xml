@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-killustrator">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>KIllustrator drawing</comment>
+  <comment xml:lang="de">KIllustrator-Zeichnung</comment>
+  <comment xml:lang="el">Σχέδιο KIllustrator</comment>
+  <comment xml:lang="fi">KIllustrator-piirros</comment>
+  <comment xml:lang="no">KIllustrator-tegning</comment>
+</mime-type>

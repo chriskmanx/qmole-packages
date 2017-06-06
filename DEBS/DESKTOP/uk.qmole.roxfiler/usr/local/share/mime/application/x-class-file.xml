@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-class-file">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Java byte code</comment>
+  <comment xml:lang="az">Java bayt kodu</comment>
+  <comment xml:lang="cs">Java bajtový kód</comment>
+  <comment xml:lang="cy">Côd beit Java</comment>
+  <comment xml:lang="de">Java-Bytecode</comment>
+  <comment xml:lang="el">Κώδικας Java byte</comment>
+  <comment xml:lang="fi">Java-tavukoodi</comment>
+  <comment xml:lang="fr">code byte Java</comment>
+  <comment xml:lang="hu">Java-bájtkód</comment>
+  <comment xml:lang="ko">자바 바이트코드</comment>
+  <comment xml:lang="nl">Java byte code</comment>
+  <comment xml:lang="nn">Jave byte-kode</comment>
+  <comment xml:lang="no">Java-bytekode</comment>
+  <comment xml:lang="sr">Java бајтни кôд</comment>
+  <comment xml:lang="sv">Java-bytekod</comment>
+</mime-type>

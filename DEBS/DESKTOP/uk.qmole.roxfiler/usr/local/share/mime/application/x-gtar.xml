@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-gtar">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>gtar archive</comment>
+  <comment xml:lang="az">gtar arxivi</comment>
+  <comment xml:lang="cs">Archiv gtar</comment>
+  <comment xml:lang="cy">archif gtar</comment>
+  <comment xml:lang="de">gtar-Archiv</comment>
+  <comment xml:lang="fi">gtar-arkisto</comment>
+  <comment xml:lang="fr">archive gtar</comment>
+  <comment xml:lang="hu">gtar-archívum</comment>
+  <comment xml:lang="ko">gtar 아카이브</comment>
+  <comment xml:lang="nl">gtar archief</comment>
+  <comment xml:lang="nn">gtar-arkiv</comment>
+  <comment xml:lang="no">gtar-arkiv</comment>
+  <comment xml:lang="sr">гтар архива</comment>
+  <comment xml:lang="sv">gtar-arkiv</comment>
+</mime-type>

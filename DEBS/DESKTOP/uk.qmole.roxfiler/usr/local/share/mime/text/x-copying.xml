@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-copying">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>software license terms</comment>
+  <comment xml:lang="az">proqram tə'minatını lisenziya qaydaları</comment>
+  <comment xml:lang="cs">Podmínky licence na software</comment>
+  <comment xml:lang="cy">termau trwydded meddalwedd</comment>
+  <comment xml:lang="de">Software-Lizenzbedingungen</comment>
+  <comment xml:lang="fi">ohjelmiston lisenssiehdot</comment>
+  <comment xml:lang="fr">termes de la license du logiciel</comment>
+  <comment xml:lang="hu">szoftver felhasználási szerződése</comment>
+  <comment xml:lang="ko">소프트웨어 라이센스 조항</comment>
+  <comment xml:lang="nl">software licentievoorwaarden</comment>
+  <comment xml:lang="nn">lisensvilkår for programvare</comment>
+  <comment xml:lang="no">lisensbestemmelser for programvare</comment>
+  <comment xml:lang="sr">лиценца за програм</comment>
+  <comment xml:lang="sv">programlicensavtal</comment>
+</mime-type>

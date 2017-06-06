@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-dia-diagram">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Dia diagram</comment>
+  <comment xml:lang="az">Dia diaqramı</comment>
+  <comment xml:lang="cs">Diagram Dia</comment>
+  <comment xml:lang="cy">Diagram Dia</comment>
+  <comment xml:lang="de">Dia-Diagramm</comment>
+  <comment xml:lang="el">Διάγραμμα Dia</comment>
+  <comment xml:lang="fi">Dia-kaavio</comment>
+  <comment xml:lang="fr">diagramme Dia</comment>
+  <comment xml:lang="hu">Dia-diagram</comment>
+  <comment xml:lang="ko">Dia 도표</comment>
+  <comment xml:lang="nl">Dia diagram</comment>
+  <comment xml:lang="nn">Dia diagram</comment>
+  <comment xml:lang="no">Dia-diagram</comment>
+  <comment xml:lang="sr">Диа дијаграм</comment>
+  <comment xml:lang="sv">Dia-diagram</comment>
+</mime-type>

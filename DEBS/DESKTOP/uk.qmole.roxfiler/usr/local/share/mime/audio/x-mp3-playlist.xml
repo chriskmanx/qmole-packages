@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/x-mp3-playlist">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>MP3 playlist</comment>
+  <comment xml:lang="de">MP3-Wiedergabeliste</comment>
+  <comment xml:lang="fi">MP3-soittolista</comment>
+  <comment xml:lang="no">MP3-spilleliste</comment>
+</mime-type>

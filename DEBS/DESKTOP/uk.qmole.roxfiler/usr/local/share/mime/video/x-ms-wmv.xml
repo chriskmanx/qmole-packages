@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="video/x-ms-wmv">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Microsoft WMV video</comment>
+  <comment xml:lang="az">Microsoft WMV video faylı</comment>
+  <comment xml:lang="cs">Video Microsoft WMV</comment>
+  <comment xml:lang="cy">Video Microsoft WMV</comment>
+  <comment xml:lang="de">Microsoft-WMV-Video</comment>
+  <comment xml:lang="el">Βίντεο Microsoft WMV</comment>
+  <comment xml:lang="fi">Microsoft WMV -video</comment>
+  <comment xml:lang="fr">vidéo Microsoft WMV</comment>
+  <comment xml:lang="hu">Microsoft WMV-video</comment>
+  <comment xml:lang="ko">마이크로소프트 WMV 비디오</comment>
+  <comment xml:lang="nl">Microsoft WMV video</comment>
+  <comment xml:lang="nn">Microsoft WMV-film</comment>
+  <comment xml:lang="no">Microsoft WMV-film</comment>
+  <comment xml:lang="sr">Микрософт WMV видео</comment>
+  <comment xml:lang="sv">Microsoft WMV-video</comment>
+</mime-type>

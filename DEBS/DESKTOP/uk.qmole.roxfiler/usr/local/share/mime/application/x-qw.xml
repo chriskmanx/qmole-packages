@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-qw">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Quicken document</comment>
+  <comment xml:lang="az">Quicken sənədi</comment>
+  <comment xml:lang="cs">Dokument Quicken</comment>
+  <comment xml:lang="cy">Dogfen Quicken</comment>
+  <comment xml:lang="de">Quicken-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο Quicken</comment>
+  <comment xml:lang="fi">Quicken-asiakirja</comment>
+  <comment xml:lang="fr">document Quicken</comment>
+  <comment xml:lang="hu">Quicken-dokumentum</comment>
+  <comment xml:lang="ko">Quicken 문서</comment>
+  <comment xml:lang="nl">Quicken document</comment>
+  <comment xml:lang="nn">Quicken-dokument</comment>
+  <comment xml:lang="no">Quicken-dokument</comment>
+  <comment xml:lang="sr">Quicken документ</comment>
+  <comment xml:lang="sv">Quicken-dokument</comment>
+</mime-type>

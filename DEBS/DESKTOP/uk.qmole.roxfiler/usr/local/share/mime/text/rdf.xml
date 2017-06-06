@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/rdf">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Resource Description Framework (RDF) file</comment>
+  <comment xml:lang="az">Mənbə İzahat Çərçivəsi (RDF) faylı</comment>
+  <comment xml:lang="cs">Soubor Resource Description Framework (RDF)</comment>
+  <comment xml:lang="cy">Ffeil RDF (Resource Description Framework)</comment>
+  <comment xml:lang="de">Ressourcenbeschreibungs-Framework (RDF)-Datei</comment>
+  <comment xml:lang="fi">Resource Description Framework (RDF) -tiedosto</comment>
+  <comment xml:lang="fr">fichier Resource Description Framework (RDF)</comment>
+  <comment xml:lang="hu">RDF (erőforrásleíró) -fájl</comment>
+  <comment xml:lang="ko">자원 기술 프레임워크 (RDF) 파일</comment>
+  <comment xml:lang="nl">Resource Description Framework (RDF) bestand</comment>
+  <comment xml:lang="nn">Resource Description Framework (RDF)-fil</comment>
+  <comment xml:lang="sr">Resource Description Framework (RDF) датотека</comment>
+  <comment xml:lang="sv">Resursbeskrivningsfil</comment>
+</mime-type>

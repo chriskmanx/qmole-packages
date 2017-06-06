@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="message/news">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>Usenet news message</comment>
+  <comment xml:lang="az">Usenet xəbərlər ismarışı</comment>
+  <comment xml:lang="cs">Příspěvek do diskusních skupin Usenet</comment>
+  <comment xml:lang="cy">Neges newyddion Usenet</comment>
+  <comment xml:lang="de">Usenet-News-Nachricht</comment>
+  <comment xml:lang="fi">nyyssiviesti</comment>
+  <comment xml:lang="fr">message des nouvelles « news » Usenet</comment>
+  <comment xml:lang="hu">USENET-hírcsoportüzenet</comment>
+  <comment xml:lang="ko">유즈넷 새소식 메세지</comment>
+  <comment xml:lang="nl">Usenet nieuwsbericht</comment>
+  <comment xml:lang="nn">USENET diskusjonsmelding</comment>
+  <comment xml:lang="no">Usenet nyhetsmelding</comment>
+  <comment xml:lang="sr">Порука са дискусионе групе</comment>
+  <comment xml:lang="sv">Usenet-diskussionsgruppsmeddelande</comment>
+</mime-type>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/x-flac">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>FLAC audio</comment>
+  <comment xml:lang="de">FLAC-Audio</comment>
+  <comment xml:lang="el">Ήχος FLAC</comment>
+  <comment xml:lang="fi">FLAC-ääni</comment>
+  <comment xml:lang="no">FLAC-lyd</comment>
+</mime-type>

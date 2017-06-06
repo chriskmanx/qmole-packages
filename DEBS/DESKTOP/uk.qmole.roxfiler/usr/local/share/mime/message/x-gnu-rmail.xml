@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="message/x-gnu-rmail">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>GNU mail message</comment>
+  <comment xml:lang="az">GNU poçt ismarışı</comment>
+  <comment xml:lang="cs">E-mailová zpráva GNU</comment>
+  <comment xml:lang="cy">Neges E-Bost GNU</comment>
+  <comment xml:lang="de">GNU-Mail-Nachricht</comment>
+  <comment xml:lang="el">Μήνυμα αλληλογραφίας GNU</comment>
+  <comment xml:lang="fi">GNU-postiviesti</comment>
+  <comment xml:lang="fr">message de courriel GNU</comment>
+  <comment xml:lang="hu">GNU elektronikus levél</comment>
+  <comment xml:lang="ko">GNU 메일 메세지</comment>
+  <comment xml:lang="nl">GNU e-mail bericht</comment>
+  <comment xml:lang="nn">GNU e-postmelding</comment>
+  <comment xml:lang="no">GNU e-postmelding</comment>
+  <comment xml:lang="sr">ГНУ е-писмо</comment>
+  <comment xml:lang="sv">GNU-epostmeddelande</comment>
+</mime-type>

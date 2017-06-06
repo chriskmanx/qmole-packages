@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-csh">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>C shell script</comment>
+  <comment xml:lang="az">C qabıq skripti</comment>
+  <comment xml:lang="cs">Skript C shellu</comment>
+  <comment xml:lang="cy">Sgript plisgyn C</comment>
+  <comment xml:lang="de">C-Shell-Skript</comment>
+  <comment xml:lang="el">Πρόγραμμα εντολών φλοιού C</comment>
+  <comment xml:lang="fi">Csh-komentotiedosto</comment>
+  <comment xml:lang="fr">script C shell</comment>
+  <comment xml:lang="hu">C shell-parancsfájl</comment>
+  <comment xml:lang="ko">C쉘 스크립트</comment>
+  <comment xml:lang="nl">C shell script</comment>
+  <comment xml:lang="nn">C-skalskript</comment>
+  <comment xml:lang="no">C-skallskript</comment>
+  <comment xml:lang="sr">C скрипта окружења</comment>
+  <comment xml:lang="sv">Skalskript (csh)</comment>
+</mime-type>

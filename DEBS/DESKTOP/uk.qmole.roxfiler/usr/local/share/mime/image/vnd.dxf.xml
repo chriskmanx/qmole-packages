@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/vnd.dxf">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>DXF vector image</comment>
+  <comment xml:lang="de">DXF-Vektorbild</comment>
+  <comment xml:lang="fi">DXF-vektorigrafiikka</comment>
+  <comment xml:lang="no">DXF-vektorgrafikk</comment>
+</mime-type>

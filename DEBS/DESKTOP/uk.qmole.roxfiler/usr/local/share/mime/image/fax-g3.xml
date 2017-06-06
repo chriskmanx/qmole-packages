@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/fax-g3">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>CCITT G3 fax</comment>
+  <comment xml:lang="de">CCITT-G3-Fax</comment>
+  <comment xml:lang="el">Φαξ CCITT G3</comment>
+  <comment xml:lang="fi">CCITT g3 -faksi</comment>
+  <comment xml:lang="no">CCITT G3-faks</comment>
+</mime-type>

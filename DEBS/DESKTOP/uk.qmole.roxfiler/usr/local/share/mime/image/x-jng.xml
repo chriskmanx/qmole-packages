@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-jng">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>JNG image</comment>
+  <comment xml:lang="az">JNG rəsmi</comment>
+  <comment xml:lang="cs">Obrázek JNG</comment>
+  <comment xml:lang="cy">Delwedd JNG</comment>
+  <comment xml:lang="de">JNG-Bild</comment>
+  <comment xml:lang="el">Εικόνα JNG</comment>
+  <comment xml:lang="fi">JNG-kuva</comment>
+  <comment xml:lang="fr">image JNG</comment>
+  <comment xml:lang="hu">JNG-kép</comment>
+  <comment xml:lang="ko">JNG 이미지</comment>
+  <comment xml:lang="nl">JNG afbeelding</comment>
+  <comment xml:lang="nn">JNG-bilete</comment>
+  <comment xml:lang="no">JNG-bilde</comment>
+  <comment xml:lang="sr">JNG слика</comment>
+  <comment xml:lang="sv">JNG-bild</comment>
+</mime-type>

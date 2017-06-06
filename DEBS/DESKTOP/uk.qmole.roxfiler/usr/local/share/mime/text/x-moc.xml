@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-moc">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Qt Meta Object file</comment>
+  <comment xml:lang="de">QT-Meta-Objektdatei</comment>
+  <comment xml:lang="fi">Qt Meta Object -tiedosto</comment>
+  <comment xml:lang="no">Qt metaobjektfil</comment>
+</mime-type>

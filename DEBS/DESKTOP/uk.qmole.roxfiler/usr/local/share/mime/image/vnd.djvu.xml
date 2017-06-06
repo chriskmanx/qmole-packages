@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/vnd.djvu">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>DjVu image</comment>
+  <comment xml:lang="de">DjVu-Bild</comment>
+  <comment xml:lang="el">Εικόνα DjVu</comment>
+  <comment xml:lang="fi">DjVu -kuva</comment>
+  <comment xml:lang="ko">DjVu 이미지</comment>
+  <comment xml:lang="nn">DjVu-bilete</comment>
+  <comment xml:lang="no">DjVu-bilde</comment>
+  <alias type="image/x-djvu"/>
+</mime-type>

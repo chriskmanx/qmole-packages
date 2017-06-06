@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-xslt">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>XSLT stylesheet</comment>
+  <comment xml:lang="de">XSLT-Stylesheet</comment>
+  <comment xml:lang="fi">XSLT-tyylitiedosto</comment>
+  <comment xml:lang="no">XSLT-stilark</comment>
+</mime-type>

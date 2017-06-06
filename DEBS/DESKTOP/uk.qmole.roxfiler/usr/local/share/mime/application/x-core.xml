@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-core">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>program crash data</comment>
+  <comment xml:lang="de">Daten zu Programmabsturz</comment>
+  <comment xml:lang="fi">ohjelman kaatumistiedot</comment>
+</mime-type>

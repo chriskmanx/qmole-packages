@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-pef-executable">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>PEF executable</comment>
+  <comment xml:lang="de">PEF-Programm</comment>
+  <comment xml:lang="el">εκτελέσιμο PEF</comment>
+  <comment xml:lang="fi">PEF suoritettava ohjelma</comment>
+  <comment xml:lang="no">PEF-kjørbar</comment>
+</mime-type>

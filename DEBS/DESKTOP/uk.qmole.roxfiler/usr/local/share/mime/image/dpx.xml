@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/dpx">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Digital Moving Picture Exchange image</comment>
+  <comment xml:lang="az">Digital Moving Picture Exchange rəsmi</comment>
+  <comment xml:lang="cs">Obrázek Digital Moving Picture Exchange</comment>
+  <comment xml:lang="cy">Delwedd Digital Moving Picture Exchange</comment>
+  <comment xml:lang="de">DPX-Bild</comment>
+  <comment xml:lang="fi">Digital Moving Picture Exchange -kuva</comment>
+  <comment xml:lang="fr">image « Digital Moving Picture Exchange »</comment>
+  <comment xml:lang="hu">Digital Moving Picture Exchange-kép</comment>
+  <comment xml:lang="ko">Digital Moving Picture Exchange 이미지</comment>
+  <comment xml:lang="nl">Digital Moving Picture Exchange afbeelding</comment>
+  <comment xml:lang="nn">Digital Moving Picture Exchange-bilete</comment>
+  <comment xml:lang="no">Digital Moving Pitcure Exchange bilde</comment>
+  <comment xml:lang="sr">Дигитални облик за размену покретних слика</comment>
+  <comment xml:lang="sv">DPX-bild (Digital Moving Picture Exchange)</comment>
+</mime-type>

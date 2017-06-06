@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-fits">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Flexible Image Transport System</comment>
+  <comment xml:lang="az">Flexible Rəsm Transport Sistemi</comment>
+  <comment xml:lang="cs">Flexible Image Transport System</comment>
+  <comment xml:lang="cy">System Trosgludo Delweddau Hyblyg</comment>
+  <comment xml:lang="de">FITS-Dokument</comment>
+  <comment xml:lang="fi">Flexible Image Transport System</comment>
+  <comment xml:lang="fr">système de transport « Flexible Image »</comment>
+  <comment xml:lang="hu">Flexible Image Transport System</comment>
+  <comment xml:lang="ko">Flexible Image Transport System</comment>
+  <comment xml:lang="nl">Flexibel afbeeldingstransportsysteem</comment>
+  <comment xml:lang="nn">Flexible Image Transport System</comment>
+  <comment xml:lang="no">Fleksibelt bildetransportsystem</comment>
+  <comment xml:lang="sr">Флексибилни транспортни систем слика</comment>
+  <comment xml:lang="sv">Flexibelt bildtransportssystem</comment>
+</mime-type>

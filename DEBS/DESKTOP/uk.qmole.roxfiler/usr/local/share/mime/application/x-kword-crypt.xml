@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-kword-crypt">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>KWord document (encrypted)</comment>
+  <comment xml:lang="de">KWord-Dokument (verschlüsselt)</comment>
+  <comment xml:lang="fi">KWord-asiakirja (salattu)</comment>
+  <comment xml:lang="no">KWord-dokument (kryptert)</comment>
+</mime-type>

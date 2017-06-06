@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/pdf">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>PDF document</comment>
+  <comment xml:lang="cy">Dogfen PDF</comment>
+  <comment xml:lang="de">PDF-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο PDF</comment>
+  <comment xml:lang="fi">PDF-asiakirja</comment>
+  <comment xml:lang="nn">PDF-dokument</comment>
+  <comment xml:lang="no">PDF-dokument</comment>
+  <comment xml:lang="sr">PDF документ</comment>
+  <comment xml:lang="sv">PDF-dokument</comment>
+</mime-type>

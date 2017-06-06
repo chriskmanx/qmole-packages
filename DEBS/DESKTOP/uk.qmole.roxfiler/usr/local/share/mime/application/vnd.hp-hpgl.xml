@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.hp-hpgl">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>HP Graphics Language (plotter)</comment>
+  <comment xml:lang="de">HP-Grafiksprache (Plotter)</comment>
+  <comment xml:lang="fi">HP Graphics Language (piirturi)</comment>
+</mime-type>

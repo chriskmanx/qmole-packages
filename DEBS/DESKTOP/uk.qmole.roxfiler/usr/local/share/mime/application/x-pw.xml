@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-pw">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Pathetic Writer document</comment>
+  <comment xml:lang="de">Pathetic Writer-Dokument</comment>
+  <comment xml:lang="fi">Pathetic Writer -asiakirja</comment>
+  <comment xml:lang="no">Pathetic Writer-dokument</comment>
+</mime-type>

@@ -1,0 +1,12 @@
+Package: uk.qmole.herbstluft
+Name: Herbstluft Window Manager
+Version: 0.2.2
+Architecture: iphoneos-arm
+Description: Herbstluft Window Manager for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Depends: uk.qmole.glib, uk.qmole.gdkpixbuf, uk.qmole.pango, uk.qmole.cairo, uk.qmole.fox, uk.qmole.libglade, uk.qmole.libgnomecanvas, uk.qmole.libxinerama, uk.qmole.gnomeicontheme, uk.qmole.atk, uk.qmole.libintl, uk.qmole.libiconv, uk.qmole.xrandr, uk.qmole.libetpan, uk.qmole.libpng, uk.qmole.xcursorthemes, uk.qmole.xbitmaps, uk.qmole.bitmap, uk.qmole.appres, uk.qmole.libgiblib, uk.qmole.libxdmcp, uk.qmole.libwindowswm, uk.qmole.enchant, uk.qmole.librsvg, uk.qmole.libxml2, uk.qmole.libsm, uk.qmole.vte, uk.qmole.startupnotification, uk.qmole.gnomepaint, uk.qmole.libart, uk.qmole.evieext, uk.qmole.iceauth, uk.qmole.libice, uk.qmole.libxtst, uk.qmole.libxft, uk.qmole.libxcomposite, uk.qmole.libxdamage, uk.qmole.libxext, uk.qmole.libxfixes, uk.qmole.libxcb, uk.qmole.libxres, uk.qmole.gnutls, uk.qmole.galculator, uk.qmole.libxt, uk.qmole.libxxf86dga, uk.qmole.libxxf86misc, uk.qmole.libxv, xcb, expat, uuid, adv-cmds, libffi, gmp, pcre, tiff, png, jpeg, coreutils, coreutils-bin, system-cmds
+Sponsor: QMole Ltd. 
+Section: Desktop

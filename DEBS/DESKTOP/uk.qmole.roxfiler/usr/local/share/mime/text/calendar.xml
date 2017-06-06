@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/calendar">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>iCalendar file</comment>
+  <comment xml:lang="az">iCalendar faylı</comment>
+  <comment xml:lang="cs">Soubor iCalendar</comment>
+  <comment xml:lang="cy">Ffeil iCalendar</comment>
+  <comment xml:lang="de">iCalendar-Datei</comment>
+  <comment xml:lang="el">Αρχείο iCalendar</comment>
+  <comment xml:lang="fi">iCalendar-tiedosto</comment>
+  <comment xml:lang="fr">fichier iCalendar</comment>
+  <comment xml:lang="hu">iCalendar-file</comment>
+  <comment xml:lang="ko">iCalendar 파일</comment>
+  <comment xml:lang="nl">iCalendar bestand</comment>
+  <comment xml:lang="nn">iCalendar-fil</comment>
+  <comment xml:lang="no">iCalender-fil</comment>
+  <comment xml:lang="sr">iCalendar датотека</comment>
+  <comment xml:lang="sv">iCalendar-fil</comment>
+</mime-type>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/x-adpcm">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>PCM audio</comment>
+  <comment xml:lang="az">PCM audio faylı</comment>
+  <comment xml:lang="cs">Zvuk PCM</comment>
+  <comment xml:lang="cy">Sain PCM</comment>
+  <comment xml:lang="de">PCM-Audio</comment>
+  <comment xml:lang="el">Ήχος PCM</comment>
+  <comment xml:lang="fi">PCM-ääni</comment>
+  <comment xml:lang="fr">audio PCM</comment>
+  <comment xml:lang="hu">PCM-hang</comment>
+  <comment xml:lang="ko">PCM 오디오</comment>
+  <comment xml:lang="nl">PCM geluidsbestand</comment>
+  <comment xml:lang="nn">PCM-lyd</comment>
+  <comment xml:lang="no">PCM-lyd</comment>
+  <comment xml:lang="sr">PCM звучни запис</comment>
+  <comment xml:lang="sv">PCM-ljud</comment>
+</mime-type>

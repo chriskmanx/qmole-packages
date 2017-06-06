@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-gzip">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>gzip archive</comment>
+  <comment xml:lang="de">gzip-Archiv</comment>
+  <comment xml:lang="fi">gzip-arkisto</comment>
+  <comment xml:lang="no">gzip-arkiv</comment>
+  <comment xml:lang="sv">gzip-arkiv</comment>
+</mime-type>

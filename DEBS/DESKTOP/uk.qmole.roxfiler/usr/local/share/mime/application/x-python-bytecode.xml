@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-python-bytecode">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Python bytecode</comment>
+  <comment xml:lang="az">Python bayt kodu</comment>
+  <comment xml:lang="cs">Bajtový kód Python</comment>
+  <comment xml:lang="cy">Côd beit Python</comment>
+  <comment xml:lang="de">Python-Bytecode</comment>
+  <comment xml:lang="fi">Python-tavukoodi</comment>
+  <comment xml:lang="fr">bytecode Python</comment>
+  <comment xml:lang="hu">Python-bytekód</comment>
+  <comment xml:lang="ko">파이썬 바이트코드</comment>
+  <comment xml:lang="nl">Python bytecode</comment>
+  <comment xml:lang="nn">Python-bytekode</comment>
+  <comment xml:lang="no">Python-bytekode</comment>
+  <comment xml:lang="sr">Питонов бајт кôд</comment>
+  <comment xml:lang="sv">Python-bytekod</comment>
+</mime-type>

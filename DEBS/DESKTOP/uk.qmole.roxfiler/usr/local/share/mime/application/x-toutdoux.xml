@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-toutdoux">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>ToutDoux document</comment>
+  <comment xml:lang="az">ToutDoux sənədi</comment>
+  <comment xml:lang="cs">Dokument ToutDoux</comment>
+  <comment xml:lang="cy">Dogfen ToutDoux</comment>
+  <comment xml:lang="de">ToutDoux-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο ToutDoux</comment>
+  <comment xml:lang="fi">ToutDoux-asiakirja</comment>
+  <comment xml:lang="fr">document ToutDoux</comment>
+  <comment xml:lang="hu">ToutDoux-dokumentum</comment>
+  <comment xml:lang="ko">ToutDoux 문서</comment>
+  <comment xml:lang="nl">ToutDoux document</comment>
+  <comment xml:lang="nn">ToutDoux-dokument</comment>
+  <comment xml:lang="no">ToutDoux-dokument</comment>
+  <comment xml:lang="sr">ToutDoux документ</comment>
+  <comment xml:lang="sv">ToutDoux-dokument</comment>
+</mime-type>

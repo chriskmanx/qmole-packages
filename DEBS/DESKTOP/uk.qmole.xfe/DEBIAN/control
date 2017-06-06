@@ -1,0 +1,11 @@
+Package: uk.qmole.xfe
+Name: X File Explorer
+Version: 1.34
+Architecture: iphoneos-arm
+Description: XFE File Manager for IOS
+Homepage: http://www.qmole.uk 
+Depiction: http://www.qmole.uk/xorg
+Maintainer: Chris Kohlhepp <chrisk@manx.net>
+Author:  Chris Kohlhepp <chrisk@manx.net>
+Sponsor: QMole Ltd. 
+Section: Desktop

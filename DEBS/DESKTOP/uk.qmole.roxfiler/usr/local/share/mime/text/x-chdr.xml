@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-chdr">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>C source code header</comment>
+  <comment xml:lang="cy">Penawd Rhaglen C</comment>
+  <comment xml:lang="de">C-Quelltext-Header</comment>
+  <comment xml:lang="nn">C-kjeldekode-header</comment>
+  <comment xml:lang="no">C-kildekodeheader</comment>
+  <comment xml:lang="sr">C заглавља изворног кôда</comment>
+  <comment xml:lang="sv">C-källkodshuvud</comment>
+</mime-type>

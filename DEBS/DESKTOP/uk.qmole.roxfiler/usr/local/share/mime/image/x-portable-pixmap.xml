@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-portable-pixmap">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Portable Pixmap File Format</comment>
+  <comment xml:lang="az">Portable Pixmap Fayl Formatı</comment>
+  <comment xml:lang="cs">Formát souboru Portable Pixmap</comment>
+  <comment xml:lang="cy">Delwedd Pixmap Cludadwy</comment>
+  <comment xml:lang="de">Portables Pixmap-Dateiformat</comment>
+  <comment xml:lang="fi">siirrettävä pikselikarttatiedostomuoto</comment>
+  <comment xml:lang="fr">format de fichier Portable Pixmap</comment>
+  <comment xml:lang="ko">이식 가능한 픽스맵 파일 형식</comment>
+  <comment xml:lang="nl">Portable Pixmap bestandsformaat</comment>
+  <comment xml:lang="nn">Portable Pixmap File-format</comment>
+  <comment xml:lang="no">Portabelt Pixmap-filformat</comment>
+  <comment xml:lang="sr">Портабилни запис пиксмапа</comment>
+  <comment xml:lang="sv">Portabelt pixmap-filformat</comment>
+</mime-type>

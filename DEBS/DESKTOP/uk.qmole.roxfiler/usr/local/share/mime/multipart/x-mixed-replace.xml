@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="multipart/x-mixed-replace">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>stream of data (server push)</comment>
+  <comment xml:lang="de">Datenstrom (Server-Push)</comment>
+  <comment xml:lang="fi">tietovirta (palvelin työntää)</comment>
+  <comment xml:lang="no">datastrøm (server push)</comment>
+</mime-type>

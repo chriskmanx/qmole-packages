@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-amipro">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Lotus AmiPro document</comment>
+  <comment xml:lang="az">Lotus AmiPro sənədi</comment>
+  <comment xml:lang="cs">Dokument Lotus AmiPro</comment>
+  <comment xml:lang="cy">Dogfen Lotus AmiPro</comment>
+  <comment xml:lang="de">Lotus AmiPro-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο Lotus AmiPro</comment>
+  <comment xml:lang="fi">Lotus AmiPro -asiakirja</comment>
+  <comment xml:lang="fr">document Lotus AmiPro</comment>
+  <comment xml:lang="hu">Lotus AmiPro-dokumentum</comment>
+  <comment xml:lang="ko">Lotus AmiPro 문서</comment>
+  <comment xml:lang="nl">Lotus AmiPro document</comment>
+  <comment xml:lang="nn">Lotus AmiPro-dokument</comment>
+  <comment xml:lang="no">Lotus AmiPro-dokument</comment>
+  <comment xml:lang="sr">Лотус АмиПро документ</comment>
+  <comment xml:lang="sv">Lotus AmiPro-dokument</comment>
+</mime-type>

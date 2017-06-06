@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="video/x-anim">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>ANIM animation</comment>
+  <comment xml:lang="az">ANIM animasiyası</comment>
+  <comment xml:lang="cs">Animace ANIM</comment>
+  <comment xml:lang="cy">Animeiddiad ANIM</comment>
+  <comment xml:lang="de">ANIM-Animation</comment>
+  <comment xml:lang="el">Κινούμενο σχέδιο ANIM</comment>
+  <comment xml:lang="fi">ANIM-animaatio</comment>
+  <comment xml:lang="fr">animation ANIM</comment>
+  <comment xml:lang="hu">ANIM-animáció</comment>
+  <comment xml:lang="ko">ANIM 동화상</comment>
+  <comment xml:lang="nl">ANIM animatie</comment>
+  <comment xml:lang="nn">ANIM-animasjon</comment>
+  <comment xml:lang="no">ANIM-animasjon</comment>
+  <comment xml:lang="sr">ANIM анимација</comment>
+  <comment xml:lang="sv">ANIM-animation</comment>
+</mime-type>

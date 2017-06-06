@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/x-xi">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Scream Tracker instrument</comment>
+  <comment xml:lang="az">Scream Tracker instrumenti</comment>
+  <comment xml:lang="cs">Nástroj pro Scream Tracker</comment>
+  <comment xml:lang="cy">Offeryn Scream Tracker</comment>
+  <comment xml:lang="de">Scream Tracker-Instrument</comment>
+  <comment xml:lang="el">Μουσικό όργανο Scream Tracker</comment>
+  <comment xml:lang="fi">Scream Tracker -soitin</comment>
+  <comment xml:lang="fr">instrument Scream Tracker</comment>
+  <comment xml:lang="hu">Scream Tracker-hangszer</comment>
+  <comment xml:lang="ko">Scream Tracker 악기</comment>
+  <comment xml:lang="nl">Scream Tracker instrument</comment>
+  <comment xml:lang="nn">Scream Tracker instrument</comment>
+  <comment xml:lang="no">Scream Tracker-instrument</comment>
+  <comment xml:lang="sr">Scream Tracker инструмент</comment>
+  <comment xml:lang="sv">Scream Tracker-instrument</comment>
+</mime-type>

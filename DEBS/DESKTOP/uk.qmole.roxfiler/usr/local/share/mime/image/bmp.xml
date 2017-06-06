@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/bmp">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Windows BMP image</comment>
+  <comment xml:lang="az">Windows BMP rəsmi</comment>
+  <comment xml:lang="cs">Obrázek Windows BMP</comment>
+  <comment xml:lang="cy">Delwedd BMP Windows</comment>
+  <comment xml:lang="de">Windows-BMP-Bild</comment>
+  <comment xml:lang="el">Εικόνα Windows BMP</comment>
+  <comment xml:lang="fi">Windows BMP -kuva</comment>
+  <comment xml:lang="fr">image Windows BMP</comment>
+  <comment xml:lang="hu">Windows BMP-fájl</comment>
+  <comment xml:lang="ko">윈도우즈 BMP 이미지</comment>
+  <comment xml:lang="nl">Windows BMP afbeelding</comment>
+  <comment xml:lang="nn">Windows BMP-bilete</comment>
+  <comment xml:lang="no">Windows BMP-bilde</comment>
+  <comment xml:lang="sr">Windows BMP слика</comment>
+  <comment xml:lang="sv">Windows BMP-bild</comment>
+</mime-type>

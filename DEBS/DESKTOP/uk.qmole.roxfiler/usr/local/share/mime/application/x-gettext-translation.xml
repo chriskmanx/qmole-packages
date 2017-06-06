@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-gettext-translation">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>translated messages (machine-readable)</comment>
+  <comment xml:lang="de">übersetzte Meldungen (maschinenlesbar)</comment>
+  <comment xml:lang="fi">käännetyt viestit (koneluettava)</comment>
+  <comment xml:lang="no">oversatte meldinger (maskinlesbar)</comment>
+</mime-type>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/rss">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>RDF Site Summary</comment>
+  <comment xml:lang="az">RDF Sayt İcmalı</comment>
+  <comment xml:lang="cs">Sourhn serveru RDF</comment>
+  <comment xml:lang="cy">Crynodeb Safle RDF</comment>
+  <comment xml:lang="de">RDF-Seitenzusammenfassung</comment>
+  <comment xml:lang="fi">RDF-sivuston tiivistelmä</comment>
+  <comment xml:lang="fr">sommaire RDF Site</comment>
+  <comment xml:lang="hu">RDF-webhelyinformáció</comment>
+  <comment xml:lang="ko">RDF 사이트 요약</comment>
+  <comment xml:lang="nl">RDF website samenvatting</comment>
+  <comment xml:lang="nn">RDF-sidesamandrag</comment>
+  <comment xml:lang="no">RDF-strøm</comment>
+  <comment xml:lang="sr">RDF сажетак странице (RSS)</comment>
+  <comment xml:lang="sv">RDF-webbplatssammanfattning</comment>
+</mime-type>

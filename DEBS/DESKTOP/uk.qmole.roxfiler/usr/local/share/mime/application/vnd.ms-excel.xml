@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.ms-excel">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Microsoft Excel spreadsheet</comment>
+  <comment xml:lang="az">Microsoft Excel hesab cədvəli</comment>
+  <comment xml:lang="cs">Tabulka Microsoft Excel</comment>
+  <comment xml:lang="cy">Taenlen Microsoft Excel</comment>
+  <comment xml:lang="de">Microsoft Excel-Tabellendokument</comment>
+  <comment xml:lang="el">Λογιστικό φύλλο Microsoft Excel</comment>
+  <comment xml:lang="fi">Microsoft Excel -taulukko</comment>
+  <comment xml:lang="fr">chiffrier Microsoft Excel</comment>
+  <comment xml:lang="hu">Microsoft Excel-munkafüzet</comment>
+  <comment xml:lang="ko">마이크로소프트 엑셀 스프레드시트</comment>
+  <comment xml:lang="nl">Microsoft Excel spreadsheet</comment>
+  <comment xml:lang="nn">Microsoft Excel reikneark</comment>
+  <comment xml:lang="no">Microsoft Excel regneark</comment>
+  <comment xml:lang="sr">Микрософт Ексел табеларни прорачун</comment>
+  <comment xml:lang="sv">Microsoft Excel-kalkylblad</comment>
+  <alias type="application/msexcel"/>
+</mime-type>

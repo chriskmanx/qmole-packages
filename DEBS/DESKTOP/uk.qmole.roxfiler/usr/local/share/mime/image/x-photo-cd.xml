@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-photo-cd">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>PhotoCD image</comment>
+  <comment xml:lang="az">PhotoCD rəsmi</comment>
+  <comment xml:lang="cs">Obrázek PhotoCD</comment>
+  <comment xml:lang="cy">Delwedd PhotoCD</comment>
+  <comment xml:lang="de">PhotoCD-Bild</comment>
+  <comment xml:lang="el">Εικόνα PhotoCD</comment>
+  <comment xml:lang="fi">PhotoCD-kuva</comment>
+  <comment xml:lang="fr">image PhotoCD</comment>
+  <comment xml:lang="hu">PhotoCD-kép</comment>
+  <comment xml:lang="ko">PhotoCD 이미지</comment>
+  <comment xml:lang="nl">PhotoCD afbeelding</comment>
+  <comment xml:lang="nn">Photo CD-bilete</comment>
+  <comment xml:lang="no">PhotoCD-bilde</comment>
+  <comment xml:lang="sr">Фото Це-Де слика</comment>
+  <comment xml:lang="sv">PhotoCD-bild</comment>
+</mime-type>

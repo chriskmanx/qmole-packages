@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.sun.xml.calc">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>OpenOffice.org Calc spreadsheet</comment>
+  <comment xml:lang="de">OpenOffice.org Calc-Tabellendokumen</comment>
+  <comment xml:lang="el">Λογιστικό φύλλο OpenOffice.org Calc</comment>
+  <comment xml:lang="fi">OpenOffice.org Calc -taulukko</comment>
+  <comment xml:lang="no">OpenOffice.org Calc-regneark</comment>
+</mime-type>

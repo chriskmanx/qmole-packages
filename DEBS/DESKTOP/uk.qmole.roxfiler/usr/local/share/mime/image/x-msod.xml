@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-msod">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Microsoft Office drawing</comment>
+  <comment xml:lang="de">Microsoft Office-Zeichnung</comment>
+  <comment xml:lang="fi">Microsoft Office -piirros</comment>
+  <comment xml:lang="no">Microsoft Office-tegning</comment>
+</mime-type>

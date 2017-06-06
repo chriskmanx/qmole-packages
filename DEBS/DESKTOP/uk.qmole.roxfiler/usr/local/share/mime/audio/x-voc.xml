@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/x-voc">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>VOC audio</comment>
+  <comment xml:lang="az">VOC audio faylı</comment>
+  <comment xml:lang="cs">Zvuk VOC</comment>
+  <comment xml:lang="cy">Sain VOC</comment>
+  <comment xml:lang="de">VOC-Audio</comment>
+  <comment xml:lang="el">Ήχος VOC</comment>
+  <comment xml:lang="fi">VOC-ääni</comment>
+  <comment xml:lang="fr">audio VOC</comment>
+  <comment xml:lang="hu">VOC-hang</comment>
+  <comment xml:lang="ko">VOC 오디오</comment>
+  <comment xml:lang="nl">VOC geluidsbestand</comment>
+  <comment xml:lang="nn">VOC-lyd</comment>
+  <comment xml:lang="no">VOC-lyd</comment>
+  <comment xml:lang="sr">VOC звучни запис</comment>
+  <comment xml:lang="sv">VOC-ljud</comment>
+</mime-type>

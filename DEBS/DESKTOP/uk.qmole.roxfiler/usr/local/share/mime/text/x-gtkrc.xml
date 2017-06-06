@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-gtkrc">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>GTK configuration</comment>
+  <comment xml:lang="az">GTK qurğusu</comment>
+  <comment xml:lang="cs">Nastavení GTK</comment>
+  <comment xml:lang="cy">Ffurfosodiad GTK</comment>
+  <comment xml:lang="de">GTK-Konfiguration</comment>
+  <comment xml:lang="el">Ρυθμίσεις GTK</comment>
+  <comment xml:lang="fi">GTK-asetukset</comment>
+  <comment xml:lang="fr">configuration GTK</comment>
+  <comment xml:lang="hu">GTK-beállítások</comment>
+  <comment xml:lang="ko">GTK 설정</comment>
+  <comment xml:lang="nl">GTK configuratie</comment>
+  <comment xml:lang="nn">GTK-oppsett</comment>
+  <comment xml:lang="no">GTK-konfigurasjon</comment>
+  <comment xml:lang="sr">Гтк подешавања</comment>
+  <comment xml:lang="sv">GTK-konfiguration</comment>
+</mime-type>

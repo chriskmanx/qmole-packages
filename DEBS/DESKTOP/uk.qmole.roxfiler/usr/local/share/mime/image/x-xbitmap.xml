@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-xbitmap">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>X BitMap image</comment>
+  <comment xml:lang="az">X BitMap rəsmi</comment>
+  <comment xml:lang="cs">Obrázek X BitMap</comment>
+  <comment xml:lang="cy">Delwedd didfap X</comment>
+  <comment xml:lang="de">X-BitMap-Bild</comment>
+  <comment xml:lang="fi">X BitMap -kuva</comment>
+  <comment xml:lang="fr">image X BitMap</comment>
+  <comment xml:lang="hu">X BitMap kép</comment>
+  <comment xml:lang="ko">X 비트맵 이미지</comment>
+  <comment xml:lang="nl">X BitMap afbeelding</comment>
+  <comment xml:lang="nn">Bilete i X Bitmap-format</comment>
+  <comment xml:lang="no">X-bitmapbilde</comment>
+  <comment xml:lang="sr">X битмапирана слика</comment>
+  <comment xml:lang="sv">X-bitmappbild</comment>
+</mime-type>

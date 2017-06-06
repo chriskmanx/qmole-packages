@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-troff-man">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>Troff document (with manpage macros)</comment>
+  <comment xml:lang="de">Troff-Dokument (mit man-Seitenmakros)</comment>
+  <comment xml:lang="fi">Troff-asiakirja man-sivu-makroilla</comment>
+</mime-type>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/zip">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>ZIP archive</comment>
+  <comment xml:lang="de">ZIP-Archiv</comment>
+  <comment xml:lang="fi">ZIP-arkisto</comment>
+  <comment xml:lang="no">ZIP-arkiv</comment>
+</mime-type>

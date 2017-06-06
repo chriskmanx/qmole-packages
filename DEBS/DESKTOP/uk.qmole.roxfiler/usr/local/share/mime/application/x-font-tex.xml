@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-font-tex">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>TeX font</comment>
+  <comment xml:lang="az">TeX yazı növü</comment>
+  <comment xml:lang="cs">Písmo TeX</comment>
+  <comment xml:lang="cy">Ffont TeX</comment>
+  <comment xml:lang="de">TeX-Schrift</comment>
+  <comment xml:lang="el">Γραμματοσειρά TeX</comment>
+  <comment xml:lang="fi">TeX-kirjasin</comment>
+  <comment xml:lang="fr">fonte TeX</comment>
+  <comment xml:lang="hu">TeX-betűkészlet</comment>
+  <comment xml:lang="ko">TeX 글꼴</comment>
+  <comment xml:lang="nl">TeX lettertype</comment>
+  <comment xml:lang="nn">TeX-skrifttype</comment>
+  <comment xml:lang="no">TeX-skrift</comment>
+  <comment xml:lang="sr">ТеХ фонт</comment>
+  <comment xml:lang="sv">TeX-typsnitt</comment>
+</mime-type>

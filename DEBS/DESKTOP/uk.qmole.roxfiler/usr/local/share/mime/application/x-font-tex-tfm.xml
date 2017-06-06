@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-font-tex-tfm">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>TeX font metrics</comment>
+  <comment xml:lang="az">TeX yazı növü metrikləri</comment>
+  <comment xml:lang="cs">Metrika písma TeX</comment>
+  <comment xml:lang="cy">Metrigau Ffont TeX</comment>
+  <comment xml:lang="de">TeX-Schriftmetriken</comment>
+  <comment xml:lang="fi">TeX-kirjasinmitat</comment>
+  <comment xml:lang="fr">métriques de fonte TeX</comment>
+  <comment xml:lang="hu">TeX-betűmetrika</comment>
+  <comment xml:lang="ko">Tex 글꼴 메트릭스</comment>
+  <comment xml:lang="nl">TeX lettertype-metrieken</comment>
+  <comment xml:lang="nn">TeX skrifttypemetrikk</comment>
+  <comment xml:lang="no">TeX skrifttypemetrikk</comment>
+  <comment xml:lang="sr">ТеХ метрика фонта</comment>
+  <comment xml:lang="sv">TeX-typsnittsmetrik</comment>
+</mime-type>

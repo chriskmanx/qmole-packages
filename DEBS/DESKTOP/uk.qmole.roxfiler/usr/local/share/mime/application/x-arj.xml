@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-arj">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>ARJ archive</comment>
+  <comment xml:lang="az">ARJ arxivi</comment>
+  <comment xml:lang="cs">Archiv ARJ</comment>
+  <comment xml:lang="cy">Archif ARJ</comment>
+  <comment xml:lang="de">ARJ-Archiv</comment>
+  <comment xml:lang="fi">ARJ-arkisto</comment>
+  <comment xml:lang="fr">archive ARJ</comment>
+  <comment xml:lang="hu">ARJ-archívum</comment>
+  <comment xml:lang="ko">ARJ 아카이브</comment>
+  <comment xml:lang="nl">ARJ archief</comment>
+  <comment xml:lang="nn">ARJ-arkiv</comment>
+  <comment xml:lang="no">ARJ-arkiv</comment>
+  <comment xml:lang="sr">ARJ архива</comment>
+  <comment xml:lang="sv">ARJ-arkiv</comment>
+</mime-type>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/smil">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>Synchronized Multimedia Integration Language</comment>
+  <comment xml:lang="az">Sinxronlaşdırılmış Multemediya İnteqrasiya Dili</comment>
+  <comment xml:lang="cs">Synchronized Multimedia Integration Language</comment>
+  <comment xml:lang="cy">Iaith Integreiddio Aml-Gyfrwng wedi ei Chydweddu</comment>
+  <comment xml:lang="de">SMIL-Dokument</comment>
+  <comment xml:lang="fi">Synchronized Multimedia Integration Language</comment>
+  <comment xml:lang="fr">Synchronized Multimedia Integration Language</comment>
+  <comment xml:lang="hu">Szinkronizált multimédiaintegrációs nyelv</comment>
+  <comment xml:lang="ko">동기화 멀티미디어 통합 언어</comment>
+  <comment xml:lang="nl">Gesynchroniseerde multimedia integratie taal</comment>
+  <comment xml:lang="nn">Synchronized Multimedia Integration Language</comment>
+  <comment xml:lang="sr">Синхронизовани језик за интеграцију мултимедије (SMIL)</comment>
+  <comment xml:lang="sv">Språk för synkroniserad multimediaintegration</comment>
+</mime-type>

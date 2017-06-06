@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.sun.xml.draw.template">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>OpenOffice.org Draw drawing template</comment>
+  <comment xml:lang="de">OpenOffice.org·Draw-Zeichnungsvorlage</comment>
+  <comment xml:lang="fi">OpenOffice.org Draw -piirrosmalli</comment>
+  <comment xml:lang="no">OpenOffice.org Draw-tegningsmal</comment>
+</mime-type>

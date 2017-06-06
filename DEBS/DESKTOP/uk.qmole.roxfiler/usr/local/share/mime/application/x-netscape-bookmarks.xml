@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-netscape-bookmarks">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>Netscape bookmarks</comment>
+  <comment xml:lang="de">Netscape-Lesezeichen</comment>
+  <comment xml:lang="el">Σελιδοδείκτες Netscape</comment>
+  <comment xml:lang="fi">Netscape-kirjanmerkit</comment>
+  <comment xml:lang="no">Netscape-bokmerker</comment>
+</mime-type>

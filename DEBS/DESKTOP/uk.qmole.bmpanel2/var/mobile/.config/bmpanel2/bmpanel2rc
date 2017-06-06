@@ -1,0 +1,19 @@
+0;95;c
+launchbar
+	exec /var/mobile/.config/bmpanel2/runterminal.sh
+	     icon /var/mobile/.config/bmpanel2/terminal.png
+	exec /var/mobile/.config/bmpanel2/runemacs.sh
+	     icon /var/mobile/.config/bmpanel2/emacs.png
+	exec /var/mobile/.config/bmpanel2/runfilemanager.sh
+	     icon /var/mobile/.config/bmpanel2/system-file-manager.png
+	exec /home/chris/.config/runpdf.sh
+	     icon /home/chris/.fluxbox/pdfedit.png
+	exec /var/mobile/.config/bmpanel2/runcalculator.sh
+	     icon /var/mobile/.config/bmpanel2/calculator.png
+	exec /var/mobile/.config/bmpanel2/runemail.sh
+	     icon /var/mobile/.config/bmpanel2/email.png
+	exec /var/mobile/.config/bmpanel2/runbrowser.sh
+	     icon /var/mobile/.config/bmpanel2/netsurf.png
+       	exec emacs
+	     icon /var/mobile/.config/bmpanel2/terminal.png 
+

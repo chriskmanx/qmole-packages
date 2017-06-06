@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/richtext">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>rich text document</comment>
+  <comment xml:lang="az">zəngin mətn sənədi</comment>
+  <comment xml:lang="cs">Bohatý textový dokument</comment>
+  <comment xml:lang="cy">dogfen testun gyfoethog (rtf)</comment>
+  <comment xml:lang="de">RTF-Textdokument</comment>
+  <comment xml:lang="fi">RTF-asiakirja</comment>
+  <comment xml:lang="fr">document « rich text »</comment>
+  <comment xml:lang="hu">rich text-dokumentum</comment>
+  <comment xml:lang="ko">rich text 문서</comment>
+  <comment xml:lang="nl">opgemaakt tekstdocument</comment>
+  <comment xml:lang="nn">rik tekst-dokument</comment>
+  <comment xml:lang="no">rik tekst-dokument</comment>
+  <comment xml:lang="sr">обогаћени текстуални документ</comment>
+  <comment xml:lang="sv">rikt textdokument</comment>
+</mime-type>

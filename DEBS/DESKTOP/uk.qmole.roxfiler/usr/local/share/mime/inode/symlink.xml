@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="inode/symlink">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>symbolic link</comment>
+  <comment xml:lang="az">simvolik körpü</comment>
+  <comment xml:lang="cs">Symbolický odkaz</comment>
+  <comment xml:lang="cy">cyswllt symbolaidd</comment>
+  <comment xml:lang="de">Symbolischer Link</comment>
+  <comment xml:lang="el">συμβολικός σύνδεσμος</comment>
+  <comment xml:lang="fi">symbolinen linkki</comment>
+  <comment xml:lang="fr">lien symbolique</comment>
+  <comment xml:lang="hu">szimbolikus link</comment>
+  <comment xml:lang="ko">심볼릭 링크</comment>
+  <comment xml:lang="nl">symbolische koppeling</comment>
+  <comment xml:lang="nn">symbolsk lenkje</comment>
+  <comment xml:lang="no">symbolsk lenke</comment>
+  <comment xml:lang="sr">симболичка веза</comment>
+  <comment xml:lang="sv">symbolisk länk</comment>
+</mime-type>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-mif">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>FrameMaker MIF document</comment>
+  <comment xml:lang="de">FrameMaker-MIF-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο FrameMaker MIF</comment>
+  <comment xml:lang="fi">FrameMaker-välitysasiakirja</comment>
+  <comment xml:lang="no">FrameMaker MIF-dokument</comment>
+</mime-type>

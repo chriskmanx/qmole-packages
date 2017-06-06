@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-nautilus-link">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>Nautilus link</comment>
+  <comment xml:lang="az">Nautilus körpüsü</comment>
+  <comment xml:lang="cs">Odkaz Nautilus</comment>
+  <comment xml:lang="cy">Cyswllt Nautilus</comment>
+  <comment xml:lang="de">Nautilus-Link</comment>
+  <comment xml:lang="el">Σύνδεσμος Nautilus</comment>
+  <comment xml:lang="fi">Nautilus-linkki</comment>
+  <comment xml:lang="fr">lien Nautilus</comment>
+  <comment xml:lang="hu">Nautilus-link</comment>
+  <comment xml:lang="ko">노틸러스 링크</comment>
+  <comment xml:lang="nl">Nautilus koppeling</comment>
+  <comment xml:lang="nn">Nautilus-lenke</comment>
+  <comment xml:lang="no">Nautilus-lenke</comment>
+  <comment xml:lang="sr">Наутилус веза</comment>
+  <comment xml:lang="sv">Nautiluslänk</comment>
+</mime-type>

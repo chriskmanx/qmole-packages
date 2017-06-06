@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/vnd.wap.wml">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>WML document</comment>
+  <comment xml:lang="az">WML sənədi</comment>
+  <comment xml:lang="cs">Dokument WML</comment>
+  <comment xml:lang="cy">Dogfen WML</comment>
+  <comment xml:lang="de">WML-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο WML</comment>
+  <comment xml:lang="fi">WML-asiakirja</comment>
+  <comment xml:lang="fr">document WML</comment>
+  <comment xml:lang="hu">WML-dokumentum</comment>
+  <comment xml:lang="ko">WML 문서</comment>
+  <comment xml:lang="nl">WML document</comment>
+  <comment xml:lang="nn">WML-dokument</comment>
+  <comment xml:lang="no">WML-dokument</comment>
+  <comment xml:lang="sr">WML документ</comment>
+  <comment xml:lang="sv">WML-dokument</comment>
+</mime-type>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-matroska">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Matroska video</comment>
+  <comment xml:lang="de">Matroska-Video</comment>
+  <comment xml:lang="el">Βίντεο Matroska</comment>
+  <comment xml:lang="fi">Matroska-video</comment>
+  <comment xml:lang="no">Matroska-film</comment>
+</mime-type>

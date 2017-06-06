@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-rgb">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>RGB image</comment>
+  <comment xml:lang="az">RGB rəsmi</comment>
+  <comment xml:lang="cs">Obrázek RGB</comment>
+  <comment xml:lang="cy">Delwedd RGB</comment>
+  <comment xml:lang="de">RGB-Bild</comment>
+  <comment xml:lang="el">Εικόνα RGB</comment>
+  <comment xml:lang="fi">RGB-kuva</comment>
+  <comment xml:lang="fr">image RGB</comment>
+  <comment xml:lang="hu">RGB-kép</comment>
+  <comment xml:lang="ko">RGB 이미지</comment>
+  <comment xml:lang="nl">RGB afbeelding</comment>
+  <comment xml:lang="nn">RGB-bilete</comment>
+  <comment xml:lang="no">RGB-bilde</comment>
+  <comment xml:lang="sr">RGB слика</comment>
+  <comment xml:lang="sv">RGB-bild</comment>
+</mime-type>

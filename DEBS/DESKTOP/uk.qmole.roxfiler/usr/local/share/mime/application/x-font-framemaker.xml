@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-font-framemaker">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Adobe FrameMaker font</comment>
+  <comment xml:lang="az">Adobe FrameMaker yazı növü</comment>
+  <comment xml:lang="cs">Písmo Adobe FrameMaker</comment>
+  <comment xml:lang="cy">Ffont Adobe FrameMaker</comment>
+  <comment xml:lang="de">Adobe FrameMaker-Schrift</comment>
+  <comment xml:lang="el">Γραμματοσειρά Adobe FrameMaker</comment>
+  <comment xml:lang="fi">Adobe FrameMaker -kirjasin</comment>
+  <comment xml:lang="fr">fonte Adobe FrameMaker</comment>
+  <comment xml:lang="hu">Adobe FrameMaker-betűkészlet</comment>
+  <comment xml:lang="ko">Adobe FrameMaker 글꼴</comment>
+  <comment xml:lang="nl">Adobe FrameMaker lettertype</comment>
+  <comment xml:lang="nn">Adobe FrameMaker skrifttype</comment>
+  <comment xml:lang="no">Adobe FrameMaker skrifttype</comment>
+  <comment xml:lang="sr">Adobe FrameMaker фонт</comment>
+  <comment xml:lang="sv">Adobe FrameMaker-typsnitt</comment>
+</mime-type>

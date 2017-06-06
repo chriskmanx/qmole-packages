@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.stardivision.impress">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>StarImpress presentation</comment>
+  <comment xml:lang="az">StarImpress təqdimatı</comment>
+  <comment xml:lang="cs">Prezentace StarImpress</comment>
+  <comment xml:lang="cy">Cyflwyniad StarImpress</comment>
+  <comment xml:lang="de">StarImpress-Präsentation</comment>
+  <comment xml:lang="el">Παρουσίαση StarImpress</comment>
+  <comment xml:lang="fi">StarImpress-esitys</comment>
+  <comment xml:lang="fr">présentation StarImpress</comment>
+  <comment xml:lang="hu">StarImpress-bemutató</comment>
+  <comment xml:lang="ko">StarImpress 프리젠테이션</comment>
+  <comment xml:lang="nl">StarImpress presentatie</comment>
+  <comment xml:lang="nn">StarImpress-presentasjon</comment>
+  <comment xml:lang="no">StarImpress-presentasjon</comment>
+  <comment xml:lang="sr">StarImpress презентација</comment>
+  <comment xml:lang="sv">StarImpress-presentation</comment>
+</mime-type>

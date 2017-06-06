@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="multipart/signed">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>signed message</comment>
+  <comment xml:lang="az">imzalanmış ismarış</comment>
+  <comment xml:lang="cs">Podepsaná zpráva</comment>
+  <comment xml:lang="cy">neges lofnodwyd</comment>
+  <comment xml:lang="de">signierte Nachricht</comment>
+  <comment xml:lang="fi">allekirjoitettu viesti</comment>
+  <comment xml:lang="fr">message signé</comment>
+  <comment xml:lang="hu">aláírt üzenet</comment>
+  <comment xml:lang="ko">서명된 메세지</comment>
+  <comment xml:lang="nl">ondertekend bericht</comment>
+  <comment xml:lang="nn">signert melding</comment>
+  <comment xml:lang="no">signert melding</comment>
+  <comment xml:lang="sr">потписана порука</comment>
+  <comment xml:lang="sv">signerat meddelande</comment>
+</mime-type>

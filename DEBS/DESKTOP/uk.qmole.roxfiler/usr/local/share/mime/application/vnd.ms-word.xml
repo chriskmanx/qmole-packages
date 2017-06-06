@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.ms-word">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Microsoft Word document</comment>
+  <comment xml:lang="az">Microsoft Word sənədi</comment>
+  <comment xml:lang="cs">Dokument Microsoft Word</comment>
+  <comment xml:lang="cy">Dogfen Miscrosoft Word</comment>
+  <comment xml:lang="de">Microsoft Word-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο Microsoft Word</comment>
+  <comment xml:lang="fi">Microsoft Word -asiakirja</comment>
+  <comment xml:lang="fr">document Microsoft Word</comment>
+  <comment xml:lang="hu">Microsoft Word-dokumentum</comment>
+  <comment xml:lang="ko">마이크로소프트 워드 문서</comment>
+  <comment xml:lang="nl">Microsoft Word document</comment>
+  <comment xml:lang="nn">Microsoft Word-dokument</comment>
+  <comment xml:lang="no">Microsoft Word dokument</comment>
+  <comment xml:lang="sr">Микрософт Word документ</comment>
+  <comment xml:lang="sv">Microsoft Word-dokument</comment>
+  <alias type="application/msword"/>
+</mime-type>

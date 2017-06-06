@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-credits">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>software author credits</comment>
+  <comment xml:lang="az">proqram müəllifləri sənədi</comment>
+  <comment xml:lang="cs">Informace o autorovi software</comment>
+  <comment xml:lang="cy">clodau awduron meddalwedd</comment>
+  <comment xml:lang="de">Software-Impressum</comment>
+  <comment xml:lang="fi">ohjelmiston tekijäluettelo</comment>
+  <comment xml:lang="fr">crédits des auteurs pour le logiciel</comment>
+  <comment xml:lang="hu">szoftver szerzőinek felsorolása</comment>
+  <comment xml:lang="ko">소프트웨어 저작자 크레디트</comment>
+  <comment xml:lang="nl">informatie over auteur</comment>
+  <comment xml:lang="nn">forfattarliste for programvare</comment>
+  <comment xml:lang="no">forfatterliste for programvare</comment>
+  <comment xml:lang="sr">заслуге аутора програма</comment>
+  <comment xml:lang="sv">programförfattarlista</comment>
+</mime-type>

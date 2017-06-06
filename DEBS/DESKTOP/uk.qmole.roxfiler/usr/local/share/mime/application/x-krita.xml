@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-krita">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Krita document</comment>
+  <comment xml:lang="de">Krita-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο Krita</comment>
+  <comment xml:lang="fi">Krita-asiakirja</comment>
+  <comment xml:lang="no">Krita-dokument</comment>
+</mime-type>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="message/external-body">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>reference to remote file</comment>
+  <comment xml:lang="az">uzaq fayla göstəriş</comment>
+  <comment xml:lang="cs">Odkaz na vzdálený soubor</comment>
+  <comment xml:lang="cy">cyfeiriad at ffeil bell</comment>
+  <comment xml:lang="de">Verweis auf entfernte Datei</comment>
+  <comment xml:lang="fi">viittaus etätiedostoon</comment>
+  <comment xml:lang="fr">référence au fichier distant</comment>
+  <comment xml:lang="hu">hivatkozás távoli fájlra</comment>
+  <comment xml:lang="ko">원격 파일 참조</comment>
+  <comment xml:lang="nl">verwijzing naar bestand op afstand</comment>
+  <comment xml:lang="nn">referanse til fil over nettverk</comment>
+  <comment xml:lang="no">referanse til ekstern fil</comment>
+  <comment xml:lang="sr">референца на удаљену датотеку</comment>
+  <comment xml:lang="sv">referens till fjärrfil</comment>
+</mime-type>

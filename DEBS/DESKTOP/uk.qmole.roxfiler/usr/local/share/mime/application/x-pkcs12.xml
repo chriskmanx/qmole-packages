@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-pkcs12">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>PKCS#12 certificate bundle</comment>
+  <comment xml:lang="de">PKCS#12-Zertifikatspaket</comment>
+  <comment xml:lang="fi">PKCS#12-varmennenippu</comment>
+  <comment xml:lang="no">PKCS#12 sertifikathaug</comment>
+</mime-type>

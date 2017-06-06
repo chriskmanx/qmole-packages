@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/svg+xml">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>scalable SVG image</comment>
+  <comment xml:lang="de">skalierbares SVG-Bild</comment>
+  <comment xml:lang="fi">SVG-kuva</comment>
+  <comment xml:lang="no">skalerbart SVG-bilde</comment>
+</mime-type>

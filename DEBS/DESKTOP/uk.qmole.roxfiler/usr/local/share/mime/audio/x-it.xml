@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/x-it">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Impulse Tracker audio</comment>
+  <comment xml:lang="az">Impulse Tracker audio faylı</comment>
+  <comment xml:lang="cs">Zvuk Impulse Tracker</comment>
+  <comment xml:lang="cy">Sain Impulse Tracker</comment>
+  <comment xml:lang="de">Impulse Tracker-Audio</comment>
+  <comment xml:lang="el">Ήχος Impulse Tracker</comment>
+  <comment xml:lang="fi">Impulse Tracker -ääni</comment>
+  <comment xml:lang="fr">audio Impulse Tracker</comment>
+  <comment xml:lang="hu">Impulse Tracker hang</comment>
+  <comment xml:lang="ko">Impulse Tracker 오디오</comment>
+  <comment xml:lang="nl">Impulse Tracker geluidsbestand</comment>
+  <comment xml:lang="nn">Impulse Tracker lyd</comment>
+  <comment xml:lang="no">Impulse Tracker-lyd</comment>
+  <comment xml:lang="sr">Impulse Tracker звучни запис</comment>
+  <comment xml:lang="sv">Impulse Tracker-ljud</comment>
+</mime-type>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-cd-image">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>raw CD image</comment>
+  <comment xml:lang="de">CD-Roh-Image</comment>
+  <comment xml:lang="fi">raaka CD-vedos</comment>
+  <comment xml:lang="no">rått CD-bilde</comment>
+</mime-type>

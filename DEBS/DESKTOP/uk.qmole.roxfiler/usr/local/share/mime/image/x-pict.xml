@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-pict">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Macintosh Quickdraw/PICT drawing</comment>
+  <comment xml:lang="de">Macintosh Quickdraw/PICT-Zeichnung</comment>
+  <comment xml:lang="fi">Macintosh Quickdraw/PICT -piirros</comment>
+</mime-type>

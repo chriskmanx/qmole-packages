@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-java">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Java class</comment>
+  <comment xml:lang="de">Java-Klasse</comment>
+  <comment xml:lang="fi">Java-luokka</comment>
+  <comment xml:lang="no">Java-klasse</comment>
+  <comment xml:lang="sv">Java-klass</comment>
+</mime-type>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-oleo">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>GNU Oleo spreadsheet</comment>
+  <comment xml:lang="de">GNU-Oleo-Tabellendokument</comment>
+  <comment xml:lang="el">Λογιστικό φύλλο GNU Oleo</comment>
+  <comment xml:lang="fi">GNU Oleo -taulukko</comment>
+  <comment xml:lang="no">GNU Oleo regneark</comment>
+</mime-type>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-gameboy-rom">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Game Boy ROM</comment>
+  <comment xml:lang="de">Game Boy-ROM</comment>
+  <comment xml:lang="el">Game Boy ROM</comment>
+  <comment xml:lang="fi">Game Boy -ROM</comment>
+  <comment xml:lang="no">Game Boy-ROM</comment>
+</mime-type>

@@ -1,0 +1,4 @@
+#! /bin/sh
+/usr/bin/herbstclient use Desk
+xournal "$@" &
+/usr/local/bin/xpause 1

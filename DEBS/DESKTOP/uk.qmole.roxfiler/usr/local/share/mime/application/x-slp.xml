@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-slp">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Stampede package</comment>
+  <comment xml:lang="az">Stampede paketi</comment>
+  <comment xml:lang="cs">Balíček Stampede</comment>
+  <comment xml:lang="cy">Pecyn Stampede</comment>
+  <comment xml:lang="de">Stampede-Paket</comment>
+  <comment xml:lang="el">Πακέτο Stampede</comment>
+  <comment xml:lang="fi">Stampede-paketti</comment>
+  <comment xml:lang="fr">package Stampede</comment>
+  <comment xml:lang="hu">Stampede-csomag</comment>
+  <comment xml:lang="ko">Stampede 꾸러미</comment>
+  <comment xml:lang="nl">Stampede pakket</comment>
+  <comment xml:lang="nn">Stampede-pakke</comment>
+  <comment xml:lang="no">Stampede-pakke</comment>
+  <comment xml:lang="sr">Stampede пакет</comment>
+  <comment xml:lang="sv">Stampede-paket</comment>
+</mime-type>

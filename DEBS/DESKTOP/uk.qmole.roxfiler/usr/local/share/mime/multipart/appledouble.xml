@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="multipart/appledouble">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Macintosh AppleDouble-encoded file</comment>
+  <comment xml:lang="az">Macintosh AppleDouble-kodlanmış fayl</comment>
+  <comment xml:lang="cs">Soubor kódovaný Macintosh AppleDouble</comment>
+  <comment xml:lang="cy">Ffeil AppleDouble-amgodedig Macintosh</comment>
+  <comment xml:lang="de">Macintosh-Datei (AppleDouble-kodiert)</comment>
+  <comment xml:lang="el">Αρχείο Macintosh κωδικοποίησης AppleDouble</comment>
+  <comment xml:lang="fi">Macintosh AppleDouble -koodattu tiedosto</comment>
+  <comment xml:lang="fr">fichier encodé Macintosh AppleDouble</comment>
+  <comment xml:lang="hu">Macintosh AppleDouble kódolású fájl</comment>
+  <comment xml:lang="ko">맥킨토시 AppleDouble-encoded 파일</comment>
+  <comment xml:lang="nl">Macintosh AppleDouble-gecodeerd bestand</comment>
+  <comment xml:lang="nn">Macintosh AppleDouble-koda fil</comment>
+  <comment xml:lang="no">dokument kodet med Macintosh AppleDouble</comment>
+  <comment xml:lang="sr">Мекинтош AppleDouble-encoded датотека</comment>
+  <comment xml:lang="sv">Macintosh AppleDouble-kodad fil</comment>
+</mime-type>

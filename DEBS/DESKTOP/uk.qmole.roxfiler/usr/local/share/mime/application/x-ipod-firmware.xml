@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-ipod-firmware">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>iPod firmware</comment>
+  <comment xml:lang="de">iPod-Firmware</comment>
+  <comment xml:lang="fi">iPod-ohjelmisto</comment>
+  <comment xml:lang="no">iPod-firmware</comment>
+</mime-type>

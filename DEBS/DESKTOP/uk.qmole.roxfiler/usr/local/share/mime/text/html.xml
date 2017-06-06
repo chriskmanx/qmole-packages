@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/html">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>HTML page</comment>
+  <comment xml:lang="de">HTML-Seite</comment>
+  <comment xml:lang="el">Σελίδα HTML</comment>
+  <comment xml:lang="fi">HTML-sivu</comment>
+  <comment xml:lang="no">HTML-side</comment>
+  <comment xml:lang="sv">HTML-sida</comment>
+</mime-type>

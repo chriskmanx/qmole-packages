@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/png">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>PNG image</comment>
+  <comment xml:lang="az">PNG rəsmi</comment>
+  <comment xml:lang="cs">Obrázek PNG</comment>
+  <comment xml:lang="cy">Delwedd PNG</comment>
+  <comment xml:lang="de">PNG-Bild</comment>
+  <comment xml:lang="el">Εικόνα PNG</comment>
+  <comment xml:lang="fi">PNG-kuva</comment>
+  <comment xml:lang="fr">image PNG</comment>
+  <comment xml:lang="hu">PNG-kép</comment>
+  <comment xml:lang="ko">PNG 이미지</comment>
+  <comment xml:lang="nl">PNG afbeelding</comment>
+  <comment xml:lang="nn">PNG-bilete</comment>
+  <comment xml:lang="no">PNG-bilde</comment>
+  <comment xml:lang="sr">PNG слика</comment>
+  <comment xml:lang="sv">PNG-bild</comment>
+</mime-type>

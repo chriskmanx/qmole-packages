@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-ole-storage">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>OLE2 compound document storage</comment>
+  <comment xml:lang="de">OLE2-Verbunddokumentenspeicher</comment>
+  <comment xml:lang="fi">OLE2-yhdisteasiakirja</comment>
+</mime-type>

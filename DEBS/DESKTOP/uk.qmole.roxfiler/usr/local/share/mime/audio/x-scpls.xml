@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/x-scpls">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>MP3 ShoutCast playlist</comment>
+  <comment xml:lang="de">MP3-ShoutCast-Wiedergabeliste</comment>
+  <comment xml:lang="fi">MP3 ShoutCast -soittolista</comment>
+  <comment xml:lang="no">MP3 ShoutCast-spilleliste</comment>
+</mime-type>

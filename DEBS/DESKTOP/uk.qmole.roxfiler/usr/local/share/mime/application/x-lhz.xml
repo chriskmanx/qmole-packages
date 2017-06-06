@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-lhz">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>LHZ archive</comment>
+  <comment xml:lang="de">LHZ-Archiv</comment>
+  <comment xml:lang="fi">LHZ-arkisto</comment>
+  <comment xml:lang="no">LHZ-arkiv</comment>
+</mime-type>

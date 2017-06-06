@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-vcard">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>electronic business card</comment>
+  <comment xml:lang="de">elektronische Visitenkarte</comment>
+  <comment xml:lang="fi">sähköinen käyntikortti</comment>
+  <comment xml:lang="no">elektronisk visittkort</comment>
+  <comment xml:lang="sv">elektroniskt visitkort</comment>
+</mime-type>

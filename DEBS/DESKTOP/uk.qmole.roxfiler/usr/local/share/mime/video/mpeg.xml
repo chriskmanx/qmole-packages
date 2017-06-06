@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="video/mpeg">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>MPEG video</comment>
+  <comment xml:lang="de">MPEG-Video</comment>
+  <comment xml:lang="el">Βίντεο MPEG</comment>
+  <comment xml:lang="fi">MPEG-video</comment>
+  <comment xml:lang="no">MPEG-film</comment>
+  <comment xml:lang="sv">MPEG-video</comment>
+</mime-type>

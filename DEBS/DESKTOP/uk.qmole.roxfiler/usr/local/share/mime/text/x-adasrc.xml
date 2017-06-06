@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-adasrc">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Ada source code</comment>
+  <comment xml:lang="de">Ada-Quelltext</comment>
+  <comment xml:lang="el">Πηγαίος κώδικας Ada</comment>
+  <comment xml:lang="fi">Ada-lähdekoodi</comment>
+  <comment xml:lang="no">Ada-kildekode</comment>
+</mime-type>

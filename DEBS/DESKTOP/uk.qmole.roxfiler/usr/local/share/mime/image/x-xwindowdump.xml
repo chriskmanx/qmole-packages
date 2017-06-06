@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-xwindowdump">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>X window image</comment>
+  <comment xml:lang="az">X window rəsmi</comment>
+  <comment xml:lang="cs">Obrázek X window</comment>
+  <comment xml:lang="cy">Delwedd ffenest X</comment>
+  <comment xml:lang="de">X-Window-Bild</comment>
+  <comment xml:lang="fi">X-ikkunakuva</comment>
+  <comment xml:lang="fr">image X window</comment>
+  <comment xml:lang="hu">X window-kép</comment>
+  <comment xml:lang="ko">X 윈도우 이미지</comment>
+  <comment xml:lang="nl">X Window afbeelding</comment>
+  <comment xml:lang="nn">X window bilete</comment>
+  <comment xml:lang="no">X-Windows skjermbilde</comment>
+  <comment xml:lang="sr">X прозор слика</comment>
+  <comment xml:lang="sv">X-fönsterbild</comment>
+</mime-type>

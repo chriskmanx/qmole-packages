@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-kword">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>KWord document</comment>
+  <comment xml:lang="cy">Dogfen KWord</comment>
+  <comment xml:lang="de">KWord-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο KWord</comment>
+  <comment xml:lang="fi">KWord-asiakirja</comment>
+  <comment xml:lang="nn">KWord-dokument</comment>
+  <comment xml:lang="no">KWord-dokument</comment>
+  <comment xml:lang="sr">KWord документ</comment>
+</mime-type>

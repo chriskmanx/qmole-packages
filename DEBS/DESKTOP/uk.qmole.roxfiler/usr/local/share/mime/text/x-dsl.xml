@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-dsl">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>DSSSL document</comment>
+  <comment xml:lang="az">DSSSL sənədi</comment>
+  <comment xml:lang="cs">Dokument DSSSL</comment>
+  <comment xml:lang="cy">Dogfen DSSSL</comment>
+  <comment xml:lang="de">DSSSL-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο DSSSL</comment>
+  <comment xml:lang="fi">DSSSL-asiakirja</comment>
+  <comment xml:lang="fr">document DSSSL</comment>
+  <comment xml:lang="hu">DSSSL-dokumentum</comment>
+  <comment xml:lang="ko">DSSSL 문서</comment>
+  <comment xml:lang="nl">DSSSL document</comment>
+  <comment xml:lang="nn">DSSSL-dokument</comment>
+  <comment xml:lang="no">DSSSL-dokument</comment>
+  <comment xml:lang="sr">DSSSL документ</comment>
+  <comment xml:lang="sv">DSSSL-dokument</comment>
+</mime-type>

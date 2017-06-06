@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-comma-separated-values">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>text document (with comma-separated values)</comment>
+  <comment xml:lang="de">Textdokument (Werte durch Kommata unterteilt)</comment>
+  <comment xml:lang="fi">pilkulla eroteltuja arvoja tekstitiedostossa</comment>
+  <comment xml:lang="no">tekstdokument (med kommaseparerte verdier)</comment>
+</mime-type>

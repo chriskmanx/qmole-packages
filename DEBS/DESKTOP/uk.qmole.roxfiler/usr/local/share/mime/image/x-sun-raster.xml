@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-sun-raster">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>SUN Rasterfile image</comment>
+  <comment xml:lang="de">SUN-Rasterfile-Bild</comment>
+  <comment xml:lang="fi">SUN-rasterikuva</comment>
+  <comment xml:lang="no">SUN rasterfil-bilde</comment>
+</mime-type>

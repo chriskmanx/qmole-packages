@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-font-pcf">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>PCF font</comment>
+  <comment xml:lang="az">PCF yazı növü</comment>
+  <comment xml:lang="cs">Písmo PCF</comment>
+  <comment xml:lang="cy">Ffont PCF</comment>
+  <comment xml:lang="de">PCF-Schrift</comment>
+  <comment xml:lang="el">Γραμματοσειρά PCF</comment>
+  <comment xml:lang="fi">PCF-kirjasin</comment>
+  <comment xml:lang="fr">fonte PCF</comment>
+  <comment xml:lang="hu">PCF-betűkészlet</comment>
+  <comment xml:lang="ko">PCF 글꼴</comment>
+  <comment xml:lang="nl">PCF lettertype</comment>
+  <comment xml:lang="nn">PCF-skrifttype</comment>
+  <comment xml:lang="no">PCF-skrifttype</comment>
+  <comment xml:lang="sr">PCF фонт</comment>
+  <comment xml:lang="sv">PCF-typsnitt</comment>
+</mime-type>

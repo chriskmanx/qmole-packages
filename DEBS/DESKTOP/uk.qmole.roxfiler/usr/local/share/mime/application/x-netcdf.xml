@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-netcdf">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Unidata NetCDF document</comment>
+  <comment xml:lang="de">Unidata-NetCDF-Dokument</comment>
+  <comment xml:lang="fi">Unidata netCDF -asiakirja</comment>
+  <comment xml:lang="no">Unidata NetCDF-dokument</comment>
+</mime-type>

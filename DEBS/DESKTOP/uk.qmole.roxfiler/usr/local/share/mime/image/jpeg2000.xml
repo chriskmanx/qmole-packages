@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/jpeg2000">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>JPEG-2000 image</comment>
+  <comment xml:lang="de">JPEG-2000-Bild</comment>
+  <comment xml:lang="el">Εικόνα JPEG-2000</comment>
+  <comment xml:lang="fi">JPEG-2000 -kuva</comment>
+</mime-type>

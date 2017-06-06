@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/pgp">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>PGP message</comment>
+  <comment xml:lang="az">PGP ismarışı</comment>
+  <comment xml:lang="cs">Zpráva PGP</comment>
+  <comment xml:lang="cy">Neges PGP</comment>
+  <comment xml:lang="de">PGP-Nachricht</comment>
+  <comment xml:lang="el">Μήνυμα PGP</comment>
+  <comment xml:lang="fi">PGP-viesti</comment>
+  <comment xml:lang="fr">message PGP</comment>
+  <comment xml:lang="hu">PGP-üzenet</comment>
+  <comment xml:lang="ko">PGP 메세지</comment>
+  <comment xml:lang="nl">PGP bericht</comment>
+  <comment xml:lang="nn">PGP-melding</comment>
+  <comment xml:lang="no">PGP-melding</comment>
+  <comment xml:lang="sr">PGP порука</comment>
+  <comment xml:lang="sv">PGP-meddelande</comment>
+</mime-type>

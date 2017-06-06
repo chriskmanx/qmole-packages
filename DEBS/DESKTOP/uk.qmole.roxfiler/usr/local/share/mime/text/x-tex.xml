@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-tex">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>TeX document</comment>
+  <comment xml:lang="cy">Dogfen TeX </comment>
+  <comment xml:lang="de">TeX-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο TeX</comment>
+  <comment xml:lang="fi">TeX-asiakirja</comment>
+  <comment xml:lang="nn">TeX-dokument</comment>
+  <comment xml:lang="no">TeX-dokument</comment>
+  <comment xml:lang="sr">TeX документ</comment>
+  <comment xml:lang="sv">TeX-dokument</comment>
+</mime-type>

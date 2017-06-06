@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="message/disposition-notification">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>mail disposition report</comment>
+  <comment xml:lang="az">poçt qayıtma raportu</comment>
+  <comment xml:lang="cs">Zpráva o předání pošty</comment>
+  <comment xml:lang="cy">adroddiad ffurf post</comment>
+  <comment xml:lang="de">E-Mail-Übertragungsbericht</comment>
+  <comment xml:lang="fi">viestin kuittausilmoitus</comment>
+  <comment xml:lang="fr">rapport de disposition de courriels</comment>
+  <comment xml:lang="hu">jelentés levélkidobásról</comment>
+  <comment xml:lang="ko">메일 처리 보고서</comment>
+  <comment xml:lang="nl">e-mail plaatsingsbericht</comment>
+  <comment xml:lang="nn">e-post-disposisjonsrapport</comment>
+  <comment xml:lang="no">e-postdispositionsrapport</comment>
+  <comment xml:lang="sr">извештај слања поруке</comment>
+  <comment xml:lang="sv">e-postdispositionsrapport</comment>
+</mime-type>

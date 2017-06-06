@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="message/partial">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>partial email message</comment>
+  <comment xml:lang="az">qismi poçt ismarışı</comment>
+  <comment xml:lang="cs">Částečná e-mailová zpráva</comment>
+  <comment xml:lang="cy">darn o neges e-bost</comment>
+  <comment xml:lang="de">E-Mail-Nachrichtenfragment</comment>
+  <comment xml:lang="fi">osittainen sähköpostiviesti</comment>
+  <comment xml:lang="fr">message partiel de courriel</comment>
+  <comment xml:lang="hu">részleges elektronikus levél</comment>
+  <comment xml:lang="ko">부분적인 이메일 메세지</comment>
+  <comment xml:lang="nl">gedeeltelijk e-mail bericht</comment>
+  <comment xml:lang="nn">del av e-post-melding</comment>
+  <comment xml:lang="no">del av e-postmelding</comment>
+  <comment xml:lang="sr">делимична е-порука</comment>
+  <comment xml:lang="sv">del av e-postmeddelande</comment>
+</mime-type>

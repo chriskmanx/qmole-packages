@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-lha">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>LHA archive</comment>
+  <comment xml:lang="az">LHA arxivi</comment>
+  <comment xml:lang="cs">Archiv LHA</comment>
+  <comment xml:lang="cy">Archif LHA</comment>
+  <comment xml:lang="de">LHA-Archiv</comment>
+  <comment xml:lang="fi">LHA-arkisto</comment>
+  <comment xml:lang="fr">archive LHA</comment>
+  <comment xml:lang="hu">LHA-archívum</comment>
+  <comment xml:lang="ko">LHA 아카이브</comment>
+  <comment xml:lang="nl">LHA archief</comment>
+  <comment xml:lang="nn">LHA-arkiv</comment>
+  <comment xml:lang="no">LHA-arkiv</comment>
+  <comment xml:lang="sr">LHA архива</comment>
+  <comment xml:lang="sv">LHA-arkiv</comment>
+</mime-type>

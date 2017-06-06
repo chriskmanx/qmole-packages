@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/mac-binhex40">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Macintosh BinHex-encoded file</comment>
+  <comment xml:lang="az">Macintosh BinHex-kodlanmış fayl</comment>
+  <comment xml:lang="cs">Soubor kódovaný Macintosh BinHex</comment>
+  <comment xml:lang="cy">Ffeil BinHex-amgodwyd Macintosh</comment>
+  <comment xml:lang="de">Macintosh-Datei (BinHex-kodiert)</comment>
+  <comment xml:lang="el">Αρχείο Macintosh κωδικοποίησης BinHex</comment>
+  <comment xml:lang="fi">Macintosh BinHex -koodattu tiedosto</comment>
+  <comment xml:lang="fr">fichier encode Macintosh BinHex</comment>
+  <comment xml:lang="hu">Macintosh BinHex kódolású fájl</comment>
+  <comment xml:lang="ko">맥킨토시 BinHex-encoded 압축파일</comment>
+  <comment xml:lang="nl">Macintosh BinHex-gecodeerd bestand</comment>
+  <comment xml:lang="nn">Macintosh BinHex-koda fil</comment>
+  <comment xml:lang="no">Macintosh BinHe-kodet arkiv</comment>
+  <comment xml:lang="sr">Мекинтош BinHex-encoded датотека</comment>
+  <comment xml:lang="sv">Macintosh BinHex-kodad fil</comment>
+</mime-type>

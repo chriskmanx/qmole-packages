@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-rpm">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>RPM package</comment>
+  <comment xml:lang="de">RPM-Paket</comment>
+  <comment xml:lang="el">Πακέτο RPM</comment>
+  <comment xml:lang="fi">RPM-paketti</comment>
+  <comment xml:lang="no">RPM-pakke</comment>
+  <comment xml:lang="sv">RPM-paket</comment>
+</mime-type>

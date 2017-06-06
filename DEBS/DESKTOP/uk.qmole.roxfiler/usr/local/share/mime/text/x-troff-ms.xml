@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-troff-ms">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Troff MS input document</comment>
+  <comment xml:lang="de">Troff-MS-Eingabedokument</comment>
+  <comment xml:lang="fi">Troff MS -syöteasiakirja</comment>
+  <comment xml:lang="no">Troff MS-inndatadokument</comment>
+</mime-type>

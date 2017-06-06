@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.sun.xml.impress.template">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>OpenOffice.org Impress presentation template</comment>
+  <comment xml:lang="de">OpenOffice.org·Impress-Präsentationsvorlage</comment>
+  <comment xml:lang="el">Πρότυπο Παρουσίασης OpenOffice.org Impress</comment>
+  <comment xml:lang="fi">OpenOffice.org Impress -esitysmalli</comment>
+  <comment xml:lang="no">OpenOffice.org Impress-presentasjonsmal</comment>
+  <comment xml:lang="sv">OpenOffice.org Impress-presentationsmall</comment>
+</mime-type>

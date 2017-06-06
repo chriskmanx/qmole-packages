@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/jpeg">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>JPEG image</comment>
+  <comment xml:lang="az">JPEG rəsmi</comment>
+  <comment xml:lang="cs">Obrázek JPEG</comment>
+  <comment xml:lang="cy">Delwedd JPEG</comment>
+  <comment xml:lang="de">JPEG-Bild</comment>
+  <comment xml:lang="el">Εικόνα JPEG</comment>
+  <comment xml:lang="fi">JPEG-kuva</comment>
+  <comment xml:lang="fr">image JPEG</comment>
+  <comment xml:lang="hu">JPEG-kép</comment>
+  <comment xml:lang="ko">JPEG 이미지</comment>
+  <comment xml:lang="nl">JPEG afbeelding</comment>
+  <comment xml:lang="nn">JPEG-bilete</comment>
+  <comment xml:lang="no">JPEG-bilde</comment>
+  <comment xml:lang="sr">JPEG слика</comment>
+  <comment xml:lang="sv">JPEG-bild</comment>
+</mime-type>

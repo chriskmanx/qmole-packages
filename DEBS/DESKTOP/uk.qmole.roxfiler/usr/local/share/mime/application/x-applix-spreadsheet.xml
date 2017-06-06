@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-applix-spreadsheet">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Applix Spreadsheets spreadsheet</comment>
+  <comment xml:lang="de">Applix Spreadsheets-Tabellendokument</comment>
+  <comment xml:lang="el">Λογιστικό φύλλο Applix Spreadsheets</comment>
+  <comment xml:lang="fi">Applix Spreadsheets -taulukko</comment>
+  <comment xml:lang="no">Applix Spreadsheets-regneark</comment>
+</mime-type>

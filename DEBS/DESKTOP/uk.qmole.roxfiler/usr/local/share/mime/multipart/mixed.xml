@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="multipart/mixed">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>compound documents</comment>
+  <comment xml:lang="de">Verbunddokumente</comment>
+  <comment xml:lang="fi">yhdisteasiakirja</comment>
+  <comment xml:lang="no">sammensatte dokumenter</comment>
+</mime-type>

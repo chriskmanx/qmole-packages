@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-dcl">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>DCL script</comment>
+  <comment xml:lang="az">DCL skripti</comment>
+  <comment xml:lang="cs">Skript DCL</comment>
+  <comment xml:lang="cy">Sgript DCL</comment>
+  <comment xml:lang="de">DCL-Skript</comment>
+  <comment xml:lang="el">Πρόγραμμα εντολών DCL</comment>
+  <comment xml:lang="fi">DCL-komentotiedosto</comment>
+  <comment xml:lang="fr">script DCL</comment>
+  <comment xml:lang="hu">DCL-parancsfájl</comment>
+  <comment xml:lang="ko">DCL 스크립트</comment>
+  <comment xml:lang="nl">DCL script</comment>
+  <comment xml:lang="nn">DCL-skript</comment>
+  <comment xml:lang="no">DCL-skript</comment>
+  <comment xml:lang="sr">DCL скрипта</comment>
+  <comment xml:lang="sv">DCL-skript</comment>
+</mime-type>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-kpresenter">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>KPresenter presentation</comment>
+  <comment xml:lang="de">KPresenter-Präsentation</comment>
+  <comment xml:lang="el">Παρουσίαση KPresenter</comment>
+  <comment xml:lang="fi">KPresenter-esitys</comment>
+  <comment xml:lang="no">KPresenter-presentasjon</comment>
+  <comment xml:lang="sv">KPresenter-presentation</comment>
+</mime-type>

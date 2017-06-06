@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-glade">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>Glade project</comment>
+  <comment xml:lang="az">Glade layihəsi</comment>
+  <comment xml:lang="cs">Projekt Glade</comment>
+  <comment xml:lang="cy">Prosiect Glade</comment>
+  <comment xml:lang="de">Glade-Projekt</comment>
+  <comment xml:lang="fi">Glade-projekti</comment>
+  <comment xml:lang="fr">projet Glade</comment>
+  <comment xml:lang="hu">Glade-projekt</comment>
+  <comment xml:lang="ko">Glade 프로젝트</comment>
+  <comment xml:lang="nl">Glade project</comment>
+  <comment xml:lang="nn">Glade prosjekt</comment>
+  <comment xml:lang="no">Glade prosjekt</comment>
+  <comment xml:lang="sr">Глејд пројекат</comment>
+  <comment xml:lang="sv">Glade-projekt</comment>
+</mime-type>

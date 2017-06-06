@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-speech">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Speech document</comment>
+  <comment xml:lang="az">Danışıq sənədi</comment>
+  <comment xml:lang="cs">Dokument Speech</comment>
+  <comment xml:lang="cy">Dogfen leferydd</comment>
+  <comment xml:lang="de">Sprachdokument</comment>
+  <comment xml:lang="el">Έγγραφο ομιλίας</comment>
+  <comment xml:lang="fi">puheasiakirja</comment>
+  <comment xml:lang="fr">document Speech</comment>
+  <comment xml:lang="hu">Speech-dokumentum</comment>
+  <comment xml:lang="ko">Speech 문서</comment>
+  <comment xml:lang="nl">Speech document</comment>
+  <comment xml:lang="nn">Syntetisk tale</comment>
+  <comment xml:lang="no">Speech-dokument</comment>
+  <comment xml:lang="sr">Speech документ</comment>
+  <comment xml:lang="sv">Speech-dokument</comment>
+</mime-type>

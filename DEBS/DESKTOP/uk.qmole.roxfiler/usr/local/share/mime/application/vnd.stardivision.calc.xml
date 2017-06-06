@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.stardivision.calc">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>StarCalc spreadsheet</comment>
+  <comment xml:lang="az">StarCalc hesab cədvəli</comment>
+  <comment xml:lang="cs">Tabulka StarCalc</comment>
+  <comment xml:lang="cy">Taenlen StarCalc</comment>
+  <comment xml:lang="de">StarCalc-Tabellendokument</comment>
+  <comment xml:lang="el">Λογιστικό φύλλο StarCalc</comment>
+  <comment xml:lang="fi">StarCalc-taulukko</comment>
+  <comment xml:lang="fr">chiffier StarCalc</comment>
+  <comment xml:lang="hu">StarCalc-munkafüzet</comment>
+  <comment xml:lang="ko">StarCalc 스프레드시트</comment>
+  <comment xml:lang="nl">StarCalc spreadsheet</comment>
+  <comment xml:lang="nn">StarCalc-rekneark</comment>
+  <comment xml:lang="no">StarCalc-regneark</comment>
+  <comment xml:lang="sr">StarCalc табеларни прорачун</comment>
+  <comment xml:lang="sv">StarCalc-kalkylblad</comment>
+</mime-type>

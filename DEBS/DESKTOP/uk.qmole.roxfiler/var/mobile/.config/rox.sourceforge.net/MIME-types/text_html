@@ -1,0 +1,5 @@
+#!/bin/sh
+/usr/bin/herbstclient use Web
+netsurf "$@" &
+/usr/local/bin/xpause 1
+

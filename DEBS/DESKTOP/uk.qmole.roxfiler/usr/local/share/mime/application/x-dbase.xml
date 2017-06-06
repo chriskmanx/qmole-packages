@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-dbase">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>dBASE document</comment>
+  <comment xml:lang="az">dBASE sənədi</comment>
+  <comment xml:lang="cs">Dokument dBASE</comment>
+  <comment xml:lang="cy">Dogfen dBASE</comment>
+  <comment xml:lang="de">dBASE-Dokument</comment>
+  <comment xml:lang="el">Έγγραφο dBASE</comment>
+  <comment xml:lang="fi">dBASE-asiakirja</comment>
+  <comment xml:lang="fr">document dBASE</comment>
+  <comment xml:lang="hu">dBASE-dokumentum</comment>
+  <comment xml:lang="ko">dBASE 문서</comment>
+  <comment xml:lang="nl">dBASE document</comment>
+  <comment xml:lang="nn">dBASE-dokument</comment>
+  <comment xml:lang="no">dBASE-dokument</comment>
+  <comment xml:lang="sr">dBASE документ</comment>
+  <comment xml:lang="sv">dBASE-dokument</comment>
+</mime-type>

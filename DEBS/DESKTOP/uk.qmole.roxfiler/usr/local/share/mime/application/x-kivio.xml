@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-kivio">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Kivio flowchart</comment>
+  <comment xml:lang="de">Kivio-Flussdiagramm</comment>
+  <comment xml:lang="fi">Kivio-vuokaavio</comment>
+  <comment xml:lang="no">Kivio-flytdiagram</comment>
+</mime-type>

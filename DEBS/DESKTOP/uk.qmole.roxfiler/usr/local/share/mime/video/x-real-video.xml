@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="video/x-real-video">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>RealVideo video</comment>
+  <comment xml:lang="az">RealVideo video faylı</comment>
+  <comment xml:lang="cs">Video RealVideo</comment>
+  <comment xml:lang="cy">Fideo RealVideo</comment>
+  <comment xml:lang="de">RealVideo-Video</comment>
+  <comment xml:lang="el">Βίντεο RealVideo</comment>
+  <comment xml:lang="fi">RealVideo-video</comment>
+  <comment xml:lang="fr">vidéo RealVideos</comment>
+  <comment xml:lang="hu">RealVideo-video</comment>
+  <comment xml:lang="ko">리얼비디오 비디오</comment>
+  <comment xml:lang="nl">RealVideo video</comment>
+  <comment xml:lang="nn">RealVideo-film</comment>
+  <comment xml:lang="no">RealVideo film</comment>
+  <comment xml:lang="sr">RealVideo видео</comment>
+  <comment xml:lang="sv">RealVideo-video</comment>
+</mime-type>

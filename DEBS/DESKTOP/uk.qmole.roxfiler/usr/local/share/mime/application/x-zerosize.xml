@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-zerosize">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>empty document</comment>
+  <comment xml:lang="de">leeres Dokument</comment>
+  <comment xml:lang="fi">tyhjä asiakirja</comment>
+  <comment xml:lang="no">tomt dokument</comment>
+  <comment xml:lang="sv">tomt dokument</comment>
+</mime-type>

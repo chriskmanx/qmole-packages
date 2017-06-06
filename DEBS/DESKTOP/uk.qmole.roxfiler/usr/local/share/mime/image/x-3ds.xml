@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-3ds">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>3D Studio image</comment>
+  <comment xml:lang="az">3D Studio rəsmi</comment>
+  <comment xml:lang="cs">Obrázek aplikace 3D Studio</comment>
+  <comment xml:lang="cy">Delwedd "3D Studio"</comment>
+  <comment xml:lang="de">3D Studio-Bild</comment>
+  <comment xml:lang="el">Εικόνα 3D Studio</comment>
+  <comment xml:lang="fi">3D Studio -kuva</comment>
+  <comment xml:lang="fr">image 3D Studio</comment>
+  <comment xml:lang="hu">3D Studio-kép</comment>
+  <comment xml:lang="ko">3D Studio 이미지</comment>
+  <comment xml:lang="nl">3D Studio afbeelding</comment>
+  <comment xml:lang="nn">3D Studio-bilete</comment>
+  <comment xml:lang="no">3D Studio-bilde</comment>
+  <comment xml:lang="sr">3D Studio слика</comment>
+  <comment xml:lang="sv">3D Studio-bild</comment>
+</mime-type>

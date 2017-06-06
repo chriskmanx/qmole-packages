@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="audio/x-xm">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>FastTracker II audio</comment>
+  <comment xml:lang="az">FastTracker II audio faylı</comment>
+  <comment xml:lang="cs">Zvuk FastTracker II</comment>
+  <comment xml:lang="cy">Sain FastTracker II</comment>
+  <comment xml:lang="de">FastTracker II-Audio</comment>
+  <comment xml:lang="el">Ήχος FastTracker II</comment>
+  <comment xml:lang="fi">FastTracker II -ääni</comment>
+  <comment xml:lang="fr">audio FastTracker II</comment>
+  <comment xml:lang="hu">FastTracker II-hang</comment>
+  <comment xml:lang="ko">FastTracker II 오디오</comment>
+  <comment xml:lang="nl">FastTracker II geluidsbestand</comment>
+  <comment xml:lang="nn">FastTracker II lyd</comment>
+  <comment xml:lang="no">FastTracker II-lyd</comment>
+  <comment xml:lang="sr">FastTracker II аудио запис</comment>
+  <comment xml:lang="sv">FastTracker II-ljud</comment>
+</mime-type>

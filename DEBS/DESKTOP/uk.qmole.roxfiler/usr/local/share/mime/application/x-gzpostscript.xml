@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-gzpostscript">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>PostScript document (gzip-compressed)</comment>
+  <comment xml:lang="de">PostScript-Dokument (gzip-komprimiert)</comment>
+  <comment xml:lang="el">Έγγραφο PostScript (συμπίεση-gzip)</comment>
+  <comment xml:lang="fi">PostScript-asiakirja (gzip-pakattu)</comment>
+  <comment xml:lang="no">PostScript-dokument (gzip-komprimert)</comment>
+</mime-type>

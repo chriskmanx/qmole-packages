@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-cpio">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>CPIO archive</comment>
+  <comment xml:lang="az">CPIO arxivi</comment>
+  <comment xml:lang="cs">Archiv CPIO</comment>
+  <comment xml:lang="cy">Archif CPIO</comment>
+  <comment xml:lang="de">CPIO-Archiv</comment>
+  <comment xml:lang="fi">CPIO-arkisto</comment>
+  <comment xml:lang="fr">archive CPIO</comment>
+  <comment xml:lang="hu">CPIO-archívum</comment>
+  <comment xml:lang="ko">CPIO 아카이브</comment>
+  <comment xml:lang="nl">CPIO archief</comment>
+  <comment xml:lang="nn">CPIO-arkiv</comment>
+  <comment xml:lang="no">CPIO-arkiv</comment>
+  <comment xml:lang="sr">CPIO архива</comment>
+  <comment xml:lang="sv">CPIO-arkiv</comment>
+</mime-type>

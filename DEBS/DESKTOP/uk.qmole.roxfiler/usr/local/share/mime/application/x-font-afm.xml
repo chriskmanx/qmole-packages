@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-font-afm">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Adobe font metrics</comment>
+  <comment xml:lang="az">Adobe yazı növü metrikləri</comment>
+  <comment xml:lang="cs">Metrika písma Adobe</comment>
+  <comment xml:lang="cy">Metrigau Ffont Adobe</comment>
+  <comment xml:lang="de">Adobe-Schriftmetriken</comment>
+  <comment xml:lang="fi">Adobe-kirjasinmitat</comment>
+  <comment xml:lang="fr">métriques de fonte Adobe</comment>
+  <comment xml:lang="hu">Adobe-betűmetrika</comment>
+  <comment xml:lang="ko">Adobe 글꼴 메트릭스</comment>
+  <comment xml:lang="nl">Adobe lettertype-metrieken</comment>
+  <comment xml:lang="nn">Adobe skrifttypemetrikk</comment>
+  <comment xml:lang="no">Adobe skrifttypefil</comment>
+  <comment xml:lang="sr">Adobe метрика фонта</comment>
+  <comment xml:lang="sv">Adobe-typsnittsmetrik</comment>
+</mime-type>

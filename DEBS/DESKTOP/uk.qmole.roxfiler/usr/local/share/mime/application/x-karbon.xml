@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-karbon">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Karbon14 drawing</comment>
+  <comment xml:lang="de">Karbon14-Zeichnung</comment>
+  <comment xml:lang="fi">Karbon14-piirros</comment>
+  <comment xml:lang="no">Karbon14-tegning</comment>
+</mime-type>

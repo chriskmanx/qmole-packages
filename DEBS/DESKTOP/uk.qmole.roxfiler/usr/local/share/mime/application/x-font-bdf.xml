@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-font-bdf">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>BDF font</comment>
+  <comment xml:lang="az">BDF yazı növü</comment>
+  <comment xml:lang="cs">Písmo BDF</comment>
+  <comment xml:lang="cy">Ffont BDF</comment>
+  <comment xml:lang="de">BDF-Schrift</comment>
+  <comment xml:lang="el">Γραμματοσειρά BDF</comment>
+  <comment xml:lang="fi">BDF-kirjasin</comment>
+  <comment xml:lang="fr">fonte BDF</comment>
+  <comment xml:lang="hu">BDF-betűkészlet</comment>
+  <comment xml:lang="ko">BDF 글꼴</comment>
+  <comment xml:lang="nl">BDF lettertype</comment>
+  <comment xml:lang="nn">BDF-skrifttype</comment>
+  <comment xml:lang="no">BDF-skrifttype</comment>
+  <comment xml:lang="sr">BDF фонт</comment>
+  <comment xml:lang="sv">BDF-typsnitt</comment>
+</mime-type>

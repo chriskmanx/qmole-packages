@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="video/isivideo">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>ISI video</comment>
+  <comment xml:lang="az">ISI video faylı</comment>
+  <comment xml:lang="cs">Video ISI</comment>
+  <comment xml:lang="cy">Fideo ISI</comment>
+  <comment xml:lang="de">ISI-Video</comment>
+  <comment xml:lang="el">Βίντεο ISI</comment>
+  <comment xml:lang="fi">ISI-video</comment>
+  <comment xml:lang="fr">vidéo ISI</comment>
+  <comment xml:lang="hu">ISI-video</comment>
+  <comment xml:lang="ko">ISI 비디오</comment>
+  <comment xml:lang="nl">ISI video</comment>
+  <comment xml:lang="nn">ISI video</comment>
+  <comment xml:lang="no">ISI-film</comment>
+  <comment xml:lang="sr">ISI видео</comment>
+  <comment xml:lang="sv">ISI-video</comment>
+</mime-type>

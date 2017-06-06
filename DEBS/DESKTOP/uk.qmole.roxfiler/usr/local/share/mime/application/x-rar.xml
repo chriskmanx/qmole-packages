@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-rar">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>RAR archive</comment>
+  <comment xml:lang="cy">Archif RAR</comment>
+  <comment xml:lang="de">RAR-Archiv</comment>
+  <comment xml:lang="el">Αρχείο RAR</comment>
+  <comment xml:lang="fi">RAR-arkisto</comment>
+  <comment xml:lang="nn">RAR-arkiv</comment>
+  <comment xml:lang="no">RAR-arkiv</comment>
+  <comment xml:lang="sr">РАР архива</comment>
+  <comment xml:lang="sv">RAR-arkiv</comment>
+</mime-type>

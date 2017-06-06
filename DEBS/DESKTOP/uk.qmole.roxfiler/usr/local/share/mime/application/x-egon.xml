@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-egon">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Egon Animator animation</comment>
+  <comment xml:lang="de">Egon Animator-Animation</comment>
+  <comment xml:lang="fi">Egon Animator -animaatio</comment>
+  <comment xml:lang="no">Egon animator-animasjon</comment>
+</mime-type>

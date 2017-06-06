@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-pascal">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Pascal source code</comment>
+  <comment xml:lang="de">Pascal-Quelltext</comment>
+  <comment xml:lang="el">Πηγαίος κώδικας Pascal </comment>
+  <comment xml:lang="fi">Pascal-lähdekoodi</comment>
+  <comment xml:lang="no">Pascal-kildekode</comment>
+</mime-type>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-font-libgrx">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>LIBGRX font</comment>
+  <comment xml:lang="az">LIBGRX yazı növü</comment>
+  <comment xml:lang="cs">Písmo LIBGRX</comment>
+  <comment xml:lang="cy">Ffont LIBGRX</comment>
+  <comment xml:lang="de">LIBGRX-Schrift</comment>
+  <comment xml:lang="el">Γραμματοσειρά LIBGRX</comment>
+  <comment xml:lang="fi">LIBGRX-kirjasin</comment>
+  <comment xml:lang="fr">fonte LIBGRX</comment>
+  <comment xml:lang="hu">LIBGRX-betűkészlet</comment>
+  <comment xml:lang="ko">LIBGRX 글꼴</comment>
+  <comment xml:lang="nl">LIBGRX lettertype</comment>
+  <comment xml:lang="nn">LIBGRX skrifttype</comment>
+  <comment xml:lang="no">LIBGRX-skrifttype</comment>
+  <comment xml:lang="sr">LIBGRX фонт</comment>
+  <comment xml:lang="sv">LIBGRX-typsnitt</comment>
+</mime-type>

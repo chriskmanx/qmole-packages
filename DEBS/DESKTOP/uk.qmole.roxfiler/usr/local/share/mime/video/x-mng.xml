@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="video/x-mng">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>MNG animation</comment>
+  <comment xml:lang="de">MNG-Animation</comment>
+  <comment xml:lang="fi">MNG-animaatio</comment>
+  <comment xml:lang="no">MNG-animasjon</comment>
+</mime-type>

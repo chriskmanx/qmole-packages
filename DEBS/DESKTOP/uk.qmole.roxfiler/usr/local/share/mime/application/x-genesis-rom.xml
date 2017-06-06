@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-genesis-rom">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Genesis ROM</comment>
+  <comment xml:lang="de">Genesis-ROM</comment>
+  <comment xml:lang="el">Genesis ROM</comment>
+  <comment xml:lang="fi">Genesis-ROM</comment>
+  <comment xml:lang="no">Genesis-ROM</comment>
+</mime-type>

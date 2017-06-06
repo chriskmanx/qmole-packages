@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="inode/fifo">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>pipe</comment>
+  <comment xml:lang="de">Pipe</comment>
+  <comment xml:lang="fi">putki</comment>
+  <comment xml:lang="no">rør</comment>
+  <comment xml:lang="sv">rör</comment>
+</mime-type>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/pkcs7-signature">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>detached S/MIME signature</comment>
+  <comment xml:lang="de">isolierte S/MIME-Signatur</comment>
+  <comment xml:lang="fi">erillinen S/MIME-allekirjoitus</comment>
+  <comment xml:lang="no">frakoblet S/MIME-signatur</comment>
+</mime-type>

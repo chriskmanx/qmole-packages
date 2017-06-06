@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="image/x-portable-anymap">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>PNM image</comment>
+  <comment xml:lang="az">PNM rəsmi</comment>
+  <comment xml:lang="cs">Obrázek PNM</comment>
+  <comment xml:lang="cy">Delwedd PNM</comment>
+  <comment xml:lang="de">PNM-Bild</comment>
+  <comment xml:lang="el">Εικόνα PNM</comment>
+  <comment xml:lang="fi">PNM-kuva</comment>
+  <comment xml:lang="fr">image PNM</comment>
+  <comment xml:lang="hu">PNM-kép</comment>
+  <comment xml:lang="ko">PNM 이미지</comment>
+  <comment xml:lang="nl">PNM afbeelding</comment>
+  <comment xml:lang="nn">PNM-bilete</comment>
+  <comment xml:lang="no">PNM-bilde</comment>
+  <comment xml:lang="sr">PNM слика</comment>
+  <comment xml:lang="sv">PNM-bild</comment>
+</mime-type>

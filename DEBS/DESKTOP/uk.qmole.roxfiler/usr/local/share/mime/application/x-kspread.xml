@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/x-kspread">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>KSpread spreadsheet</comment>
+  <comment xml:lang="de">KSpread-Tabellendokument</comment>
+  <comment xml:lang="el">Λογιστικό φύλλο KSpread</comment>
+  <comment xml:lang="fi">KSpread-taulukko</comment>
+  <comment xml:lang="no">KSpread-regneark</comment>
+</mime-type>

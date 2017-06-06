@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="text/x-vcalendar">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>vCalendar interchange file</comment>
+  <comment xml:lang="az">vCalendar dəyişmə faylı</comment>
+  <comment xml:lang="cs">Soubor výměny vCalendar</comment>
+  <comment xml:lang="cy">Ffeil gyfnewid vCalendar</comment>
+  <comment xml:lang="de">vCalendar-Austauschdatei</comment>
+  <comment xml:lang="fi">vCalendar-välitystiedosto</comment>
+  <comment xml:lang="fr">fichier « vCalendar interchange »</comment>
+  <comment xml:lang="ko">vCalendar 교환 파일</comment>
+  <comment xml:lang="nl">vCalendar uitwisselingsbestand</comment>
+  <comment xml:lang="nn">vCalendar-utvekslingsfil</comment>
+  <comment xml:lang="no">vCalendar-utvekslingsfil</comment>
+  <comment xml:lang="sr">Датотека за vCalendar размену</comment>
+  <comment xml:lang="sv">vCalendar-utbytesfil</comment>
+</mime-type>
